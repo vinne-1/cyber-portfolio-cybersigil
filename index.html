@@ -176,6 +176,7 @@
     <template id="page-home">
         <section class="hero section" data-page="home">
             <canvas class="hero__matrix" id="heroMatrix" aria-hidden="true"></canvas>
+            <canvas class="hero__particles" id="heroParticles" aria-hidden="true"></canvas>
             <div class="hero__bg-grid"></div>
             <div class="hero__crimson-wash"></div>
             <div class="container" style="position:relative; z-index:2;">
@@ -392,21 +393,25 @@
                 </div>
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap:2px;">
                     <div class="cap-card anim-item" data-parallax-y="10">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
                         <div class="cap-card__number">01</div>
                         <h3 class="cap-card__title">Reconnaissance</h3>
                         <p class="cap-card__text">Comprehensive attack surface mapping. OSINT, subdomain enumeration, service fingerprinting, and technology identification before any active testing.</p>
                     </div>
                     <div class="cap-card anim-item" data-parallax-y="20">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/></svg></div>
                         <div class="cap-card__number">02</div>
                         <h3 class="cap-card__title">Exploitation</h3>
                         <p class="cap-card__text">Manual-first approach to vulnerability discovery. Authentication bypass, injection attacks, business logic flaws, and privilege escalation chains.</p>
                     </div>
                     <div class="cap-card anim-item" data-parallax-y="30">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 13H8"/><path d="M16 17H8"/><path d="M16 13h-2"/></svg></div>
                         <div class="cap-card__number">03</div>
                         <h3 class="cap-card__title">Reporting</h3>
                         <p class="cap-card__text">Dual-audience deliverables: technical depth for engineering teams, risk-prioritized executive summaries with clear remediation paths and business impact.</p>
                     </div>
                     <div class="cap-card anim-item" data-parallax-y="40">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></div>
                         <div class="cap-card__number">04</div>
                         <h3 class="cap-card__title">Remediation Support</h3>
                         <p class="cap-card__text">Post-engagement verification testing. Validate fixes, retest vulnerabilities, and ensure remediation doesn't introduce new attack vectors.</p>
@@ -545,18 +550,111 @@
                 </div>
 
                 <div class="glow-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap:2px;">
-                    <div class="cap-card anim-item"><div class="cap-card__number">01</div><h3 class="cap-card__title">Red Team Operations</h3><p class="cap-card__text">Full-scope adversary simulation from initial access through lateral movement and objective completion. Realistic threat emulation to validate detection and response capabilities.</p></div>
-                    <div class="cap-card anim-item"><div class="cap-card__number">02</div><h3 class="cap-card__title">Web App Assessments</h3><p class="cap-card__text">Deep-dive manual testing of web applications for OWASP Top 10 and beyond. SQL injection, XSS, SSRF, authentication bypass, business logic abuse, and API-level exploitation.</p></div>
-                    <div class="cap-card anim-item"><div class="cap-card__number">03</div><h3 class="cap-card__title">Mobile Security Testing</h3><p class="cap-card__text">Android and iOS security assessments including static/dynamic analysis, runtime instrumentation, certificate pinning bypass, and insecure storage identification.</p></div>
-                    <div class="cap-card anim-item"><div class="cap-card__number">04</div><h3 class="cap-card__title">OSINT & Reconnaissance</h3><p class="cap-card__text">Automated and manual intelligence gathering pipelines. Attack surface mapping, data exposure identification, credential intelligence, and organizational footprinting.</p></div>
-                    <div class="cap-card anim-item"><div class="cap-card__number">05</div><h3 class="cap-card__title">Infrastructure Penetration</h3><p class="cap-card__text">Network and cloud infrastructure assessments including service enumeration, privilege escalation, Active Directory attacks, and cloud misconfigurations across AWS and Azure.</p></div>
-                    <div class="cap-card anim-item"><div class="cap-card__number">06</div><h3 class="cap-card__title">Security Research</h3><p class="cap-card__text">Offensive tool development, vulnerability research, exploit validation, and evasion technique analysis. Building custom tooling for scalable security operations.</p></div>
+                    <div class="cap-card anim-item">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg></div>
+                        <div class="cap-card__number">01</div>
+                        <h3 class="cap-card__title">Red Team Operations</h3>
+                        <p class="cap-card__text">Full-scope adversary simulation from initial access through lateral movement and objective completion. Realistic threat emulation to validate detection and response capabilities.</p>
+                    </div>
+                    <div class="cap-card anim-item">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
+                        <div class="cap-card__number">02</div>
+                        <h3 class="cap-card__title">Web App Assessments</h3>
+                        <p class="cap-card__text">Deep-dive manual testing of web applications for OWASP Top 10 and beyond. SQL injection, XSS, SSRF, authentication bypass, business logic abuse, and API-level exploitation.</p>
+                    </div>
+                    <div class="cap-card anim-item">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></div>
+                        <div class="cap-card__number">03</div>
+                        <h3 class="cap-card__title">Mobile Security Testing</h3>
+                        <p class="cap-card__text">Android and iOS security assessments including static/dynamic analysis, runtime instrumentation, certificate pinning bypass, and insecure storage identification.</p>
+                    </div>
+                    <div class="cap-card anim-item">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+                        <div class="cap-card__number">04</div>
+                        <h3 class="cap-card__title">OSINT & Reconnaissance</h3>
+                        <p class="cap-card__text">Automated and manual intelligence gathering pipelines. Attack surface mapping, data exposure identification, credential intelligence, and organizational footprinting.</p>
+                    </div>
+                    <div class="cap-card anim-item">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
+                        <div class="cap-card__number">05</div>
+                        <h3 class="cap-card__title">Infrastructure Penetration</h3>
+                        <p class="cap-card__text">Network and cloud infrastructure assessments including service enumeration, privilege escalation, Active Directory attacks, and cloud misconfigurations across AWS and Azure.</p>
+                    </div>
+                    <div class="cap-card anim-item">
+                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+                        <div class="cap-card__number">06</div>
+                        <h3 class="cap-card__title">Security Research</h3>
+                        <p class="cap-card__text">Offensive tool development, vulnerability research, exploit validation, and evasion technique analysis. Building custom tooling for scalable security operations.</p>
+                    </div>
                 </div>
 
                 <div class="anim-item" style="margin-top:4rem; padding-top:2rem; border-top:1px solid var(--border);">
                     <span class="t-caption" style="display:block; margin-bottom:1.5rem;">Primary Toolkit</span>
-                    <div style="display:flex; flex-wrap:wrap; gap:12px;">
-                        <span class="project-card__tag">Burp Suite Pro</span><span class="project-card__tag">Nmap</span><span class="project-card__tag">Metasploit</span><span class="project-card__tag">OWASP ZAP</span><span class="project-card__tag">Nessus</span><span class="project-card__tag">SQLMap</span><span class="project-card__tag">MobSF</span><span class="project-card__tag">Frida</span><span class="project-card__tag">Wireshark</span><span class="project-card__tag">Ghidra</span><span class="project-card__tag">Python</span><span class="project-card__tag">Bash</span><span class="project-card__tag">PowerShell</span><span class="project-card__tag">Docker</span><span class="project-card__tag">AWS</span><span class="project-card__tag">Elasticsearch</span>
+                    <div class="tool-grid">
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                            <span>Burp Suite Pro</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h5"/><path d="M17 12h5"/><path d="M12 2v5"/><path d="M12 17v5"/><circle cx="12" cy="12" r="4"/></svg>
+                            <span>Nmap</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="m10 10.5 2 2 2-2"/><path d="M12 13v-1"/></svg>
+                            <span>Metasploit</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                            <span>OWASP ZAP</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                            <span>Nessus</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
+                            <span>SQLMap</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+                            <span>MobSF</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
+                            <span>Frida</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                            <span>Wireshark</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
+                            <span>Ghidra</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                            <span>Python</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                            <span>Bash</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                            <span>PowerShell</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h7.5"/><path d="m18 14 4 4-4 4"/><path d="m14 18 4 4"/></svg>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/></svg>
+                            <span>AWS</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                            <span>Elasticsearch</span>
+                        </div>
                     </div>
                 </div>
 
@@ -685,7 +783,8 @@
     <!-- CONTACT -->
     <template id="page-contact">
         <section class="section contact-section" data-page="contact" style="padding-top:120px; min-height:calc(100vh - 72px); display:flex; align-items:center;">
-            <div class="container">
+            <div class="radar-sweep" aria-hidden="true"></div>
+            <div class="container" style="position:relative; z-index:1;">
                 <div style="max-width:700px;">
                     <div class="anim-item">
                         <span class="t-label">Contact</span>

@@ -76,6 +76,20 @@
   display: none;
 }
 
+/* --- Circuit Board Background Pattern --- */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23c8102e' fill-opacity='1'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+[data-theme="light"] body::before {
+  opacity: 0.02;
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after {
   margin: 0;
@@ -685,6 +699,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-color: var(--border-light);
   background: var(--surface-2);
 }
+.cap-card__icon {
+  color: var(--crimson);
+  margin-bottom: 1rem;
+  opacity: 0.8;
+  transition: opacity 0.4s var(--ease-out-expo), transform 0.4s var(--ease-out-expo);
+}
+.cap-card:hover .cap-card__icon {
+  opacity: 1;
+  transform: translateY(-2px);
+}
 .cap-card__number {
   font-family: var(--font-mono);
   font-size: 0.7rem;
@@ -724,6 +748,40 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .glow-grid:hover::after {
   opacity: 1;
+}
+
+/* --- Tool Grid --- */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 2px;
+}
+.tool-grid__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.25rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--gray-200);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  transition: border-color 0.3s var(--ease-out-expo), color 0.3s var(--ease-out-expo), box-shadow 0.3s var(--ease-out-expo);
+}
+.tool-grid__item svg {
+  color: var(--gray-300);
+  transition: color 0.3s var(--ease-out-expo);
+}
+.tool-grid__item:hover {
+  border-color: var(--crimson);
+  color: var(--white);
+  box-shadow: 0 0 20px var(--crimson-glow);
+}
+.tool-grid__item:hover svg {
+  color: var(--crimson);
 }
 
 /* --- Trust / Signal Items --- */
@@ -789,11 +847,64 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .contact-section {
   background: var(--surface);
   border-top: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
 }
 .contact-section .t-heading {
   line-height: 1.2;
   margin-bottom: 1.5rem;
   position: relative;
+}
+
+/* Radar sweep decoration */
+.radar-sweep {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  opacity: 0.25;
+  pointer-events: none;
+}
+.radar-sweep::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(200, 16, 46, 0.12) 30deg,
+    transparent 60deg
+  );
+  animation: radarSpin 4s linear infinite;
+}
+.radar-sweep::after {
+  content: '';
+  position: absolute;
+  inset: 30%;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+}
+@keyframes radarSpin {
+  to { transform: rotate(360deg); }
+}
+[data-theme="light"] .radar-sweep {
+  opacity: 0.15;
+}
+@media (max-width: 768px) {
+  .radar-sweep {
+    width: 300px;
+    height: 300px;
+    right: -80px;
+    opacity: 0.15;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .radar-sweep::before { animation: none; }
 }
 
 /* --- Footer --- */
@@ -1204,6 +1315,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   min-height: 260px;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.terminal__body::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.06) 2px,
+    rgba(0, 0, 0, 0.06) 4px
+  );
 }
 .terminal__output {
   font-size: 0.8rem;
@@ -1397,8 +1521,42 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   opacity: 0.12;
 }
 
+.hero__particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .hero__matrix { display: none; }
+  .hero__matrix, .hero__particles { display: none; }
+}
+
+/* --- About Hero Background --- */
+.about-hero {
+  position: relative;
+}
+.about-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 70% 20%, rgba(200, 16, 46, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(200, 16, 46, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+.about-hero > .container {
+  position: relative;
+  z-index: 1;
+}
+[data-theme="light"] .about-hero::before {
+  background:
+    radial-gradient(ellipse 80% 50% at 70% 20%, rgba(200, 16, 46, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(200, 16, 46, 0.03) 0%, transparent 50%);
 }
 
 /* --- Timeline --- */
