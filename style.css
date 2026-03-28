@@ -225,6 +225,25 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 100%;
   height: 1px;
   background: var(--border);
+  position: relative;
+  overflow: hidden;
+}
+.section-divider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+  animation: dataStream 3s linear infinite;
+}
+@keyframes dataStream {
+  0%   { left: -30%; }
+  100% { left: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .section-divider::after { animation: none; opacity: 0; }
 }
 
 /* --- SPA Page View --- */
@@ -784,6 +803,47 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--crimson);
 }
 
+/* --- Skill Radar Chart --- */
+.skill-radar {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.skill-radar__chart {
+  width: 100%;
+  height: auto;
+}
+.skill-radar__ring {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 0.5;
+}
+.skill-radar__axis {
+  stroke: var(--border);
+  stroke-width: 0.5;
+}
+.skill-radar__data {
+  fill: rgba(200, 16, 46, 0.12);
+  stroke: var(--crimson);
+  stroke-width: 1.5;
+  stroke-linejoin: round;
+  transition: fill 0.3s ease;
+}
+.skill-radar:hover .skill-radar__data {
+  fill: rgba(200, 16, 46, 0.2);
+}
+.skill-radar__label {
+  fill: var(--gray-200);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+}
+[data-theme="light"] .skill-radar__data {
+  fill: rgba(200, 16, 46, 0.08);
+}
+[data-theme="light"] .skill-radar:hover .skill-radar__data {
+  fill: rgba(200, 16, 46, 0.15);
+}
+
 /* --- Trust / Signal Items --- */
 .trust-item {
   display: flex;
@@ -1236,24 +1296,30 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .cert-badge:hover {
-  border-color: var(--border-light);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-color: var(--crimson);
+  box-shadow: 0 0 20px var(--crimson-glow);
 }
 .cert-badge__icon {
   width: 52px;
-  height: 52px;
+  height: 60px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border-light);
   background: var(--surface-2);
+  border: 1px solid var(--border-light);
   color: var(--crimson);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 600;
   text-align: center;
   line-height: 1.2;
+  clip-path: polygon(50% 0%, 100% 10%, 100% 70%, 50% 100%, 0% 70%, 0% 10%);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+.cert-badge:hover .cert-badge__icon {
+  background: var(--crimson-subtle);
+  border-color: var(--crimson);
 }
 .cert-badge__info {
   flex: 1;
@@ -1774,7 +1840,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .stat-block { padding: 20px 16px; }
   .stat-block__value { font-size: 2rem; }
   .cert-badge { padding: 1rem; }
-  .cert-badge__icon { width: 42px; height: 42px; font-size: 0.6rem; }
+  .cert-badge__icon { width: 42px; height: 50px; font-size: 0.6rem; }
   .threat-feed { grid-template-columns: 1fr; }
   .grid-cols-2 { grid-template-columns: 1fr; }
   .footer__bottom { padding: 2rem 0; }
