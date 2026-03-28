@@ -743,8 +743,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-top: 1px solid var(--border);
 }
 .contact-section .t-heading {
-  line-height: 1.15;
-  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 
