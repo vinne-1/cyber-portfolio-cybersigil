@@ -345,15 +345,15 @@
                     }
                 );
             } else if (pageType === 'contact' || pageType === '404') {
-                // Fade in from scale for impact pages
+                // Clean fade-in for impact pages
                 gsap.fromTo(chars,
-                    { opacity: 0, scale: 1.4 },
+                    { opacity: 0, y: 10 },
                     {
                         opacity: 1,
-                        scale: 1,
-                        duration: 0.6,
+                        y: 0,
+                        duration: 0.5,
                         stagger: 0.02,
-                        ease: 'expo.out',
+                        ease: 'power2.out',
                         delay: 0.3
                     }
                 );
