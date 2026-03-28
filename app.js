@@ -206,61 +206,17 @@
     var transitionBar = document.querySelector('.page-transition__bar');
     var transitionClip = document.getElementById('pageTransitionClip');
 
-    // Map routes to transition types
-    var ROUTE_TRANSITIONS = {
-        '/':             'bar',
-        '/about':        'clip',
-        '/work':         'wipe-left',
-        '/work/osint':   'wipe-left',
-        '/work/privesc': 'wipe-left',
-        '/capabilities': 'bar',
-        '/credentials':  'bar',
-        '/contact':      'clip',
-        '/404':          'bar'
-    };
-
-    function transitionOut(targetRoute) {
+    function transitionOut() {
         if (prefersReducedMotion) return Promise.resolve();
 
-        var type = ROUTE_TRANSITIONS[targetRoute] || 'bar';
-
         return new Promise(function (resolve) {
-            var items = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block, .cert-badge, .timeline__item');
-            if (items.length === 0) { resolve(); return; }
-
-            var tl = gsap.timeline({ onComplete: resolve });
-
-            // Fade out content
-            tl.to(items, {
+            gsap.to(app, {
                 opacity: 0,
-                y: -20,
-                duration: 0.25,
-                stagger: 0.02,
-                ease: 'power2.in'
+                y: -15,
+                duration: 0.3,
+                ease: 'power2.in',
+                onComplete: resolve
             });
-
-            if (type === 'clip') {
-                // Circle expand from center
-                tl.fromTo(transitionClip,
-                    { clipPath: 'circle(0% at 50% 50%)' },
-                    { clipPath: 'circle(75% at 50% 50%)', duration: 0.5, ease: 'power3.inOut' },
-                    '-=0.1'
-                );
-            } else if (type === 'wipe-left') {
-                // Horizontal bar sweep
-                tl.fromTo(transitionBar,
-                    { scaleX: 0, transformOrigin: 'left center' },
-                    { scaleX: 1, duration: 0.4, ease: 'power3.inOut' },
-                    '-=0.1'
-                );
-            } else {
-                // Default bar
-                tl.fromTo(transitionBar,
-                    { scaleX: 0, transformOrigin: 'center' },
-                    { scaleX: 1, duration: 0.35, ease: 'power3.inOut' },
-                    '-=0.1'
-                );
-            }
         });
     }
 
@@ -305,7 +261,7 @@
         ScrollTrigger.getAll().forEach(function (st) { st.kill(); });
         stopMatrixCanvas();
 
-        transitionOut(route).then(function () {
+        transitionOut().then(function () {
             renderPage(template);
             if (lenis) {
                 lenis.scrollTo(0, { immediate: true });
@@ -314,19 +270,20 @@
             }
             handleNavScroll();
 
-            // Force-reset both overlay elements immediately
-            gsap.set(transitionClip, { clipPath: 'circle(0% at 50% 50%)' });
-            gsap.set(transitionBar, { scaleX: 0 });
+            // Fade in the new page
+            gsap.fromTo(app,
+                { opacity: 0, y: 15 },
+                { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }
+            );
 
             animatePageEntrance();
 
             setTimeout(function () {
                 isTransitioning = false;
-            }, 800);
+            }, 600);
         }).catch(function () {
             isTransitioning = false;
-            gsap.set(transitionClip, { clipPath: 'circle(0% at 50% 50%)' });
-            gsap.set(transitionBar, { scaleX: 0 });
+            gsap.set(app, { opacity: 1, y: 0 });
         });
     }
 

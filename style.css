@@ -187,21 +187,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Page Transition Overlay --- */
 .page-transition {
-  position: fixed;
-  inset: 0;
-  z-index: 90;
-  pointer-events: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: none;
 }
 .page-transition__bar {
-  width: 0%;
-  height: 2px;
-  background: var(--crimson);
-  will-change: width;
-  transform: scaleX(0);
-  transform-origin: center;
+  display: none;
 }
 
 /* --- Accent Bar --- */
@@ -1406,12 +1395,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Page-Specific Transitions --- */
 .page-transition__clip {
-  position: fixed;
-  inset: 0;
-  z-index: 91;
-  background: var(--crimson);
-  pointer-events: none;
-  clip-path: circle(0% at 50% 50%);
+  display: none;
 }
 
 /* --- Back to Top --- */
