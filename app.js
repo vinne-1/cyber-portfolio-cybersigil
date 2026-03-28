@@ -60,6 +60,30 @@
     }
 
     /* ----------------------------------------------------------
+       CLEANUP TRACKING
+       ---------------------------------------------------------- */
+    var pendingTimers = [];
+    var pendingRAFs = [];
+    var activeFetchController = null;
+
+    function trackTimeout(fn, delay) {
+        var id = setTimeout(fn, delay);
+        pendingTimers.push(id);
+        return id;
+    }
+
+    function cleanupPending() {
+        pendingTimers.forEach(clearTimeout);
+        pendingTimers = [];
+        pendingRAFs.forEach(cancelAnimationFrame);
+        pendingRAFs = [];
+        if (activeFetchController) {
+            activeFetchController.abort();
+            activeFetchController = null;
+        }
+    }
+
+    /* ----------------------------------------------------------
        CUSTOM CURSOR
        ---------------------------------------------------------- */
     var cursorDot = document.getElementById('cursorDot');
@@ -319,6 +343,8 @@
         currentRoute = route;
 
         ScrollTrigger.getAll().forEach(function (st) { st.kill(); });
+        ScrollTrigger.refresh();
+        cleanupPending();
         stopMatrixCanvas();
         stopParticleNetwork();
 
@@ -498,7 +524,7 @@
 
         el.style.opacity = '1';
 
-        setTimeout(function () {
+        trackTimeout(function () {
             function animate(timestamp) {
                 if (!startTime) startTime = timestamp;
                 var progress = (timestamp - startTime) / duration;
@@ -519,9 +545,11 @@
                     }
                 }
                 el.textContent = result;
-                requestAnimationFrame(animate);
+                var id = requestAnimationFrame(animate);
+                pendingRAFs.push(id);
             }
-            requestAnimationFrame(animate);
+            var id = requestAnimationFrame(animate);
+            pendingRAFs.push(id);
         }, delay * 1000);
     }
 
@@ -1058,7 +1086,10 @@
        ---------------------------------------------------------- */
     var matrixAnimFrame = null;
 
+    var isMobileViewport = window.innerWidth < 768;
+
     function setupMatrixCanvas() {
+        if (isMobileViewport) return;
         var canvas = app.querySelector('#heroMatrix');
         if (!canvas || prefersReducedMotion) return;
 
@@ -1136,6 +1167,7 @@
     var particleAnimFrame = null;
 
     function setupParticleNetwork() {
+        if (isMobileViewport) return;
         var canvas = app.querySelector('#heroParticles');
         if (!canvas || prefersReducedMotion) return;
 
@@ -1318,7 +1350,8 @@
         var feedEl = app.querySelector('#threatFeed');
         if (!feedEl) return;
 
-        fetch(THREAT_API)
+        activeFetchController = new AbortController();
+        fetch(THREAT_API, { signal: activeFetchController.signal })
             .then(function (res) {
                 if (!res.ok) throw new Error('Feed unavailable');
                 return res.json();

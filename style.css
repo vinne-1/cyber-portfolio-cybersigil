@@ -26,6 +26,12 @@
   --crimson-glow: rgba(165, 13, 34, 0.15);
   --crimson-subtle: rgba(165, 13, 34, 0.06);
 
+  --severity-critical: #ff4444;
+  --severity-high:     #ff8c00;
+  --severity-medium:   #ffd700;
+  --severity-low:      #4caf50;
+  --status-active:     #28c840;
+
   --white:       #e8e8e8;
   --gray-100:    #c0c0c0;
   --gray-200:    #8a8a8a;
@@ -127,6 +133,7 @@ body::before {
 }
 .sigil--pulse {
   animation: sigilPulse 4s ease-in-out infinite alternate;
+  will-change: filter;
 }
 @keyframes sigilPulse {
   from {
@@ -145,7 +152,7 @@ body::before {
   right: 3%;
   top: 50%;
   transform: translateY(-50%);
-  width: 300px;
+  width: clamp(150px, 25vw, 300px);
   max-height: 80vh;
   opacity: 0.08;
   z-index: 1;
@@ -393,7 +400,7 @@ body.ready {
 body::after {
   content: '';
   position: fixed;
-  inset: 1.5rem;
+  inset: clamp(0.5rem, 2vw, 1.5rem);
   border: 1px solid rgba(165, 13, 34, 0.12);
   pointer-events: none;
   z-index: 9998;
@@ -634,6 +641,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: transform 0.4s var(--ease-out-expo);
 }
 .nav__link:hover { color: var(--white); opacity: 0.85; }
+.nav__link:focus-visible {
+  outline: 1px solid var(--crimson);
+  outline-offset: 4px;
+  opacity: 1;
+}
 .nav__link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
@@ -695,9 +707,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .nav__burger {
   display: none;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 5px;
-  width: 24px;
-  padding: 4px 0;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
   z-index: 101;
 }
 .nav__burger span {
@@ -874,16 +889,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 14px 32px;
+  min-height: 44px;
   transition: background 0.35s var(--ease-out-expo), color 0.35s var(--ease-out-expo), border-color 0.35s var(--ease-out-expo);
   position: relative;
   overflow: hidden;
+}
+.btn:focus-visible {
+  outline: 2px solid var(--crimson);
+  outline-offset: 2px;
 }
 .btn--primary {
   background: var(--crimson);
   color: var(--white);
 }
 .btn--primary:hover {
-  background: #a00d24;
+  background: var(--crimson-dark);
 }
 .btn--outline {
   border: 1px solid var(--border-light);
@@ -1398,11 +1418,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .footer__meta { align-items: flex-start; }
 }
 
-/* --- Scrollbar --- */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--black); }
-::-webkit-scrollbar-thumb { background: var(--gray-500); }
-::-webkit-scrollbar-thumb:hover { background: var(--crimson); }
+/* (scrollbar styles consolidated below in Custom Scrollbar section) */
 
 /* --- Reduced Motion --- */
 @media (prefers-reduced-motion: reduce) {
@@ -1421,6 +1437,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   }
   .hero__status-dot {
     animation: none;
+  }
+  .project-card:hover::after {
+    animation: none;
+  }
+  .cursor-ring {
+    transition-duration: 0.01ms !important;
   }
   body {
     opacity: 1;
@@ -1636,19 +1658,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border: 1px solid;
 }
 .threat-card__severity--critical {
-  color: #ff4444;
-  border-color: rgba(255, 68, 68, 0.3);
-  background: rgba(255, 68, 68, 0.06);
+  color: var(--severity-critical);
+  border-color: color-mix(in srgb, var(--severity-critical) 30%, transparent);
+  background: color-mix(in srgb, var(--severity-critical) 6%, transparent);
 }
 .threat-card__severity--high {
-  color: #ff8c00;
-  border-color: rgba(255, 140, 0, 0.3);
-  background: rgba(255, 140, 0, 0.06);
+  color: var(--severity-high);
+  border-color: color-mix(in srgb, var(--severity-high) 30%, transparent);
+  background: color-mix(in srgb, var(--severity-high) 6%, transparent);
 }
 .threat-card__severity--medium {
-  color: #ffd700;
-  border-color: rgba(255, 215, 0, 0.3);
-  background: rgba(255, 215, 0, 0.06);
+  color: var(--severity-medium);
+  border-color: color-mix(in srgb, var(--severity-medium) 30%, transparent);
+  background: color-mix(in srgb, var(--severity-medium) 6%, transparent);
 }
 .threat-card__source {
   font-size: 0.65rem;
@@ -1759,7 +1781,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-right: 4px;
   vertical-align: middle;
 }
-.cert-badge__status-dot--active { background: #28c840; }
+.cert-badge__status-dot--active { background: var(--status-active); }
 .cert-badge__status-dot--prep { background: var(--crimson); animation: pulse-dot 2s ease infinite; }
 
 /* --- Interactive Terminal --- */
@@ -2269,7 +2291,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 @media (max-width: 400px) {
   .t-display { font-size: 2.5rem; }
-  .terminal__output { font-size: 0.7rem; max-height: 200px; }
-  .terminal__input { font-size: 0.7rem; }
-  .terminal__prompt { font-size: 0.7rem; }
+  .terminal__output { font-size: 0.75rem; max-height: 200px; }
+  .terminal__input { font-size: 0.875rem; }
+  .terminal__prompt { font-size: 0.75rem; }
 }
