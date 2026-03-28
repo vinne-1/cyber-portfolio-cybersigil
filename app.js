@@ -1,12 +1,18 @@
 'use strict';
 
 /* ============================================================
-   APP.JS — SPA Engine
-   Hash router · GSAP + Lenis + Splitting · Advanced interactions
+   APP.JS — SPA Engine v2
+   Hash router · GSAP + Lenis + Splitting · Preloader · Custom Cursor
+   Interactive Terminal · Scroll Progress · Reduced Motion
    Vineet Vishesh · Offensive Security
    ============================================================ */
 
 (function () {
+
+    /* ----------------------------------------------------------
+       REDUCED MOTION CHECK
+       ---------------------------------------------------------- */
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     /* ----------------------------------------------------------
        GSAP SETUP
@@ -14,27 +20,80 @@
     gsap.registerPlugin(ScrollTrigger);
 
     /* ----------------------------------------------------------
-       LENIS SMOOTH SCROLL
+       LENIS SMOOTH SCROLL (skip if reduced motion)
        ---------------------------------------------------------- */
-    var lenis = new Lenis({
-        duration: 1.2,
-        easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
-        orientation: 'vertical',
-        smoothWheel: true
-    });
+    var lenis = null;
+    if (!prefersReducedMotion) {
+        lenis = new Lenis({
+            duration: 1.2,
+            easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+            orientation: 'vertical',
+            smoothWheel: true
+        });
 
-    function raf(time) {
-        lenis.raf(time);
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
         requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
 
-    // Connect Lenis to GSAP ScrollTrigger
-    lenis.on('scroll', ScrollTrigger.update);
-    gsap.ticker.add(function (time) {
-        lenis.raf(time * 1000);
-    });
-    gsap.ticker.lagSmoothing(0);
+        lenis.on('scroll', ScrollTrigger.update);
+        gsap.ticker.add(function (time) {
+            lenis.raf(time * 1000);
+        });
+        gsap.ticker.lagSmoothing(0);
+    }
+
+    /* ----------------------------------------------------------
+       CUSTOM CURSOR
+       ---------------------------------------------------------- */
+    var cursorDot = document.getElementById('cursorDot');
+    var cursorRing = document.getElementById('cursorRing');
+    var mouseX = 0, mouseY = 0;
+    var ringX = 0, ringY = 0;
+
+    if (cursorDot && cursorRing && window.matchMedia('(pointer: fine)').matches && !prefersReducedMotion) {
+        document.addEventListener('mousemove', function (e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            gsap.set(cursorDot, { x: mouseX, y: mouseY });
+        });
+
+        gsap.ticker.add(function () {
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
+            gsap.set(cursorRing, { x: ringX, y: ringY });
+        });
+
+        // Hover enlargement on interactive elements
+        document.addEventListener('mouseover', function (e) {
+            if (e.target.closest('a, button, .btn, .project-card, .cap-card, .nav__link, .terminal__input')) {
+                cursorRing.classList.add('hover');
+            }
+        });
+        document.addEventListener('mouseout', function (e) {
+            if (e.target.closest('a, button, .btn, .project-card, .cap-card, .nav__link, .terminal__input')) {
+                cursorRing.classList.remove('hover');
+            }
+        });
+    } else {
+        // Hide cursor elements on touch or reduced motion
+        if (cursorDot) cursorDot.style.display = 'none';
+        if (cursorRing) cursorRing.style.display = 'none';
+    }
+
+    /* ----------------------------------------------------------
+       SCROLL PROGRESS BAR
+       ---------------------------------------------------------- */
+    var scrollProgress = document.getElementById('scrollProgress');
+    if (scrollProgress && !prefersReducedMotion) {
+        window.addEventListener('scroll', function () {
+            var scrollTop = window.scrollY;
+            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgress.style.width = pct + '%';
+        }, { passive: true });
+    }
 
     /* ----------------------------------------------------------
        ROUTE CONFIG
@@ -45,7 +104,8 @@
         '/work':         'page-work',
         '/capabilities': 'page-capabilities',
         '/credentials':  'page-credentials',
-        '/contact':      'page-contact'
+        '/contact':      'page-contact',
+        '/404':          'page-404'
     };
 
     var ROUTE_TITLES = {
@@ -54,7 +114,8 @@
         '/work':         'Selected Work — Vineet Vishesh',
         '/capabilities': 'Capabilities — Vineet Vishesh',
         '/credentials':  'Credentials — Vineet Vishesh',
-        '/contact':      'Contact — Vineet Vishesh'
+        '/contact':      'Contact — Vineet Vishesh',
+        '/404':          '404 — Vineet Vishesh'
     };
 
     var app = document.getElementById('app');
@@ -115,16 +176,34 @@
     }
 
     /* ----------------------------------------------------------
-       PAGE TRANSITION
+       PAGE TRANSITIONS — Per-Route Variants
        ---------------------------------------------------------- */
     var transitionBar = document.querySelector('.page-transition__bar');
+    var transitionClip = document.getElementById('pageTransitionClip');
 
-    function transitionOut() {
+    // Map routes to transition types
+    var ROUTE_TRANSITIONS = {
+        '/':             'bar',
+        '/about':        'clip',
+        '/work':         'wipe-left',
+        '/capabilities': 'bar',
+        '/credentials':  'bar',
+        '/contact':      'clip',
+        '/404':          'bar'
+    };
+
+    function transitionOut(targetRoute) {
+        if (prefersReducedMotion) return Promise.resolve();
+
+        var type = ROUTE_TRANSITIONS[targetRoute] || 'bar';
+
         return new Promise(function (resolve) {
-            var items = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block');
+            var items = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block, .cert-badge, .timeline__item');
             if (items.length === 0) { resolve(); return; }
 
             var tl = gsap.timeline({ onComplete: resolve });
+
+            // Fade out content
             tl.to(items, {
                 opacity: 0,
                 y: -20,
@@ -132,29 +211,62 @@
                 stagger: 0.02,
                 ease: 'power2.in'
             });
-            tl.fromTo(transitionBar,
-                { scaleX: 0 },
-                { scaleX: 1, duration: 0.35, ease: 'power3.inOut' },
-                '-=0.1'
-            );
+
+            if (type === 'clip') {
+                // Circle expand from center
+                tl.fromTo(transitionClip,
+                    { clipPath: 'circle(0% at 50% 50%)' },
+                    { clipPath: 'circle(75% at 50% 50%)', duration: 0.5, ease: 'power3.inOut' },
+                    '-=0.1'
+                );
+            } else if (type === 'wipe-left') {
+                // Horizontal bar sweep
+                tl.fromTo(transitionBar,
+                    { scaleX: 0, transformOrigin: 'left center' },
+                    { scaleX: 1, duration: 0.4, ease: 'power3.inOut' },
+                    '-=0.1'
+                );
+            } else {
+                // Default bar
+                tl.fromTo(transitionBar,
+                    { scaleX: 0, transformOrigin: 'center' },
+                    { scaleX: 1, duration: 0.35, ease: 'power3.inOut' },
+                    '-=0.1'
+                );
+            }
         });
     }
 
-    function transitionIn() {
+    function transitionIn(targetRoute) {
+        if (prefersReducedMotion) return;
+
+        var type = ROUTE_TRANSITIONS[targetRoute] || 'bar';
         var tl = gsap.timeline();
 
-        // Collapse the bar
-        tl.to(transitionBar, {
-            scaleX: 0,
-            duration: 0.3,
-            ease: 'power3.inOut',
-            onComplete: function () {
-                gsap.set(transitionBar, { scaleX: 0 });
-            }
-        });
+        if (type === 'clip') {
+            tl.to(transitionClip, {
+                clipPath: 'circle(0% at 50% 50%)',
+                duration: 0.4,
+                ease: 'power3.inOut'
+            });
+        } else if (type === 'wipe-left') {
+            tl.to(transitionBar, {
+                scaleX: 0,
+                transformOrigin: 'right center',
+                duration: 0.35,
+                ease: 'power3.inOut',
+                onComplete: function () { gsap.set(transitionBar, { scaleX: 0 }); }
+            });
+        } else {
+            tl.to(transitionBar, {
+                scaleX: 0,
+                duration: 0.3,
+                ease: 'power3.inOut',
+                onComplete: function () { gsap.set(transitionBar, { scaleX: 0 }); }
+            });
+        }
 
-        // Animate page items in
-        var items = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block');
+        var items = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block, .cert-badge, .timeline__item');
         tl.fromTo(items,
             { opacity: 0, y: 40 },
             {
@@ -176,7 +288,7 @@
     function getRouteFromHash() {
         var hash = window.location.hash || '#/';
         var route = hash.replace('#', '') || '/';
-        if (!ROUTES[route]) { route = '/'; }
+        if (!ROUTES[route]) { route = '/404'; }
         return route;
     }
 
@@ -189,18 +301,15 @@
         var template = document.getElementById(templateId);
         if (!template) return;
 
-        // Update title
         document.title = ROUTE_TITLES[route] || ROUTE_TITLES['/'];
         updateActiveNav(route);
 
         if (skipTransition || currentRoute === null) {
-            // First load or skip: no transition
             renderPage(template);
             currentRoute = route;
             if (skipTransition) {
                 animatePageEntrance();
             } else {
-                // Initial load: cinematic entrance
                 setTimeout(animatePageEntrance, 100);
             }
             return;
@@ -211,12 +320,16 @@
         isTransitioning = true;
         currentRoute = route;
 
-        // Kill existing ScrollTriggers
         ScrollTrigger.getAll().forEach(function (st) { st.kill(); });
+        stopMatrixCanvas();
 
-        transitionOut().then(function () {
+        transitionOut(route).then(function () {
             renderPage(template);
-            lenis.scrollTo(0, { immediate: true });
+            if (lenis) {
+                lenis.scrollTo(0, { immediate: true });
+            } else {
+                window.scrollTo(0, 0);
+            }
             handleNavScroll();
             animatePageEntrance();
 
@@ -233,27 +346,87 @@
     }
 
     function animatePageEntrance() {
+        if (prefersReducedMotion) {
+            // Just make everything visible immediately
+            var allItems = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block, .split-heading .char');
+            allItems.forEach(function (el) {
+                el.style.opacity = '1';
+                el.style.transform = 'none';
+            });
+            setupInteractions();
+            setupTerminal();
+            setupThreatFeed();
+            setupCardHoverGlow();
+            return;
+        }
+
         // Splitting.js for headings
         var splitTargets = app.querySelectorAll('.split-heading');
         splitTargets.forEach(function (el) {
             Splitting({ target: el, by: 'chars' });
         });
 
-        // Character animations
+        // Varied character animations based on page
+        var pageEl = app.querySelector('[data-page]');
+        var pageType = pageEl ? pageEl.getAttribute('data-page') : 'home';
         var chars = app.querySelectorAll('.split-heading .char');
+
         if (chars.length) {
-            gsap.fromTo(chars,
-                { opacity: 0, y: 60, rotation: 4 },
-                {
-                    opacity: 1,
-                    y: 0,
-                    rotation: 0,
-                    duration: 0.7,
-                    stagger: 0.025,
-                    ease: 'expo.out',
-                    delay: 0.3
-                }
-            );
+            if (pageType === 'work') {
+                // Glitch/scramble effect for work page
+                gsap.fromTo(chars,
+                    { opacity: 0, scale: 0.5, rotation: function () { return (Math.random() - 0.5) * 20; } },
+                    {
+                        opacity: 1,
+                        scale: 1,
+                        rotation: 0,
+                        duration: 0.5,
+                        stagger: { each: 0.02, from: 'random' },
+                        ease: 'back.out(1.5)',
+                        delay: 0.3
+                    }
+                );
+            } else if (pageType === 'about') {
+                // Clip-up line reveal for about page
+                gsap.fromTo(chars,
+                    { opacity: 0, y: '120%' },
+                    {
+                        opacity: 1,
+                        y: '0%',
+                        duration: 0.8,
+                        stagger: 0.015,
+                        ease: 'expo.out',
+                        delay: 0.3
+                    }
+                );
+            } else if (pageType === 'contact' || pageType === '404') {
+                // Fade in from scale for impact pages
+                gsap.fromTo(chars,
+                    { opacity: 0, scale: 1.4 },
+                    {
+                        opacity: 1,
+                        scale: 1,
+                        duration: 0.6,
+                        stagger: 0.02,
+                        ease: 'expo.out',
+                        delay: 0.3
+                    }
+                );
+            } else {
+                // Default: original char stagger
+                gsap.fromTo(chars,
+                    { opacity: 0, y: 60, rotation: 4 },
+                    {
+                        opacity: 1,
+                        y: 0,
+                        rotation: 0,
+                        duration: 0.7,
+                        stagger: 0.025,
+                        ease: 'expo.out',
+                        delay: 0.3
+                    }
+                );
+            }
         }
 
         // Page items stagger in
@@ -274,6 +447,11 @@
         setupScrollAnimations();
         setupCounters();
         setupInteractions();
+        setupTerminal();
+        setupThreatFeed();
+        setupMatrixCanvas();
+        setupParallaxElements();
+        setupCardHoverGlow();
 
         // Hero-specific entrance
         var heroMeta = app.querySelector('.hero__meta');
@@ -304,10 +482,11 @@
     }
 
     /* ----------------------------------------------------------
-       SCROLL-TRIGGERED ANIMATIONS (GSAP ScrollTrigger)
+       SCROLL-TRIGGERED ANIMATIONS
        ---------------------------------------------------------- */
     function setupScrollAnimations() {
-        // Parallax on hero grid
+        if (prefersReducedMotion) return;
+
         var bgGrid = app.querySelector('.hero__bg-grid');
         if (bgGrid) {
             gsap.to(bgGrid, {
@@ -322,7 +501,6 @@
             });
         }
 
-        // Parallax on crimson wash
         var wash = app.querySelector('.hero__crimson-wash');
         if (wash) {
             gsap.to(wash, {
@@ -338,7 +516,6 @@
             });
         }
 
-        // Stat blocks scale-in on scroll
         var statBlocks = app.querySelectorAll('.stat-block');
         if (statBlocks.length) {
             gsap.fromTo(statBlocks,
@@ -358,9 +535,8 @@
             );
         }
 
-        // Project cards — stagger reveal with scale
         var projectCards = app.querySelectorAll('.project-card');
-        projectCards.forEach(function (card, i) {
+        projectCards.forEach(function (card) {
             gsap.fromTo(card,
                 { opacity: 0, y: 60, scale: 0.96 },
                 {
@@ -378,7 +554,6 @@
             );
         });
 
-        // Capability cards
         var capCards = app.querySelectorAll('.cap-card');
         capCards.forEach(function (card, i) {
             gsap.fromTo(card,
@@ -398,7 +573,6 @@
             );
         });
 
-        // Trust items
         var trustItems = app.querySelectorAll('.trust-item');
         trustItems.forEach(function (item, i) {
             gsap.fromTo(item,
@@ -423,6 +597,8 @@
        COUNTER ANIMATION
        ---------------------------------------------------------- */
     function setupCounters() {
+        if (prefersReducedMotion) return;
+
         var counters = app.querySelectorAll('[data-count]');
         counters.forEach(function (el) {
             var target = parseInt(el.getAttribute('data-count'), 10);
@@ -449,8 +625,9 @@
         setupGlowGrid();
     }
 
-    // --- Magnetic Buttons ---
     function setupMagneticButtons() {
+        if (prefersReducedMotion) return;
+
         var wraps = app.querySelectorAll('.magnetic-wrap');
         wraps.forEach(function (wrap) {
             var btn = wrap.querySelector('.btn');
@@ -461,8 +638,8 @@
                 var x = e.clientX - rect.left - rect.width / 2;
                 var y = e.clientY - rect.top - rect.height / 2;
                 gsap.to(btn, {
-                    x: x * 0.25,
-                    y: y * 0.25,
+                    x: x * 0.35,
+                    y: y * 0.35,
                     duration: 0.3,
                     ease: 'power2.out'
                 });
@@ -479,8 +656,9 @@
         });
     }
 
-    // --- Project Card Tilt ---
     function setupCardTilt() {
+        if (prefersReducedMotion) return;
+
         var cards = app.querySelectorAll('.project-card');
         cards.forEach(function (card) {
             card.addEventListener('mousemove', function (e) {
@@ -512,7 +690,6 @@
         });
     }
 
-    // --- Cursor Glow on Capability Grid ---
     function setupGlowGrid() {
         var grid = app.querySelector('.glow-grid');
         if (!grid) return;
@@ -525,6 +702,376 @@
     }
 
     /* ----------------------------------------------------------
+       INTERACTIVE TERMINAL
+       ---------------------------------------------------------- */
+    var TERMINAL_COMMANDS = {
+        help: function () {
+            return [
+                'Available commands:',
+                '  whoami        — About me',
+                '  skills        — Core competencies',
+                '  certs         — Certifications',
+                '  contact       — Get in touch',
+                '  projects      — Selected work',
+                '  tools         — Primary toolkit',
+                '  clear         — Clear terminal',
+                '  help          — Show this message'
+            ].join('\n');
+        },
+        whoami: function () {
+            return 'Vineet Vishesh — Offensive Security Professional\n' +
+                   'Red team operator & penetration testing specialist\n' +
+                   'Based in India · Available for remote engagements worldwide\n' +
+                   '4+ years of controlled offensive validation across web, mobile, network, and cloud.';
+        },
+        skills: function () {
+            return [
+                'CORE COMPETENCIES',
+                '─────────────────────────────────',
+                '  [+] Red Team Operations      [+] Web App Pentesting',
+                '  [+] Mobile Security Testing   [+] OSINT & Reconnaissance',
+                '  [+] Network Infrastructure    [+] Cloud Security (AWS/Azure)',
+                '  [+] Exploit Development       [+] Adversary Simulation'
+            ].join('\n');
+        },
+        certs: function () {
+            return [
+                'CERTIFICATIONS',
+                '─────────────────────────────────',
+                '  [✓] CompTIA Security+           — Active (2024–2027)',
+                '  [✓] Burp Suite Certified Pract.  — Active (exp. 2026)',
+                '  [✓] Nessus Certified Prof.       — Active (exp. 2025)',
+                '  [~] OSCP                         — In Preparation'
+            ].join('\n');
+        },
+        contact: function () {
+            return [
+                'CONTACT',
+                '─────────────────────────────────',
+                '  Email:    vineetvishesh86@gmail.com',
+                '  LinkedIn: linkedin.com/in/vineet-vishesh-66ab95281',
+                '  GitHub:   github.com/vinne-1'
+            ].join('\n');
+        },
+        projects: function () {
+            return [
+                'SELECTED WORK',
+                '─────────────────────────────────',
+                '  01  Automated OSINT Pipeline Framework',
+                '      10K+ records/hr · 94% accuracy · 70% cost reduction',
+                '  02  Polymorphic Privilege Escalation Generator',
+                '      99.7% unique sigs · 0% detection · 89% success',
+                '  03  Enterprise Web App Assessments — 18 critical findings',
+                '  04  Mobile Application Security — 7 critical findings',
+                '  05  Network & Cloud Assessments — 5 networks, 3 providers'
+            ].join('\n');
+        },
+        tools: function () {
+            return [
+                'PRIMARY TOOLKIT',
+                '─────────────────────────────────',
+                '  Burp Suite Pro · Nmap · Metasploit · OWASP ZAP',
+                '  Nessus · SQLMap · MobSF · Frida · Wireshark',
+                '  Ghidra · Python · Bash · PowerShell · Docker · AWS'
+            ].join('\n');
+        }
+    };
+
+    function setupTerminal() {
+        var terminal = app.querySelector('.terminal');
+        if (!terminal) return;
+
+        var output = terminal.querySelector('.terminal__output');
+        var input = terminal.querySelector('.terminal__input');
+        if (!output || !input) return;
+
+        var cmdHistory = [];
+        var historyIndex = -1;
+
+        appendOutput(output, 'Welcome to vineet.sh \u2014 Type "help" for available commands.\n');
+
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                if (historyIndex < cmdHistory.length - 1) {
+                    historyIndex++;
+                    input.value = cmdHistory[cmdHistory.length - 1 - historyIndex];
+                }
+                return;
+            }
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                if (historyIndex > 0) {
+                    historyIndex--;
+                    input.value = cmdHistory[cmdHistory.length - 1 - historyIndex];
+                } else {
+                    historyIndex = -1;
+                    input.value = '';
+                }
+                return;
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                var partial = input.value.trim().toLowerCase();
+                if (!partial) return;
+                var matches = Object.keys(TERMINAL_COMMANDS).filter(function (k) {
+                    return k.indexOf(partial) === 0;
+                });
+                if (matches.length === 1) {
+                    input.value = matches[0];
+                } else if (matches.length > 1) {
+                    appendOutput(output, '\n' + matches.join('  '));
+                    output.scrollTop = output.scrollHeight;
+                }
+                return;
+            }
+            if (e.key === 'Enter') {
+                var cmd = input.value.trim().toLowerCase();
+                input.value = '';
+                historyIndex = -1;
+
+                if (!cmd) return;
+
+                cmdHistory.push(cmd);
+
+                appendOutput(output, '\n<span style="color:var(--crimson)">visitor@vineet</span>:<span style="color:var(--gray-300)">~</span>$ ' + escapeHtml(cmd));
+
+                if (cmd === 'clear') {
+                    output.innerHTML = '';
+                    return;
+                }
+
+                var handler = TERMINAL_COMMANDS[cmd];
+                if (handler) {
+                    appendOutput(output, '\n' + escapeHtml(handler()));
+                } else {
+                    appendOutput(output, '\nCommand not found: ' + escapeHtml(cmd) + '. Type "help" for available commands.');
+                }
+
+                output.scrollTop = output.scrollHeight;
+            }
+        });
+
+        terminal.addEventListener('click', function () {
+            input.focus();
+        });
+    }
+
+    function appendOutput(container, html) {
+        container.innerHTML += html;
+    }
+
+    function escapeHtml(str) {
+        var div = document.createElement('div');
+        div.appendChild(document.createTextNode(str));
+        return div.innerHTML;
+    }
+
+    /* ----------------------------------------------------------
+       MATRIX RAIN CANVAS
+       ---------------------------------------------------------- */
+    var matrixAnimFrame = null;
+
+    function setupMatrixCanvas() {
+        var canvas = app.querySelector('#heroMatrix');
+        if (!canvas || prefersReducedMotion) return;
+
+        var ctx = canvas.getContext('2d');
+        var parent = canvas.parentElement;
+
+        function resize() {
+            canvas.width = parent.offsetWidth;
+            canvas.height = parent.offsetHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
+
+        var fontSize = 14;
+        var columns = Math.floor(canvas.width / fontSize);
+        var drops = [];
+        for (var i = 0; i < columns; i++) {
+            drops[i] = Math.random() * -100;
+        }
+
+        var chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+
+        function draw() {
+            ctx.fillStyle = 'rgba(10, 10, 10, 0.06)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.font = fontSize + 'px monospace';
+
+            for (var j = 0; j < drops.length; j++) {
+                var char = chars[Math.floor(Math.random() * chars.length)];
+                var x = j * fontSize;
+                var y = drops[j] * fontSize;
+
+                // Crimson for leading char, dark red for trail
+                if (Math.random() > 0.97) {
+                    ctx.fillStyle = 'rgba(200, 16, 46, 0.9)';
+                } else {
+                    ctx.fillStyle = 'rgba(200, 16, 46, 0.15)';
+                }
+
+                ctx.fillText(char, x, y);
+
+                if (y > canvas.height && Math.random() > 0.98) {
+                    drops[j] = 0;
+                }
+                drops[j] += 0.5;
+            }
+
+            matrixAnimFrame = requestAnimationFrame(draw);
+        }
+
+        draw();
+    }
+
+    function stopMatrixCanvas() {
+        if (matrixAnimFrame) {
+            cancelAnimationFrame(matrixAnimFrame);
+            matrixAnimFrame = null;
+        }
+    }
+
+    /* ----------------------------------------------------------
+       PARALLAX ELEMENTS (About page 3D scroll)
+       ---------------------------------------------------------- */
+    function setupParallaxElements() {
+        if (prefersReducedMotion) return;
+
+        var parallaxItems = app.querySelectorAll('[data-parallax-y]');
+        parallaxItems.forEach(function (el) {
+            var yAmount = parseInt(el.getAttribute('data-parallax-y'), 10) || 20;
+            gsap.fromTo(el,
+                { y: 0 },
+                {
+                    y: -yAmount,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: el,
+                        start: 'top bottom',
+                        end: 'bottom top',
+                        scrub: 1.5
+                    }
+                }
+            );
+        });
+
+        // Timeline line draw effect
+        var timelineLine = app.querySelector('.timeline__line');
+        if (timelineLine) {
+            gsap.fromTo(timelineLine,
+                { scaleY: 0, transformOrigin: 'top' },
+                {
+                    scaleY: 1,
+                    ease: 'none',
+                    scrollTrigger: {
+                        trigger: '.timeline',
+                        start: 'top 80%',
+                        end: 'bottom 40%',
+                        scrub: 1
+                    }
+                }
+            );
+        }
+
+        // Timeline dots pulse in
+        var timelineDots = app.querySelectorAll('.timeline__dot');
+        timelineDots.forEach(function (dot) {
+            gsap.fromTo(dot,
+                { scale: 0 },
+                {
+                    scale: 1,
+                    duration: 0.4,
+                    ease: 'back.out(2)',
+                    scrollTrigger: {
+                        trigger: dot,
+                        start: 'top 85%',
+                        once: true
+                    }
+                }
+            );
+        });
+    }
+
+    /* ----------------------------------------------------------
+       ENHANCED CARD HOVER GLOW
+       ---------------------------------------------------------- */
+    function setupCardHoverGlow() {
+        var cards = app.querySelectorAll('.project-card');
+        cards.forEach(function (card) {
+            // Add glow element if not present
+            if (!card.querySelector('.project-card__hover-glow')) {
+                var glow = document.createElement('div');
+                glow.className = 'project-card__hover-glow';
+                card.appendChild(glow);
+            }
+
+            card.addEventListener('mousemove', function (e) {
+                var rect = card.getBoundingClientRect();
+                var x = ((e.clientX - rect.left) / rect.width) * 100;
+                var y = ((e.clientY - rect.top) / rect.height) * 100;
+                card.style.setProperty('--mouse-x', x + '%');
+                card.style.setProperty('--mouse-y', y + '%');
+            });
+        });
+    }
+
+    /* ----------------------------------------------------------
+       LIVE THREAT FEED
+       ---------------------------------------------------------- */
+    var THREAT_API = 'http://localhost:4000/api/cyber-news';
+
+    function setupThreatFeed() {
+        var feedEl = app.querySelector('#threatFeed');
+        if (!feedEl) return;
+
+        fetch(THREAT_API)
+            .then(function (res) {
+                if (!res.ok) throw new Error('Feed unavailable');
+                return res.json();
+            })
+            .then(function (data) {
+                var articles = (data.articles || []).slice(0, 6);
+                if (!articles.length) {
+                    feedEl.innerHTML = '<div class="threat-feed__fallback">No threat intelligence available at this time.</div>';
+                    return;
+                }
+
+                feedEl.innerHTML = articles.map(function (a) {
+                    var sevClass = 'threat-card__severity--' + (a.severity || 'medium').toLowerCase();
+                    var tags = (a.tags || []).map(function (t) {
+                        return '<span class="threat-card__tag">' + escapeHtml(t) + '</span>';
+                    }).join('');
+                    var summary = a.summary ? a.summary.substring(0, 160) : '';
+
+                    return '<div class="threat-card">' +
+                        '<div class="threat-card__header">' +
+                            '<span class="threat-card__severity ' + sevClass + '">' + escapeHtml(a.severity || 'Medium') + '</span>' +
+                            '<span class="threat-card__source">' + escapeHtml(a.source || '') + '</span>' +
+                        '</div>' +
+                        '<div class="threat-card__title"><a href="' + escapeHtml(a.url || '#') + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(a.title || 'Untitled') + '</a></div>' +
+                        (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
+                        (tags ? '<div class="threat-card__tags">' + tags + '</div>' : '') +
+                    '</div>';
+                }).join('');
+
+                // Animate cards in
+                if (!prefersReducedMotion) {
+                    var cards = feedEl.querySelectorAll('.threat-card');
+                    gsap.fromTo(cards,
+                        { opacity: 0, y: 20 },
+                        { opacity: 1, y: 0, duration: 0.5, stagger: 0.06, ease: 'expo.out' }
+                    );
+                }
+            })
+            .catch(function () {
+                feedEl.innerHTML = '<div class="threat-feed__fallback">Threat feed offline — start the backend with <code style="color:var(--crimson)">npm start</code> in the <code>backend/</code> directory.</div>';
+            });
+    }
+
+    /* ----------------------------------------------------------
        HASH CHANGE LISTENER
        ---------------------------------------------------------- */
     window.addEventListener('hashchange', function () {
@@ -532,7 +1079,6 @@
         loadPage(route, false);
     });
 
-    // Intercept route links for immediate response
     document.addEventListener('click', function (e) {
         var link = e.target.closest('[data-route]');
         if (!link) return;
@@ -540,23 +1086,62 @@
         var href = link.getAttribute('href');
         if (!href || href.charAt(0) !== '#') return;
 
-        // Let hashchange handle it, but close mobile menu
         closeMobile();
     });
+
+    /* ----------------------------------------------------------
+       PRELOADER
+       ---------------------------------------------------------- */
+    function runPreloader(callback) {
+        var preloader = document.getElementById('preloader');
+        var fill = document.getElementById('preloaderFill');
+        if (!preloader) { callback(); return; }
+
+        if (prefersReducedMotion) {
+            preloader.style.display = 'none';
+            callback();
+            return;
+        }
+
+        var logo = preloader.querySelector('.preloader__logo');
+        var barTrack = preloader.querySelector('.preloader__bar-track');
+        var tagline = preloader.querySelector('.preloader__tagline');
+
+        var tl = gsap.timeline({
+            onComplete: function () {
+                gsap.to(preloader, {
+                    opacity: 0,
+                    duration: 0.4,
+                    ease: 'power2.inOut',
+                    onComplete: function () {
+                        preloader.style.display = 'none';
+                        callback();
+                    }
+                });
+            }
+        });
+
+        tl.to(logo, { opacity: 1, duration: 0.5, ease: 'power2.out' })
+          .to(barTrack, { opacity: 1, duration: 0.3 }, '-=0.2')
+          .to(fill, { width: '100%', duration: 1.2, ease: 'power2.inOut' }, '-=0.1')
+          .to(tagline, { opacity: 1, duration: 0.4, ease: 'power2.out' }, '-=0.8')
+          .to({}, { duration: 0.3 }); // Brief pause
+    }
 
     /* ----------------------------------------------------------
        INIT
        ---------------------------------------------------------- */
     function init() {
-        var route = getRouteFromHash();
-        loadPage(route, false);
+        runPreloader(function () {
+            var route = getRouteFromHash();
+            loadPage(route, false);
 
-        // Reveal body
-        requestAnimationFrame(function () {
-            document.body.classList.add('ready');
+            requestAnimationFrame(function () {
+                document.body.classList.add('ready');
+            });
+
+            handleNavScroll();
         });
-
-        handleNavScroll();
     }
 
     if (document.readyState === 'loading') {

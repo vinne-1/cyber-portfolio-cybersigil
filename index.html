@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vineet Vishesh — Offensive Security</title>
     <meta name="description" content="Offensive security professional specializing in red team operations, web application assessments, and adversary simulation. Precision-driven penetration testing and vulnerability research.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Vineet Vishesh — Offensive Security">
+    <meta property="og:description" content="Red team operator and penetration testing specialist. Controlled offensive validation across web, mobile, network, and cloud attack surfaces.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vineet Vishesh — Offensive Security">
+    <meta name="twitter:description" content="Red team operator and penetration testing specialist.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='central' text-anchor='middle' fill='%23c8102e' font-family='system-ui' font-weight='700' font-size='20'%3Ev%3C/text%3E%3C/svg%3E">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +26,57 @@
 
     <!-- Design System -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vineet Vishesh",
+      "jobTitle": "Offensive Security Professional",
+      "description": "Red team operator and penetration testing specialist with 4+ years of controlled offensive validation.",
+      "url": "https://vineetvishesh.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/vineet-vishesh-66ab95281/",
+        "https://github.com/vinne-1"
+      ],
+      "knowsAbout": ["Penetration Testing", "Red Team Operations", "Web Application Security", "OSINT", "Cloud Security"],
+      "hasCredential": [
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "CompTIA Security+"},
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Burp Suite Certified Practitioner"},
+        {"@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Nessus Certified Professional"}
+      ]
+    }
+    </script>
 </head>
 <body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__logo">vineet<span>.</span></div>
+        <div class="preloader__bar-track">
+            <div class="preloader__bar-fill" id="preloaderFill"></div>
+        </div>
+        <div class="preloader__tagline">Offensive Security</div>
+    </div>
+
+    <!-- Film Grain Overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Skip to Content (a11y) -->
+    <a href="#app" class="skip-link">Skip to content</a>
 
     <!-- ============================================================
          NAVIGATION (persistent shell)
          ============================================================ -->
-    <nav class="nav" id="nav">
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
         <div class="nav__inner">
             <a href="#/" class="nav__logo" data-route>vineet<span>.</span></a>
 
@@ -58,21 +111,46 @@
     <div class="page-transition" id="pageTransition">
         <div class="page-transition__bar"></div>
     </div>
+    <div class="page-transition__clip" id="pageTransitionClip"></div>
 
     <!-- ============================================================
          SPA VIEW CONTAINER
          ============================================================ -->
-    <main id="app"></main>
+    <main id="app" role="main"></main>
 
     <!-- ============================================================
          FOOTER (persistent shell)
          ============================================================ -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer__inner">
-                <span class="footer__copy">&copy; 2025 Vineet Vishesh. All rights reserved.</span>
-                <div class="footer__links">
-                    <span class="footer__link t-mono" style="font-size:0.65rem;">India &middot; Remote Worldwide</span>
+            <!-- Footer CTA -->
+            <div class="footer__cta-block">
+                <h3 class="footer__cta-heading t-heading">Let's work together.</h3>
+                <p class="footer__cta-sub">Have a security challenge? I'm available for the right engagements.</p>
+                <div class="magnetic-wrap">
+                    <a href="#/contact" class="btn btn--primary" data-route>
+                        Get in Touch
+                        <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer__bottom">
+                <div class="footer__brand">
+                    <span class="footer__logo">vineet<span>.</span></span>
+                    <span class="footer__tagline t-mono">Offensive Security</span>
+                </div>
+                <div class="footer__meta">
+                    <div class="footer__links-row">
+                        <a href="https://www.linkedin.com/in/vineet-vishesh-66ab95281/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                        <a href="https://github.com/vinne-1" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+                        <a href="mailto:vineetvishesh86@gmail.com" class="footer__link">Email</a>
+                    </div>
+                    <div class="footer__bottom-row">
+                        <span class="footer__copy">&copy; 2025 Vineet Vishesh</span>
+                        <span class="footer__copy">India &middot; Remote Worldwide</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,6 +164,7 @@
     <!-- HOME -->
     <template id="page-home">
         <section class="hero section" data-page="home">
+            <canvas class="hero__matrix" id="heroMatrix" aria-hidden="true"></canvas>
             <div class="hero__bg-grid"></div>
             <div class="hero__crimson-wash"></div>
             <div class="container" style="position:relative; z-index:2;">
@@ -141,11 +220,55 @@
             </div>
         </div>
         <div class="section-divider"></div>
+
+        <!-- Interactive Terminal -->
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2rem;">
+                    <span class="t-label">Terminal</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem; max-width:600px;">Explore via command line.</h2>
+                </div>
+                <div class="terminal anim-item">
+                    <div class="terminal__header">
+                        <span class="terminal__dot" style="background:#ff5f57;"></span>
+                        <span class="terminal__dot" style="background:#febc2e;"></span>
+                        <span class="terminal__dot" style="background:#28c840;"></span>
+                        <span class="terminal__title">vineet.sh</span>
+                    </div>
+                    <div class="terminal__body">
+                        <div class="terminal__output"></div>
+                        <div class="terminal__prompt">
+                            <span style="color:var(--crimson)">visitor@vineet</span>:<span style="color:var(--gray-300)">~</span>$&nbsp;
+                            <input type="text" class="terminal__input" spellcheck="false" autocomplete="off" aria-label="Terminal command input" placeholder="type a command...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Threat Intelligence Feed -->
+        <div class="section-divider"></div>
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2rem;">
+                    <span class="t-label">Live Intelligence</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem; max-width:700px;">Threat landscape — real-time.</h2>
+                    <p class="t-body" style="margin-top:1rem; max-width:560px; color:var(--gray-300);">Aggregated from The Hacker News, Krebs on Security, Dark Reading, and CSO Online.</p>
+                </div>
+                <div class="threat-feed anim-item" id="threatFeed">
+                    <div class="threat-feed__loading">
+                        <span class="t-mono" style="font-size:0.75rem; color:var(--gray-400);">Fetching latest intelligence...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </template>
 
     <!-- ABOUT -->
     <template id="page-about">
-        <section class="section" data-page="about" style="padding-top:120px;">
+        <section class="section about-hero" data-page="about" style="padding-top:120px;">
             <div class="container">
                 <div style="max-width:900px;">
 
@@ -160,34 +283,123 @@
 
                     <div class="anim-item">
                         <p class="t-body-lg" style="margin-bottom:1.5rem;">
-                            I'm Vineet Vishesh �� a penetration testing specialist and offensive security researcher based in India. I operate across web applications, mobile platforms, network infrastructure, APIs, and cloud environments with a single objective: surface what others overlook.
+                            I'm Vineet Vishesh &mdash; a penetration testing specialist and offensive security researcher based in India. I operate across web applications, mobile platforms, network infrastructure, APIs, and cloud environments with a single objective: surface what others overlook.
                         </p>
                         <p class="t-body" style="margin-bottom:1.5rem;">
-                            Over 4+ years, I've conducted controlled offensive assessments for organizations across fintech, healthcare, e-commerce, and enterprise SaaS — delivering technical depth paired with executive-ready reporting. My work spans manual exploitation, automated pipeline development, OSINT reconnaissance, and adversary simulation.
+                            Over 4+ years, I've conducted controlled offensive assessments for organizations across fintech, healthcare, e-commerce, and enterprise SaaS &mdash; delivering technical depth paired with executive-ready reporting. My work spans manual exploitation, automated pipeline development, OSINT reconnaissance, and adversary simulation.
                         </p>
                         <p class="t-body">
-                            Currently preparing for OSCP certification while building advanced tooling for scalable offensive operations. Every engagement is operator-led, methodical, and designed to produce actionable outcomes — not checkbox compliance.
+                            Currently preparing for OSCP certification while building advanced tooling for scalable offensive operations. Every engagement is operator-led, methodical, and designed to produce actionable outcomes &mdash; not checkbox compliance.
                         </p>
                     </div>
 
                     <div class="anim-item" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; padding-top:3rem; margin-top:3rem; border-top:1px solid var(--border);">
-                        <div>
+                        <div class="about-pillar" data-parallax-y="20">
                             <span class="t-mono" style="color:var(--crimson);">01</span>
                             <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Operator-Led Testing</h4>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Manual exploitation first. Tools support the operator, not the other way around.</p>
                         </div>
-                        <div>
+                        <div class="about-pillar" data-parallax-y="40">
                             <span class="t-mono" style="color:var(--crimson);">02</span>
                             <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Business-Aligned Reporting</h4>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Technical findings translated to risk language executives understand and act on.</p>
                         </div>
-                        <div>
+                        <div class="about-pillar" data-parallax-y="60">
                             <span class="t-mono" style="color:var(--crimson);">03</span>
                             <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Continuous Sharpening</h4>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Active research, certification pursuit, and offensive tooling development.</p>
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <div class="section-divider"></div>
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:3rem;">
+                    <span class="t-label">Journey</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">The offensive path.</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__line"></div>
+                    <div class="timeline__item anim-item" data-parallax-y="15">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year t-mono">2020</div>
+                        <div class="timeline__content">
+                            <h4 class="timeline__title">Entered Cybersecurity</h4>
+                            <p class="timeline__text">Started in SOC operations and threat hunting. Built foundation in defensive security, incident analysis, and log correlation before transitioning to offensive work.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item anim-item" data-parallax-y="25">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year t-mono">2021</div>
+                        <div class="timeline__content">
+                            <h4 class="timeline__title">Shifted to Offensive Security</h4>
+                            <p class="timeline__text">Began penetration testing and vulnerability assessments. First client-facing security audits delivering remediation guidance across web and network infrastructure.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item anim-item" data-parallax-y="35">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year t-mono">2022</div>
+                        <div class="timeline__content">
+                            <h4 class="timeline__title">Independent VAPT Practice</h4>
+                            <p class="timeline__text">Launched freelance offensive security practice. Delivered assessments for fintech, healthcare, and enterprise SaaS clients. Developed automated OSINT pipeline tooling.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item anim-item" data-parallax-y="45">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year t-mono">2024</div>
+                        <div class="timeline__content">
+                            <h4 class="timeline__title">Certifications &amp; Research</h4>
+                            <p class="timeline__text">CompTIA Security+, Burp Suite Certified Practitioner, Nessus Certified Professional. Began OSCP preparation and advanced exploit research.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item anim-item" data-parallax-y="55">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__year t-mono">NOW</div>
+                        <div class="timeline__content">
+                            <h4 class="timeline__title">Building Forward</h4>
+                            <p class="timeline__text">67+ applications tested, 100+ critical findings, $8.4M in breach costs prevented. Pursuing OSCP and scaling offensive tooling for next-generation assessments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How I Work -->
+        <div class="section-divider"></div>
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:3rem;">
+                    <span class="t-label">Methodology</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">How I operate.</h2>
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap:2px;">
+                    <div class="cap-card anim-item" data-parallax-y="10">
+                        <div class="cap-card__number">01</div>
+                        <h3 class="cap-card__title">Reconnaissance</h3>
+                        <p class="cap-card__text">Comprehensive attack surface mapping. OSINT, subdomain enumeration, service fingerprinting, and technology identification before any active testing.</p>
+                    </div>
+                    <div class="cap-card anim-item" data-parallax-y="20">
+                        <div class="cap-card__number">02</div>
+                        <h3 class="cap-card__title">Exploitation</h3>
+                        <p class="cap-card__text">Manual-first approach to vulnerability discovery. Authentication bypass, injection attacks, business logic flaws, and privilege escalation chains.</p>
+                    </div>
+                    <div class="cap-card anim-item" data-parallax-y="30">
+                        <div class="cap-card__number">03</div>
+                        <h3 class="cap-card__title">Reporting</h3>
+                        <p class="cap-card__text">Dual-audience deliverables: technical depth for engineering teams, risk-prioritized executive summaries with clear remediation paths and business impact.</p>
+                    </div>
+                    <div class="cap-card anim-item" data-parallax-y="40">
+                        <div class="cap-card__number">04</div>
+                        <h3 class="cap-card__title">Remediation Support</h3>
+                        <p class="cap-card__text">Post-engagement verification testing. Validate fixes, retest vulnerabilities, and ensure remediation doesn't introduce new attack vectors.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -346,11 +558,35 @@
                             <div class="accent-bar" style="margin-top:1rem;"></div>
                             <h2 class="t-heading split-heading" style="margin-top:1.5rem;">Verified trust.</h2>
                         </div>
-                        <div style="margin-top:3rem;">
-                            <div class="trust-item anim-item"><div class="trust-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="trust-item__title">CompTIA Security+</div><div class="trust-item__meta">Active — Certified 2024 &middot; Expires 2027</div></div></div>
-                            <div class="trust-item anim-item"><div class="trust-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="trust-item__title">Burp Suite Certified Practitioner</div><div class="trust-item__meta">Active — Expires 2026</div></div></div>
-                            <div class="trust-item anim-item"><div class="trust-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="trust-item__title">Nessus Certified Professional</div><div class="trust-item__meta">Active — Expires 2025</div></div></div>
-                            <div class="trust-item anim-item"><div class="trust-item__icon" style="border-color:rgba(200,16,46,0.25);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="trust-item__title">OSCP <span style="color:var(--gray-400); font-weight:400; font-size:0.85rem;">— In Preparation</span></div><div class="trust-item__meta">Offensive Security Certified Professional</div></div></div>
+                        <div style="margin-top:3rem; display:grid; gap:2px;">
+                            <div class="cert-badge anim-item">
+                                <div class="cert-badge__icon">SEC+</div>
+                                <div class="cert-badge__info">
+                                    <div class="cert-badge__name">CompTIA Security+</div>
+                                    <div class="cert-badge__status"><span class="cert-badge__status-dot cert-badge__status-dot--active"></span>Active &middot; 2024–2027</div>
+                                </div>
+                            </div>
+                            <div class="cert-badge anim-item">
+                                <div class="cert-badge__icon">BSCP</div>
+                                <div class="cert-badge__info">
+                                    <div class="cert-badge__name">Burp Suite Certified Practitioner</div>
+                                    <div class="cert-badge__status"><span class="cert-badge__status-dot cert-badge__status-dot--active"></span>Active &middot; Exp. 2026</div>
+                                </div>
+                            </div>
+                            <div class="cert-badge anim-item">
+                                <div class="cert-badge__icon">NCP</div>
+                                <div class="cert-badge__info">
+                                    <div class="cert-badge__name">Nessus Certified Professional</div>
+                                    <div class="cert-badge__status"><span class="cert-badge__status-dot cert-badge__status-dot--active"></span>Active &middot; Exp. 2025</div>
+                                </div>
+                            </div>
+                            <div class="cert-badge anim-item">
+                                <div class="cert-badge__icon" style="border-color:rgba(200,16,46,0.3);">OSCP</div>
+                                <div class="cert-badge__info">
+                                    <div class="cert-badge__name">OSCP <span style="color:var(--gray-400); font-weight:400; font-size:0.8rem;">— In Preparation</span></div>
+                                    <div class="cert-badge__status"><span class="cert-badge__status-dot cert-badge__status-dot--prep"></span>Offensive Security Certified Professional</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -396,24 +632,30 @@
                 </div>
 
                 <!-- Testimonials -->
-                <div class="anim-item" style="margin-top:5rem; padding:clamp(2rem, 4vw, 3.5rem); background:var(--surface); border:1px solid var(--border);">
-                    <span class="t-caption" style="display:block; margin-bottom:2rem; color:var(--gray-400);">Client Impact — Selected Outcomes</span>
-                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:2rem;">
-                        <div>
-                            <p style="font-size:0.9rem; color:var(--gray-200); line-height:1.7; font-style:italic; margin-bottom:1rem;">"Identified 23 vulnerabilities including 3 critical RCE vectors our internal team missed entirely. Saved us from a potential $2.3M breach."</p>
-                            <p style="font-size:0.8rem; color:var(--white); font-weight:600;">Sarah Johnson</p>
-                            <p style="font-size:0.75rem; color:var(--gray-400);">CISO, TechCorp</p>
-                        </div>
-                        <div>
-                            <p style="font-size:0.9rem; color:var(--gray-200); line-height:1.7; font-style:italic; margin-bottom:1rem;">"The HIPAA compliance assessment was the most thorough we've experienced. 31 findings with clear remediation paths — all resolved within 60 days."</p>
-                            <p style="font-size:0.8rem; color:var(--white); font-weight:600;">Michael Chen</p>
-                            <p style="font-size:0.75rem; color:var(--gray-400);">CTO, HealthTech</p>
-                        </div>
-                        <div>
-                            <p style="font-size:0.9rem; color:var(--gray-200); line-height:1.7; font-style:italic; margin-bottom:1rem;">"The API security assessment uncovered 28 vulnerabilities across our payment infrastructure. Remediation prevented an estimated $950K in potential fraud."</p>
-                            <p style="font-size:0.8rem; color:var(--white); font-weight:600;">Lisa Park</p>
-                            <p style="font-size:0.75rem; color:var(--gray-400);">Security Manager, RetailMax</p>
-                        </div>
+                <div class="anim-item" style="margin-top:5rem;">
+                    <span class="t-caption" style="display:block; margin-bottom:2rem; color:var(--gray-400);">Client Impact &mdash; Selected Outcomes</span>
+                    <div class="testimonials-grid">
+                        <blockquote class="testimonial">
+                            <p class="testimonial__text">Identified 23 vulnerabilities including 3 critical RCE vectors our internal team missed entirely. Saved us from a potential $2.3M breach.</p>
+                            <footer class="testimonial__footer">
+                                <cite class="testimonial__name">Sarah Johnson</cite>
+                                <span class="testimonial__role">CISO, TechCorp</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="testimonial">
+                            <p class="testimonial__text">The HIPAA compliance assessment was the most thorough we've experienced. 31 findings with clear remediation paths &mdash; all resolved within 60 days.</p>
+                            <footer class="testimonial__footer">
+                                <cite class="testimonial__name">Michael Chen</cite>
+                                <span class="testimonial__role">CTO, HealthTech</span>
+                            </footer>
+                        </blockquote>
+                        <blockquote class="testimonial">
+                            <p class="testimonial__text">The API security assessment uncovered 28 vulnerabilities across our payment infrastructure. Remediation prevented an estimated $950K in potential fraud.</p>
+                            <footer class="testimonial__footer">
+                                <cite class="testimonial__name">Lisa Park</cite>
+                                <span class="testimonial__role">Security Manager, RetailMax</span>
+                            </footer>
+                        </blockquote>
                     </div>
                 </div>
 
@@ -443,17 +685,42 @@
                                 <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </a>
                         </div>
+                        <div class="magnetic-wrap">
+                            <a href="resume.pdf" download class="btn btn--outline">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                                Download Resume
+                            </a>
+                        </div>
                     </div>
                     <div class="anim-item" style="display:flex; gap:2.5rem;">
                         <a href="https://www.linkedin.com/in/vineet-vishesh-66ab95281/" target="_blank" rel="noopener noreferrer" class="nav__link" style="font-size:0.8rem;">LinkedIn</a>
-                        <a href="#" class="nav__link" style="font-size:0.8rem;">GitHub</a>
-                        <a href="#" class="nav__link" style="font-size:0.8rem;">Twitter / X</a>
+                        <a href="https://github.com/vinne-1" target="_blank" rel="noopener noreferrer" class="nav__link" style="font-size:0.8rem;">GitHub</a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="nav__link" style="font-size:0.8rem;">Twitter / X</a>
                     </div>
                 </div>
             </div>
         </section>
     </template>
 
+
+    <!-- 404 -->
+    <template id="page-404">
+        <section class="section" data-page="404" style="padding-top:120px; min-height:calc(100vh - 72px); display:flex; align-items:center;">
+            <div class="container" style="text-align:center;">
+                <div class="anim-item">
+                    <div class="t-display" style="font-size:clamp(6rem, 15vw, 12rem); color:var(--crimson); line-height:1; margin-bottom:1rem;">404</div>
+                    <h2 class="t-heading" style="margin-bottom:1.5rem;">Target not found.</h2>
+                    <p class="t-body" style="margin-bottom:2.5rem; color:var(--gray-300);">The page you're looking for doesn't exist or has been moved.</p>
+                    <div class="magnetic-wrap">
+                        <a href="#/" class="btn btn--primary" data-route>
+                            Return to Base
+                            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
 
     <!-- ============================================================
          LIBRARIES
