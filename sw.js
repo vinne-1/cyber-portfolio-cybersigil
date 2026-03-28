@@ -1,10 +1,14 @@
-var CACHE_NAME = 'vineet-portfolio-v1';
+var CACHE_NAME = 'vineet-portfolio-v2';
 var ASSETS = [
   './',
   './index.html',
   './style.css',
   './app.js',
-  './og-image.png'
+  './og-image.png',
+  'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
+  'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js',
+  'https://unpkg.com/lenis@1.1.18/dist/lenis.min.js',
+  'https://unpkg.com/splitting/dist/splitting.min.js'
 ];
 
 self.addEventListener('install', function (e) {

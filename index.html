@@ -134,7 +134,7 @@
                 <a href="#/contact" class="nav__cta" data-route>Get in Touch</a>
             </div>
 
-            <button class="nav__burger" id="navBurger" aria-label="Open navigation menu" aria-expanded="false">
+            <button class="nav__burger" id="navBurger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMobile">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -773,7 +773,7 @@
                 <div class="anim-item" style="margin-top:4rem; padding-top:2rem; border-top:1px solid var(--border);">
                     <span class="t-caption" style="display:block; margin-bottom:1.5rem;">Skill Proficiency</span>
                     <div class="skill-radar">
-                        <svg class="skill-radar__chart" viewBox="0 0 300 300" aria-label="Skill radar chart showing proficiency levels">
+                        <svg class="skill-radar__chart" viewBox="0 0 300 300" role="img" aria-label="Skill radar chart showing proficiency levels">
                             <!-- Grid rings -->
                             <polygon class="skill-radar__ring" points="150,30 253.9,87.5 253.9,202.5 150,260 46.1,202.5 46.1,87.5"/>
                             <polygon class="skill-radar__ring" points="150,60 228,105 228,185 150,230 72,185 72,105"/>
@@ -795,6 +795,7 @@
                             <text class="skill-radar__label" x="32" y="210" text-anchor="end">Infra</text>
                             <text class="skill-radar__label" x="32" y="85" text-anchor="end">Research</text>
                         </svg>
+                        <div class="sr-only">Red Team 90%, Web Apps 95%, Mobile 75%, OSINT 85%, Infrastructure 80%, Research 70%</div>
                     </div>
                 </div>
 
@@ -944,7 +945,7 @@
                             </a>
                         </div>
                         <div class="magnetic-wrap">
-                            <a href="resume.pdf" download="Vineet-Vishesh-Resume.pdf" type="application/pdf" class="btn btn--outline">
+                            <a href="resume.pdf" download="Vineet-Vishesh-Resume.pdf" class="btn btn--outline">
                                 <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                                 Download Resume
                             </a>

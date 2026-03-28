@@ -345,6 +345,15 @@ body::before {
 [data-theme="light"] .cap-card::after { opacity: 0.15; }
 [data-theme="light"] .nav__logo::before,
 [data-theme="light"] .nav__logo::after { opacity: 0.2; }
+[data-theme="light"] .threat-card { background: var(--surface-2); }
+[data-theme="light"] .threat-card__title a:hover { color: var(--crimson); }
+[data-theme="light"] .terminal { background: var(--surface-2); }
+[data-theme="light"] .terminal__input { color: var(--white); }
+[data-theme="light"] .cursor-dot { background: var(--crimson); }
+[data-theme="light"] .cursor-ring { border-color: var(--crimson); }
+[data-theme="light"] .transition-sigil { background: #ffffff; }
+[data-theme="light"] .preloader__sigil { color: var(--crimson); }
+[data-theme="light"] .grain-overlay { display: none; }
 
 @media (max-width: 768px) {
   .hero__sigil { width: 180px; right: 0; opacity: 0.05; }
@@ -1786,7 +1795,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Interactive Terminal --- */
 .terminal {
-  background: #0c0c0c;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
@@ -1987,7 +1996,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1;
   color: var(--crimson);
   opacity: 0.15;
-  font-family: Georgia, serif;
+  font-family: var(--font-serif);
   pointer-events: none;
 }
 .testimonial__text {
@@ -2239,6 +2248,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Utility --- */
 .text-crimson { color: var(--crimson); }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 /* --- Responsive --- */
 @media (max-width: 1024px) {
