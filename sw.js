@@ -20,9 +20,10 @@ self.addEventListener('install', function (e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll(ASSETS);
+    }).then(function () {
+      return self.skipWaiting();
     })
   );
-  self.skipWaiting();
 });
 
 self.addEventListener('activate', function (e) {
@@ -42,8 +43,8 @@ self.addEventListener('fetch', function (e) {
   if (e.request.mode === 'navigate') {
     e.respondWith(
       caches.match('./index.html').then(function (cached) {
-        // Refresh cache in background
-        var fetchPromise = fetch(e.request.url.split('?')[0].replace(/\/[^\/]*$/, '/'))
+        // Refresh index.html cache in background
+        var fetchPromise = fetch(self.registration.scope)
           .then(function (response) {
             if (response.ok) {
               var clone = response.clone();

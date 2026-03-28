@@ -335,6 +335,8 @@
 
         document.title = ROUTE_TITLES[route] || ROUTE_TITLES['/'];
         updateActiveNav(route);
+        var announcer = document.getElementById('routeAnnouncer');
+        if (announcer) announcer.textContent = document.title;
 
         if (skipTransition || currentRoute === null) {
             renderPage(template);

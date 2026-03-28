@@ -31,9 +31,12 @@
         (function(){
             var r = new URLSearchParams(window.location.search).get('p');
             if (r) {
-                var q = new URLSearchParams(window.location.search).get('q');
-                var url = '/cyber-portfolio' + decodeURIComponent(r) + (q ? '?' + decodeURIComponent(q) : '');
-                history.replaceState(null, '', url);
+                var decoded = decodeURIComponent(r);
+                if (/^\/[a-zA-Z0-9\/\-_]*$/.test(decoded)) {
+                    var q = new URLSearchParams(window.location.search).get('q');
+                    var url = '/cyber-portfolio' + decoded + (q ? '?' + decodeURIComponent(q) : '');
+                    history.replaceState(null, '', url);
+                }
             }
         })();
     </script>
@@ -165,6 +168,7 @@
          SPA VIEW CONTAINER
          ============================================================ -->
     <main id="app" role="main"></main>
+    <div id="routeAnnouncer" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 
     <!-- Back to Top -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
