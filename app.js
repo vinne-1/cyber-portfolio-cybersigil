@@ -1060,7 +1060,7 @@
 
                 cmdHistory.push(cmd);
 
-                appendOutput(output, '\n<span style="color:var(--crimson)">visitor@vineet</span>:<span style="color:var(--gray-300)">~</span>$ ' + escapeHtml(cmd));
+                appendPromptLine(output, cmd);
 
                 if (cmd === 'clear') {
                     output.innerHTML = '';
@@ -1069,9 +1069,9 @@
 
                 var handler = TERMINAL_COMMANDS[cmd];
                 if (handler) {
-                    appendOutput(output, '\n' + escapeHtml(handler()));
+                    appendOutput(output, handler());
                 } else {
-                    appendOutput(output, '\nCommand not found: ' + escapeHtml(cmd) + '. Type "help" for available commands.');
+                    appendOutput(output, 'Command not found: ' + cmd + '. Type "help" for available commands.');
                 }
 
                 output.scrollTop = output.scrollHeight;
@@ -1083,8 +1083,25 @@
         });
     }
 
-    function appendOutput(container, html) {
-        container.insertAdjacentHTML('beforeend', html);
+    function appendPromptLine(container, cmd) {
+        var line = document.createElement('div');
+        var user = document.createElement('span');
+        user.style.color = 'var(--crimson)';
+        user.textContent = 'visitor@vineet';
+        var sep = document.createElement('span');
+        sep.style.color = 'var(--gray-300)';
+        sep.textContent = ':~';
+        var dollar = document.createTextNode('$ ' + cmd);
+        line.appendChild(user);
+        line.appendChild(sep);
+        line.appendChild(dollar);
+        container.appendChild(line);
+    }
+
+    function appendOutput(container, text) {
+        var line = document.createElement('div');
+        line.textContent = text;
+        container.appendChild(line);
     }
 
     function escapeHtml(str) {
@@ -1098,10 +1115,10 @@
        ---------------------------------------------------------- */
     var matrixAnimFrame = null;
 
-    var isMobileViewport = window.innerWidth < 768;
+    function isMobileViewport() { return window.innerWidth < 768; }
 
     function setupMatrixCanvas() {
-        if (isMobileViewport) return;
+        if (isMobileViewport()) return;
         var canvas = app.querySelector('#heroMatrix');
         if (!canvas || prefersReducedMotion) return;
 
@@ -1179,7 +1196,7 @@
     var particleAnimFrame = null;
 
     function setupParticleNetwork() {
-        if (isMobileViewport) return;
+        if (isMobileViewport()) return;
         var canvas = app.querySelector('#heroParticles');
         if (!canvas || prefersReducedMotion) return;
 

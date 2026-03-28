@@ -8,7 +8,7 @@ var ASSETS = [
   'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js',
   'https://unpkg.com/lenis@1.1.18/dist/lenis.min.js',
-  'https://unpkg.com/splitting/dist/splitting.min.js'
+  'https://unpkg.com/splitting@1.0.6/dist/splitting.min.js'
 ];
 
 // Local assets that should always use network-first
