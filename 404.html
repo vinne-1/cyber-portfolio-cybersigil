@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script>
+        // GitHub Pages SPA redirect trick
+        // Converts path to a query param so index.html can restore it
+        var path = window.location.pathname;
+        var search = window.location.search;
+        window.location.replace(
+            window.location.origin + '/cyber-portfolio/?p=' +
+            encodeURIComponent(path.replace('/cyber-portfolio', '')) +
+            (search ? '&q=' + encodeURIComponent(search.slice(1)) : '')
+        );
+    </script>
+</head>
+<body>
+    <p>Redirecting&hellip;</p>
+</body>
+</html>

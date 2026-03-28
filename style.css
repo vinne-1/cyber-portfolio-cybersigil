@@ -1791,6 +1791,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   vertical-align: middle;
 }
 .cert-badge__status-dot--active { background: var(--status-active); }
+.cert-badge__status-dot--expired { background: var(--gray-400); }
+.cert-badge__icon--expired { opacity: 0.5; border-color: var(--gray-400) !important; }
 .cert-badge__status-dot--prep { background: var(--crimson); animation: pulse-dot 2s ease infinite; }
 
 /* --- Interactive Terminal --- */
@@ -2225,20 +2227,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* --- Accessibility --- */
 .skip-link {
   position: fixed;
-  top: -100%;
+  top: -9999px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10001;
   background: var(--crimson);
-  color: var(--white);
+  color: #fff;
   padding: 12px 24px;
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
-  transition: top 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
 }
-.skip-link:focus {
+.skip-link:focus,
+.skip-link:focus-visible {
   top: 12px;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 *:focus-visible {

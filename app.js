@@ -169,8 +169,10 @@
     }
 
     /* ----------------------------------------------------------
-       ROUTE CONFIG
+       ROUTE CONFIG (HTML5 History API)
        ---------------------------------------------------------- */
+    var BASE_PATH = '/cyber-portfolio';
+
     var ROUTES = {
         '/':               'page-home',
         '/about':          'page-about',
@@ -250,7 +252,8 @@
     function updateActiveNav(route) {
         document.querySelectorAll('.nav__link').forEach(function (link) {
             var href = link.getAttribute('href');
-            if (href === '#' + route) {
+            var linkRoute = href ? href.replace(BASE_PATH, '') || '/' : '';
+            if (linkRoute === route) {
                 link.classList.add('active');
             } else {
                 link.classList.remove('active');
@@ -307,11 +310,18 @@
     /* ----------------------------------------------------------
        ROUTER
        ---------------------------------------------------------- */
-    function getRouteFromHash() {
-        var hash = window.location.hash || '#/';
-        var route = hash.replace('#', '') || '/';
-        if (!ROUTES[route]) { route = '/404'; }
-        return route;
+    function getRouteFromPath() {
+        var path = window.location.pathname;
+        // Strip base path prefix
+        if (path.indexOf(BASE_PATH) === 0) {
+            path = path.slice(BASE_PATH.length) || '/';
+        }
+        // Normalize trailing slash
+        if (path !== '/' && path.charAt(path.length - 1) === '/') {
+            path = path.slice(0, -1);
+        }
+        if (!ROUTES[path]) { path = '/404'; }
+        return path;
     }
 
     function loadPage(route, skipTransition) {
@@ -1410,23 +1420,31 @@
     /* ----------------------------------------------------------
        HASH CHANGE LISTENER
        ---------------------------------------------------------- */
-    window.addEventListener('hashchange', function () {
-        var route = getRouteFromHash();
+    window.addEventListener('popstate', function () {
+        var route = getRouteFromPath();
         loadPage(route, false);
-        // Track SPA navigation in Umami
-        if (typeof umami !== 'undefined') {
-            umami.track(function (props) { return Object.assign(Object.assign({}, props), { url: window.location.pathname + window.location.hash }); });
-        }
     });
 
     document.addEventListener('click', function (e) {
         var link = e.target.closest('[data-route]');
         if (!link) return;
 
+        e.preventDefault();
         var href = link.getAttribute('href');
-        if (!href || href.charAt(0) !== '#') return;
+        if (!href) return;
 
         closeMobile();
+
+        // Push new state and load
+        if (href !== window.location.pathname) {
+            history.pushState(null, '', href);
+            var route = getRouteFromPath();
+            loadPage(route, false);
+            // Track SPA navigation in Umami
+            if (typeof umami !== 'undefined') {
+                umami.track(function (props) { return Object.assign(Object.assign({}, props), { url: window.location.pathname }); });
+            }
+        }
     });
 
     /* ----------------------------------------------------------
@@ -1487,7 +1505,7 @@
        ---------------------------------------------------------- */
     function init() {
         runPreloader(function () {
-            var route = getRouteFromHash();
+            var route = getRouteFromPath();
             loadPage(route, false);
 
             requestAnimationFrame(function () {
