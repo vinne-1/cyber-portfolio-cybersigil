@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineet Vishesh — Offensive Security</title>
+    <meta name="description" content="Offensive security professional specializing in red team operations, web application assessments, and adversary simulation. Precision-driven penetration testing and vulnerability research.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Splitting.js -->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
+
+    <!-- Design System -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         NAVIGATION (persistent shell)
+         ============================================================ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#/" class="nav__logo" data-route>vineet<span>.</span></a>
+
+            <ul class="nav__links">
+                <li><a href="#/about" class="nav__link" data-route>About</a></li>
+                <li><a href="#/work" class="nav__link" data-route>Work</a></li>
+                <li><a href="#/capabilities" class="nav__link" data-route>Capabilities</a></li>
+                <li><a href="#/credentials" class="nav__link" data-route>Credentials</a></li>
+            </ul>
+
+            <div class="nav__cta-wrap">
+                <a href="#/contact" class="nav__cta" data-route>Get in Touch</a>
+            </div>
+
+            <button class="nav__burger" id="navBurger" aria-label="Open navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="nav__mobile" id="navMobile">
+        <a href="#/" data-route>Home</a>
+        <a href="#/about" data-route>About</a>
+        <a href="#/work" data-route>Work</a>
+        <a href="#/capabilities" data-route>Capabilities</a>
+        <a href="#/credentials" data-route>Credentials</a>
+        <a href="#/contact" data-route>Contact</a>
+    </div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" id="pageTransition">
+        <div class="page-transition__bar"></div>
+    </div>
+
+    <!-- ============================================================
+         SPA VIEW CONTAINER
+         ============================================================ -->
+    <main id="app"></main>
+
+    <!-- ============================================================
+         FOOTER (persistent shell)
+         ============================================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <span class="footer__copy">&copy; 2025 Vineet Vishesh. All rights reserved.</span>
+                <div class="footer__links">
+                    <span class="footer__link t-mono" style="font-size:0.65rem;">India &middot; Remote Worldwide</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ============================================================
+         PAGE TEMPLATES
+         ============================================================ -->
+
+    <!-- HOME -->
+    <template id="page-home">
+        <section class="hero section" data-page="home">
+            <div class="hero__bg-grid"></div>
+            <div class="hero__crimson-wash"></div>
+            <div class="container" style="position:relative; z-index:2;">
+                <div class="hero__meta">
+                    <div class="hero__status">
+                        <span class="hero__status-dot"></span>
+                        Available for Engagements
+                    </div>
+                </div>
+                <h1 class="hero__headline t-display">
+                    <span class="line"><span class="line-inner">Offensive</span></span>
+                    <span class="line"><span class="line-inner">Security<span style="color:var(--crimson)">.</span></span></span>
+                    <span class="line"><span class="line-inner" style="color:var(--gray-400); font-size:0.55em; letter-spacing:-0.01em;">Presented with Precision</span></span>
+                </h1>
+                <p class="hero__sub">
+                    Red team operator and penetration testing specialist with 4+ years of controlled offensive validation across web, mobile, network, and cloud attack surfaces.
+                </p>
+                <div class="hero__cta-group">
+                    <div class="magnetic-wrap">
+                        <a href="#/work" class="btn btn--primary" data-route>
+                            View Selected Work
+                            <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                    <div class="magnetic-wrap">
+                        <a href="#/contact" class="btn btn--outline" data-route>Start a Conversation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span class="t-mono" style="writing-mode:vertical-rl; font-size:0.6rem; letter-spacing:0.15em; color:var(--gray-400);">SCROLL</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+        <div class="stats-row">
+            <div class="stat-block anim-item">
+                <div class="stat-block__value" data-count="67">0</div>
+                <div class="stat-block__label">Applications Tested</div>
+            </div>
+            <div class="stat-block anim-item">
+                <div class="stat-block__value">100<span>+</span></div>
+                <div class="stat-block__label">Critical Findings</div>
+            </div>
+            <div class="stat-block anim-item">
+                <div class="stat-block__value">$8.4<span>M</span></div>
+                <div class="stat-block__label">Breach Costs Prevented</div>
+            </div>
+            <div class="stat-block anim-item">
+                <div class="stat-block__value">95<span>%</span></div>
+                <div class="stat-block__label">Remediation Rate</div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </template>
+
+    <!-- ABOUT -->
+    <template id="page-about">
+        <section class="section" data-page="about" style="padding-top:120px;">
+            <div class="container">
+                <div style="max-width:900px;">
+
+                    <div class="anim-item">
+                        <span class="t-label">About</span>
+                        <div class="accent-bar" style="margin-top:1rem;"></div>
+                    </div>
+
+                    <h2 class="t-heading split-heading anim-item" style="margin-top:1.5rem; margin-bottom:2rem;">
+                        I find the vulnerabilities your defenses missed.
+                    </h2>
+
+                    <div class="anim-item">
+                        <p class="t-body-lg" style="margin-bottom:1.5rem;">
+                            I'm Vineet Vishesh �� a penetration testing specialist and offensive security researcher based in India. I operate across web applications, mobile platforms, network infrastructure, APIs, and cloud environments with a single objective: surface what others overlook.
+                        </p>
+                        <p class="t-body" style="margin-bottom:1.5rem;">
+                            Over 4+ years, I've conducted controlled offensive assessments for organizations across fintech, healthcare, e-commerce, and enterprise SaaS — delivering technical depth paired with executive-ready reporting. My work spans manual exploitation, automated pipeline development, OSINT reconnaissance, and adversary simulation.
+                        </p>
+                        <p class="t-body">
+                            Currently preparing for OSCP certification while building advanced tooling for scalable offensive operations. Every engagement is operator-led, methodical, and designed to produce actionable outcomes — not checkbox compliance.
+                        </p>
+                    </div>
+
+                    <div class="anim-item" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; padding-top:3rem; margin-top:3rem; border-top:1px solid var(--border);">
+                        <div>
+                            <span class="t-mono" style="color:var(--crimson);">01</span>
+                            <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Operator-Led Testing</h4>
+                            <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Manual exploitation first. Tools support the operator, not the other way around.</p>
+                        </div>
+                        <div>
+                            <span class="t-mono" style="color:var(--crimson);">02</span>
+                            <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Business-Aligned Reporting</h4>
+                            <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Technical findings translated to risk language executives understand and act on.</p>
+                        </div>
+                        <div>
+                            <span class="t-mono" style="color:var(--crimson);">03</span>
+                            <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Continuous Sharpening</h4>
+                            <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Active research, certification pursuit, and offensive tooling development.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- WORK -->
+    <template id="page-work">
+        <section class="section" data-page="work" style="padding-top:120px;">
+            <div class="container">
+
+                <div class="anim-item" style="margin-bottom:4rem;">
+                    <span class="t-label">Selected Work</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">
+                        Curated offensive engagements.
+                    </h2>
+                </div>
+
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 500px), 1fr)); gap:2px;">
+                    <!-- OSINT Pipeline -->
+                    <div class="project-card anim-item">
+                        <div class="project-card__image">
+                            <div class="project-card__image-overlay"></div>
+                            <div class="project-card__image-inner">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__number">01 — Intelligence</div>
+                            <h3 class="project-card__title">Automated OSINT Pipeline Framework</h3>
+                            <p class="project-card__desc">Scalable intelligence gathering system processing 10,000+ records per hour from 15+ data sources with real-time entity extraction, correlation, and threat scoring.</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">Python</span>
+                                <span class="project-card__tag">Scrapy</span>
+                                <span class="project-card__tag">Elasticsearch</span>
+                                <span class="project-card__tag">Docker</span>
+                                <span class="project-card__tag">AWS Lambda</span>
+                            </div>
+                            <div class="project-card__metrics">
+                                <div><div class="project-card__metric-value">10K+</div><div class="project-card__metric-label">Records / Hour</div></div>
+                                <div><div class="project-card__metric-value">94%</div><div class="project-card__metric-label">Accuracy</div></div>
+                                <div><div class="project-card__metric-value">70%</div><div class="project-card__metric-label">Cost Reduction</div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Polymorphic Generator -->
+                    <div class="project-card anim-item">
+                        <div class="project-card__image">
+                            <div class="project-card__image-overlay"></div>
+                            <div class="project-card__image-inner">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__number">02 — Research</div>
+                            <h3 class="project-card__title">Polymorphic Privilege Escalation Generator</h3>
+                            <p class="project-card__desc">Advanced research tool generating unique privilege escalation payloads with code mutation engine, anti-analysis capabilities, and 12+ escalation techniques for authorized security validation.</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">Python</span>
+                                <span class="project-card__tag">C++</span>
+                                <span class="project-card__tag">Assembly</span>
+                                <span class="project-card__tag">Windows API</span>
+                            </div>
+                            <div class="project-card__metrics">
+                                <div><div class="project-card__metric-value">99.7%</div><div class="project-card__metric-label">Unique Signatures</div></div>
+                                <div><div class="project-card__metric-value">0%</div><div class="project-card__metric-label">Detection Rate</div></div>
+                                <div><div class="project-card__metric-value">89%</div><div class="project-card__metric-label">Success Rate</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary cards -->
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap:2px; margin-top:2px;">
+                    <div class="project-card anim-item">
+                        <div class="project-card__body">
+                            <div class="project-card__number">03 — Web Application</div>
+                            <h3 class="project-card__title" style="font-size:1.15rem;">Enterprise Web App Assessments</h3>
+                            <p class="project-card__desc" style="font-size:0.9rem;">Comprehensive penetration testing across 10+ web applications. Identified SQL injection, XSS, CSRF, and RCE vectors in production environments.</p>
+                            <div class="project-card__metrics">
+                                <div><div class="project-card__metric-value">18</div><div class="project-card__metric-label">Critical Issues</div></div>
+                                <div><div class="project-card__metric-value">10</div><div class="project-card__metric-label">Apps Tested</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card anim-item">
+                        <div class="project-card__body">
+                            <div class="project-card__number">04 — Mobile</div>
+                            <h3 class="project-card__title" style="font-size:1.15rem;">Mobile Application Security</h3>
+                            <p class="project-card__desc" style="font-size:0.9rem;">Security assessments across Android and iOS platforms including runtime manipulation, API interception, binary analysis, and insecure data storage.</p>
+                            <div class="project-card__metrics">
+                                <div><div class="project-card__metric-value">7</div><div class="project-card__metric-label">Critical Issues</div></div>
+                                <div><div class="project-card__metric-value">4</div><div class="project-card__metric-label">Apps Tested</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card anim-item">
+                        <div class="project-card__body">
+                            <div class="project-card__number">05 — Infrastructure</div>
+                            <h3 class="project-card__title" style="font-size:1.15rem;">Network & Cloud Assessments</h3>
+                            <p class="project-card__desc" style="font-size:0.9rem;">Infrastructure penetration testing across corporate networks and cloud environments. AWS, multi-provider reviews, and 50+ host reconnaissance.</p>
+                            <div class="project-card__metrics">
+                                <div><div class="project-card__metric-value">5</div><div class="project-card__metric-label">Networks</div></div>
+                                <div><div class="project-card__metric-value">3</div><div class="project-card__metric-label">Cloud Providers</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+
+    <!-- CAPABILITIES -->
+    <template id="page-capabilities">
+        <section class="section" data-page="capabilities" style="padding-top:120px;">
+            <div class="container">
+
+                <div class="anim-item" style="margin-bottom:4rem;">
+                    <span class="t-label">Capabilities</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem; max-width:700px;">Controlled offensive operations.</h2>
+                </div>
+
+                <div class="glow-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap:2px;">
+                    <div class="cap-card anim-item"><div class="cap-card__number">01</div><h3 class="cap-card__title">Red Team Operations</h3><p class="cap-card__text">Full-scope adversary simulation from initial access through lateral movement and objective completion. Realistic threat emulation to validate detection and response capabilities.</p></div>
+                    <div class="cap-card anim-item"><div class="cap-card__number">02</div><h3 class="cap-card__title">Web App Assessments</h3><p class="cap-card__text">Deep-dive manual testing of web applications for OWASP Top 10 and beyond. SQL injection, XSS, SSRF, authentication bypass, business logic abuse, and API-level exploitation.</p></div>
+                    <div class="cap-card anim-item"><div class="cap-card__number">03</div><h3 class="cap-card__title">Mobile Security Testing</h3><p class="cap-card__text">Android and iOS security assessments including static/dynamic analysis, runtime instrumentation, certificate pinning bypass, and insecure storage identification.</p></div>
+                    <div class="cap-card anim-item"><div class="cap-card__number">04</div><h3 class="cap-card__title">OSINT & Reconnaissance</h3><p class="cap-card__text">Automated and manual intelligence gathering pipelines. Attack surface mapping, data exposure identification, credential intelligence, and organizational footprinting.</p></div>
+                    <div class="cap-card anim-item"><div class="cap-card__number">05</div><h3 class="cap-card__title">Infrastructure Penetration</h3><p class="cap-card__text">Network and cloud infrastructure assessments including service enumeration, privilege escalation, Active Directory attacks, and cloud misconfigurations across AWS and Azure.</p></div>
+                    <div class="cap-card anim-item"><div class="cap-card__number">06</div><h3 class="cap-card__title">Security Research</h3><p class="cap-card__text">Offensive tool development, vulnerability research, exploit validation, and evasion technique analysis. Building custom tooling for scalable security operations.</p></div>
+                </div>
+
+                <div class="anim-item" style="margin-top:4rem; padding-top:2rem; border-top:1px solid var(--border);">
+                    <span class="t-caption" style="display:block; margin-bottom:1.5rem;">Primary Toolkit</span>
+                    <div style="display:flex; flex-wrap:wrap; gap:12px;">
+                        <span class="project-card__tag">Burp Suite Pro</span><span class="project-card__tag">Nmap</span><span class="project-card__tag">Metasploit</span><span class="project-card__tag">OWASP ZAP</span><span class="project-card__tag">Nessus</span><span class="project-card__tag">SQLMap</span><span class="project-card__tag">MobSF</span><span class="project-card__tag">Frida</span><span class="project-card__tag">Wireshark</span><span class="project-card__tag">Ghidra</span><span class="project-card__tag">Python</span><span class="project-card__tag">Bash</span><span class="project-card__tag">PowerShell</span><span class="project-card__tag">Docker</span><span class="project-card__tag">AWS</span><span class="project-card__tag">Elasticsearch</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+
+    <!-- CREDENTIALS -->
+    <template id="page-credentials">
+        <section class="section" data-page="credentials" style="padding-top:120px;">
+            <div class="container">
+
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem, 6vw, 8rem); align-items:start;" class="trust-grid">
+                    <!-- Left: Certifications -->
+                    <div>
+                        <div class="anim-item">
+                            <span class="t-label">Credentials</span>
+                            <div class="accent-bar" style="margin-top:1rem;"></div>
+                            <h2 class="t-heading split-heading" style="margin-top:1.5rem;">Verified trust.</h2>
+                        </div>
+                        <div style="margin-top:3rem;">
+                            <div class="trust-item anim-item"><div class="trust-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="trust-item__title">CompTIA Security+</div><div class="trust-item__meta">Active — Certified 2024 &middot; Expires 2027</div></div></div>
+                            <div class="trust-item anim-item"><div class="trust-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="trust-item__title">Burp Suite Certified Practitioner</div><div class="trust-item__meta">Active — Expires 2026</div></div></div>
+                            <div class="trust-item anim-item"><div class="trust-item__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div><div class="trust-item__title">Nessus Certified Professional</div><div class="trust-item__meta">Active — Expires 2025</div></div></div>
+                            <div class="trust-item anim-item"><div class="trust-item__icon" style="border-color:rgba(200,16,46,0.25);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><div><div class="trust-item__title">OSCP <span style="color:var(--gray-400); font-weight:400; font-size:0.85rem;">— In Preparation</span></div><div class="trust-item__meta">Offensive Security Certified Professional</div></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Experience -->
+                    <div>
+                        <div class="anim-item" style="margin-bottom:3rem;">
+                            <span class="t-label">Experience</span>
+                            <div class="accent-bar" style="margin-top:1rem;"></div>
+                        </div>
+
+                        <div class="anim-item" style="padding:1.5rem 0; border-bottom:1px solid var(--border);">
+                            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.5rem; flex-wrap:wrap; gap:0.5rem;">
+                                <h4 style="color:var(--white); font-weight:600; font-size:1rem;">Cybersecurity Analyst</h4>
+                                <span class="t-mono" style="font-size:0.7rem;">2022 — Present</span>
+                            </div>
+                            <p style="font-size:0.85rem; color:var(--gray-300); margin-bottom:0.5rem;">Freelance & Consulting</p>
+                            <p style="font-size:0.85rem; color:var(--gray-400); line-height:1.6;">VAPT specialist delivering offensive assessments for fintech, healthcare, and enterprise clients. OSINT pipeline development and security tooling.</p>
+                        </div>
+                        <div class="anim-item" style="padding:1.5rem 0; border-bottom:1px solid var(--border);">
+                            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.5rem; flex-wrap:wrap; gap:0.5rem;">
+                                <h4 style="color:var(--white); font-weight:600; font-size:1rem;">Security Consultant</h4>
+                                <span class="t-mono" style="font-size:0.7rem;">2021 — 2022</span>
+                            </div>
+                            <p style="font-size:0.85rem; color:var(--gray-300); margin-bottom:0.5rem;">Tech Security Solutions</p>
+                            <p style="font-size:0.85rem; color:var(--gray-400); line-height:1.6;">Penetration testing and security audit delivery. Client-facing vulnerability assessment reporting and remediation guidance.</p>
+                        </div>
+                        <div class="anim-item" style="padding:1.5rem 0; border-bottom:1px solid var(--border);">
+                            <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:0.5rem; flex-wrap:wrap; gap:0.5rem;">
+                                <h4 style="color:var(--white); font-weight:600; font-size:1rem;">Junior Security Analyst</h4>
+                                <span class="t-mono" style="font-size:0.7rem;">2020 — 2021</span>
+                            </div>
+                            <p style="font-size:0.85rem; color:var(--gray-300); margin-bottom:0.5rem;">Cyber Defense Corp</p>
+                            <p style="font-size:0.85rem; color:var(--gray-400); line-height:1.6;">SOC operations, threat hunting, and incident analysis. Foundation in defensive security before transitioning to offensive.</p>
+                        </div>
+
+                        <div class="anim-item" style="margin-top:2.5rem;">
+                            <span class="t-caption" style="display:block; margin-bottom:1rem;">Sectors Served</span>
+                            <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                                <span class="project-card__tag">Fintech</span><span class="project-card__tag">Healthcare</span><span class="project-card__tag">E-Commerce</span><span class="project-card__tag">Enterprise SaaS</span><span class="project-card__tag">Banking</span><span class="project-card__tag">Government</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonials -->
+                <div class="anim-item" style="margin-top:5rem; padding:clamp(2rem, 4vw, 3.5rem); background:var(--surface); border:1px solid var(--border);">
+                    <span class="t-caption" style="display:block; margin-bottom:2rem; color:var(--gray-400);">Client Impact — Selected Outcomes</span>
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:2rem;">
+                        <div>
+                            <p style="font-size:0.9rem; color:var(--gray-200); line-height:1.7; font-style:italic; margin-bottom:1rem;">"Identified 23 vulnerabilities including 3 critical RCE vectors our internal team missed entirely. Saved us from a potential $2.3M breach."</p>
+                            <p style="font-size:0.8rem; color:var(--white); font-weight:600;">Sarah Johnson</p>
+                            <p style="font-size:0.75rem; color:var(--gray-400);">CISO, TechCorp</p>
+                        </div>
+                        <div>
+                            <p style="font-size:0.9rem; color:var(--gray-200); line-height:1.7; font-style:italic; margin-bottom:1rem;">"The HIPAA compliance assessment was the most thorough we've experienced. 31 findings with clear remediation paths — all resolved within 60 days."</p>
+                            <p style="font-size:0.8rem; color:var(--white); font-weight:600;">Michael Chen</p>
+                            <p style="font-size:0.75rem; color:var(--gray-400);">CTO, HealthTech</p>
+                        </div>
+                        <div>
+                            <p style="font-size:0.9rem; color:var(--gray-200); line-height:1.7; font-style:italic; margin-bottom:1rem;">"The API security assessment uncovered 28 vulnerabilities across our payment infrastructure. Remediation prevented an estimated $950K in potential fraud."</p>
+                            <p style="font-size:0.8rem; color:var(--white); font-weight:600;">Lisa Park</p>
+                            <p style="font-size:0.75rem; color:var(--gray-400);">Security Manager, RetailMax</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </template>
+
+    <!-- CONTACT -->
+    <template id="page-contact">
+        <section class="section contact-section" data-page="contact" style="padding-top:120px; min-height:calc(100vh - 72px); display:flex; align-items:center;">
+            <div class="container">
+                <div style="max-width:700px;">
+                    <div class="anim-item">
+                        <span class="t-label">Contact</span>
+                        <div class="accent-bar" style="margin-top:1rem;"></div>
+                    </div>
+                    <h2 class="t-heading split-heading anim-item" style="margin-top:1.5rem;">
+                        Start a conversation.
+                    </h2>
+                    <p class="t-body-lg anim-item" style="margin-top:1.5rem; margin-bottom:3rem;">
+                        Whether you need a controlled offensive assessment, an independent security review, or want to discuss a red team engagement — I'm available for the right projects.
+                    </p>
+                    <div class="anim-item" style="display:flex; gap:1.5rem; margin-bottom:4rem; flex-wrap:wrap;">
+                        <div class="magnetic-wrap">
+                            <a href="mailto:vineetvishesh86@gmail.com" class="btn btn--primary">
+                                vineetvishesh86@gmail.com
+                                <svg class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="anim-item" style="display:flex; gap:2.5rem;">
+                        <a href="https://www.linkedin.com/in/vineet-vishesh-66ab95281/" target="_blank" rel="noopener noreferrer" class="nav__link" style="font-size:0.8rem;">LinkedIn</a>
+                        <a href="#" class="nav__link" style="font-size:0.8rem;">GitHub</a>
+                        <a href="#" class="nav__link" style="font-size:0.8rem;">Twitter / X</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+
+    <!-- ============================================================
+         LIBRARIES
+         ============================================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+
+    <!-- App -->
+    <script src="app.js"></script>
+
+</body>
+</html>
