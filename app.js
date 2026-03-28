@@ -1055,7 +1055,7 @@
        ---------------------------------------------------------- */
     var THREAT_API = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:4000/api/cyber-news'
-        : 'https://cyber-portfolio-api.onrender.com/api/cyber-news';
+        : 'https://cyber-portfolio-hcxt.onrender.com/api/cyber-news';
 
     function setupThreatFeed() {
         var feedEl = app.querySelector('#threatFeed');
