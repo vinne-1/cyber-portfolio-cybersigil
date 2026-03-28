@@ -29,7 +29,7 @@
   --white:       #e8e8e8;
   --gray-100:    #c0c0c0;
   --gray-200:    #8a8a8a;
-  --gray-300:    #5a5a5a;
+  --gray-300:    #7a7a7a;
   --gray-400:    #3a3a3a;
   --gray-500:    #252525;
 
@@ -112,6 +112,8 @@ body::before {
     drop-shadow(0 0 3px rgba(165, 13, 34, 0.7))
     drop-shadow(0 0 8px rgba(165, 13, 34, 0.4))
     drop-shadow(0 0 20px rgba(165, 13, 34, 0.15));
+  will-change: filter;
+  contain: layout style;
 }
 .sigil--draw {
   stroke-dasharray: 800;
@@ -916,18 +918,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: -1px;
   border-radius: inherit;
-  background: conic-gradient(from var(--border-angle), transparent 40%, var(--crimson) 50%, transparent 60%);
   z-index: -1;
   opacity: 0;
   transition: opacity 0.4s ease;
-  --border-angle: 0deg;
 }
-.project-card:hover::after {
-  opacity: 1;
-  animation: rotateBorder 3s linear infinite;
-}
-@keyframes rotateBorder {
-  to { --border-angle: 360deg; }
+@supports (background: conic-gradient(from 0deg, red, blue)) {
+  .project-card::after {
+    background: conic-gradient(from var(--border-angle, 0deg), transparent 40%, var(--crimson) 50%, transparent 60%);
+  }
+  .project-card:hover::after {
+    opacity: 1;
+    animation: rotateBorder 3s linear infinite;
+  }
+  @keyframes rotateBorder {
+    to { --border-angle: 360deg; }
+  }
 }
 .project-card:hover {
   will-change: transform;
@@ -1521,7 +1526,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+.preloader__sigil {
+  width: 120px;
+  height: 120px;
+  color: var(--crimson);
+}
+.preloader__sigil-path {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+}
+.preloader__sigil-dot {
+  opacity: 0;
 }
 .preloader__logo {
   font-size: 1.5rem;
@@ -1531,29 +1548,53 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   opacity: 0;
 }
 .preloader__logo span { color: var(--crimson); }
-.preloader__bar-track {
-  width: 120px;
-  height: 2px;
-  background: var(--border);
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-}
-.preloader__bar-fill {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0%;
-  background: var(--crimson);
-}
 .preloader__tagline {
   font-family: var(--font-mono);
   font-size: 0.65rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--gray-400);
+  color: var(--gray-300);
   opacity: 0;
+}
+
+/* --- Page Transition Sigil Flash --- */
+.transition-sigil {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--black);
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.transition-sigil svg {
+  width: 60px;
+  height: 60px;
+  color: var(--crimson);
+  opacity: 0.6;
+}
+
+/* --- Custom Scrollbar --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--crimson-dark);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--crimson);
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--crimson-dark) var(--black);
 }
 
 /* --- Live Threat Feed --- */
@@ -1794,6 +1835,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-mono);
   font-size: 0.8rem;
   caret-color: var(--crimson);
+}
+.terminal__input:focus-visible {
+  outline: 1px solid var(--crimson);
+  outline-offset: 2px;
 }
 .terminal__input::placeholder {
   color: var(--gray-500);

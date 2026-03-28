@@ -237,17 +237,46 @@
     /* ----------------------------------------------------------
        PAGE TRANSITIONS — Per-Route Variants
        ---------------------------------------------------------- */
+    var transitionSigil = document.getElementById('transitionSigil');
+
     function transitionOut() {
         if (prefersReducedMotion) return Promise.resolve();
 
         return new Promise(function (resolve) {
-            gsap.to(app, {
+            var tl = gsap.timeline({ onComplete: resolve });
+
+            // Fade out current page
+            tl.to(app, {
                 opacity: 0,
                 y: -15,
-                duration: 0.3,
-                ease: 'power2.in',
-                onComplete: resolve
+                duration: 0.25,
+                ease: 'power2.in'
             });
+
+            // Flash the sigil overlay
+            if (transitionSigil) {
+                tl.set(transitionSigil, { visibility: 'visible' }, 0.1)
+                  .fromTo(transitionSigil, { opacity: 0 }, {
+                      opacity: 1,
+                      duration: 0.15,
+                      ease: 'power2.in'
+                  }, 0.1)
+                  .fromTo(transitionSigil.querySelector('svg'), {
+                      scale: 0.6,
+                      rotation: -45
+                  }, {
+                      scale: 1,
+                      rotation: 0,
+                      duration: 0.3,
+                      ease: 'expo.out'
+                  }, 0.1)
+                  .to(transitionSigil, {
+                      opacity: 0,
+                      duration: 0.2,
+                      ease: 'power2.out'
+                  }, '+=0.05')
+                  .set(transitionSigil, { visibility: 'hidden' });
+            }
         });
     }
 
@@ -751,7 +780,7 @@
         // Line-by-line clip reveal for body text
         var bodyTexts = app.querySelectorAll('.t-body-lg');
         bodyTexts.forEach(function (el) {
-            var lines = el.textContent.split(/(?<=[.!?])\s+/);
+            var lines = el.textContent.match(/[^.!?]*[.!?]+[\s]*/g) || [el.textContent];
             if (lines.length < 2) return;
             el.innerHTML = '';
             lines.forEach(function (line) {
@@ -813,7 +842,6 @@
        ---------------------------------------------------------- */
     function setupInteractions() {
         setupMagneticButtons();
-        setupCardTilt();
         setupGlowGrid();
     }
 
@@ -843,40 +871,6 @@
                     y: 0,
                     duration: 0.6,
                     ease: 'elastic.out(1, 0.4)'
-                });
-            });
-        });
-    }
-
-    function setupCardTilt() {
-        if (prefersReducedMotion) return;
-
-        var cards = app.querySelectorAll('.project-card');
-        cards.forEach(function (card) {
-            card.addEventListener('mousemove', function (e) {
-                var rect = card.getBoundingClientRect();
-                var x = e.clientX - rect.left;
-                var y = e.clientY - rect.top;
-                var cx = rect.width / 2;
-                var cy = rect.height / 2;
-                var rotX = ((y - cy) / cy) * -2;
-                var rotY = ((x - cx) / cx) * 2;
-
-                gsap.to(card, {
-                    rotateX: rotX,
-                    rotateY: rotY,
-                    transformPerspective: 800,
-                    duration: 0.3,
-                    ease: 'power2.out'
-                });
-            });
-
-            card.addEventListener('mouseleave', function () {
-                gsap.to(card, {
-                    rotateX: 0,
-                    rotateY: 0,
-                    duration: 0.6,
-                    ease: 'expo.out'
                 });
             });
         });
@@ -1407,7 +1401,6 @@
        ---------------------------------------------------------- */
     function runPreloader(callback) {
         var preloader = document.getElementById('preloader');
-        var fill = document.getElementById('preloaderFill');
         if (!preloader) { callback(); return; }
 
         if (prefersReducedMotion) {
@@ -1416,8 +1409,9 @@
             return;
         }
 
+        var paths = preloader.querySelectorAll('.preloader__sigil-path');
+        var dots = preloader.querySelectorAll('.preloader__sigil-dot');
         var logo = preloader.querySelector('.preloader__logo');
-        var barTrack = preloader.querySelector('.preloader__bar-track');
         var tagline = preloader.querySelector('.preloader__tagline');
 
         var tl = gsap.timeline({
@@ -1434,11 +1428,25 @@
             }
         });
 
-        tl.to(logo, { opacity: 1, duration: 0.5, ease: 'power2.out' })
-          .to(barTrack, { opacity: 1, duration: 0.3 }, '-=0.2')
-          .to(fill, { width: '100%', duration: 1.2, ease: 'power2.inOut' }, '-=0.1')
-          .to(tagline, { opacity: 1, duration: 0.4, ease: 'power2.out' }, '-=0.8')
-          .to({}, { duration: 0.3 }); // Brief pause
+        // Draw sigil paths sequentially
+        tl.to(paths, {
+            strokeDashoffset: 0,
+            duration: 1.4,
+            stagger: 0.08,
+            ease: 'power2.inOut'
+        })
+        // Pop in accent dots
+        .to(dots, {
+            opacity: 1,
+            scale: 1,
+            duration: 0.3,
+            stagger: 0.05,
+            ease: 'back.out(3)'
+        }, '-=0.4')
+        // Fade in text
+        .to(logo, { opacity: 1, duration: 0.4, ease: 'power2.out' }, '-=0.3')
+        .to(tagline, { opacity: 1, duration: 0.3, ease: 'power2.out' }, '-=0.2')
+        .to({}, { duration: 0.3 }); // Brief pause before exit
     }
 
     /* ----------------------------------------------------------

@@ -60,11 +60,39 @@
 
     <!-- Preloader -->
     <div class="preloader" id="preloader">
+        <svg class="preloader__sigil" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Outer diamond frame -->
+            <path class="preloader__sigil-path" d="M100 10 L190 100 L100 190 L10 100 Z" stroke="currentColor" stroke-width="1"/>
+            <!-- Inner diamond -->
+            <path class="preloader__sigil-path" d="M100 40 L160 100 L100 160 L40 100 Z" stroke="currentColor" stroke-width="0.8"/>
+            <!-- Cross spines -->
+            <path class="preloader__sigil-path" d="M100 10 L100 190 M10 100 L190 100" stroke="currentColor" stroke-width="0.5"/>
+            <!-- Thorn clusters — top -->
+            <path class="preloader__sigil-path" d="M100 10 C85 35, 80 50, 100 40 C120 50, 115 35, 100 10" stroke="currentColor" stroke-width="0.7"/>
+            <!-- Thorn clusters — right -->
+            <path class="preloader__sigil-path" d="M190 100 C165 85, 150 80, 160 100 C150 120, 165 115, 190 100" stroke="currentColor" stroke-width="0.7"/>
+            <!-- Thorn clusters — bottom -->
+            <path class="preloader__sigil-path" d="M100 190 C115 165, 120 150, 100 160 C80 150, 85 165, 100 190" stroke="currentColor" stroke-width="0.7"/>
+            <!-- Thorn clusters — left -->
+            <path class="preloader__sigil-path" d="M10 100 C35 115, 50 120, 40 100 C50 80, 35 85, 10 100" stroke="currentColor" stroke-width="0.7"/>
+            <!-- Accent dots -->
+            <circle class="preloader__sigil-dot" cx="100" cy="100" r="3" fill="currentColor"/>
+            <circle class="preloader__sigil-dot" cx="100" cy="55" r="1.5" fill="currentColor"/>
+            <circle class="preloader__sigil-dot" cx="100" cy="145" r="1.5" fill="currentColor"/>
+            <circle class="preloader__sigil-dot" cx="55" cy="100" r="1.5" fill="currentColor"/>
+            <circle class="preloader__sigil-dot" cx="145" cy="100" r="1.5" fill="currentColor"/>
+        </svg>
         <div class="preloader__logo">vineet<span>.</span></div>
-        <div class="preloader__bar-track">
-            <div class="preloader__bar-fill" id="preloaderFill"></div>
-        </div>
         <div class="preloader__tagline">Offensive Security</div>
+    </div>
+
+    <!-- Page Transition Sigil Flash -->
+    <div class="transition-sigil" id="transitionSigil" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 5 L95 50 L50 95 L5 50 Z" stroke="currentColor" stroke-width="0.5"/>
+            <path d="M50 20 L80 50 L50 80 L20 50 Z" stroke="currentColor" stroke-width="0.4"/>
+            <circle cx="50" cy="50" r="2" fill="currentColor"/>
+        </svg>
     </div>
 
     <!-- Film Grain Overlay -->
@@ -392,17 +420,17 @@
                     <div class="anim-item" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; padding-top:3rem; margin-top:3rem; border-top:1px solid var(--border);">
                         <div class="about-pillar" data-parallax-y="20">
                             <span class="t-mono" style="color:var(--crimson);">01</span>
-                            <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Operator-Led Testing</h4>
+                            <h3 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Operator-Led Testing</h3>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Manual exploitation first. Tools support the operator, not the other way around.</p>
                         </div>
                         <div class="about-pillar" data-parallax-y="40">
                             <span class="t-mono" style="color:var(--crimson);">02</span>
-                            <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Business-Aligned Reporting</h4>
+                            <h3 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Business-Aligned Reporting</h3>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Technical findings translated to risk language executives understand and act on.</p>
                         </div>
                         <div class="about-pillar" data-parallax-y="60">
                             <span class="t-mono" style="color:var(--crimson);">03</span>
-                            <h4 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Continuous Sharpening</h4>
+                            <h3 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Continuous Sharpening</h3>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Active research, certification pursuit, and offensive tooling development.</p>
                         </div>
                     </div>
