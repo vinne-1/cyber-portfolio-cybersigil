@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: cyber-portfolio-api
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ALLOWED_ORIGIN
+        value: https://vinne-1.github.io
+      - key: PORT
+        value: 4000

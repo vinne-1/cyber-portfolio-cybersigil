@@ -1516,6 +1516,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .nav__inner { height: 60px; }
   .cap-card { padding: 24px; }
   .section { padding: clamp(48px, 8vh, 100px) 0; }
+  .terminal { max-width: 100%; }
+  .terminal__body { padding: 16px; min-height: 200px; }
+  .timeline { padding-left: 32px; }
+  .timeline__dot { left: -26px; }
+  .case-study__step { flex-direction: column; gap: 0.5rem; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  .footer__cta-block { padding: clamp(3rem, 6vh, 5rem) 0; }
+  .cursor-dot, .cursor-ring { display: none; }
 }
 
 @media (max-width: 640px) {
@@ -1533,8 +1541,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .project-card__metrics { grid-template-columns: 1fr 1fr; }
   .stat-block { padding: 20px 16px; }
   .stat-block__value { font-size: 2rem; }
+  .cert-badge { padding: 1rem; }
+  .cert-badge__icon { width: 42px; height: 42px; font-size: 0.6rem; }
+  .threat-feed { grid-template-columns: 1fr; }
+  .footer__bottom { padding: 2rem 0; }
+  .footer__links-row { gap: 1rem; }
+  .footer__bottom-row { flex-direction: column; gap: 0.25rem; }
 }
 
 @media (max-width: 400px) {
   .t-display { font-size: 2.5rem; }
+  .terminal__output { font-size: 0.7rem; max-height: 200px; }
+  .terminal__input { font-size: 0.7rem; }
+  .terminal__prompt { font-size: 0.7rem; }
 }
