@@ -443,6 +443,10 @@
                                 <div><div class="project-card__metric-value">94%</div><div class="project-card__metric-label">Accuracy</div></div>
                                 <div><div class="project-card__metric-value">70%</div><div class="project-card__metric-label">Cost Reduction</div></div>
                             </div>
+                            <a href="#/work/osint" class="project-card__cta" data-route>
+                                View Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
                         </div>
                     </div>
 
@@ -469,6 +473,10 @@
                                 <div><div class="project-card__metric-value">0%</div><div class="project-card__metric-label">Detection Rate</div></div>
                                 <div><div class="project-card__metric-value">89%</div><div class="project-card__metric-label">Success Rate</div></div>
                             </div>
+                            <a href="#/work/privesc" class="project-card__cta" data-route>
+                                View Case Study
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -702,6 +710,217 @@
         </section>
     </template>
 
+
+    <!-- CASE STUDY: OSINT Pipeline -->
+    <template id="page-work-osint">
+        <section class="section section--top" data-page="work">
+            <div class="container">
+                <div class="anim-item mb-md">
+                    <a href="#/work" class="case-study__back" data-route>&larr; Back to Work</a>
+                </div>
+                <div class="max-w-medium">
+                    <div class="anim-item">
+                        <span class="t-label">01 &mdash; Intelligence</span>
+                        <div class="accent-bar" style="margin-top:1rem;"></div>
+                    </div>
+                    <h1 class="t-heading split-heading anim-item mt-md" style="font-size:clamp(2rem, 4vw, 3rem);">
+                        Automated OSINT Pipeline Framework
+                    </h1>
+                    <p class="t-body-lg anim-item mt-md" style="color:var(--gray-300);">
+                        A scalable intelligence gathering system designed to process 10,000+ records per hour from 15+ open-source data providers with real-time entity extraction, cross-source correlation, and automated threat scoring.
+                    </p>
+                </div>
+
+                <!-- Key Metrics -->
+                <div class="stats-row anim-item" style="margin-top:3rem;">
+                    <div class="stat-block"><div class="stat-block__value">10K<span>+</span></div><div class="stat-block__label">Records / Hour</div></div>
+                    <div class="stat-block"><div class="stat-block__value">94<span>%</span></div><div class="stat-block__label">Accuracy</div></div>
+                    <div class="stat-block"><div class="stat-block__value">70<span>%</span></div><div class="stat-block__label">Cost Reduction</div></div>
+                    <div class="stat-block"><div class="stat-block__value">15<span>+</span></div><div class="stat-block__label">Data Sources</div></div>
+                </div>
+
+                <!-- Challenge / Approach / Result -->
+                <div class="max-w-medium" style="margin-top:4rem;">
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">The Challenge</h3>
+                        <p class="t-body">Manual OSINT collection was consuming 60+ analyst hours per engagement. Data from disparate sources required manual correlation, and intelligence reports were taking 3-5 days to compile. The client needed a way to scale reconnaissance without proportionally scaling headcount.</p>
+                    </div>
+
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">Approach</h3>
+                        <div class="case-study__steps">
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">01</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Architecture Design</h4>
+                                    <p class="case-study__step-text">Designed a microservice architecture with message queues for async processing. Each data source gets its own collector module with rate limiting and retry logic.</p>
+                                </div>
+                            </div>
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">02</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Data Collection Layer</h4>
+                                    <p class="case-study__step-text">Built Scrapy-based crawlers for 15+ sources including WHOIS, DNS records, social media APIs, paste sites, certificate transparency logs, and breach databases. Each crawler implements source-specific parsing and normalization.</p>
+                                </div>
+                            </div>
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">03</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Entity Extraction &amp; Correlation</h4>
+                                    <p class="case-study__step-text">NLP-based entity extraction identifies people, organizations, domains, IPs, and emails. Cross-source correlation engine links entities across data sources using fuzzy matching and graph relationships.</p>
+                                </div>
+                            </div>
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">04</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Threat Scoring &amp; Reporting</h4>
+                                    <p class="case-study__step-text">Automated risk scoring based on data freshness, source reliability, and threat indicators. Generates structured JSON reports and executive-ready PDF summaries with visualization of entity relationships.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">Results</h3>
+                        <ul class="case-study__results">
+                            <li>Reduced reconnaissance time from 60+ hours to under 6 hours per engagement</li>
+                            <li>94% accuracy rate on entity extraction validated against manual analysis</li>
+                            <li>70% cost reduction in intelligence gathering operations</li>
+                            <li>Deployed to AWS Lambda for serverless scaling during peak assessment periods</li>
+                            <li>Elasticsearch backend enables sub-second queries across millions of records</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">Tech Stack</h3>
+                        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                            <span class="project-card__tag">Python</span>
+                            <span class="project-card__tag">Scrapy</span>
+                            <span class="project-card__tag">Elasticsearch</span>
+                            <span class="project-card__tag">Docker</span>
+                            <span class="project-card__tag">AWS Lambda</span>
+                            <span class="project-card__tag">Redis</span>
+                            <span class="project-card__tag">spaCy NLP</span>
+                            <span class="project-card__tag">Neo4j</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Project -->
+                <div class="anim-item" style="margin-top:5rem; padding-top:3rem; border-top:1px solid var(--border); text-align:center;">
+                    <span class="t-caption" style="display:block; margin-bottom:1rem;">Next Project</span>
+                    <a href="#/work/privesc" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>Polymorphic Privilege Escalation Generator &rarr;</a>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- CASE STUDY: Privilege Escalation -->
+    <template id="page-work-privesc">
+        <section class="section section--top" data-page="work">
+            <div class="container">
+                <div class="anim-item mb-md">
+                    <a href="#/work" class="case-study__back" data-route>&larr; Back to Work</a>
+                </div>
+                <div class="max-w-medium">
+                    <div class="anim-item">
+                        <span class="t-label">02 &mdash; Research</span>
+                        <div class="accent-bar" style="margin-top:1rem;"></div>
+                    </div>
+                    <h1 class="t-heading split-heading anim-item mt-md" style="font-size:clamp(2rem, 4vw, 3rem);">
+                        Polymorphic Privilege Escalation Generator
+                    </h1>
+                    <p class="t-body-lg anim-item mt-md" style="color:var(--gray-300);">
+                        An advanced security research tool that generates unique privilege escalation payloads through code mutation, targeting 12+ escalation techniques across Windows environments for authorized security validation.
+                    </p>
+                </div>
+
+                <!-- Key Metrics -->
+                <div class="stats-row anim-item" style="margin-top:3rem;">
+                    <div class="stat-block"><div class="stat-block__value">99.7<span>%</span></div><div class="stat-block__label">Unique Signatures</div></div>
+                    <div class="stat-block"><div class="stat-block__value">0<span>%</span></div><div class="stat-block__label">Detection Rate</div></div>
+                    <div class="stat-block"><div class="stat-block__value">89<span>%</span></div><div class="stat-block__label">Success Rate</div></div>
+                    <div class="stat-block"><div class="stat-block__value">12<span>+</span></div><div class="stat-block__label">Techniques</div></div>
+                </div>
+
+                <div class="max-w-medium" style="margin-top:4rem;">
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">The Challenge</h3>
+                        <p class="t-body">Traditional privilege escalation tools produce static signatures that are immediately flagged by modern EDR solutions. Red team operators need payloads that bypass signature-based detection while maintaining reliable escalation across diverse Windows configurations. This research aimed to bridge the gap between theoretical evasion techniques and practical operational tooling.</p>
+                    </div>
+
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">Approach</h3>
+                        <div class="case-study__steps">
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">01</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Technique Cataloging</h4>
+                                    <p class="case-study__step-text">Cataloged 12+ Windows privilege escalation vectors including token impersonation, service misconfigurations, DLL hijacking, registry abuse, unquoted service paths, and kernel exploits. Each technique mapped to specific Windows versions and patch levels.</p>
+                                </div>
+                            </div>
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">02</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Mutation Engine</h4>
+                                    <p class="case-study__step-text">Developed a polymorphic code mutation engine that transforms payload structure, control flow, variable naming, and API call patterns while preserving functional equivalence. Each generated payload produces a unique hash signature.</p>
+                                </div>
+                            </div>
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">03</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Anti-Analysis Layer</h4>
+                                    <p class="case-study__step-text">Integrated sandbox detection, timing-based evasion, and environment fingerprinting to prevent automated analysis. Payloads self-modify execution paths based on detected analysis environment.</p>
+                                </div>
+                            </div>
+                            <div class="case-study__step">
+                                <span class="case-study__step-num t-mono">04</span>
+                                <div>
+                                    <h4 class="case-study__step-title">Validation Framework</h4>
+                                    <p class="case-study__step-text">Built automated testing pipeline with 20+ Windows VM configurations. Each generated payload tested against major AV/EDR solutions to validate evasion effectiveness and escalation reliability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">Results</h3>
+                        <ul class="case-study__results">
+                            <li>99.7% unique signature rate across 10,000+ generated payloads</li>
+                            <li>0% detection rate against top 5 EDR solutions at time of testing</li>
+                            <li>89% successful privilege escalation across target configurations</li>
+                            <li>Reduced red team payload preparation time from hours to minutes</li>
+                            <li>Research contributed to improved detection rules for 3 EDR vendors (responsible disclosure)</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study__section anim-item">
+                        <h3 class="case-study__heading">Tech Stack</h3>
+                        <div style="display:flex; flex-wrap:wrap; gap:10px;">
+                            <span class="project-card__tag">Python</span>
+                            <span class="project-card__tag">C++</span>
+                            <span class="project-card__tag">x86 Assembly</span>
+                            <span class="project-card__tag">Windows API</span>
+                            <span class="project-card__tag">LLVM</span>
+                            <span class="project-card__tag">VirtualBox API</span>
+                        </div>
+                    </div>
+
+                    <div class="case-study__section anim-item" style="background:var(--surface); border:1px solid var(--border); padding:1.5rem 2rem;">
+                        <p class="t-mono" style="font-size:0.75rem; color:var(--gray-400); line-height:1.7;">
+                            <strong style="color:var(--crimson);">Responsible Use:</strong> This tool was developed exclusively for authorized security research and controlled red team engagements. All testing conducted in isolated lab environments with explicit authorization. Findings were responsibly disclosed to affected vendors.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Next Project -->
+                <div class="anim-item" style="margin-top:5rem; padding-top:3rem; border-top:1px solid var(--border); text-align:center;">
+                    <span class="t-caption" style="display:block; margin-bottom:1rem;">Previous Project</span>
+                    <a href="#/work/osint" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>&larr; Automated OSINT Pipeline Framework</a>
+                </div>
+            </div>
+        </section>
+    </template>
 
     <!-- 404 -->
     <template id="page-404">

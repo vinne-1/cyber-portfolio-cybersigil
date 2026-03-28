@@ -1184,6 +1184,102 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-500);
 }
 
+/* --- Case Study --- */
+.case-study__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-300);
+  transition: color 0.3s ease;
+}
+.case-study__back:hover { color: var(--crimson); }
+.case-study__section {
+  margin-bottom: 3rem;
+}
+.case-study__heading {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+.case-study__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.case-study__step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+.case-study__step-num {
+  flex-shrink: 0;
+  color: var(--crimson);
+  font-size: 0.7rem;
+  padding-top: 3px;
+}
+.case-study__step-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.3rem;
+}
+.case-study__step-text {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--gray-300);
+}
+.case-study__results {
+  list-style: none;
+  padding: 0;
+}
+.case-study__results li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--gray-200);
+}
+.case-study__results li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background: var(--crimson);
+}
+
+/* --- Project Card CTA --- */
+.project-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--crimson);
+  transition: gap 0.3s var(--ease-out-expo);
+}
+.project-card__cta:hover {
+  gap: 12px;
+}
+.project-card__cta svg {
+  transition: transform 0.3s var(--ease-out-expo);
+}
+.project-card__cta:hover svg {
+  transform: translateX(4px);
+}
+
 /* --- Testimonials --- */
 .testimonials-grid {
   display: grid;

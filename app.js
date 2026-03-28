@@ -99,23 +99,27 @@
        ROUTE CONFIG
        ---------------------------------------------------------- */
     var ROUTES = {
-        '/':             'page-home',
-        '/about':        'page-about',
-        '/work':         'page-work',
-        '/capabilities': 'page-capabilities',
-        '/credentials':  'page-credentials',
-        '/contact':      'page-contact',
-        '/404':          'page-404'
+        '/':               'page-home',
+        '/about':          'page-about',
+        '/work':           'page-work',
+        '/work/osint':     'page-work-osint',
+        '/work/privesc':   'page-work-privesc',
+        '/capabilities':   'page-capabilities',
+        '/credentials':    'page-credentials',
+        '/contact':        'page-contact',
+        '/404':            'page-404'
     };
 
     var ROUTE_TITLES = {
-        '/':             'Vineet Vishesh — Offensive Security',
-        '/about':        'About — Vineet Vishesh',
-        '/work':         'Selected Work — Vineet Vishesh',
-        '/capabilities': 'Capabilities — Vineet Vishesh',
-        '/credentials':  'Credentials — Vineet Vishesh',
-        '/contact':      'Contact — Vineet Vishesh',
-        '/404':          '404 — Vineet Vishesh'
+        '/':               'Vineet Vishesh — Offensive Security',
+        '/about':          'About — Vineet Vishesh',
+        '/work':           'Selected Work — Vineet Vishesh',
+        '/work/osint':     'OSINT Pipeline — Vineet Vishesh',
+        '/work/privesc':   'Privilege Escalation Research — Vineet Vishesh',
+        '/capabilities':   'Capabilities — Vineet Vishesh',
+        '/credentials':    'Credentials — Vineet Vishesh',
+        '/contact':        'Contact — Vineet Vishesh',
+        '/404':            '404 — Vineet Vishesh'
     };
 
     var app = document.getElementById('app');
@@ -186,6 +190,8 @@
         '/':             'bar',
         '/about':        'clip',
         '/work':         'wipe-left',
+        '/work/osint':   'wipe-left',
+        '/work/privesc': 'wipe-left',
         '/capabilities': 'bar',
         '/credentials':  'bar',
         '/contact':      'clip',
@@ -1021,7 +1027,9 @@
     /* ----------------------------------------------------------
        LIVE THREAT FEED
        ---------------------------------------------------------- */
-    var THREAT_API = 'http://localhost:4000/api/cyber-news';
+    var THREAT_API = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? 'http://localhost:4000/api/cyber-news'
+        : 'https://cyber-portfolio-api.onrender.com/api/cyber-news';
 
     function setupThreatFeed() {
         var feedEl = app.querySelector('#threatFeed');
