@@ -97,6 +97,138 @@ body::before {
   opacity: 0.02;
 }
 
+/* --- Cyber Sigilism --- */
+.sigil {
+  stroke: var(--crimson);
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 10;
+  fill: none;
+  pointer-events: none;
+}
+.sigil--glow {
+  filter:
+    drop-shadow(0 0 2px rgba(200, 16, 46, 0.6))
+    drop-shadow(0 0 6px rgba(200, 16, 46, 0.3))
+    drop-shadow(0 0 14px rgba(200, 16, 46, 0.1));
+}
+.sigil--draw {
+  stroke-dasharray: 800;
+  stroke-dashoffset: 800;
+}
+.sigil--draw.is-drawn {
+  animation: drawSigil 2.5s ease-out forwards;
+}
+@keyframes drawSigil {
+  to { stroke-dashoffset: 0; }
+}
+.sigil--pulse {
+  animation: sigilPulse 3s ease-in-out infinite alternate;
+}
+@keyframes sigilPulse {
+  from {
+    filter: drop-shadow(0 0 2px rgba(200, 16, 46, 0.4)) drop-shadow(0 0 4px rgba(200, 16, 46, 0.2));
+    opacity: 0.7;
+  }
+  to {
+    filter: drop-shadow(0 0 3px rgba(200, 16, 46, 0.8)) drop-shadow(0 0 10px rgba(200, 16, 46, 0.3));
+    opacity: 1;
+  }
+}
+
+/* Hero sigil watermark */
+.hero__sigil {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  height: auto;
+  opacity: 0.06;
+  z-index: 1;
+}
+
+/* Sigil section divider */
+.section-divider--sigil {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.section-divider--sigil svg {
+  height: 40px;
+  width: auto;
+  opacity: 0.35;
+}
+.section-divider--sigil::before,
+.section-divider--sigil::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* Card corner sigil ornaments (CSS-only angular brackets) */
+.cap-card::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  border-top: 1px solid var(--crimson);
+  border-right: 1px solid var(--crimson);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease-out-expo);
+  filter: drop-shadow(0 0 3px rgba(200, 16, 46, 0.4));
+}
+.cap-card:hover::after {
+  opacity: 0.5;
+}
+.project-card .project-card__corner-sigil {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+}
+.project-card:hover .project-card__corner-sigil {
+  opacity: 0.4;
+}
+
+/* Section label sigil accent */
+.t-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.t-label__sigil {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+[data-theme="light"] .hero__sigil { opacity: 0.04; }
+[data-theme="light"] .section-divider--sigil svg { opacity: 0.2; }
+[data-theme="light"] .sigil--glow {
+  filter:
+    drop-shadow(0 0 1px rgba(200, 16, 46, 0.3))
+    drop-shadow(0 0 4px rgba(200, 16, 46, 0.15));
+}
+
+@media (max-width: 768px) {
+  .hero__sigil { width: 200px; right: 2%; opacity: 0.04; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sigil--draw { stroke-dasharray: 0; stroke-dashoffset: 0; }
+  .sigil--pulse { animation: none; }
+}
+
 /* --- Reset & Base --- */
 *, *::before, *::after {
   margin: 0;

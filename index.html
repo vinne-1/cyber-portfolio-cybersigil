@@ -177,6 +177,27 @@
         <section class="hero section" data-page="home">
             <canvas class="hero__matrix" id="heroMatrix" aria-hidden="true"></canvas>
             <canvas class="hero__particles" id="heroParticles" aria-hidden="true"></canvas>
+            <!-- Cyber sigil watermark -->
+            <svg class="hero__sigil sigil sigil--pulse" aria-hidden="true" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+                <line x1="100" y1="10" x2="100" y2="490" stroke-width="0.3" opacity="0.4"/>
+                <path d="M100,20 L120,60 L100,100 L80,60 Z" stroke-width="0.6"/>
+                <path d="M100,100 C90,130 60,150 40,158 C62,152 90,140 100,150" stroke-width="0.8"/>
+                <path d="M100,100 C110,130 140,150 160,158 C138,152 110,140 100,150" stroke-width="0.8"/>
+                <circle cx="40" cy="158" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <circle cx="160" cy="158" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <path d="M100,180 C88,215 50,240 25,255 C55,245 88,225 100,240" stroke-width="1"/>
+                <path d="M100,180 C112,215 150,240 175,255 C145,245 112,225 100,240" stroke-width="1"/>
+                <circle cx="25" cy="255" r="2.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <circle cx="175" cy="255" r="2.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <path d="M100,270 C92,295 65,310 50,318 C68,312 92,300 100,308" stroke-width="0.8"/>
+                <path d="M100,270 C108,295 135,310 150,318 C132,312 108,300 100,308" stroke-width="0.8"/>
+                <circle cx="50" cy="318" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <circle cx="150" cy="318" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <path d="M100,380 L115,410 L100,440 L85,410 Z" stroke-width="0.6"/>
+                <line x1="92" y1="340" x2="92" y2="360" stroke-width="0.4" opacity="0.5"/>
+                <line x1="108" y1="340" x2="108" y2="360" stroke-width="0.4" opacity="0.5"/>
+                <path d="M100,440 L108,470 L100,490 L92,470 Z" stroke-width="0.5" opacity="0.6"/>
+            </svg>
             <div class="hero__bg-grid"></div>
             <div class="hero__crimson-wash"></div>
             <div class="container" style="position:relative; z-index:2;">
@@ -212,7 +233,7 @@
             </div>
         </section>
 
-        <div class="section-divider"></div>
+        <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path d="M30,2 L38,18 L30,34 L22,18 Z" stroke-width="0.6"/><path d="M30,10 C26,16 18,20 12,22" stroke-width="0.5"/><path d="M30,10 C34,16 42,20 48,22" stroke-width="0.5"/><circle cx="12" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/><circle cx="48" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/></svg></div>
         <div class="stats-row">
             <div class="stat-block anim-item">
                 <div class="stat-block__value" data-count="67">0</div>
@@ -231,7 +252,7 @@
                 <div class="stat-block__label">Remediation Rate</div>
             </div>
         </div>
-        <div class="section-divider"></div>
+        <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path d="M30,2 L38,18 L30,34 L22,18 Z" stroke-width="0.6"/><path d="M30,10 C26,16 18,20 12,22" stroke-width="0.5"/><path d="M30,10 C34,16 42,20 48,22" stroke-width="0.5"/><circle cx="12" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/><circle cx="48" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/></svg></div>
 
         <!-- Interactive Terminal -->
         <section class="section" style="padding-top: 0;">
@@ -260,7 +281,7 @@
         </section>
 
         <!-- Live Threat Intelligence Feed -->
-        <div class="section-divider"></div>
+        <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path d="M30,2 L38,18 L30,34 L22,18 Z" stroke-width="0.6"/><path d="M30,10 C26,16 18,20 12,22" stroke-width="0.5"/><path d="M30,10 C34,16 42,20 48,22" stroke-width="0.5"/><circle cx="12" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/><circle cx="48" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/></svg></div>
         <section class="section" style="padding-top: 0;">
             <div class="container">
                 <div class="anim-item" style="margin-bottom:2rem;">
@@ -328,7 +349,7 @@
         </section>
 
         <!-- Timeline Section -->
-        <div class="section-divider"></div>
+        <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path d="M30,2 L38,18 L30,34 L22,18 Z" stroke-width="0.6"/><path d="M30,10 C26,16 18,20 12,22" stroke-width="0.5"/><path d="M30,10 C34,16 42,20 48,22" stroke-width="0.5"/><circle cx="12" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/><circle cx="48" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/></svg></div>
         <section class="section" style="padding-top: 0;">
             <div class="container">
                 <div class="anim-item" style="margin-bottom:3rem;">
@@ -383,7 +404,7 @@
         </section>
 
         <!-- How I Work -->
-        <div class="section-divider"></div>
+        <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg"><path d="M30,2 L38,18 L30,34 L22,18 Z" stroke-width="0.6"/><path d="M30,10 C26,16 18,20 12,22" stroke-width="0.5"/><path d="M30,10 C34,16 42,20 48,22" stroke-width="0.5"/><circle cx="12" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/><circle cx="48" cy="22" r="1.2" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/></svg></div>
         <section class="section" style="padding-top: 0;">
             <div class="container">
                 <div class="anim-item" style="margin-bottom:3rem;">

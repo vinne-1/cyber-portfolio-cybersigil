@@ -435,6 +435,7 @@
         setupCardHoverGlow();
         setupTextStrokeReveal();
         setupCardTilt();
+        setupSigils();
 
         // Hero-specific entrance
         var heroMeta = app.querySelector('.hero__meta');
@@ -545,6 +546,55 @@
                 });
             });
         });
+    }
+
+    /* ----------------------------------------------------------
+       CYBER SIGILISM — LABEL ACCENTS & DRAW REVEALS
+       ---------------------------------------------------------- */
+    function setupSigils() {
+        // Add small sigil accent to section labels
+        var labels = app.querySelectorAll('.t-label');
+        var sigilSVG = '<svg class="t-label__sigil sigil" viewBox="0 0 16 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M8,1 L11,7 L8,13 L5,7 Z" stroke-width="0.6"/><path d="M8,5 C6,7 4,8 2,8.5" stroke-width="0.4"/><path d="M8,5 C10,7 12,8 14,8.5" stroke-width="0.4"/></svg>';
+        labels.forEach(function (label) {
+            if (label.querySelector('.t-label__sigil')) return;
+            label.insertAdjacentHTML('afterbegin', sigilSVG);
+        });
+
+        // Draw-reveal sigils on scroll
+        if (prefersReducedMotion) return;
+        var drawSigils = app.querySelectorAll('.sigil--draw');
+        drawSigils.forEach(function (s) {
+            ScrollTrigger.create({
+                trigger: s,
+                start: 'top 85%',
+                onEnter: function () { s.classList.add('is-drawn'); },
+                once: true
+            });
+        });
+
+        // Hero sigil draw
+        var heroSigil = app.querySelector('.hero__sigil');
+        if (heroSigil) {
+            heroSigil.classList.add('sigil--draw');
+            // Calculate total path length for dasharray
+            var paths = heroSigil.querySelectorAll('path, line');
+            paths.forEach(function (p) {
+                var len = p.getTotalLength ? p.getTotalLength() : 200;
+                p.style.strokeDasharray = len;
+                p.style.strokeDashoffset = len;
+            });
+            // Animate draw on entrance
+            setTimeout(function () {
+                paths.forEach(function (p, i) {
+                    gsap.to(p, {
+                        strokeDashoffset: 0,
+                        duration: 2,
+                        delay: 0.5 + i * 0.08,
+                        ease: 'power2.out'
+                    });
+                });
+            }, 300);
+        }
     }
 
     /* ----------------------------------------------------------
