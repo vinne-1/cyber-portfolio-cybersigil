@@ -337,7 +337,11 @@
                 window.scrollTo(0, 0);
             }
             handleNavScroll();
-            transitionIn(route);
+
+            // Force-reset both overlay elements immediately
+            gsap.set(transitionClip, { clipPath: 'circle(0% at 50% 50%)' });
+            gsap.set(transitionBar, { scaleX: 0 });
+
             animatePageEntrance();
 
             setTimeout(function () {
