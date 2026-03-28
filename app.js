@@ -10,6 +10,27 @@
 (function () {
 
     /* ----------------------------------------------------------
+       THEME TOGGLE (load before anything visual)
+       ---------------------------------------------------------- */
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+
+    var themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function () {
+            var current = document.documentElement.getAttribute('data-theme');
+            var next = current === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            // Update meta theme-color
+            var meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute('content', next === 'light' ? '#ffffff' : '#0a0a0a');
+        });
+    }
+
+    /* ----------------------------------------------------------
        REDUCED MOTION CHECK
        ---------------------------------------------------------- */
     var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -847,7 +868,8 @@
         var chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
 
         function draw() {
-            ctx.fillStyle = 'rgba(10, 10, 10, 0.06)';
+            var isLight = document.documentElement.getAttribute('data-theme') === 'light';
+            ctx.fillStyle = isLight ? 'rgba(245, 245, 245, 0.06)' : 'rgba(10, 10, 10, 0.06)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             ctx.font = fontSize + 'px monospace';
@@ -857,11 +879,10 @@
                 var x = j * fontSize;
                 var y = drops[j] * fontSize;
 
-                // Crimson for leading char, dark red for trail
                 if (Math.random() > 0.97) {
-                    ctx.fillStyle = 'rgba(200, 16, 46, 0.9)';
+                    ctx.fillStyle = isLight ? 'rgba(181, 13, 39, 0.7)' : 'rgba(200, 16, 46, 0.9)';
                 } else {
-                    ctx.fillStyle = 'rgba(200, 16, 46, 0.15)';
+                    ctx.fillStyle = isLight ? 'rgba(181, 13, 39, 0.08)' : 'rgba(200, 16, 46, 0.15)';
                 }
 
                 ctx.fillText(char, x, y);
@@ -1046,6 +1067,10 @@
     window.addEventListener('hashchange', function () {
         var route = getRouteFromHash();
         loadPage(route, false);
+        // Track SPA navigation in Umami
+        if (typeof umami !== 'undefined') {
+            umami.track(function (props) { return Object.assign(Object.assign({}, props), { url: window.location.pathname + window.location.hash }); });
+        }
     });
 
     document.addEventListener('click', function (e) {
