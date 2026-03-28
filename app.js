@@ -165,18 +165,23 @@
         burger.classList.toggle('open', mobileOpen);
         if (mobileOpen) {
             mobileMenu.classList.add('active');
+            mobileMenu.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
         } else {
             mobileMenu.classList.remove('active');
+            mobileMenu.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
         }
     });
 
     function closeMobile() {
         mobileOpen = false;
-        burger.setAttribute('aria-expanded', 'false');
-        burger.classList.remove('open');
-        mobileMenu.classList.remove('active');
+        if (burger) burger.setAttribute('aria-expanded', 'false');
+        if (burger) burger.classList.remove('open');
+        if (mobileMenu) {
+            mobileMenu.classList.remove('active');
+            mobileMenu.setAttribute('aria-hidden', 'true');
+        }
         document.body.style.overflow = '';
     }
 
