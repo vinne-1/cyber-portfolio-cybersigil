@@ -130,16 +130,26 @@ app.get('/api/cyber-news', async (_req, res) => {
 /**
  * Normalize RSS item into the structure expected by live-threat-intelligence.js
  */
+function isSafeUrl(raw) {
+  try {
+    const u = new URL(raw);
+    return u.protocol === 'https:' || u.protocol === 'http:';
+  } catch {
+    return false;
+  }
+}
+
 function mapArticle(item, sourceName) {
-  const title = item.title || 'Untitled';
-  const summary =
+  const title = (item.title || 'Untitled').substring(0, 300);
+  const summary = (
     item.contentSnippet ||
     item.summary ||
-    (item.content && item.content.substring(0, 260)) ||
-    '';
+    item.content ||
+    ''
+  ).substring(0, 500);
 
   const date = item.isoDate || item.pubDate || new Date().toISOString();
-  const url = item.link || '#';
+  const url = isSafeUrl(item.link) ? item.link : '#';
 
   const tags = inferTags(item, title);
   const severity = inferSeverity(title, summary, tags);

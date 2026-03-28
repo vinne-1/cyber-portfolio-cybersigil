@@ -31,12 +31,6 @@
             smoothWheel: true
         });
 
-        function raf(time) {
-            lenis.raf(time);
-            requestAnimationFrame(raf);
-        }
-        requestAnimationFrame(raf);
-
         lenis.on('scroll', ScrollTrigger.update);
         gsap.ticker.add(function (time) {
             lenis.raf(time * 1000);
@@ -156,6 +150,7 @@
     var mobileOpen = false;
 
     function handleNavScroll() {
+        if (!nav) return;
         if (window.scrollY > 60) {
             nav.classList.add('nav--scrolled');
         } else {
@@ -164,7 +159,7 @@
     }
     window.addEventListener('scroll', handleNavScroll, { passive: true });
 
-    burger.addEventListener('click', function () {
+    if (burger) burger.addEventListener('click', function () {
         mobileOpen = !mobileOpen;
         burger.setAttribute('aria-expanded', String(mobileOpen));
         burger.classList.toggle('open', mobileOpen);
@@ -264,51 +259,6 @@
         });
     }
 
-    function transitionIn(targetRoute) {
-        if (prefersReducedMotion) return;
-
-        var type = ROUTE_TRANSITIONS[targetRoute] || 'bar';
-        var tl = gsap.timeline();
-
-        if (type === 'clip') {
-            tl.to(transitionClip, {
-                clipPath: 'circle(0% at 50% 50%)',
-                duration: 0.4,
-                ease: 'power3.inOut'
-            });
-        } else if (type === 'wipe-left') {
-            tl.to(transitionBar, {
-                scaleX: 0,
-                transformOrigin: 'right center',
-                duration: 0.35,
-                ease: 'power3.inOut',
-                onComplete: function () { gsap.set(transitionBar, { scaleX: 0 }); }
-            });
-        } else {
-            tl.to(transitionBar, {
-                scaleX: 0,
-                duration: 0.3,
-                ease: 'power3.inOut',
-                onComplete: function () { gsap.set(transitionBar, { scaleX: 0 }); }
-            });
-        }
-
-        var items = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block, .cert-badge, .timeline__item');
-        tl.fromTo(items,
-            { opacity: 0, y: 40 },
-            {
-                opacity: 1,
-                y: 0,
-                duration: 0.6,
-                stagger: 0.06,
-                ease: 'expo.out'
-            },
-            '-=0.15'
-        );
-
-        return tl;
-    }
-
     /* ----------------------------------------------------------
        ROUTER
        ---------------------------------------------------------- */
@@ -368,6 +318,10 @@
             setTimeout(function () {
                 isTransitioning = false;
             }, 800);
+        }).catch(function () {
+            isTransitioning = false;
+            gsap.set(transitionClip, { clipPath: 'circle(0% at 50% 50%)' });
+            gsap.set(transitionBar, { scaleX: 0 });
         });
     }
 
@@ -890,7 +844,7 @@
     }
 
     function appendOutput(container, html) {
-        container.innerHTML += html;
+        container.insertAdjacentHTML('beforeend', html);
     }
 
     function escapeHtml(str) {
@@ -910,20 +864,26 @@
 
         var ctx = canvas.getContext('2d');
         var parent = canvas.parentElement;
+        var fontSize = 14;
+        var columns, drops;
 
         function resize() {
             canvas.width = parent.offsetWidth;
             canvas.height = parent.offsetHeight;
+            columns = Math.floor(canvas.width / fontSize);
+            drops = [];
+            for (var i = 0; i < columns; i++) {
+                drops[i] = Math.random() * -100;
+            }
         }
         resize();
-        window.addEventListener('resize', resize);
 
-        var fontSize = 14;
-        var columns = Math.floor(canvas.width / fontSize);
-        var drops = [];
-        for (var i = 0; i < columns; i++) {
-            drops[i] = Math.random() * -100;
+        // Clean up previous resize listener before adding new one
+        if (window._matrixResizeHandler) {
+            window.removeEventListener('resize', window._matrixResizeHandler);
         }
+        window._matrixResizeHandler = resize;
+        window.addEventListener('resize', resize);
 
         var chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
 
@@ -963,6 +923,10 @@
         if (matrixAnimFrame) {
             cancelAnimationFrame(matrixAnimFrame);
             matrixAnimFrame = null;
+        }
+        if (window._matrixResizeHandler) {
+            window.removeEventListener('resize', window._matrixResizeHandler);
+            window._matrixResizeHandler = null;
         }
     }
 
@@ -1073,8 +1037,20 @@
                     return;
                 }
 
+                var ALLOWED_SEVERITIES = ['critical', 'high', 'medium', 'low', 'info'];
+                function safeSeverity(sev) {
+                    var s = (sev || 'medium').toLowerCase();
+                    return ALLOWED_SEVERITIES.indexOf(s) !== -1 ? s : 'medium';
+                }
+                function safeUrl(url) {
+                    if (!url) return '#';
+                    try { var p = new URL(url); return (p.protocol === 'https:' || p.protocol === 'http:') ? url : '#'; }
+                    catch (e) { return '#'; }
+                }
+
                 feedEl.innerHTML = articles.map(function (a) {
-                    var sevClass = 'threat-card__severity--' + (a.severity || 'medium').toLowerCase();
+                    var sev = safeSeverity(a.severity);
+                    var sevClass = 'threat-card__severity--' + sev;
                     var tags = (a.tags || []).map(function (t) {
                         return '<span class="threat-card__tag">' + escapeHtml(t) + '</span>';
                     }).join('');
@@ -1085,7 +1061,7 @@
                             '<span class="threat-card__severity ' + sevClass + '">' + escapeHtml(a.severity || 'Medium') + '</span>' +
                             '<span class="threat-card__source">' + escapeHtml(a.source || '') + '</span>' +
                         '</div>' +
-                        '<div class="threat-card__title"><a href="' + escapeHtml(a.url || '#') + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(a.title || 'Untitled') + '</a></div>' +
+                        '<div class="threat-card__title"><a href="' + escapeHtml(safeUrl(a.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(a.title || 'Untitled') + '</a></div>' +
                         (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
                         (tags ? '<div class="threat-card__tags">' + tags + '</div>' : '') +
                     '</div>';
