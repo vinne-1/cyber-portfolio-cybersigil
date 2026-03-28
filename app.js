@@ -80,15 +80,28 @@
             gsap.set(cursorRing, { x: ringX, y: ringY });
         });
 
-        // Hover enlargement on interactive elements
+        // Context-aware cursor states
         document.addEventListener('mouseover', function (e) {
-            if (e.target.closest('a, button, .btn, .project-card, .cap-card, .nav__link, .terminal__input')) {
+            var projectCard = e.target.closest('.project-card');
+            var capCard = e.target.closest('.cap-card');
+            var link = e.target.closest('a[href^="mailto:"]');
+            if (projectCard) {
+                cursorRing.setAttribute('data-cursor-label', 'VIEW');
+                cursorRing.classList.add('has-label');
+            } else if (capCard) {
+                cursorRing.classList.add('hover');
+            } else if (link) {
+                cursorRing.setAttribute('data-cursor-label', 'COPY');
+                cursorRing.classList.add('has-label');
+            } else if (e.target.closest('a, button, .btn, .nav__link, .terminal__input')) {
                 cursorRing.classList.add('hover');
             }
         });
         document.addEventListener('mouseout', function (e) {
             if (e.target.closest('a, button, .btn, .project-card, .cap-card, .nav__link, .terminal__input')) {
                 cursorRing.classList.remove('hover');
+                cursorRing.classList.remove('has-label');
+                cursorRing.setAttribute('data-cursor-label', '');
             }
         });
     } else {
@@ -420,6 +433,8 @@
         setupParticleNetwork();
         setupParallaxElements();
         setupCardHoverGlow();
+        setupTextStrokeReveal();
+        setupCardTilt();
 
         // Hero-specific entrance
         var heroMeta = app.querySelector('.hero__meta');
@@ -431,22 +446,105 @@
                 { opacity: 0, y: 20 },
                 { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out', delay: 0.1 }
             );
-            gsap.fromTo(heroLines,
-                { opacity: 0, y: '100%' },
-                {
-                    opacity: 1,
-                    y: '0%',
-                    duration: 0.9,
-                    stagger: 0.15,
-                    ease: 'expo.out',
-                    delay: 0.3
-                }
-            );
+            // Scramble decode on hero lines
+            heroLines.forEach(function (line, i) {
+                scrambleText(line, 0.3 + i * 0.2);
+            });
             gsap.fromTo(heroSub,
                 { opacity: 0, y: 20 },
                 { opacity: 1, y: 0, duration: 0.7, ease: 'expo.out', delay: 0.85 }
             );
         }
+    }
+
+    /* ----------------------------------------------------------
+       SCRAMBLE TEXT DECODE EFFECT
+       ---------------------------------------------------------- */
+    function scrambleText(el, delay) {
+        var originalText = el.textContent;
+        var glitchChars = '!@#$%^&*()_+{}|:<>?0123456789ABCDEF';
+        var duration = 1200;
+        var startTime = null;
+
+        el.style.opacity = '1';
+
+        setTimeout(function () {
+            function animate(timestamp) {
+                if (!startTime) startTime = timestamp;
+                var progress = (timestamp - startTime) / duration;
+
+                if (progress >= 1) {
+                    el.textContent = originalText;
+                    return;
+                }
+
+                var result = '';
+                for (var i = 0; i < originalText.length; i++) {
+                    if (originalText[i] === ' ') {
+                        result += ' ';
+                    } else if (i < originalText.length * progress) {
+                        result += originalText[i];
+                    } else {
+                        result += glitchChars[Math.floor(Math.random() * glitchChars.length)];
+                    }
+                }
+                el.textContent = result;
+                requestAnimationFrame(animate);
+            }
+            requestAnimationFrame(animate);
+        }, delay * 1000);
+    }
+
+    /* ----------------------------------------------------------
+       TEXT STROKE OUTLINE-TO-FILL ON SCROLL
+       ---------------------------------------------------------- */
+    function setupTextStrokeReveal() {
+        if (prefersReducedMotion) return;
+        var headings = app.querySelectorAll('.t-heading:not(.hero__headline):not(.split-heading)');
+        headings.forEach(function (h) {
+            h.classList.add('text-stroke-reveal');
+            ScrollTrigger.create({
+                trigger: h,
+                start: 'top 80%',
+                onEnter: function () { h.classList.add('is-filled'); },
+                onLeaveBack: function () { h.classList.remove('is-filled'); }
+            });
+        });
+    }
+
+    /* ----------------------------------------------------------
+       3D CARD TILT WITH PERSPECTIVE
+       ---------------------------------------------------------- */
+    function setupCardTilt() {
+        if (prefersReducedMotion || window.matchMedia('(pointer: coarse)').matches) return;
+        var cards = app.querySelectorAll('.project-card');
+        cards.forEach(function (card) {
+            card.style.transformStyle = 'preserve-3d';
+            card.addEventListener('mousemove', function (e) {
+                var rect = card.getBoundingClientRect();
+                var x = e.clientX - rect.left;
+                var y = e.clientY - rect.top;
+                var centerX = rect.width / 2;
+                var centerY = rect.height / 2;
+                var rotateX = ((y - centerY) / centerY) * -4;
+                var rotateY = ((x - centerX) / centerX) * 4;
+                gsap.to(card, {
+                    rotateX: rotateX,
+                    rotateY: rotateY,
+                    duration: 0.4,
+                    ease: 'power2.out',
+                    transformPerspective: 800
+                });
+            });
+            card.addEventListener('mouseleave', function () {
+                gsap.to(card, {
+                    rotateX: 0,
+                    rotateY: 0,
+                    duration: 0.6,
+                    ease: 'expo.out'
+                });
+            });
+        });
     }
 
     /* ----------------------------------------------------------
@@ -554,6 +652,42 @@
                     scrollTrigger: {
                         trigger: item,
                         start: 'top 90%',
+                        once: true
+                    }
+                }
+            );
+        });
+
+        // Line-by-line clip reveal for body text
+        var bodyTexts = app.querySelectorAll('.t-body-lg');
+        bodyTexts.forEach(function (el) {
+            var lines = el.textContent.split(/(?<=[.!?])\s+/);
+            if (lines.length < 2) return;
+            el.innerHTML = '';
+            lines.forEach(function (line) {
+                var wrapper = document.createElement('span');
+                wrapper.className = 'line-reveal';
+                wrapper.style.display = 'block';
+                wrapper.style.overflow = 'hidden';
+                var inner = document.createElement('span');
+                inner.className = 'line-reveal__inner';
+                inner.style.display = 'block';
+                inner.textContent = line;
+                wrapper.appendChild(inner);
+                el.appendChild(wrapper);
+            });
+            var inners = el.querySelectorAll('.line-reveal__inner');
+            gsap.fromTo(inners,
+                { y: '100%', opacity: 0 },
+                {
+                    y: '0%',
+                    opacity: 1,
+                    duration: 0.7,
+                    stagger: 0.1,
+                    ease: 'expo.out',
+                    scrollTrigger: {
+                        trigger: el,
+                        start: 'top 85%',
                         once: true
                     }
                 }
