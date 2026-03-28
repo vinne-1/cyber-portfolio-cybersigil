@@ -12,28 +12,29 @@
 
 /* --- Custom Properties --- */
 :root {
-  --black:       #0a0a0a;
-  --charcoal:    #0e0e0e;
-  --surface:     #131313;
-  --surface-2:   #181818;
-  --surface-3:   #1e1e1e;
-  --border:      #232323;
-  --border-light:#2e2e2e;
+  --black:       #000000;
+  --charcoal:    #080808;
+  --surface:     #0c0c0c;
+  --surface-2:   #111111;
+  --surface-3:   #161616;
+  --border:      #1a1a1a;
+  --border-light:#252525;
   color-scheme: dark;
 
-  --crimson:     #c8102e;
-  --crimson-dark:#8b0000;
-  --crimson-glow: rgba(200, 16, 46, 0.15);
-  --crimson-subtle: rgba(200, 16, 46, 0.06);
+  --crimson:     #a50d22;
+  --crimson-dark:#6b0014;
+  --crimson-glow: rgba(165, 13, 34, 0.15);
+  --crimson-subtle: rgba(165, 13, 34, 0.06);
 
-  --white:       #f0f0f0;
-  --gray-100:    #d4d4d4;
-  --gray-200:    #a3a3a3;
-  --gray-300:    #737373;
-  --gray-400:    #525252;
-  --gray-500:    #3a3a3a;
+  --white:       #e8e8e8;
+  --gray-100:    #c0c0c0;
+  --gray-200:    #8a8a8a;
+  --gray-300:    #5a5a5a;
+  --gray-400:    #3a3a3a;
+  --gray-500:    #252525;
 
   --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif:   'Playfair Display', 'Georgia', serif;
   --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -268,6 +269,32 @@ body.ready {
   opacity: 1;
 }
 
+/* Gothic viewport frame */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 1.5rem;
+  border: 1px solid rgba(165, 13, 34, 0.12);
+  pointer-events: none;
+  z-index: 9998;
+}
+
+/* Dark vignette overlay */
+.vignette {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+  z-index: 9997;
+}
+
+[data-theme="light"] body::after {
+  border-color: rgba(165, 13, 34, 0.06);
+}
+[data-theme="light"] .vignette {
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
+}
+
 ::selection {
   background: var(--crimson);
   color: var(--white);
@@ -279,20 +306,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Typography Scale --- */
 .t-display {
-  font-size: clamp(3rem, 8vw, 7.5rem);
+  font-size: clamp(3.5rem, 9vw, 8.5rem);
   font-weight: 800;
-  line-height: 0.92;
-  letter-spacing: -0.03em;
+  line-height: 0.88;
+  letter-spacing: -0.05em;
   color: var(--white);
   text-transform: uppercase;
 }
 
 .t-heading {
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
   font-weight: 700;
-  line-height: 1.05;
-  letter-spacing: -0.025em;
+  line-height: 1.0;
+  letter-spacing: -0.03em;
   color: var(--white);
+  font-style: italic;
 }
 
 .t-subheading {
@@ -468,7 +497,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--gray-300);
-  transition: color 0.3s ease;
+  opacity: 0.5;
+  transition: color 0.3s ease, opacity 0.3s ease;
   position: relative;
 }
 
@@ -484,7 +514,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform-origin: right;
   transition: transform 0.4s var(--ease-out-expo);
 }
-.nav__link:hover { color: var(--white); }
+.nav__link:hover { color: var(--white); opacity: 0.85; }
 .nav__link:hover::after {
   transform: scaleX(1);
   transform-origin: left;
@@ -492,6 +522,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .nav__link.active {
   color: var(--white);
+  opacity: 1;
 }
 .nav__link.active::after {
   transform: scaleX(1);
@@ -761,7 +792,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--surface);
   border: 1px solid var(--border);
   overflow: hidden;
-  transition: border-color 0.5s ease, box-shadow 0.5s ease;
+  transition: border-color 0.5s ease;
 }
 .project-card::after {
   content: '';
@@ -783,8 +814,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .project-card:hover {
   will-change: transform;
-  border-color: transparent;
-  box-shadow: 0 0 30px rgba(200, 16, 46, 0.08), inset 0 1px 0 rgba(200, 16, 46, 0.1);
+  border-color: var(--crimson);
 }
 
 .project-card__image {
@@ -972,7 +1002,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 0.65rem;
   letter-spacing: 0.05em;
   text-align: center;
-  transition: border-color 0.3s var(--ease-out-expo), color 0.3s var(--ease-out-expo), box-shadow 0.3s var(--ease-out-expo);
+  transition: border-color 0.3s var(--ease-out-expo), color 0.3s var(--ease-out-expo);
 }
 .tool-grid__item svg {
   color: var(--gray-300);
@@ -981,7 +1011,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .tool-grid__item:hover {
   border-color: var(--crimson);
   color: var(--white);
-  box-shadow: 0 0 20px var(--crimson-glow);
 }
 .tool-grid__item:hover svg {
   color: var(--crimson);
@@ -1156,9 +1185,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 0;
   border-top: 1px solid var(--border);
 }
+.footer__protocol {
+  display: block;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: var(--crimson);
+  opacity: 0.5;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
 .footer__cta-block {
   text-align: center;
-  padding: clamp(4rem, 8vh, 8rem) 0;
+  padding: clamp(5rem, 10vh, 10rem) 0;
   border-bottom: 1px solid var(--border);
 }
 .footer__cta-heading {
@@ -1169,6 +1207,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
   margin-bottom: 2rem;
 }
+.footer__sigil-row {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  opacity: 0.4;
+}
 .footer__bottom {
   display: flex;
   justify-content: space-between;
@@ -1176,6 +1221,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 2.5rem 0;
   flex-wrap: wrap;
   gap: 2rem;
+}
+.footer__center-col {
+  display: flex;
+  align-items: center;
 }
 .footer__brand {
   display: flex;
@@ -1209,9 +1258,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gray-300);
-  transition: color 0.3s ease;
+  opacity: 0.5;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
-.footer__link:hover { color: var(--crimson); }
+.footer__link:hover { color: var(--crimson); opacity: 1; }
 .footer__bottom-row {
   display: flex;
   gap: 1.5rem;
@@ -1501,11 +1551,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 1.25rem 1.5rem;
   background: var(--surface);
   border: 1px solid var(--border);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 .cert-badge:hover {
   border-color: var(--crimson);
-  box-shadow: 0 0 20px var(--crimson-glow);
 }
 .cert-badge__icon {
   width: 52px;
@@ -1563,7 +1612,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   overflow: hidden;
   max-width: 720px;
   font-family: var(--font-mono);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
 }
 .terminal__header {
   display: flex;
@@ -1863,7 +1911,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-radius: 50%;
   background: var(--crimson);
   border: 2px solid var(--black);
-  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.2);
+  outline: 1px solid var(--crimson);
 }
 .timeline__year {
   font-size: 0.7rem;

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vineet Vishesh — Offensive Security</title>
     <meta name="description" content="Offensive security professional specializing in red team operations, web application assessments, and adversary simulation. Precision-driven penetration testing and vulnerability research.">
-    <meta name="theme-color" content="#0a0a0a">
+    <meta name="theme-color" content="#000000">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://vinne-1.github.io/cyber-portfolio/">
     <link rel="manifest" href="manifest.json">
@@ -23,8 +23,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" as="style">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <noscript><style>body{opacity:1!important}</style></noscript>
 
     <!-- Splitting.js -->
@@ -73,6 +73,9 @@
     <!-- Custom Cursor -->
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Gothic vignette overlay -->
+    <div class="vignette" aria-hidden="true"></div>
 
     <!-- Scroll Progress -->
     <div class="scroll-progress" id="scrollProgress"></div>
@@ -136,6 +139,7 @@
         <div class="container">
             <!-- Footer CTA -->
             <div class="footer__cta-block">
+                <span class="footer__protocol t-mono">PROTOCOL ACTIVE // SECTOR 7 — CLEARANCE: RED TEAM</span>
                 <h3 class="footer__cta-heading t-heading">Let's work together.</h3>
                 <p class="footer__cta-sub">Have a security challenge? I'm available for the right engagements.</p>
                 <div class="magnetic-wrap">
@@ -146,11 +150,26 @@
                 </div>
             </div>
 
+            <!-- Footer Sigil -->
+            <div class="footer__sigil-row" aria-hidden="true">
+                <svg class="sigil sigil--glow" viewBox="0 0 120 30" height="30" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="0" y1="15" x2="40" y2="15" stroke-width="0.3" opacity="0.3"/>
+                    <path d="M45,15 L52,5 L60,15 L52,25 Z" stroke-width="0.5"/>
+                    <path d="M52,8 C49,12 44,14 40,15" stroke-width="0.4"/>
+                    <path d="M52,8 C55,12 60,14 64,15" stroke-width="0.4"/>
+                    <path d="M60,15 L67,5 L75,15 L67,25 Z" stroke-width="0.5"/>
+                    <line x1="80" y1="15" x2="120" y2="15" stroke-width="0.3" opacity="0.3"/>
+                </svg>
+            </div>
+
             <!-- Footer Bottom -->
             <div class="footer__bottom">
                 <div class="footer__brand">
                     <span class="footer__logo">vineet<span>.</span></span>
                     <span class="footer__tagline t-mono">Offensive Security</span>
+                </div>
+                <div class="footer__center-col">
+                    <span class="footer__protocol t-mono">SESSION: ENCRYPTED // v2.7.1</span>
                 </div>
                 <div class="footer__meta">
                     <div class="footer__links-row">
