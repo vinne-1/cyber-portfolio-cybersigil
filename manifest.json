@@ -1,0 +1,17 @@
+{
+  "name": "Vineet Vishesh — Offensive Security",
+  "short_name": "Vineet",
+  "description": "Red team operator and penetration testing specialist. Controlled offensive validation across web, mobile, network, and cloud attack surfaces.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='64' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='central' text-anchor='middle' fill='%23c8102e' font-family='system-ui' font-weight='700' font-size='320'%3Ev%3C/text%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
