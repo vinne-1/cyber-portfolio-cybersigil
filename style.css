@@ -145,9 +145,9 @@ body::before {
   right: 3%;
   top: 50%;
   transform: translateY(-50%);
-  width: 500px;
-  height: auto;
-  opacity: 0.12;
+  width: 300px;
+  max-height: 80vh;
+  opacity: 0.08;
   z-index: 1;
 }
 
@@ -156,10 +156,10 @@ body::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  height: 70%;
-  max-height: 600px;
+  height: 45%;
+  max-height: 350px;
   width: auto;
-  opacity: 0.05;
+  opacity: 0.04;
   pointer-events: none;
   z-index: 0;
 }
@@ -169,16 +169,16 @@ body::before {
 /* Sigil section divider — elaborate full-width */
 .section-divider--sigil {
   width: 100%;
-  height: 60px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .section-divider--sigil svg {
-  height: 60px;
+  height: 36px;
   width: auto;
-  opacity: 0.45;
+  opacity: 0.35;
   flex-shrink: 0;
 }
 .section-divider--sigil::before,
@@ -340,7 +340,7 @@ body::before {
 [data-theme="light"] .nav__logo::after { opacity: 0.2; }
 
 @media (max-width: 768px) {
-  .hero__sigil { width: 280px; right: 0; opacity: 0.08; }
+  .hero__sigil { width: 180px; right: 0; opacity: 0.05; }
   .page-sigil { display: none; }
   .btn--primary::before, .btn--primary::after { display: none; }
   .nav__logo::before, .nav__logo::after { display: none; }
@@ -2022,6 +2022,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* --- About Hero Background --- */
 .about-hero {
   position: relative;
+  overflow: hidden;
 }
 .about-hero::before {
   content: '';
