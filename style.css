@@ -34,7 +34,7 @@
   --gray-500:    #252525;
 
   --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif:   'Playfair Display', 'Georgia', serif;
+  --font-serif:   'DM Serif Display', 'Georgia', serif;
   --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
 
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -321,7 +321,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.0;
   letter-spacing: -0.03em;
   color: var(--white);
-  font-style: italic;
 }
 
 .t-subheading {
