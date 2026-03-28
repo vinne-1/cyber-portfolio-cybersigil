@@ -743,6 +743,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--surface);
   border-top: 1px solid var(--border);
 }
+.contact-section .t-heading {
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
 
 /* --- Footer --- */
 .footer {
