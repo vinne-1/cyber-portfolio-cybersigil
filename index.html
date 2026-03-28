@@ -33,8 +33,10 @@
             if (r) {
                 var decoded = decodeURIComponent(r);
                 if (/^\/[a-zA-Z0-9\/\-_]*$/.test(decoded)) {
-                    var q = new URLSearchParams(window.location.search).get('q');
-                    var url = '/cyber-portfolio' + decoded + (q ? '?' + decodeURIComponent(q) : '');
+                    var rawQ = new URLSearchParams(window.location.search).get('q');
+                    var q = rawQ ? decodeURIComponent(rawQ) : '';
+                    if (q && !/^[a-zA-Z0-9=&_\-%.+]*$/.test(q)) q = '';
+                    var url = '/cyber-portfolio' + decoded + (q ? '?' + q : '');
                     history.replaceState(null, '', url);
                 }
             }
@@ -56,7 +58,7 @@
       "name": "Vineet Vishesh",
       "jobTitle": "Offensive Security Professional",
       "description": "Red team operator and penetration testing specialist with 6+ years of controlled offensive validation.",
-      "url": "https://vineetvishesh.com",
+      "url": "https://vinne-1.github.io/cyber-portfolio/",
       "sameAs": [
         "https://www.linkedin.com/in/vineet-vishesh-66ab95281/",
         "https://github.com/vinne-1"

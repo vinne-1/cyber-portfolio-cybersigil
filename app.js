@@ -38,6 +38,12 @@
     /* ----------------------------------------------------------
        GSAP SETUP
        ---------------------------------------------------------- */
+    if (typeof gsap === 'undefined') {
+        document.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block')
+            .forEach(function (el) { el.style.opacity = '1'; el.style.transform = 'none'; });
+        document.body.classList.add('ready');
+        return;
+    }
     gsap.registerPlugin(ScrollTrigger);
 
     /* ----------------------------------------------------------
@@ -197,6 +203,18 @@
         '/404':            '404 — Vineet Vishesh'
     };
 
+    var ROUTE_DESCRIPTIONS = {
+        '/':               'Vineet Vishesh — Offensive Security Specialist. Red team operator and penetration tester with 6+ years of experience across web, mobile, network, and cloud environments.',
+        '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
+        '/work':           'Selected offensive security projects — OSINT automation, privilege escalation research, and red team tooling.',
+        '/work/osint':     'Automated OSINT Pipeline Framework — multi-source intelligence aggregation for reconnaissance and threat profiling.',
+        '/work/privesc':   'Polymorphic Privilege Escalation Generator — adaptive exploit generation for authorized red team research.',
+        '/capabilities':   'Offensive security capabilities — web app pentesting, red teaming, cloud security, exploit development, and mobile assessments.',
+        '/credentials':    'Certifications and credentials — CompTIA Security+, Burp Suite Certified Practitioner, and professional endorsements.',
+        '/contact':        'Get in touch with Vineet Vishesh for offensive security engagements, red team operations, and penetration testing.',
+        '/404':            'Page not found — Vineet Vishesh offensive security portfolio.'
+    };
+
     var app = document.getElementById('app');
     var currentRoute = null;
     var isTransitioning = false;
@@ -334,6 +352,8 @@
         if (!template) return;
 
         document.title = ROUTE_TITLES[route] || ROUTE_TITLES['/'];
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc) metaDesc.setAttribute('content', ROUTE_DESCRIPTIONS[route] || ROUTE_DESCRIPTIONS['/']);
         updateActiveNav(route);
         var announcer = document.getElementById('routeAnnouncer');
         if (announcer) announcer.textContent = document.title;
@@ -1114,6 +1134,8 @@
        MATRIX RAIN CANVAS
        ---------------------------------------------------------- */
     var matrixAnimFrame = null;
+    var matrixResizeHandler = null;
+    var particleResizeHandler = null;
 
     function isMobileViewport() { return window.innerWidth < 768; }
 
@@ -1139,10 +1161,10 @@
         resize();
 
         // Clean up previous resize listener before adding new one
-        if (window._matrixResizeHandler) {
-            window.removeEventListener('resize', window._matrixResizeHandler);
+        if (matrixResizeHandler) {
+            window.removeEventListener('resize', matrixResizeHandler);
         }
-        window._matrixResizeHandler = resize;
+        matrixResizeHandler = resize;
         window.addEventListener('resize', resize);
 
         var chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
@@ -1184,9 +1206,9 @@
             cancelAnimationFrame(matrixAnimFrame);
             matrixAnimFrame = null;
         }
-        if (window._matrixResizeHandler) {
-            window.removeEventListener('resize', window._matrixResizeHandler);
-            window._matrixResizeHandler = null;
+        if (matrixResizeHandler) {
+            window.removeEventListener('resize', matrixResizeHandler);
+            matrixResizeHandler = null;
         }
     }
 
@@ -1213,10 +1235,10 @@
         }
         resize();
 
-        if (window._particleResizeHandler) {
-            window.removeEventListener('resize', window._particleResizeHandler);
+        if (particleResizeHandler) {
+            window.removeEventListener('resize', particleResizeHandler);
         }
-        window._particleResizeHandler = resize;
+        particleResizeHandler = resize;
         window.addEventListener('resize', resize);
 
         for (var i = 0; i < PARTICLE_COUNT; i++) {
@@ -1278,9 +1300,9 @@
             cancelAnimationFrame(particleAnimFrame);
             particleAnimFrame = null;
         }
-        if (window._particleResizeHandler) {
-            window.removeEventListener('resize', window._particleResizeHandler);
-            window._particleResizeHandler = null;
+        if (particleResizeHandler) {
+            window.removeEventListener('resize', particleResizeHandler);
+            particleResizeHandler = null;
         }
     }
 
