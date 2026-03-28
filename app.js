@@ -337,6 +337,7 @@
                 window.scrollTo(0, 0);
             }
             handleNavScroll();
+            transitionIn(route);
             animatePageEntrance();
 
             setTimeout(function () {
