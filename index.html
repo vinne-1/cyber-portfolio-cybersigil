@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css">
 
     <!-- Design System -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -1215,7 +1215,7 @@
     <script defer src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
 
     <!-- App -->
-    <script defer src="app.js"></script>
+    <script defer src="app.js?v=3"></script>
 
     <!-- Umami Analytics (privacy-friendly, no cookies) -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="REPLACE_WITH_YOUR_UMAMI_ID"></script>
@@ -1224,7 +1224,7 @@
     <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
-            navigator.serviceWorker.register('sw.js');
+            navigator.serviceWorker.register('/cyber-portfolio/sw.js');
         });
     }
     </script>

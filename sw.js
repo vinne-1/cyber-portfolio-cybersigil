@@ -1,4 +1,4 @@
-var CACHE_NAME = 'vineet-portfolio-v2';
+var CACHE_NAME = 'vineet-portfolio-v3';
 var ASSETS = [
   './',
   './index.html',
@@ -10,6 +10,11 @@ var ASSETS = [
   'https://unpkg.com/lenis@1.1.18/dist/lenis.min.js',
   'https://unpkg.com/splitting/dist/splitting.min.js'
 ];
+
+// Local assets that should always use network-first
+function isLocalAsset(url) {
+  return /\/(index\.html|style\.css|app\.js)/.test(url);
+}
 
 self.addEventListener('install', function (e) {
   e.waitUntil(
@@ -33,21 +38,50 @@ self.addEventListener('activate', function (e) {
 });
 
 self.addEventListener('fetch', function (e) {
-  // Network-first for navigation, cache-first for assets
+  // SPA navigation: always serve index.html (no 404.html round-trip)
   if (e.request.mode === 'navigate') {
     e.respondWith(
-      fetch(e.request).catch(function () {
-        return caches.match('./index.html');
+      caches.match('./index.html').then(function (cached) {
+        // Refresh cache in background
+        var fetchPromise = fetch(e.request.url.split('?')[0].replace(/\/[^\/]*$/, '/'))
+          .then(function (response) {
+            if (response.ok) {
+              var clone = response.clone();
+              caches.open(CACHE_NAME).then(function (cache) {
+                cache.put('./index.html', clone);
+              });
+            }
+            return response;
+          }).catch(function () { return cached; });
+        return cached || fetchPromise;
       })
     );
     return;
   }
 
+  // Local assets: network-first (always get latest app.js, style.css)
+  if (isLocalAsset(e.request.url)) {
+    e.respondWith(
+      fetch(e.request).then(function (response) {
+        if (response.ok) {
+          var clone = response.clone();
+          caches.open(CACHE_NAME).then(function (cache) {
+            cache.put(e.request, clone);
+          });
+        }
+        return response;
+      }).catch(function () {
+        return caches.match(e.request);
+      })
+    );
+    return;
+  }
+
+  // CDN assets: cache-first (versioned URLs, safe to cache)
   e.respondWith(
     caches.match(e.request).then(function (cached) {
       return cached || fetch(e.request).then(function (response) {
-        // Cache successful responses
-        if (response.status === 200) {
+        if (response.ok) {
           var clone = response.clone();
           caches.open(CACHE_NAME).then(function (cache) {
             cache.put(e.request, clone);
