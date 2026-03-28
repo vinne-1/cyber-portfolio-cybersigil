@@ -109,9 +109,9 @@ body::before {
 }
 .sigil--glow {
   filter:
-    drop-shadow(0 0 2px rgba(200, 16, 46, 0.6))
-    drop-shadow(0 0 6px rgba(200, 16, 46, 0.3))
-    drop-shadow(0 0 14px rgba(200, 16, 46, 0.1));
+    drop-shadow(0 0 3px rgba(165, 13, 34, 0.7))
+    drop-shadow(0 0 8px rgba(165, 13, 34, 0.4))
+    drop-shadow(0 0 20px rgba(165, 13, 34, 0.15));
 }
 .sigil--draw {
   stroke-dasharray: 800;
@@ -124,106 +124,224 @@ body::before {
   to { stroke-dashoffset: 0; }
 }
 .sigil--pulse {
-  animation: sigilPulse 3s ease-in-out infinite alternate;
+  animation: sigilPulse 4s ease-in-out infinite alternate;
 }
 @keyframes sigilPulse {
   from {
-    filter: drop-shadow(0 0 2px rgba(200, 16, 46, 0.4)) drop-shadow(0 0 4px rgba(200, 16, 46, 0.2));
-    opacity: 0.7;
+    filter: drop-shadow(0 0 3px rgba(165, 13, 34, 0.5)) drop-shadow(0 0 8px rgba(165, 13, 34, 0.25));
+    opacity: 0.8;
   }
   to {
-    filter: drop-shadow(0 0 3px rgba(200, 16, 46, 0.8)) drop-shadow(0 0 10px rgba(200, 16, 46, 0.3));
+    filter: drop-shadow(0 0 5px rgba(165, 13, 34, 0.9)) drop-shadow(0 0 16px rgba(165, 13, 34, 0.4));
     opacity: 1;
   }
 }
 
-/* Hero sigil watermark */
+/* Hero sigil watermark — large, visible, intricate */
 .hero__sigil {
   position: absolute;
-  right: 5%;
+  right: 3%;
   top: 50%;
   transform: translateY(-50%);
-  width: 320px;
+  width: 500px;
   height: auto;
-  opacity: 0.06;
+  opacity: 0.12;
   z-index: 1;
 }
 
-/* Sigil section divider */
+/* Page-specific background sigils */
+.page-sigil {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70%;
+  max-height: 600px;
+  width: auto;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
+.page-sigil--left { left: 2%; }
+.page-sigil--right { right: 2%; }
+
+/* Sigil section divider — elaborate full-width */
 .section-divider--sigil {
   width: 100%;
-  height: 40px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 .section-divider--sigil svg {
-  height: 40px;
+  height: 60px;
   width: auto;
-  opacity: 0.35;
+  opacity: 0.45;
+  flex-shrink: 0;
 }
 .section-divider--sigil::before,
 .section-divider--sigil::after {
   content: '';
   flex: 1;
   height: 1px;
-  background: var(--border);
+  background: linear-gradient(90deg, transparent, var(--crimson), transparent);
+  opacity: 0.2;
 }
 
-/* Card corner sigil ornaments (CSS-only angular brackets) */
+/* Card corner sigil ornaments — larger with thorn extensions */
 .cap-card::after {
   content: '';
   position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 24px;
-  height: 24px;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
   border-top: 1px solid var(--crimson);
   border-right: 1px solid var(--crimson);
-  opacity: 0;
+  opacity: 0.25;
   transition: opacity 0.4s var(--ease-out-expo);
-  filter: drop-shadow(0 0 3px rgba(200, 16, 46, 0.4));
+  filter: drop-shadow(0 0 4px rgba(165, 13, 34, 0.5));
+}
+.cap-card::before {
+  width: 40px;
+  height: 40px;
 }
 .cap-card:hover::after {
-  opacity: 0.5;
+  opacity: 0.6;
 }
-.project-card .project-card__corner-sigil {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
-  width: 20px;
-  height: 20px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 2;
-}
-.project-card:hover .project-card__corner-sigil {
-  opacity: 0.4;
+/* Bottom-left corner mirror */
+.cap-card .cap-card__icon {
+  position: relative;
 }
 
-/* Section label sigil accent */
+/* Project card thorn corners */
+.project-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-bottom: 1px solid var(--crimson);
+  border-left: 1px solid var(--crimson);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 0 3px rgba(165, 13, 34, 0.4));
+}
+.project-card:hover::before {
+  opacity: 0.5;
+}
+
+/* Section label sigil accent — larger, more ornate */
 .t-label {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 .t-label__sigil {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  filter: drop-shadow(0 0 3px rgba(165, 13, 34, 0.4));
+}
+
+/* Nav logo thorn accents */
+.nav__logo {
+  position: relative;
+}
+.nav__logo::before,
+.nav__logo::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 1px;
+  background: var(--crimson);
+  opacity: 0.35;
+  transform: translateY(-50%);
+}
+.nav__logo::before { left: -20px; }
+.nav__logo::after { right: -20px; }
+
+/* Button spine accents on hover */
+.btn--primary {
+  position: relative;
+}
+.btn--primary::before,
+.btn--primary::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--crimson);
+  transition: width 0.4s var(--ease-out-expo);
+  filter: drop-shadow(0 0 3px rgba(165, 13, 34, 0.5));
+}
+.btn--primary::before {
+  right: 100%;
+  transform: translateY(-50%);
+  margin-right: 6px;
+}
+.btn--primary::after {
+  left: 100%;
+  transform: translateY(-50%);
+  margin-left: 6px;
+}
+.btn--primary:hover::before,
+.btn--primary:hover::after {
+  width: 24px;
+}
+
+/* Stat block sigil frames */
+.stat-block {
+  position: relative;
+}
+.stat-block::before,
+.stat-block::after {
+  content: '';
+  position: absolute;
   width: 16px;
   height: 16px;
-  opacity: 0.6;
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+.stat-block::before {
+  top: 0;
+  left: 0;
+  border-top: 1px solid var(--crimson);
+  border-left: 1px solid var(--crimson);
+}
+.stat-block::after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid var(--crimson);
+  border-right: 1px solid var(--crimson);
+}
+.stat-block:hover::before,
+.stat-block:hover::after {
+  opacity: 0.5;
 }
 
-[data-theme="light"] .hero__sigil { opacity: 0.04; }
-[data-theme="light"] .section-divider--sigil svg { opacity: 0.2; }
+[data-theme="light"] .hero__sigil { opacity: 0.06; }
+[data-theme="light"] .page-sigil { opacity: 0.03; }
+[data-theme="light"] .section-divider--sigil svg { opacity: 0.25; }
 [data-theme="light"] .sigil--glow {
   filter:
-    drop-shadow(0 0 1px rgba(200, 16, 46, 0.3))
-    drop-shadow(0 0 4px rgba(200, 16, 46, 0.15));
+    drop-shadow(0 0 2px rgba(165, 13, 34, 0.35))
+    drop-shadow(0 0 6px rgba(165, 13, 34, 0.18));
 }
+[data-theme="light"] .cap-card::after { opacity: 0.15; }
+[data-theme="light"] .nav__logo::before,
+[data-theme="light"] .nav__logo::after { opacity: 0.2; }
 
 @media (max-width: 768px) {
-  .hero__sigil { width: 200px; right: 2%; opacity: 0.04; }
+  .hero__sigil { width: 280px; right: 0; opacity: 0.08; }
+  .page-sigil { display: none; }
+  .btn--primary::before, .btn--primary::after { display: none; }
+  .nav__logo::before, .nav__logo::after { display: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .sigil--draw { stroke-dasharray: 0; stroke-dashoffset: 0; }
@@ -1209,9 +1327,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .footer__sigil-row {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   border-bottom: 1px solid var(--border);
-  opacity: 0.4;
+  opacity: 0.6;
 }
 .footer__bottom {
   display: flex;

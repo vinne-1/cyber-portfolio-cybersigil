@@ -554,7 +554,7 @@
     function setupSigils() {
         // Add small sigil accent to section labels
         var labels = app.querySelectorAll('.t-label');
-        var sigilSVG = '<svg class="t-label__sigil sigil" viewBox="0 0 16 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M8,1 L11,7 L8,13 L5,7 Z" stroke-width="0.6"/><path d="M8,5 C6,7 4,8 2,8.5" stroke-width="0.4"/><path d="M8,5 C10,7 12,8 14,8.5" stroke-width="0.4"/></svg>';
+        var sigilSVG = '<svg class="t-label__sigil sigil sigil--glow" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M12,1 L16,10 L12,19 L8,10 Z" stroke-width="0.6"/><path d="M12,6 C9,10 5,12 1,13" stroke-width="0.5"/><path d="M12,6 C15,10 19,12 23,13" stroke-width="0.5"/><circle cx="1" cy="13" r="1" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><circle cx="23" cy="13" r="1" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><path d="M12,15 L14,20 L12,24 L10,20 Z" stroke-width="0.3" opacity="0.5"/></svg>';
         labels.forEach(function (label) {
             if (label.querySelector('.t-label__sigil')) return;
             label.insertAdjacentHTML('afterbegin', sigilSVG);
@@ -568,6 +568,46 @@
                 trigger: s,
                 start: 'top 85%',
                 onEnter: function () { s.classList.add('is-drawn'); },
+                once: true
+            });
+        });
+
+        // Page-specific background sigils
+        var pageEl = app.querySelector('[data-page]');
+        var pageType = pageEl ? pageEl.getAttribute('data-page') : '';
+        var pageSigilData = {
+            about: '<svg class="page-sigil page-sigil--right sigil" viewBox="0 0 120 400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="60" y1="0" x2="60" y2="400" stroke-width="0.2" opacity="0.3"/><path d="M60,20 L75,60 L60,100 L45,60 Z" stroke-width="0.5"/><path d="M60,100 C50,140 25,160 5,175" stroke-width="0.7"/><path d="M60,100 C70,140 95,160 115,175" stroke-width="0.7"/><circle cx="5" cy="175" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="115" cy="175" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M60,200 L72,240 L60,280 L48,240 Z" stroke-width="0.4"/><path d="M60,280 C52,310 35,325 18,335" stroke-width="0.5"/><path d="M60,280 C68,310 85,325 102,335" stroke-width="0.5"/><path d="M60,350 L65,375 L60,400 L55,375 Z" stroke-width="0.3" opacity="0.5"/></svg>',
+            work: '<svg class="page-sigil page-sigil--left sigil" viewBox="0 0 80 500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="40" y1="0" x2="40" y2="500" stroke-width="0.2" opacity="0.2"/><path d="M40,30 L55,80 L40,130 L25,80 Z" stroke-width="0.5"/><path d="M40,130 C32,170 15,195 2,210" stroke-width="0.6"/><path d="M40,130 C48,170 65,195 78,210" stroke-width="0.6"/><circle cx="2" cy="210" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="78" cy="210" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M40,250 L50,290 L40,330 L30,290 Z" stroke-width="0.4"/><path d="M40,370 L48,420 L40,470 L32,420 Z" stroke-width="0.3" opacity="0.4"/></svg>',
+            capabilities: '<svg class="page-sigil page-sigil--right sigil" viewBox="0 0 100 450" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="0" x2="50" y2="450" stroke-width="0.2" opacity="0.2"/><path d="M50,15 L68,65 L50,115 L32,65 Z" stroke-width="0.5"/><path d="M50,70 C42,95 20,110 5,118" stroke-width="0.6"/><path d="M50,70 C58,95 80,110 95,118" stroke-width="0.6"/><path d="M50,160 L60,200 L50,240 L40,200 Z" stroke-width="0.4"/><path d="M50,240 C44,270 28,285 12,295" stroke-width="0.5"/><path d="M50,240 C56,270 72,285 88,295" stroke-width="0.5"/><circle cx="12" cy="295" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="88" cy="295" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M50,340 L56,380 L50,420 L44,380 Z" stroke-width="0.3" opacity="0.5"/></svg>',
+            contact: '<svg class="page-sigil page-sigil--left sigil" viewBox="0 0 100 300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="0" x2="50" y2="300" stroke-width="0.2" opacity="0.2"/><path d="M50,20 L65,60 L50,100 L35,60 Z" stroke-width="0.5"/><path d="M50,60 C42,80 22,92 5,100" stroke-width="0.6"/><path d="M50,60 C58,80 78,92 95,100" stroke-width="0.6"/><circle cx="5" cy="100" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="95" cy="100" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M50,140 L58,180 L50,220 L42,180 Z" stroke-width="0.4"/><path d="M50,250 L55,275 L50,300 L45,275 Z" stroke-width="0.3" opacity="0.4"/></svg>'
+        };
+        if (pageSigilData[pageType] && pageEl) {
+            pageEl.style.position = 'relative';
+            pageEl.insertAdjacentHTML('afterbegin', pageSigilData[pageType]);
+        }
+
+        // Draw-reveal section divider sigils on scroll
+        var dividerSigils = app.querySelectorAll('.section-divider--sigil .sigil');
+        dividerSigils.forEach(function (s) {
+            var paths = s.querySelectorAll('path, line');
+            paths.forEach(function (p) {
+                var len = p.getTotalLength ? p.getTotalLength() : 100;
+                p.style.strokeDasharray = len;
+                p.style.strokeDashoffset = len;
+            });
+            ScrollTrigger.create({
+                trigger: s,
+                start: 'top 85%',
+                onEnter: function () {
+                    paths.forEach(function (p, i) {
+                        gsap.to(p, {
+                            strokeDashoffset: 0,
+                            duration: 1.5,
+                            delay: i * 0.05,
+                            ease: 'power2.out'
+                        });
+                    });
+                },
                 once: true
             });
         });
