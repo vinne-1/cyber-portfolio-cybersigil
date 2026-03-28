@@ -203,9 +203,6 @@
     /* ----------------------------------------------------------
        PAGE TRANSITIONS — Per-Route Variants
        ---------------------------------------------------------- */
-    var transitionBar = document.querySelector('.page-transition__bar');
-    var transitionClip = document.getElementById('pageTransitionClip');
-
     function transitionOut() {
         if (prefersReducedMotion) return Promise.resolve();
 

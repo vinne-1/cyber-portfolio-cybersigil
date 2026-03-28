@@ -186,12 +186,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* --- Page Transition Overlay --- */
-.page-transition {
-  display: none;
-}
-.page-transition__bar {
-  display: none;
-}
 
 /* --- Accent Bar --- */
 .accent-bar {
@@ -1394,9 +1388,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* --- Page-Specific Transitions --- */
-.page-transition__clip {
-  display: none;
-}
 
 /* --- Back to Top --- */
 .back-to-top {
