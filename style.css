@@ -637,8 +637,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 700;
   color: var(--white);
   letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .nav__logo span { color: var(--crimson); }
+.nav__logo-sigil {
+  color: var(--purple);
+  opacity: 0.6;
+  transition: opacity 0.3s ease, transform 0.5s var(--ease-out-expo);
+}
+.nav__logo:hover .nav__logo-sigil {
+  opacity: 1;
+  transform: rotate(45deg);
+}
 
 .nav__links {
   display: flex;
@@ -1108,6 +1120,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   overflow: hidden;
   transition: border-color 0.4s var(--ease-out-expo), background 0.4s var(--ease-out-expo);
   z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
+}
+/* Alternate clip-path direction for even cards */
+.cap-card:nth-child(even) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 92%);
 }
 .cap-card::before {
   content: '';
@@ -1403,6 +1420,26 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
   margin-bottom: 2rem;
 }
+/* Footer large wordmark (kprverse footer_kpr pattern) */
+.footer__wordmark {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0 0;
+  overflow: hidden;
+}
+.footer__wordmark-svg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  color: var(--purple);
+}
+[data-theme="light"] .footer__wordmark-svg {
+  opacity: 0.6;
+}
+@media (max-width: 640px) {
+  .footer__wordmark-svg { max-width: 320px; }
+}
+
 .footer__sigil-row {
   display: flex;
   justify-content: center;
@@ -2405,24 +2442,29 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   overflow: hidden;
 }
-.about-hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 80% 50% at 70% 20%, rgba(200, 16, 46, 0.06) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(200, 16, 46, 0.04) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
-}
 .about-hero > .container {
   position: relative;
   z-index: 1;
 }
-[data-theme="light"] .about-hero::before {
-  background:
-    radial-gradient(ellipse 80% 50% at 70% 20%, rgba(200, 16, 46, 0.04) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(200, 16, 46, 0.03) 0%, transparent 50%);
+
+/* About pillars — gothic styling */
+.about-pillar {
+  padding: 1.5rem;
+  background: linear-gradient(145deg, var(--surface) 0%, rgba(45, 27, 78, 0.06) 100%);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--purple-deep);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 90% 100%, 0 100%);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+.about-pillar:hover {
+  border-color: var(--purple);
+  box-shadow: 0 4px 20px rgba(107, 76, 154, 0.08);
+}
+.about-pillar:nth-child(2) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%, 0 90%);
+}
+.about-pillar:nth-child(3) {
+  clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 0 100%);
 }
 
 /* --- Timeline --- */
@@ -2453,15 +2495,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--crimson);
+  background: linear-gradient(135deg, var(--crimson), var(--purple));
   border: 2px solid var(--black);
-  outline: 1px solid var(--crimson);
+  outline: 1px solid var(--purple);
+  box-shadow: 0 0 8px rgba(107, 76, 154, 0.3);
+}
+.timeline__item:hover .timeline__dot {
+  box-shadow: 0 0 12px rgba(107, 76, 154, 0.5), 0 0 4px rgba(165, 13, 34, 0.4);
 }
 .timeline__year {
   font-size: 0.7rem;
-  color: var(--crimson);
-  letter-spacing: 0.1em;
+  color: var(--purple);
+  letter-spacing: 0.15em;
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 .timeline__title {
   font-size: 1.1rem;
