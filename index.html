@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting-cells.css" integrity="sha384-y6P68QahVJCCHTs++clRdwi/t3TFb2Se2v91Z9KniuEKV98RPXh2fYhLHvQEfqg2" crossorigin="anonymous">
 
     <!-- Design System -->
-    <link rel="stylesheet" href="style.css?v=4">
+    <link rel="stylesheet" href="style.css?v=5">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -158,10 +158,10 @@
             <a href="/cyber-portfolio-cybersigil/" class="nav__logo" data-route>vineet<span>.</span></a>
 
             <ul class="nav__links">
-                <li><a href="/cyber-portfolio-cybersigil/about" class="nav__link" data-route>About</a></li>
-                <li><a href="/cyber-portfolio-cybersigil/work" class="nav__link" data-route>Work</a></li>
-                <li><a href="/cyber-portfolio-cybersigil/capabilities" class="nav__link" data-route>Capabilities</a></li>
-                <li><a href="/cyber-portfolio-cybersigil/credentials" class="nav__link" data-route>Credentials</a></li>
+                <li><a href="/cyber-portfolio-cybersigil/about" class="nav__link" data-route><span class="nav__link-short">01</span>About</a></li>
+                <li><a href="/cyber-portfolio-cybersigil/work" class="nav__link" data-route><span class="nav__link-short">02</span>Work</a></li>
+                <li><a href="/cyber-portfolio-cybersigil/capabilities" class="nav__link" data-route><span class="nav__link-short">03</span>Capabilities</a></li>
+                <li><a href="/cyber-portfolio-cybersigil/credentials" class="nav__link" data-route><span class="nav__link-short">04</span>Credentials</a></li>
             </ul>
 
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
@@ -575,7 +575,32 @@
 
     <!-- WORK -->
     <template id="page-work">
-        <section class="section" data-page="work" style="padding-top:120px;">
+        <section class="section section--atmosphere-deep" data-page="work" style="padding-top:120px;">
+            <!-- Atmospheric particles -->
+            <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+            </div>
+            <!-- Measurement lines decoration -->
+            <svg class="measurement-lines measurement-lines--top-right" viewBox="0 0 120 120" fill="none" stroke="currentColor" aria-hidden="true">
+                <line x1="0" y1="10" x2="120" y2="10" stroke-width="0.5" opacity="0.3"/>
+                <line x1="0" y1="30" x2="120" y2="30" stroke-width="0.5" opacity="0.2"/>
+                <line x1="0" y1="50" x2="120" y2="50" stroke-width="0.5" opacity="0.15"/>
+                <line x1="0" y1="70" x2="120" y2="70" stroke-width="0.5" opacity="0.2"/>
+                <line x1="0" y1="90" x2="120" y2="90" stroke-width="0.5" opacity="0.3"/>
+                <!-- Tick marks -->
+                <line x1="110" y1="5" x2="110" y2="15" stroke-width="0.8" opacity="0.4"/>
+                <line x1="105" y1="7" x2="105" y2="13" stroke-width="0.5" opacity="0.25"/>
+                <line x1="100" y1="8" x2="100" y2="12" stroke-width="0.3" opacity="0.2"/>
+                <line x1="110" y1="25" x2="110" y2="35" stroke-width="0.8" opacity="0.4"/>
+                <line x1="110" y1="45" x2="110" y2="55" stroke-width="0.8" opacity="0.4"/>
+                <line x1="110" y1="65" x2="110" y2="75" stroke-width="0.8" opacity="0.4"/>
+                <line x1="110" y1="85" x2="110" y2="95" stroke-width="0.8" opacity="0.4"/>
+            </svg>
             <div class="container">
 
                 <div class="anim-item" style="margin-bottom:4rem;">
@@ -650,8 +675,8 @@
                     </div>
                 </div>
 
-                <!-- Secondary cards -->
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap:2px; margin-top:2px;">
+                <!-- Secondary cards — scattered layout -->
+                <div class="scattered-grid">
                     <div class="project-card anim-item">
                         <div class="project-card__body">
                             <div class="project-card__number">03 — Web Application</div>
@@ -693,7 +718,28 @@
 
     <!-- CAPABILITIES -->
     <template id="page-capabilities">
-        <section class="section" data-page="capabilities" style="padding-top:120px;">
+        <section class="section section--sunset" data-page="capabilities" style="padding-top:120px;">
+            <!-- Atmospheric particles -->
+            <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+            </div>
+            <!-- Measurement lines — bottom left -->
+            <svg class="measurement-lines measurement-lines--bottom-left" viewBox="0 0 100 100" fill="none" stroke="currentColor" aria-hidden="true">
+                <line x1="0" y1="10" x2="100" y2="10" stroke-width="0.5" opacity="0.3"/>
+                <line x1="0" y1="30" x2="100" y2="30" stroke-width="0.5" opacity="0.2"/>
+                <line x1="0" y1="50" x2="100" y2="50" stroke-width="0.5" opacity="0.15"/>
+                <line x1="0" y1="70" x2="100" y2="70" stroke-width="0.5" opacity="0.2"/>
+                <line x1="0" y1="90" x2="100" y2="90" stroke-width="0.5" opacity="0.3"/>
+                <line x1="90" y1="5" x2="90" y2="15" stroke-width="0.8" opacity="0.4"/>
+                <line x1="85" y1="7" x2="85" y2="13" stroke-width="0.5" opacity="0.25"/>
+                <line x1="90" y1="25" x2="90" y2="35" stroke-width="0.8" opacity="0.4"/>
+                <line x1="90" y1="65" x2="90" y2="75" stroke-width="0.8" opacity="0.4"/>
+            </svg>
             <div class="container">
 
                 <div class="anim-item" style="margin-bottom:4rem;">
@@ -846,7 +892,17 @@
 
     <!-- CREDENTIALS -->
     <template id="page-credentials">
-        <section class="section" data-page="credentials" style="padding-top:120px;">
+        <section class="section section--atmosphere-deep" data-page="credentials" style="padding-top:120px;">
+            <svg class="measurement-lines measurement-lines--top-right" viewBox="0 0 120 120" fill="none" stroke="currentColor" aria-hidden="true">
+                <line x1="0" y1="15" x2="120" y2="15" stroke-width="0.5" opacity="0.25"/>
+                <line x1="0" y1="40" x2="120" y2="40" stroke-width="0.5" opacity="0.15"/>
+                <line x1="0" y1="65" x2="120" y2="65" stroke-width="0.5" opacity="0.2"/>
+                <line x1="0" y1="90" x2="120" y2="90" stroke-width="0.5" opacity="0.25"/>
+                <line x1="110" y1="10" x2="110" y2="20" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="35" x2="110" y2="45" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="60" x2="110" y2="70" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="85" x2="110" y2="95" stroke-width="0.8" opacity="0.35"/>
+            </svg>
             <div class="container">
 
                 <div style="display:grid; grid-template-columns:1fr 1fr; gap:clamp(3rem, 6vw, 8rem); align-items:start;" class="trust-grid">
@@ -964,8 +1020,14 @@
 
     <!-- CONTACT -->
     <template id="page-contact">
-        <section class="section contact-section" data-page="contact" style="padding-top:120px; min-height:calc(100vh - 72px); display:flex; align-items:center;">
+        <section class="section section--sunset contact-section" data-page="contact" style="padding-top:120px; min-height:calc(100vh - 72px); display:flex; align-items:center;">
             <div class="radar-sweep" aria-hidden="true"></div>
+            <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+            </div>
             <div class="container" style="position:relative; z-index:1;">
                 <div style="max-width:700px;">
                     <div class="anim-item">

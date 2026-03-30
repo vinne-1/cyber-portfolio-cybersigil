@@ -1,4 +1,4 @@
-var CACHE_NAME = 'vineet-portfolio-cybersigil-v1';
+var CACHE_NAME = 'vineet-portfolio-cybersigil-v2';
 var ASSETS = [
   './',
   './index.html',
