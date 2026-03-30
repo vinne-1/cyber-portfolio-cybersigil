@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/about</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/about</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/work</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/work</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/capabilities</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/capabilities</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/credentials</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/credentials</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/contact</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/contact</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/work/osint</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/work/osint</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio/work/privesc</loc>
+    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/work/privesc</loc>
     <lastmod>2026-03-28</lastmod>
     <priority>0.7</priority>
   </url>

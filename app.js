@@ -177,7 +177,7 @@
     /* ----------------------------------------------------------
        ROUTE CONFIG (HTML5 History API)
        ---------------------------------------------------------- */
-    var BASE_PATH = '/cyber-portfolio';
+    var BASE_PATH = '/cyber-portfolio-cybersigil';
 
     var ROUTES = {
         '/':               'page-home',
