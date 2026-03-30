@@ -1542,18 +1542,56 @@
     }
 
     /* ----------------------------------------------------------
+       LOADING SCREEN (kprverse-inspired progress bar)
+       ---------------------------------------------------------- */
+    function runLoadingScreen(callback) {
+        var screen = document.getElementById('loadingScreen');
+        var bar = document.getElementById('loadingBar');
+        var percent = document.getElementById('loadingPercent');
+        if (!screen || !bar || !percent) { callback(); return; }
+
+        if (prefersReducedMotion) {
+            screen.classList.add('is-hidden');
+            callback();
+            return;
+        }
+
+        var progress = 0;
+        var duration = 2000;
+        var tick = 30;
+        var step = (100 / (duration / tick));
+
+        var interval = setInterval(function () {
+            progress = Math.min(100, progress + step + (Math.random() * 2 - 1));
+            var rounded = Math.round(progress);
+            bar.style.width = rounded + '%';
+            percent.textContent = rounded;
+
+            if (rounded >= 100) {
+                clearInterval(interval);
+                setTimeout(function () {
+                    screen.classList.add('is-hidden');
+                    setTimeout(callback, 600);
+                }, 300);
+            }
+        }, tick);
+    }
+
+    /* ----------------------------------------------------------
        INIT
        ---------------------------------------------------------- */
     function init() {
-        runPreloader(function () {
-            var route = getRouteFromPath();
-            loadPage(route, false);
+        runLoadingScreen(function () {
+            runPreloader(function () {
+                var route = getRouteFromPath();
+                loadPage(route, false);
 
-            requestAnimationFrame(function () {
-                document.body.classList.add('ready');
+                requestAnimationFrame(function () {
+                    document.body.classList.add('ready');
+                });
+
+                handleNavScroll();
             });
-
-            handleNavScroll();
         });
     }
 

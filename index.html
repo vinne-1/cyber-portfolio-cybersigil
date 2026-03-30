@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting-cells.css" integrity="sha384-y6P68QahVJCCHTs++clRdwi/t3TFb2Se2v91Z9KniuEKV98RPXh2fYhLHvQEfqg2" crossorigin="anonymous">
 
     <!-- Design System -->
-    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="style.css?v=4">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -73,6 +73,29 @@
     </script>
 </head>
 <body>
+
+    <!-- Loading Screen (kprverse-inspired) -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-screen__content">
+            <svg class="loading-screen__sigil" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M50 5 L95 50 L50 95 L5 50 Z" stroke="currentColor" stroke-width="0.8"/>
+                <path d="M50 20 L80 50 L50 80 L20 50 Z" stroke="currentColor" stroke-width="0.5"/>
+                <path d="M50 5 L50 95 M5 50 L95 50" stroke="currentColor" stroke-width="0.3" opacity="0.4"/>
+                <circle cx="50" cy="50" r="3" fill="currentColor" opacity="0.6"/>
+            </svg>
+            <div class="loading-screen__bar-wrap">
+                <div class="loading-screen__bar" id="loadingBar"></div>
+            </div>
+            <div class="loading-screen__label">
+                <span>&gt;&gt; INITIALIZING — <span id="loadingPercent">0</span>%</span>
+                <span>CYBER//SIGIL</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nav Frame Border Lines (kprverse NavFrame-inspired) -->
+    <div class="nav-frame-line nav-frame-line--left" aria-hidden="true"></div>
+    <div class="nav-frame-line nav-frame-line--right" aria-hidden="true"></div>
 
     <!-- Preloader -->
     <div class="preloader" id="preloader">
