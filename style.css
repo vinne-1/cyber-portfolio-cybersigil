@@ -854,6 +854,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   overflow: hidden;
 }
+/* Hero noise grain overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
 .hero__meta {
   display: flex;
   align-items: center;
@@ -902,6 +913,25 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-transform: none;
   color: var(--purple);
   opacity: 0.7;
+}
+
+/* Glitch text on hero headline hover */
+.hero__headline {
+  cursor: default;
+}
+.hero__headline:hover .line-inner {
+  animation: glitchText 0.3s ease-in-out;
+}
+@keyframes glitchText {
+  0% { transform: translate(0); text-shadow: none; }
+  20% { transform: translate(-2px, 1px); text-shadow: 2px 0 var(--crimson), -2px 0 var(--purple); }
+  40% { transform: translate(2px, -1px); text-shadow: -2px 0 var(--crimson), 2px 0 var(--purple); }
+  60% { transform: translate(-1px, -1px); text-shadow: 1px 0 var(--purple), -1px 0 var(--crimson); }
+  80% { transform: translate(1px, 1px); text-shadow: -1px 0 var(--purple); }
+  100% { transform: translate(0); text-shadow: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__headline:hover .line-inner { animation: none; }
 }
 
 .hero__sub {
@@ -1064,6 +1094,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   inset: 0;
   background: linear-gradient(180deg, transparent 30%, rgba(45, 27, 78, 0.15) 60%, var(--surface) 100%);
   z-index: 1;
+  transition: background 0.5s ease;
+}
+.project-card:hover .project-card__image-overlay {
+  background: linear-gradient(180deg, transparent 20%, rgba(45, 27, 78, 0.25) 50%, var(--surface) 100%);
 }
 .project-card__image-inner {
   width: 100%;
@@ -2316,6 +2350,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .terminal__input::placeholder {
   color: var(--gray-500);
+}
+/* Terminal cursor blink */
+.terminal__prompt::before {
+  content: '>';
+  color: var(--purple);
+  margin-right: 6px;
+  animation: cursorBlink 1s step-end infinite;
+}
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .terminal__prompt::before { animation: none; }
 }
 
 /* --- Case Study --- */
