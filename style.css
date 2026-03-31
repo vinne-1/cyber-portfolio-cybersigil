@@ -46,7 +46,8 @@
   --gray-400:    #3a2e40;
   --gray-500:    #201828;
 
-  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Cinzel', 'Georgia', serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-serif:   'DM Serif Display', 'Georgia', serif;
   --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
 
@@ -199,10 +200,19 @@ body::after {
   right: 3%;
   top: 50%;
   transform: translateY(-50%);
-  width: clamp(150px, 25vw, 300px);
+  width: clamp(180px, 28vw, 340px);
   max-height: 80vh;
-  opacity: 0.08;
+  opacity: 0.12;
   z-index: 1;
+  animation: sigilRotate 45s linear infinite;
+  filter: drop-shadow(0 0 30px rgba(107, 76, 154, 0.08));
+}
+@keyframes sigilRotate {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to { transform: translateY(-50%) rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__sigil { animation: none; }
 }
 
 /* Page-specific background sigils */
@@ -334,7 +344,7 @@ body::after {
   height: 1px;
   background: var(--crimson);
   transition: width 0.4s var(--ease-out-expo);
-  filter: drop-shadow(0 0 3px rgba(165, 13, 34, 0.5));
+  filter: drop-shadow(0 0 3px rgba(107, 76, 154, 0.5));
 }
 .btn--primary::before {
   right: 100%;
@@ -443,7 +453,7 @@ html.lenis, html.lenis body {
 }
 
 body {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
   background: var(--black);
@@ -493,10 +503,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Typography Scale --- */
 .t-display {
+  font-family: var(--font-display);
   font-size: clamp(3.5rem, 9vw, 8.5rem);
-  font-weight: 800;
+  font-weight: 700;
   line-height: 0.88;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   color: var(--white);
   text-transform: uppercase;
 }
@@ -1062,12 +1073,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   outline-offset: 2px;
 }
 .btn--primary {
-  background: var(--crimson);
+  background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 100%);
   color: var(--white);
+  border: 1px solid transparent;
 }
 .btn--primary:hover {
-  background: var(--crimson-dark);
-  box-shadow: 0 0 20px rgba(165, 13, 34, 0.2), 0 0 40px rgba(165, 13, 34, 0.1);
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple) 100%);
+  box-shadow: 0 0 20px rgba(107, 76, 154, 0.25), 0 0 40px rgba(139, 108, 193, 0.15);
 }
 .btn--outline {
   border: 1px solid var(--border-light);
@@ -2113,7 +2125,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: fixed;
   inset: 0;
   z-index: 500;
-  background: var(--black);
+  background: radial-gradient(ellipse at center, rgba(45, 27, 78, 0.12) 0%, var(--black) 65%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2123,7 +2135,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .preloader__sigil {
   width: 120px;
   height: 120px;
-  color: var(--crimson);
+  color: var(--purple);
+  filter: drop-shadow(0 0 15px rgba(107, 76, 154, 0.3)) drop-shadow(0 0 30px rgba(165, 13, 34, 0.15));
+  animation: preloaderPulse 2s ease-in-out infinite;
+}
+@keyframes preloaderPulse {
+  0%, 100% { filter: drop-shadow(0 0 15px rgba(107, 76, 154, 0.3)) drop-shadow(0 0 30px rgba(165, 13, 34, 0.15)); }
+  50% { filter: drop-shadow(0 0 25px rgba(107, 76, 154, 0.5)) drop-shadow(0 0 50px rgba(165, 13, 34, 0.25)); }
 }
 .preloader__sigil-path {
   stroke-dasharray: 600;
@@ -2139,7 +2157,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: -0.01em;
   opacity: 0;
 }
-.preloader__logo span { color: var(--crimson); }
+.preloader__logo span { color: var(--purple); }
 .preloader__tagline {
   font-family: var(--font-mono);
   font-size: 0.65rem;
