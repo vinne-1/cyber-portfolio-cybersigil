@@ -122,6 +122,35 @@ body::before {
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%234a2d6e' stroke-width='0.3' opacity='0.5'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+/* --- Scanline Overlay --- */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  mix-blend-mode: multiply;
+}
+@media (prefers-reduced-motion: reduce) {
+  body::after { display: none; }
+}
+[data-theme="light"] body::after {
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.015) 2px,
+    rgba(0, 0, 0, 0.015) 4px
+  );
+}
+
 /* --- Cyber Sigilism --- */
 .sigil {
   stroke: var(--crimson);
@@ -330,26 +359,28 @@ body::before {
 .stat-block::after {
   content: '';
   position: absolute;
-  width: 16px;
-  height: 16px;
-  opacity: 0.2;
-  transition: opacity 0.3s ease;
+  width: 20px;
+  height: 20px;
+  opacity: 0.25;
+  transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
 }
 .stat-block::before {
   top: 0;
   left: 0;
-  border-top: 1px solid var(--crimson);
-  border-left: 1px solid var(--crimson);
+  border-top: 1.5px solid var(--purple);
+  border-left: 1.5px solid var(--purple);
 }
 .stat-block::after {
   bottom: 0;
   right: 0;
-  border-bottom: 1px solid var(--crimson);
-  border-right: 1px solid var(--crimson);
+  border-bottom: 1.5px solid var(--crimson);
+  border-right: 1.5px solid var(--crimson);
 }
 .stat-block:hover::before,
 .stat-block:hover::after {
-  opacity: 0.5;
+  opacity: 0.6;
+  width: 28px;
+  height: 28px;
 }
 
 [data-theme="light"] .hero__sigil { opacity: 0.06; }
@@ -1305,11 +1336,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 2px;
 }
 .stat-block {
-  background: linear-gradient(135deg, var(--surface) 0%, rgba(45, 27, 78, 0.08) 100%);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(45, 27, 78, 0.12) 100%);
   padding: clamp(28px, 3vw, 48px);
   text-align: center;
   position: relative;
-  border-bottom: 1px solid rgba(107, 76, 154, 0.1);
+  border-bottom: 1px solid rgba(107, 76, 154, 0.15);
+  transition: background 0.3s ease;
+}
+.stat-block:hover {
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(45, 27, 78, 0.2) 100%);
 }
 .stat-block__value {
   font-size: clamp(2.5rem, 5vw, 4rem);
@@ -1318,7 +1353,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1;
   margin-bottom: 0.5rem;
 }
-.stat-block__value span { color: var(--crimson); }
+.stat-block__value span {
+  color: var(--crimson);
+  text-shadow: 0 0 20px rgba(165, 13, 34, 0.3);
+}
 .stat-block__label {
   font-size: 0.65rem;
   font-weight: 600;
@@ -1333,6 +1371,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-top: 1px solid var(--border);
   position: relative;
   overflow: hidden;
+}
+
+/* Large contact background sigil */
+.contact-sigil {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(250px, 40vw, 450px);
+  height: auto;
+  color: var(--purple);
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+  animation: sigilPulse 6s ease-in-out infinite alternate;
+}
+@media (max-width: 768px) {
+  .contact-sigil { width: 200px; right: -30px; opacity: 0.03; }
 }
 .contact-section .t-heading {
   line-height: 1.2;
@@ -2120,12 +2176,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   gap: 1.25rem;
   padding: 1.25rem 1.5rem;
-  background: var(--surface);
+  background: linear-gradient(145deg, var(--surface) 0%, rgba(45, 27, 78, 0.04) 100%);
   border: 1px solid var(--border);
-  transition: border-color 0.3s ease;
+  border-left: 2px solid var(--purple-deep);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .cert-badge:hover {
-  border-color: var(--crimson);
+  border-color: var(--purple);
+  box-shadow: 0 2px 16px rgba(107, 76, 154, 0.08);
 }
 .cert-badge__icon {
   width: 52px;
@@ -2366,25 +2424,43 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .testimonial {
   background: linear-gradient(150deg, var(--surface) 0%, rgba(45, 27, 78, 0.05) 100%);
   border: 1px solid var(--border);
+  border-left: 2px solid var(--purple-deep);
   padding: clamp(1.5rem, 3vw, 2.5rem);
   position: relative;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
+}
+.testimonial:nth-child(even) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 92%);
 }
 .testimonial:hover {
-  border-color: var(--purple-deep);
-  box-shadow: 0 4px 24px rgba(107, 76, 154, 0.06);
+  border-color: var(--purple);
+  box-shadow: 0 4px 24px rgba(107, 76, 154, 0.1);
 }
 .testimonial::before {
   content: '\201C';
   position: absolute;
-  top: 16px;
+  top: 10px;
   left: 20px;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 1;
   color: var(--purple);
-  opacity: 0.2;
+  opacity: 0.15;
   font-family: var(--font-serif);
   pointer-events: none;
+}
+.testimonial::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--purple-deep), var(--crimson));
+  transition: width 0.5s var(--ease-out-expo);
+}
+.testimonial:hover::after {
+  width: 100%;
 }
 .testimonial__text {
   font-size: 0.9rem;

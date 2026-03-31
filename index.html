@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting-cells.css" integrity="sha384-y6P68QahVJCCHTs++clRdwi/t3TFb2Se2v91Z9KniuEKV98RPXh2fYhLHvQEfqg2" crossorigin="anonymous">
 
     <!-- Design System -->
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=7">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -1064,7 +1064,24 @@
     <template id="page-contact">
         <section class="section section--sunset contact-section" data-page="contact" style="padding-top:120px; min-height:calc(100vh - 72px); display:flex; align-items:center;">
             <div class="radar-sweep" aria-hidden="true"></div>
+            <!-- Large background sigil -->
+            <svg class="contact-sigil" viewBox="0 0 400 400" fill="none" stroke="currentColor" aria-hidden="true">
+                <path d="M200 20 L380 200 L200 380 L20 200 Z" stroke-width="0.8"/>
+                <path d="M200 60 L340 200 L200 340 L60 200 Z" stroke-width="0.5"/>
+                <path d="M200 100 L300 200 L200 300 L100 200 Z" stroke-width="0.3" opacity="0.5"/>
+                <line x1="200" y1="20" x2="200" y2="380" stroke-width="0.3" opacity="0.3"/>
+                <line x1="20" y1="200" x2="380" y2="200" stroke-width="0.3" opacity="0.3"/>
+                <circle cx="200" cy="200" r="60" stroke-width="0.4" opacity="0.3"/>
+                <circle cx="200" cy="200" r="5" fill="currentColor" opacity="0.2"/>
+                <!-- Thorn accents -->
+                <path d="M200 20 C185 55, 180 70, 200 60 C220 70, 215 55, 200 20" stroke-width="0.6" opacity="0.4"/>
+                <path d="M380 200 C345 185, 330 180, 340 200 C330 220, 345 215, 380 200" stroke-width="0.6" opacity="0.4"/>
+                <path d="M200 380 C215 345, 220 330, 200 340 C180 330, 185 345, 200 380" stroke-width="0.6" opacity="0.4"/>
+                <path d="M20 200 C55 215, 70 220, 60 200 C70 180, 55 185, 20 200" stroke-width="0.6" opacity="0.4"/>
+            </svg>
             <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
                 <div class="atmo-particles__dot"></div>
                 <div class="atmo-particles__dot"></div>
                 <div class="atmo-particles__dot"></div>
