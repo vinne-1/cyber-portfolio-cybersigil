@@ -2017,13 +2017,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* --- Scattered Card Layout (kprverse-inspired asymmetric positioning) --- */
 .scattered-grid {
   position: relative;
-  height: clamp(500px, 80vw, 900px);
+  height: clamp(420px, 60vw, 700px);
   margin-top: 2rem;
 }
 .scattered-grid .project-card {
   position: absolute;
   width: clamp(260px, 38vw, 420px);
   transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s ease;
+}
+/* Suppress conic-gradient border on scattered cards — too prominent */
+.scattered-grid .project-card::after {
+  display: none;
 }
 .scattered-grid .project-card:nth-child(1) {
   top: 0;
@@ -2032,14 +2036,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 2;
 }
 .scattered-grid .project-card:nth-child(2) {
-  top: 5%;
+  top: 8%;
   right: 0;
   transform: rotate(1.2deg);
   z-index: 3;
 }
 .scattered-grid .project-card:nth-child(3) {
-  top: 55%;
-  left: 15%;
+  top: 50%;
+  left: 12%;
   transform: rotate(0.8deg);
   z-index: 1;
 }
