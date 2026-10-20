@@ -361,6 +361,34 @@
                 <line x1="125" y1="365" x2="175" y2="365" stroke-width="0.3" opacity="0.3"/>
                 <line x1="135" y1="510" x2="165" y2="510" stroke-width="0.3" opacity="0.3"/>
             </svg>
+            <svg class="hero__slash" aria-hidden="true" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <linearGradient id="slashFade1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--crimson)" stop-opacity="0"/>
+                        <stop offset="45%" stop-color="var(--crimson)" stop-opacity="0.9"/>
+                        <stop offset="60%" stop-color="var(--bone, #d4cfc4)" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="var(--crimson)" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="slashFade2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--crimson)" stop-opacity="0"/>
+                        <stop offset="50%" stop-color="var(--crimson)" stop-opacity="0.5"/>
+                        <stop offset="100%" stop-color="var(--crimson)" stop-opacity="0"/>
+                    </linearGradient>
+                </defs>
+                <!-- Primary zanpakuto-style energy strike -->
+                <path d="M 90,900 C 250,740 310,680 360,600 C 430,490 470,420 550,260 C 600,160 630,100 690,-50"
+                      stroke="url(#slashFade1)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <!-- Trailing secondary strokes (speed-line echo) -->
+                <path d="M 60,840 C 230,690 300,630 350,550 C 420,440 460,380 540,210"
+                      stroke="url(#slashFade2)" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                <path d="M 120,900 C 280,740 340,680 390,600 C 460,490 500,420 580,260"
+                      stroke="url(#slashFade2)" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+                <!-- Ember particles along the strike -->
+                <circle cx="360" cy="600" r="2.2" fill="var(--crimson)" opacity="0.7"/>
+                <circle cx="440" cy="470" r="1.4" fill="var(--crimson)" opacity="0.6"/>
+                <circle cx="520" cy="320" r="1.8" fill="var(--crimson)" opacity="0.5"/>
+                <circle cx="570" cy="200" r="1" fill="var(--crimson)" opacity="0.6"/>
+            </svg>
             <div class="hero__bg-grid"></div>
             <div class="hero__crimson-wash"></div>
             <div class="container" style="position:relative; z-index:2;">
