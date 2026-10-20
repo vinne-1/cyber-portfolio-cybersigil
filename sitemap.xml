@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/about</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/about</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/work</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/work</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/capabilities</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/capabilities</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/credentials</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/credentials</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/contact</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/contact</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/work/osint</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/work/osint</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://vinne-1.github.io/cyber-portfolio-cybersigil/work/privesc</loc>
-    <lastmod>2026-03-28</lastmod>
+    <loc>https://vineedoesstuff.in/work/privesc</loc>
+    <lastmod>2026-10-20</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

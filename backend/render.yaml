@@ -9,6 +9,6 @@ services:
       - key: NODE_ENV
         value: production
       - key: ALLOWED_ORIGIN
-        value: https://vinne-1.github.io
+        value: https://vinne-1.github.io,https://vineedoesstuff.in,https://www.vineedoesstuff.in
       - key: PORT
         value: 4000

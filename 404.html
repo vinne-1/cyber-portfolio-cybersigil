@@ -8,9 +8,10 @@
         // Converts path to a query param so index.html can restore it
         var path = window.location.pathname;
         var search = window.location.search;
+        var basePath = window.location.hostname === 'vinne-1.github.io' ? '/cyber-portfolio-cybersigil' : '';
         window.location.replace(
-            window.location.origin + '/cyber-portfolio-cybersigil/?p=' +
-            encodeURIComponent(path.replace('/cyber-portfolio-cybersigil', '')) +
+            window.location.origin + basePath + '/?p=' +
+            encodeURIComponent(path.replace(basePath, '')) +
             (search ? '&q=' + encodeURIComponent(search.slice(1)) : '')
         );
     </script>

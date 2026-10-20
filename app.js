@@ -177,7 +177,7 @@
     /* ----------------------------------------------------------
        ROUTE CONFIG (HTML5 History API)
        ---------------------------------------------------------- */
-    var BASE_PATH = '/cyber-portfolio-cybersigil';
+    var BASE_PATH = window.location.hostname === 'vinne-1.github.io' ? '/cyber-portfolio-cybersigil' : '';
 
     var ROUTES = {
         '/':               'page-home',
@@ -1477,8 +1477,9 @@
         closeMobile();
 
         // Push new state and load
-        if (href !== window.location.pathname) {
-            history.pushState(null, '', href);
+        var fullPath = (href === '/') ? (BASE_PATH + '/') : (BASE_PATH + href);
+        if (fullPath !== window.location.pathname) {
+            history.pushState(null, '', fullPath);
             var route = getRouteFromPath();
             loadPage(route, false);
             // Track SPA navigation in Umami

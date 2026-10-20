@@ -7,17 +7,17 @@
     <meta name="description" content="Vineet Vishesh — Offensive Security Specialist. Red team operator and penetration tester with 6+ years of experience across web, mobile, network, and cloud environments.">
     <meta name="theme-color" content="#000000">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://vinne-1.github.io/cyber-portfolio-cybersigil/">
+    <link rel="canonical" href="https://vineedoesstuff.in/">
     <link rel="manifest" href="manifest.json">
     <meta property="og:title" content="Vineet Vishesh — Offensive Security">
     <meta property="og:description" content="Vineet Vishesh — Red team operator and penetration tester with 6+ years of experience across web, mobile, network, and cloud environments.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://vinne-1.github.io/cyber-portfolio-cybersigil/">
-    <meta property="og:image" content="https://vinne-1.github.io/cyber-portfolio-cybersigil/og-image.png">
+    <meta property="og:url" content="https://vineedoesstuff.in/">
+    <meta property="og:image" content="https://vineedoesstuff.in/og-image.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Vineet Vishesh — Offensive Security">
     <meta name="twitter:description" content="Red team operator and penetration tester with 6+ years of experience across web, mobile, network, and cloud environments.">
-    <meta name="twitter:image" content="https://vinne-1.github.io/cyber-portfolio-cybersigil/og-image.png">
+    <meta name="twitter:image" content="https://vineedoesstuff.in/og-image.png">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%230a0a0a'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='central' text-anchor='middle' fill='%23c8102e' font-family='system-ui' font-weight='700' font-size='20'%3Ev%3C/text%3E%3C/svg%3E">
 
     <!-- Fonts -->
@@ -36,7 +36,8 @@
                     var rawQ = new URLSearchParams(window.location.search).get('q');
                     var q = rawQ ? decodeURIComponent(rawQ) : '';
                     if (q && !/^[a-zA-Z0-9=&_\-%.+]*$/.test(q)) q = '';
-                    var url = '/cyber-portfolio-cybersigil' + decoded + (q ? '?' + q : '');
+                    var basePath = window.location.hostname === 'vinne-1.github.io' ? '/cyber-portfolio-cybersigil' : '';
+                    var url = basePath + decoded + (q ? '?' + q : '');
                     history.replaceState(null, '', url);
                 }
             }
@@ -58,7 +59,7 @@
       "name": "Vineet Vishesh",
       "jobTitle": "Offensive Security Professional",
       "description": "Red team operator and penetration testing specialist with 6+ years of controlled offensive validation.",
-      "url": "https://vinne-1.github.io/cyber-portfolio-cybersigil/",
+      "url": "https://vineedoesstuff.in/",
       "sameAs": [
         "https://www.linkedin.com/in/vineet-vishesh-66ab95281/",
         "https://github.com/vinne-1"
@@ -155,13 +156,13 @@
          ============================================================ -->
     <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
         <div class="nav__inner">
-            <a href="/cyber-portfolio-cybersigil/" class="nav__logo" data-route><svg class="nav__logo-sigil" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5.636" y1="5.636" x2="18.364" y2="18.364"/><line x1="18.364" y1="5.636" x2="5.636" y2="18.364"/></svg>vineet<span>.</span></a>
+            <a href="/" class="nav__logo" data-route><svg class="nav__logo-sigil" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5.636" y1="5.636" x2="18.364" y2="18.364"/><line x1="18.364" y1="5.636" x2="5.636" y2="18.364"/></svg>vineet<span>.</span></a>
 
             <ul class="nav__links">
-                <li><a href="/cyber-portfolio-cybersigil/about" class="nav__link" data-route><span class="nav__link-short">01</span>About</a></li>
-                <li><a href="/cyber-portfolio-cybersigil/work" class="nav__link" data-route><span class="nav__link-short">02</span>Work</a></li>
-                <li><a href="/cyber-portfolio-cybersigil/capabilities" class="nav__link" data-route><span class="nav__link-short">03</span>Capabilities</a></li>
-                <li><a href="/cyber-portfolio-cybersigil/credentials" class="nav__link" data-route><span class="nav__link-short">04</span>Credentials</a></li>
+                <li><a href="/about" class="nav__link" data-route><span class="nav__link-short">01</span>About</a></li>
+                <li><a href="/work" class="nav__link" data-route><span class="nav__link-short">02</span>Work</a></li>
+                <li><a href="/capabilities" class="nav__link" data-route><span class="nav__link-short">03</span>Capabilities</a></li>
+                <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short">04</span>Credentials</a></li>
             </ul>
 
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
@@ -170,7 +171,7 @@
             </button>
 
             <div class="nav__cta-wrap">
-                <a href="/cyber-portfolio-cybersigil/contact" class="nav__cta" data-route>Get in Touch</a>
+                <a href="/contact" class="nav__cta" data-route>Get in Touch</a>
             </div>
 
             <button class="nav__burger" id="navBurger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMobile">
@@ -181,12 +182,12 @@
 
     <!-- Mobile Menu -->
     <nav class="nav__mobile" id="navMobile" aria-label="Mobile navigation" aria-hidden="true">
-        <a href="/cyber-portfolio-cybersigil/" data-route>Home</a>
-        <a href="/cyber-portfolio-cybersigil/about" data-route>About</a>
-        <a href="/cyber-portfolio-cybersigil/work" data-route>Work</a>
-        <a href="/cyber-portfolio-cybersigil/capabilities" data-route>Capabilities</a>
-        <a href="/cyber-portfolio-cybersigil/credentials" data-route>Credentials</a>
-        <a href="/cyber-portfolio-cybersigil/contact" data-route>Contact</a>
+        <a href="/" data-route>Home</a>
+        <a href="/about" data-route>About</a>
+        <a href="/work" data-route>Work</a>
+        <a href="/capabilities" data-route>Capabilities</a>
+        <a href="/credentials" data-route>Credentials</a>
+        <a href="/contact" data-route>Contact</a>
     </nav>
 
     <!-- ============================================================
@@ -211,7 +212,7 @@
                 <h2 class="footer__cta-heading t-heading">Let's work together.</h2>
                 <p class="footer__cta-sub">Have a security challenge? I'm available for the right engagements.</p>
                 <div class="magnetic-wrap">
-                    <a href="/cyber-portfolio-cybersigil/contact" class="btn btn--primary" data-route>
+                    <a href="/contact" class="btn btn--primary" data-route>
                         Get in Touch
                         <svg aria-hidden="true" class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -373,13 +374,13 @@
                 </p>
                 <div class="hero__cta-group">
                     <div class="magnetic-wrap">
-                        <a href="/cyber-portfolio-cybersigil/work" class="btn btn--primary" data-route>
+                        <a href="/work" class="btn btn--primary" data-route>
                             View Selected Work
                             <svg aria-hidden="true" class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
                     </div>
                     <div class="magnetic-wrap">
-                        <a href="/cyber-portfolio-cybersigil/contact" class="btn btn--outline" data-route>Start a Conversation</a>
+                        <a href="/contact" class="btn btn--outline" data-route>Start a Conversation</a>
                     </div>
                 </div>
             </div>
@@ -678,7 +679,7 @@
                                 <div><div class="project-card__metric-value">94%</div><div class="project-card__metric-label">Accuracy</div></div>
                                 <div><div class="project-card__metric-value">70%</div><div class="project-card__metric-label">Cost Reduction</div></div>
                             </div>
-                            <a href="/cyber-portfolio-cybersigil/work/osint" class="project-card__cta" data-route>
+                            <a href="/work/osint" class="project-card__cta" data-route>
                                 View Case Study
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </a>
@@ -709,7 +710,7 @@
                                 <div><div class="project-card__metric-value">0%</div><div class="project-card__metric-label">Detection Rate</div></div>
                                 <div><div class="project-card__metric-value">89%</div><div class="project-card__metric-label">Success Rate</div></div>
                             </div>
-                            <a href="/cyber-portfolio-cybersigil/work/privesc" class="project-card__cta" data-route>
+                            <a href="/work/privesc" class="project-card__cta" data-route>
                                 View Case Study
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </a>
@@ -1129,7 +1130,7 @@
         <section class="section section--top" data-page="work">
             <div class="container">
                 <div class="anim-item mb-md">
-                    <a href="/cyber-portfolio-cybersigil/work" class="case-study__back" data-route>&larr; Back to Work</a>
+                    <a href="/work" class="case-study__back" data-route>&larr; Back to Work</a>
                 </div>
                 <div class="max-w-medium">
                     <div class="anim-item">
@@ -1222,7 +1223,7 @@
                 <!-- Next Project -->
                 <div class="anim-item" style="margin-top:5rem; padding-top:3rem; border-top:1px solid var(--border); text-align:center;">
                     <span class="t-caption" style="display:block; margin-bottom:1rem;">Next Project</span>
-                    <a href="/cyber-portfolio-cybersigil/work/privesc" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>Polymorphic Privilege Escalation Generator &rarr;</a>
+                    <a href="/work/privesc" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>Polymorphic Privilege Escalation Generator &rarr;</a>
                 </div>
             </div>
         </section>
@@ -1233,7 +1234,7 @@
         <section class="section section--top" data-page="work">
             <div class="container">
                 <div class="anim-item mb-md">
-                    <a href="/cyber-portfolio-cybersigil/work" class="case-study__back" data-route>&larr; Back to Work</a>
+                    <a href="/work" class="case-study__back" data-route>&larr; Back to Work</a>
                 </div>
                 <div class="max-w-medium">
                     <div class="anim-item">
@@ -1331,7 +1332,7 @@
                 <!-- Next Project -->
                 <div class="anim-item" style="margin-top:5rem; padding-top:3rem; border-top:1px solid var(--border); text-align:center;">
                     <span class="t-caption" style="display:block; margin-bottom:1rem;">Previous Project</span>
-                    <a href="/cyber-portfolio-cybersigil/work/osint" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>&larr; Automated OSINT Pipeline Framework</a>
+                    <a href="/work/osint" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>&larr; Automated OSINT Pipeline Framework</a>
                 </div>
             </div>
         </section>
@@ -1346,7 +1347,7 @@
                     <h2 class="t-heading" style="margin-bottom:1.5rem;">Target not found.</h2>
                     <p class="t-body" style="margin-bottom:2.5rem; color:var(--gray-300);">The page you're looking for doesn't exist or has been moved.</p>
                     <div class="magnetic-wrap">
-                        <a href="/cyber-portfolio-cybersigil/" class="btn btn--primary" data-route>
+                        <a href="/" class="btn btn--primary" data-route>
                             Return to Base
                             <svg aria-hidden="true" class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                         </a>
@@ -1374,7 +1375,8 @@
     <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function () {
-            navigator.serviceWorker.register('/cyber-portfolio-cybersigil/sw.js');
+            var swPath = window.location.hostname === 'vinne-1.github.io' ? '/cyber-portfolio-cybersigil/sw.js' : '/sw.js';
+            navigator.serviceWorker.register(swPath);
         });
     }
     </script>

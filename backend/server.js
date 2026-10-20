@@ -52,10 +52,13 @@ let cachedNews = {
 };
 
 // CORS – require ALLOWED_ORIGIN in production, default to localhost for dev
-const allowedOrigin = process.env.ALLOWED_ORIGIN || (process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:3000');
-if (!allowedOrigin) {
+// ALLOWED_ORIGIN accepts a single origin or a comma-separated list of origins
+const allowedOriginRaw = process.env.ALLOWED_ORIGIN || (process.env.NODE_ENV === 'production' ? undefined : 'http://localhost:3000');
+if (!allowedOriginRaw) {
   throw new Error('ALLOWED_ORIGIN environment variable must be set in production');
 }
+const allowedOrigins = allowedOriginRaw.split(',').map(function (o) { return o.trim(); }).filter(Boolean);
+const allowedOrigin = allowedOrigins.length === 1 ? allowedOrigins[0] : allowedOrigins;
 app.use(
   cors({
     origin: allowedOrigin,
