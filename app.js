@@ -1609,7 +1609,7 @@
             });
         }
 
-        listEl.innerHTML = '<div class="threat-feed__loading"><span class="t-mono" style="font-size:0.75rem; color:var(--gray-300);">Fetching latest intelligence...</span></div>';
+        listEl.innerHTML = '<div class="whr-skel whr-skel-card"></div><div class="whr-skel whr-skel-card"></div><div class="whr-skel whr-skel-card"></div>';
 
         fetchThreatLandscape()
             .then(function (data) {

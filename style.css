@@ -2412,7 +2412,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--surface);
 }
 
-/* --- Website Health Report: shimmer skeleton loading state --- */
+/* --- Shimmer skeleton loading state (Website Health Report, Threat Feed, Threat Landscape) --- */
 @keyframes whrShimmer {
   0% { background-position: -400px 0; }
   100% { background-position: 400px 0; }
@@ -2431,6 +2431,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .whr-skel-row {
   height: 48px;
   border: 1px solid var(--border);
+}
+.whr-skel-card {
+  height: 140px;
+  border: 1px solid var(--border);
+  margin-bottom: 2px;
 }
 @media (prefers-reduced-motion: reduce) {
   .whr-skel { animation: none; opacity: 0.5; }
