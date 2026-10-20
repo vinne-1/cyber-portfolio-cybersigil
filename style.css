@@ -2387,6 +2387,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .whr-skel { animation: none; opacity: 0.5; }
 }
 
+/* --- Product showcase card (icon + details), stacks on narrow screens --- */
+.product-showcase-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+@media (max-width: 700px) {
+  .product-showcase-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .product-showcase-card img {
+    max-width: 160px !important;
+  }
+}
+
 /* --- Device Showcase (Apple-style product screenshots) --- */
 .device-showcase {
   position: relative;
