@@ -41,6 +41,8 @@
     if (typeof gsap === 'undefined') {
         document.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block')
             .forEach(function (el) { el.style.opacity = '1'; el.style.transform = 'none'; });
+        var gsapFallbackPreloader = document.getElementById('preloader');
+        if (gsapFallbackPreloader) { gsapFallbackPreloader.style.display = 'none'; }
         document.body.classList.add('ready');
         return;
     }
@@ -185,6 +187,7 @@
         '/work':           'page-work',
         '/work/osint':     'page-work-osint',
         '/work/privesc':   'page-work-privesc',
+        '/products':       'page-products',
         '/capabilities':   'page-capabilities',
         '/credentials':    'page-credentials',
         '/contact':        'page-contact',
@@ -197,6 +200,7 @@
         '/work':           'Selected Work — Vineet Vishesh',
         '/work/osint':     'OSINT Pipeline — Vineet Vishesh',
         '/work/privesc':   'Privilege Escalation Research — Vineet Vishesh',
+        '/products':       'Products — Vineet Vishesh',
         '/capabilities':   'Capabilities — Vineet Vishesh',
         '/credentials':    'Credentials — Vineet Vishesh',
         '/contact':        'Contact — Vineet Vishesh',
@@ -204,13 +208,14 @@
     };
 
     var ROUTE_DESCRIPTIONS = {
-        '/':               'Vineet Vishesh — Offensive Security Specialist. Red team operator and penetration tester with 6+ years of experience across web, mobile, network, and cloud environments.',
+        '/':               'Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years of combined experience across web, API, network, and cloud environments.',
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
         '/work':           'Selected offensive security projects — OSINT automation, privilege escalation research, and red team tooling.',
         '/work/osint':     'Automated OSINT Pipeline Framework — multi-source intelligence aggregation for reconnaissance and threat profiling.',
         '/work/privesc':   'Polymorphic Privilege Escalation Generator — adaptive exploit generation for authorized red team research.',
+        '/products':       'Products built by Vineet Vishesh — independent apps and tools, starting with TithiPath, a Panchang and Kundli app.',
         '/capabilities':   'Offensive security capabilities — web app pentesting, red teaming, cloud security, exploit development, and mobile assessments.',
-        '/credentials':    'Certifications and credentials — CompTIA Security+, Burp Suite Certified Practitioner, and professional endorsements.',
+        '/credentials':    'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.',
         '/contact':        'Get in touch with Vineet Vishesh for offensive security engagements, red team operations, and penetration testing.',
         '/404':            'Page not found — Vineet Vishesh offensive security portfolio.'
     };
@@ -427,11 +432,13 @@
             return;
         }
 
-        // Splitting.js for headings
-        var splitTargets = app.querySelectorAll('.split-heading');
-        splitTargets.forEach(function (el) {
-            Splitting({ target: el, by: 'chars' });
-        });
+        // Splitting.js for headings (degrade gracefully if the CDN script didn't load)
+        if (typeof Splitting !== 'undefined') {
+            var splitTargets = app.querySelectorAll('.split-heading');
+            splitTargets.forEach(function (el) {
+                Splitting({ target: el, by: 'chars' });
+            });
+        }
 
         // Varied character animations based on page
         var pageEl = app.querySelector('[data-page]');
