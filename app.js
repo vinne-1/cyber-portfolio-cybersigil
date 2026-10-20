@@ -1741,6 +1741,18 @@
         var resultsEl = app.querySelector('#whrResults');
         if (!resultsEl) return;
 
+        // Security headers, on-page SEO, SSL, crawlability, and HTTP status all
+        // need the backend (reading cross-origin headers/body or a raw TLS
+        // handshake isn't possible in plain browser JS) — DNS and Performance
+        // above are always real since they run client-side regardless. Default
+        // the backend-only fields to a safe "unavailable" shape so a degraded
+        // report (backend down) still renders instead of throwing.
+        report.security = report.security || { score: null, findings: [], unavailable: true };
+        report.seo = report.seo || { score: null, checks: [], unavailable: true };
+        report.http = report.http || { statusCode: null, responseTimeMs: null };
+        var backendNoteEl = app.querySelector('#whrBackendNote');
+        if (backendNoteEl) backendNoteEl.style.display = report.backendUnavailable ? '' : 'none';
+
         // Overall grade badge
         var gradeEl = app.querySelector('#whrGrade');
         var gradeBadge = app.querySelector('#whrGradeBadge');
@@ -1840,10 +1852,10 @@
             var rs = report.robotsAndSitemap;
             crawlEl.innerHTML = whrInfoCardTitle('Crawlability') +
                 '<div style="font-size:0.8rem; color:var(--gray-300); line-height:1.8;">' +
-                    'robots.txt: ' + ((rs && rs.robotsTxt.present) ? 'Found' : 'Missing') + '<br>' +
-                    'sitemap.xml: ' + ((rs && rs.sitemapXml.present) ? 'Found' : 'Missing') + '<br>' +
-                    'HTTP status: ' + escapeHtml(String(report.http.statusCode)) + '<br>' +
-                    'Response time: ' + escapeHtml(String(report.http.responseTimeMs)) + 'ms' +
+                    'robots.txt: ' + ((rs && rs.robotsTxt.present) ? 'Found' : (rs ? 'Missing' : 'Unavailable')) + '<br>' +
+                    'sitemap.xml: ' + ((rs && rs.sitemapXml.present) ? 'Found' : (rs ? 'Missing' : 'Unavailable')) + '<br>' +
+                    'HTTP status: ' + escapeHtml(report.http.statusCode === null ? 'Unavailable' : String(report.http.statusCode)) + '<br>' +
+                    'Response time: ' + (report.http.responseTimeMs === null ? 'Unavailable' : escapeHtml(String(report.http.responseTimeMs)) + 'ms') +
                 '</div>';
         }
 
@@ -1867,6 +1879,78 @@
         }
     }
 
+    /* ----------------------------------------------------------
+       WEBSITE HEALTH REPORT — backend-free client-side checks
+       ---------------------------------------------------------- */
+    // DNS and Performance can run entirely in the browser (both DNS-over-HTTPS
+    // and the PageSpeed Insights API are CORS-enabled, confirmed empirically).
+    // Security headers, SSL/TLS, on-page SEO, and robots/sitemap checks all
+    // need to read another origin's raw response headers/body or do a raw
+    // TLS handshake, none of which plain browser JS can do for an arbitrary
+    // third-party URL — those still go through the backend and degrade
+    // gracefully (not fatally) if it's unavailable.
+    function whrParseDohAnswer(json, type) {
+        return (json.Answer || []).filter(function (a) { return a.type === type; }).map(function (a) { return a.data; });
+    }
+
+    function whrDohQuery(hostname, type) {
+        return fetch('https://cloudflare-dns.com/dns-query?name=' + encodeURIComponent(hostname) + '&type=' + type, {
+            headers: { Accept: 'application/dns-json' }
+        }).then(function (res) { return res.ok ? res.json() : { Answer: [] }; }).catch(function () { return { Answer: []}; });
+    }
+
+    function whrFetchDnsClientSide(hostname) {
+        return Promise.all([
+            whrDohQuery(hostname, 'A'),
+            whrDohQuery(hostname, 'AAAA'),
+            whrDohQuery(hostname, 'MX'),
+            whrDohQuery(hostname, 'TXT'),
+            whrDohQuery(hostname, 'NS'),
+            whrDohQuery('_dmarc.' + hostname, 'TXT')
+        ]).then(function (results) {
+            var a = whrParseDohAnswer(results[0], 1);
+            var aaaa = whrParseDohAnswer(results[1], 28);
+            var mxRaw = whrParseDohAnswer(results[2], 15);
+            var mx = mxRaw.map(function (s) {
+                var parts = s.split(' ');
+                return { priority: parseInt(parts[0], 10) || 0, exchange: (parts[1] || '').replace(/\.$/, '') };
+            });
+            var txt = whrParseDohAnswer(results[3], 16).map(function (s) { return s.replace(/^"|"$/g, ''); });
+            var ns = whrParseDohAnswer(results[4], 2).map(function (s) { return s.replace(/\.$/, ''); });
+            var dmarcTxt = whrParseDohAnswer(results[5], 16).map(function (s) { return s.replace(/^"|"$/g, ''); });
+            return {
+                a: a, aaaa: aaaa, mx: mx, txt: txt.map(function (t) { return [t]; }), ns: ns,
+                hasSpf: txt.some(function (t) { return t.toLowerCase().indexOf('v=spf1') === 0; }),
+                hasDmarc: dmarcTxt.some(function (t) { return t.toLowerCase().indexOf('v=dmarc1') === 0; })
+            };
+        });
+    }
+
+    function whrFetchPerformanceClientSide(targetUrl) {
+        var categories = ['performance', 'seo', 'accessibility', 'best-practices'].map(function (c) { return 'category=' + c; }).join('&');
+        var apiUrl = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=' + encodeURIComponent(targetUrl) + '&strategy=mobile&' + categories;
+        return fetch(apiUrl).then(function (res) {
+            return res.json().then(function (json) {
+                if (json.error) return { ok: false, error: json.error.message || 'PageSpeed Insights error.' };
+                var lr = json.lighthouseResult;
+                if (!lr) return { ok: false, error: 'No Lighthouse result returned.' };
+                function categoryScore(id) { return lr.categories && lr.categories[id] ? Math.round(lr.categories[id].score * 100) : null; }
+                function auditValue(id) { return lr.audits && lr.audits[id] ? lr.audits[id].displayValue : null; }
+                var opportunities = Object.keys(lr.audits || {}).map(function (k) { return lr.audits[k]; })
+                    .filter(function (a) { return a.details && a.details.type === 'opportunity' && a.score !== null && a.score < 0.9; })
+                    .sort(function (a, b) { return (b.details.overallSavingsMs || 0) - (a.details.overallSavingsMs || 0); })
+                    .slice(0, 5)
+                    .map(function (a) { return { title: a.title, savingsMs: a.details.overallSavingsMs || 0 }; });
+                return {
+                    ok: true,
+                    scores: { performance: categoryScore('performance'), seo: categoryScore('seo'), accessibility: categoryScore('accessibility'), bestPractices: categoryScore('best-practices') },
+                    coreWebVitals: { lcp: auditValue('largest-contentful-paint'), cls: auditValue('cumulative-layout-shift'), tbt: auditValue('total-blocking-time'), fcp: auditValue('first-contentful-paint'), speedIndex: auditValue('speed-index') },
+                    topOpportunities: opportunities
+                };
+            });
+        }).catch(function (err) { return { ok: false, error: err.message || 'PageSpeed Insights request failed.' }; });
+    }
+
     function setupWebsiteHealthTool() {
         var input = app.querySelector('#whrUrlInput');
         var runBtn = app.querySelector('#whrRunBtn');
@@ -1879,35 +1963,64 @@
         var runAnotherBtn = app.querySelector('#whrRunAnotherBtn');
 
         function runReport() {
-            var url = input.value.trim();
-            if (!url) { input.focus(); return; }
+            var rawUrl = input.value.trim();
+            if (!rawUrl) { input.focus(); return; }
+
+            var normalizedUrl;
+            var hostname;
+            try {
+                normalizedUrl = /^https?:\/\//i.test(rawUrl) ? rawUrl : 'https://' + rawUrl;
+                hostname = new URL(normalizedUrl).hostname;
+            } catch (e) {
+                if (statusEl) statusEl.style.display = '';
+                if (statusTextEl) statusTextEl.textContent = 'That doesn’t look like a valid URL.';
+                return;
+            }
 
             runBtn.disabled = true;
             runBtn.textContent = 'Running…';
             if (resultsEl) resultsEl.style.display = 'none';
             if (emptyStateEl) emptyStateEl.style.display = 'none';
             if (statusEl) statusEl.style.display = '';
-            if (statusTextEl) statusTextEl.textContent = 'Checking security headers, SSL, DNS, SEO, and running a Lighthouse performance audit — this can take up to 30 seconds…';
+            if (statusTextEl) statusTextEl.textContent = 'Running Performance and DNS checks in your browser, and Security/SEO/SSL via the backend — this can take up to 30 seconds…';
 
-            fetch(HEALTH_REPORT_API + '?url=' + encodeURIComponent(url))
-                .then(function (res) {
+            // DNS and Performance always run client-side (no backend needed).
+            // Everything else needs the backend and degrades gracefully if it's down.
+            Promise.allSettled([
+                whrFetchDnsClientSide(hostname),
+                whrFetchPerformanceClientSide(normalizedUrl),
+                fetch(HEALTH_REPORT_API + '?url=' + encodeURIComponent(rawUrl)).then(function (res) {
                     return res.json().then(function (data) {
-                        if (!res.ok) throw new Error(data.message || 'Something went wrong.');
+                        if (!res.ok) throw new Error(data.message || 'Backend request failed.');
                         return data;
                     });
                 })
-                .then(function (report) {
-                    if (statusEl) statusEl.style.display = 'none';
-                    whrRenderResults(report);
-                })
-                .catch(function (err) {
-                    if (statusTextEl) statusTextEl.textContent = 'Error: ' + (err.message || 'Could not reach the health report service. Is the backend running?');
-                    if (emptyStateEl) emptyStateEl.style.display = '';
-                })
-                .finally(function () {
-                    runBtn.disabled = false;
-                    runBtn.textContent = 'Run Report';
-                });
+            ]).then(function (results) {
+                var dnsResult = results[0].status === 'fulfilled' ? results[0].value : null;
+                var perfResult = results[1].status === 'fulfilled' ? results[1].value : { ok: false, error: 'Client-side performance check failed.' };
+                var backendResult = results[2].status === 'fulfilled' ? results[2].value : null;
+
+                var report;
+                if (backendResult) {
+                    report = backendResult;
+                    report.dns = dnsResult || report.dns; // prefer the client-side source
+                    report.performance = perfResult.ok ? perfResult : report.performance;
+                } else {
+                    report = {
+                        url: normalizedUrl,
+                        overallGrade: null,
+                        dns: dnsResult,
+                        performance: perfResult,
+                        backendUnavailable: true
+                    };
+                }
+
+                if (statusEl) statusEl.style.display = 'none';
+                whrRenderResults(report);
+            }).finally(function () {
+                runBtn.disabled = false;
+                runBtn.textContent = 'Run Report';
+            });
         }
 
         runBtn.addEventListener('click', runReport);

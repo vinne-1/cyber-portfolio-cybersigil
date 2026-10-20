@@ -7,7 +7,7 @@
          GitHub Pages serves only static files and can't set this as a real HTTP header, so
          frame-ancestors (clickjacking protection) isn't settable here -- browsers ignore that
          directive when delivered via meta, per spec. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://cyber-portfolio-hcxt.onrender.com https://gateway.umami.is http://localhost:4000; object-src 'none'; base-uri 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://cyber-portfolio-hcxt.onrender.com https://gateway.umami.is https://www.googleapis.com https://cloudflare-dns.com http://localhost:4000; object-src 'none'; base-uri 'self';">
     <title>Vineet Vishesh — Offensive Security</title>
     <meta name="description" content="Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years of combined cybersecurity experience across web, API, network, and cloud environments.">
     <meta name="theme-color" content="#000000">
@@ -996,6 +996,10 @@
                 </div>
 
                 <div id="whrResults" style="display:none;">
+
+                    <div id="whrBackendNote" style="display:none; margin-bottom:1.5rem; padding:0.85rem 1.1rem; border:1px solid var(--crimson); background:rgba(165,13,34,0.08); font-size:0.8rem; color:var(--gray-300);">
+                        Performance and DNS below ran fully in your browser and are always live. Security headers, SSL/TLS, on-page SEO, and crawlability need a small backend service to read cross-origin data &mdash; that service is temporarily unavailable, so those sections are shown as unavailable rather than guessed.
+                    </div>
 
                     <!-- Overall + score circles -->
                     <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:clamp(1.5rem, 4vw, 3rem); padding:2rem; border:1px solid var(--border); background:var(--surface); margin-bottom:2rem;">
