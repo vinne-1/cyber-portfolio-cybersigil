@@ -464,12 +464,22 @@
                     <span class="t-label">Live Intelligence</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h2 class="t-heading split-heading" style="margin-top:1.5rem; max-width:700px;">Threat landscape — real-time.</h2>
-                    <p class="t-body" style="margin-top:1rem; max-width:560px; color:var(--gray-300);">Aggregated from The Hacker News, Krebs on Security, Dark Reading, and CSO Online.</p>
+                    <p class="t-body" style="margin-top:1rem; max-width:620px; color:var(--gray-300);">Aggregated and deduplicated from 6 sources: The Hacker News, Krebs on Security, Dark Reading, CSO Online, SANS ISC, and CISA Advisories.</p>
                 </div>
+
+                <div class="anim-item" id="top3Today" style="margin-bottom:2.5rem;"></div>
+
                 <div class="threat-feed anim-item" id="threatFeed">
                     <div class="threat-feed__loading">
                         <span class="t-mono" style="font-size:0.75rem; color:var(--gray-400);">Fetching latest intelligence...</span>
                     </div>
+                </div>
+
+                <div class="anim-item" style="margin-top:2rem;">
+                    <a href="/threat-landscape" class="project-card__cta" data-route>
+                        View Full Threat Landscape
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1033,6 +1043,35 @@
                         <button type="button" id="whrRunAnotherBtn" class="btn btn--outline">Check Another Site</button>
                     </div>
 
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- THREAT LANDSCAPE -->
+    <template id="page-threat-landscape">
+        <section class="section section--atmosphere-deep" data-page="threat-landscape" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <span class="t-label">Threat Landscape</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">
+                        What's moving right now.
+                    </h2>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Aggregated and deduplicated from 6 sources &mdash; The Hacker News, Krebs on Security, Dark Reading, CSO Online, SANS ISC, and CISA Advisories.
+                    </p>
+                    <p id="tlMethodology" style="margin-top:1rem; max-width:700px; font-size:0.75rem; color:var(--gray-400); font-style:italic;"></p>
+                </div>
+
+                <div id="tlTop3" style="margin-bottom:3rem;"></div>
+
+                <div class="anim-item" id="tlFilters" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem;"></div>
+
+                <div id="tlFullList" style="display:grid; gap:2px;">
+                    <div class="threat-feed__loading">
+                        <span class="t-mono" style="font-size:0.75rem; color:var(--gray-400);">Fetching latest intelligence...</span>
+                    </div>
                 </div>
             </div>
         </section>

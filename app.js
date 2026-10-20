@@ -190,6 +190,7 @@
         '/products':       'page-products',
         '/tools':          'page-tools',
         '/tools/website-health': 'page-tool-website-health',
+        '/threat-landscape': 'page-threat-landscape',
         '/capabilities':   'page-capabilities',
         '/credentials':    'page-credentials',
         '/contact':        'page-contact',
@@ -205,6 +206,7 @@
         '/products':       'Products — Vineet Vishesh',
         '/tools':          'Free Tools — Vineet Vishesh',
         '/tools/website-health': 'Website Health Report — Vineet Vishesh',
+        '/threat-landscape': 'Threat Landscape — Vineet Vishesh',
         '/capabilities':   'Capabilities — Vineet Vishesh',
         '/credentials':    'Credentials — Vineet Vishesh',
         '/contact':        'Contact — Vineet Vishesh',
@@ -220,6 +222,7 @@
         '/products':       'Products built by Vineet Vishesh — independent apps and tools, starting with TithiPath, a Panchang and Kundli app.',
         '/tools':          'Free security and web tools by Vineet Vishesh, starting with a Website Health Report covering security, SEO, performance, SSL, and DNS.',
         '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
+        '/threat-landscape': 'Live cybersecurity threat landscape — deduplicated coverage from 6 sources, ranked by severity, corroboration, and recency.',
         '/capabilities':   'Offensive security capabilities — web app pentesting, red teaming, cloud security, exploit development, and mobile assessments.',
         '/credentials':    'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.',
         '/contact':        'Get in touch with Vineet Vishesh for offensive security engagements, red team operations, and penetration testing.',
@@ -434,6 +437,7 @@
             setupInteractions();
             setupTerminal();
             setupThreatFeed();
+            setupThreatLandscapePage();
             setupWebsiteHealthTool();
             setupCardHoverGlow();
             return;
@@ -530,6 +534,7 @@
         setupInteractions();
         setupTerminal();
         setupThreatFeed();
+        setupThreatLandscapePage();
         setupWebsiteHealthTool();
         setupMatrixCanvas();
         setupParticleNetwork();
@@ -1418,60 +1423,110 @@
     }
 
     /* ----------------------------------------------------------
-       LIVE THREAT FEED
+       LIVE THREAT FEED / THREAT LANDSCAPE
        ---------------------------------------------------------- */
     var THREAT_API = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:4000/api/cyber-news'
         : 'https://cyber-portfolio-hcxt.onrender.com/api/cyber-news';
 
+    var TL_ALLOWED_SEVERITIES = ['critical', 'high', 'medium', 'low', 'info'];
+    function tlSafeSeverity(sev) {
+        var s = (sev || 'medium').toLowerCase();
+        return TL_ALLOWED_SEVERITIES.indexOf(s) !== -1 ? s : 'medium';
+    }
+    function tlSafeUrl(url) {
+        if (!url) return '#';
+        try { var p = new URL(url); return (p.protocol === 'https:' || p.protocol === 'http:') ? url : '#'; }
+        catch (e) { return '#'; }
+    }
+    function tlRelativeTime(iso) {
+        var ms = Date.now() - new Date(iso).getTime();
+        if (!(ms >= 0)) return '';
+        var hrs = Math.floor(ms / 3600000);
+        if (hrs < 1) return 'just now';
+        if (hrs < 24) return hrs + 'h ago';
+        return Math.floor(hrs / 24) + 'd ago';
+    }
+
+    function tlClusterCardHtml(c) {
+        var sev = tlSafeSeverity(c.severity);
+        var sevClass = 'threat-card__severity--' + sev;
+        var tags = (c.tags || []).slice(0, 4).map(function (t) {
+            return '<span class="threat-card__tag">' + escapeHtml(t) + '</span>';
+        }).join('');
+        var summary = c.summary ? c.summary.substring(0, 160) : '';
+        var sourceLabel = c.sourceCount > 1 ? (c.sourceCount + ' sources') : (c.sources && c.sources[0] ? c.sources[0] : '');
+
+        return '<div class="threat-card" data-severity="' + sev + '">' +
+            '<div class="threat-card__header">' +
+                '<span class="threat-card__severity ' + sevClass + '">' + escapeHtml(c.severity || 'Medium') + '</span>' +
+                '<span class="threat-card__sourcecount">' + escapeHtml(sourceLabel) + '</span>' +
+            '</div>' +
+            '<div class="threat-card__title"><a href="' + escapeHtml(tlSafeUrl(c.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(c.title || 'Untitled') + '</a></div>' +
+            (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
+            '<div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; gap:0.5rem; flex-wrap:wrap;">' +
+                (tags ? '<div class="threat-card__tags">' + tags + '</div>' : '<span></span>') +
+                '<span class="t-mono" style="font-size:0.65rem; color:var(--gray-400);">' + escapeHtml(tlRelativeTime(c.date)) + '</span>' +
+            '</div>' +
+        '</div>';
+    }
+
+    function tlTop3CardHtml(c, rank) {
+        var sev = tlSafeSeverity(c.severity);
+        var sevClass = 'threat-card__severity--' + sev;
+        var sourceLabel = c.sourceCount > 1 ? (c.sourceCount + ' sources corroborating') : (c.sources && c.sources[0] ? c.sources[0] : '');
+        var summary = c.summary ? c.summary.substring(0, 180) : '';
+
+        return '<div class="top3-card" data-severity="' + sev + '">' +
+            '<div style="display:flex; justify-content:space-between; align-items:flex-start;">' +
+                '<span class="top3-card__rank">0' + rank + '</span>' +
+                '<span class="threat-card__severity ' + sevClass + '">' + escapeHtml(c.severity || 'Medium') + '</span>' +
+            '</div>' +
+            '<div class="threat-card__title"><a href="' + escapeHtml(tlSafeUrl(c.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(c.title || 'Untitled') + '</a></div>' +
+            (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
+            '<div class="top3-card__score">' + escapeHtml(sourceLabel) + (sourceLabel ? ' &middot; ' : '') + 'score ' + escapeHtml(String(c.score)) + '/100</div>' +
+        '</div>';
+    }
+
+    function tlRenderTop3Into(container, top3) {
+        if (!container) return;
+        if (!top3 || !top3.length) { container.innerHTML = ''; return; }
+        container.innerHTML =
+            '<div style="font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-300); margin-bottom:1rem;">Top 3 Today &mdash; automated ranking, not an official severity rating</div>' +
+            '<div class="top3-grid">' + top3.map(function (c, i) { return tlTop3CardHtml(c, i + 1); }).join('') + '</div>';
+        if (!prefersReducedMotion) {
+            gsap.fromTo(container.querySelectorAll('.top3-card'),
+                { opacity: 0, y: 20 },
+                { opacity: 1, y: 0, duration: 0.5, stagger: 0.08, ease: 'expo.out' }
+            );
+        }
+    }
+
+    function fetchThreatLandscape() {
+        activeFetchController = new AbortController();
+        return fetch(THREAT_API, { signal: activeFetchController.signal }).then(function (res) {
+            if (!res.ok) throw new Error('Feed unavailable');
+            return res.json();
+        });
+    }
+
     function setupThreatFeed() {
         var feedEl = app.querySelector('#threatFeed');
+        var top3El = app.querySelector('#top3Today');
         if (!feedEl) return;
 
-        activeFetchController = new AbortController();
-        fetch(THREAT_API, { signal: activeFetchController.signal })
-            .then(function (res) {
-                if (!res.ok) throw new Error('Feed unavailable');
-                return res.json();
-            })
+        fetchThreatLandscape()
             .then(function (data) {
-                var articles = (data.articles || []).slice(0, 6);
-                if (!articles.length) {
+                var clusters = (data.clusters || data.articles || []).slice(0, 6);
+                tlRenderTop3Into(top3El, data.top3);
+
+                if (!clusters.length) {
                     feedEl.innerHTML = '<div class="threat-feed__fallback">No threat intelligence available at this time.</div>';
                     return;
                 }
 
-                var ALLOWED_SEVERITIES = ['critical', 'high', 'medium', 'low', 'info'];
-                function safeSeverity(sev) {
-                    var s = (sev || 'medium').toLowerCase();
-                    return ALLOWED_SEVERITIES.indexOf(s) !== -1 ? s : 'medium';
-                }
-                function safeUrl(url) {
-                    if (!url) return '#';
-                    try { var p = new URL(url); return (p.protocol === 'https:' || p.protocol === 'http:') ? url : '#'; }
-                    catch (e) { return '#'; }
-                }
+                feedEl.innerHTML = clusters.map(tlClusterCardHtml).join('');
 
-                feedEl.innerHTML = articles.map(function (a) {
-                    var sev = safeSeverity(a.severity);
-                    var sevClass = 'threat-card__severity--' + sev;
-                    var tags = (a.tags || []).map(function (t) {
-                        return '<span class="threat-card__tag">' + escapeHtml(t) + '</span>';
-                    }).join('');
-                    var summary = a.summary ? a.summary.substring(0, 160) : '';
-
-                    return '<div class="threat-card">' +
-                        '<div class="threat-card__header">' +
-                            '<span class="threat-card__severity ' + sevClass + '">' + escapeHtml(a.severity || 'Medium') + '</span>' +
-                            '<span class="threat-card__source">' + escapeHtml(a.source || '') + '</span>' +
-                        '</div>' +
-                        '<div class="threat-card__title"><a href="' + escapeHtml(safeUrl(a.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(a.title || 'Untitled') + '</a></div>' +
-                        (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
-                        (tags ? '<div class="threat-card__tags">' + tags + '</div>' : '') +
-                    '</div>';
-                }).join('');
-
-                // Animate cards in
                 if (!prefersReducedMotion) {
                     var cards = feedEl.querySelectorAll('.threat-card');
                     gsap.fromTo(cards,
@@ -1482,6 +1537,65 @@
             })
             .catch(function () {
                 feedEl.innerHTML = '<div class="threat-feed__fallback">Threat feed offline — start the backend with <code style="color:var(--crimson)">npm start</code> in the <code>backend/</code> directory.</div>';
+            });
+    }
+
+    function setupThreatLandscapePage() {
+        var listEl = app.querySelector('#tlFullList');
+        if (!listEl) return;
+
+        var top3El = app.querySelector('#tlTop3');
+        var filtersEl = app.querySelector('#tlFilters');
+        var methodologyEl = app.querySelector('#tlMethodology');
+        var allClusters = [];
+        var activeFilter = 'all';
+
+        function renderList() {
+            var filtered = activeFilter === 'all'
+                ? allClusters
+                : allClusters.filter(function (c) { return tlSafeSeverity(c.severity) === activeFilter; });
+            listEl.innerHTML = filtered.length
+                ? filtered.map(tlClusterCardHtml).join('')
+                : '<div class="threat-feed__fallback">No stories match this filter right now.</div>';
+            if (!prefersReducedMotion) {
+                gsap.fromTo(listEl.querySelectorAll('.threat-card'),
+                    { opacity: 0, y: 15 },
+                    { opacity: 1, y: 0, duration: 0.4, stagger: 0.03, ease: 'power2.out' }
+                );
+            }
+        }
+
+        function renderFilters() {
+            if (!filtersEl) return;
+            var options = [
+                ['all', 'All'], ['critical', 'Critical'], ['high', 'High'], ['medium', 'Medium'], ['low', 'Low']
+            ];
+            filtersEl.innerHTML = options.map(function (opt) {
+                var active = opt[0] === activeFilter;
+                return '<button type="button" class="btn ' + (active ? 'btn--primary' : 'btn--outline') +
+                    '" data-filter="' + opt[0] + '" style="font-size:0.75rem; padding:0.5rem 1rem;">' + opt[1] + '</button>';
+            }).join('');
+            filtersEl.querySelectorAll('button[data-filter]').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    activeFilter = btn.getAttribute('data-filter');
+                    renderFilters();
+                    renderList();
+                });
+            });
+        }
+
+        listEl.innerHTML = '<div class="threat-feed__loading"><span class="t-mono" style="font-size:0.75rem; color:var(--gray-400);">Fetching latest intelligence...</span></div>';
+
+        fetchThreatLandscape()
+            .then(function (data) {
+                allClusters = data.clusters || [];
+                tlRenderTop3Into(top3El, data.top3);
+                if (methodologyEl) methodologyEl.textContent = data.rankingMethodology || '';
+                renderFilters();
+                renderList();
+            })
+            .catch(function () {
+                listEl.innerHTML = '<div class="threat-feed__fallback">Threat landscape offline — start the backend with <code style="color:var(--crimson)">npm start</code> in the <code>backend/</code> directory.</div>';
             });
     }
 
@@ -1502,29 +1616,107 @@
     function whrScoreCircle(label, score) {
         var display = (score === null || score === undefined) ? 'N/A' : score;
         var color = whrScoreColor(score);
-        var pct = (score === null || score === undefined) ? 0 : score;
         var circumference = 2 * Math.PI * 26;
-        var offset = circumference * (1 - pct / 100);
+        // Rendered at dashoffset = full circumference (0%) initially; whrAnimateScoreCircles
+        // tweens each one in to its real value once the results block is visible, matching
+        // how PageSpeed Insights/GTmetrix reveal their score gauges.
         return '<div style="text-align:center; width:90px;">' +
             '<svg width="64" height="64" viewBox="0 0 64 64" style="transform:rotate(-90deg);">' +
                 '<circle cx="32" cy="32" r="26" fill="none" stroke="var(--border)" stroke-width="5"/>' +
-                '<circle cx="32" cy="32" r="26" fill="none" stroke="' + color + '" stroke-width="5" ' +
-                    'stroke-dasharray="' + circumference.toFixed(1) + '" stroke-dashoffset="' + offset.toFixed(1) + '" stroke-linecap="round"/>' +
+                '<circle class="whr-ring" data-score="' + (score === null || score === undefined ? '' : score) + '" cx="32" cy="32" r="26" fill="none" stroke="' + color + '" stroke-width="5" ' +
+                    'stroke-dasharray="' + circumference.toFixed(1) + '" stroke-dashoffset="' + circumference.toFixed(1) + '" stroke-linecap="round"/>' +
             '</svg>' +
             '<div style="margin-top:-46px; font-family:var(--font-mono); font-weight:600; font-size:0.95rem; color:' + color + ';">' + escapeHtml(String(display)) + '</div>' +
             '<div style="margin-top:36px; font-size:0.7rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.05em;">' + escapeHtml(label) + '</div>' +
         '</div>';
     }
 
+    function whrAnimateScoreCircles(container) {
+        var circumference = 2 * Math.PI * 26;
+        var rings = container.querySelectorAll('.whr-ring');
+        rings.forEach(function (ring, i) {
+            var score = ring.getAttribute('data-score');
+            var pct = score === '' ? 0 : Number(score);
+            var targetOffset = circumference * (1 - pct / 100);
+            if (prefersReducedMotion) {
+                ring.setAttribute('stroke-dashoffset', targetOffset.toFixed(1));
+                return;
+            }
+            gsap.to(ring, {
+                attr: { 'stroke-dashoffset': targetOffset },
+                duration: 1,
+                delay: 0.15 + i * 0.08,
+                ease: 'power2.out'
+            });
+        });
+    }
+
     function whrChecklistRow(label, pass, detail) {
-        var dotColor = pass ? '#28c840' : 'var(--crimson)';
-        return '<div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.85rem 1rem; background:var(--surface); border:1px solid var(--border);">' +
-            '<span style="width:8px; height:8px; border-radius:50%; background:' + dotColor + '; margin-top:0.35rem; flex-shrink:0;"></span>' +
+        return '<div class="whr-row ' + (pass ? 'whr-row--pass' : 'whr-row--fail') + '">' +
+            '<span style="width:8px; height:8px; border-radius:50%; background:' + (pass ? '#28c840' : 'var(--crimson)') + '; margin-top:0.35rem; flex-shrink:0;"></span>' +
             '<div>' +
                 '<div style="font-size:0.85rem; color:var(--white); font-weight:500;">' + escapeHtml(label) + '</div>' +
                 (detail ? '<div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.15rem;">' + escapeHtml(String(detail)) + '</div>' : '') +
             '</div>' +
         '</div>';
+    }
+
+    // Renders a checklist with failures shown immediately (the actionable part)
+    // and passed checks tucked behind a collapsible toggle, so a mostly-passing
+    // report doesn't bury the few things that need attention — same pattern
+    // SecurityHeaders.com/PSI use (opportunities/issues first, passed audits collapsed).
+    var whrGroupIdCounter = 0;
+    function whrRenderGroupedChecklist(targetEl, items) {
+        if (!targetEl) return;
+        var fails = items.filter(function (i) { return !i.pass; });
+        var passes = items.filter(function (i) { return i.pass; });
+        var groupId = 'whrGroup' + (whrGroupIdCounter++);
+
+        var html = fails.map(function (i) { return whrChecklistRow(i.label, false, i.detail); }).join('');
+
+        if (passes.length) {
+            html += '<button type="button" class="whr-passed-toggle" aria-expanded="false" aria-controls="' + groupId + '">' +
+                '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>' +
+                (fails.length ? 'Show ' : '') + passes.length + ' passed check' + (passes.length === 1 ? '' : 's') +
+            '</button>' +
+            '<div class="whr-passed-list" id="' + groupId + '">' +
+                passes.map(function (i) { return whrChecklistRow(i.label, true, i.detail); }).join('') +
+            '</div>';
+        }
+
+        targetEl.innerHTML = html || whrChecklistRow('No checks available', true, null);
+
+        var toggle = targetEl.querySelector('.whr-passed-toggle');
+        if (toggle) {
+            toggle.addEventListener('click', function () {
+                var expanded = toggle.getAttribute('aria-expanded') === 'true';
+                toggle.setAttribute('aria-expanded', String(!expanded));
+                var list = targetEl.querySelector('#' + groupId);
+                if (list) list.classList.toggle('is-open', !expanded);
+            });
+        }
+    }
+
+    // Classifies a PSI displayValue string (e.g. "2.1 s", "150 ms", "0.05")
+    // against Google's published Core Web Vitals good/needs-improvement/poor
+    // thresholds, so each vital can carry an honest color rather than a flat neutral one.
+    var WHR_VITAL_THRESHOLDS = {
+        LCP: { unit: 's', good: 2.5, ok: 4 },
+        CLS: { unit: '', good: 0.1, ok: 0.25 },
+        TBT: { unit: 'ms', good: 200, ok: 600 },
+        FCP: { unit: 's', good: 1.8, ok: 3 },
+        'Speed Index': { unit: 's', good: 3.4, ok: 5.8 }
+    };
+    function whrVitalRating(key, displayValue) {
+        var spec = WHR_VITAL_THRESHOLDS[key];
+        if (!spec || !displayValue) return null;
+        var num = parseFloat(String(displayValue).replace(/,/g, ''));
+        if (isNaN(num)) return null;
+        // Normalize ms-based displayValues that PSI sometimes renders in seconds for s-based metrics
+        if (spec.unit === 's' && /ms/.test(displayValue)) num = num / 1000;
+        if (num <= spec.good) return 'good';
+        if (num <= spec.ok) return 'ok';
+        return 'poor';
     }
 
     function whrInfoCardTitle(text) {
@@ -1535,9 +1727,14 @@
         var resultsEl = app.querySelector('#whrResults');
         if (!resultsEl) return;
 
-        // Overall grade
+        // Overall grade badge
         var gradeEl = app.querySelector('#whrGrade');
-        if (gradeEl) gradeEl.textContent = report.overallGrade || 'N/A';
+        var gradeBadge = app.querySelector('#whrGradeBadge');
+        var grade = report.overallGrade || 'N/A';
+        if (gradeEl) gradeEl.textContent = grade;
+        if (gradeBadge) gradeBadge.setAttribute('data-grade', grade.charAt(0));
+        var urlEl = app.querySelector('#whrTargetUrl');
+        if (urlEl) urlEl.textContent = report.url || '';
 
         // Score circles (performance/seo/accessibility/best-practices from PSI, plus our own security/seo scores)
         var circlesEl = app.querySelector('#whrScoreCircles');
@@ -1551,9 +1748,10 @@
             circles += whrScoreCircle('Security', report.security.score);
             circles += whrScoreCircle('SEO', report.seo.score);
             circlesEl.innerHTML = circles;
+            whrAnimateScoreCircles(circlesEl);
         }
 
-        // Core Web Vitals
+        // Core Web Vitals — color-coded against Google's published good/needs-improvement/poor thresholds
         var vitalsWrap = app.querySelector('#whrVitalsWrap');
         var vitalsEl = app.querySelector('#whrVitals');
         if (vitalsWrap && vitalsEl) {
@@ -1563,7 +1761,9 @@
                     ['LCP', cwv.lcp], ['CLS', cwv.cls], ['TBT', cwv.tbt], ['FCP', cwv.fcp], ['Speed Index', cwv.speedIndex]
                 ];
                 vitalsEl.innerHTML = vitalItems.map(function (pair) {
-                    return '<div style="padding:1rem; background:var(--surface); text-align:center;">' +
+                    var rating = whrVitalRating(pair[0], pair[1]);
+                    var chipClass = rating ? ' whr-vital-chip--' + rating : '';
+                    return '<div class="whr-vital-chip' + chipClass + '">' +
                         '<div style="font-family:var(--font-mono); font-size:1rem; color:var(--white);">' + escapeHtml(pair[1] || '—') + '</div>' +
                         '<div style="font-size:0.7rem; color:var(--gray-300); margin-top:0.25rem; text-transform:uppercase;">' + pair[0] + '</div>' +
                     '</div>';
@@ -1574,21 +1774,19 @@
             }
         }
 
-        // Security headers
-        var secEl = app.querySelector('#whrSecurity');
-        if (secEl) {
-            secEl.innerHTML = report.security.findings.map(function (f) {
-                return whrChecklistRow(f.header, f.present, f.present ? (f.value || 'Present') : f.advice);
-            }).join('');
-        }
+        // Security headers — failures surfaced first, passed checks collapsible
+        whrRenderGroupedChecklist(
+            app.querySelector('#whrSecurity'),
+            report.security.findings.map(function (f) {
+                return { label: f.header, pass: f.present, detail: f.present ? (f.value || 'Present') : f.advice };
+            })
+        );
 
-        // SEO checklist
-        var seoEl = app.querySelector('#whrSeo');
-        if (seoEl) {
-            seoEl.innerHTML = report.seo.checks.map(function (c) {
-                return whrChecklistRow(c.label, c.pass, c.detail);
-            }).join('');
-        }
+        // SEO checklist — same grouping
+        whrRenderGroupedChecklist(
+            app.querySelector('#whrSeo'),
+            report.seo.checks.map(function (c) { return { label: c.label, pass: c.pass, detail: c.detail }; })
+        );
 
         // SSL card
         var sslEl = app.querySelector('#whrSsl');
@@ -1663,6 +1861,8 @@
         var statusEl = app.querySelector('#whrStatus');
         var statusTextEl = app.querySelector('#whrStatusText');
         var resultsEl = app.querySelector('#whrResults');
+        var emptyStateEl = app.querySelector('#whrEmptyState');
+        var runAnotherBtn = app.querySelector('#whrRunAnotherBtn');
 
         function runReport() {
             var url = input.value.trim();
@@ -1671,6 +1871,7 @@
             runBtn.disabled = true;
             runBtn.textContent = 'Running…';
             if (resultsEl) resultsEl.style.display = 'none';
+            if (emptyStateEl) emptyStateEl.style.display = 'none';
             if (statusEl) statusEl.style.display = '';
             if (statusTextEl) statusTextEl.textContent = 'Checking security headers, SSL, DNS, SEO, and running a Lighthouse performance audit — this can take up to 30 seconds…';
 
@@ -1687,6 +1888,7 @@
                 })
                 .catch(function (err) {
                     if (statusTextEl) statusTextEl.textContent = 'Error: ' + (err.message || 'Could not reach the health report service. Is the backend running?');
+                    if (emptyStateEl) emptyStateEl.style.display = '';
                 })
                 .finally(function () {
                     runBtn.disabled = false;
@@ -1698,6 +1900,19 @@
         input.addEventListener('keydown', function (e) {
             if (e.key === 'Enter') runReport();
         });
+        if (runAnotherBtn) {
+            runAnotherBtn.addEventListener('click', function () {
+                if (resultsEl) resultsEl.style.display = 'none';
+                if (emptyStateEl) emptyStateEl.style.display = '';
+                input.value = '';
+                input.focus();
+                if (!prefersReducedMotion && lenis) {
+                    lenis.scrollTo(input, { offset: -140 });
+                } else {
+                    input.scrollIntoView({ block: 'center' });
+                }
+            });
+        }
     }
 
     /* ----------------------------------------------------------

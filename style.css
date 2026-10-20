@@ -2312,6 +2312,55 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-color: color-mix(in srgb, var(--severity-medium) 30%, transparent);
   background: color-mix(in srgb, var(--severity-medium) 6%, transparent);
 }
+.threat-card__severity--low {
+  color: var(--severity-low);
+  border-color: color-mix(in srgb, var(--severity-low) 30%, transparent);
+  background: color-mix(in srgb, var(--severity-low) 6%, transparent);
+}
+.threat-card__sourcecount {
+  font-size: 0.65rem;
+  color: var(--gray-300);
+  font-family: var(--font-mono);
+  border: 1px solid var(--border-light);
+  padding: 2px 7px;
+  white-space: nowrap;
+}
+
+/* --- Top 3 Today --- */
+.top3-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 2px;
+}
+.top3-card {
+  position: relative;
+  background: linear-gradient(145deg, var(--surface) 0%, rgba(165, 13, 34, 0.05) 100%);
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--crimson);
+  padding: clamp(22px, 2.5vw, 30px);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  transition: border-color 0.3s ease, box-shadow 0.4s ease, transform 0.3s ease;
+}
+.top3-card:hover {
+  border-color: var(--purple);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px -10px rgba(165, 13, 34, 0.3);
+}
+.top3-card__rank {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--crimson);
+  opacity: 0.85;
+}
+.top3-card__score {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--gray-300);
+  letter-spacing: 0.05em;
+}
 .threat-card__source {
   font-size: 0.65rem;
   color: var(--gray-300);
@@ -2403,6 +2452,72 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     max-width: 160px !important;
   }
 }
+
+/* --- Website Health Report: grade badge, grouped checklists --- */
+.whr-grade-badge {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  line-height: 1;
+  color: var(--crimson);
+  border: 3px solid var(--crimson);
+  background: radial-gradient(circle at 50% 40%, rgba(165, 13, 34, 0.1) 0%, transparent 70%);
+  box-shadow: 0 0 24px rgba(165, 13, 34, 0.25), inset 0 0 20px rgba(165, 13, 34, 0.08);
+  transition: border-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+.whr-grade-badge[data-grade="A"] { color: #28c840; border-color: #28c840; box-shadow: 0 0 24px rgba(40, 200, 64, 0.25), inset 0 0 20px rgba(40, 200, 64, 0.08); }
+.whr-grade-badge[data-grade="B"] { color: #8fd13f; border-color: #8fd13f; box-shadow: 0 0 24px rgba(143, 209, 63, 0.25), inset 0 0 20px rgba(143, 209, 63, 0.08); }
+.whr-grade-badge[data-grade="C"] { color: #ffd700; border-color: #ffd700; box-shadow: 0 0 24px rgba(255, 215, 0, 0.25), inset 0 0 20px rgba(255, 215, 0, 0.08); }
+.whr-grade-badge[data-grade="D"] { color: #ff8c00; border-color: #ff8c00; box-shadow: 0 0 24px rgba(255, 140, 0, 0.25), inset 0 0 20px rgba(255, 140, 0, 0.08); }
+.whr-grade-badge[data-grade="F"] { color: var(--crimson); border-color: var(--crimson); }
+
+.whr-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.85rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border);
+}
+.whr-row--fail { border-left-color: var(--crimson); }
+.whr-row--pass { border-left-color: #28c840; }
+
+.whr-passed-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: 1px dashed var(--border-light);
+  color: var(--gray-300);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+.whr-passed-toggle:hover { border-color: var(--crimson); color: var(--white); }
+.whr-passed-toggle svg { transition: transform 0.3s ease; flex-shrink: 0; }
+.whr-passed-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.whr-passed-list { display: grid; gap: 2px; overflow: hidden; max-height: 0; transition: max-height 0.35s ease; }
+.whr-passed-list.is-open { max-height: 1000px; margin-top: 2px; }
+
+.whr-vital-chip {
+  padding: 1rem;
+  background: var(--surface);
+  text-align: center;
+  border-top: 2px solid var(--border);
+}
+.whr-vital-chip--good { border-top-color: #28c840; }
+.whr-vital-chip--ok { border-top-color: #ffd700; }
+.whr-vital-chip--poor { border-top-color: var(--crimson); }
 
 /* --- Device Showcase (Apple-style product screenshots) --- */
 .device-showcase {
