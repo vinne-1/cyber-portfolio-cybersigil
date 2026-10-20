@@ -188,6 +188,8 @@
         '/work/osint':     'page-work-osint',
         '/work/privesc':   'page-work-privesc',
         '/products':       'page-products',
+        '/tools':          'page-tools',
+        '/tools/website-health': 'page-tool-website-health',
         '/capabilities':   'page-capabilities',
         '/credentials':    'page-credentials',
         '/contact':        'page-contact',
@@ -201,6 +203,8 @@
         '/work/osint':     'OSINT Pipeline — Vineet Vishesh',
         '/work/privesc':   'Privilege Escalation Research — Vineet Vishesh',
         '/products':       'Products — Vineet Vishesh',
+        '/tools':          'Free Tools — Vineet Vishesh',
+        '/tools/website-health': 'Website Health Report — Vineet Vishesh',
         '/capabilities':   'Capabilities — Vineet Vishesh',
         '/credentials':    'Credentials — Vineet Vishesh',
         '/contact':        'Contact — Vineet Vishesh',
@@ -214,6 +218,8 @@
         '/work/osint':     'Automated OSINT Pipeline Framework — multi-source intelligence aggregation for reconnaissance and threat profiling.',
         '/work/privesc':   'Polymorphic Privilege Escalation Generator — adaptive exploit generation for authorized red team research.',
         '/products':       'Products built by Vineet Vishesh — independent apps and tools, starting with TithiPath, a Panchang and Kundli app.',
+        '/tools':          'Free security and web tools by Vineet Vishesh, starting with a Website Health Report covering security, SEO, performance, SSL, and DNS.',
+        '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
         '/capabilities':   'Offensive security capabilities — web app pentesting, red teaming, cloud security, exploit development, and mobile assessments.',
         '/credentials':    'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.',
         '/contact':        'Get in touch with Vineet Vishesh for offensive security engagements, red team operations, and penetration testing.',
@@ -428,6 +434,7 @@
             setupInteractions();
             setupTerminal();
             setupThreatFeed();
+            setupWebsiteHealthTool();
             setupCardHoverGlow();
             return;
         }
@@ -523,6 +530,7 @@
         setupInteractions();
         setupTerminal();
         setupThreatFeed();
+        setupWebsiteHealthTool();
         setupMatrixCanvas();
         setupParticleNetwork();
         setupParallaxElements();
@@ -1463,6 +1471,221 @@
             .catch(function () {
                 feedEl.innerHTML = '<div class="threat-feed__fallback">Threat feed offline — start the backend with <code style="color:var(--crimson)">npm start</code> in the <code>backend/</code> directory.</div>';
             });
+    }
+
+    /* ----------------------------------------------------------
+       WEBSITE HEALTH REPORT TOOL
+       ---------------------------------------------------------- */
+    var HEALTH_REPORT_API = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+        ? 'http://localhost:4000/api/health-report'
+        : 'https://cyber-portfolio-hcxt.onrender.com/api/health-report';
+
+    function whrScoreColor(score) {
+        if (score === null || score === undefined) return 'var(--gray-300)';
+        if (score >= 90) return '#28c840';
+        if (score >= 50) return '#ffd700';
+        return 'var(--crimson)';
+    }
+
+    function whrScoreCircle(label, score) {
+        var display = (score === null || score === undefined) ? 'N/A' : score;
+        var color = whrScoreColor(score);
+        var pct = (score === null || score === undefined) ? 0 : score;
+        var circumference = 2 * Math.PI * 26;
+        var offset = circumference * (1 - pct / 100);
+        return '<div style="text-align:center; width:90px;">' +
+            '<svg width="64" height="64" viewBox="0 0 64 64" style="transform:rotate(-90deg);">' +
+                '<circle cx="32" cy="32" r="26" fill="none" stroke="var(--border)" stroke-width="5"/>' +
+                '<circle cx="32" cy="32" r="26" fill="none" stroke="' + color + '" stroke-width="5" ' +
+                    'stroke-dasharray="' + circumference.toFixed(1) + '" stroke-dashoffset="' + offset.toFixed(1) + '" stroke-linecap="round"/>' +
+            '</svg>' +
+            '<div style="margin-top:-46px; font-family:var(--font-mono); font-weight:600; font-size:0.95rem; color:' + color + ';">' + escapeHtml(String(display)) + '</div>' +
+            '<div style="margin-top:36px; font-size:0.7rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.05em;">' + escapeHtml(label) + '</div>' +
+        '</div>';
+    }
+
+    function whrChecklistRow(label, pass, detail) {
+        var dotColor = pass ? '#28c840' : 'var(--crimson)';
+        return '<div style="display:flex; align-items:flex-start; gap:0.75rem; padding:0.85rem 1rem; background:var(--surface); border:1px solid var(--border);">' +
+            '<span style="width:8px; height:8px; border-radius:50%; background:' + dotColor + '; margin-top:0.35rem; flex-shrink:0;"></span>' +
+            '<div>' +
+                '<div style="font-size:0.85rem; color:var(--white); font-weight:500;">' + escapeHtml(label) + '</div>' +
+                (detail ? '<div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.15rem;">' + escapeHtml(String(detail)) + '</div>' : '') +
+            '</div>' +
+        '</div>';
+    }
+
+    function whrInfoCardTitle(text) {
+        return '<div style="font-size:0.8rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">' + escapeHtml(text) + '</div>';
+    }
+
+    function whrRenderResults(report) {
+        var resultsEl = app.querySelector('#whrResults');
+        if (!resultsEl) return;
+
+        // Overall grade
+        var gradeEl = app.querySelector('#whrGrade');
+        if (gradeEl) gradeEl.textContent = report.overallGrade || 'N/A';
+
+        // Score circles (performance/seo/accessibility/best-practices from PSI, plus our own security/seo scores)
+        var circlesEl = app.querySelector('#whrScoreCircles');
+        if (circlesEl) {
+            var circles = '';
+            if (report.performance && report.performance.ok) {
+                circles += whrScoreCircle('Performance', report.performance.scores.performance);
+                circles += whrScoreCircle('Accessibility', report.performance.scores.accessibility);
+                circles += whrScoreCircle('Best Practices', report.performance.scores.bestPractices);
+            }
+            circles += whrScoreCircle('Security', report.security.score);
+            circles += whrScoreCircle('SEO', report.seo.score);
+            circlesEl.innerHTML = circles;
+        }
+
+        // Core Web Vitals
+        var vitalsWrap = app.querySelector('#whrVitalsWrap');
+        var vitalsEl = app.querySelector('#whrVitals');
+        if (vitalsWrap && vitalsEl) {
+            if (report.performance && report.performance.ok) {
+                var cwv = report.performance.coreWebVitals;
+                var vitalItems = [
+                    ['LCP', cwv.lcp], ['CLS', cwv.cls], ['TBT', cwv.tbt], ['FCP', cwv.fcp], ['Speed Index', cwv.speedIndex]
+                ];
+                vitalsEl.innerHTML = vitalItems.map(function (pair) {
+                    return '<div style="padding:1rem; background:var(--surface); text-align:center;">' +
+                        '<div style="font-family:var(--font-mono); font-size:1rem; color:var(--white);">' + escapeHtml(pair[1] || '—') + '</div>' +
+                        '<div style="font-size:0.7rem; color:var(--gray-300); margin-top:0.25rem; text-transform:uppercase;">' + pair[0] + '</div>' +
+                    '</div>';
+                }).join('');
+                vitalsWrap.style.display = '';
+            } else {
+                vitalsWrap.style.display = 'none';
+            }
+        }
+
+        // Security headers
+        var secEl = app.querySelector('#whrSecurity');
+        if (secEl) {
+            secEl.innerHTML = report.security.findings.map(function (f) {
+                return whrChecklistRow(f.header, f.present, f.present ? (f.value || 'Present') : f.advice);
+            }).join('');
+        }
+
+        // SEO checklist
+        var seoEl = app.querySelector('#whrSeo');
+        if (seoEl) {
+            seoEl.innerHTML = report.seo.checks.map(function (c) {
+                return whrChecklistRow(c.label, c.pass, c.detail);
+            }).join('');
+        }
+
+        // SSL card
+        var sslEl = app.querySelector('#whrSsl');
+        if (sslEl) {
+            var ssl = report.ssl;
+            if (ssl && ssl.ok) {
+                var expiryColor = ssl.daysRemaining < 14 ? 'var(--crimson)' : (ssl.daysRemaining < 30 ? '#ffd700' : '#28c840');
+                sslEl.innerHTML = whrInfoCardTitle('SSL / TLS') +
+                    '<div style="font-size:0.85rem; color:var(--white);">' + escapeHtml(ssl.protocol || 'Unknown protocol') + (ssl.authorized ? ' &middot; Trusted chain' : ' &middot; Not trusted') + '</div>' +
+                    '<div style="font-size:0.8rem; color:' + expiryColor + '; margin-top:0.35rem;">Expires in ' + escapeHtml(String(ssl.daysRemaining)) + ' days</div>' +
+                    '<div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.35rem;">Issuer: ' + escapeHtml(ssl.issuer || 'Unknown') + '</div>';
+            } else {
+                sslEl.innerHTML = whrInfoCardTitle('SSL / TLS') + '<div style="font-size:0.85rem; color:var(--crimson);">' + escapeHtml((ssl && ssl.error) || 'Could not check.') + '</div>';
+            }
+        }
+
+        // DNS card
+        var dnsEl = app.querySelector('#whrDns');
+        if (dnsEl) {
+            var d = report.dns;
+            if (d) {
+                dnsEl.innerHTML = whrInfoCardTitle('DNS') +
+                    '<div style="font-size:0.8rem; color:var(--gray-300); line-height:1.8;">' +
+                        'A records: ' + d.a.length + '<br>' +
+                        'MX records: ' + (d.mx && d.mx.length && d.mx[0].exchange ? d.mx.length : 0) + '<br>' +
+                        'SPF: ' + (d.hasSpf ? 'Yes' : 'No') + '<br>' +
+                        'DMARC: ' + (d.hasDmarc ? 'Yes' : 'No') +
+                    '</div>';
+            } else {
+                dnsEl.innerHTML = whrInfoCardTitle('DNS') + '<div style="font-size:0.85rem; color:var(--gray-300);">Unavailable.</div>';
+            }
+        }
+
+        // robots.txt / sitemap.xml
+        var crawlEl = app.querySelector('#whrCrawl');
+        if (crawlEl) {
+            var rs = report.robotsAndSitemap;
+            crawlEl.innerHTML = whrInfoCardTitle('Crawlability') +
+                '<div style="font-size:0.8rem; color:var(--gray-300); line-height:1.8;">' +
+                    'robots.txt: ' + ((rs && rs.robotsTxt.present) ? 'Found' : 'Missing') + '<br>' +
+                    'sitemap.xml: ' + ((rs && rs.sitemapXml.present) ? 'Found' : 'Missing') + '<br>' +
+                    'HTTP status: ' + escapeHtml(String(report.http.statusCode)) + '<br>' +
+                    'Response time: ' + escapeHtml(String(report.http.responseTimeMs)) + 'ms' +
+                '</div>';
+        }
+
+        // Top opportunities
+        var oppsWrap = app.querySelector('#whrOppsWrap');
+        var oppsEl = app.querySelector('#whrOpps');
+        if (oppsWrap && oppsEl) {
+            if (report.performance && report.performance.ok && report.performance.topOpportunities && report.performance.topOpportunities.length) {
+                oppsEl.innerHTML = report.performance.topOpportunities.map(function (o) {
+                    return whrChecklistRow(o.title, false, 'Potential savings: ~' + Math.round(o.savingsMs) + 'ms');
+                }).join('');
+                oppsWrap.style.display = '';
+            } else {
+                oppsWrap.style.display = 'none';
+            }
+        }
+
+        resultsEl.style.display = '';
+        if (!prefersReducedMotion) {
+            gsap.fromTo(resultsEl, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' });
+        }
+    }
+
+    function setupWebsiteHealthTool() {
+        var input = app.querySelector('#whrUrlInput');
+        var runBtn = app.querySelector('#whrRunBtn');
+        if (!input || !runBtn) return;
+
+        var statusEl = app.querySelector('#whrStatus');
+        var statusTextEl = app.querySelector('#whrStatusText');
+        var resultsEl = app.querySelector('#whrResults');
+
+        function runReport() {
+            var url = input.value.trim();
+            if (!url) { input.focus(); return; }
+
+            runBtn.disabled = true;
+            runBtn.textContent = 'Running…';
+            if (resultsEl) resultsEl.style.display = 'none';
+            if (statusEl) statusEl.style.display = '';
+            if (statusTextEl) statusTextEl.textContent = 'Checking security headers, SSL, DNS, SEO, and running a Lighthouse performance audit — this can take up to 30 seconds…';
+
+            fetch(HEALTH_REPORT_API + '?url=' + encodeURIComponent(url))
+                .then(function (res) {
+                    return res.json().then(function (data) {
+                        if (!res.ok) throw new Error(data.message || 'Something went wrong.');
+                        return data;
+                    });
+                })
+                .then(function (report) {
+                    if (statusEl) statusEl.style.display = 'none';
+                    whrRenderResults(report);
+                })
+                .catch(function (err) {
+                    if (statusTextEl) statusTextEl.textContent = 'Error: ' + (err.message || 'Could not reach the health report service. Is the backend running?');
+                })
+                .finally(function () {
+                    runBtn.disabled = false;
+                    runBtn.textContent = 'Run Report';
+                });
+        }
+
+        runBtn.addEventListener('click', runReport);
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') runReport();
+        });
     }
 
     /* ----------------------------------------------------------

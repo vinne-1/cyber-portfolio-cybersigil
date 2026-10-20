@@ -166,8 +166,9 @@
                 <li><a href="/about" class="nav__link" data-route><span class="nav__link-short">01</span>About</a></li>
                 <li><a href="/work" class="nav__link" data-route><span class="nav__link-short">02</span>Work</a></li>
                 <li><a href="/products" class="nav__link" data-route><span class="nav__link-short">03</span>Products</a></li>
-                <li><a href="/capabilities" class="nav__link" data-route><span class="nav__link-short">04</span>Capabilities</a></li>
-                <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short">05</span>Credentials</a></li>
+                <li><a href="/tools" class="nav__link" data-route><span class="nav__link-short">04</span>Tools</a></li>
+                <li><a href="/capabilities" class="nav__link" data-route><span class="nav__link-short">05</span>Capabilities</a></li>
+                <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short">06</span>Credentials</a></li>
             </ul>
 
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
@@ -191,6 +192,7 @@
         <a href="/about" data-route>About</a>
         <a href="/work" data-route>Work</a>
         <a href="/products" data-route>Products</a>
+        <a href="/tools" data-route>Tools</a>
         <a href="/capabilities" data-route>Capabilities</a>
         <a href="/credentials" data-route>Credentials</a>
         <a href="/contact" data-route>Contact</a>
@@ -884,6 +886,130 @@
                     <a href="#" class="btn btn--outline" style="white-space:nowrap;">Join Closed Testing</a>
                 </div>
 
+            </div>
+        </section>
+    </template>
+
+    <!-- FREE TOOLS LISTING -->
+    <template id="page-tools">
+        <section class="section section--atmosphere-deep" data-page="tools" style="padding-top:120px;">
+            <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+            </div>
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:4rem;">
+                    <span class="t-label">Free Tools</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">
+                        No signup. No catch. Just useful.
+                    </h2>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Small tools built from the same offensive-security background as the work above &mdash; free to use, no account required.
+                    </p>
+                </div>
+
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap:2px;">
+                    <div class="project-card anim-item">
+                        <div class="project-card__image">
+                            <div class="project-card__image-overlay"></div>
+                            <div class="project-card__image-inner">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M11 7v4l3 2"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__number">01 &mdash; Diagnostics</div>
+                            <h3 class="project-card__title">Website Health Report</h3>
+                            <p class="project-card__desc">Security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance scoring &mdash; for any public URL, in one report.</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">Security</span>
+                                <span class="project-card__tag">SEO</span>
+                                <span class="project-card__tag">Performance</span>
+                                <span class="project-card__tag">SSL</span>
+                                <span class="project-card__tag">DNS</span>
+                            </div>
+                            <a href="/tools/website-health" class="project-card__cta" data-route>
+                                Run a Report
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+    <!-- WEBSITE HEALTH REPORT TOOL -->
+    <template id="page-tool-website-health">
+        <section class="section section--atmosphere-deep" data-page="tool-website-health" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <a href="/tools" data-route style="font-size:0.75rem; color:var(--gray-300); text-decoration:none;">&larr; Free Tools</a>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">
+                        Website Health Report
+                    </h2>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance &mdash; checked live, for any public site.
+                    </p>
+                </div>
+
+                <div class="anim-item" id="whrForm" style="display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+                    <input type="text" id="whrUrlInput" placeholder="example.com" autocomplete="off" spellcheck="false"
+                        style="flex:1; min-width:240px; padding:1rem 1.25rem; background:var(--surface); border:1px solid var(--border); color:var(--white); font-family:var(--font-body); font-size:0.95rem;">
+                    <button type="button" id="whrRunBtn" class="btn btn--primary">Run Report</button>
+                </div>
+                <p id="whrHint" style="font-size:0.75rem; color:var(--gray-300); margin-bottom:3rem;">Takes up to ~30 seconds &mdash; the performance score runs a real Lighthouse audit via Google PageSpeed Insights.</p>
+
+                <div id="whrStatus" style="display:none; margin-bottom:2rem;">
+                    <p id="whrStatusText" style="font-size:0.9rem; color:var(--gray-300);"></p>
+                </div>
+
+                <div id="whrResults" style="display:none;">
+
+                    <!-- Overall + score circles -->
+                    <div style="display:flex; flex-wrap:wrap; align-items:center; gap:clamp(1.5rem, 4vw, 3rem); padding:2rem; border:1px solid var(--border); background:var(--surface); margin-bottom:2rem;">
+                        <div style="text-align:center;">
+                            <div id="whrGrade" style="font-family:var(--font-display); font-size:3.5rem; line-height:1; color:var(--crimson);">&ndash;</div>
+                            <div style="font-size:0.7rem; letter-spacing:0.1em; color:var(--gray-300); text-transform:uppercase; margin-top:0.25rem;">Overall Grade</div>
+                        </div>
+                        <div id="whrScoreCircles" style="display:flex; flex-wrap:wrap; gap:1.5rem; flex:1;"></div>
+                    </div>
+
+                    <!-- Core Web Vitals -->
+                    <div id="whrVitalsWrap" style="margin-bottom:2rem;">
+                        <h3 style="color:var(--white); font-weight:600; font-size:0.95rem; margin-bottom:1rem;">Core Web Vitals</h3>
+                        <div id="whrVitals" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(130px, 1fr)); gap:1px; background:var(--border);"></div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap:2rem; margin-bottom:2rem;">
+                        <!-- Security headers -->
+                        <div>
+                            <h3 style="color:var(--white); font-weight:600; font-size:0.95rem; margin-bottom:1rem;">Security Headers</h3>
+                            <div id="whrSecurity" style="display:grid; gap:2px;"></div>
+                        </div>
+                        <!-- SEO checklist -->
+                        <div>
+                            <h3 style="color:var(--white); font-weight:600; font-size:0.95rem; margin-bottom:1rem;">On-Page SEO</h3>
+                            <div id="whrSeo" style="display:grid; gap:2px;"></div>
+                        </div>
+                    </div>
+
+                    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap:1rem; margin-bottom:2rem;">
+                        <div id="whrSsl" style="padding:1.25rem; border:1px solid var(--border); background:var(--surface);"></div>
+                        <div id="whrDns" style="padding:1.25rem; border:1px solid var(--border); background:var(--surface);"></div>
+                        <div id="whrCrawl" style="padding:1.25rem; border:1px solid var(--border); background:var(--surface);"></div>
+                    </div>
+
+                    <div id="whrOppsWrap" style="display:none; margin-bottom:2rem;">
+                        <h3 style="color:var(--white); font-weight:600; font-size:0.95rem; margin-bottom:1rem;">Top Performance Opportunities</h3>
+                        <div id="whrOpps" style="display:grid; gap:2px;"></div>
+                    </div>
+
+                </div>
             </div>
         </section>
     </template>

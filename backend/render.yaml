@@ -12,3 +12,12 @@ services:
         value: https://vinne-1.github.io,https://vineedoesstuff.in,https://www.vineedoesstuff.in
       - key: PORT
         value: 4000
+      # Optional but recommended: free Google Cloud API key with the
+      # "PageSpeed Insights API" enabled (no billing needed for this quota
+      # tier). Without it, /api/health-report's performance scoring shares
+      # Google's tiny global keyless quota with every anonymous caller on
+      # the internet and will fail under real traffic almost immediately.
+      # `sync: false` keeps the actual value out of this repo -- set it in
+      # the Render dashboard under this service's Environment tab.
+      - key: PAGESPEED_API_KEY
+        sync: false
