@@ -1279,7 +1279,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gray-400);
+  color: var(--gray-300);
   margin-top: 4px;
 }
 
@@ -1519,7 +1519,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--gray-400);
+  color: var(--gray-300);
 }
 
 /* --- Contact --- */
@@ -1707,7 +1707,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .footer__logo span { color: var(--crimson); }
 .footer__tagline {
   font-size: 0.65rem;
-  color: var(--gray-400);
+  color: var(--gray-300);
   letter-spacing: 0.1em;
 }
 .footer__meta {
@@ -2406,7 +2406,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   grid-column: 1 / -1;
   text-align: center;
   padding: 2rem;
-  color: var(--gray-400);
+  color: var(--gray-300);
   font-size: 0.85rem;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -2475,6 +2475,24 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .whr-grade-badge[data-grade="C"] { color: #ffd700; border-color: #ffd700; box-shadow: 0 0 24px rgba(255, 215, 0, 0.25), inset 0 0 20px rgba(255, 215, 0, 0.08); }
 .whr-grade-badge[data-grade="D"] { color: #ff8c00; border-color: #ff8c00; box-shadow: 0 0 24px rgba(255, 140, 0, 0.25), inset 0 0 20px rgba(255, 140, 0, 0.08); }
 .whr-grade-badge[data-grade="F"] { color: var(--crimson); border-color: var(--crimson); }
+
+.whr-target-url {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--gray-300);
+  margin-top: 0.25rem;
+  max-width: clamp(140px, 24vw, 220px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+.whr-target-url:hover, .whr-target-url:focus-visible {
+  color: var(--white);
+  border-color: var(--gray-300);
+}
 
 .whr-row {
   display: flex;
@@ -2681,7 +2699,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .terminal__title {
   font-size: 0.7rem;
-  color: var(--gray-400);
+  color: var(--gray-300);
   margin-left: auto;
   letter-spacing: 0.05em;
 }
@@ -3289,7 +3307,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     flex-direction: column;
     align-items: flex-start;
   }
-  .btn { width: 100%; justify-content: center; }
+  /* Scoped to the hero CTAs only -- a bare ".btn" rule here used to apply
+     full-width-stacking to every button site-wide at this breakpoint
+     (severity filter chips, "Check Another Site", etc.), not just the
+     hero's two stacked CTAs it was written for. */
+  .hero__cta-group .btn { width: 100%; justify-content: center; }
   .project-card__metrics { grid-template-columns: 1fr 1fr; }
   .stat-block { padding: 20px 16px; }
   .stat-block__value { font-size: 2rem; }

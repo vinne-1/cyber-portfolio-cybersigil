@@ -18,6 +18,14 @@
     }
 
     var themeToggle = document.getElementById('themeToggle');
+    function updateThemeToggleLabel() {
+        if (!themeToggle) return;
+        var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+        var next = current === 'light' ? 'dark' : 'light';
+        themeToggle.setAttribute('aria-label', 'Switch to ' + next + ' theme');
+        themeToggle.setAttribute('aria-pressed', String(current === 'light'));
+    }
+    updateThemeToggleLabel();
     if (themeToggle) {
         themeToggle.addEventListener('click', function () {
             var current = document.documentElement.getAttribute('data-theme');
@@ -27,6 +35,7 @@
             // Update meta theme-color
             var meta = document.querySelector('meta[name="theme-color"]');
             if (meta) meta.setAttribute('content', next === 'light' ? '#ffffff' : '#0a0a0a');
+            updateThemeToggleLabel();
         });
     }
 
@@ -1470,7 +1479,7 @@
             (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
             '<div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; gap:0.5rem; flex-wrap:wrap;">' +
                 (tags ? '<div class="threat-card__tags">' + tags + '</div>' : '<span></span>') +
-                '<span class="t-mono" style="font-size:0.65rem; color:var(--gray-400);">' + escapeHtml(tlRelativeTime(c.date)) + '</span>' +
+                '<span class="t-mono" style="font-size:0.65rem; color:var(--gray-300);">' + escapeHtml(tlRelativeTime(c.date)) + '</span>' +
             '</div>' +
         '</div>';
     }
@@ -1566,7 +1575,7 @@
                 : allClusters.filter(function (c) { return tlSafeSeverity(c.severity) === activeFilter; });
             var shown = filtered.slice(0, LIST_DISPLAY_CAP);
             var capNote = filtered.length > LIST_DISPLAY_CAP
-                ? '<p style="grid-column:1/-1; text-align:center; font-size:0.75rem; color:var(--gray-400); margin-top:1rem;">Showing ' + shown.length + ' of ' + filtered.length + ' — use the filters above to narrow this down.</p>'
+                ? '<p style="grid-column:1/-1; text-align:center; font-size:0.75rem; color:var(--gray-300); margin-top:1rem;">Showing ' + shown.length + ' of ' + filtered.length + ' — use the filters above to narrow this down.</p>'
                 : '';
             listEl.innerHTML = shown.length
                 ? shown.map(tlClusterCardHtml).join('') + capNote
@@ -1584,10 +1593,12 @@
             var options = [
                 ['all', 'All'], ['critical', 'Critical'], ['high', 'High'], ['medium', 'Medium'], ['low', 'Low']
             ];
+            filtersEl.setAttribute('role', 'group');
+            filtersEl.setAttribute('aria-label', 'Filter by severity');
             filtersEl.innerHTML = options.map(function (opt) {
                 var active = opt[0] === activeFilter;
                 return '<button type="button" class="btn ' + (active ? 'btn--primary' : 'btn--outline') +
-                    '" data-filter="' + opt[0] + '" style="font-size:0.75rem; padding:0.5rem 1rem;">' + opt[1] + '</button>';
+                    '" data-filter="' + opt[0] + '" aria-pressed="' + active + '" style="font-size:0.75rem; padding:0.5rem 1rem;">' + opt[1] + '</button>';
             }).join('');
             filtersEl.querySelectorAll('button[data-filter]').forEach(function (btn) {
                 btn.addEventListener('click', function () {
@@ -1598,7 +1609,7 @@
             });
         }
 
-        listEl.innerHTML = '<div class="threat-feed__loading"><span class="t-mono" style="font-size:0.75rem; color:var(--gray-400);">Fetching latest intelligence...</span></div>';
+        listEl.innerHTML = '<div class="threat-feed__loading"><span class="t-mono" style="font-size:0.75rem; color:var(--gray-300);">Fetching latest intelligence...</span></div>';
 
         fetchThreatLandscape()
             .then(function (data) {
@@ -1760,7 +1771,14 @@
         if (gradeEl) gradeEl.textContent = grade;
         if (gradeBadge) gradeBadge.setAttribute('data-grade', grade.charAt(0));
         var urlEl = app.querySelector('#whrTargetUrl');
-        if (urlEl) urlEl.textContent = report.url || '';
+        if (urlEl) {
+            var reportUrl = report.url || '';
+            urlEl.textContent = reportUrl;
+            urlEl.title = reportUrl;
+            var hrefOk = /^https?:\/\//i.test(reportUrl);
+            urlEl.setAttribute('href', hrefOk ? reportUrl : '#');
+            if (!hrefOk) urlEl.addEventListener('click', function (e) { e.preventDefault(); }, { once: true });
+        }
 
         // Score circles (performance/seo/accessibility/best-practices from PSI, plus our own security/seo scores)
         var circlesEl = app.querySelector('#whrScoreCircles');

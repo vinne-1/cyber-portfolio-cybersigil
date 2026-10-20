@@ -196,9 +196,35 @@ function checkSecurityHeaders(headers) {
 // ---------------------------------------------------------------------
 // Lightweight HTML meta/SEO extraction (regex-based, no DOM dependency)
 // ---------------------------------------------------------------------
+// Source HTML attribute values routinely contain HTML entities (e.g. a
+// meta description with a literal "&#39;" for an apostrophe) -- a real DOM
+// parser decodes these automatically when reading .textContent/.content,
+// but a regex extraction gets the raw encoded text verbatim. Left
+// undecoded, the frontend would then correctly-but-uselessly HTML-escape
+// that already-encoded text for safe display, and the user would see the
+// literal characters "&#39;" instead of an apostrophe. Decode the common
+// named and numeric entities here so what the user sees is the real text.
+const HTML_NAMED_ENTITIES = {
+  amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ',
+  mdash: '—', ndash: '–', hellip: '…',
+  lsquo: '‘', rsquo: '’', ldquo: '“', rdquo: '”',
+  copy: '©', reg: '®', trade: '™'
+};
+
+function decodeHtmlEntities(str) {
+  if (!str) return str;
+  return str.replace(/&(#x?[0-9a-fA-F]+|[a-zA-Z]+);/g, (match, ent) => {
+    if (ent[0] === '#') {
+      const code = ent[1].toLowerCase() === 'x' ? parseInt(ent.slice(2), 16) : parseInt(ent.slice(1), 10);
+      return Number.isNaN(code) ? match : String.fromCodePoint(code);
+    }
+    return Object.prototype.hasOwnProperty.call(HTML_NAMED_ENTITIES, ent) ? HTML_NAMED_ENTITIES[ent] : match;
+  });
+}
+
 function extractTag(html, re) {
   const m = html.match(re);
-  return m ? m[1].trim() : null;
+  return m ? decodeHtmlEntities(m[1].trim()) : null;
 }
 
 function extractMetaContent(html, nameOrProperty, attr = 'name') {
@@ -207,7 +233,7 @@ function extractMetaContent(html, nameOrProperty, attr = 'name') {
     'i'
   );
   const m = html.match(re);
-  return m ? (m[1] || m[2] || '').trim() : null;
+  return m ? decodeHtmlEntities((m[1] || m[2] || '').trim()) : null;
 }
 
 function parseSeo(html) {
