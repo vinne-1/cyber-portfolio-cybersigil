@@ -42,7 +42,7 @@
   --white:       #e0dcd4;
   --gray-100:    #b8b0a8;
   --gray-200:    #8a8280;
-  --gray-300:    #6a6068;
+  --gray-300:    #807686; /* WCAG AA: 4.66:1 vs --surface, 4.76:1 vs --charcoal (was #6a6068 at 3.35:1 — failed AA for body text) */
   --gray-400:    #3a2e40;
   --gray-500:    #201828;
 
