@@ -1517,7 +1517,11 @@
 
         fetchThreatLandscape()
             .then(function (data) {
-                var clusters = (data.clusters || data.articles || []).slice(0, 6);
+                var top3Titles = (data.top3 || []).map(function (c) { return c.title; });
+                var rest = (data.clusters || data.articles || []).filter(function (c) {
+                    return top3Titles.indexOf(c.title) === -1;
+                });
+                var clusters = rest.slice(0, 6);
                 tlRenderTop3Into(top3El, data.top3);
 
                 if (!clusters.length) {
@@ -1550,12 +1554,18 @@
         var allClusters = [];
         var activeFilter = 'all';
 
+        var LIST_DISPLAY_CAP = 30;
+
         function renderList() {
             var filtered = activeFilter === 'all'
                 ? allClusters
                 : allClusters.filter(function (c) { return tlSafeSeverity(c.severity) === activeFilter; });
-            listEl.innerHTML = filtered.length
-                ? filtered.map(tlClusterCardHtml).join('')
+            var shown = filtered.slice(0, LIST_DISPLAY_CAP);
+            var capNote = filtered.length > LIST_DISPLAY_CAP
+                ? '<p style="grid-column:1/-1; text-align:center; font-size:0.75rem; color:var(--gray-400); margin-top:1rem;">Showing ' + shown.length + ' of ' + filtered.length + ' — use the filters above to narrow this down.</p>'
+                : '';
+            listEl.innerHTML = shown.length
+                ? shown.map(tlClusterCardHtml).join('') + capNote
                 : '<div class="threat-feed__fallback">No stories match this filter right now.</div>';
             if (!prefersReducedMotion) {
                 gsap.fromTo(listEl.querySelectorAll('.threat-card'),
