@@ -975,12 +975,12 @@
                 <div id="whrResults" style="display:none;">
 
                     <!-- Overall + score circles -->
-                    <div style="display:flex; flex-wrap:wrap; align-items:center; gap:clamp(1.5rem, 4vw, 3rem); padding:2rem; border:1px solid var(--border); background:var(--surface); margin-bottom:2rem;">
-                        <div style="text-align:center;">
+                    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:center; gap:clamp(1.5rem, 4vw, 3rem); padding:2rem; border:1px solid var(--border); background:var(--surface); margin-bottom:2rem;">
+                        <div style="text-align:center; flex-shrink:0;">
                             <div id="whrGrade" style="font-family:var(--font-display); font-size:3.5rem; line-height:1; color:var(--crimson);">&ndash;</div>
                             <div style="font-size:0.7rem; letter-spacing:0.1em; color:var(--gray-300); text-transform:uppercase; margin-top:0.25rem;">Overall Grade</div>
                         </div>
-                        <div id="whrScoreCircles" style="display:flex; flex-wrap:wrap; gap:1.5rem; flex:1;"></div>
+                        <div id="whrScoreCircles" style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; flex:1; min-width:200px;"></div>
                     </div>
 
                     <!-- Core Web Vitals -->
