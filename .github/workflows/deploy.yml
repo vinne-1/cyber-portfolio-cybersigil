@@ -29,6 +29,7 @@ jobs:
           cp 404.html sitemap.xml manifest.json og-image.png _site/
           cp resume.pdf "CompTIA Security+ ce certificate.pdf" _site/ 2>/dev/null || true
           cp -r resources _site/ 2>/dev/null || true
+          cp CNAME _site/ 2>/dev/null || true
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
