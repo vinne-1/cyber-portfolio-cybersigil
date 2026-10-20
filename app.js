@@ -1386,21 +1386,33 @@
        ENHANCED CARD HOVER GLOW
        ---------------------------------------------------------- */
     function setupCardHoverGlow() {
-        var cards = app.querySelectorAll('.project-card');
-        cards.forEach(function (card) {
-            // Add glow element if not present
-            if (!card.querySelector('.project-card__hover-glow')) {
-                var glow = document.createElement('div');
-                glow.className = 'project-card__hover-glow';
-                card.appendChild(glow);
-            }
+        if (prefersReducedMotion) return;
 
-            card.addEventListener('mousemove', function (e) {
-                var rect = card.getBoundingClientRect();
-                var x = ((e.clientX - rect.left) / rect.width) * 100;
-                var y = ((e.clientY - rect.top) / rect.height) * 100;
-                card.style.setProperty('--mouse-x', x + '%');
-                card.style.setProperty('--mouse-y', y + '%');
+        var groups = [
+            { selector: '.project-card', glowClass: 'project-card__hover-glow' },
+            { selector: '.cert-badge', glowClass: 'cert-badge__hover-glow' },
+            { selector: '.device-frame', glowClass: 'device-frame__hover-glow' }
+        ];
+
+        groups.forEach(function (group) {
+            var cards = app.querySelectorAll(group.selector);
+            cards.forEach(function (card) {
+                if (card.dataset.hoverGlowBound) return; // avoid double-binding across re-renders
+                card.dataset.hoverGlowBound = '1';
+
+                if (!card.querySelector('.' + group.glowClass)) {
+                    var glow = document.createElement('div');
+                    glow.className = group.glowClass;
+                    card.appendChild(glow);
+                }
+
+                card.addEventListener('mousemove', function (e) {
+                    var rect = card.getBoundingClientRect();
+                    var x = ((e.clientX - rect.left) / rect.width) * 100;
+                    var y = ((e.clientY - rect.top) / rect.height) * 100;
+                    card.style.setProperty('--mouse-x', x + '%');
+                    card.style.setProperty('--mouse-y', y + '%');
+                });
             });
         });
     }

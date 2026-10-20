@@ -2363,6 +2363,30 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: var(--surface);
 }
 
+/* --- Website Health Report: shimmer skeleton loading state --- */
+@keyframes whrShimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+.whr-skel {
+  background: linear-gradient(90deg, var(--surface-3) 25%, var(--border-light) 37%, var(--surface-3) 63%);
+  background-size: 800px 100%;
+  animation: whrShimmer 1.6s linear infinite;
+}
+.whr-skel-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--border-light);
+}
+.whr-skel-row {
+  height: 48px;
+  border: 1px solid var(--border);
+}
+@media (prefers-reduced-motion: reduce) {
+  .whr-skel { animation: none; opacity: 0.5; }
+}
+
 /* --- Device Showcase (Apple-style product screenshots) --- */
 .device-showcase {
   position: relative;
@@ -2387,6 +2411,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .device-frame {
   position: relative;
+  overflow: hidden;
   z-index: 1;
   width: clamp(170px, 20vw, 240px);
   aspect-ratio: 9 / 16;
@@ -2434,6 +2459,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Certification Badges --- */
 .cert-badge {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -2986,6 +3013,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 0;
 }
 .project-card:hover .project-card__hover-glow {
+  opacity: 1;
+}
+
+/* Same cursor-follow glow treatment extended to cert-badge and device-frame,
+   for one consistent hover language across every card-like component. */
+.cert-badge__hover-glow,
+.device-frame__hover-glow {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(165, 13, 34, 0.08) 0%, transparent 60%);
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 0;
+}
+.cert-badge:hover .cert-badge__hover-glow,
+.device-frame:hover .device-frame__hover-glow {
   opacity: 1;
 }
 .project-card__tags {

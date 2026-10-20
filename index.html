@@ -427,25 +427,6 @@
         </section>
 
         <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="30" x2="55" y2="30" stroke-width="0.3" opacity="0.3"/><path d="M60,30 C64,20 70,14 78,10" stroke-width="0.5"/><path d="M60,30 C64,40 70,46 78,50" stroke-width="0.5"/><circle cx="78" cy="10" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><circle cx="78" cy="50" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><path d="M85,8 L100,28 L100,32 L85,52 L100,32 L100,28 Z" stroke-width="0.6"/><path d="M100,15 L112,28 L100,41" stroke-width="0.4" opacity="0.5"/><path d="M100,28 L115,30 L100,32" stroke-width="0.5"/><path d="M115,30 L120,22 L125,30 L120,38 Z" stroke-width="0.4" opacity="0.6"/><line x1="145" y1="30" x2="200" y2="30" stroke-width="0.3" opacity="0.3"/><path d="M140,30 C136,20 130,14 122,10" stroke-width="0.5"/><path d="M140,30 C136,40 130,46 122,50" stroke-width="0.5"/><circle cx="122" cy="10" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><circle cx="122" cy="50" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/></svg></div>
-        <div class="stats-row">
-            <div class="stat-block anim-item">
-                <div class="stat-block__value" data-count="67">67<span>+</span></div>
-                <div class="stat-block__label">Applications Tested</div>
-            </div>
-            <div class="stat-block anim-item">
-                <div class="stat-block__value">100<span>+</span></div>
-                <div class="stat-block__label">Critical Findings</div>
-            </div>
-            <div class="stat-block anim-item">
-                <div class="stat-block__value">$8.4<span>M</span></div>
-                <div class="stat-block__label">Breach Costs Prevented</div>
-            </div>
-            <div class="stat-block anim-item">
-                <div class="stat-block__value">95<span>%</span></div>
-                <div class="stat-block__label">Remediation Rate</div>
-            </div>
-        </div>
-        <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="30" x2="55" y2="30" stroke-width="0.3" opacity="0.3"/><path d="M60,30 C64,20 70,14 78,10" stroke-width="0.5"/><path d="M60,30 C64,40 70,46 78,50" stroke-width="0.5"/><circle cx="78" cy="10" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><circle cx="78" cy="50" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><path d="M85,8 L100,28 L100,32 L85,52 L100,32 L100,28 Z" stroke-width="0.6"/><path d="M100,15 L112,28 L100,41" stroke-width="0.4" opacity="0.5"/><path d="M100,28 L115,30 L100,32" stroke-width="0.5"/><path d="M115,30 L120,22 L125,30 L120,38 Z" stroke-width="0.4" opacity="0.6"/><line x1="145" y1="30" x2="200" y2="30" stroke-width="0.3" opacity="0.3"/><path d="M140,30 C136,20 130,14 122,10" stroke-width="0.5"/><path d="M140,30 C136,40 130,46 122,50" stroke-width="0.5"/><circle cx="122" cy="10" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><circle cx="122" cy="50" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/></svg></div>
 
         <!-- Interactive Terminal -->
         <section class="section" style="padding-top: 0;">
@@ -965,7 +946,30 @@
                 <p id="whrHint" style="font-size:0.75rem; color:var(--gray-300); margin-bottom:3rem;">Takes up to ~30 seconds &mdash; the performance score runs a real Lighthouse audit via Google PageSpeed Insights.</p>
 
                 <div id="whrStatus" style="display:none; margin-bottom:2rem;">
-                    <p id="whrStatusText" style="font-size:0.9rem; color:var(--gray-300);"></p>
+                    <p id="whrStatusText" style="font-size:0.9rem; color:var(--gray-300); margin-bottom:1.5rem;"></p>
+                    <div id="whrSkeleton">
+                        <div style="display:flex; flex-wrap:wrap; align-items:center; gap:clamp(1.5rem, 4vw, 3rem); padding:2rem; border:1px solid var(--border); background:var(--surface); margin-bottom:2rem;">
+                            <div class="whr-skel whr-skel-circle"></div>
+                            <div class="whr-skel whr-skel-circle"></div>
+                            <div class="whr-skel whr-skel-circle"></div>
+                            <div class="whr-skel whr-skel-circle"></div>
+                            <div class="whr-skel whr-skel-circle"></div>
+                        </div>
+                        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap:2rem;">
+                            <div style="display:grid; gap:2px;">
+                                <div class="whr-skel whr-skel-row"></div>
+                                <div class="whr-skel whr-skel-row"></div>
+                                <div class="whr-skel whr-skel-row"></div>
+                                <div class="whr-skel whr-skel-row"></div>
+                            </div>
+                            <div style="display:grid; gap:2px;">
+                                <div class="whr-skel whr-skel-row"></div>
+                                <div class="whr-skel whr-skel-row"></div>
+                                <div class="whr-skel whr-skel-row"></div>
+                                <div class="whr-skel whr-skel-row"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div id="whrResults" style="display:none;">
