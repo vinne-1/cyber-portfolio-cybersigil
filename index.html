@@ -169,6 +169,7 @@
                 <li><a href="/tools" class="nav__link" data-route><span class="nav__link-short">04</span>Tools</a></li>
                 <li><a href="/capabilities" class="nav__link" data-route><span class="nav__link-short">05</span>Capabilities</a></li>
                 <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short">06</span>Credentials</a></li>
+                <li><a href="/threat-landscape" class="nav__link" data-route><span class="nav__link-short">07</span>Threats</a></li>
             </ul>
 
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
@@ -195,6 +196,7 @@
         <a href="/tools" data-route>Tools</a>
         <a href="/capabilities" data-route>Capabilities</a>
         <a href="/credentials" data-route>Credentials</a>
+        <a href="/threat-landscape" data-route>Threats</a>
         <a href="/contact" data-route>Contact</a>
     </nav>
 
@@ -740,34 +742,22 @@
                     <div class="project-card anim-item">
                         <div class="project-card__body">
                             <div class="project-card__number">03 — Web Application</div>
-                            <h3 class="project-card__title" style="font-size:1.15rem;">Enterprise Web App Assessments</h3>
-                            <p class="project-card__desc" style="font-size:0.9rem;">Comprehensive penetration testing across 10+ web applications. Identified SQL injection, XSS, CSRF, and RCE vectors in production environments.</p>
-                            <div class="project-card__metrics">
-                                <div><div class="project-card__metric-value">18</div><div class="project-card__metric-label">Critical Issues</div></div>
-                                <div><div class="project-card__metric-value">10</div><div class="project-card__metric-label">Apps Tested</div></div>
-                            </div>
+                            <h3 class="project-card__title" style="font-size:1.15rem;">Web & API Application Security</h3>
+                            <p class="project-card__desc" style="font-size:0.9rem;">Web and API-focused VAPT using Burp Suite, Nessus, and manual validation, mapped to OWASP Top 10 / OWASP API Top 10 and CVSS, with PoC-backed findings and retest verification.</p>
                         </div>
                     </div>
                     <div class="project-card anim-item">
                         <div class="project-card__body">
                             <div class="project-card__number">04 — Mobile</div>
                             <h3 class="project-card__title" style="font-size:1.15rem;">Mobile Application Security</h3>
-                            <p class="project-card__desc" style="font-size:0.9rem;">Security assessments across Android and iOS platforms including runtime manipulation, API interception, binary analysis, and insecure data storage.</p>
-                            <div class="project-card__metrics">
-                                <div><div class="project-card__metric-value">7</div><div class="project-card__metric-label">Critical Issues</div></div>
-                                <div><div class="project-card__metric-value">4</div><div class="project-card__metric-label">Apps Tested</div></div>
-                            </div>
+                            <p class="project-card__desc" style="font-size:0.9rem;">Security assessment methodology for Android and iOS platforms, covering runtime manipulation, API interception, binary analysis, and insecure data storage.</p>
                         </div>
                     </div>
                     <div class="project-card anim-item">
                         <div class="project-card__body">
                             <div class="project-card__number">05 — Infrastructure</div>
                             <h3 class="project-card__title" style="font-size:1.15rem;">Network & Cloud Assessments</h3>
-                            <p class="project-card__desc" style="font-size:0.9rem;">Infrastructure penetration testing across corporate networks and cloud environments. AWS, multi-provider reviews, and 50+ host reconnaissance.</p>
-                            <div class="project-card__metrics">
-                                <div><div class="project-card__metric-value">5</div><div class="project-card__metric-label">Networks</div></div>
-                                <div><div class="project-card__metric-value">3</div><div class="project-card__metric-label">Cloud Providers</div></div>
-                            </div>
+                            <p class="project-card__desc" style="font-size:0.9rem;">SIEM detection engineering and telemetry analysis across AWS and Google Workspace logs, with MITRE ATT&amp;CK-aligned correlation rules and SOC alert investigation.</p>
                         </div>
                     </div>
                 </div>
@@ -943,7 +933,30 @@
                         style="flex:1; min-width:240px; padding:1rem 1.25rem; background:var(--surface); border:1px solid var(--border); color:var(--white); font-family:var(--font-body); font-size:0.95rem;">
                     <button type="button" id="whrRunBtn" class="btn btn--primary">Run Report</button>
                 </div>
-                <p id="whrHint" style="font-size:0.75rem; color:var(--gray-300); margin-bottom:3rem;">Takes up to ~30 seconds &mdash; the performance score runs a real Lighthouse audit via Google PageSpeed Insights.</p>
+                <p id="whrHint" style="font-size:0.75rem; color:var(--gray-300); margin-bottom:2.5rem;">Takes up to ~30 seconds &mdash; the performance score runs a real Lighthouse audit via Google PageSpeed Insights.</p>
+
+                <div id="whrEmptyState" class="anim-item" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:1px; background:var(--border); margin-bottom:3rem;">
+                    <div style="padding:1.5rem; background:var(--surface);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+                        <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">Security Headers</div>
+                        <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">CSP, HSTS, frame options &amp; more</div>
+                    </div>
+                    <div style="padding:1.5rem; background:var(--surface);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">Performance</div>
+                        <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">Real Lighthouse &amp; Core Web Vitals</div>
+                    </div>
+                    <div style="padding:1.5rem; background:var(--surface);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+                        <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">SSL / TLS</div>
+                        <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">Certificate validity &amp; protocol</div>
+                    </div>
+                    <div style="padding:1.5rem; background:var(--surface);">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">SEO &amp; DNS</div>
+                        <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">Meta tags, sitemap, SPF/DMARC</div>
+                    </div>
+                </div>
 
                 <div id="whrStatus" style="display:none; margin-bottom:2rem;">
                     <p id="whrStatusText" style="font-size:0.9rem; color:var(--gray-300); margin-bottom:1.5rem;"></p>
@@ -975,10 +988,13 @@
                 <div id="whrResults" style="display:none;">
 
                     <!-- Overall + score circles -->
-                    <div style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:center; gap:clamp(1.5rem, 4vw, 3rem); padding:2rem; border:1px solid var(--border); background:var(--surface); margin-bottom:2rem;">
+                    <div style="display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:clamp(1.5rem, 4vw, 3rem); padding:2rem; border:1px solid var(--border); background:var(--surface); margin-bottom:2rem;">
                         <div style="text-align:center; flex-shrink:0;">
-                            <div id="whrGrade" style="font-family:var(--font-display); font-size:3.5rem; line-height:1; color:var(--crimson);">&ndash;</div>
-                            <div style="font-size:0.7rem; letter-spacing:0.1em; color:var(--gray-300); text-transform:uppercase; margin-top:0.25rem;">Overall Grade</div>
+                            <div id="whrGradeBadge" class="whr-grade-badge">
+                                <span id="whrGrade">&ndash;</span>
+                            </div>
+                            <div style="font-size:0.7rem; letter-spacing:0.1em; color:var(--gray-300); text-transform:uppercase; margin-top:0.75rem;">Overall Grade</div>
+                            <div id="whrTargetUrl" style="font-size:0.7rem; color:var(--gray-400); margin-top:0.25rem; max-width:140px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;"></div>
                         </div>
                         <div id="whrScoreCircles" style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; flex:1; min-width:200px;"></div>
                     </div>
@@ -1011,6 +1027,10 @@
                     <div id="whrOppsWrap" style="display:none; margin-bottom:2rem;">
                         <h3 style="color:var(--white); font-weight:600; font-size:0.95rem; margin-bottom:1rem;">Top Performance Opportunities</h3>
                         <div id="whrOpps" style="display:grid; gap:2px;"></div>
+                    </div>
+
+                    <div style="text-align:center; margin-top:2.5rem;">
+                        <button type="button" id="whrRunAnotherBtn" class="btn btn--outline">Check Another Site</button>
                     </div>
 
                 </div>
