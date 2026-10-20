@@ -1,0 +1,2451 @@
+{
+  "articles": [
+    {
+      "title": "Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ",
+      "source": "Dark Reading",
+      "date": "2026-10-20T19:16:49.000Z",
+      "summary": "The perp, who has Saudi ties, was arrested for allegedly bugging an OpenAI conference room, highlighting a preventable insider threat vector.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+      "source": "The Hacker News",
+      "date": "2026-10-20T17:09:53.000Z",
+      "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20.\n\nAn intermediate CA signs the certificates that websites present, so anyone holding one of these keys could issue a certificate for any website that a browser would accept.\n\nA researcher reported the",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+      "source": "The Hacker News",
+      "date": "2026-10-20T15:38:52.000Z",
+      "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution.\n\nThe vulnerability, tracked as CVE-2026-106173 (CVSS score: 9.4), is a critical path traversal flaw that could allow an unauthenticated attacker to execute unauthorized code or commands via specially",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-106173"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Close Identity Gaps in Software Development Before Unleashing AI",
+      "source": "Dark Reading",
+      "date": "2026-10-20T15:35:45.000Z",
+      "summary": "Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "source": "The Hacker News",
+      "date": "2026-10-20T15:32:27.000Z",
+      "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting  PAN-OS and Prisma Access by ransomware actors.\n\nThe activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set up unauthorized VPN connections. It was patched by Palo Alto Networks in May 2026 and was",
+      "severity": "Critical",
+      "tags": [
+        "Ransomware",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-0257"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-0257"
+      ],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
+      "source": "Dark Reading",
+      "date": "2026-10-20T14:36:05.000Z",
+      "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
+      "source": "The Hacker News",
+      "date": "2026-10-20T14:07:17.000Z",
+      "summary": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on the internet.\n\nThe agents tried more than 1,200 sites and reached websites belonging to more than 100 companies, including farm-equipment maker Deere, appliance company",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
+      "source": "The Hacker News",
+      "date": "2026-10-20T12:59:44.000Z",
+      "summary": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus spyware in 2026, the Citizen Lab said on October 19.\n\nThe finding came six days before Serbia's October 25 snap parliamentary election. The infection used a zero-click exploit, meaning Đokić did not have to tap a link or",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-96652 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability\nCVE-2026-96654 Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability\nCVE-2026-96655 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability\nCVE-2026-96656 Plex Media Server External Control of File Name or Path Vulnerability  \nCVE-20",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-96652",
+        "CVE-2026-96654",
+        "CVE-2026-96655",
+        "CVE-2026-96656"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-96652",
+        "CVE-2026-96654",
+        "CVE-2026-96655",
+        "CVE-2026-96656"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-96652",
+        "CVE-2026-96654",
+        "CVE-2026-96655",
+        "CVE-2026-96656"
+      ]
+    },
+    {
+      "title": "Hitachi Energy MicroSCADA X SYS600 Product",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nHitachi Energy is aware of multiple vulnerabilities that affect MicroSCADA X SYS600 product versions listed in this document. These vulnerabilities can be exploited to carry out various attacks on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy MicroSCADA X SYS600 Product are affected:\nMicroSCADA X SYS600 vers:MicroSCADA_X_SYS600/<=10.7, 10.8 (CVE-2026-9852, CVE-2026-9853, ",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-04",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-9852",
+        "CVE-2026-9853"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "#StopRansomware: SafePay Ransomware",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "Advisory at a Glance\nTitle\n#StopRansomware: SafePay Ransomware\n\n\nOriginal Publication \nOctober 20, 2026\n\n\nExecutive Summary\n\nThis advisory details recent activity by the SafePay ransomware group. SafePay actors have been highly active since August 2024, targeting businesses and critical infrastructure across North America, South America, Europe, and Australia. SafePay actors typically gain access to networks by stealing or guessing passwords, exploiting vulnerabilities in security systems, and u",
+      "severity": "High",
+      "tags": [
+        "Ransomware",
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hitachi Energy RTU500 Product",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nHitachi Energy is aware of vulnerabilities that affect RTU500 product versions listed in this document. These vulnerabilities if exploited can have impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy RTU500 Product are affected:\nRTU500 series CMU Firmware vers:RTU500_series_CMU_Firmware/>=13.5.1|<=13.5.4, vers:RTU500_seri",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "HMS Networks PEAK-System PCAN Windows drivers",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could crash the Windows kernel.\nThe following versions of HMS Networks PEAK-System PCAN Windows drivers are affected:\nPEAK-System Device Driver Setup <=5.1.2.1151 (CVE-2026-109576, CVE-2026-101103, CVE-2026-94188, CVE-2026-103672, CVE-2026-110322, CVE-2026-105960)\nPCAN Windows CAN device drivers <=5.1.2 (CVE-2026-109576, CVE-2026-101103, CVE-2026-94188, CVE-2026-103672, CVE-2026-110322, CVE-2026-105960)\nCVSS\nVendor\nEquipment\n\n\n\n\n",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-01",
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-109576",
+        "CVE-2026-101103",
+        "CVE-2026-94188",
+        "CVE-2026-103672",
+        "CVE-2026-110322",
+        "CVE-2026-105960"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Moxa AIG-302 ThingsPro Edge",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to obtain and disclose sensitive information.\nThe following versions of Moxa AIG-302 ThingsPro Edge are affected:\nMoxa AIG-302 ThingsPro Edge firmware <=1.4.0 (CVE-2026-109812, CVE-2026-109813)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nMoxa\nMoxa AIG-302 ThingsPro Edge firmware\n\n\n\n\n\n\n2 Vulnerabilities\n\n\n\n\nMissing Authorization, Use of Hard-coded Cryptographic Key\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Criti",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-03",
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-109812",
+        "CVE-2026-109813"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "WAGO OS Linux",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nTwo vulnerabilities in the Web-Based Management (WBM) interface of WAGO CC100, PFC100 G2, PFC200 G2, TP600, Edge Controller and WP400 devices allow an authenticated low-privileged user to bypass intended privilege boundaries. The issues affect both the routing configuration functionality and the authorization model for PROFIBUS configuration management.\nThe following versions of WAGO OS Linux are affected:\nWAGO Firmware (vers:semver/>=1.0.0|<4.10.0) installed on WAGO Hardware 0",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+      "source": "The Hacker News",
+      "date": "2026-10-20T11:41:06.000Z",
+      "summary": "WhatsApp's help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no longer delete their accounts, even though WhatsApp's own privacy policy for Europe tells users they can complain to one.\n\nThe text sat in the pages' code, never shown on screen, until it was removed by October 18. Whether the",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "What Security Teams Can Do To Tame Wild Code",
+      "source": "The Hacker News",
+      "date": "2026-10-20T11:33:04.000Z",
+      "summary": "A sales manager builds an AI-assisted workflow to route leads. It connects to customer records, summarizes inbound requests, and posts updates to a shared channel. The workflow saves time, reduces manual work, and soon becomes part of the team’s daily routine. Across the same organization, employees are building useful apps, agents, and automations faster than existing processes can support them",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+      "source": "The Hacker News",
+      "date": "2026-10-20T11:32:59.000Z",
+      "summary": "Go 1.27.3 and Go 1.26.10, released on October 20, make Go's certificate verifier reject any certificate chain that passes through one of eight intermediate certificate authority keys.\n\nPrograms built on the new release will refuse connections to sites and services whose certificates were issued under those keys. The Go team says the keys belong to one certificate authority it has not",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+      "source": "The Hacker News",
+      "date": "2026-10-20T11:06:25.000Z",
+      "summary": "The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member states of the North Atlantic Treaty Organization (NATO).\n\nThe Symantec Threat Hunter Team, which is tracking the activity cluster under the moniker Swallowtail, involved the use of a backdoor called HOOKEDGE and a previously",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+      "source": "The Hacker News",
+      "date": "2026-10-20T10:56:08.000Z",
+      "summary": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a security incident that led to unauthorized access to application identities associated with Cloud Backup.\n\nThe company said it has completed the following actions since it began",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "When defrost becomes sabotage: 3 OT lessons from France’s supermarket attack",
+      "source": "CSO Online",
+      "date": "2026-10-20T09:00:00.000Z",
+      "summary": "On the night of 11 October, someone remotely put the cold cases of several hundred French supermarkets into defrost. At Intermarché and Netto stores, fridges and freezers warmed to around 50°C and stayed there for about six hours, according to Les Mousquetaires, which expects losses in the tens of millions of euros. By morning, staff were filling skips with meat, frozen goods and vegetables.\nCoopérative U counted 80 affected stores out of roughly 2,000. Its chief executive, Dominique Schelcher, ",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4237172/when-defrost-becomes-sabotage-3-ot-lessons-from-frances-supermarket-attack.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "OT systems complicate quantum-resistant data protection",
+      "source": "CSO Online",
+      "date": "2026-10-20T08:25:00.000Z",
+      "summary": "Quantum-resistant cryptography presents security leaders with various challenges, but CISOs in industries dependent on IoT and operational technology (OT) devices may face a particularly difficult journey to quantum readiness, especially if sensitive information that must remain confidential for years passes through those devices.\nA recent report from cybersecurity firm Forescout highlights these challenges in the healthcare industry, where medical histories, diagnostic images, and laboratory re",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4236142/ot-systems-complicate-shift-to-quantum-resistant-data-protection.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+      "source": "The Hacker News",
+      "date": "2026-10-20T08:21:29.000Z",
+      "summary": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, the cloud provider says.\n\nThey were live on GitHub for up to 94 minutes, from 12:47 to 14:21 UTC,",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+      "source": "The Hacker News",
+      "date": "2026-10-20T07:11:45.000Z",
+      "summary": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks.\n\nThe high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4), could allow an attacker to place a specially-crafted DLL in a directory the application searches, resulting in execution of malicious code with the same privileges as the",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-110936"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-110936"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-110936"
+      ]
+    },
+    {
+      "title": "F5 rushes out emergency NGINX patches for three critical flaws",
+      "source": "CSO Online",
+      "date": "2026-10-20T03:25:43.000Z",
+      "summary": "F5 is once again disclosing cybersecurity flaws in its core offerings.\nThe app delivery and security provider has released out-of-band (OOB) security patches that address multiple flaws in NGINX, its high-performance software that controls digital traffic for websites. These include three critical-severity flaws that could allow attackers to crash systems, execute code, and launch denial of service (DoS) attacks.\nOOB security patches are emergency software updates released outside of normal main",
+      "severity": "Medium",
+      "tags": [
+        "DDoS"
+      ],
+      "url": "https://www.csoonline.com/article/4237420/f5-rushes-out-emergency-nginx-patches-for-three-critical-flaws.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-20T02:00:03.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33436",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
+      "source": "Dark Reading",
+      "date": "2026-10-19T21:13:41.000Z",
+      "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
+      "source": "Dark Reading",
+      "date": "2026-10-19T19:55:01.000Z",
+      "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+      "source": "Dark Reading",
+      "date": "2026-10-19T19:19:33.000Z",
+      "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
+      "source": "Dark Reading",
+      "date": "2026-10-19T14:28:11.000Z",
+      "summary": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to manipulate search results. UpGuard's Greg Pollock explains what universities, government websites, and security teams need to think about next.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
+      "source": "Dark Reading",
+      "date": "2026-10-19T14:00:00.000Z",
+      "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "source": "Krebs on Security",
+      "date": "2026-10-19T13:48:56.000Z",
+      "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources close to the investigation say one of the executives in the United States even helped ShinyHunters operate a website that pressured victims into paying a ransom.",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft, Nvidia push provenance checks as open-weight AI adoption accelerates",
+      "source": "CSO Online",
+      "date": "2026-10-19T12:34:25.000Z",
+      "summary": "Microsoft and Nvidia are urging enterprises to assess the security of open-weight AI models throughout deployment, warning that changes to model weights and configurations can weaken safeguards even when a model retains its ability to perform assigned tasks.\nIn a joint paper published last week, the companies identified 30 risk types across five categories and outlined a process for evaluating, mitigating, and monitoring them. The guidance calls for enterprises to verify model provenance, test t",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4237095/microsoft-nvidia-push-provenance-checks-as-open-weight-ai-adoption-accelerates.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ConnectWise backup credentials exposed multiple Microsoft 365 tenants",
+      "source": "CSO Online",
+      "date": "2026-10-19T12:00:56.000Z",
+      "summary": "ConnectWise has disabled key cloud services and is investigating unauthorized access to customers’ Microsoft 365 environments after a credential tied to its Cloud Backup platform was compromised and used to authenticate into customer tenants, prompting Huntress to identify suspicious sign-ins across 162 organizations.\nThe activity involved the Cloud Backup application obtaining Microsoft Graph access tokens using a credential associated with ConnectWise’s own tenant. Security firm Huntress has a",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4237087/connectwise-backup-credentials-exposed-multiple-microsoft-365-tenants.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "The password nobody owns: Taking machines to zero standing privilege (ZSP)",
+      "source": "CSO Online",
+      "date": "2026-10-19T09:00:00.000Z",
+      "summary": "Ask your infrastructure lead who owns the service account behind the overnight finance batch and notice how long the answer takes. In many of the environments I’ve reviewed, the engineer who set it up left years ago and the password has been sitting in a vault, or sometimes a plain config file, ever since. It usually still carries permissions sized for a migration that wrapped up before anyone on the current team joined, so people leave it alone rather than risk breaking something nobody fully u",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4236528/the-password-nobody-owns-taking-machines-to-zero-standing-privilege-zsp.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "9 rising malware trends every security pro should know",
+      "source": "CSO Online",
+      "date": "2026-10-19T08:25:00.000Z",
+      "summary": "Malware is evolving rapidly, driven by advances in AI and changes in computing infrastructures.\nSecurity professionals must continuously educate themselves on these trends to defend against increasingly sophisticated threats.\nThe traditional game of cat and mouse between security attackers and defenders has got fiercer with fresh techniques evolving and older less effective approaches falling out of fashion.\nHere is a look at what’s heating up in the world of malware — and what’s cooling off.\nIn",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/3997388/6-rising-malware-trends-every-security-pro-should-know.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-18T12:59:30.000Z",
+      "summary": "Here is the YARA rule I used to detect \"Orphaned VBA Projects Inside DWG Files\".",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33434",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+      "source": "Dark Reading",
+      "date": "2026-10-16T20:34:37.000Z",
+      "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
+      "source": "Dark Reading",
+      "date": "2026-10-16T19:49:30.000Z",
+      "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
+      "source": "Dark Reading",
+      "date": "2026-10-16T19:22:12.000Z",
+      "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
+      "source": "Dark Reading",
+      "date": "2026-10-16T19:13:59.000Z",
+      "summary": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hallucinated domain in official OpenAI skill underscores AI supply chain risks",
+      "source": "CSO Online",
+      "date": "2026-10-16T17:29:00.000Z",
+      "summary": "Researchers have discovered a first-of-its-kind supply-chain vulnerability in OpenAI’s official skills repository.\nOpenAI maintains an official GitHub repository of skills that teach AI agents how to work with various platforms and services. As an official skill, these components are often given an implicit level of trust because they are contributed or vetted by verified vendors.\nSnags arose because one OpenAI skill — designed to teach agents the best way to deploy applications on Render — inst",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "url": "https://www.csoonline.com/article/4236659/hallucinated-domain-in-official-openai-skill-underscores-ai-supply-chain-risks.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Xbow spent $40K on AI and cracked Google Chrome wide open",
+      "source": "CSO Online",
+      "date": "2026-10-16T15:17:37.000Z",
+      "summary": "A chain of vulnerabilities in Google’s Chrome browser could have enabled researchers to take control of one billion Windows machines worldwide — and it cost them just $40,000 in AI compute time to discover it.\nResearchers at Xbow USA worked for six days on developing the exploit, which earned them a $250,000 bug bounty from Google, the first under the new 2026 rules.\nThey chose OpenAI’s GPT-5.6 Sol for the task to demonstrate what’s possible with a publicly available model rather than a speciali",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4236599/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open-2.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Bank of America spent millions on anti-money-laundering tech, but not enough to avoid a $1.2B fine",
+      "source": "CSO Online",
+      "date": "2026-10-16T12:42:15.000Z",
+      "summary": "Bank of America has had to spend big on IT in response to an AI security audit and findings that its anti-money-laundering (AML) controls were lacking.\nThe bank was fined a whopping $1.2 billion for money laundering offences this week, after banking authorities identified a lax attitude to compliance.\n“We understand the seriousness of compliance, and we are responsible for getting it right,” Bank of America CEO Brian Moynihan said on a conference call to discuss the company’s third-quarter finan",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4236478/bank-of-america-spent-millions-on-anti-money-laundering-tech-but-not-enough-to-avoid-a-1-2b-fine.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
+      "source": "CISA Advisories",
+      "date": "2026-10-16T12:00:00.000Z",
+      "summary": "CISA is aware of critical authentication bypass vulnerability CVE-2026-102764, affecting BeyondTrust Remote Support (formerly Bomgar) versions 26.2.3 and earlier. Patches are available for supported versions (24.3.1 and later); organizations using older versions must upgrade first. Cyber threat actors are actively exploiting the vulnerability to gain initial access, then establishing persistence, escalating privileges, and moving laterally. CISA added CVE-2026-102764 to its Known Exploited Vulne",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-102764"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-102764"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-102764"
+      ]
+    },
+    {
+      "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials ",
+      "source": "CISA Advisories",
+      "date": "2026-10-16T12:00:00.000Z",
+      "summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and political organizations may be attractive targets because of their access to voter registration data, cur",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation",
+      "source": "CISA Advisories",
+      "date": "2026-10-16T12:00:00.000Z",
+      "summary": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation. The product outlines ten voluntary core practices to help organizations that train and evaluate highly capable super intelligence (SI) agents—particularly pre-deployment, cutting edge SI agents with re",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
+      "date": "2026-10-16T12:00:00.000Z",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2025-61624 Fortinet Multiple Products Path Traversal Vulnerability\nCVE-2026-102764 BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing Secu",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2025-61624",
+        "CVE-2026-102764"
+      ],
+      "knownExploitedCves": [
+        "CVE-2025-61624",
+        "CVE-2026-102764"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2025-61624",
+        "CVE-2026-102764"
+      ]
+    },
+    {
+      "title": "Linux kernel gets a fix for a flaw that enabled attackers to escape VMs",
+      "source": "CSO Online",
+      "date": "2026-10-16T11:37:35.000Z",
+      "summary": "The Linux kernel’s networking stack was found vulnerable to a guest-to-host escape attack, in which an attacker operating inside a virtual machine (VM) could cross the isolation boundary and access the underlying host.\nDubbed PwnEscape and tracked as CVE-2026-99999, a flaw allowed guest-controlled packet metadata to trigger a write that changes an IPv4 header after the kernel has already processed it. That flaw could be chained with additional exploitation techniques to achieve host-level code e",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4236460/linux-kernel-gets-a-fix-for-a-flaw-that-enabled-attackers-to-escape-vms.html",
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-99999"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "BeyondTrust zero-day tied to Chinese spies puts Remote Support users on alert",
+      "source": "CSO Online",
+      "date": "2026-10-16T10:24:19.000Z",
+      "summary": "Organizations running self-hosted BeyondTrust Remote Support should treat exposed appliances as potentially compromised after a suspected Chinese espionage group exploited a critical zero-day to gain root control, access credential vaults, and establish footholds for lateral movement, according to Mandiant and Google Threat Intelligence Group.\n“Organizations should prepare for potential widespread exploitation following this disclosure,” Google Threat Intelligence Group (GTIG) and Mandiant said ",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day"
+      ],
+      "url": "https://www.csoonline.com/article/4236421/beyondtrust-zero-day-tied-to-chinese-spies-puts-remote-support-users-on-alert.html",
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Friday, October 16th, 2026 https://isc.sans.edu/podcastdetail/10140, (Fri, Oct 16th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-16T02:00:03.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33432",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-16T00:46:35.000Z",
+      "summary": "I believe the cybersecurity industry may be approaching AI security the wrong way.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33430",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Panchan's Mining Island &#x5b;Guest Diary&#x5d;, (Wed, Oct 14th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-15T23:03:42.000Z",
+      "summary": "[This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program]",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33426",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "source": "CISA Advisories",
+      "date": "2026-10-15T12:00:00.000Z",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-21589 Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability managem",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-21589"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-21589"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-21589"
+      ]
+    },
+    {
+      "title": "ISC Stormcast For Thursday, October 15th, 2026 https://isc.sans.edu/podcastdetail/10138, (Thu, Oct 15th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-15T02:00:03.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33428",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+      "source": "Krebs on Security",
+      "date": "2026-10-14T14:22:49.000Z",
+      "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "url": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Orphaned VBA Projects Inside DWG Files, (Wed, Oct 14th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-14T06:49:46.000Z",
+      "summary": "Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg).",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33420",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Wednesday, October 14th, 2026 https://isc.sans.edu/podcastdetail/10136, (Wed, Oct 14th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-14T02:00:03.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33424",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Patches More Than 1,400 Security Flaws",
+      "source": "Krebs on Security",
+      "date": "2026-10-13T23:24:53.000Z",
+      "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "October 2026 Microsoft Patch Tuesday, (Tue, Oct 13th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-13T19:25:52.000Z",
+      "summary": "Microsoft today released patches for 1,417 vulnerabilities. 76 of these vulnerabilities are rated critical, with 7 critical vulnerabiilties requiring no customer actions. One vulnerability was disclosed before today&#;x26;#;39;s patch Tuesday, and one is already exploited.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33422",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-13T02:00:02.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33418",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "source": "Krebs on Security",
+      "date": "2026-10-10T00:17:42.000Z",
+      "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+      "source": "Krebs on Security",
+      "date": "2026-10-07T13:48:45.000Z",
+      "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the global aerospace company Boeing, which manufactures the fleet of planes used by the employer of Rey's ",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
+      "source": "Krebs on Security",
+      "date": "2026-09-28T15:08:57.000Z",
+      "summary": "Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attacks, stealing highly sensitive data from the FBI and extorting the Russian ransomware group Cl0p.",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "url": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
+      "source": "Krebs on Security",
+      "date": "2026-09-25T21:44:40.000Z",
+      "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+      "source": "Krebs on Security",
+      "date": "2026-09-16T18:14:22.000Z",
+      "summary": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement officials. In the face of repeated stonewalling and prevarication by attorneys for Radaris, the judge i",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Plugs Nearly 1,000 Security Holes",
+      "source": "Krebs on Security",
+      "date": "2026-09-08T21:44:22.000Z",
+      "summary": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and deploying so many fixes each month.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
+      "source": "Krebs on Security",
+      "date": "2026-09-01T22:40:28.000Z",
+      "summary": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning images collected by a widely-used identity verification company based in Louisiana. KrebsOnSecurity also has learned that the New Orleans field office of the Federal Bureau of Investigation (FBI) today",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    }
+  ],
+  "clusters": [
+    {
+      "title": "Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ",
+      "summary": "The perp, who has Saudi ties, was arrested for allegedly bugging an OpenAI conference room, highlighting a preventable insider threat vector.",
+      "url": "https://www.darkreading.com/insider-threats/ex-openai-engineer-secret-recorder-saudi-ties",
+      "date": "2026-10-20T19:16:49.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Eight eMudhra CA Keys Compromised, Triggering Emergency Fixes Across Browsers and Software",
+      "summary": "The private keys of eight eMudhra intermediate certificate authority (CA) certificates are compromised, Mozilla and Google's Chrome Root Program confirms on October 20.\n\nAn intermediate CA signs the certificates that websites present, so anyone holding one of these keys could issue a certificate for any website that a browser would accept.\n\nA researcher reported the",
+      "url": "https://thehackernews.com/2026/10/eight-emudhra-ca-keys-compromised.html",
+      "date": "2026-10-20T17:09:53.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Critical FortiSIEM Flaw Gets Public Exploit PoC for Unauthenticated Remote Code Execution",
+      "summary": "Cybersecurity researchers have released a proof-of-concept (PoC) exploit for a recently patched critical security flaw impacting Fortinet FortiSIEM that could result in arbitrary code execution.\n\nThe vulnerability, tracked as CVE-2026-106173 (CVSS score: 9.4), is a critical path traversal flaw that could allow an unauthenticated attacker to execute unauthorized code or commands via specially",
+      "url": "https://thehackernews.com/2026/10/critical-fortisiem-flaw-gets-public.html",
+      "date": "2026-10-20T15:38:52.000Z",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-106173"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 51
+    },
+    {
+      "title": "Close Identity Gaps in Software Development Before Unleashing AI",
+      "summary": "Artificial Intelligence is complicating security in the software development lifecycle, but a Dark Reading roundtable found collaboration, better identity visibility, and reduced testing costs offer CISOs a way ahead.",
+      "url": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
+      "date": "2026-10-20T15:35:45.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting  PAN-OS and Prisma Access by ransomware actors.\n\nThe activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set up unauthorized VPN connections. It was patched by Palo Alto Networks in May 2026 and was",
+      "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+      "date": "2026-10-20T15:32:27.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Ransomware",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-0257"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-0257"
+      ],
+      "articleCount": 1,
+      "score": 75
+    },
+    {
+      "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
+      "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
+      "date": "2026-10-20T14:36:05.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Hackers Use Autonomous AI Agents to Breach Company Websites, Target Over 1,200 Sites",
+      "summary": "A Chinese-speaking criminal pointed autonomous AI agents at company websites and let them break in with almost no help, and a security researcher watched it happen because the operators left their control panels open on the internet.\n\nThe agents tried more than 1,200 sites and reached websites belonging to more than 100 companies, including farm-equipment maker Deere, appliance company",
+      "url": "https://thehackernews.com/2026/10/hackers-use-autonomous-ai-agents-to.html",
+      "date": "2026-10-20T14:07:17.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Pegasus Spyware Infection Confirmed on Serbian University Rector's iPhone Days Before Election",
+      "summary": "The iPhone of Vladan Đokić, rector of the University of Belgrade and a prominent supporter of Serbia's student protest movement, was infected with NSO Group's Pegasus spyware in 2026, the Citizen Lab said on October 19.\n\nThe finding came six days before Serbia's October 25 snap parliamentary election. The infection used a zero-click exploit, meaning Đokić did not have to tap a link or",
+      "url": "https://thehackernews.com/2026/10/pegasus-spyware-infection-confirmed-on.html",
+      "date": "2026-10-20T12:59:44.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-96652 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability\nCVE-2026-96654 Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability\nCVE-2026-96655 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability\nCVE-2026-96656 Plex Media Server External Control of File Name or Path Vulnerability  \nCVE-20",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-20T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-96652",
+        "CVE-2026-96654",
+        "CVE-2026-96655",
+        "CVE-2026-96656"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-96652",
+        "CVE-2026-96654",
+        "CVE-2026-96655",
+        "CVE-2026-96656"
+      ],
+      "articleCount": 1,
+      "score": 69
+    },
+    {
+      "title": "#StopRansomware: SafePay Ransomware",
+      "summary": "Advisory at a Glance\nTitle\n#StopRansomware: SafePay Ransomware\n\n\nOriginal Publication \nOctober 20, 2026\n\n\nExecutive Summary\n\nThis advisory details recent activity by the SafePay ransomware group. SafePay actors have been highly active since August 2024, targeting businesses and critical infrastructure across North America, South America, Europe, and Australia. SafePay actors typically gain access to networks by stealing or guessing passwords, exploiting vulnerabilities in security systems, and u",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-293a",
+      "date": "2026-10-20T12:00:00.000Z",
+      "severity": "High",
+      "tags": [
+        "Ransomware",
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 51
+    },
+    {
+      "title": "Moxa AIG-302 ThingsPro Edge",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to obtain and disclose sensitive information.\nThe following versions of Moxa AIG-302 ThingsPro Edge are affected:\nMoxa AIG-302 ThingsPro Edge firmware <=1.4.0 (CVE-2026-109812, CVE-2026-109813)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nMoxa\nMoxa AIG-302 ThingsPro Edge firmware\n\n\n\n\n\n\n2 Vulnerabilities\n\n\n\n\nMissing Authorization, Use of Hard-coded Cryptographic Key\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Criti",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-03",
+      "date": "2026-10-20T12:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-109812",
+        "CVE-2026-109813"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 37
+    },
+    {
+      "title": "HMS Networks PEAK-System PCAN Windows drivers",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could crash the Windows kernel.\nThe following versions of HMS Networks PEAK-System PCAN Windows drivers are affected:\nPEAK-System Device Driver Setup <=5.1.2.1151 (CVE-2026-109576, CVE-2026-101103, CVE-2026-94188, CVE-2026-103672, CVE-2026-110322, CVE-2026-105960)\nPCAN Windows CAN device drivers <=5.1.2 (CVE-2026-109576, CVE-2026-101103, CVE-2026-94188, CVE-2026-103672, CVE-2026-110322, CVE-2026-105960)\nCVSS\nVendor\nEquipment\n\n\n\n\n",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-01",
+      "date": "2026-10-20T12:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-109576",
+        "CVE-2026-101103",
+        "CVE-2026-94188",
+        "CVE-2026-103672",
+        "CVE-2026-110322",
+        "CVE-2026-105960"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 35
+    },
+    {
+      "title": "Hitachi Energy MicroSCADA X SYS600 Product",
+      "summary": "View CSAF\nSummary\nHitachi Energy is aware of multiple vulnerabilities that affect MicroSCADA X SYS600 product versions listed in this document. These vulnerabilities can be exploited to carry out various attacks on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy MicroSCADA X SYS600 Product are affected:\nMicroSCADA X SYS600 vers:MicroSCADA_X_SYS600/<=10.7, 10.8 (CVE-2026-9852, CVE-2026-9853, ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-04",
+      "date": "2026-10-20T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-9852",
+        "CVE-2026-9853"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 2,
+      "score": 25
+    },
+    {
+      "title": "WAGO OS Linux",
+      "summary": "View CSAF\nSummary\nTwo vulnerabilities in the Web-Based Management (WBM) interface of WAGO CC100, PFC100 G2, PFC200 G2, TP600, Edge Controller and WP400 devices allow an authenticated low-privileged user to bypass intended privilege boundaries. The issues affect both the routing configuration functionality and the authorization model for PROFIBUS configuration management.\nThe following versions of WAGO OS Linux are affected:\nWAGO Firmware (vers:semver/>=1.0.0|<4.10.0) installed on WAGO Hardware 0",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-02",
+      "date": "2026-10-20T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "WhatsApp Hid Instructions in Help Pages Telling Its AI Chatbot Not to Recommend Privacy Regulators",
+      "summary": "WhatsApp's help pages carried hidden instructions for its support chatbot that told it not to recommend a data protection authority or regulator to users who could no longer delete their accounts, even though WhatsApp's own privacy policy for Europe tells users they can complain to one.\n\nThe text sat in the pages' code, never shown on screen, until it was removed by October 18. Whether the",
+      "url": "https://thehackernews.com/2026/10/whatsapp-hid-instructions-in-help-pages.html",
+      "date": "2026-10-20T11:41:06.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "What Security Teams Can Do To Tame Wild Code",
+      "summary": "A sales manager builds an AI-assisted workflow to route leads. It connects to customer records, summarizes inbound requests, and posts updates to a shared channel. The workflow saves time, reduces manual work, and soon becomes part of the team’s daily routine. Across the same organization, employees are building useful apps, agents, and automations faster than existing processes can support them",
+      "url": "https://thehackernews.com/2026/10/what-security-teams-can-do-to-tame-wild.html",
+      "date": "2026-10-20T11:33:04.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 24
+    },
+    {
+      "title": "Go Issues Emergency Update Blocking Eight CA Keys Over Undisclosed Security Concerns",
+      "summary": "Go 1.27.3 and Go 1.26.10, released on October 20, make Go's certificate verifier reject any certificate chain that passes through one of eight intermediate certificate authority keys.\n\nPrograms built on the new release will refuse connections to sites and services whose certificates were issued under those keys. The Go team says the keys belong to one certificate authority it has not",
+      "url": "https://thehackernews.com/2026/10/go-issues-emergency-update-blocking.html",
+      "date": "2026-10-20T11:32:59.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 24
+    },
+    {
+      "title": "Russian APT28 Breaches NATO Naval Shipbuilder in NATO Country, Deploys New Reflective Loader",
+      "summary": "The Russia-linked state-sponsored threat actor tracked as APT28 (aka BlueDelta, Fancy Bear, and Forest Blizzard) has been attributed to attacks targeting two member states of the North Atlantic Treaty Organization (NATO).\n\nThe Symantec Threat Hunter Team, which is tracking the activity cluster under the moniker Swallowtail, involved the use of a backdoor called HOOKEDGE and a previously",
+      "url": "https://thehackernews.com/2026/10/russian-apt28-breaches-nato-naval.html",
+      "date": "2026-10-20T11:06:25.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 24
+    },
+    {
+      "title": "ConnectWise Resets Credentials as Cloud Backup Remains Offline After Security Incident",
+      "summary": "ConnectWise on Monday said it has taken remediation measures, including strengthening administrative-access protections and resetting accounts and replacing application credentials, as it continues to respond to a security incident that led to unauthorized access to application identities associated with Cloud Backup.\n\nThe company said it has completed the following actions since it began",
+      "url": "https://thehackernews.com/2026/10/connectwise-resets-credentials-as-cloud.html",
+      "date": "2026-10-20T10:56:08.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 24
+    },
+    {
+      "title": "When defrost becomes sabotage: 3 OT lessons from France’s supermarket attack",
+      "summary": "On the night of 11 October, someone remotely put the cold cases of several hundred French supermarkets into defrost. At Intermarché and Netto stores, fridges and freezers warmed to around 50°C and stayed there for about six hours, according to Les Mousquetaires, which expects losses in the tens of millions of euros. By morning, staff were filling skips with meat, frozen goods and vegetables.\nCoopérative U counted 80 affected stores out of roughly 2,000. Its chief executive, Dominique Schelcher, ",
+      "url": "https://www.csoonline.com/article/4237172/when-defrost-becomes-sabotage-3-ot-lessons-from-frances-supermarket-attack.html",
+      "date": "2026-10-20T09:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 23
+    },
+    {
+      "title": "OT systems complicate quantum-resistant data protection",
+      "summary": "Quantum-resistant cryptography presents security leaders with various challenges, but CISOs in industries dependent on IoT and operational technology (OT) devices may face a particularly difficult journey to quantum readiness, especially if sensitive information that must remain confidential for years passes through those devices.\nA recent report from cybersecurity firm Forescout highlights these challenges in the healthcare industry, where medical histories, diagnostic images, and laboratory re",
+      "url": "https://www.csoonline.com/article/4236142/ot-systems-complicate-shift-to-quantum-resistant-data-protection.html",
+      "date": "2026-10-20T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 23
+    },
+    {
+      "title": "Hackers Hijack Five OVHcloud CLI Releases to Distribute Secret-Stealing Malware",
+      "summary": "An attacker used a contributor's GitHub account to replace the download archives on five existing releases of OVHcloud's command-line tool on Monday, October 19. The account had been hijacked, and the new files were a build designed to steal secrets stored on the disk of any machine that runs it, the cloud provider says.\n\nThey were live on GitHub for up to 94 minutes, from 12:47 to 14:21 UTC,",
+      "url": "https://thehackernews.com/2026/10/hackers-hijack-five-ovhcloud-cli.html",
+      "date": "2026-10-20T08:21:29.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 23
+    },
+    {
+      "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+      "summary": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks.\n\nThe high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4), could allow an attacker to place a specially-crafted DLL in a directory the application searches, resulting in execution of malicious code with the same privileges as the",
+      "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+      "date": "2026-10-20T07:11:45.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-110936"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-110936"
+      ],
+      "articleCount": 1,
+      "score": 66
+    },
+    {
+      "title": "F5 rushes out emergency NGINX patches for three critical flaws",
+      "summary": "F5 is once again disclosing cybersecurity flaws in its core offerings.\nThe app delivery and security provider has released out-of-band (OOB) security patches that address multiple flaws in NGINX, its high-performance software that controls digital traffic for websites. These include three critical-severity flaws that could allow attackers to crash systems, execute code, and launch denial of service (DoS) attacks.\nOOB security patches are emergency software updates released outside of normal main",
+      "url": "https://www.csoonline.com/article/4237420/f5-rushes-out-emergency-nginx-patches-for-three-critical-flaws.html",
+      "date": "2026-10-20T03:25:43.000Z",
+      "severity": "Medium",
+      "tags": [
+        "DDoS"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 31
+    },
+    {
+      "title": "ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33436",
+      "date": "2026-10-20T02:00:03.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 20
+    },
+    {
+      "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
+      "summary": "A large-scale scam operation impersonating Microsoft uses a malicious traffic distribution system (TDS) run by a Russian organization and abuses thousands of Cloudflare links.",
+      "url": "https://www.darkreading.com/threat-intelligence/microsoft-tech-support-scam-operation",
+      "date": "2026-10-19T21:13:41.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
+      "summary": "Spyware vendors are exploiting targeted ad bidding in the digital ecosystem to identify and track individuals and organizations of interest.",
+      "url": "https://www.darkreading.com/data-privacy/adfection-online-ads-spyware-delivery",
+      "date": "2026-10-19T19:55:01.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 18
+    },
+    {
+      "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
+      "summary": "Researchers say attackers authenticated into Microsoft 365 tenants using ConnectWise credentials; ConnectWise says customer impact remains unconfirmed.",
+      "url": "https://www.darkreading.com/identity-access-management-security/connectwise-disables-cloud-backups-downstream-msps",
+      "date": "2026-10-19T19:19:33.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
+      "summary": "Copyright takedown requests tied to OnlyFans and other adult content creators are revealing how attackers exploit vulnerable university and government websites to manipulate search results. UpGuard's Greg Pollock explains what universities, government websites, and security teams need to think about next.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/onlyfans-copyright-takedowns-expose-compromised-websites",
+      "date": "2026-10-19T14:28:11.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 17
+    },
+    {
+      "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
+      "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
+      "date": "2026-10-19T14:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 17
+    },
+    {
+      "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
+      "summary": "U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources close to the investigation say one of the executives in the United States even helped ShinyHunters operate a website that pressured victims into paying a ransom.",
+      "url": "https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/",
+      "date": "2026-10-19T13:48:56.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Microsoft, Nvidia push provenance checks as open-weight AI adoption accelerates",
+      "summary": "Microsoft and Nvidia are urging enterprises to assess the security of open-weight AI models throughout deployment, warning that changes to model weights and configurations can weaken safeguards even when a model retains its ability to perform assigned tasks.\nIn a joint paper published last week, the companies identified 30 risk types across five categories and outlined a process for evaluating, mitigating, and monitoring them. The guidance calls for enterprises to verify model provenance, test t",
+      "url": "https://www.csoonline.com/article/4237095/microsoft-nvidia-push-provenance-checks-as-open-weight-ai-adoption-accelerates.html",
+      "date": "2026-10-19T12:34:25.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "ConnectWise backup credentials exposed multiple Microsoft 365 tenants",
+      "summary": "ConnectWise has disabled key cloud services and is investigating unauthorized access to customers’ Microsoft 365 environments after a credential tied to its Cloud Backup platform was compromised and used to authenticate into customer tenants, prompting Huntress to identify suspicious sign-ins across 162 organizations.\nThe activity involved the Cloud Backup application obtaining Microsoft Graph access tokens using a credential associated with ConnectWise’s own tenant. Security firm Huntress has a",
+      "url": "https://www.csoonline.com/article/4237087/connectwise-backup-credentials-exposed-multiple-microsoft-365-tenants.html",
+      "date": "2026-10-19T12:00:56.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "The password nobody owns: Taking machines to zero standing privilege (ZSP)",
+      "summary": "Ask your infrastructure lead who owns the service account behind the overnight finance batch and notice how long the answer takes. In many of the environments I’ve reviewed, the engineer who set it up left years ago and the password has been sitting in a vault, or sometimes a plain config file, ever since. It usually still carries permissions sized for a migration that wrapped up before anyone on the current team joined, so people leave it alone rather than risk breaking something nobody fully u",
+      "url": "https://www.csoonline.com/article/4236528/the-password-nobody-owns-taking-machines-to-zero-standing-privilege-zsp.html",
+      "date": "2026-10-19T09:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 16
+    },
+    {
+      "title": "9 rising malware trends every security pro should know",
+      "summary": "Malware is evolving rapidly, driven by advances in AI and changes in computing infrastructures.\nSecurity professionals must continuously educate themselves on these trends to defend against increasingly sophisticated threats.\nThe traditional game of cat and mouse between security attackers and defenders has got fiercer with fresh techniques evolving and older less effective approaches falling out of fashion.\nHere is a look at what’s heating up in the world of malware — and what’s cooling off.\nIn",
+      "url": "https://www.csoonline.com/article/3997388/6-rising-malware-trends-every-security-pro-should-know.html",
+      "date": "2026-10-19T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 16
+    },
+    {
+      "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+      "summary": "Here is the YARA rule I used to detect \"Orphaned VBA Projects Inside DWG Files\".",
+      "url": "https://isc.sans.edu/diary/rss/33434",
+      "date": "2026-10-18T12:59:30.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 13
+    },
+    {
+      "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
+      "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
+      "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
+      "date": "2026-10-16T20:34:37.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 47
+    },
+    {
+      "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
+      "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+      "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+      "date": "2026-10-16T19:49:30.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 11
+    },
+    {
+      "title": "Biomemory Launches DNA Shield, First Commercial Product Built on Its Molecular IT Platform",
+      "summary": "The launch follows the acquisition of catalog's assets and the appointment of Laurent Guengant as CEO earlier this year.",
+      "url": "https://www.darkreading.com/data-privacy/biomemory-launches-dna-shield",
+      "date": "2026-10-16T19:22:12.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 11
+    },
+    {
+      "title": "Enterprise AI Enters Risk Management Phase as Security Concerns Rise",
+      "summary": "Companies are increasingly discovering that the challenge with AI is no longer adoption, but execution.",
+      "url": "https://www.darkreading.com/cyber-risk/enterprise-ai-risk-management-phase-security-concerns-rise",
+      "date": "2026-10-16T19:13:59.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 11
+    },
+    {
+      "title": "Hallucinated domain in official OpenAI skill underscores AI supply chain risks",
+      "summary": "Researchers have discovered a first-of-its-kind supply-chain vulnerability in OpenAI’s official skills repository.\nOpenAI maintains an official GitHub repository of skills that teach AI agents how to work with various platforms and services. As an official skill, these components are often given an implicit level of trust because they are contributed or vetted by verified vendors.\nSnags arose because one OpenAI skill — designed to teach agents the best way to deploy applications on Render — inst",
+      "url": "https://www.csoonline.com/article/4236659/hallucinated-domain-in-official-openai-skill-underscores-ai-supply-chain-risks.html",
+      "date": "2026-10-16T17:29:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 23
+    },
+    {
+      "title": "Xbow spent $40K on AI and cracked Google Chrome wide open",
+      "summary": "A chain of vulnerabilities in Google’s Chrome browser could have enabled researchers to take control of one billion Windows machines worldwide — and it cost them just $40,000 in AI compute time to discover it.\nResearchers at Xbow USA worked for six days on developing the exploit, which earned them a $250,000 bug bounty from Google, the first under the new 2026 rules.\nThey chose OpenAI’s GPT-5.6 Sol for the task to demonstrate what’s possible with a publicly available model rather than a speciali",
+      "url": "https://www.csoonline.com/article/4236599/xbow-spent-40k-on-ai-and-cracked-google-chrome-wide-open-2.html",
+      "date": "2026-10-16T15:17:37.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 21
+    },
+    {
+      "title": "Bank of America spent millions on anti-money-laundering tech, but not enough to avoid a $1.2B fine",
+      "summary": "Bank of America has had to spend big on IT in response to an AI security audit and findings that its anti-money-laundering (AML) controls were lacking.\nThe bank was fined a whopping $1.2 billion for money laundering offences this week, after banking authorities identified a lax attitude to compliance.\n“We understand the seriousness of compliance, and we are responsible for getting it right,” Bank of America CEO Brian Moynihan said on a conference call to discuss the company’s third-quarter finan",
+      "url": "https://www.csoonline.com/article/4236478/bank-of-america-spent-millions-on-anti-money-laundering-tech-but-not-enough-to-avoid-a-1-2b-fine.html",
+      "date": "2026-10-16T12:42:15.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2025-61624 Fortinet Multiple Products Path Traversal Vulnerability\nCVE-2026-102764 BeyondTrust Remote Support Authentication Bypass by Spoofing Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing Secu",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-16T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2025-61624",
+        "CVE-2026-102764",
+        "CVE-2026-21589"
+      ],
+      "knownExploitedCves": [
+        "CVE-2025-61624",
+        "CVE-2026-102764",
+        "CVE-2026-21589"
+      ],
+      "articleCount": 2,
+      "score": 57
+    },
+    {
+      "title": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
+      "summary": "CISA is aware of critical authentication bypass vulnerability CVE-2026-102764, affecting BeyondTrust Remote Support (formerly Bomgar) versions 26.2.3 and earlier. Patches are available for supported versions (24.3.1 and later); organizations using older versions must upgrade first. Cyber threat actors are actively exploiting the vulnerability to gain initial access, then establishing persistence, escalating privileges, and moving laterally. CISA added CVE-2026-102764 to its Known Exploited Vulne",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+      "date": "2026-10-16T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-102764"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-102764"
+      ],
+      "articleCount": 1,
+      "score": 54
+    },
+    {
+      "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials ",
+      "summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and political organizations may be attractive targets because of their access to voter registration data, cur",
+      "url": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
+      "date": "2026-10-16T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation",
+      "summary": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation. The product outlines ten voluntary core practices to help organizations that train and evaluate highly capable super intelligence (SI) agents—particularly pre-deployment, cutting edge SI agents with re",
+      "url": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
+      "date": "2026-10-16T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Linux kernel gets a fix for a flaw that enabled attackers to escape VMs",
+      "summary": "The Linux kernel’s networking stack was found vulnerable to a guest-to-host escape attack, in which an attacker operating inside a virtual machine (VM) could cross the isolation boundary and access the underlying host.\nDubbed PwnEscape and tracked as CVE-2026-99999, a flaw allowed guest-controlled packet metadata to trigger a write that changes an IPv4 header after the kernel has already processed it. That flaw could be chained with additional exploitation techniques to achieve host-level code e",
+      "url": "https://www.csoonline.com/article/4236460/linux-kernel-gets-a-fix-for-a-flaw-that-enabled-attackers-to-escape-vms.html",
+      "date": "2026-10-16T11:37:35.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-99999"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 21
+    },
+    {
+      "title": "BeyondTrust zero-day tied to Chinese spies puts Remote Support users on alert",
+      "summary": "Organizations running self-hosted BeyondTrust Remote Support should treat exposed appliances as potentially compromised after a suspected Chinese espionage group exploited a critical zero-day to gain root control, access credential vaults, and establish footholds for lateral movement, according to Mandiant and Google Threat Intelligence Group.\n“Organizations should prepare for potential widespread exploitation following this disclosure,” Google Threat Intelligence Group (GTIG) and Mandiant said ",
+      "url": "https://www.csoonline.com/article/4236421/beyondtrust-zero-day-tied-to-chinese-spies-puts-remote-support-users-on-alert.html",
+      "date": "2026-10-16T10:24:19.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 44
+    },
+    {
+      "title": "ISC Stormcast For Friday, October 16th, 2026 https://isc.sans.edu/podcastdetail/10140, (Fri, Oct 16th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33432",
+      "date": "2026-10-16T02:00:03.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 3,
+      "score": 10
+    },
+    {
+      "title": "Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)",
+      "summary": "I believe the cybersecurity industry may be approaching AI security the wrong way.",
+      "url": "https://isc.sans.edu/diary/rss/33430",
+      "date": "2026-10-16T00:46:35.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Panchan's Mining Island &#x5b;Guest Diary&#x5d;, (Wed, Oct 14th)",
+      "summary": "[This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program]",
+      "url": "https://isc.sans.edu/diary/rss/33426",
+      "date": "2026-10-15T23:03:42.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
+      "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.",
+      "url": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
+      "date": "2026-10-14T14:22:49.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 22
+    },
+    {
+      "title": "Orphaned VBA Projects Inside DWG Files, (Wed, Oct 14th)",
+      "summary": "Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg).",
+      "url": "https://isc.sans.edu/diary/rss/33420",
+      "date": "2026-10-14T06:49:46.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Microsoft Patches More Than 1,400 Security Flaws",
+      "summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+      "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+      "date": "2026-10-13T23:24:53.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 20
+    },
+    {
+      "title": "October 2026 Microsoft Patch Tuesday, (Tue, Oct 13th)",
+      "summary": "Microsoft today released patches for 1,417 vulnerabilities. 76 of these vulnerabilities are rated critical, with 7 critical vulnerabiilties requiring no customer actions. One vulnerability was disclosed before today&#;x26;#;39;s patch Tuesday, and one is already exploited.",
+      "url": "https://isc.sans.edu/diary/rss/33422",
+      "date": "2026-10-13T19:25:52.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 20
+    },
+    {
+      "title": "ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33418",
+      "date": "2026-10-13T02:00:02.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
+      "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
+      "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "date": "2026-10-10T00:17:42.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 22
+    },
+    {
+      "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+      "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the global aerospace company Boeing, which manufactures the fleet of planes used by the employer of Rey's ",
+      "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+      "date": "2026-10-07T13:48:45.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Dutch Police Arrest ‘Reformed’ Hacker in Shiny Hunters Investigation",
+      "summary": "Authorities in the Netherlands have arrested a 23-year-old convicted cybercriminal on suspicion of aiding in data thefts and extortions by the prolific hacker group ShinyHunters. In the days immediately following the suspect's arrest, remaining ShinyHunters members dramatically escalated their attacks, stealing highly sensitive data from the FBI and extorting the Russian ransomware group Cl0p.",
+      "url": "https://krebsonsecurity.com/2026/09/dutch-police-arrest-reformed-hacker-in-shiny-hunters-investigation/",
+      "date": "2026-09-28T15:08:57.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 22
+    },
+    {
+      "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
+      "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
+      "url": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+      "date": "2026-09-25T21:44:40.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
+      "summary": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement officials. In the face of repeated stonewalling and prevarication by attorneys for Radaris, the judge i",
+      "url": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+      "date": "2026-09-16T18:14:22.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Microsoft Plugs Nearly 1,000 Security Holes",
+      "summary": "Microsoft Corp. today issued updates to plug at least 974 security holes in its Windows operating systems and other software, by far its biggest single patch batch ever. Microsoft says artificial intelligence is helping to speed the discovery of vulnerabilities, but security experts warn that many organizations already are struggling to prioritize the more human-intensive endeavor of testing and deploying so many fixes each month.",
+      "url": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+      "date": "2026-09-08T21:44:22.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 20
+    },
+    {
+      "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
+      "summary": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning images collected by a widely-used identity verification company based in Louisiana. KrebsOnSecurity also has learned that the New Orleans field office of the Federal Bureau of Investigation (FBI) today",
+      "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+      "date": "2026-09-01T22:40:28.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    }
+  ],
+  "top3": [
+    {
+      "title": "Qilin and INC Ransomware Groups Exploit Palo Alto Networks Flaw to Bypass MFA",
+      "summary": "Palo Alto Networks has disclosed that it's continuing to observe exploitation of a now-patched security flaw impacting  PAN-OS and Prisma Access by ransomware actors.\n\nThe activity relates to CVE-2026-0257 (CVSS score: 7.8), an authentication bypass flaw that could be exploited by bad actors to set up unauthorized VPN connections. It was patched by Palo Alto Networks in May 2026 and was",
+      "url": "https://thehackernews.com/2026/10/qilin-and-inc-ransomware-groups-exploit.html",
+      "date": "2026-10-20T15:32:27.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Ransomware",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-0257"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-0257"
+      ],
+      "articleCount": 1,
+      "score": 75
+    },
+    {
+      "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-96652 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability\nCVE-2026-96654 Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability\nCVE-2026-96655 Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability\nCVE-2026-96656 Plex Media Server External Control of File Name or Path Vulnerability  \nCVE-20",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/20/cisa-adds-six-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-20T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-96652",
+        "CVE-2026-96654",
+        "CVE-2026-96655",
+        "CVE-2026-96656"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-96652",
+        "CVE-2026-96654",
+        "CVE-2026-96655",
+        "CVE-2026-96656"
+      ],
+      "articleCount": 1,
+      "score": 69
+    },
+    {
+      "title": "ClickFix Attackers Exploit Siemens Software Center Flaw to Deploy Remote Access Trojan",
+      "summary": "Siemens has addressed a DLL sideloading vulnerability impacting Siemens Software Center that it said has been exploited in ClickFix attacks.\n\nThe high-severity vulnerability, tracked as CVE-2026-110936 (CVSS v4 score: 8.4), could allow an attacker to place a specially-crafted DLL in a directory the application searches, resulting in execution of malicious code with the same privileges as the",
+      "url": "https://thehackernews.com/2026/10/clickfix-attackers-exploit-siemens.html",
+      "date": "2026-10-20T07:11:45.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-110936"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-110936"
+      ],
+      "articleCount": 1,
+      "score": 66
+    }
+  ],
+  "sourcesUsed": [
+    "The Hacker News",
+    "Krebs on Security",
+    "Dark Reading",
+    "CSO Online",
+    "SANS Internet Storm Center",
+    "CISA Advisories"
+  ],
+  "sourceErrors": [],
+  "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
+  "lastUpdated": "2026-10-20T20:54:50.953Z"
+}

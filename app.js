@@ -1425,9 +1425,13 @@
     /* ----------------------------------------------------------
        LIVE THREAT FEED / THREAT LANDSCAPE
        ---------------------------------------------------------- */
-    var THREAT_API = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-        ? 'http://localhost:4000/api/cyber-news'
-        : 'https://cyber-portfolio-hcxt.onrender.com/api/cyber-news';
+    // Backend-free: a GitHub Actions workflow (.github/workflows/update-threat-feed.yml)
+    // regenerates this static JSON every ~20 minutes using the exact same
+    // aggregation/dedup/ranking logic as backend/threatLandscape.js (no
+    // duplication — the script requires that module directly), and commits
+    // it straight into the repo. Served same-origin from GitHub Pages, so
+    // there's no CORS issue and no live backend/Render dependency at all.
+    var THREAT_FEED_URL = BASE_PATH + '/data/threat-feed.json';
 
     var TL_ALLOWED_SEVERITIES = ['critical', 'high', 'medium', 'low', 'info'];
     function tlSafeSeverity(sev) {
@@ -1504,7 +1508,7 @@
 
     function fetchThreatLandscape() {
         activeFetchController = new AbortController();
-        return fetch(THREAT_API, { signal: activeFetchController.signal }).then(function (res) {
+        return fetch(THREAT_FEED_URL, { signal: activeFetchController.signal }).then(function (res) {
             if (!res.ok) throw new Error('Feed unavailable');
             return res.json();
         });
@@ -1540,7 +1544,7 @@
                 }
             })
             .catch(function () {
-                feedEl.innerHTML = '<div class="threat-feed__fallback">Threat feed offline — start the backend with <code style="color:var(--crimson)">npm start</code> in the <code>backend/</code> directory.</div>';
+                feedEl.innerHTML = '<div class="threat-feed__fallback">Threat feed data unavailable right now — it refreshes automatically every ~20 minutes.</div>';
             });
     }
 
@@ -1605,7 +1609,7 @@
                 renderList();
             })
             .catch(function () {
-                listEl.innerHTML = '<div class="threat-feed__fallback">Threat landscape offline — start the backend with <code style="color:var(--crimson)">npm start</code> in the <code>backend/</code> directory.</div>';
+                listEl.innerHTML = '<div class="threat-feed__fallback">Threat landscape data unavailable right now — it refreshes automatically every ~20 minutes.</div>';
             });
     }
 
