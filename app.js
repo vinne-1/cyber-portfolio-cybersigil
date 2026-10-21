@@ -1557,7 +1557,7 @@
                 '<span class="threat-card__severity ' + sevClass + '">' + escapeHtml(c.severity || 'Medium') + '</span>' +
                 '<span class="threat-card__sourcecount">' + escapeHtml(sourceLabel) + '</span>' +
             '</div>' +
-            '<div class="threat-card__title"><a href="' + escapeHtml(tlSafeUrl(c.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(c.title || 'Untitled') + '</a></div>' +
+            '<div class="threat-card__title"><a href="' + escapeHtml(tlSafeUrl(c.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(c.title || 'Untitled') + '<span class="sr-only"> (opens in a new tab)</span></a></div>' +
             (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
             '<div style="display:flex; justify-content:space-between; align-items:center; margin-top:auto; gap:0.5rem; flex-wrap:wrap;">' +
                 (tags ? '<div class="threat-card__tags">' + tags + '</div>' : '<span></span>') +
@@ -1577,7 +1577,7 @@
                 '<span class="top3-card__rank">0' + rank + '</span>' +
                 '<span class="threat-card__severity ' + sevClass + '">' + escapeHtml(c.severity || 'Medium') + '</span>' +
             '</div>' +
-            '<div class="threat-card__title"><a href="' + escapeHtml(tlSafeUrl(c.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(c.title || 'Untitled') + '</a></div>' +
+            '<div class="threat-card__title"><a href="' + escapeHtml(tlSafeUrl(c.url)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(c.title || 'Untitled') + '<span class="sr-only"> (opens in a new tab)</span></a></div>' +
             (summary ? '<div class="threat-card__summary">' + escapeHtml(summary) + '</div>' : '') +
             '<div class="top3-card__score">' + escapeHtml(sourceLabel) + (sourceLabel ? ' &middot; ' : '') + 'score ' + escapeHtml(String(c.score)) + '/100</div>' +
         '</div>';
