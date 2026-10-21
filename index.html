@@ -163,11 +163,11 @@
             <a href="/" class="nav__logo" data-route><svg class="nav__logo-sigil" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="2" x2="12" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="5.636" y1="5.636" x2="18.364" y2="18.364"/><line x1="18.364" y1="5.636" x2="5.636" y2="18.364"/></svg>vineet<span>.</span></a>
 
             <ul class="nav__links">
-                <li><a href="/about" class="nav__link" data-route><span class="nav__link-short">01</span>About</a></li>
-                <li><a href="/work" class="nav__link" data-route><span class="nav__link-short">02</span>Work</a></li>
-                <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short">03</span>Credentials</a></li>
+                <li><a href="/about" class="nav__link" data-route><span class="nav__link-short" aria-hidden="true">01</span>About</a></li>
+                <li><a href="/work" class="nav__link" data-route><span class="nav__link-short" aria-hidden="true">02</span>Work</a></li>
+                <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short" aria-hidden="true">03</span>Credentials</a></li>
                 <li class="nav__plane-divider" aria-hidden="true"></li>
-                <li><a href="/products" class="nav__link nav__link--products" data-route><span class="nav__link-short">04</span>Products</a></li>
+                <li><a href="/products" class="nav__link nav__link--products" data-route><span class="nav__link-short" aria-hidden="true">04</span>Products</a></li>
             </ul>
 
             <div class="nav__cta-wrap">
@@ -209,7 +209,7 @@
         <div class="container">
             <!-- Footer CTA -->
             <div class="footer__cta-block">
-                <span class="footer__protocol t-mono">PROTOCOL ACTIVE // SECTOR 7 — CLEARANCE: RED TEAM</span>
+                <span class="footer__protocol t-mono" aria-hidden="true">PROTOCOL ACTIVE // SECTOR 7 — CLEARANCE: RED TEAM</span>
                 <h2 class="footer__cta-heading t-heading">Let's work together.</h2>
                 <p class="footer__cta-sub">Have a security challenge? I'm available for the right engagements.</p>
                 <div class="magnetic-wrap">
@@ -227,7 +227,7 @@
                     <span class="footer__tagline t-mono">Offensive Security</span>
                 </div>
                 <div class="footer__center-col">
-                    <span class="footer__protocol t-mono">SESSION: ENCRYPTED // v2.7.1</span>
+                    <span class="footer__protocol t-mono" aria-hidden="true">SESSION: ENCRYPTED // v2.7.1</span>
                 </div>
                 <div class="footer__meta">
                     <div class="footer__links-row">
@@ -406,7 +406,7 @@
                 </div>
             </div>
             <div class="hero__scroll-indicator">
-                <span class="t-mono" style="writing-mode:vertical-rl; font-size:0.6rem; letter-spacing:0.15em; color:var(--gray-400);">SCROLL</span>
+                <span class="t-mono" aria-hidden="true" style="writing-mode:vertical-rl; font-size:0.6rem; letter-spacing:0.15em; color:var(--gray-400);">SCROLL</span>
                 <div class="hero__scroll-line"></div>
             </div>
         </section>
@@ -431,7 +431,7 @@
                     <div class="terminal__body">
                         <div class="terminal__output"></div>
                         <div class="terminal__prompt">
-                            <span style="color:var(--crimson)">visitor@vineet</span>:<span style="color:var(--gray-300)">~</span>$&nbsp;
+                            <span style="color:var(--crimson-text)">visitor@vineet</span>:<span style="color:var(--gray-300)">~</span>$&nbsp;
                             <input type="text" class="terminal__input" spellcheck="false" autocomplete="off" aria-label="Terminal command input" placeholder="type a command...">
                         </div>
                     </div>
@@ -514,77 +514,22 @@
 
                     <div class="anim-item" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:2rem; padding-top:3rem; margin-top:3rem; border-top:1px solid var(--border);">
                         <div class="about-pillar" data-parallax-y="20">
-                            <span class="t-mono" style="color:var(--crimson);">01</span>
+                            <span class="t-mono" style="color:var(--crimson-text);">01</span>
                             <h3 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Operator-Led Testing</h3>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Manual exploitation first. Tools support the operator, not the other way around.</p>
                         </div>
                         <div class="about-pillar" data-parallax-y="40">
-                            <span class="t-mono" style="color:var(--crimson);">02</span>
+                            <span class="t-mono" style="color:var(--crimson-text);">02</span>
                             <h3 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Business-Aligned Reporting</h3>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Technical findings translated to risk language executives understand and act on.</p>
                         </div>
                         <div class="about-pillar" data-parallax-y="60">
-                            <span class="t-mono" style="color:var(--crimson);">03</span>
+                            <span class="t-mono" style="color:var(--crimson-text);">03</span>
                             <h3 style="color:var(--white); font-weight:600; margin:0.5rem 0 0.25rem; font-size:0.95rem;">Continuous Sharpening</h3>
                             <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6;">Active research, certification pursuit, and offensive tooling development.</p>
                         </div>
                     </div>
 
-                </div>
-            </div>
-        </section>
-
-        <!-- Timeline Section -->
-        <div class="section-divider section-divider--sigil" aria-hidden="true"><svg class="sigil sigil--glow" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="30" x2="55" y2="30" stroke-width="0.3" opacity="0.3"/><path d="M60,30 C64,20 70,14 78,10" stroke-width="0.5"/><path d="M60,30 C64,40 70,46 78,50" stroke-width="0.5"/><circle cx="78" cy="10" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><circle cx="78" cy="50" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><path d="M85,8 L100,28 L100,32 L85,52 L100,32 L100,28 Z" stroke-width="0.6"/><path d="M100,15 L112,28 L100,41" stroke-width="0.4" opacity="0.5"/><path d="M100,28 L115,30 L100,32" stroke-width="0.5"/><path d="M115,30 L120,22 L125,30 L120,38 Z" stroke-width="0.4" opacity="0.6"/><line x1="145" y1="30" x2="200" y2="30" stroke-width="0.3" opacity="0.3"/><path d="M140,30 C136,20 130,14 122,10" stroke-width="0.5"/><path d="M140,30 C136,40 130,46 122,50" stroke-width="0.5"/><circle cx="122" cy="10" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/><circle cx="122" cy="50" r="1.5" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/></svg></div>
-        <section class="section" style="padding-top: 0;">
-            <div class="container">
-                <div class="anim-item" style="margin-bottom:3rem;">
-                    <span class="t-label">Journey</span>
-                    <div class="accent-bar" style="margin-top:1rem;"></div>
-                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">The offensive path.</h2>
-                </div>
-                <div class="timeline">
-                    <div class="timeline__line"></div>
-                    <div class="timeline__item anim-item" data-parallax-y="15">
-                        <div class="timeline__dot"></div>
-                        <div class="timeline__year t-mono">2022</div>
-                        <div class="timeline__content">
-                            <h3 class="timeline__title">Entered Cybersecurity</h3>
-                            <p class="timeline__text">Joined a Bengaluru-based IT training provider as a Technical Trainer, delivering instructor-led CCNA, networking, Linux, and cybersecurity training with hands-on labs in TCP/IP, DNS, HTTP/S, routing/switching, and secure configuration.</p>
-                        </div>
-                    </div>
-                    <div class="timeline__item anim-item" data-parallax-y="30">
-                        <div class="timeline__dot"></div>
-                        <div class="timeline__year t-mono">2024</div>
-                        <div class="timeline__content">
-                            <h3 class="timeline__title">Shifted Toward Offensive Security</h3>
-                            <p class="timeline__text">Wrapped up the training role and began focused study toward penetration testing and VAPT, building hands-on skills with Burp Suite, Nessus, Nmap, and OWASP Top 10 / API Top 10 methodology.</p>
-                        </div>
-                    </div>
-                    <div class="timeline__item anim-item" data-parallax-y="45">
-                        <div class="timeline__dot"></div>
-                        <div class="timeline__year t-mono">2025</div>
-                        <div class="timeline__content">
-                            <h3 class="timeline__title">Cybersecurity Engineer</h3>
-                            <p class="timeline__text">Joined a cybersecurity consultancy as a Cybersecurity Engineer, conducting web/API VAPT with PoC-backed reporting and remediation tracking, and engineering SIEM detections for AWS and Google Workspace logs aligned to MITRE ATT&amp;CK.</p>
-                        </div>
-                    </div>
-                    <div class="timeline__item anim-item" data-parallax-y="55">
-                        <div class="timeline__dot"></div>
-                        <div class="timeline__year t-mono">2026</div>
-                        <div class="timeline__content">
-                            <h3 class="timeline__title">Certified Red Team Analyst</h3>
-                            <p class="timeline__text">Earned the Certified Red Team Analyst (CRTA) credential from Cyberwarfare Labs, alongside CompTIA Security+. Began OSCP preparation and advanced exploit research.</p>
-                        </div>
-                    </div>
-                    <div class="timeline__item anim-item" data-parallax-y="65">
-                        <div class="timeline__dot"></div>
-                        <div class="timeline__year t-mono">NOW</div>
-                        <div class="timeline__content">
-                            <h3 class="timeline__title">Building Forward</h3>
-                            <p class="timeline__text">Active VAPT engagements and SOC detection work, red team research on the side, and continued progress toward OSCP.</p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -1421,7 +1366,7 @@
         <section class="section" data-page="404" style="padding-top:120px; min-height:calc(100vh - 72px); display:flex; align-items:center;">
             <div class="container" style="text-align:center;">
                 <div class="anim-item">
-                    <div class="t-display" style="font-size:clamp(6rem, 15vw, 12rem); color:var(--crimson); line-height:1; margin-bottom:1rem;">404</div>
+                    <div class="t-display" style="font-size:clamp(6rem, 15vw, 12rem); color:var(--crimson-text); line-height:1; margin-bottom:1rem;">404</div>
                     <h2 class="t-heading" style="margin-bottom:1.5rem;">Target not found.</h2>
                     <p class="t-body" style="margin-bottom:2.5rem; color:var(--gray-300);">The page you're looking for doesn't exist or has been moved.</p>
                     <div class="magnetic-wrap">

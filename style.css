@@ -18,6 +18,10 @@
   --crimson-dark:#6b0014;
   --crimson-glow: rgba(165, 13, 34, 0.18);
   --crimson-subtle: rgba(165, 13, 34, 0.06);
+  /* Brighter crimson reserved for small/decorative TEXT — the base --crimson
+     only reaches ~2.6:1 against the dark surfaces (fine for borders/icons/
+     glows, fails WCAG AA for text). 4.59:1 vs --charcoal, verified. */
+  --crimson-text: #df4259;
 
   /* Goth purple palette */
   --purple:      #6b4c9a;
@@ -515,7 +519,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--crimson);
+  color: var(--crimson-text);
 }
 
 /* --- Splitting.js Character Animations --- */
@@ -674,7 +678,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray-300);
-  opacity: 0.78;
   transition: color 0.3s ease, opacity 0.3s ease;
   position: relative;
   display: flex;
@@ -684,7 +687,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .nav__link-short {
   font-size: 0.45rem;
-  opacity: 0.4;
+  opacity: 0.6;
   letter-spacing: 0.2em;
   color: var(--purple);
 }
@@ -1279,7 +1282,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-mono);
   font-size: 0.6rem;
   letter-spacing: 0.06em;
-  color: var(--crimson);
+  color: var(--crimson-text);
 }
 .siem-anim__hub-ring {
   position: absolute;
@@ -1827,7 +1830,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--gray-300);
-  opacity: 0.5;
   transition: color 0.3s ease, opacity 0.3s ease;
 }
 .footer__link:hover { color: var(--crimson); opacity: 1; }
@@ -1837,7 +1839,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .footer__copy {
   font-size: 0.7rem;
-  color: var(--gray-500);
+  color: var(--gray-300);
 }
 .footer__copy--link { transition: color 0.3s ease; }
 .footer__copy--link:hover { color: var(--crimson); }
@@ -1856,7 +1858,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 1rem;
 }
 .legal-prose p:first-child { margin-top: 0; }
-.legal-prose a { color: var(--crimson); text-decoration: underline; text-underline-offset: 2px; }
+.legal-prose a { color: var(--crimson-text); text-decoration: underline; text-underline-offset: 2px; }
 .legal-prose a:hover { color: var(--purple); }
 .legal-prose code {
   font-family: var(--font-mono);
@@ -2465,8 +2467,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-display);
   font-size: 2rem;
   line-height: 1;
-  color: var(--crimson);
-  opacity: 0.85;
+  color: var(--crimson-text);
 }
 .top3-card__score {
   font-family: var(--font-mono);
@@ -2678,8 +2679,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .approach-row__index {
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--crimson);
-  opacity: 0.55;
+  color: var(--crimson-text);
   letter-spacing: 0.02em;
 }
 .approach-row__title {
@@ -3195,7 +3195,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--crimson);
+  color: var(--crimson-text);
   transition: gap 0.3s var(--ease-out-expo);
 }
 .project-card__cta:hover {
