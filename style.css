@@ -574,6 +574,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
 }
 
+.product-section-label {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .t-mono {
   font-family: var(--font-mono);
   font-size: 0.8rem;

@@ -194,10 +194,7 @@
         '/':               'page-home',
         '/about':          'page-about',
         '/work':           'page-work',
-        '/work/osint':     'page-work-osint',
-        '/work/privesc':   'page-work-privesc',
         '/products':       'page-products',
-        '/tools':          'page-tools',
         '/tools/website-health': 'page-tool-website-health',
         '/threat-landscape': 'page-threat-landscape',
         '/capabilities':   'page-capabilities',
@@ -210,10 +207,7 @@
         '/':               'Vineet Vishesh — Offensive Security',
         '/about':          'About — Vineet Vishesh',
         '/work':           'Selected Work — Vineet Vishesh',
-        '/work/osint':     'OSINT Pipeline — Vineet Vishesh',
-        '/work/privesc':   'Privilege Escalation Research — Vineet Vishesh',
         '/products':       'Products — Vineet Vishesh',
-        '/tools':          'Free Tools — Vineet Vishesh',
         '/tools/website-health': 'Website Health Report — Vineet Vishesh',
         '/threat-landscape': 'Threat Landscape — Vineet Vishesh',
         '/capabilities':   'Capabilities — Vineet Vishesh',
@@ -225,11 +219,8 @@
     var ROUTE_DESCRIPTIONS = {
         '/':               'Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years of combined experience across web, API, network, and cloud environments.',
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
-        '/work':           'Selected offensive security projects — OSINT automation, privilege escalation research, and red team tooling.',
-        '/work/osint':     'Automated OSINT Pipeline Framework — multi-source intelligence aggregation for reconnaissance and threat profiling.',
-        '/work/privesc':   'Polymorphic Privilege Escalation Generator — adaptive exploit generation for authorized red team research.',
-        '/products':       'Products built by Vineet Vishesh — independent apps and tools, starting with TithiPath, a Panchang and Kundli app.',
-        '/tools':          'Free security and web tools by Vineet Vishesh, starting with a Website Health Report covering security, SEO, performance, SSL, and DNS.',
+        '/work':           'Selected offensive security work — web/API VAPT and SIEM detection engineering.',
+        '/products':       'Products built by Vineet Vishesh — independent apps, starting with TithiPath, plus free tools including a Website Health Report and a live Threat Landscape feed.',
         '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
         '/threat-landscape': 'Live cybersecurity threat landscape — deduplicated coverage from 6 sources, ranked by severity, corroboration, and recency.',
         '/capabilities':   'Offensive security capabilities — web app pentesting, red teaming, cloud security, exploit development, and mobile assessments.',
@@ -995,9 +986,9 @@
         },
         whoami: function () {
             return 'Vineet Vishesh — Offensive Security Professional\n' +
-                   'Red team operator & penetration testing specialist\n' +
-                   'Based in India · Available for remote engagements worldwide\n' +
-                   '4+ years of controlled offensive validation across web, mobile, network, and cloud.';
+                   'Penetration tester & red team analyst\n' +
+                   'Based in India · Open to new opportunities\n' +
+                   '3+ years of combined experience across VAPT, SOC/detection engineering, and technical training.';
         },
         skills: function () {
             return [
@@ -1013,10 +1004,9 @@
             return [
                 'CERTIFICATIONS',
                 '─────────────────────────────────',
-                '  [✓] CompTIA Security+           — Active (2024–2027)',
-                '  [✓] Burp Suite Certified Pract.  — Active (exp. 2026)',
-                '  [✓] Nessus Certified Prof.       — Active (exp. 2025)',
-                '  [~] OSCP                         — In Preparation'
+                '  [✓] CompTIA Security+                — Active',
+                '  [✓] Certified Red Team Analyst (CRTA) — Cyberwarfare Labs, May 2026',
+                '  [~] OSCP                              — In Preparation'
             ].join('\n');
         },
         contact: function () {
@@ -1032,13 +1022,11 @@
             return [
                 'SELECTED WORK',
                 '─────────────────────────────────',
-                '  01  Automated OSINT Pipeline Framework',
-                '      10K+ records/hr · 94% accuracy · 70% cost reduction',
-                '  02  Polymorphic Privilege Escalation Generator',
-                '      99.7% unique sigs · 0% detection · 89% success',
-                '  03  Enterprise Web App Assessments — 18 critical findings',
-                '  04  Mobile Application Security — 7 critical findings',
-                '  05  Network & Cloud Assessments — 5 networks, 3 providers'
+                '  01  Web & API VAPT — CYFY Pvt Ltd',
+                '      Burp Suite · Nessus · OWASP Top 10 / API Top 10 · CVSS',
+                '  02  SIEM Detection Engineering — CYFY Pvt Ltd',
+                '      AWS + Google Workspace telemetry · MITRE ATT&CK correlation',
+                '  03  Mobile Application Security — methodology'
             ].join('\n');
         },
         tools: function () {

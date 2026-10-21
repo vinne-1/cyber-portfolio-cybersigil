@@ -166,10 +166,8 @@
                 <li><a href="/about" class="nav__link" data-route><span class="nav__link-short">01</span>About</a></li>
                 <li><a href="/work" class="nav__link" data-route><span class="nav__link-short">02</span>Work</a></li>
                 <li><a href="/products" class="nav__link" data-route><span class="nav__link-short">03</span>Products</a></li>
-                <li><a href="/tools" class="nav__link" data-route><span class="nav__link-short">04</span>Tools</a></li>
-                <li><a href="/capabilities" class="nav__link" data-route><span class="nav__link-short">05</span>Capabilities</a></li>
-                <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short">06</span>Credentials</a></li>
-                <li><a href="/threat-landscape" class="nav__link" data-route><span class="nav__link-short">07</span>Threats</a></li>
+                <li><a href="/capabilities" class="nav__link" data-route><span class="nav__link-short">04</span>Capabilities</a></li>
+                <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short">05</span>Credentials</a></li>
             </ul>
 
             <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
@@ -193,10 +191,8 @@
         <a href="/about" data-route>About</a>
         <a href="/work" data-route>Work</a>
         <a href="/products" data-route>Products</a>
-        <a href="/tools" data-route>Tools</a>
         <a href="/capabilities" data-route>Capabilities</a>
         <a href="/credentials" data-route>Credentials</a>
-        <a href="/threat-landscape" data-route>Threats</a>
         <a href="/contact" data-route>Contact</a>
     </nav>
 
@@ -684,90 +680,54 @@
                 </div>
 
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 500px), 1fr)); gap:2px;">
-                    <!-- OSINT Pipeline -->
+                    <!-- Web & API VAPT -->
                     <div class="project-card anim-item">
                         <div class="project-card__image">
                             <div class="project-card__image-overlay"></div>
                             <div class="project-card__image-inner">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <div class="project-card__number">01 — Intelligence</div>
-                            <h3 class="project-card__title">Automated OSINT Pipeline Framework</h3>
-                            <p class="project-card__desc">Scalable intelligence gathering system processing 10,000+ records per hour from 15+ data sources with real-time entity extraction, correlation, and threat scoring.</p>
-                            <div class="project-card__tags">
-                                <span class="project-card__tag">Python</span>
-                                <span class="project-card__tag">Scrapy</span>
-                                <span class="project-card__tag">Elasticsearch</span>
-                                <span class="project-card__tag">Docker</span>
-                                <span class="project-card__tag">AWS Lambda</span>
-                            </div>
-                            <div class="project-card__metrics">
-                                <div><div class="project-card__metric-value">10K+</div><div class="project-card__metric-label">Records / Hour</div></div>
-                                <div><div class="project-card__metric-value">94%</div><div class="project-card__metric-label">Accuracy</div></div>
-                                <div><div class="project-card__metric-value">70%</div><div class="project-card__metric-label">Cost Reduction</div></div>
-                            </div>
-                            <a href="/work/osint" class="project-card__cta" data-route>
-                                View Case Study
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                            </a>
+                            <div class="project-card__number">01 — Application Security</div>
+                            <h3 class="project-card__title">Web &amp; API VAPT</h3>
+                            <p class="project-card__desc">Web application and API-focused penetration testing at CYFY Pvt Ltd using Burp Suite, Nessus, and manual validation — findings mapped to OWASP Top 10 / OWASP API Top 10 and CVSS.</p>
+                            <ul style="margin-top:1rem; padding-left:1.1rem; font-size:0.85rem; color:var(--gray-300); line-height:1.7;">
+                                <li>PoC-backed findings: affected endpoints/parameters, request-response evidence, remediation guidance</li>
+                                <li>Retest verification on every reported issue through closure</li>
+                                <li>Collaborate with DevOps/AppSec to reduce false positives and explain risk in client walkthroughs</li>
+                            </ul>
                         </div>
                     </div>
 
-                    <!-- Polymorphic Generator -->
+                    <!-- SIEM Detection Engineering -->
                     <div class="project-card anim-item">
                         <div class="project-card__image">
                             <div class="project-card__image-overlay"></div>
                             <div class="project-card__image-inner">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg>
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <div class="project-card__number">02 — Research</div>
-                            <h3 class="project-card__title">Polymorphic Privilege Escalation Generator</h3>
-                            <p class="project-card__desc">Advanced research tool generating unique privilege escalation payloads with code mutation engine, anti-analysis capabilities, and 12+ escalation techniques for authorized security validation.</p>
-                            <p class="t-mono" style="font-size:0.6rem; color:var(--gray-300); margin-top:0.5rem;">Developed in isolated lab environments for authorized red team research only.</p>
-                            <div class="project-card__tags">
-                                <span class="project-card__tag">Python</span>
-                                <span class="project-card__tag">C++</span>
-                                <span class="project-card__tag">Assembly</span>
-                                <span class="project-card__tag">Windows API</span>
-                            </div>
-                            <div class="project-card__metrics">
-                                <div><div class="project-card__metric-value">99.7%</div><div class="project-card__metric-label">Unique Signatures</div></div>
-                                <div><div class="project-card__metric-value">0%</div><div class="project-card__metric-label">Detection Rate</div></div>
-                                <div><div class="project-card__metric-value">89%</div><div class="project-card__metric-label">Success Rate</div></div>
-                            </div>
-                            <a href="/work/privesc" class="project-card__cta" data-route>
-                                View Case Study
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                            </a>
+                            <div class="project-card__number">02 — Detection Engineering</div>
+                            <h3 class="project-card__title">SIEM Detection Engineering</h3>
+                            <p class="project-card__desc">Engineering and tuning SIEM detections for AWS and Google Workspace telemetry, with MITRE ATT&amp;CK-aligned correlation rules, at CYFY Pvt Ltd.</p>
+                            <ul style="margin-top:1rem; padding-left:1.1rem; font-size:0.85rem; color:var(--gray-300); line-height:1.7;">
+                                <li>Correlation rules aligned to MITRE ATT&amp;CK, tuned to reduce alert noise</li>
+                                <li>SOC alert investigation via asset criticality, IP reputation/geo, and activity context</li>
+                                <li>Incident escalation with clear, actionable next steps</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
-                <!-- Secondary cards — scattered layout -->
+                <!-- Secondary card — scattered layout -->
                 <div class="scattered-grid">
                     <div class="project-card anim-item">
                         <div class="project-card__body">
-                            <div class="project-card__number">03 — Web Application</div>
-                            <h3 class="project-card__title" style="font-size:1.15rem;">Web & API Application Security</h3>
-                            <p class="project-card__desc" style="font-size:0.9rem;">Web and API-focused VAPT using Burp Suite, Nessus, and manual validation, mapped to OWASP Top 10 / OWASP API Top 10 and CVSS, with PoC-backed findings and retest verification.</p>
-                        </div>
-                    </div>
-                    <div class="project-card anim-item">
-                        <div class="project-card__body">
-                            <div class="project-card__number">04 — Mobile</div>
+                            <div class="project-card__number">03 — Mobile</div>
                             <h3 class="project-card__title" style="font-size:1.15rem;">Mobile Application Security</h3>
                             <p class="project-card__desc" style="font-size:0.9rem;">Security assessment methodology for Android and iOS platforms, covering runtime manipulation, API interception, binary analysis, and insecure data storage.</p>
-                        </div>
-                    </div>
-                    <div class="project-card anim-item">
-                        <div class="project-card__body">
-                            <div class="project-card__number">05 — Infrastructure</div>
-                            <h3 class="project-card__title" style="font-size:1.15rem;">Network & Cloud Assessments</h3>
-                            <p class="project-card__desc" style="font-size:0.9rem;">SIEM detection engineering and telemetry analysis across AWS and Google Workspace logs, with MITRE ATT&amp;CK-aligned correlation rules and SOC alert investigation.</p>
                         </div>
                     </div>
                 </div>
@@ -796,8 +756,12 @@
                         Things I've built and shipped.
                     </h2>
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
-                        Independent apps and tools built end-to-end &mdash; design, engineering, and release. Separate from client/employer security work above.
+                        Independent apps and free tools built end-to-end &mdash; design, engineering, and release. Separate from client/employer security work.
                     </p>
+                </div>
+
+                <div class="anim-item product-section-label">
+                    <span class="t-caption">Apps</span>
                 </div>
 
                 <div class="project-card anim-item product-showcase-card" style="padding:2rem;">
@@ -867,33 +831,13 @@
                     <a href="#" class="btn btn--outline" style="white-space:nowrap;">Join Closed Testing</a>
                 </div>
 
-            </div>
-        </section>
-    </template>
-
-    <!-- FREE TOOLS LISTING -->
-    <template id="page-tools">
-        <section class="section section--atmosphere-deep" data-page="tools" style="padding-top:120px;">
-            <div class="atmo-particles" aria-hidden="true">
-                <div class="atmo-particles__dot"></div>
-                <div class="atmo-particles__dot"></div>
-                <div class="atmo-particles__dot"></div>
-                <div class="atmo-particles__dot"></div>
-            </div>
-            <div class="container">
-                <div class="anim-item" style="margin-bottom:4rem;">
-                    <span class="t-label">Free Tools</span>
-                    <div class="accent-bar" style="margin-top:1rem;"></div>
-                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">
-                        No signup. No catch. Just useful.
-                    </h2>
-                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
-                        Small tools built from the same offensive-security background as the work above &mdash; free to use, no account required.
-                    </p>
+                <div class="anim-item product-section-label" style="margin-top:5rem;">
+                    <span class="t-caption">Free Tools</span>
+                    <p style="font-size:0.8rem; color:var(--gray-300); margin-top:0.5rem; max-width:560px;">No signup, no catch &mdash; built from the same offensive-security background as the work above.</p>
                 </div>
 
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap:2px;">
-                    <div class="project-card anim-item" style="max-width:460px;">
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap:1.5rem;">
+                    <div class="project-card anim-item">
                         <div class="project-card__image">
                             <div class="project-card__image-overlay"></div>
                             <div class="project-card__image-inner">
@@ -901,7 +845,7 @@
                             </div>
                         </div>
                         <div class="project-card__body">
-                            <div class="project-card__number">01 &mdash; Diagnostics</div>
+                            <div class="project-card__number">Diagnostics</div>
                             <h3 class="project-card__title">Website Health Report</h3>
                             <p class="project-card__desc">Security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance scoring &mdash; for any public URL, in one report.</p>
                             <div class="project-card__tags">
@@ -917,7 +861,30 @@
                             </a>
                         </div>
                     </div>
+                    <div class="project-card anim-item">
+                        <div class="project-card__image">
+                            <div class="project-card__image-overlay"></div>
+                            <div class="project-card__image-inner">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__number">Live Feed</div>
+                            <h3 class="project-card__title">Threat Landscape</h3>
+                            <p class="project-card__desc">A ranked, auto-deduplicated feed of what's moving in cybersecurity right now &mdash; 6 sources, cross-checked against CISA's exploited-vulnerability catalog.</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">CISA KEV</span>
+                                <span class="project-card__tag">Live RSS</span>
+                                <span class="project-card__tag">Auto-Ranked</span>
+                            </div>
+                            <a href="/threat-landscape" class="project-card__cta" data-route>
+                                View Feed
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
     </template>
@@ -927,7 +894,7 @@
         <section class="section section--atmosphere-deep" data-page="tool-website-health" style="padding-top:120px;">
             <div class="container">
                 <div class="anim-item" style="margin-bottom:2.5rem;">
-                    <a href="/tools" data-route style="font-size:0.75rem; color:var(--gray-300); text-decoration:none;">&larr; Free Tools</a>
+                    <a href="/products" data-route style="font-size:0.75rem; color:var(--gray-300); text-decoration:none;">&larr; Products</a>
                     <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h2 class="t-heading split-heading" style="margin-top:1.5rem;">
@@ -1393,220 +1360,6 @@
                         <a href="https://github.com/vinne-1" target="_blank" rel="noopener noreferrer" class="nav__link" style="font-size:0.8rem;">GitHub</a>
 
                     </div>
-                </div>
-            </div>
-        </section>
-    </template>
-
-
-    <!-- CASE STUDY: OSINT Pipeline -->
-    <template id="page-work-osint">
-        <section class="section section--top" data-page="work">
-            <div class="container">
-                <div class="anim-item mb-md">
-                    <a href="/work" class="case-study__back" data-route>&larr; Back to Work</a>
-                </div>
-                <div class="max-w-medium">
-                    <div class="anim-item">
-                        <span class="t-label">01 &mdash; Intelligence</span>
-                        <div class="accent-bar" style="margin-top:1rem;"></div>
-                    </div>
-                    <h1 class="t-heading split-heading anim-item mt-md" style="font-size:clamp(2rem, 4vw, 3rem);">
-                        Automated OSINT Pipeline Framework
-                    </h1>
-                    <p class="t-body-lg anim-item mt-md" style="color:var(--gray-300);">
-                        A scalable intelligence gathering system designed to process 10,000+ records per hour from 15+ open-source data providers with real-time entity extraction, cross-source correlation, and automated threat scoring.
-                    </p>
-                </div>
-
-                <!-- Key Metrics -->
-                <div class="stats-row anim-item" style="margin-top:3rem;">
-                    <div class="stat-block"><div class="stat-block__value">10K<span>+</span></div><div class="stat-block__label">Records / Hour</div></div>
-                    <div class="stat-block"><div class="stat-block__value">94<span>%</span></div><div class="stat-block__label">Accuracy</div></div>
-                    <div class="stat-block"><div class="stat-block__value">70<span>%</span></div><div class="stat-block__label">Cost Reduction</div></div>
-                    <div class="stat-block"><div class="stat-block__value">15<span>+</span></div><div class="stat-block__label">Data Sources</div></div>
-                </div>
-
-                <!-- Challenge / Approach / Result -->
-                <div class="max-w-medium" style="margin-top:4rem;">
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">The Challenge</h3>
-                        <p class="t-body">Manual OSINT collection was consuming 60+ analyst hours per engagement. Data from disparate sources required manual correlation, and intelligence reports were taking 3-5 days to compile. The client needed a way to scale reconnaissance without proportionally scaling headcount.</p>
-                    </div>
-
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">Approach</h3>
-                        <div class="case-study__steps">
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">01</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Architecture Design</h4>
-                                    <p class="case-study__step-text">Designed a microservice architecture with message queues for async processing. Each data source gets its own collector module with rate limiting and retry logic.</p>
-                                </div>
-                            </div>
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">02</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Data Collection Layer</h4>
-                                    <p class="case-study__step-text">Built Scrapy-based crawlers for 15+ sources including WHOIS, DNS records, social media APIs, paste sites, certificate transparency logs, and breach databases. Each crawler implements source-specific parsing and normalization.</p>
-                                </div>
-                            </div>
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">03</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Entity Extraction &amp; Correlation</h4>
-                                    <p class="case-study__step-text">NLP-based entity extraction identifies people, organizations, domains, IPs, and emails. Cross-source correlation engine links entities across data sources using fuzzy matching and graph relationships.</p>
-                                </div>
-                            </div>
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">04</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Threat Scoring &amp; Reporting</h4>
-                                    <p class="case-study__step-text">Automated risk scoring based on data freshness, source reliability, and threat indicators. Generates structured JSON reports and executive-ready PDF summaries with visualization of entity relationships.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">Results</h3>
-                        <ul class="case-study__results">
-                            <li>Reduced reconnaissance time from 60+ hours to under 6 hours per engagement</li>
-                            <li>94% accuracy rate on entity extraction validated against manual analysis</li>
-                            <li>70% cost reduction in intelligence gathering operations</li>
-                            <li>Deployed to AWS Lambda for serverless scaling during peak assessment periods</li>
-                            <li>Elasticsearch backend enables sub-second queries across millions of records</li>
-                        </ul>
-                    </div>
-
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">Tech Stack</h3>
-                        <div style="display:flex; flex-wrap:wrap; gap:10px;">
-                            <span class="project-card__tag">Python</span>
-                            <span class="project-card__tag">Scrapy</span>
-                            <span class="project-card__tag">Elasticsearch</span>
-                            <span class="project-card__tag">Docker</span>
-                            <span class="project-card__tag">AWS Lambda</span>
-                            <span class="project-card__tag">Redis</span>
-                            <span class="project-card__tag">spaCy NLP</span>
-                            <span class="project-card__tag">Neo4j</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Next Project -->
-                <div class="anim-item" style="margin-top:5rem; padding-top:3rem; border-top:1px solid var(--border); text-align:center;">
-                    <span class="t-caption" style="display:block; margin-bottom:1rem;">Next Project</span>
-                    <a href="/work/privesc" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>Polymorphic Privilege Escalation Generator &rarr;</a>
-                </div>
-            </div>
-        </section>
-    </template>
-
-    <!-- CASE STUDY: Privilege Escalation -->
-    <template id="page-work-privesc">
-        <section class="section section--top" data-page="work">
-            <div class="container">
-                <div class="anim-item mb-md">
-                    <a href="/work" class="case-study__back" data-route>&larr; Back to Work</a>
-                </div>
-                <div class="max-w-medium">
-                    <div class="anim-item">
-                        <span class="t-label">02 &mdash; Research</span>
-                        <div class="accent-bar" style="margin-top:1rem;"></div>
-                    </div>
-                    <h1 class="t-heading split-heading anim-item mt-md" style="font-size:clamp(2rem, 4vw, 3rem);">
-                        Polymorphic Privilege Escalation Generator
-                    </h1>
-                    <p class="t-body-lg anim-item mt-md" style="color:var(--gray-300);">
-                        An advanced security research tool that generates unique privilege escalation payloads through code mutation, targeting 12+ escalation techniques across Windows environments for authorized security validation.
-                    </p>
-
-                    <div class="anim-item mt-md" style="background:rgba(165,13,34,0.08); border:1px solid rgba(165,13,34,0.25); padding:1rem 1.5rem; display:flex; align-items:flex-start; gap:0.75rem;">
-                        <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="2" style="flex-shrink:0; margin-top:2px;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-                        <p class="t-mono" style="font-size:0.75rem; color:var(--gray-300); line-height:1.7;">
-                            <strong style="color:var(--crimson);">Authorized Research Only</strong> — Developed in isolated lab environments for authorized red team research only. All testing conducted with explicit authorization. Findings responsibly disclosed to affected vendors.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Key Metrics -->
-                <div class="stats-row anim-item" style="margin-top:3rem;">
-                    <div class="stat-block"><div class="stat-block__value">99.7<span>%</span></div><div class="stat-block__label">Unique Signatures</div></div>
-                    <div class="stat-block"><div class="stat-block__value">0<span>%</span></div><div class="stat-block__label">Detection Rate</div></div>
-                    <div class="stat-block"><div class="stat-block__value">89<span>%</span></div><div class="stat-block__label">Success Rate</div></div>
-                    <div class="stat-block"><div class="stat-block__value">12<span>+</span></div><div class="stat-block__label">Techniques</div></div>
-                </div>
-
-                <div class="max-w-medium" style="margin-top:4rem;">
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">The Challenge</h3>
-                        <p class="t-body">Traditional privilege escalation tools produce static signatures that are immediately flagged by modern EDR solutions. Red team operators need payloads that bypass signature-based detection while maintaining reliable escalation across diverse Windows configurations. This research aimed to bridge the gap between theoretical evasion techniques and practical operational tooling.</p>
-                    </div>
-
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">Approach</h3>
-                        <div class="case-study__steps">
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">01</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Technique Cataloging</h4>
-                                    <p class="case-study__step-text">Cataloged 12+ Windows privilege escalation vectors including token impersonation, service misconfigurations, DLL hijacking, registry abuse, unquoted service paths, and kernel exploits. Each technique mapped to specific Windows versions and patch levels.</p>
-                                </div>
-                            </div>
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">02</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Mutation Engine</h4>
-                                    <p class="case-study__step-text">Developed a polymorphic code mutation engine that transforms payload structure, control flow, variable naming, and API call patterns while preserving functional equivalence. Each generated payload produces a unique hash signature.</p>
-                                </div>
-                            </div>
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">03</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Anti-Analysis Layer</h4>
-                                    <p class="case-study__step-text">Integrated sandbox detection, timing-based evasion, and environment fingerprinting to prevent automated analysis. Payloads self-modify execution paths based on detected analysis environment.</p>
-                                </div>
-                            </div>
-                            <div class="case-study__step">
-                                <span class="case-study__step-num t-mono">04</span>
-                                <div>
-                                    <h4 class="case-study__step-title">Validation Framework</h4>
-                                    <p class="case-study__step-text">Built automated testing pipeline with 20+ Windows VM configurations. Each generated payload tested against major AV/EDR solutions to validate evasion effectiveness and escalation reliability.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">Results</h3>
-                        <ul class="case-study__results">
-                            <li>99.7% unique signature rate across 10,000+ generated payloads</li>
-                            <li>0% detection rate against top 5 EDR solutions at time of testing</li>
-                            <li>89% successful privilege escalation across target configurations</li>
-                            <li>Reduced red team payload preparation time from hours to minutes</li>
-                            <li>Research contributed to improved detection rules for 3 EDR vendors (responsible disclosure)</li>
-                        </ul>
-                    </div>
-
-                    <div class="case-study__section anim-item">
-                        <h3 class="case-study__heading">Tech Stack</h3>
-                        <div style="display:flex; flex-wrap:wrap; gap:10px;">
-                            <span class="project-card__tag">Python</span>
-                            <span class="project-card__tag">C++</span>
-                            <span class="project-card__tag">x86 Assembly</span>
-                            <span class="project-card__tag">Windows API</span>
-                            <span class="project-card__tag">LLVM</span>
-                            <span class="project-card__tag">VirtualBox API</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Next Project -->
-                <div class="anim-item" style="margin-top:5rem; padding-top:3rem; border-top:1px solid var(--border); text-align:center;">
-                    <span class="t-caption" style="display:block; margin-bottom:1rem;">Previous Project</span>
-                    <a href="/work/osint" class="t-heading" style="font-size:1.5rem; transition: color 0.3s ease;" data-route>&larr; Automated OSINT Pipeline Framework</a>
                 </div>
             </div>
         </section>

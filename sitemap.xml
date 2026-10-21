@@ -2,26 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vineedoesstuff.in/</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vineedoesstuff.in/about</loc>
-    <lastmod>2026-10-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vineedoesstuff.in/work</loc>
-    <lastmod>2026-10-20</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vineedoesstuff.in/products</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://vineedoesstuff.in/tools</loc>
+    <loc>https://vineedoesstuff.in/work</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vineedoesstuff.in/products</loc>
     <lastmod>2026-10-21</lastmod>
     <priority>0.8</priority>
   </url>
@@ -31,28 +26,23 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://vineedoesstuff.in/threat-landscape</loc>
+    <lastmod>2026-10-21</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://vineedoesstuff.in/capabilities</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://vineedoesstuff.in/credentials</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://vineedoesstuff.in/contact</loc>
-    <lastmod>2026-10-20</lastmod>
+    <lastmod>2026-10-21</lastmod>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://vineedoesstuff.in/work/osint</loc>
-    <lastmod>2026-10-20</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://vineedoesstuff.in/work/privesc</loc>
-    <lastmod>2026-10-20</lastmod>
-    <priority>0.7</priority>
   </url>
 </urlset>
