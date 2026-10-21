@@ -3536,6 +3536,58 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: transform 0.4s var(--ease-out-expo), opacity 0.4s ease;
 }
 
+/* ============================================================
+   PRINT — the site is dark-theme-only on screen; printed pages
+   need a plain, readable light layout instead of inheriting the
+   near-black background (which browsers drop by default, leaving
+   near-white text on a white page).
+   ============================================================ */
+@media print {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  html, body {
+    background: #fff !important;
+    color: #000 !important;
+    opacity: 1 !important;
+  }
+  body::before, body::after { content: none !important; display: none !important; }
+  .section,
+  .section--atmosphere, .section--atmosphere::before,
+  .section--atmosphere-deep, .section--atmosphere-deep::before,
+  .section--sunset, .section--sunset::before {
+    background: #fff !important;
+    color: #000 !important;
+  }
+  h1, h2, h3, h4, h5, h6, p, li, span, div, a,
+  .t-heading, .t-display, .t-label, .t-caption, .t-mono {
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+  a { text-decoration: underline; }
+
+  /* Interactive/decorative chrome with no meaning on paper */
+  .nav, .nav__mobile, .nav-frame-line,
+  .cursor-dot, .cursor-ring, .grain-overlay, .vignette,
+  .scroll-progress, .back-to-top, .skip-link,
+  .preloader, .loading-screen, .transition-sigil,
+  .atmo-particles, .contact-sigil, .hero__medallion, .cap-corner-mark,
+  .hero__sigil, .hero__slash, .page-sigil,
+  .measurement-lines, .sigil, .section-divider--sigil,
+  .device-3d-camera, .device-3d-gesture-bar, .device-3d-shadow {
+    display: none !important;
+  }
+
+  /* Credentials cert list — keep each badge intact across a page break */
+  .cert-badge {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
 /* --- Page Layout Utilities --- */
 .section--top {
   padding-top: 120px;
