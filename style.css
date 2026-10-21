@@ -2292,6 +2292,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 0.75rem;
   transition: border-color 0.3s ease, box-shadow 0.4s ease, background 0.4s ease;
   position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 94% 100%, 0 100%);
 }
 .threat-card:hover {
   border-color: var(--purple);
@@ -2359,6 +2360,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   flex-direction: column;
   gap: 0.85rem;
   transition: border-color 0.3s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  clip-path: polygon(0 0, 100% 0, 100% 94%, 94% 100%, 0 100%);
 }
 .top3-card:hover {
   border-color: var(--purple);
