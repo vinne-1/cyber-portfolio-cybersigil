@@ -1894,6 +1894,33 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 0.7rem;
   color: var(--gray-500);
 }
+.footer__copy--link { transition: color 0.3s ease; }
+.footer__copy--link:hover { color: var(--crimson); }
+
+/* Legal / policy page prose */
+.legal-prose h3 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+.legal-prose p {
+  color: var(--gray-300);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+.legal-prose p:first-child { margin-top: 0; }
+.legal-prose a { color: var(--crimson); text-decoration: underline; text-underline-offset: 2px; }
+.legal-prose a:hover { color: var(--purple); }
+.legal-prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--surface-2);
+  padding: 0.1em 0.4em;
+  border-radius: 2px;
+}
+.legal-prose strong { color: var(--white); }
 
 @media (max-width: 640px) {
   .footer__bottom { flex-direction: column; align-items: flex-start; }

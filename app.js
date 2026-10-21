@@ -209,6 +209,7 @@
         '/capabilities':   'page-capabilities',
         '/credentials':    'page-credentials',
         '/contact':        'page-contact',
+        '/privacy':        'page-privacy',
         '/404':            'page-404'
     };
 
@@ -222,6 +223,7 @@
         '/capabilities':   'Capabilities — Vineet Vishesh',
         '/credentials':    'Credentials — Vineet Vishesh',
         '/contact':        'Contact — Vineet Vishesh',
+        '/privacy':        'Privacy Policy — Vineet Vishesh',
         '/404':            '404 — Vineet Vishesh'
     };
 
@@ -235,6 +237,7 @@
         '/capabilities':   'Offensive security capabilities — web app pentesting, red teaming, cloud security, exploit development, and mobile assessments.',
         '/credentials':    'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.',
         '/contact':        'Get in touch with Vineet Vishesh for offensive security engagements, red team operations, and penetration testing.',
+        '/privacy':        'How this site handles data — analytics, the free tools, local storage, and advertising disclosure.',
         '/404':            'Page not found — Vineet Vishesh offensive security portfolio.'
     };
 
