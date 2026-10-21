@@ -1,9 +1,99 @@
 {
   "articles": [
     {
+      "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+      "source": "The Hacker News",
+      "date": "2026-10-21T18:01:57.000Z",
+      "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.\n\nThe compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Docker images. The Python package has since been quarantined on Python Package Index (PyPI), and the",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
+      "source": "Dark Reading",
+      "date": "2026-10-21T16:50:15.000Z",
+      "summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+      "source": "The Hacker News",
+      "date": "2026-10-21T16:33:47.000Z",
+      "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks.\n\nThe AI company said the incident took place on October 3 and 6, 2026, for Sol and Astra, respectively, as part of an internal deployment.\n\n\"A GPT-6.1 Sol agent repairing an",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+      "source": "Dark Reading",
+      "date": "2026-10-21T15:44:48.000Z",
+      "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+      "source": "Dark Reading",
+      "date": "2026-10-21T15:29:09.000Z",
+      "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "source": "Krebs on Security",
+      "date": "2026-10-21T15:26:07.000Z",
+      "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)",
       "source": "SANS Internet Storm Center",
-      "date": "2026-10-21T14:26:23.000Z",
+      "date": "2026-10-21T15:12:02.000Z",
       "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits ahead of the patch becoming available.",
       "severity": "Low",
       "tags": [
@@ -15,6 +105,21 @@
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+      "source": "The Hacker News",
+      "date": "2026-10-21T14:00:00.000Z",
+      "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server.\n\nThe flaws, together called PHP2Shell, sit in the PHP runtime, not in any application, so a site is exposed even when its own",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+      "impactScore": 2,
+      "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -37,7 +142,7 @@
       "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
       "source": "Dark Reading",
       "date": "2026-10-21T13:00:00.000Z",
-      "summary": "The attack uses malicious Google search results related to Amazon and leverages the 'finger' utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
+      "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
       "severity": "Medium",
       "tags": [
         "Widely-Used Software"
@@ -75,6 +180,24 @@
       "url": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
       "impactScore": 0,
       "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Critical Vulnerabilities in PHP Require Immediate Patching",
+      "source": "CISA Advisories",
+      "date": "2026-10-21T12:00:00.000Z",
+      "summary": "CISA strongly urges organizations to immediately patch the recently disclosed critical vulnerabilities in PHP, CVE-2026-109618 and CVE-2026-109619. These vulnerabilities, known as “php2shell,” allow for unauthenticated remote code execution in PHP and affect all PHP installations serving web requests. Organizations should immediately update to PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35 to fix these vulnerabilities. While CISA has not observed exploitation of these vulnerabilities as of the time of pu",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -157,7 +280,7 @@
       "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
       "source": "The Hacker News",
       "date": "2026-10-21T09:05:17.000Z",
-      "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory.\n\nPHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described.",
+      "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory.\n\nPHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described.\n\n⚡",
       "severity": "Medium",
       "tags": [
         "Remote Code Execution"
@@ -224,57 +347,6 @@
       ],
       "url": "https://thehackernews.com/2026/10/us-orders-deepseek-removed-from-federal.html",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
-      "source": "The Hacker News",
-      "date": "2026-10-21T07:44:22.000Z",
-      "summary": "State Bank of India has identified 3,897 customer records containing personal information in a set of about 375,000 records available on the dark web, and it does not yet know where the data came from.\n\nThe state-owned bank, India's largest, said in a stock-exchange filing dated October 21 that it \"has experienced an incident involving the loss of certain data.\" The count is",
-      "severity": "Medium",
-      "tags": [
-        "Data Breach"
-      ],
-      "url": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-      "source": "The Hacker News",
-      "date": "2026-10-21T07:26:49.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that's collectively called Plex2Shell.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-96652 (CVSS score: 5.3) - Plex Media Server Server-Side Request Forgery (SSRF)",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-96652"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-96652"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-96652"
-      ]
-    },
-    {
-      "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
-      "source": "The Hacker News",
-      "date": "2026-10-21T06:05:15.000Z",
-      "summary": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization.\n\nAccording to a report published by Russian cybersecurity firm Solar, the activity has been attributed to a threat cluster dubbed Partisan Zmiy, which is also known as the Cyber Partisans.\n\nKnown to be active since at least 2020, the group has a track record of striking industrial",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -402,6 +474,24 @@
       "recentlyAddedToKev": []
     },
     {
+      "title": "Hitachi Energy MicroSCADA X SYS600 Product",
+      "source": "CISA Advisories",
+      "date": "2026-10-20T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nHitachi Energy is aware of multiple vulnerabilities that affect MicroSCADA X SYS600 product versions listed in this document. These vulnerabilities can be exploited to carry out various attacks on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy MicroSCADA X SYS600 Product are affected:\nMicroSCADA X SYS600 vers:MicroSCADA_X_SYS600/<=10.7, 10.8 (CVE-2026-9852, CVE-2026-9853, ",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-04",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-9852",
+        "CVE-2026-9853"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "#StopRansomware: SafePay Ransomware",
       "source": "CISA Advisories",
       "date": "2026-10-20T12:00:00.000Z",
@@ -429,24 +519,6 @@
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
       "impactScore": 0,
       "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hitachi Energy MicroSCADA X SYS600 Product",
-      "source": "CISA Advisories",
-      "date": "2026-10-20T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nHitachi Energy is aware of multiple vulnerabilities that affect MicroSCADA X SYS600 product versions listed in this document. These vulnerabilities can be exploited to carry out various attacks on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy MicroSCADA X SYS600 Product are affected:\nMicroSCADA X SYS600 vers:MicroSCADA_X_SYS600/<=10.7, 10.8 (CVE-2026-9852, CVE-2026-9853, ",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-04",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-9852",
-        "CVE-2026-9853"
-      ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -641,21 +713,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
-      "source": "Dark Reading",
-      "date": "2026-10-19T14:00:00.000Z",
-      "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
       "source": "Krebs on Security",
       "date": "2026-10-19T13:48:56.000Z",
@@ -716,31 +773,36 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-      "source": "Dark Reading",
-      "date": "2026-10-16T20:34:37.000Z",
-      "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
+      "title": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
+      "source": "CISA Advisories",
+      "date": "2026-10-16T12:00:00.000Z",
+      "summary": "CISA is aware of critical authentication bypass vulnerability CVE-2026-102764, affecting BeyondTrust Remote Support (formerly Bomgar) versions 26.2.3 and earlier. Patches are available for supported versions (24.3.1 and later); organizations using older versions must upgrade first. Cyber threat actors are actively exploiting the vulnerability to gain initial access, then establishing persistence, escalating privileges, and moving laterally. CISA added CVE-2026-102764 to its Known Exploited Vulne",
       "severity": "Critical",
       "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
+        "Actively Exploited"
       ],
-      "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-      "impactScore": 4,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-102764"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-102764"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-102764"
+      ]
     },
     {
-      "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
-      "source": "Dark Reading",
-      "date": "2026-10-16T19:49:30.000Z",
-      "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
+      "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials ",
+      "source": "CISA Advisories",
+      "date": "2026-10-16T12:00:00.000Z",
+      "summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and political organizations may be attractive targets because of their access to voter registration data, cur",
       "severity": "Low",
       "tags": [
         "General"
       ],
-      "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
+      "url": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -756,21 +818,6 @@
         "General"
       ],
       "url": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials ",
-      "source": "CISA Advisories",
-      "date": "2026-10-16T12:00:00.000Z",
-      "summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and political organizations may be attractive targets because of their access to voter registration data, cur",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -798,27 +845,6 @@
       ],
       "recentlyAddedToKev": [
         "CVE-2025-61624",
-        "CVE-2026-102764"
-      ]
-    },
-    {
-      "title": "CISA Urges Patching Critical Vulnerability in BeyondTrust Remote Support",
-      "source": "CISA Advisories",
-      "date": "2026-10-16T12:00:00.000Z",
-      "summary": "CISA is aware of critical authentication bypass vulnerability CVE-2026-102764, affecting BeyondTrust Remote Support (formerly Bomgar) versions 26.2.3 and earlier. Patches are available for supported versions (24.3.1 and later); organizations using older versions must upgrade first. Cyber threat actors are actively exploiting the vulnerability to gain initial access, then establishing persistence, escalating privileges, and moving laterally. CISA added CVE-2026-102764 to its Known Exploited Vulne",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited"
-      ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/16/cisa-urges-patching-critical-vulnerability-beyondtrust-remote-support",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-102764"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-102764"
-      ],
-      "recentlyAddedToKev": [
         "CVE-2026-102764"
       ]
     },
@@ -868,45 +894,25 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Eclipse Foundation Eclipse Milo",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-15T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to delete protected data, recover user credentials and impersonate legitimate users, or cause the server to stop responding to all clients.\nThe following versions of Eclipse Foundation Eclipse Milo are affected:\nEclipse Milo >=0.6.0|<=1.1.4 (CVE-2026-63252, CVE-2026-63248, CVE-2026-60007)\nEclipse Milo >=1.0.0|<=1.1.4 (CVE-2026-62927, CVE-2026-58080, CVE-2026-61387)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nEclipse ",
-      "severity": "Low",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-21589 Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability managem",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-01",
-      "impactScore": 0,
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/15/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "impactScore": 3,
       "cveMatches": [
-        "CVE-2026-63252",
-        "CVE-2026-63248",
-        "CVE-2026-60007",
-        "CVE-2026-62927",
-        "CVE-2026-58080",
-        "CVE-2026-61387"
+        "CVE-2026-21589"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Guangzhou Juan IoT Technology EseeCloud",
-      "source": "CISA Advisories",
-      "date": "2026-10-15T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to gain control over affected IP cameras.\nThe following versions of Guangzhou Juan IoT Technology EseeCloud are affected:\nEseeCloud App <=4.9.6 (CVE-2026-107617, CVE-2026-97858, CVE-2026-105664)\nEseeCloud Firmware <=4.9.86.0 (CVE-2026-107617, CVE-2026-97858, CVE-2026-105664)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nGuangzhou Juan IoT Technology Co., Ltd.\nEseeCloud App\n\n\n\n\n\n\n3 Vulnerabilities\n\n\n\n\nUse of Hard-coded ",
-      "severity": "Low",
-      "tags": [
-        "General"
+      "knownExploitedCves": [
+        "CVE-2026-21589"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-107617",
-        "CVE-2026-97858",
-        "CVE-2026-105664"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "recentlyAddedToKev": [
+        "CVE-2026-21589"
+      ]
     },
     {
       "title": "ISC Stormcast For Thursday, October 15th, 2026 https://isc.sans.edu/podcastdetail/10138, (Thu, Oct 15th)",
@@ -1072,29 +1078,128 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
-      "source": "Krebs on Security",
-      "date": "2026-09-01T22:40:28.000Z",
-      "summary": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning images collected by a widely-used identity verification company based in Louisiana. KrebsOnSecurity also has learned that the New Orleans field office of the Federal Bureau of Investigation (FBI) today",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     }
   ],
   "clusters": [
     {
+      "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
+      "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind.\n\nThe compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Docker images. The Python package has since been quarantined on Python Package Index (PyPI), and the",
+      "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
+      "date": "2026-10-21T18:01:57.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 42
+    },
+    {
+      "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
+      "summary": "A developer's GitHub account that was compromised several months earlier was used to push malicious code to unsuspecting users.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ovhcloud-github-compromise-glassworm-threat-actors",
+      "date": "2026-10-21T16:50:15.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
+      "summary": "OpenAI has revealed that two artificial intelligence (AI) agents powered by GPT-6.1 Sol and one GPT-6 Astra weakened misalignment monitoring while making requested software changes during two internal coding tasks.\n\nThe AI company said the incident took place on October 3 and 6, 2026, for Sol and Astra, respectively, as part of an internal deployment.\n\n\"A GPT-6.1 Sol agent repairing an",
+      "url": "https://thehackernews.com/2026/10/openais-gpt-6-agent-removed-safety.html",
+      "date": "2026-10-21T16:33:47.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
+      "summary": "Hands-on sessions provide educators, nonprofits, and community leaders with an accessible resource to foster year-round cyber awareness and build more resilient communities.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/optiv-launches-cyberbot-cybersecurity-awareness-training-program",
+      "date": "2026-10-21T15:44:48.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
+      "summary": "360 Privacy finds more than 8 in 10 security and wealth professionals say cybersecurity and physical security can no longer be separated.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/360-privacy-survey-high-profile-executives-feel-untouchable",
+      "date": "2026-10-21T15:29:09.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+      "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "date": "2026-10-21T15:26:07.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 62
+    },
+    {
       "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)",
       "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits ahead of the patch becoming available.",
       "url": "https://isc.sans.edu/diary/rss/33440",
-      "date": "2026-10-21T14:26:23.000Z",
+      "date": "2026-10-21T15:12:02.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -1110,7 +1215,26 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 27
+    },
+    {
+      "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
+      "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server.\n\nThe flaws, together called PHP2Shell, sit in the PHP runtime, not in any application, so a site is exposed even when its own",
+      "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+      "date": "2026-10-21T14:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
     },
     {
       "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
@@ -1129,11 +1253,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 37
     },
     {
       "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
-      "summary": "The attack uses malicious Google search results related to Amazon and leverages the 'finger' utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
+      "summary": "The attack uses malicious Google search results related to Amazon and leverages the \"finger\" utility to launch a CAPTCHA that installs malware, including the Lumma stealer.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/decades-old-windows-utility-modern-clickfix-attack",
       "date": "2026-10-21T13:00:00.000Z",
       "severity": "Medium",
@@ -1148,7 +1272,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 36
     },
     {
       "title": "WordPress sites compromised after TeamUpdraft credential exposure",
@@ -1167,7 +1291,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
@@ -1186,7 +1310,29 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
+    },
+    {
+      "title": "Critical Vulnerabilities in PHP Require Immediate Patching",
+      "summary": "CISA strongly urges organizations to immediately patch the recently disclosed critical vulnerabilities in PHP, CVE-2026-109618 and CVE-2026-109619. These vulnerabilities, known as “php2shell,” allow for unauthenticated remote code execution in PHP and affect all PHP installations serving web requests. Organizations should immediately update to PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35 to fix these vulnerabilities. While CISA has not observed exploitation of these vulnerabilities as of the time of pu",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching",
+      "date": "2026-10-21T12:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
     },
     {
       "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
@@ -1205,7 +1351,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
@@ -1224,7 +1370,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 37
     },
     {
       "title": "The Harness Is the Hard Part of Agentic Pentesting",
@@ -1243,7 +1389,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
@@ -1262,7 +1408,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Google, Mozilla revoke eMudhra intermediates after private key compromise",
@@ -1281,11 +1427,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
-      "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory.\n\nPHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described.",
+      "summary": "This story is developing and was written before PHP's scheduled 14:00 UTC release on October 21. Once the release is out, the affected and fixed versions below are confirmed by the official advisory.\n\nPHP will ship an out-of-cycle security release at 14:00 UTC today, October 21, for two critical vulnerabilities that its security team has rated 9.2 on the CVSS v4.0 scale but has not described.\n\n⚡",
       "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html",
       "date": "2026-10-21T09:05:17.000Z",
       "severity": "Medium",
@@ -1300,7 +1446,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 37
     },
     {
       "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
@@ -1319,7 +1465,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Moving past autonomous exploitation to machine-speed security",
@@ -1338,7 +1484,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "14 ways attackers abuse cloud services to hack your enterprise",
@@ -1357,7 +1503,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "U.S. Orders DeepSeek Removed From Federal Civilian Systems, Bans New Purchases",
@@ -1376,68 +1522,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
-    },
-    {
-      "title": "State Bank of India Confirms Data Leak After 3,897 Customer Records Found on Dark Web",
-      "summary": "State Bank of India has identified 3,897 customer records containing personal information in a set of about 375,000 records available on the dark web, and it does not yet know where the data came from.\n\nThe state-owned bank, India's largest, said in a stock-exchange filing dated October 21 that it \"has experienced an incident involving the loss of certain data.\" The count is",
-      "url": "https://thehackernews.com/2026/10/state-bank-of-india-confirms-data-leak.html",
-      "date": "2026-10-21T07:44:22.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Data Breach"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 36
-    },
-    {
-      "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that's collectively called Plex2Shell.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-96652 (CVSS score: 5.3) - Plex Media Server Server-Side Request Forgery (SSRF)",
-      "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-      "date": "2026-10-21T07:26:49.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-96652"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-96652"
-      ],
-      "articleCount": 1,
-      "score": 70
-    },
-    {
-      "title": "Hackers Hid Vasilek Backdoor in VMware Tools During 2-Year Russian Healthcare Intrusion",
-      "summary": "A Belarus-aligned hacktivist group spent nearly two years within the network of a Russian healthcare organization.\n\nAccording to a report published by Russian cybersecurity firm Solar, the activity has been attributed to a threat cluster dubbed Partisan Zmiy, which is also known as the Cyber Partisans.\n\nKnown to be active since at least 2020, the group has a track record of striking industrial",
-      "url": "https://thehackernews.com/2026/10/hackers-hid-vasilek-backdoor-in-vmware.html",
-      "date": "2026-10-21T06:05:15.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 35
+      "score": 24
     },
     {
       "title": "ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)",
@@ -1456,7 +1541,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 23
+      "score": 21
     },
     {
       "title": "US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny",
@@ -1475,7 +1560,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "UK FCA exec wants to require disclosure of ‘significant AI failures and near-misses’",
@@ -1494,7 +1579,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys",
@@ -1513,7 +1598,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "KVM escape exposes broader attack surface in Linux networking",
@@ -1534,7 +1619,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 30
     },
     {
       "title": "Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ",
@@ -1553,7 +1638,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "Close Identity Gaps in Software Development Before Unleashing AI",
@@ -1572,7 +1657,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
@@ -1591,7 +1676,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -1620,7 +1705,7 @@
         "CVE-2026-96656"
       ],
       "articleCount": 1,
-      "score": 62
+      "score": 61
     },
     {
       "title": "#StopRansomware: SafePay Ransomware",
@@ -1640,7 +1725,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 45
+      "score": 44
     },
     {
       "title": "Moxa AIG-302 ThingsPro Edge",
@@ -1662,7 +1747,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 29
     },
     {
       "title": "HMS Networks PEAK-System PCAN Windows drivers",
@@ -1688,12 +1773,12 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
-      "title": "Hitachi Energy RTU500 Product",
-      "summary": "View CSAF\nSummary\nHitachi Energy is aware of vulnerabilities that affect RTU500 product versions listed in this document. These vulnerabilities if exploited can have impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy RTU500 Product are affected:\nRTU500 series CMU Firmware vers:RTU500_series_CMU_Firmware/>=13.5.1|<=13.5.4, vers:RTU500_seri",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-05",
+      "title": "Hitachi Energy MicroSCADA X SYS600 Product",
+      "summary": "View CSAF\nSummary\nHitachi Energy is aware of multiple vulnerabilities that affect MicroSCADA X SYS600 product versions listed in this document. These vulnerabilities can be exploited to carry out various attacks on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy MicroSCADA X SYS600 Product are affected:\nMicroSCADA X SYS600 vers:MicroSCADA_X_SYS600/<=10.7, 10.8 (CVE-2026-9852, CVE-2026-9853, ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-293-04",
       "date": "2026-10-20T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -1710,7 +1795,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 18
+      "score": 17
     },
     {
       "title": "When defrost becomes sabotage: 3 OT lessons from France’s supermarket attack",
@@ -1729,7 +1814,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "OT systems complicate quantum-resistant data protection",
@@ -1748,7 +1833,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "F5 rushes out emergency NGINX patches for three critical flaws",
@@ -1767,7 +1852,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Researchers Infiltrate Microsoft Tech Support Scam Operation",
@@ -1786,7 +1871,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "'AdFection' Turns Ad Impressions Into Zero-Click Spyware Delivery",
@@ -1805,7 +1890,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "ConnectWise Disables Cloud Backups Amid Concerns for Downstream MSPs",
@@ -1824,7 +1909,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "OnlyFans Copyright Takedowns Expose Compromised Websites",
@@ -1843,26 +1928,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
-    },
-    {
-      "title": "The Evolving Cybersecurity Lexicon: Vulnerability Discovery to Resilience",
-      "summary": "An industry-wide laser focus on vulnerabilities has left cybersecurity teams without enough room to strategize for resilience.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/cybersecurity-lexicon-vulnerability-discovery-resilience",
-      "date": "2026-10-19T14:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
@@ -1900,7 +1966,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "ConnectWise backup credentials exposed multiple Microsoft 365 tenants",
@@ -1919,7 +1985,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
@@ -1938,46 +2004,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
-    },
-    {
-      "title": "BeyondTrust Remote Support Zero-Day Continues Trend of Exploited Edge Bugs",
-      "summary": "Ivanti, Cisco, and Palo Alto Networks all had vulnerabilities in edge devices come under fire this week. Now BeyondTrust joins the group.",
-      "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs",
-      "date": "2026-10-16T20:34:37.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 46
-    },
-    {
-      "title": "Fake Claude, ChatGPT Attacks Surge, Putting Developers at Risk",
-      "summary": "Campaigns that impersonate popular AI brands are on the rise, and they typically use ClickFix-like tactics to target unsuspecting enterprise employees.",
-      "url": "https://www.darkreading.com/application-security/fake-claude-chatgpt-attacks-developers-risk",
-      "date": "2026-10-16T19:49:30.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
+      "score": 11
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1996,13 +2023,15 @@
       "impactScore": 4,
       "cveMatches": [
         "CVE-2025-61624",
-        "CVE-2026-102764"
+        "CVE-2026-102764",
+        "CVE-2026-21589"
       ],
       "knownExploitedCves": [
         "CVE-2025-61624",
-        "CVE-2026-102764"
+        "CVE-2026-102764",
+        "CVE-2026-21589"
       ],
-      "articleCount": 1,
+      "articleCount": 2,
       "score": 56
     },
     {
@@ -2029,9 +2058,9 @@
       "score": 54
     },
     {
-      "title": "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation",
-      "summary": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation. The product outlines ten voluntary core practices to help organizations that train and evaluate highly capable super intelligence (SI) agents—particularly pre-deployment, cutting edge SI agents with re",
-      "url": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
+      "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials ",
+      "summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and political organizations may be attractive targets because of their access to voter registration data, cur",
+      "url": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
       "date": "2026-10-16T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -2048,9 +2077,9 @@
       "score": 10
     },
     {
-      "title": "Cyber Threat Actors Use a Variety of Techniques to Target Election and Campaign Officials ",
-      "summary": "CISA and the Federal Bureau of Investigation (FBI) released a Public Service Announcement (PSA) warning election and campaign officials about cyber threats during the 2026 U.S. midterm elections. Malicious cyber actors may use phishing and smishing techniques to steal login credentials and other sensitive information or install malware on targeted devices. Election officials, candidates, and political organizations may be attractive targets because of their access to voter registration data, cur",
-      "url": "https://www.cisa.gov/resources-tools/resources/cyber-threat-actors-use-variety-techniques-target-election-and-campaign-officials",
+      "title": "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation",
+      "summary": "The National Institute of Standards and Technology (NIST), National Security Agency’s Super Intelligence Security Center (NSA SISC) and Cybersecurity and Infrastructure Security Agency (CISA) published Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation. The product outlines ten voluntary core practices to help organizations that train and evaluate highly capable super intelligence (SI) agents—particularly pre-deployment, cutting edge SI agents with re",
+      "url": "https://www.cisa.gov/resources-tools/resources/key-practices-incident-readiness-and-response-super-intelligence-training-and-evaluation",
       "date": "2026-10-16T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -2119,55 +2148,6 @@
       "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Eclipse Foundation Eclipse Milo",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to delete protected data, recover user credentials and impersonate legitimate users, or cause the server to stop responding to all clients.\nThe following versions of Eclipse Foundation Eclipse Milo are affected:\nEclipse Milo >=0.6.0|<=1.1.4 (CVE-2026-63252, CVE-2026-63248, CVE-2026-60007)\nEclipse Milo >=1.0.0|<=1.1.4 (CVE-2026-62927, CVE-2026-58080, CVE-2026-61387)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nEclipse ",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-01",
-      "date": "2026-10-15T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-63252",
-        "CVE-2026-63248",
-        "CVE-2026-60007",
-        "CVE-2026-62927",
-        "CVE-2026-58080",
-        "CVE-2026-61387"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Guangzhou Juan IoT Technology EseeCloud",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to gain control over affected IP cameras.\nThe following versions of Guangzhou Juan IoT Technology EseeCloud are affected:\nEseeCloud App <=4.9.6 (CVE-2026-107617, CVE-2026-97858, CVE-2026-105664)\nEseeCloud Firmware <=4.9.86.0 (CVE-2026-107617, CVE-2026-97858, CVE-2026-105664)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nGuangzhou Juan IoT Technology Co., Ltd.\nEseeCloud App\n\n\n\n\n\n\n3 Vulnerabilities\n\n\n\n\nUse of Hard-coded ",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-288-02",
-      "date": "2026-10-15T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-107617",
-        "CVE-2026-97858",
-        "CVE-2026-105664"
-      ],
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
@@ -2342,50 +2322,27 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 20
-    },
+    }
+  ],
+  "top3": [
     {
-      "title": "FBI Probes Service Selling 153M+ Drivers Licenses",
-      "summary": "A new identity theft service launched on the dark web this week is selling digital scans of more than 153 million drivers licenses from people in the United States and Canada. Based on interviews with individuals whose licenses are available for purchase on this service, it appears to be siphoning images collected by a widely-used identity verification company based in Louisiana. KrebsOnSecurity also has learned that the New Orleans field office of the Federal Bureau of Investigation (FBI) today",
-      "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
-      "date": "2026-09-01T22:40:28.000Z",
-      "severity": "Low",
+      "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
+      "summary": "Expect to see quite a few websites serving \"404\" or \"Page Not Found\" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaws, and that these critical bugs are already being exploited in the wild.",
+      "url": "https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/",
+      "date": "2026-10-21T15:26:07.000Z",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Actively Exploited"
       ],
       "sources": [
         "Krebs on Security"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 10
-    }
-  ],
-  "top3": [
-    {
-      "title": "CISA Orders Federal Agencies to Patch Exploited Plex2Shell, Siemens, and SiteGuard Flaws",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, including four vulnerabilities impacting Plex Media Server that's collectively called Plex2Shell.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-96652 (CVSS score: 5.3) - Plex Media Server Server-Side Request Forgery (SSRF)",
-      "url": "https://thehackernews.com/2026/10/cisa-orders-federal-agencies-to-patch.html",
-      "date": "2026-10-21T07:26:49.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-96652"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-96652"
-      ],
-      "articleCount": 1,
-      "score": 70
+      "score": 62
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -2414,7 +2371,7 @@
         "CVE-2026-96656"
       ],
       "articleCount": 1,
-      "score": 62
+      "score": 61
     },
     {
       "title": "#StopRansomware: SafePay Ransomware",
@@ -2434,7 +2391,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 45
+      "score": 44
     }
   ],
   "sourcesUsed": [
@@ -2447,5 +2404,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-21T14:32:34.581Z"
+  "lastUpdated": "2026-10-21T18:54:43.489Z"
 }
