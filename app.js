@@ -408,6 +408,7 @@
             ScrollTrigger.refresh();
         }
         cleanupPending();
+        stopHeroVisibilityObserver();
         stopMatrixCanvas();
         stopParticleNetwork();
 
@@ -568,6 +569,7 @@
         setupDevice3DShowcase();
         setupMatrixCanvas();
         setupParticleNetwork();
+        setupHeroVisibilityObserver();
         setupParallaxElements();
         setupCardHoverGlow();
         setupTextStrokeReveal();
@@ -1193,6 +1195,7 @@
     var matrixAnimFrame = null;
     var matrixResizeHandler = null;
     var particleResizeHandler = null;
+    var heroVisibilityObserver = null;
 
     function isMobileViewport() { return window.innerWidth < 768; }
 
@@ -1357,6 +1360,43 @@
         if (particleResizeHandler) {
             window.removeEventListener('resize', particleResizeHandler);
             particleResizeHandler = null;
+        }
+    }
+
+    /* ----------------------------------------------------------
+       HERO VISIBILITY OBSERVER
+       Pauses the matrix/particle canvases while the hero is
+       scrolled off-screen, resumes them when it re-enters view.
+       ---------------------------------------------------------- */
+    function setupHeroVisibilityObserver() {
+        stopHeroVisibilityObserver();
+
+        if (typeof IntersectionObserver === 'undefined') return;
+
+        var heroEl = app.querySelector('.hero.section[data-page="home"]');
+        if (!heroEl) return;
+
+        heroVisibilityObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    // Guard against re-starting an already-running loop
+                    // (e.g. the initial observe firing right after setup).
+                    if (!matrixAnimFrame) setupMatrixCanvas();
+                    if (!particleAnimFrame) setupParticleNetwork();
+                } else {
+                    stopMatrixCanvas();
+                    stopParticleNetwork();
+                }
+            });
+        }, { threshold: 0 });
+
+        heroVisibilityObserver.observe(heroEl);
+    }
+
+    function stopHeroVisibilityObserver() {
+        if (heroVisibilityObserver) {
+            heroVisibilityObserver.disconnect();
+            heroVisibilityObserver = null;
         }
     }
 
