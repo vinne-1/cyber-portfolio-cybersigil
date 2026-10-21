@@ -3076,7 +3076,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   outline-offset: 2px;
 }
 .terminal__input::placeholder {
-  color: var(--gray-500);
+  color: var(--gray-300);
 }
 /* Terminal cursor blink */
 .terminal__prompt::before {
