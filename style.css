@@ -2548,6 +2548,45 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .whr-vital-chip--ok { border-top-color: #ffd700; }
 .whr-vital-chip--poor { border-top-color: var(--crimson); }
 
+/* --- Work Approach (3-step methodology, blade-cut themed) --- */
+.work-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--border);
+}
+.work-approach-step {
+  position: relative;
+  padding: 2rem 1.75rem 2rem 2rem;
+  background: var(--surface);
+  border-left: 2px solid var(--crimson-dark);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%, 0 88%);
+  transition: border-color 0.4s ease, background 0.4s ease;
+}
+.work-approach-step:hover {
+  border-left-color: var(--crimson);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(165, 13, 34, 0.04) 100%);
+}
+.work-approach-step__index {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--crimson);
+  opacity: 0.7;
+  letter-spacing: 0.1em;
+}
+.work-approach-step__title {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0.75rem 0 0.75rem;
+  line-height: 1.4;
+}
+.work-approach-step__text {
+  font-size: 0.85rem;
+  color: var(--gray-300);
+  line-height: 1.65;
+}
+
 /* --- Device Showcase (Apple-style product screenshots) --- */
 .device-showcase {
   position: relative;
