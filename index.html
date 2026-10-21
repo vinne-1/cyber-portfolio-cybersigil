@@ -13,7 +13,7 @@
     <meta name="theme-color" content="#000000">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://vineedoesstuff.in/">
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="/manifest.json">
     <meta property="og:title" content="Vineet Vishesh — Offensive Security">
     <meta property="og:description" content="Vineet Vishesh — Penetration tester and red team analyst with 3+ years of combined cybersecurity experience across web, API, network, and cloud environments.">
     <meta property="og:type" content="website">
@@ -54,7 +54,7 @@
     <link rel="stylesheet" href="https://unpkg.com/splitting@1.0.6/dist/splitting-cells.css" integrity="sha384-y6P68QahVJCCHTs++clRdwi/t3TFb2Se2v91Z9KniuEKV98RPXh2fYhLHvQEfqg2" crossorigin="anonymous">
 
     <!-- Design System -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -1017,6 +1017,23 @@
     <!-- WEBSITE HEALTH REPORT TOOL -->
     <template id="page-tool-website-health">
         <section class="section section--atmosphere-deep" data-page="tool-website-health" style="padding-top:120px;">
+            <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+            </div>
+            <svg class="measurement-lines measurement-lines--top-right" viewBox="0 0 120 120" fill="none" stroke="currentColor" aria-hidden="true">
+                <line x1="0" y1="15" x2="120" y2="15" stroke-width="0.5" opacity="0.25"/>
+                <line x1="0" y1="40" x2="120" y2="40" stroke-width="0.5" opacity="0.15"/>
+                <line x1="0" y1="65" x2="120" y2="65" stroke-width="0.5" opacity="0.2"/>
+                <line x1="0" y1="90" x2="120" y2="90" stroke-width="0.5" opacity="0.25"/>
+                <line x1="110" y1="10" x2="110" y2="20" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="35" x2="110" y2="45" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="60" x2="110" y2="70" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="85" x2="110" y2="95" stroke-width="0.8" opacity="0.35"/>
+            </svg>
             <div class="container">
                 <div class="anim-item" style="margin-bottom:2.5rem;">
                     <a href="/products" data-route style="font-size:0.75rem; color:var(--gray-300); text-decoration:none;">&larr; Products</a>
@@ -1031,6 +1048,7 @@
                 </div>
 
                 <div class="anim-item" id="whrForm" style="display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+                    <label for="whrUrlInput" class="sr-only">Website URL to check</label>
                     <input type="text" id="whrUrlInput" placeholder="example.com" autocomplete="off" spellcheck="false"
                         style="flex:1; min-width:240px; padding:1rem 1.25rem; background:var(--surface); border:1px solid var(--border); color:var(--white); font-family:var(--font-body); font-size:0.95rem;">
                     <button type="button" id="whrRunBtn" class="btn btn--primary">Run Report</button>
@@ -1147,6 +1165,23 @@
     <!-- THREAT LANDSCAPE -->
     <template id="page-threat-landscape">
         <section class="section section--atmosphere-deep" data-page="threat-landscape" style="padding-top:120px;">
+            <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+            </div>
+            <svg class="measurement-lines measurement-lines--top-right" viewBox="0 0 120 120" fill="none" stroke="currentColor" aria-hidden="true">
+                <line x1="0" y1="15" x2="120" y2="15" stroke-width="0.5" opacity="0.25"/>
+                <line x1="0" y1="40" x2="120" y2="40" stroke-width="0.5" opacity="0.15"/>
+                <line x1="0" y1="65" x2="120" y2="65" stroke-width="0.5" opacity="0.2"/>
+                <line x1="0" y1="90" x2="120" y2="90" stroke-width="0.5" opacity="0.25"/>
+                <line x1="110" y1="10" x2="110" y2="20" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="35" x2="110" y2="45" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="60" x2="110" y2="70" stroke-width="0.8" opacity="0.35"/>
+                <line x1="110" y1="85" x2="110" y2="95" stroke-width="0.8" opacity="0.35"/>
+            </svg>
             <div class="container">
                 <div class="anim-item" style="margin-bottom:2.5rem;">
                     <span class="t-label">Threat Landscape</span>
@@ -1389,7 +1424,7 @@
     <script defer src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js" integrity="sha384-taxnKSnzdVS5gZB4jZcieFZlmBPQMFqhdEmCScZsrIFCxX8Zizq4fKJJH5kBwMXT" crossorigin="anonymous"></script>
 
     <!-- App -->
-    <script defer src="app.js"></script>
+    <script defer src="/app.js"></script>
 
     <!-- Umami Analytics (privacy-friendly, no cookies) -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="REPLACE_WITH_YOUR_UMAMI_ID"></script>
