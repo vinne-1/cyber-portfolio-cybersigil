@@ -25,13 +25,16 @@
         document.body.classList.add('ready');
         return;
     }
-    gsap.registerPlugin(ScrollTrigger);
+    var hasScrollTrigger = typeof ScrollTrigger !== 'undefined';
+    if (hasScrollTrigger) {
+        gsap.registerPlugin(ScrollTrigger);
+    }
 
     /* ----------------------------------------------------------
        LENIS SMOOTH SCROLL (skip if reduced motion)
        ---------------------------------------------------------- */
     var lenis = null;
-    if (!prefersReducedMotion) {
+    if (!prefersReducedMotion && typeof Lenis !== 'undefined') {
         lenis = new Lenis({
             duration: 1.2,
             easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
@@ -39,7 +42,9 @@
             smoothWheel: true
         });
 
-        lenis.on('scroll', ScrollTrigger.update);
+        if (hasScrollTrigger) {
+            lenis.on('scroll', ScrollTrigger.update);
+        }
         gsap.ticker.add(function (time) {
             lenis.raf(time * 1000);
         });
@@ -398,8 +403,10 @@
         isTransitioning = true;
         currentRoute = route;
 
-        ScrollTrigger.getAll().forEach(function (st) { st.kill(); });
-        ScrollTrigger.refresh();
+        if (hasScrollTrigger) {
+            ScrollTrigger.getAll().forEach(function (st) { st.kill(); });
+            ScrollTrigger.refresh();
+        }
         cleanupPending();
         stopMatrixCanvas();
         stopParticleNetwork();
@@ -632,7 +639,7 @@
        TEXT STROKE OUTLINE-TO-FILL ON SCROLL
        ---------------------------------------------------------- */
     function setupTextStrokeReveal() {
-        if (prefersReducedMotion) return;
+        if (prefersReducedMotion || !hasScrollTrigger) return;
         var headings = app.querySelectorAll('.t-heading:not(.hero__headline):not(.split-heading)');
         headings.forEach(function (h) {
             h.classList.add('text-stroke-reveal');
@@ -696,12 +703,16 @@
         if (prefersReducedMotion) return;
         var drawSigils = app.querySelectorAll('.sigil--draw');
         drawSigils.forEach(function (s) {
-            ScrollTrigger.create({
-                trigger: s,
-                start: 'top 85%',
-                onEnter: function () { s.classList.add('is-drawn'); },
-                once: true
-            });
+            if (hasScrollTrigger) {
+                ScrollTrigger.create({
+                    trigger: s,
+                    start: 'top 85%',
+                    onEnter: function () { s.classList.add('is-drawn'); },
+                    once: true
+                });
+            } else {
+                s.classList.add('is-drawn');
+            }
         });
 
         // Page-specific background sigils
@@ -726,21 +737,25 @@
                 p.style.strokeDasharray = len;
                 p.style.strokeDashoffset = len;
             });
-            ScrollTrigger.create({
-                trigger: s,
-                start: 'top 85%',
-                onEnter: function () {
-                    paths.forEach(function (p, i) {
-                        gsap.to(p, {
-                            strokeDashoffset: 0,
-                            duration: 1.5,
-                            delay: i * 0.05,
-                            ease: 'power2.out'
+            if (hasScrollTrigger) {
+                ScrollTrigger.create({
+                    trigger: s,
+                    start: 'top 85%',
+                    onEnter: function () {
+                        paths.forEach(function (p, i) {
+                            gsap.to(p, {
+                                strokeDashoffset: 0,
+                                duration: 1.5,
+                                delay: i * 0.05,
+                                ease: 'power2.out'
+                            });
                         });
-                    });
-                },
-                once: true
-            });
+                    },
+                    once: true
+                });
+            } else {
+                paths.forEach(function (p) { p.style.strokeDashoffset = 0; });
+            }
         });
 
         // Hero sigil draw
