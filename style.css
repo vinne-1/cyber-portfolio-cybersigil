@@ -1080,6 +1080,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   outline: 2px solid var(--crimson-text);
   outline-offset: 2px;
 }
+.btn:disabled,
+.btn[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.btn:disabled:hover,
+.btn[disabled]:hover {
+  box-shadow: none;
+}
 .btn--primary {
   background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 100%);
   color: var(--white);
@@ -2655,6 +2665,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .whr-vital-chip--good { border-top-color: #28c840; }
 .whr-vital-chip--ok { border-top-color: #ffd700; }
 .whr-vital-chip--poor { border-top-color: var(--crimson); }
+.whr-vital-chip__rating {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0.35rem;
+}
+.whr-vital-chip--good .whr-vital-chip__rating { color: #28c840; }
+.whr-vital-chip--ok .whr-vital-chip__rating { color: #ffd700; }
+.whr-vital-chip--poor .whr-vital-chip__rating { color: var(--crimson-text); }
 
 /* --- Work Approach (3-step methodology, blade-cut themed) --- */
 /* Approach list — scannable info rows (index / title / description),

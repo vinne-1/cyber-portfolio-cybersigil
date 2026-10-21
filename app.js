@@ -1827,7 +1827,7 @@
     }
 
     function whrInfoCardTitle(text) {
-        return '<div style="font-size:0.8rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">' + escapeHtml(text) + '</div>';
+        return '<h3 style="font-size:0.8rem; font-weight:600; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">' + escapeHtml(text) + '</h3>';
     }
 
     function whrRenderResults(report) {
@@ -1855,9 +1855,9 @@
         var urlEl = app.querySelector('#whrTargetUrl');
         if (urlEl) {
             var reportUrl = report.url || '';
-            urlEl.textContent = reportUrl;
-            urlEl.title = reportUrl;
             var hrefOk = /^https?:\/\//i.test(reportUrl);
+            urlEl.innerHTML = escapeHtml(reportUrl) + (hrefOk ? '<span class="sr-only"> (opens in a new tab)</span>' : '');
+            urlEl.title = reportUrl;
             urlEl.setAttribute('href', hrefOk ? reportUrl : '#');
             if (!hrefOk) urlEl.addEventListener('click', function (e) { e.preventDefault(); }, { once: true });
         }
@@ -1886,12 +1886,15 @@
                 var vitalItems = [
                     ['LCP', cwv.lcp], ['CLS', cwv.cls], ['TBT', cwv.tbt], ['FCP', cwv.fcp], ['Speed Index', cwv.speedIndex]
                 ];
+                var WHR_VITAL_RATING_LABEL = { good: 'Good', ok: 'Needs work', poor: 'Poor' };
                 vitalsEl.innerHTML = vitalItems.map(function (pair) {
                     var rating = whrVitalRating(pair[0], pair[1]);
                     var chipClass = rating ? ' whr-vital-chip--' + rating : '';
+                    var ratingLabel = rating ? '<span class="whr-vital-chip__rating">' + WHR_VITAL_RATING_LABEL[rating] + '</span>' : '';
                     return '<div class="whr-vital-chip' + chipClass + '">' +
                         '<div style="font-family:var(--font-mono); font-size:1rem; color:var(--white);">' + escapeHtml(pair[1] || '—') + '</div>' +
                         '<div style="font-size:0.7rem; color:var(--gray-300); margin-top:0.25rem; text-transform:uppercase;">' + pair[0] + '</div>' +
+                        ratingLabel +
                     '</div>';
                 }).join('');
                 vitalsWrap.style.display = '';
@@ -2082,7 +2085,7 @@
         function runReport() {
             var rawUrl = input.value.trim();
             clearInlineError();
-            if (!rawUrl) { input.focus(); return; }
+            if (!rawUrl) { showInlineError('Enter a URL to check.'); input.focus(); return; }
 
             var normalizedUrl;
             var hostname;
