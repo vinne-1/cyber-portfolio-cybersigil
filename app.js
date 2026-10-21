@@ -176,7 +176,6 @@
         '/products':       'page-products',
         '/tools/website-health': 'page-tool-website-health',
         '/threat-landscape': 'page-threat-landscape',
-        '/capabilities':   'page-capabilities',
         '/credentials':    'page-credentials',
         '/contact':        'page-contact',
         '/privacy':        'page-privacy',
@@ -186,11 +185,10 @@
     var ROUTE_TITLES = {
         '/':               'Vineet Vishesh — Offensive Security',
         '/about':          'About — Vineet Vishesh',
-        '/work':           'Selected Work — Vineet Vishesh',
+        '/work':           'Work & Capabilities — Vineet Vishesh',
         '/products':       'Products — Vineet Vishesh',
         '/tools/website-health': 'Website Health Report — Vineet Vishesh',
         '/threat-landscape': 'Threat Landscape — Vineet Vishesh',
-        '/capabilities':   'Capabilities — Vineet Vishesh',
         '/credentials':    'Credentials — Vineet Vishesh',
         '/contact':        'Contact — Vineet Vishesh',
         '/privacy':        'Privacy Policy — Vineet Vishesh',
@@ -200,11 +198,10 @@
     var ROUTE_DESCRIPTIONS = {
         '/':               'Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years of combined experience across web, API, network, and cloud environments.',
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
-        '/work':           'Selected offensive security work — web/API VAPT and SIEM detection engineering.',
+        '/work':           'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.',
         '/products':       'Products built by Vineet Vishesh — independent apps, starting with TithiPath, plus free tools including a Website Health Report and a live Threat Landscape feed.',
         '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
         '/threat-landscape': 'Live cybersecurity threat landscape — deduplicated coverage from 6 sources, ranked by severity, corroboration, and recency.',
-        '/capabilities':   'Offensive security capabilities — web app pentesting, red teaming, cloud security, exploit development, and mobile assessments.',
         '/credentials':    'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.',
         '/contact':        'Get in touch with Vineet Vishesh for offensive security engagements, red team operations, and penetration testing.',
         '/privacy':        'How this site handles data — analytics, the free tools, local storage, and advertising disclosure.',
@@ -671,7 +668,6 @@
         var pageSigilData = {
             about: '<svg class="page-sigil page-sigil--right sigil" viewBox="0 0 120 400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="60" y1="0" x2="60" y2="400" stroke-width="0.2" opacity="0.3"/><path d="M60,20 L75,60 L60,100 L45,60 Z" stroke-width="0.5"/><path d="M60,100 C50,140 25,160 5,175" stroke-width="0.7"/><path d="M60,100 C70,140 95,160 115,175" stroke-width="0.7"/><circle cx="5" cy="175" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="115" cy="175" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M60,200 L72,240 L60,280 L48,240 Z" stroke-width="0.4"/><path d="M60,280 C52,310 35,325 18,335" stroke-width="0.5"/><path d="M60,280 C68,310 85,325 102,335" stroke-width="0.5"/><path d="M60,350 L65,375 L60,400 L55,375 Z" stroke-width="0.3" opacity="0.5"/></svg>',
             work: '<svg class="page-sigil page-sigil--left sigil" viewBox="0 0 80 500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="40" y1="0" x2="40" y2="500" stroke-width="0.2" opacity="0.2"/><path d="M40,30 L55,80 L40,130 L25,80 Z" stroke-width="0.5"/><path d="M40,130 C32,170 15,195 2,210" stroke-width="0.6"/><path d="M40,130 C48,170 65,195 78,210" stroke-width="0.6"/><circle cx="2" cy="210" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="78" cy="210" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M40,250 L50,290 L40,330 L30,290 Z" stroke-width="0.4"/><path d="M40,370 L48,420 L40,470 L32,420 Z" stroke-width="0.3" opacity="0.4"/></svg>',
-            capabilities: '<svg class="page-sigil page-sigil--right sigil" viewBox="0 0 100 450" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="0" x2="50" y2="450" stroke-width="0.2" opacity="0.2"/><path d="M50,15 L68,65 L50,115 L32,65 Z" stroke-width="0.5"/><path d="M50,70 C42,95 20,110 5,118" stroke-width="0.6"/><path d="M50,70 C58,95 80,110 95,118" stroke-width="0.6"/><path d="M50,160 L60,200 L50,240 L40,200 Z" stroke-width="0.4"/><path d="M50,240 C44,270 28,285 12,295" stroke-width="0.5"/><path d="M50,240 C56,270 72,285 88,295" stroke-width="0.5"/><circle cx="12" cy="295" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="88" cy="295" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M50,340 L56,380 L50,420 L44,380 Z" stroke-width="0.3" opacity="0.5"/></svg>',
             contact: '<svg class="page-sigil page-sigil--left sigil" viewBox="0 0 100 300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><line x1="50" y1="0" x2="50" y2="300" stroke-width="0.2" opacity="0.2"/><path d="M50,20 L65,60 L50,100 L35,60 Z" stroke-width="0.5"/><path d="M50,60 C42,80 22,92 5,100" stroke-width="0.6"/><path d="M50,60 C58,80 78,92 95,100" stroke-width="0.6"/><circle cx="5" cy="100" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><circle cx="95" cy="100" r="2" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/><path d="M50,140 L58,180 L50,220 L42,180 Z" stroke-width="0.4"/><path d="M50,250 L55,275 L50,300 L45,275 Z" stroke-width="0.3" opacity="0.4"/></svg>'
         };
         if (pageSigilData[pageType] && pageEl) {
@@ -1006,9 +1002,9 @@
             return [
                 'SELECTED WORK',
                 '─────────────────────────────────',
-                '  01  Web & API VAPT — CYFY Pvt Ltd',
+                '  01  Web & API VAPT',
                 '      Burp Suite · Nessus · OWASP Top 10 / API Top 10 · CVSS',
-                '  02  SIEM Detection Engineering — CYFY Pvt Ltd',
+                '  02  SIEM Detection Engineering',
                 '      AWS + Google Workspace telemetry · MITRE ATT&CK correlation',
                 '  03  Mobile Application Security — methodology'
             ].join('\n');
