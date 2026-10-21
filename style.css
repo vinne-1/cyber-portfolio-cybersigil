@@ -575,9 +575,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .product-section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   margin-bottom: 1.5rem;
   padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border);
+}
+.product-section-label__mark {
+  width: 14px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--crimson) 0%, var(--violet, var(--purple)) 100%);
+  clip-path: polygon(0% 40%, 85% 0%, 100% 60%, 15% 100%);
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 3px rgba(165, 13, 34, 0.4));
 }
 
 .t-mono {
