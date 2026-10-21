@@ -3479,7 +3479,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   opacity: 0;
-  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(200, 16, 46, 0.06) 0%, transparent 60%);
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(165, 13, 34, 0.06) 0%, transparent 60%);
   transition: opacity 0.3s ease;
   pointer-events: none;
   z-index: 0;
