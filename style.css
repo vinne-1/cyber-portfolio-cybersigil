@@ -1697,55 +1697,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
 }
 
-/* Radar sweep decoration */
-.radar-sweep {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  right: -100px;
-  top: 50%;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  border: 1px solid var(--border);
-  opacity: 0.25;
-  pointer-events: none;
-}
-.radar-sweep::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    rgba(107, 76, 154, 0.15) 20deg,
-    rgba(165, 13, 34, 0.08) 40deg,
-    transparent 60deg
-  );
-  animation: radarSpin 4s linear infinite;
-}
-.radar-sweep::after {
-  content: '';
-  position: absolute;
-  inset: 30%;
-  border-radius: 50%;
-  border: 1px solid var(--border);
-}
-@keyframes radarSpin {
-  to { transform: rotate(360deg); }
-}
-@media (max-width: 768px) {
-  .radar-sweep {
-    width: 300px;
-    height: 300px;
-    right: -80px;
-    opacity: 0.15;
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .radar-sweep::before { animation: none; }
-}
-
 /* --- Footer --- */
 .footer {
   padding: 0;
@@ -1976,7 +1927,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   flex-direction: column;
   background: var(--black);
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 .loading-screen.is-hidden {
   opacity: 0;
