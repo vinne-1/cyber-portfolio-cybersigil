@@ -966,7 +966,7 @@
                         <div class="project-card__image">
                             <div class="project-card__image-overlay"></div>
                             <div class="project-card__image-inner">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M11 7v4l3 2"/></svg>
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><path d="M11 7v4l3 2"/></svg>
                             </div>
                         </div>
                         <div class="project-card__body">
@@ -990,7 +990,7 @@
                         <div class="project-card__image">
                             <div class="project-card__image-overlay"></div>
                             <div class="project-card__image-inner">
-                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg>
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg>
                             </div>
                         </div>
                         <div class="project-card__body">
@@ -1060,22 +1060,22 @@
 
                 <div id="whrEmptyState" class="anim-item" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); gap:1px; background:var(--border); margin-bottom:3rem;">
                     <div style="padding:1.5rem; background:var(--surface);">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
                         <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">Security Headers</div>
                         <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">CSP, HSTS, frame options &amp; more</div>
                     </div>
                     <div style="padding:1.5rem; background:var(--surface);">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
                         <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">Performance</div>
                         <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">Real Lighthouse &amp; Core Web Vitals</div>
                     </div>
                     <div style="padding:1.5rem; background:var(--surface);">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="1"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
                         <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">SSL / TLS</div>
                         <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">Certificate validity &amp; protocol</div>
                     </div>
                     <div style="padding:1.5rem; background:var(--surface);">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
                         <div style="font-size:0.85rem; color:var(--white); font-weight:600; margin-top:0.75rem;">SEO &amp; DNS</div>
                         <div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.25rem; line-height:1.5;">Meta tags, sitemap, SPF/DMARC</div>
                     </div>
@@ -1109,6 +1109,8 @@
                 </div>
 
                 <div id="whrResults" style="display:none;">
+
+                    <h2 class="sr-only">Results</h2>
 
                     <div id="whrBackendNote" role="status" aria-live="polite" style="display:none; margin-bottom:1.5rem; padding:0.85rem 1.1rem; border:1px solid var(--crimson); background:rgba(165,13,34,0.08); font-size:0.8rem; color:var(--gray-300);">
                         Performance and DNS below ran fully in your browser and are always live. Security headers, SSL/TLS, on-page SEO, and crawlability need a small backend service to read cross-origin data &mdash; that service is temporarily unavailable, so those sections are shown as unavailable rather than guessed.
