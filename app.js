@@ -230,6 +230,26 @@
     }
     window.addEventListener('scroll', handleNavScroll, { passive: true });
 
+    function setMobileInert(isInert) {
+        if (!mobileMenu) return;
+        if (isInert) {
+            mobileMenu.setAttribute('inert', '');
+        } else {
+            mobileMenu.removeAttribute('inert');
+        }
+        // Fallback for browsers without `inert` support: pull focusable
+        // children out of the tab order directly so they can't be
+        // keyboard-focused while the panel is visually hidden.
+        mobileMenu.querySelectorAll('a, button').forEach(function (el) {
+            if (isInert) {
+                el.setAttribute('tabindex', '-1');
+            } else {
+                el.removeAttribute('tabindex');
+            }
+        });
+    }
+    setMobileInert(true);
+
     if (burger) burger.addEventListener('click', function () {
         mobileOpen = !mobileOpen;
         burger.setAttribute('aria-expanded', String(mobileOpen));
@@ -237,27 +257,38 @@
         if (mobileOpen) {
             mobileMenu.classList.add('active');
             mobileMenu.setAttribute('aria-hidden', 'false');
+            setMobileInert(false);
             document.body.style.overflow = 'hidden';
         } else {
             mobileMenu.classList.remove('active');
             mobileMenu.setAttribute('aria-hidden', 'true');
+            setMobileInert(true);
             document.body.style.overflow = '';
         }
     });
 
     function closeMobile() {
+        var wasOpen = mobileOpen;
         mobileOpen = false;
         if (burger) burger.setAttribute('aria-expanded', 'false');
         if (burger) burger.classList.remove('open');
         if (mobileMenu) {
             mobileMenu.classList.remove('active');
             mobileMenu.setAttribute('aria-hidden', 'true');
+            setMobileInert(true);
         }
         document.body.style.overflow = '';
+        if (wasOpen && burger) burger.focus();
     }
 
     mobileMenu.querySelectorAll('a').forEach(function (link) {
         link.addEventListener('click', closeMobile);
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && mobileOpen) {
+            closeMobile();
+        }
     });
 
     function updateActiveNav(route) {
@@ -427,7 +458,18 @@
         if (typeof Splitting !== 'undefined') {
             var splitTargets = app.querySelectorAll('.split-heading');
             splitTargets.forEach(function (el) {
+                // Splitting.js rewrites the heading's text into many
+                // per-character <span> wrappers for the stagger animation.
+                // Screen readers can read those inconsistently (dropped
+                // spacing / char-by-char announcement), so give the
+                // heading an explicit accessible name up front and hide
+                // the generated markup from assistive tech.
+                var fullText = el.textContent.trim();
                 Splitting({ target: el, by: 'chars' });
+                el.setAttribute('aria-label', fullText);
+                el.querySelectorAll('.word, .char').forEach(function (part) {
+                    part.setAttribute('aria-hidden', 'true');
+                });
             });
         }
 
