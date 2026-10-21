@@ -1662,33 +1662,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
   margin-bottom: 2rem;
 }
-/* Footer large wordmark (kprverse footer_kpr pattern) */
-.footer__wordmark {
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0 0;
-  overflow: hidden;
-}
-.footer__wordmark-svg {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  color: var(--purple);
-}
-[data-theme="light"] .footer__wordmark-svg {
-  opacity: 0.6;
-}
-@media (max-width: 640px) {
-  .footer__wordmark-svg { max-width: 320px; }
-}
-
-.footer__sigil-row {
-  display: flex;
-  justify-content: center;
-  padding: 2.5rem 0;
-  border-bottom: 1px solid var(--border);
-  opacity: 0.6;
-}
 .footer__bottom {
   display: flex;
   justify-content: space-between;
