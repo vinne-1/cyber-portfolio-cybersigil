@@ -81,6 +81,7 @@
        ---------------------------------------------------------- */
     var pendingTimers = [];
     var pendingRAFs = [];
+    var pendingIntervals = [];
     var activeFetchController = null;
 
     function trackTimeout(fn, delay) {
@@ -89,11 +90,19 @@
         return id;
     }
 
+    function trackInterval(fn, delay) {
+        var id = setInterval(fn, delay);
+        pendingIntervals.push(id);
+        return id;
+    }
+
     function cleanupPending() {
         pendingTimers.forEach(clearTimeout);
         pendingTimers = [];
         pendingRAFs.forEach(cancelAnimationFrame);
         pendingRAFs = [];
+        pendingIntervals.forEach(clearInterval);
+        pendingIntervals = [];
         if (activeFetchController) {
             activeFetchController.abort();
             activeFetchController = null;
@@ -439,6 +448,7 @@
             setupThreatFeed();
             setupThreatLandscapePage();
             setupWebsiteHealthTool();
+            setupDevice3DShowcase();
             setupCardHoverGlow();
             return;
         }
@@ -536,6 +546,7 @@
         setupThreatFeed();
         setupThreatLandscapePage();
         setupWebsiteHealthTool();
+        setupDevice3DShowcase();
         setupMatrixCanvas();
         setupParticleNetwork();
         setupParallaxElements();
@@ -1417,6 +1428,63 @@
                 });
             });
         });
+    }
+
+    /* ----------------------------------------------------------
+       3D PHONE SHOWCASE (Products — TithiPath)
+       Single phone, cycling screenshots, idle 3D tilt + mouse parallax.
+       ---------------------------------------------------------- */
+    function setupDevice3DShowcase() {
+        var stage = app.querySelector('#tithipath3d');
+        if (!stage || stage.dataset.device3dBound) return;
+        stage.dataset.device3dBound = '1';
+
+        var phone = stage.querySelector('.device-3d-phone');
+        var slides = Array.prototype.slice.call(stage.querySelectorAll('.device-3d-slide'));
+        var dotsWrap = app.querySelector('#tithipath3dDots');
+        var dots = dotsWrap ? Array.prototype.slice.call(dotsWrap.querySelectorAll('.device-3d-dot')) : [];
+        if (!phone || !slides.length) return;
+
+        var active = 0;
+        var cycleTimer = null;
+
+        function showSlide(index) {
+            active = (index + slides.length) % slides.length;
+            slides.forEach(function (s, i) { s.classList.toggle('is-active', i === active); });
+            dots.forEach(function (d, i) { d.classList.toggle('is-active', i === active); });
+        }
+
+        function startCycle() {
+            stopCycle();
+            cycleTimer = trackInterval(function () { showSlide(active + 1); }, 3200);
+        }
+        function stopCycle() {
+            if (cycleTimer) { clearInterval(cycleTimer); cycleTimer = null; }
+        }
+
+        dots.forEach(function (dot, i) {
+            dot.addEventListener('click', function () {
+                showSlide(i);
+                startCycle(); // restart the timer so a manual pick isn't immediately overridden
+            });
+        });
+
+        startCycle();
+
+        // Mouse-parallax tilt (desktop + reduced-motion-safe: skip entirely if the user prefers less motion)
+        if (!prefersReducedMotion) {
+            stage.addEventListener('mousemove', function (e) {
+                var rect = stage.getBoundingClientRect();
+                var px = (e.clientX - rect.left) / rect.width - 0.5;  // -0.5..0.5
+                var py = (e.clientY - rect.top) / rect.height - 0.5;
+                phone.style.setProperty('--tilt-y', (px * 48) + 'deg');
+                phone.style.setProperty('--tilt-x', (py * -22) + 'deg');
+            });
+            stage.addEventListener('mouseleave', function () {
+                phone.style.removeProperty('--tilt-y');
+                phone.style.removeProperty('--tilt-x');
+            });
+        }
     }
 
     /* ----------------------------------------------------------

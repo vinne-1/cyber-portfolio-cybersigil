@@ -771,24 +771,21 @@
                 </div>
 
                 <div class="device-showcase anim-item">
-                    <div class="device-frame">
-                        <div class="device-frame__notch" aria-hidden="true"></div>
-                        <div class="device-frame__screen">
-                            <img src="resources/products/tithipath/screenshot-calendar.png" alt="TithiPath calendar screen" loading="lazy">
+                    <div class="device-3d-stage" id="tithipath3d">
+                        <div class="device-3d-phone">
+                            <div class="device-3d-notch" aria-hidden="true"></div>
+                            <div class="device-3d-screen">
+                                <img class="device-3d-slide is-active" src="resources/products/tithipath/screenshot-calendar.png" alt="TithiPath calendar screen" loading="lazy">
+                                <img class="device-3d-slide" src="resources/products/tithipath/screenshot-rashifal.png" alt="TithiPath Rashifal screen" loading="lazy">
+                                <img class="device-3d-slide" src="resources/products/tithipath/screenshot-timings.png" alt="TithiPath timings and events screen" loading="lazy">
+                            </div>
                         </div>
                     </div>
-                    <div class="device-frame">
-                        <div class="device-frame__notch" aria-hidden="true"></div>
-                        <div class="device-frame__screen">
-                            <img src="resources/products/tithipath/screenshot-rashifal.png" alt="TithiPath Rashifal screen" loading="lazy">
-                        </div>
-                    </div>
-                    <div class="device-frame">
-                        <div class="device-frame__notch" aria-hidden="true"></div>
-                        <div class="device-frame__screen">
-                            <img src="resources/products/tithipath/screenshot-timings.png" alt="TithiPath timings and events screen" loading="lazy">
-                        </div>
-                    </div>
+                </div>
+                <div class="device-3d-dots" id="tithipath3dDots">
+                    <button type="button" class="device-3d-dot is-active" aria-label="Show calendar screen"></button>
+                    <button type="button" class="device-3d-dot" aria-label="Show Rashifal screen"></button>
+                    <button type="button" class="device-3d-dot" aria-label="Show timings screen"></button>
                 </div>
 
                 <div class="anim-item" style="margin-top:1rem; padding:2rem; border:1px solid var(--border); background:var(--surface); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.5rem;">
