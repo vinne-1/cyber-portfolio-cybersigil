@@ -1051,7 +1051,9 @@
                     <label for="whrUrlInput" class="sr-only">Website URL to check</label>
                     <input type="text" id="whrUrlInput" placeholder="example.com" autocomplete="off" spellcheck="false"
                         style="flex:1; min-width:240px; padding:1rem 1.25rem; background:var(--surface); border:1px solid var(--border); color:var(--white); font-family:var(--font-body); font-size:0.95rem;">
-                    <button type="button" id="whrRunBtn" class="btn btn--primary">Run Report</button>
+                    <div class="magnetic-wrap">
+                        <button type="button" id="whrRunBtn" class="btn btn--primary">Run Report</button>
+                    </div>
                 </div>
                 <p id="whrHint" style="font-size:0.75rem; color:var(--gray-300); margin-bottom:1rem;">Takes up to ~30 seconds &mdash; the performance score runs a real Lighthouse audit via Google PageSpeed Insights. Security headers, SSL/TLS, SEO, and crawlability are fetched through a small backend that re-validates every redirect target server-side (SSRF-hardened) before reading it.</p>
                 <p id="whrInlineError" role="alert" style="display:none; margin-bottom:1.5rem; padding:0.85rem 1.1rem; border:1px solid var(--crimson); background:rgba(165,13,34,0.08); font-size:0.85rem; color:var(--crimson-text);"></p>
@@ -1155,7 +1157,9 @@
                     </div>
 
                     <div style="text-align:center; margin-top:2.5rem;">
-                        <button type="button" id="whrRunAnotherBtn" class="btn btn--outline">Check Another Site</button>
+                        <div class="magnetic-wrap">
+                            <button type="button" id="whrRunAnotherBtn" class="btn btn--outline">Check Another Site</button>
+                        </div>
                     </div>
 
                 </div>
