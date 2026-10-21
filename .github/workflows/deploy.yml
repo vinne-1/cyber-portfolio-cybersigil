@@ -31,6 +31,11 @@ jobs:
           cp -r resources _site/ 2>/dev/null || true
           cp -r data _site/ 2>/dev/null || true
           cp CNAME _site/ 2>/dev/null || true
+      - name: Cache-bust style.css / app.js
+        run: |
+          SHA_SHORT="${GITHUB_SHA:0:8}"
+          sed -i -E "s/(style\.css|app\.js)(\?v=[A-Za-z0-9]+)?\"/\1?v=${SHA_SHORT}\"/g" _site/index.html
+          grep -o 'style\.css?v=[A-Za-z0-9]*\|app\.js?v=[A-Za-z0-9]*' _site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
