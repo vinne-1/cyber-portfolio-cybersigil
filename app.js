@@ -10,36 +10,6 @@
 (function () {
 
     /* ----------------------------------------------------------
-       THEME TOGGLE (load before anything visual)
-       ---------------------------------------------------------- */
-    var savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-    }
-
-    var themeToggle = document.getElementById('themeToggle');
-    function updateThemeToggleLabel() {
-        if (!themeToggle) return;
-        var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-        var next = current === 'light' ? 'dark' : 'light';
-        themeToggle.setAttribute('aria-label', 'Switch to ' + next + ' theme');
-        themeToggle.setAttribute('aria-pressed', String(current === 'light'));
-    }
-    updateThemeToggleLabel();
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function () {
-            var current = document.documentElement.getAttribute('data-theme');
-            var next = current === 'light' ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', next);
-            localStorage.setItem('theme', next);
-            // Update meta theme-color
-            var meta = document.querySelector('meta[name="theme-color"]');
-            if (meta) meta.setAttribute('content', next === 'light' ? '#ffffff' : '#0a0a0a');
-            updateThemeToggleLabel();
-        });
-    }
-
-    /* ----------------------------------------------------------
        REDUCED MOTION CHECK
        ---------------------------------------------------------- */
     var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1201,8 +1171,7 @@
         var chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
 
         function draw() {
-            var isLight = document.documentElement.getAttribute('data-theme') === 'light';
-            ctx.fillStyle = isLight ? 'rgba(245, 245, 245, 0.06)' : 'rgba(10, 10, 10, 0.06)';
+            ctx.fillStyle = 'rgba(10, 10, 10, 0.06)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             ctx.font = fontSize + 'px monospace';
@@ -1213,9 +1182,9 @@
                 var y = drops[j] * fontSize;
 
                 if (Math.random() > 0.97) {
-                    ctx.fillStyle = isLight ? 'rgba(181, 13, 39, 0.7)' : 'rgba(200, 16, 46, 0.9)';
+                    ctx.fillStyle = 'rgba(200, 16, 46, 0.9)';
                 } else {
-                    ctx.fillStyle = isLight ? 'rgba(181, 13, 39, 0.08)' : 'rgba(200, 16, 46, 0.15)';
+                    ctx.fillStyle = 'rgba(200, 16, 46, 0.15)';
                 }
 
                 ctx.fillText(char, x, y);
@@ -1258,7 +1227,6 @@
         var particles = [];
         var PARTICLE_COUNT = 40;
         var CONNECTION_DIST = 120;
-        var isLight = document.documentElement.getAttribute('data-theme') === 'light';
 
         function resize() {
             canvas.width = parent.offsetWidth;
@@ -1283,11 +1251,10 @@
         }
 
         function draw() {
-            isLight = document.documentElement.getAttribute('data-theme') === 'light';
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            var nodeColor = isLight ? 'rgba(181, 13, 39, 0.5)' : 'rgba(200, 16, 46, 0.6)';
-            var lineColor = isLight ? 'rgba(181, 13, 39, 0.08)' : 'rgba(200, 16, 46, 0.12)';
+            var nodeColor = 'rgba(200, 16, 46, 0.6)';
+            var lineColor = 'rgba(200, 16, 46, 0.12)';
 
             for (var i = 0; i < particles.length; i++) {
                 var p = particles[i];
