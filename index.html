@@ -632,8 +632,19 @@
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 500px), 1fr)); gap:2px;">
                     <!-- Web & API VAPT -->
                     <div class="project-card anim-item">
-                        <div class="project-card__image">
-                            <img class="project-card__image-art" src="resources/work/web-api-vapt.png" alt="" loading="lazy" aria-hidden="true">
+                        <div class="project-card__image vapt-anim" aria-hidden="true">
+                            <div class="vapt-anim__scan"></div>
+                            <div class="vapt-anim__tools">
+                                <span class="tool-chip"><span class="tool-chip__dot"></span>Burp Suite</span>
+                                <span class="tool-chip"><span class="tool-chip__dot"></span>Nessus</span>
+                            </div>
+                            <div class="vapt-anim__trace">
+                                <span class="vapt-anim__line vapt-anim__line--1">GET /api/v1/users/42/profile</span>
+                                <span class="vapt-anim__line vapt-anim__line--2">200 OK · 142ms</span>
+                                <span class="vapt-anim__line vapt-anim__line--3 vapt-anim__line--flag">IDOR candidate flagged · CVSS 7.1</span>
+                            </div>
+                            <div class="vapt-anim__marker vapt-anim__marker--1"></div>
+                            <div class="vapt-anim__marker vapt-anim__marker--2"></div>
                             <div class="project-card__image-overlay"></div>
                         </div>
                         <div class="project-card__body">
@@ -650,8 +661,20 @@
 
                     <!-- SIEM Detection Engineering -->
                     <div class="project-card anim-item">
-                        <div class="project-card__image">
-                            <img class="project-card__image-art" src="resources/work/siem-detection.png" alt="" loading="lazy" aria-hidden="true">
+                        <div class="project-card__image siem-anim" aria-hidden="true">
+                            <svg class="siem-anim__links" viewBox="0 0 100 100" preserveAspectRatio="none">
+                                <line x1="18" y1="22" x2="50" y2="50" class="siem-anim__link siem-anim__link--1"/>
+                                <line x1="82" y1="22" x2="50" y2="50" class="siem-anim__link siem-anim__link--2"/>
+                                <line x1="50" y1="84" x2="50" y2="50" class="siem-anim__link siem-anim__link--3"/>
+                            </svg>
+                            <div class="siem-anim__hub">
+                                <span class="siem-anim__hub-ring"></span>
+                                <span class="siem-anim__hub-ring siem-anim__hub-ring--2"></span>
+                                <span class="siem-anim__hub-label">SIEM</span>
+                            </div>
+                            <div class="siem-anim__node siem-anim__node--1">AWS</div>
+                            <div class="siem-anim__node siem-anim__node--2">Google Workspace</div>
+                            <div class="siem-anim__node siem-anim__node--3">MITRE ATT&amp;CK</div>
                             <div class="project-card__image-overlay"></div>
                         </div>
                         <div class="project-card__body">

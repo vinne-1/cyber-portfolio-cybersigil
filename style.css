@@ -1198,29 +1198,167 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   overflow: hidden;
 }
-/* AI-generated card art — slow ambient Ken Burns drift, intensifies on hover */
-.project-card__image-art {
+/* Tool chip (Burp Suite / Nessus) */
+.tool-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+  color: #e8e3dc;
+  background: rgba(10, 8, 14, 0.5);
+  border: 1px solid rgba(107, 76, 154, 0.25);
+  padding: 4px 10px;
+  border-radius: 2px;
+}
+.tool-chip__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--crimson);
+  box-shadow: 0 0 6px rgba(165, 13, 34, 0.8);
+  animation: toolChipPulse 2.2s ease-in-out infinite;
+}
+.tool-chip:nth-child(2) .tool-chip__dot { animation-delay: 1.1s; background: var(--purple); box-shadow: 0 0 6px rgba(107, 76, 154, 0.8); }
+@keyframes toolChipPulse {
+  0%, 100% { opacity: 0.4; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+/* VAPT card animation — scan sweep, tool chips, live trace lines, finding markers */
+.vapt-anim { padding: 18px; display: flex; flex-direction: column; justify-content: space-between; }
+.vapt-anim__scan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(165, 13, 34, 0.9), transparent);
+  box-shadow: 0 0 12px 2px rgba(165, 13, 34, 0.6);
+  animation: vaptScanSweep 4.5s linear infinite;
+}
+@keyframes vaptScanSweep {
+  0% { top: 0%; opacity: 0; }
+  5% { opacity: 1; }
+  95% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
+.vapt-anim__tools { position: relative; z-index: 2; display: flex; gap: 8px; }
+.vapt-anim__trace {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: #e8e3dc;
+  opacity: 0.8;
+}
+.vapt-anim__line {
+  opacity: 0;
+  animation: vaptLineReveal 6s ease-in-out infinite;
+}
+.vapt-anim__line--1 { animation-delay: 0s; }
+.vapt-anim__line--2 { animation-delay: 0.5s; }
+.vapt-anim__line--flag { color: var(--crimson); animation-delay: 1s; }
+@keyframes vaptLineReveal {
+  0%, 4% { opacity: 0; transform: translateX(-4px); }
+  12%, 80% { opacity: 0.9; transform: translateX(0); }
+  90%, 100% { opacity: 0; }
+}
+.vapt-anim__marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid var(--crimson);
+  border-radius: 50%;
+  z-index: 2;
+  animation: vaptMarkerPulse 3s ease-in-out infinite;
+}
+.vapt-anim__marker::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border: 1px solid rgba(165, 13, 34, 0.35);
+  border-radius: 50%;
+}
+.vapt-anim__marker--1 { top: 30%; right: 16%; animation-delay: 1.8s; }
+.vapt-anim__marker--2 { top: 62%; right: 34%; animation-delay: 3.3s; border-color: var(--purple); }
+.vapt-anim__marker--2::before { border-color: rgba(107, 76, 154, 0.35); }
+@keyframes vaptMarkerPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+.project-card:hover .vapt-anim__scan { animation-duration: 2.4s; }
+
+/* SIEM card animation — hub, source-platform nodes, flowing correlation links */
+.siem-anim { display: flex; align-items: center; justify-content: center; }
+.siem-anim__links { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
+.siem-anim__link {
+  stroke: var(--purple);
+  stroke-width: 0.3;
+  stroke-dasharray: 2 2.5;
+  opacity: 0.55;
+  animation: siemLinkFlow 1.8s linear infinite;
+}
+.siem-anim__link--2 { stroke: var(--crimson); animation-duration: 2.1s; }
+.siem-anim__link--3 { animation-duration: 1.5s; }
+@keyframes siemLinkFlow {
+  to { stroke-dashoffset: -9; }
+}
+.siem-anim__hub {
+  position: relative;
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, rgba(165, 13, 34, 0.18), transparent 70%);
+}
+.siem-anim__hub-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
+  color: var(--crimson);
+}
+.siem-anim__hub-ring {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.55;
-  transform: scale(1.08);
-  filter: saturate(1.1) contrast(1.05);
-  transition: opacity 0.6s ease, transform 0.6s ease, filter 0.6s ease;
-  animation: cardArtDrift 20s ease-in-out infinite alternate;
+  border: 1px solid rgba(165, 13, 34, 0.4);
+  border-radius: 50%;
+  animation: siemHubPulse 3s ease-out infinite;
 }
-.project-card:hover .project-card__image-art {
-  opacity: 0.85;
-  filter: saturate(1.25) contrast(1.1);
+.siem-anim__hub-ring--2 { animation-delay: 1.5s; border-color: rgba(107, 76, 154, 0.4); }
+@keyframes siemHubPulse {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(2.1); opacity: 0; }
 }
-@keyframes cardArtDrift {
-  from { transform: scale(1.08) translate(0, 0); }
-  to { transform: scale(1.16) translate(-2%, -2%); }
+.siem-anim__node {
+  position: absolute;
+  z-index: 2;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+  color: #e8e3dc;
+  background: rgba(10, 8, 14, 0.55);
+  border: 1px solid rgba(107, 76, 154, 0.3);
+  padding: 3px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  animation: toolChipPulse 2.6s ease-in-out infinite;
 }
+.siem-anim__node--1 { top: 22%; left: 18%; animation-delay: 0.2s; }
+.siem-anim__node--2 { top: 22%; left: 82%; animation-delay: 0.9s; }
+.siem-anim__node--3 { top: 84%; left: 50%; animation-delay: 1.6s; }
 @media (prefers-reduced-motion: reduce) {
-  .project-card__image-art { animation: none; }
+  .vapt-anim__scan, .vapt-anim__line, .vapt-anim__marker,
+  .siem-anim__link, .siem-anim__hub-ring, .siem-anim__node,
+  .tool-chip__dot { animation: none; opacity: 0.85; }
+  .vapt-anim__line { opacity: 0.9; }
 }
 .project-card__image-overlay {
   position: absolute;
