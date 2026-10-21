@@ -706,7 +706,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .nav__link:hover { color: var(--white); opacity: 0.85; }
 .nav__link:focus-visible {
-  outline: 1px solid var(--crimson);
+  outline: 1px solid var(--crimson-text);
   outline-offset: 4px;
   opacity: 1;
 }
@@ -1077,7 +1077,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   overflow: hidden;
 }
 .btn:focus-visible {
-  outline: 2px solid var(--crimson);
+  outline: 2px solid var(--crimson-text);
   outline-offset: 2px;
 }
 .btn--primary {
@@ -3072,7 +3072,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   caret-color: var(--crimson);
 }
 .terminal__input:focus-visible {
-  outline: 1px solid var(--crimson);
+  outline: 1px solid var(--crimson-text);
   outline-offset: 2px;
 }
 .terminal__input::placeholder {
@@ -3575,7 +3575,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 *:focus-visible {
-  outline: 2px solid var(--crimson);
+  outline: 2px solid var(--crimson-text);
   outline-offset: 2px;
 }
 
