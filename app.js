@@ -1130,7 +1130,7 @@
                 if (handler) {
                     appendOutput(output, handler());
                 } else {
-                    appendOutput(output, 'Command not found: ' + cmd + '. Type "help" for available commands.');
+                    appendOutput(output, 'Command not found: ' + cmd + '. Type "help" for available commands.', true);
                 }
 
                 output.scrollTop = output.scrollHeight;
@@ -1157,8 +1157,11 @@
         container.appendChild(line);
     }
 
-    function appendOutput(container, text) {
+    function appendOutput(container, text, isError) {
         var line = document.createElement('div');
+        if (isError) {
+            line.style.color = 'var(--crimson-text)';
+        }
         line.textContent = text;
         container.appendChild(line);
     }
@@ -2040,12 +2043,30 @@
 
         var statusEl = app.querySelector('#whrStatus');
         var statusTextEl = app.querySelector('#whrStatusText');
+        var inlineErrorEl = app.querySelector('#whrInlineError');
         var resultsEl = app.querySelector('#whrResults');
         var emptyStateEl = app.querySelector('#whrEmptyState');
         var runAnotherBtn = app.querySelector('#whrRunAnotherBtn');
+        var BACKEND_TIMEOUT_MS = 38000; // backend is a free-tier host; cold starts can exceed the ~30s copy
+
+        function clearInlineError() {
+            if (inlineErrorEl) { inlineErrorEl.style.display = 'none'; inlineErrorEl.textContent = ''; }
+            input.removeAttribute('aria-invalid');
+            input.removeAttribute('aria-describedby');
+        }
+
+        function showInlineError(message) {
+            if (inlineErrorEl) {
+                inlineErrorEl.textContent = message;
+                inlineErrorEl.style.display = '';
+            }
+            input.setAttribute('aria-invalid', 'true');
+            input.setAttribute('aria-describedby', 'whrInlineError');
+        }
 
         function runReport() {
             var rawUrl = input.value.trim();
+            clearInlineError();
             if (!rawUrl) { input.focus(); return; }
 
             var normalizedUrl;
@@ -2054,8 +2075,8 @@
                 normalizedUrl = /^https?:\/\//i.test(rawUrl) ? rawUrl : 'https://' + rawUrl;
                 hostname = new URL(normalizedUrl).hostname;
             } catch (e) {
-                if (statusEl) statusEl.style.display = '';
-                if (statusTextEl) statusTextEl.textContent = 'That doesn’t look like a valid URL.';
+                showInlineError('That doesn’t look like a valid URL.');
+                input.focus();
                 return;
             }
 
@@ -2067,17 +2088,24 @@
             if (statusTextEl) statusTextEl.textContent = 'Running Performance and DNS checks in your browser, and Security/SEO/SSL via the backend — this can take up to 30 seconds…';
 
             // DNS and Performance always run client-side (no backend needed).
-            // Everything else needs the backend and degrades gracefully if it's down.
+            // Everything else needs the backend and degrades gracefully if it's down —
+            // including a hang: the free-tier backend can cold-start slower than the
+            // "up to 30 seconds" copy promises, so this is given its own timeout rather
+            // than letting the button spin forever.
+            var backendController = new AbortController();
+            var backendTimeout = setTimeout(function () { backendController.abort(); }, BACKEND_TIMEOUT_MS);
+
             Promise.allSettled([
                 whrFetchDnsClientSide(hostname),
                 whrFetchPerformanceClientSide(normalizedUrl),
-                fetch(HEALTH_REPORT_API + '?url=' + encodeURIComponent(rawUrl)).then(function (res) {
+                fetch(HEALTH_REPORT_API + '?url=' + encodeURIComponent(rawUrl), { signal: backendController.signal }).then(function (res) {
                     return res.json().then(function (data) {
                         if (!res.ok) throw new Error(data.message || 'Backend request failed.');
                         return data;
                     });
                 })
             ]).then(function (results) {
+                clearTimeout(backendTimeout);
                 var dnsResult = results[0].status === 'fulfilled' ? results[0].value : null;
                 var perfResult = results[1].status === 'fulfilled' ? results[1].value : { ok: false, error: 'Client-side performance check failed.' };
                 var backendResult = results[2].status === 'fulfilled' ? results[2].value : null;
