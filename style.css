@@ -2931,6 +2931,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-top: 1.75rem;
 }
 .device-3d-dot {
+  position: relative;
   width: 7px;
   height: 7px;
   border-radius: 50%;
@@ -2939,6 +2940,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 0;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease;
+}
+.device-3d-dot::before {
+  /* Invisible tap/click hit-area — keeps the visible dot at 7px while
+     giving touch input a ~38px target (WCAG 2.5.5-style target size). */
+  content: '';
+  position: absolute;
+  inset: -15.5px;
 }
 .device-3d-dot.is-active {
   background: var(--crimson);
