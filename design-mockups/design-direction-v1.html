@@ -1,0 +1,397 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Cybersigil Design Direction</title>
+<meta name="description" content="A synthesis of the gold-medallion, Oxaley row-list, and ornament-vs-legibility rules into one reviewable direction, mocked up across three real page types.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black:        #000000;
+    --charcoal:     #05020a;
+    --surface:      #0a0510;
+    --surface-2:    #0f0a18;
+    --surface-3:    #14101e;
+    --border:       #1a1228;
+    --border-light: #261a38;
+
+    --crimson:      #a50d22;
+    --crimson-dark: #6b0014;
+    --purple:       #6b4c9a;
+    --purple-deep:  #2d1b4e;
+    --gold:         #c9a227;
+    --gold-dim:     #8a6f1e;
+
+    --white:        #e0dcd4;
+    --gray-100:     #b8b0a8;
+    --gray-200:     #8a8280;
+    --gray-300:     #807686;
+
+    --font-display: 'Cinzel', 'Georgia', serif;
+    --font-body:    'Inter', -apple-system, sans-serif;
+    --font-serif:   'DM Serif Display', 'Georgia', serif;
+    --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--charcoal);
+    color: var(--white);
+    font-family: var(--font-body);
+    padding-block: 0;
+  }
+  img { max-width: 100%; }
+
+  /* ---------- intro / rules strip ---------- */
+  .intro {
+    padding: clamp(32px,6vw,72px) clamp(20px,4vw,48px) clamp(24px,4vw,48px);
+    max-width: 920px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--border);
+  }
+  .intro__kicker {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--crimson);
+  }
+  .intro__bar {
+    width: 46px; height: 4px; margin: 14px 0 20px;
+    background: linear-gradient(90deg, var(--crimson), var(--purple));
+    clip-path: polygon(0% 40%, 85% 0%, 100% 60%, 15% 100%);
+  }
+  .intro h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    font-size: clamp(1.9rem, 4.2vw, 3rem);
+    line-height: 1.05;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--gray-100);
+    max-width: 62ch;
+    margin: 0 0 14px;
+  }
+  .rules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px,1fr));
+    gap: 1px;
+    background: var(--border);
+    margin-top: 28px;
+    border: 1px solid var(--border);
+  }
+  .rules__item {
+    background: var(--surface);
+    padding: 18px 20px;
+  }
+  .rules__item .n {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    opacity: 0.85;
+  }
+  .rules__item h3 {
+    margin: 8px 0 6px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--white);
+  }
+  .rules__item p {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.55;
+    color: var(--gray-300);
+  }
+
+  /* ---------- section shell ---------- */
+  .proposal-section { padding: clamp(40px,6vw,64px) clamp(20px,4vw,48px); max-width: 1180px; margin: 0 auto; }
+  .proposal-section__head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+  .proposal-section__tag {
+    font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--gray-300); border: 1px solid var(--border-light); padding: 5px 12px; border-radius: 2px;
+  }
+  .proposal-section__title { font-family: var(--font-serif); font-weight: 700; font-size: clamp(1.3rem,2.4vw,1.8rem); margin: 0; color: var(--white); }
+
+  /* fake browser chrome frame around each mock */
+  .frame {
+    border: 1px solid var(--border-light);
+    background: var(--surface);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 30px 70px -24px rgba(0,0,0,0.7);
+  }
+  .frame__bar {
+    display: flex; align-items: center; gap: 7px;
+    padding: 10px 14px; background: var(--surface-2); border-bottom: 1px solid var(--border);
+  }
+  .frame__dot { width: 8px; height: 8px; border-radius: 50%; }
+  .frame__url {
+    margin-left: 10px; font-family: var(--font-mono); font-size: 0.68rem; color: var(--gray-300);
+    background: var(--surface); border: 1px solid var(--border); border-radius: 3px; padding: 3px 10px;
+  }
+
+  /* annotation callouts */
+  .callout {
+    position: absolute;
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--gold); color: var(--charcoal);
+    font-family: var(--font-mono); font-weight: 700; font-size: 0.72rem;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 0 0 3px rgba(5,2,10,0.85), 0 0 14px rgba(201,162,39,0.7);
+  }
+  .legend { margin-top: 18px; display: grid; gap: 10px; }
+  .legend__row { display: grid; grid-template-columns: 26px 1fr; gap: 12px; align-items: start; }
+  .legend__num {
+    width: 22px; height: 22px; border-radius: 50%; background: var(--gold); color: var(--charcoal);
+    font-family: var(--font-mono); font-weight: 700; font-size: 0.72rem; display: flex; align-items: center; justify-content: center;
+  }
+  .legend__row p { margin: 0; font-size: 0.86rem; line-height: 1.55; color: var(--gray-200); }
+  .legend__row strong { color: var(--white); }
+
+  /* ===================== MOCK 1 — HOME HERO ===================== */
+  .m-hero { position: relative; min-height: 560px; overflow: hidden; background: var(--surface); }
+  .m-hero__grid {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 90% at 55% 50%, rgba(45,27,78,0.35) 0%, rgba(15,5,30,0.2) 40%, transparent 100%),
+      radial-gradient(ellipse 50% 60% at 60% 45%, rgba(107,76,154,0.08) 0%, transparent 70%);
+  }
+  .m-hero__medallion {
+    position: absolute; top: 50%; right: -2%; transform: translateY(-50%);
+    width: min(56%, 620px); height: auto; z-index: 1;
+    -webkit-mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
+    mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
+  }
+  .m-hero__content { position: relative; z-index: 2; padding: clamp(40px,7vw,88px) clamp(24px,5vw,64px); }
+  .m-hero__status {
+    display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-mono);
+    font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--crimson);
+    padding: 7px 14px; border: 1px solid rgba(165,13,34,0.25); background: rgba(165,13,34,0.06); margin-bottom: 22px;
+  }
+  .m-hero__status::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--crimson); margin-right: 2px; }
+  .m-hero h1 {
+    font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em;
+    font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 0.92; margin: 0 0 18px; color: var(--white);
+  }
+  .m-hero__sub { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.3rem,2.4vw,1.9rem); color: var(--purple); margin: 0 0 22px; }
+  .m-hero p.body { max-width: 480px; font-size: 1rem; line-height: 1.7; color: var(--gray-100); margin: 0 0 30px; }
+  .m-hero__cta { display: inline-flex; gap: 12px; align-items: center; font-family: var(--font-body); font-weight: 600; font-size: 0.76rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 13px 28px; background: linear-gradient(135deg,var(--crimson),var(--purple)); color: var(--white); }
+
+  /* ===================== MOCK 2 — CAPABILITIES ROWS ===================== */
+  .m-cap { position: relative; padding: clamp(32px,5vw,56px) clamp(24px,5vw,56px); background: var(--surface); overflow: hidden; }
+  .m-cap__corner {
+    position: absolute; top: -18%; right: -10%; width: 340px; height: 340px; opacity: 0.8;
+    -webkit-mask-image: radial-gradient(circle at 60% 40%, #000 30%, transparent 72%);
+    mask-image: radial-gradient(circle at 60% 40%, #000 30%, transparent 72%);
+  }
+  .m-cap__eyebrow { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--crimson); position: relative; z-index: 2; }
+  .m-cap__bar { width: 40px; height: 3px; margin: 12px 0 16px; background: linear-gradient(90deg,var(--crimson),var(--purple)); clip-path: polygon(0% 40%, 85% 0%, 100% 60%, 15% 100%); position: relative; z-index: 2; }
+  .m-cap h2 { font-family: var(--font-serif); font-weight: 700; font-size: clamp(1.6rem,3vw,2.3rem); margin: 0 0 30px; color: var(--white); position: relative; z-index: 2; max-width: 20ch; }
+  .m-rows { position: relative; z-index: 2; border-top: 1px solid var(--border); }
+  .m-row { display: grid; grid-template-columns: 50px minmax(180px,1fr) minmax(220px,1.3fr); gap: clamp(1rem,3vw,2.4rem); align-items: center; padding: 20px 14px; border-bottom: 1px solid var(--border); }
+  .m-row:nth-child(even) { background: var(--surface-2); }
+  .m-row__i { font-family: var(--font-mono); font-weight: 600; font-size: 1.2rem; color: var(--crimson); opacity: 0.55; }
+  .m-row__t { font-weight: 600; font-size: 0.98rem; color: var(--white); }
+  .m-row__d { font-size: 0.84rem; line-height: 1.6; color: var(--gray-300); }
+
+  /* ===================== MOCK 3 — WORK CARD GRID ===================== */
+  .m-work { padding: clamp(32px,5vw,56px) clamp(24px,5vw,56px); background: var(--surface); }
+  .m-work__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 2px; background: var(--border); margin-top: 26px; }
+  .m-card { position: relative; background: var(--surface); padding: 22px; clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%); }
+  .m-card::after {
+    content: ''; position: absolute; right: 0; bottom: 0; width: 26px; height: 26px;
+    background: linear-gradient(135deg, transparent 50%, var(--crimson) 50%); opacity: 0.55;
+  }
+  .m-card__n { font-family: var(--font-mono); font-size: 0.68rem; color: var(--crimson); margin-bottom: 10px; letter-spacing: 0.05em; }
+  .m-card h3 { margin: 0 0 8px; font-size: 1rem; color: var(--white); }
+  .m-card p { margin: 0; font-size: 0.82rem; line-height: 1.6; color: var(--gray-300); }
+
+  .warn-strip {
+    margin-top: 18px; padding: 14px 18px; border: 1px solid rgba(165,13,34,0.3); background: rgba(165,13,34,0.06);
+    font-size: 0.84rem; line-height: 1.6; color: var(--gray-100); position: relative; z-index: 2;
+  }
+  .warn-strip strong { color: var(--gold); }
+
+  footer.q {
+    max-width: 920px; margin: 0 auto; padding: clamp(32px,5vw,56px) clamp(20px,4vw,48px) 72px;
+    border-top: 1px solid var(--border);
+  }
+  footer.q h2 { font-family: var(--font-serif); font-size: 1.4rem; margin: 0 0 16px; color: var(--white); }
+  footer.q ol { margin: 0; padding-left: 20px; color: var(--gray-100); font-size: 0.92rem; line-height: 1.8; }
+
+  @media (max-width: 760px) {
+    .m-row { grid-template-columns: 34px 1fr; grid-template-areas: "i t" ". d"; row-gap: 6px; }
+    .m-row__i { grid-area: i; } .m-row__t { grid-area: t; } .m-row__d { grid-area: d; }
+    .m-hero__medallion { width: 80%; opacity: 0.45; }
+  }
+</style>
+
+<div class="intro">
+  <span class="intro__kicker">Design Direction · Proposal for Review</span>
+  <div class="intro__bar"></div>
+  <h1>One ornament language for the whole site — iconic, but never louder than the data.</h1>
+  <p>This resolves everything pulled in so far — the Oxaley row-list layout, the Klimt gold-medallion ornament already live on the Home hero, and the texture/color-grading cues from Puparia and Mononoke — into one rule set, then shows it across three real page types: the hero, a content page (Capabilities), and a card grid (Work).</p>
+  <p>Nothing here touches the live site. It's a proposal to react to — mark up what to keep, cut, or push further.</p>
+
+  <div class="rules">
+    <div class="rules__item">
+      <span class="n">RULE 01</span>
+      <h3>Ornament fades, never sits under text</h3>
+      <p>Every gold motif is a radial-gradient mask, same technique as the live hero medallion — full opacity at its own center, transparent well before it reaches a text column. No exceptions.</p>
+    </div>
+    <div class="rules__item">
+      <span class="n">RULE 02</span>
+      <h3>One iconic mark per page, not wallpaper</h3>
+      <p>A page gets exactly one medallion-family ornament — large on the hero, a smaller corner version on content pages. It's a page's identity mark, not a repeating pattern.</p>
+    </div>
+    <div class="rules__item">
+      <span class="n">RULE 03</span>
+      <h3>Cards stay clean</h3>
+      <p>Work/Products/Capability cards keep the existing blade-cut corner only. No gold texture inside a card — that's where the actual information lives.</p>
+    </div>
+    <div class="rules__item">
+      <span class="n">RULE 04</span>
+      <h3>Rows over boxes for lists</h3>
+      <p>Oxaley's alternating-row pattern (already shipped on Work → Approach) is the default for anything list-shaped: capabilities, credentials, process steps.</p>
+    </div>
+    <div class="rules__item">
+      <span class="n">RULE 05</span>
+      <h3>Puparia/Mononoke = texture, not art</h3>
+      <p>No character illustration, ever — both are copyrighted anime properties. What transfers: flat bold color blocking, mechanical/gear linework, muted base + one vivid accent.</p>
+    </div>
+    <div class="rules__item">
+      <span class="n">RULE 06</span>
+      <h3>Dark only</h3>
+      <p>Single committed palette. No light-theme variants to design or maintain.</p>
+    </div>
+  </div>
+</div>
+
+<section class="proposal-section">
+  <div class="proposal-section__head">
+    <h2 class="proposal-section__title">Mock 1 — Home hero</h2>
+    <span class="proposal-section__tag">Already live, shown here refined</span>
+  </div>
+  <div class="frame" style="position:relative;">
+    <div class="frame__bar"><span class="frame__dot" style="background:#ff5f57"></span><span class="frame__dot" style="background:#febc2e"></span><span class="frame__dot" style="background:#28c840"></span><span class="frame__url">vineedoesstuff.in</span></div>
+    <div class="m-hero">
+      <div class="m-hero__grid"></div>
+      <svg class="m-hero__medallion" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <radialGradient id="g1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#c9a227" stop-opacity="0.9"/><stop offset="100%" stop-color="#8a6f1e" stop-opacity="0.25"/></radialGradient>
+          <pattern id="p1" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(12)">
+            <rect x="4" y="4" width="9" height="9" fill="#c9a227" opacity="0.5"/><circle cx="24" cy="24" r="3" fill="#c9a227" opacity="0.4"/><rect x="19" y="6" width="5" height="5" fill="#a50d22" opacity="0.35"/><rect x="2" y="20" width="4" height="4" fill="#6b4c9a" opacity="0.3"/>
+          </pattern>
+          <clipPath id="c1"><circle cx="300" cy="300" r="180"/></clipPath>
+        </defs>
+        <polygon points="150,80 560,40 520,420 260,560" fill="#6b0014" opacity="0.14"/>
+        <polygon points="420,520 580,560 560,180" fill="#2d1b4e" opacity="0.18"/>
+        <g stroke="url(#g1)" fill="none" stroke-width="2" opacity="0.5">
+          <circle cx="300" cy="300" r="223"/>
+          <line x1="514" y1="300" x2="533" y2="300"/><line x1="506.7" y1="355.4" x2="525.1" y2="360.3"/><line x1="485.3" y1="407" x2="501.8" y2="416.5"/><line x1="451.3" y1="451.3" x2="464.8" y2="464.8"/><line x1="407" y1="485.3" x2="416.5" y2="501.8"/><line x1="355.4" y1="506.7" x2="360.3" y2="525.1"/><line x1="300" y1="514" x2="300" y2="533"/><line x1="244.6" y1="506.7" x2="239.7" y2="525.1"/><line x1="193" y1="485.3" x2="183.5" y2="501.8"/><line x1="148.7" y1="451.3" x2="135.2" y2="464.8"/><line x1="114.7" y1="407" x2="98.2" y2="416.5"/><line x1="93.3" y1="355.4" x2="74.9" y2="360.3"/><line x1="86" y1="300" x2="67" y2="300"/><line x1="93.3" y1="244.6" x2="74.9" y2="239.7"/><line x1="114.7" y1="193" x2="98.2" y2="183.5"/><line x1="148.7" y1="148.7" x2="135.2" y2="135.2"/><line x1="193" y1="114.7" x2="183.5" y2="98.2"/><line x1="244.6" y1="93.3" x2="239.7" y2="74.9"/><line x1="300" y1="86" x2="300" y2="67"/><line x1="355.4" y1="93.3" x2="360.3" y2="74.9"/><line x1="407" y1="114.7" x2="416.5" y2="98.2"/><line x1="451.3" y1="148.7" x2="464.8" y2="135.2"/><line x1="485.3" y1="193" x2="501.8" y2="183.5"/><line x1="506.7" y1="244.6" x2="525.1" y2="239.7"/>
+        </g>
+        <circle cx="300" cy="300" r="180" fill="url(#p1)" clip-path="url(#c1)" opacity="0.55"/>
+        <circle cx="300" cy="300" r="180" fill="none" stroke="#c9a227" stroke-width="1.5" opacity="0.45"/>
+        <circle cx="300" cy="300" r="60" fill="none" stroke="#c9a227" stroke-width="1" opacity="0.55"/>
+        <circle cx="300" cy="300" r="40" fill="none" stroke="#a50d22" stroke-width="1" opacity="0.5"/>
+        <circle cx="300" cy="300" r="14" fill="#a50d22" opacity="0.35"/>
+      </svg>
+      <div class="m-hero__content">
+        <span class="m-hero__status">Open to New Opportunities</span>
+        <h1>Vineet Vishesh.</h1>
+        <p class="m-hero__sub">Offensive Security Specialist</p>
+        <p class="body">Penetration tester and red team analyst with 3+ years of combined experience across web, API, network, and cloud environments — finding what your defenses missed.</p>
+        <span class="m-hero__cta">View Selected Work →</span>
+      </div>
+    </div>
+    <div class="callout" style="top: 58px; right: 210px;">1</div>
+    <div class="callout" style="top: 160px; left: 44px;">2</div>
+  </div>
+  <div class="legend">
+    <div class="legend__row"><span class="legend__num">1</span><p><strong>The medallion is the page's one iconic mark.</strong> Gold mosaic ring (Klimt), gear teeth (Puparia), flat crimson/purple slabs underneath (Mononoke boldness) — masked to fully transparent well before it reaches the headline column.</p></div>
+    <div class="legend__row"><span class="legend__num">2</span><p><strong>Text sits on near-flat dark</strong> — no ornament opacity above ~0.08 ever crosses into the text zone. This is the non-negotiable from "the data shouldn't get lost."</p></div>
+  </div>
+</section>
+
+<section class="proposal-section">
+  <div class="proposal-section__head">
+    <h2 class="proposal-section__title">Mock 2 — Capabilities (content/list page)</h2>
+    <span class="proposal-section__tag">Proposed — cards → rows + small corner mark</span>
+  </div>
+  <div class="frame" style="position:relative;">
+    <div class="frame__bar"><span class="frame__dot" style="background:#ff5f57"></span><span class="frame__dot" style="background:#febc2e"></span><span class="frame__dot" style="background:#28c840"></span><span class="frame__url">vineedoesstuff.in/capabilities</span></div>
+    <div class="m-cap">
+      <svg class="m-cap__corner" viewBox="0 0 340 340" aria-hidden="true">
+        <defs><radialGradient id="g2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#c9a227" stop-opacity="0.85"/><stop offset="100%" stop-color="#8a6f1e" stop-opacity="0.2"/></radialGradient>
+        <pattern id="p2" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(10)"><rect x="3" y="3" width="6" height="6" fill="#c9a227" opacity="0.45"/><circle cx="17" cy="17" r="2" fill="#c9a227" opacity="0.35"/></pattern>
+        <clipPath id="c2"><circle cx="190" cy="150" r="90"/></clipPath></defs>
+        <g stroke="url(#g2)" fill="none" stroke-width="1.5" opacity="0.5"><circle cx="190" cy="150" r="112"/></g>
+        <circle cx="190" cy="150" r="90" fill="url(#p2)" clip-path="url(#c2)" opacity="0.5"/>
+        <circle cx="190" cy="150" r="90" fill="none" stroke="#c9a227" stroke-width="1" opacity="0.4"/>
+        <circle cx="190" cy="150" r="30" fill="none" stroke="#a50d22" stroke-width="1" opacity="0.45"/>
+      </svg>
+      <span class="m-cap__eyebrow">Capabilities</span>
+      <div class="m-cap__bar"></div>
+      <h2>Controlled offensive operations.</h2>
+      <div class="m-rows">
+        <div class="m-row"><span class="m-row__i">01</span><span class="m-row__t">Red Team Operations</span><span class="m-row__d">Full-scope adversary simulation from initial access through lateral movement and objective completion.</span></div>
+        <div class="m-row"><span class="m-row__i">02</span><span class="m-row__t">Web App Assessments</span><span class="m-row__d">Deep-dive manual testing for OWASP Top 10 and beyond — SQLi, XSS, SSRF, auth bypass, business-logic abuse.</span></div>
+        <div class="m-row"><span class="m-row__i">03</span><span class="m-row__t">Mobile Security Testing</span><span class="m-row__d">Android and iOS assessments: static/dynamic analysis, runtime instrumentation, certificate-pinning bypass.</span></div>
+        <div class="m-row"><span class="m-row__i">04</span><span class="m-row__t">OSINT &amp; Reconnaissance</span><span class="m-row__d">Intelligence gathering pipelines, attack-surface mapping, data exposure and credential intelligence.</span></div>
+      </div>
+      <div class="callout" style="top: 26px; right: 70px;">3</div>
+      <div class="callout" style="top: 360px; left: 10px;">4</div>
+    </div>
+  </div>
+  <div class="legend">
+    <div class="legend__row"><span class="legend__num">3</span><p><strong>Corner mark, not a hero mark.</strong> Same gold-mosaic language at roughly a third of the hero's size, tucked top-right, masked tighter — it reads as "this is a Vineet Vishesh page" without competing with the heading.</p></div>
+    <div class="legend__row"><span class="legend__num">4</span><p><strong>Cards became rows.</strong> The five existing Capability cards hold identical copy, now laid out with Oxaley's index/title/description row pattern — denser and faster to scan than the boxed grid.</p></div>
+  </div>
+</section>
+
+<section class="proposal-section">
+  <div class="proposal-section__head">
+    <h2 class="proposal-section__title">Mock 3 — Work (card grid)</h2>
+    <span class="proposal-section__tag">Deliberately restrained — the control case</span>
+  </div>
+  <div class="frame" style="position:relative;">
+    <div class="frame__bar"><span class="frame__dot" style="background:#ff5f57"></span><span class="frame__dot" style="background:#febc2e"></span><span class="frame__dot" style="background:#28c840"></span><span class="frame__url">vineedoesstuff.in/work</span></div>
+    <div class="m-work">
+      <span class="m-cap__eyebrow">Selected Work</span>
+      <div class="m-cap__bar"></div>
+      <h2 style="font-family:var(--font-serif); font-weight:700; font-size:clamp(1.6rem,3vw,2.3rem); margin:0; max-width:20ch;">Curated offensive engagements.</h2>
+      <div class="m-work__grid">
+        <div class="m-card">
+          <div class="m-card__n">01 — Application Security</div>
+          <h3>Web &amp; API VAPT</h3>
+          <p>Web application and API-focused penetration testing using Burp Suite, Nessus, and manual validation.</p>
+        </div>
+        <div class="m-card">
+          <div class="m-card__n">02 — Detection Engineering</div>
+          <h3>SIEM Detection Engineering</h3>
+          <p>Engineering and tuning SIEM detections for AWS and Google Workspace telemetry.</p>
+        </div>
+      </div>
+      <div class="warn-strip"><strong>No medallion here, on purpose.</strong> Cards already carry real content density (tool badges, live animation, findings text) — stacking gold ornament on top of that is exactly the "data gets lost" failure mode. The existing blade-cut corner spark is the only accent a card gets.</div>
+    </div>
+  </div>
+</section>
+
+<footer class="q">
+  <h2>Three things worth your call before this goes further</h2>
+  <ol>
+    <li><strong>Does the Capabilities corner-mark size read right,</strong> or is it fighting the heading — bigger, smaller, or drop it and keep gold to Home only?</li>
+    <li><strong>Which other pages get a corner mark</strong> under Rule 02 — About and Products, or just Home + Capabilities for now?</li>
+    <li><strong>Row-list conversion scope</strong> — Capabilities only, or also Credentials and the Threat Landscape digest?</li>
+  </ol>
+</footer>
+
+</body></html>
