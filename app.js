@@ -2270,7 +2270,7 @@
         }
 
         var progress = 0;
-        var duration = 2000;
+        var duration = 1200;
         var tick = 30;
         var step = (100 / (duration / tick));
 
@@ -2284,8 +2284,8 @@
                 clearInterval(interval);
                 setTimeout(function () {
                     screen.classList.add('is-hidden');
-                    setTimeout(callback, 600);
-                }, 300);
+                    setTimeout(callback, 400);
+                }, 200);
             }
         }, tick);
     }
