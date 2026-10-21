@@ -3,13 +3,6 @@
    Vineet Vishesh · Offensive Security
    ============================================================ */
 
-/* --- @property for animatable CSS custom properties --- */
-@property --border-angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
-
 /* --- Custom Properties — Cybersigilism + Goth --- */
 :root {
   --black:       #000000;
@@ -1171,26 +1164,23 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: border-color 0.5s ease, box-shadow 0.5s ease;
   clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
 }
+/* Corner spark — a small fixed accent at the card's blade-cut corner,
+   not a full-surface wash, so it can never reduce text contrast. */
 .project-card::after {
   content: '';
   position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  z-index: -1;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, transparent 50%, var(--crimson) 50%);
   opacity: 0;
   transition: opacity 0.4s ease;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px rgba(165, 13, 34, 0.5));
 }
-@supports (background: conic-gradient(from 0deg, red, blue)) {
-  .project-card::after {
-    background: conic-gradient(from var(--border-angle, 0deg), transparent 35%, var(--purple) 45%, var(--crimson) 55%, transparent 65%);
-  }
-  .project-card:hover::after {
-    opacity: 1;
-    animation: rotateBorder 3s linear infinite;
-  }
-  @keyframes rotateBorder {
-    to { --border-angle: 360deg; }
-  }
+.project-card:hover::after {
+  opacity: 0.6;
 }
 .project-card:hover {
   will-change: transform;
@@ -1781,9 +1771,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero__status-dot {
     animation: none;
   }
-  .project-card:hover::after {
-    animation: none;
-  }
   .cursor-ring {
     transition-duration: 0.01ms !important;
   }
@@ -2082,10 +2069,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   width: clamp(260px, 38vw, 420px);
   transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s ease;
-}
-/* Suppress conic-gradient border on scattered cards — too prominent */
-.scattered-grid .project-card::after {
-  display: none;
 }
 .scattered-grid .project-card:nth-child(1) {
   top: 0;
