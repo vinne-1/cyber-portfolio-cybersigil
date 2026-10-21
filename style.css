@@ -1212,15 +1212,18 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 4px 10px;
   border-radius: 2px;
 }
-.tool-chip__dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--crimson);
-  box-shadow: 0 0 6px rgba(165, 13, 34, 0.8);
-  animation: toolChipPulse 2.2s ease-in-out infinite;
+.tool-chip__logo {
+  height: 13px;
+  width: auto;
+  display: block;
+  animation: toolChipLogoPulse 2.4s ease-in-out infinite;
 }
-.tool-chip:nth-child(2) .tool-chip__dot { animation-delay: 1.1s; background: var(--purple); box-shadow: 0 0 6px rgba(107, 76, 154, 0.8); }
+.tool-chip__logo--invert { filter: invert(1); }
+.tool-chip:nth-child(2) .tool-chip__logo { animation-delay: 1.1s; }
+@keyframes toolChipLogoPulse {
+  0%, 100% { opacity: 0.65; }
+  50% { opacity: 1; }
+}
 @keyframes toolChipPulse {
   0%, 100% { opacity: 0.4; transform: scale(0.85); }
   50% { opacity: 1; transform: scale(1.15); }
@@ -1339,6 +1342,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .siem-anim__node {
   position: absolute;
   z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-family: var(--font-mono);
   font-size: 0.62rem;
   letter-spacing: 0.02em;
@@ -1351,6 +1357,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: translate(-50%, -50%);
   animation: toolChipPulse 2.6s ease-in-out infinite;
 }
+.siem-anim__node-logo {
+  height: 11px;
+  width: auto;
+  display: block;
+}
+.siem-anim__node-logo--invert { filter: invert(1); }
+.siem-anim__node-logo--mitre { height: 10px; }
+.siem-anim__node--3 { padding: 4px 8px; }
 .siem-anim__node--1 { top: 22%; left: 18%; animation-delay: 0.2s; }
 .siem-anim__node--2 { top: 22%; left: 82%; animation-delay: 0.9s; }
 .siem-anim__node--3 { top: 84%; left: 50%; animation-delay: 1.6s; }
