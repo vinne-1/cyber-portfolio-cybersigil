@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TithiPath 3D Phone Showcase — Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body { background: var(--charcoal); }
+  .tmpl-banner {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: var(--gray-200);
+    background: var(--surface-2);
+    border-bottom: 2px solid var(--gold, #c9a227);
+    padding: 18px clamp(20px, 4vw, 48px);
+  }
+  .tmpl-banner strong { color: var(--white); }
+  .tmpl-banner .status { color: #4caf50; font-weight: 600; }
+  .tmpl-banner a { color: var(--crimson); }
+  .tmpl-note { color: var(--gray-300); font-size: 0.74rem; margin-top: 6px; }
+  /* The live site fades body in via JS adding a .ready class (FOUC prevention).
+     This standalone template page never runs app.js, so force it visible. */
+  body { opacity: 1 !important; }
+</style>
+</head>
+<body>
+<div class="tmpl-banner">
+  <div><strong>TithiPath 3D Phone Showcase</strong> — <span class="status">✓ Shipped & Verified</span></div>
+  <div>Checked: desktop & mobile, true extruded box (6 real faces, not a flat tilted card), Android punch-hole camera + gesture bar, verified via computed-style transform inspection, 0 console errors</div>
+  <div>Shipped in commit <code>7dc3632</code> · live at <a href="https://vineedoesstuff.in/products">vineedoesstuff.in/products</a></div>
+  <div class="tmpl-note">CSS idle rotation plays standalone here. The auto-cycling slideshow and mouse-tilt parallax are driven by setupDevice3DShowcase() in app.js (SPA-router-bound) — not loaded on this standalone template page, so only the idle animation is visible here, not the interactive tilt.</div>
+</div>
+<main id="app"><section class="section" style="padding-top:60px;"><div class="container">
+                <div class="device-showcase anim-item">
+                    <div class="device-3d-stage" id="tithipath3d">
+                        <div class="device-3d-phone">
+                            <div class="device-3d-face device-3d-face--back"></div>
+                            <div class="device-3d-face device-3d-face--top"></div>
+                            <div class="device-3d-face device-3d-face--bottom"></div>
+                            <div class="device-3d-face device-3d-face--left">
+                                <span class="device-3d-btn device-3d-btn--sim"></span>
+                            </div>
+                            <div class="device-3d-face device-3d-face--right">
+                                <span class="device-3d-btn device-3d-btn--vol-up"></span>
+                                <span class="device-3d-btn device-3d-btn--vol-down"></span>
+                                <span class="device-3d-btn device-3d-btn--power"></span>
+                            </div>
+                            <div class="device-3d-face device-3d-face--front">
+                                <div class="device-3d-camera" aria-hidden="true"></div>
+                                <div class="device-3d-screen">
+                                    <img class="device-3d-slide is-active" src="../resources/products/tithipath/screenshot-calendar.png" alt="TithiPath calendar screen" loading="lazy">
+                                    <img class="device-3d-slide" src="../resources/products/tithipath/screenshot-rashifal.png" alt="TithiPath Rashifal screen" loading="lazy">
+                                    <img class="device-3d-slide" src="../resources/products/tithipath/screenshot-timings.png" alt="TithiPath timings and events screen" loading="lazy">
+                                    <div class="device-3d-gesture-bar" aria-hidden="true"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="device-3d-shadow" aria-hidden="true"></div>
+                    </div>
+                </div>
+                <div class="device-3d-dots" id="tithipath3dDots">
+                    <button type="button" class="device-3d-dot is-active" aria-label="Show calendar screen"></button>
+
+</div></section></main>
+</body>
+</html>

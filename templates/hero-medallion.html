@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero + Gold Medallion — Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body { background: var(--charcoal); }
+  .tmpl-banner {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: var(--gray-200);
+    background: var(--surface-2);
+    border-bottom: 2px solid var(--gold, #c9a227);
+    padding: 18px clamp(20px, 4vw, 48px);
+  }
+  .tmpl-banner strong { color: var(--white); }
+  .tmpl-banner .status { color: #4caf50; font-weight: 600; }
+  .tmpl-banner a { color: var(--crimson); }
+  .tmpl-note { color: var(--gray-300); font-size: 0.74rem; margin-top: 6px; }
+  /* The live site fades body in via JS adding a .ready class (FOUC prevention).
+     This standalone template page never runs app.js, so force it visible. */
+  body { opacity: 1 !important; }
+</style>
+</head>
+<body>
+<div class="tmpl-banner">
+  <div><strong>Hero + Gold Medallion</strong> — <span class="status">✓ Shipped & Verified</span></div>
+  <div>Checked: desktop 1600×1000 & mobile 390×844, headline/body contrast unaffected by ornament, 0 console errors, reduced-motion fallback present</div>
+  <div>Shipped in commit <code>7de04df</code> · live at <a href="https://vineedoesstuff.in/">vineedoesstuff.in/</a></div>
+  <div class="tmpl-note">Pure CSS/SVG — no JS dependency. The gold medallion mask technique here is the template for Rule 01 (ornament fades before it reaches text).</div>
+</div>
+<main id="app">
+        <section class="hero section" data-page="home">
+            <canvas class="hero__matrix" id="heroMatrix" aria-hidden="true"></canvas>
+            <canvas class="hero__particles" id="heroParticles" aria-hidden="true"></canvas>
+            <!-- Cyber sigil watermark — intricate thorn composition -->
+            <svg class="hero__sigil sigil sigil--pulse" aria-hidden="true" viewBox="0 0 300 700" xmlns="http://www.w3.org/2000/svg">
+                <!-- Central spine -->
+                <line x1="150" y1="5" x2="150" y2="695" stroke-width="0.3" opacity="0.3"/>
+                <!-- Top crown diamond -->
+                <path d="M150,10 L172,50 L150,90 L128,50 Z" stroke-width="0.7"/>
+                <path d="M150,30 L160,50 L150,70 L140,50 Z" stroke-width="0.4" opacity="0.5"/>
+                <!-- Upper thorn cluster (tier 1 — wide) -->
+                <path d="M150,90 C138,125 95,155 55,170 C85,162 130,142 150,158" stroke-width="1"/>
+                <path d="M150,90 C162,125 205,155 245,170 C215,162 170,142 150,158" stroke-width="1"/>
+                <path d="M55,170 C48,172 42,176 38,180" stroke-width="0.6"/>
+                <path d="M245,170 C252,172 258,176 262,180" stroke-width="0.6"/>
+                <circle cx="38" cy="180" r="2.5" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
+                <circle cx="262" cy="180" r="2.5" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
+                <!-- Secondary thorns (tier 1 — inner) -->
+                <path d="M150,110 C143,130 115,145 90,152" stroke-width="0.5" opacity="0.6"/>
+                <path d="M150,110 C157,130 185,145 210,152" stroke-width="0.5" opacity="0.6"/>
+                <!-- Middle diamond frame -->
+                <path d="M150,180 L170,220 L150,260 L130,220 Z" stroke-width="0.6"/>
+                <!-- Grand thorn pair (tier 2 — widest) -->
+                <path d="M150,260 C132,310 70,355 20,385 C60,372 125,340 150,365" stroke-width="1.2"/>
+                <path d="M150,260 C168,310 230,355 280,385 C240,372 175,340 150,365" stroke-width="1.2"/>
+                <path d="M20,385 C12,390 6,396 3,402" stroke-width="0.7"/>
+                <path d="M280,385 C288,390 294,396 297,402" stroke-width="0.7"/>
+                <circle cx="3" cy="402" r="3" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
+                <circle cx="297" cy="402" r="3" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
+                <!-- Mid thorns (tier 2 — inner) -->
+                <path d="M150,290 C140,320 100,345 65,358" stroke-width="0.6" opacity="0.5"/>
+                <path d="M150,290 C160,320 200,345 235,358" stroke-width="0.6" opacity="0.5"/>
+                <circle cx="65" cy="358" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/>
+                <circle cx="235" cy="358" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/>
+                <!-- Waist constriction lines -->
+                <line x1="138" y1="390" x2="138" y2="420" stroke-width="0.4" opacity="0.4"/>
+                <line x1="162" y1="390" x2="162" y2="420" stroke-width="0.4" opacity="0.4"/>
+                <!-- Lower thorn pair (tier 3 — inverted) -->
+                <path d="M150,430 C142,460 110,480 80,492 C105,486 140,470 150,480" stroke-width="0.9"/>
+                <path d="M150,430 C158,460 190,480 220,492 C195,486 160,470 150,480" stroke-width="0.9"/>
+                <circle cx="80" cy="492" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <circle cx="220" cy="492" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <!-- Lower diamond -->
+                <path d="M150,510 L165,540 L150,570 L135,540 Z" stroke-width="0.6"/>
+                <!-- Bottom thorn tendrils -->
+                <path d="M150,570 C145,590 130,600 115,608" stroke-width="0.5" opacity="0.5"/>
+                <path d="M150,570 C155,590 170,600 185,608" stroke-width="0.5" opacity="0.5"/>
+                <!-- Terminal spike -->
+                <path d="M150,620 L158,655 L150,690 L142,655 Z" stroke-width="0.5"/>
+                <circle cx="150" cy="690" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <!-- Cross accents -->
+                <line x1="130" y1="180" x2="170" y2="180" stroke-width="0.3" opacity="0.3"/>
+                <line x1="125" y1="365" x2="175" y2="365" stroke-width="0.3" opacity="0.3"/>
+                <line x1="135" y1="510" x2="165" y2="510" stroke-width="0.3" opacity="0.3"/>
+            </svg>
+            <svg class="hero__slash" aria-hidden="true" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <defs>
+                    <linearGradient id="slashFade1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--crimson)" stop-opacity="0"/>
+                        <stop offset="45%" stop-color="var(--crimson)" stop-opacity="0.9"/>
+                        <stop offset="60%" stop-color="var(--bone, #d4cfc4)" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="var(--crimson)" stop-opacity="0"/>
+                    </linearGradient>
+                    <linearGradient id="slashFade2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="var(--crimson)" stop-opacity="0"/>
+                        <stop offset="50%" stop-color="var(--crimson)" stop-opacity="0.5"/>
+                        <stop offset="100%" stop-color="var(--crimson)" stop-opacity="0"/>
+                    </linearGradient>
+                </defs>
+                <!-- Primary zanpakuto-style energy strike -->
+                <path d="M 90,900 C 250,740 310,680 360,600 C 430,490 470,420 550,260 C 600,160 630,100 690,-50"
+                      stroke="url(#slashFade1)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <!-- Trailing secondary strokes (speed-line echo) -->
+                <path d="M 60,840 C 230,690 300,630 350,550 C 420,440 460,380 540,210"
+                      stroke="url(#slashFade2)" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+                <path d="M 120,900 C 280,740 340,680 390,600 C 460,490 500,420 580,260"
+                      stroke="url(#slashFade2)" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
+                <!-- Ember particles along the strike -->
+                <circle cx="360" cy="600" r="2.2" fill="var(--crimson)" opacity="0.7"/>
+                <circle cx="440" cy="470" r="1.4" fill="var(--crimson)" opacity="0.6"/>
+                <circle cx="520" cy="320" r="1.8" fill="var(--crimson)" opacity="0.5"/>
+                <circle cx="570" cy="200" r="1" fill="var(--crimson)" opacity="0.6"/>
+            </svg>
+            <div class="hero__bg-grid"></div>
+            <div class="hero__crimson-wash"></div>
+            <!-- Ornamental medallion — gold mosaic + gear ring + aperture iris
+                 (Klimt gold-leaf iconography, Puparia mechanical detailing,
+                 ukiyo-e flat-block boldness), confined to the decorative
+                 corner and faded away from the text column. -->
+            <svg class="hero__medallion" viewBox="0 0 600 600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="medallionGold" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="var(--gold)" stop-opacity="0.9"/>
+                        <stop offset="100%" stop-color="var(--gold-dim)" stop-opacity="0.25"/>
+                    </radialGradient>
+                    <pattern id="mosaicTiles" width="34" height="34" patternUnits="userSpaceOnUse" patternTransform="rotate(12)">
+                        <rect x="4" y="4" width="9" height="9" fill="var(--gold)" opacity="0.5"/>
+                        <circle cx="24" cy="24" r="3" fill="var(--gold)" opacity="0.4"/>
+                        <rect x="19" y="6" width="5" height="5" fill="var(--crimson)" opacity="0.35"/>
+                        <rect x="2" y="20" width="4" height="4" fill="var(--purple)" opacity="0.3"/>
+                    </pattern>
+                    <clipPath id="medallionClip"><circle cx="300" cy="300" r="180"/></clipPath>
+                </defs>
+
+                <!-- flat bold block, Mononoke-style asymmetric graphic slab -->
+                <polygon points="150,80 560,40 520,420 260,560" fill="var(--crimson-dark)" opacity="0.14"/>
+                <polygon points="420,520 580,560 560,180" fill="var(--purple-deep)" opacity="0.18"/>
+
+                <!-- gear ring -->
+                <g stroke="url(#medallionGold)" fill="none" stroke-width="2" opacity="0.5">
+                    <circle cx="300" cy="300" r="223"/>
+                    <line x1="514.0" y1="300.0" x2="533.0" y2="300.0"/><line x1="506.7" y1="355.4" x2="525.1" y2="360.3"/><line x1="485.3" y1="407.0" x2="501.8" y2="416.5"/><line x1="451.3" y1="451.3" x2="464.8" y2="464.8"/><line x1="407.0" y1="485.3" x2="416.5" y2="501.8"/><line x1="355.4" y1="506.7" x2="360.3" y2="525.1"/><line x1="300.0" y1="514.0" x2="300.0" y2="533.0"/><line x1="244.6" y1="506.7" x2="239.7" y2="525.1"/><line x1="193.0" y1="485.3" x2="183.5" y2="501.8"/><line x1="148.7" y1="451.3" x2="135.2" y2="464.8"/><line x1="114.7" y1="407.0" x2="98.2" y2="416.5"/><line x1="93.3" y1="355.4" x2="74.9" y2="360.3"/><line x1="86.0" y1="300.0" x2="67.0" y2="300.0"/><line x1="93.3" y1="244.6" x2="74.9" y2="239.7"/><line x1="114.7" y1="193.0" x2="98.2" y2="183.5"/><line x1="148.7" y1="148.7" x2="135.2" y2="135.2"/><line x1="193.0" y1="114.7" x2="183.5" y2="98.2"/><line x1="244.6" y1="93.3" x2="239.7" y2="74.9"/><line x1="300.0" y1="86.0" x2="300.0" y2="67.0"/><line x1="355.4" y1="93.3" x2="360.3" y2="74.9"/><line x1="407.0" y1="114.7" x2="416.5" y2="98.2"/><line x1="451.3" y1="148.7" x2="464.8" y2="135.2"/><line x1="485.3" y1="193.0" x2="501.8" y2="183.5"/><line x1="506.7" y1="244.6" x2="525.1" y2="239.7"/>
+                </g>
+
+                <!-- gold mosaic medallion fill -->
+                <circle cx="300" cy="300" r="180" fill="url(#mosaicTiles)" clip-path="url(#medallionClip)" opacity="0.55"/>
+                <circle cx="300" cy="300" r="180" fill="none" stroke="var(--gold)" stroke-width="1.5" opacity="0.45"/>
+
+                <!-- central aperture / iris — detection motif -->
+                <circle cx="300" cy="300" r="60" fill="none" stroke="var(--gold)" stroke-width="1" opacity="0.55"/>
+                <circle cx="300" cy="300" r="40" fill="none" stroke="var(--crimson)" stroke-width="1" opacity="0.5"/>
+                <circle cx="300" cy="300" r="14" fill="var(--crimson)" opacity="0.35"/>
+                <g stroke="var(--gold)" stroke-width="1" opacity="0.5">
+                    <line x1="338.0" y1="300.0" x2="355.2" y2="317.9"/><line x1="335.1" y1="314.5" x2="344.1" y2="337.7"/><line x1="326.9" y1="326.9" x2="326.3" y2="351.7"/><line x1="314.5" y1="335.1" x2="304.6" y2="357.8"/><line x1="300.0" y1="338.0" x2="282.1" y2="355.2"/><line x1="285.5" y1="335.1" x2="262.3" y2="344.1"/><line x1="273.1" y1="326.9" x2="248.3" y2="326.3"/><line x1="264.9" y1="314.5" x2="242.2" y2="304.6"/><line x1="262.0" y1="300.0" x2="244.8" y2="282.1"/><line x1="264.9" y1="285.5" x2="255.9" y2="262.3"/><line x1="273.1" y1="273.1" x2="273.7" y2="248.3"/><line x1="285.5" y1="264.9" x2="295.4" y2="242.2"/><line x1="300.0" y1="262.0" x2="317.9" y2="244.8"/><line x1="314.5" y1="264.9" x2="337.7" y2="255.9"/><line x1="326.9" y1="273.1" x2="351.7" y2="273.7"/><line x1="335.1" y1="285.5" x2="357.8" y2="295.4"/>
+                </g>
+            </svg>
+            <div class="container" style="position:relative; z-index:2;">
+                <div class="hero__meta">
+                    <div class="hero__status">
+                        <span class="hero__status-dot"></span>
+                        Open to New Opportunities
+                    </div>
+                </div>
+                <h1 class="hero__headline t-display">
+                    <span class="line"><span class="line-inner">Vineet</span></span>
+                    <span class="line"><span class="line-inner">Vishesh<span style="color:var(--crimson)">.</span></span></span>
+                    <span class="line"><span class="line-inner hero__subtitle-line">Offensive Security Specialist</span></span>
+                </h1>
+                <p class="hero__sub">
+                    Penetration tester and red team analyst with 3+ years of combined experience across web, API, network, and cloud environments &mdash; finding what your defenses missed.
+                </p>
+                <div class="hero__cta-group">
+                    <div class="magnetic-wrap">
+                        <a href="/work" class="btn btn--primary" data-route>
+                            View Selected Work
+                            <svg aria-hidden="true" class="btn__arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                    <div class="magnetic-wrap">
+                        <a href="/contact" class="btn btn--outline" data-route>Start a Conversation</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span class="t-mono" style="writing-mode:vertical-rl; font-size:0.6rem; letter-spacing:0.15em; color:var(--gray-400);">SCROLL</span>
+                <div class="hero__scroll-line"></div>
+            </div>
+
+</main>
+</body>
+</html>

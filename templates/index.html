@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design Template Catalog — Vineet Vishesh Site</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body { opacity: 1 !important; padding: clamp(28px, 5vw, 56px); max-width: 980px; margin: 0 auto; }
+  h1 { font-family: var(--font-display); color: var(--white); font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 0.5rem; }
+  .sub { color: var(--gray-300); font-size: 0.92rem; line-height: 1.6; max-width: 70ch; margin-bottom: 2.5rem; }
+  .card {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold, #c9a227);
+    background: var(--surface-2);
+    margin-bottom: 1px;
+  }
+  .card__status { font-family: var(--font-mono); font-size: 0.68rem; color: #4caf50; font-weight: 600; letter-spacing: 0.05em; }
+  .card h2 { font-size: 1.05rem; margin: 0 0 0.4rem; color: var(--white); }
+  .card h2 a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--crimson); }
+  .card h2 a:hover { color: var(--crimson); }
+  .card p { margin: 0 0 0.5rem; font-size: 0.85rem; color: var(--gray-300); line-height: 1.6; }
+  .card .meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--gray-200); }
+  .card .meta code { background: var(--surface-3); padding: 1px 6px; border-radius: 2px; }
+  .proposals { margin-top: 3rem; }
+  .proposals h2 { font-family: var(--font-serif); color: var(--white); font-size: 1.2rem; }
+  .proposal-link { display: block; padding: 1rem 1.25rem; border: 1px dashed var(--border-light); color: var(--gray-200); text-decoration: none; margin-bottom: 0.5rem; font-size: 0.88rem; }
+  .proposal-link:hover { border-color: var(--purple); }
+  .proposal-link strong { color: var(--white); display: block; margin-bottom: 2px; }
+</style>
+</head>
+<body>
+  <h1>Design Template Catalog</h1>
+  <p class="sub">Decided, shipped, and verified page components — each a standalone, self-contained copy of exactly what's live on <a href="https://vineedoesstuff.in" style="color:var(--crimson)">vineedoesstuff.in</a>, kept here for design reference. Open any file directly in a browser; they load the real <code>style.css</code> via a relative path, so they never drift silently out of sync with a visual intent — only the literal markup is frozen at the commit noted on each.</p>
+
+  <div class="card">
+    <span class="card__status">✓ SHIPPED<br>&amp; VERIFIED</span>
+    <div>
+      <h2><a href="hero-medallion.html">Hero + Gold Medallion</a></h2>
+      <p>Klimt gold-mosaic medallion, Puparia-style gear ring, ukiyo-e flat color blocks — masked to fade before touching the headline column.</p>
+      <div class="meta">commit <code>7de04df</code> · route <code>/</code> · pure CSS/SVG, no JS dependency</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="card__status">✓ SHIPPED<br>&amp; VERIFIED</span>
+    <div>
+      <h2><a href="approach-rows.html">Approach List Rows</a></h2>
+      <p>Oxaley-inspired alternating-background row pattern (index / title / description) — the default for anything list-shaped going forward.</p>
+      <div class="meta">commit <code>6d8a7f9</code> · route <code>/work</code> · pure CSS, no JS dependency</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="card__status">✓ SHIPPED<br>&amp; VERIFIED</span>
+    <div>
+      <h2><a href="work-cards.html">Work Cards — VAPT / SIEM Animations</a></h2>
+      <p>CSS-animated tool-trace and correlation visuals naming the real tools (Burp Suite, Nessus, AWS, Google, MITRE ATT&amp;CK) with real downloaded vendor logos. No gold ornament — cards stay content-first.</p>
+      <div class="meta">commit <code>7901146</code> · route <code>/work</code> · pure CSS, no JS dependency</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="card__status">✓ SHIPPED<br>&amp; VERIFIED</span>
+    <div>
+      <h2><a href="device-3d-phone.html">TithiPath 3D Phone Showcase</a></h2>
+      <p>A true extruded CSS box (6 real faces) with an Android punch-hole camera and gesture bar, not a flat tilted screenshot.</p>
+      <div class="meta">commit <code>7dc3632</code> · route <code>/products</code> · idle rotation is CSS-only; auto-cycle + mouse-tilt need app.js (not loaded here)</div>
+    </div>
+  </div>
+
+  <div class="proposals">
+    <h2>Proposed — not yet decided</h2>
+    <a class="proposal-link" href="../design-mockups/design-direction-v1.html">
+      <strong>Design Direction v1 — full site-wide synthesis</strong>
+      The 6-rule ornament/layout direction (gold medallion scope, row-list rollout, Puparia/Mononoke-as-texture-only) applied to Home / Capabilities / Work. Open questions awaiting a decision — once resolved, promote the agreed pieces here as shipped templates.
+    </a>
+  </div>
+</body>
+</html>

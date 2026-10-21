@@ -717,6 +717,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform-origin: left;
 }
 
+/* Plane divider — visually separates the professional/resume links
+   (About, Work, Capabilities, Credentials) from the Products plane */
+.nav__plane-divider {
+  width: 1px;
+  align-self: stretch;
+  background: linear-gradient(180deg, transparent, var(--border-light) 20%, var(--border-light) 80%, transparent);
+  margin: 0 -0.25rem;
+}
+.nav__link--products .nav__link-short { color: var(--gold, #c9a227); }
+.nav__link--products::after { background: var(--gold, #c9a227); }
+.nav__link--products.active { color: var(--gold, #c9a227); }
+.nav__link--products:hover { color: var(--gold, #c9a227); }
+
 .nav__cta {
   font-size: 0.75rem;
   font-weight: 600;
@@ -814,6 +827,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--crimson);
   letter-spacing: 0.05em;
   text-shadow: 0 0 20px rgba(165, 13, 34, 0.3);
+}
+.nav__mobile-plane-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold, #c9a227);
+  opacity: 0.7;
+  margin-top: -0.5rem;
+}
+.nav__mobile-link--products:hover {
+  color: var(--gold, #c9a227);
+  text-shadow: 0 0 20px rgba(201, 162, 39, 0.3);
 }
 
 @media (max-width: 768px) {

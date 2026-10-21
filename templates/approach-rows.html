@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Approach List Rows (Oxaley-inspired) — Template</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<style>
+  body { background: var(--charcoal); }
+  .tmpl-banner {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    line-height: 1.7;
+    color: var(--gray-200);
+    background: var(--surface-2);
+    border-bottom: 2px solid var(--gold, #c9a227);
+    padding: 18px clamp(20px, 4vw, 48px);
+  }
+  .tmpl-banner strong { color: var(--white); }
+  .tmpl-banner .status { color: #4caf50; font-weight: 600; }
+  .tmpl-banner a { color: var(--crimson); }
+  .tmpl-note { color: var(--gray-300); font-size: 0.74rem; margin-top: 6px; }
+  /* The live site fades body in via JS adding a .ready class (FOUC prevention).
+     This standalone template page never runs app.js, so force it visible. */
+  body { opacity: 1 !important; }
+</style>
+</head>
+<body>
+<div class="tmpl-banner">
+  <div><strong>Approach List Rows (Oxaley-inspired)</strong> — <span class="status">✓ Shipped & Verified</span></div>
+  <div>Checked: desktop & mobile (2-col reflow), dark background banding verified, 0 console errors</div>
+  <div>Shipped in commit <code>6d8a7f9</code> · live at <a href="https://vineedoesstuff.in/work">vineedoesstuff.in/work</a></div>
+  <div class="tmpl-note">Pure CSS — no JS dependency. This is the default pattern (Rule 04) for anything list-shaped: capabilities, credentials, process steps.</div>
+</div>
+<main id="app"><section class="section" style="padding-top:60px;"><div class="container">
+
+                <div class="anim-item" style="margin-top:3rem; margin-bottom:3rem;">
+                    <span class="t-label">Approach</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h2 class="t-heading split-heading" style="margin-top:1.5rem;">How the work gets done.</h2>
+                </div>
+
+                <div class="approach-list">
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">01</span>
+                        <h3 class="approach-row__title">Manual Validation, Not Scanner Noise</h3>
+                        <p class="approach-row__text">Every finding is manually reproduced with Burp Suite, Nessus, and hands-on validation before it's reported — no raw scanner output passed through unchecked.</p>
+                    </div>
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">02</span>
+                        <h3 class="approach-row__title">Risk-Mapped, PoC-Backed Reporting</h3>
+                        <p class="approach-row__text">Findings are mapped to OWASP Top 10 / OWASP API Top 10 and CVSS, documented with clear PoC, affected endpoints, and request-response evidence — not severity guesses.</p>
+                    </div>
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">03</span>
+                        <h3 class="approach-row__title">Verified Closure, Not Just a Report</h3>
+                        <p class="approach-row__text">Every reported issue gets retest verification through closure, with false positives reduced in direct collaboration with DevOps/AppSec and risk explained in client walkthroughs.</p>
+                    </div>
+
+</div></section></main>
+</body>
+</html>
