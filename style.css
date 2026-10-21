@@ -618,6 +618,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   right: 0;
   z-index: 100;
   padding: 0 clamp(20px, 4vw, 48px);
+  background: linear-gradient(180deg, rgba(5, 2, 10, 0.7) 0%, rgba(5, 2, 10, 0.4) 70%, transparent 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
 
@@ -638,18 +641,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav__logo {
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 1.15rem;
+  font-weight: 800;
   color: var(--white);
   letter-spacing: -0.01em;
   display: flex;
   align-items: center;
   gap: 8px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 1px 2px rgba(0, 0, 0, 0.8);
 }
-.nav__logo span { color: var(--crimson); }
+.nav__logo span { color: var(--crimson); text-shadow: 0 0 12px rgba(165, 13, 34, 0.6); }
 .nav__logo-sigil {
   color: var(--purple);
-  opacity: 0.6;
+  opacity: 0.85;
   transition: opacity 0.3s ease, transform 0.5s var(--ease-out-expo);
 }
 .nav__logo:hover .nav__logo-sigil {
@@ -670,7 +674,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gray-300);
-  opacity: 0.5;
+  opacity: 0.78;
   transition: color 0.3s ease, opacity 0.3s ease;
   position: relative;
   display: flex;
