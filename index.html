@@ -1124,48 +1124,56 @@
             </svg>
             <div class="container">
 
-                <div class="anim-item" style="margin-bottom:4rem;">
+                <!-- Gold corner mark — page identity mark, masked away from the heading -->
+                <svg class="cap-corner-mark" viewBox="0 0 340 340" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialGradient id="capCornerGold" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="var(--gold, #c9a227)" stop-opacity="0.85"/>
+                            <stop offset="100%" stop-color="var(--gold-dim, #8a6f1e)" stop-opacity="0.2"/>
+                        </radialGradient>
+                        <pattern id="capCornerTiles" width="24" height="24" patternUnits="userSpaceOnUse" patternTransform="rotate(10)">
+                            <rect x="3" y="3" width="6" height="6" fill="var(--gold, #c9a227)" opacity="0.45"/>
+                            <circle cx="17" cy="17" r="2" fill="var(--gold, #c9a227)" opacity="0.35"/>
+                        </pattern>
+                        <clipPath id="capCornerClip"><circle cx="190" cy="150" r="90"/></clipPath>
+                    </defs>
+                    <g stroke="url(#capCornerGold)" fill="none" stroke-width="1.5" opacity="0.5"><circle cx="190" cy="150" r="112"/></g>
+                    <circle cx="190" cy="150" r="90" fill="url(#capCornerTiles)" clip-path="url(#capCornerClip)" opacity="0.5"/>
+                    <circle cx="190" cy="150" r="90" fill="none" stroke="var(--gold, #c9a227)" stroke-width="1" opacity="0.4"/>
+                    <circle cx="190" cy="150" r="30" fill="none" stroke="var(--crimson)" stroke-width="1" opacity="0.45"/>
+                </svg>
+
+                <div class="anim-item" style="margin-bottom:4rem; position:relative; z-index:2;">
                     <span class="t-label">Capabilities</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h2 class="t-heading split-heading" style="margin-top:1.5rem; max-width:700px;">Controlled offensive operations.</h2>
                 </div>
 
-                <div class="glow-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap:2px;">
-                    <div class="cap-card anim-item">
-                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg></div>
-                        <div class="cap-card__number">01</div>
-                        <h3 class="cap-card__title">Red Team Operations</h3>
-                        <p class="cap-card__text">Full-scope adversary simulation from initial access through lateral movement and objective completion. Realistic threat emulation to validate detection and response capabilities.</p>
+                <div class="approach-list" style="position:relative; z-index:2;">
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">01</span>
+                        <h3 class="approach-row__title">Web &amp; API Application Security</h3>
+                        <p class="approach-row__text">Manual, hands-on testing with Burp Suite and Nessus against OWASP Top 10 / OWASP API Top 10 — SQLi, XSS, SSRF, auth bypass, IDOR/BOLA — mapped to CVSS with PoC evidence.</p>
                     </div>
-                    <div class="cap-card anim-item">
-                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
-                        <div class="cap-card__number">02</div>
-                        <h3 class="cap-card__title">Web App Assessments</h3>
-                        <p class="cap-card__text">Deep-dive manual testing of web applications for OWASP Top 10 and beyond. SQL injection, XSS, SSRF, authentication bypass, business logic abuse, and API-level exploitation.</p>
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">02</span>
+                        <h3 class="approach-row__title">SIEM Detection Engineering &amp; SOC Support</h3>
+                        <p class="approach-row__text">Tuning correlation rules for AWS and Google Workspace telemetry, aligned to MITRE ATT&amp;CK, with SOC alert enrichment and escalation.</p>
                     </div>
-                    <div class="cap-card anim-item">
-                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg></div>
-                        <div class="cap-card__number">03</div>
-                        <h3 class="cap-card__title">Mobile Security Testing</h3>
-                        <p class="cap-card__text">Android and iOS security assessments including static/dynamic analysis, runtime instrumentation, certificate pinning bypass, and insecure storage identification.</p>
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">03</span>
+                        <h3 class="approach-row__title">Network &amp; Protocol Fundamentals</h3>
+                        <p class="approach-row__text">TCP/IP, DNS, HTTP/S, routing/switching, and Windows Server/AD basics — reconnaissance and enumeration methodology underpinning every assessment.</p>
                     </div>
-                    <div class="cap-card anim-item">
-                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
-                        <div class="cap-card__number">04</div>
-                        <h3 class="cap-card__title">OSINT & Reconnaissance</h3>
-                        <p class="cap-card__text">Automated and manual intelligence gathering pipelines. Attack surface mapping, data exposure identification, credential intelligence, and organizational footprinting.</p>
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">04</span>
+                        <h3 class="approach-row__title">Secure SDLC &amp; DevOps Collaboration</h3>
+                        <p class="approach-row__text">Working with DevOps/AppSec to validate fixes, reduce false positives, and bring DAST/SAST and CI/CD security awareness into the development process.</p>
                     </div>
-                    <div class="cap-card anim-item">
-                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div>
-                        <div class="cap-card__number">05</div>
-                        <h3 class="cap-card__title">Infrastructure Penetration</h3>
-                        <p class="cap-card__text">Network and cloud infrastructure assessments including service enumeration, privilege escalation, Active Directory attacks, and cloud misconfigurations across AWS and Azure.</p>
-                    </div>
-                    <div class="cap-card anim-item">
-                        <div class="cap-card__icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-                        <div class="cap-card__number">06</div>
-                        <h3 class="cap-card__title">Security Research</h3>
-                        <p class="cap-card__text">Offensive tool development, vulnerability research, exploit validation, and evasion technique analysis. Building custom tooling for scalable security operations.</p>
+                    <div class="approach-row anim-item">
+                        <span class="approach-row__index t-mono">05</span>
+                        <h3 class="approach-row__title">Cybersecurity &amp; Networking Training</h3>
+                        <p class="approach-row__text">Instructor-led CCNA, Linux, and cybersecurity training at IIHT — hands-on labs and mentoring that sharpened both fundamentals and client-facing communication.</p>
                     </div>
                 </div>
 
@@ -1174,43 +1182,27 @@
                     <div class="tool-grid">
                         <div class="tool-grid__item">
                             <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
-                            <span>Burp Suite Pro</span>
-                        </div>
-                        <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h5"/><path d="M17 12h5"/><path d="M12 2v5"/><path d="M12 17v5"/><circle cx="12" cy="12" r="4"/></svg>
-                            <span>Nmap</span>
-                        </div>
-                        <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="m10 10.5 2 2 2-2"/><path d="M12 13v-1"/></svg>
-                            <span>Metasploit</span>
-                        </div>
-                        <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
-                            <span>OWASP ZAP</span>
+                            <span>Burp Suite</span>
                         </div>
                         <div class="tool-grid__item">
                             <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
                             <span>Nessus</span>
                         </div>
                         <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>
-                            <span>SQLMap</span>
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h5"/><path d="M17 12h5"/><path d="M12 2v5"/><path d="M12 17v5"/><circle cx="12" cy="12" r="4"/></svg>
+                            <span>Nmap</span>
                         </div>
                         <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
-                            <span>MobSF</span>
-                        </div>
-                        <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/></svg>
-                            <span>Frida</span>
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+                            <span>OWASP ZAP</span>
                         </div>
                         <div class="tool-grid__item">
                             <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
                             <span>Wireshark</span>
                         </div>
                         <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/></svg>
-                            <span>Ghidra</span>
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m8 10 3 2-3 2"/><line x1="13" y1="14" x2="16" y2="14"/></svg>
+                            <span>Kali Linux</span>
                         </div>
                         <div class="tool-grid__item">
                             <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
@@ -1221,20 +1213,16 @@
                             <span>Bash</span>
                         </div>
                         <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-                            <span>PowerShell</span>
-                        </div>
-                        <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12.5V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h7.5"/><path d="m18 14 4 4-4 4"/><path d="m14 18 4 4"/></svg>
-                            <span>Docker</span>
-                        </div>
-                        <div class="tool-grid__item">
                             <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/></svg>
                             <span>AWS</span>
                         </div>
                         <div class="tool-grid__item">
-                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                            <span>Elasticsearch</span>
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+                            <span>Google Workspace</span>
+                        </div>
+                        <div class="tool-grid__item">
+                            <svg aria-hidden="true" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+                            <span>MITRE ATT&amp;CK</span>
                         </div>
                     </div>
                 </div>
@@ -1254,17 +1242,17 @@
                             <line class="skill-radar__axis" x1="150" y1="150" x2="150" y2="260"/>
                             <line class="skill-radar__axis" x1="150" y1="150" x2="46.1" y2="202.5"/>
                             <line class="skill-radar__axis" x1="150" y1="150" x2="46.1" y2="87.5"/>
-                            <!-- Data: Red Team Advanced, Web Apps Expert, Mobile Proficient, Cloud Proficient, Network/Infra Advanced, Exploit Dev Advanced -->
-                            <polygon class="skill-radar__data" points="150,48 238.3,93.4 222.8,191.3 150,223 65.2,193.5 67.6,101.3"/>
+                            <!-- Data: Web/API AppSec Proficient, SIEM & Detection Proficient, Network Fundamentals Proficient, Secure SDLC Developing, Cloud Telemetry Developing, Client Reporting Proficient -->
+                            <polygon class="skill-radar__data" points="150,42 243.5,96 243.5,204 150,224 85.9,187 56.5,96"/>
                             <!-- Labels -->
-                            <text class="skill-radar__label" x="150" y="18" text-anchor="middle">Red Team</text>
-                            <text class="skill-radar__label" x="268" y="85" text-anchor="start">Web Apps</text>
-                            <text class="skill-radar__label" x="268" y="210" text-anchor="start">Mobile</text>
-                            <text class="skill-radar__label" x="150" y="282" text-anchor="middle">Cloud</text>
-                            <text class="skill-radar__label" x="32" y="210" text-anchor="end">Network/Infra</text>
-                            <text class="skill-radar__label" x="32" y="85" text-anchor="end">Exploit Dev</text>
+                            <text class="skill-radar__label" x="150" y="18" text-anchor="middle">Web/API AppSec</text>
+                            <text class="skill-radar__label" x="268" y="85" text-anchor="start">Detection</text>
+                            <text class="skill-radar__label" x="268" y="210" text-anchor="start">Network</text>
+                            <text class="skill-radar__label" x="150" y="282" text-anchor="middle">Secure SDLC</text>
+                            <text class="skill-radar__label" x="32" y="210" text-anchor="end">Cloud Logs</text>
+                            <text class="skill-radar__label" x="32" y="85" text-anchor="end">Reporting</text>
                         </svg>
-                        <div class="sr-only">Skill proficiency: Web Apps — Expert, Red Team — Advanced, Network/Infrastructure — Advanced, Cloud — Proficient, Exploit Development — Advanced, Mobile — Proficient</div>
+                        <div class="sr-only">Skill proficiency: Web/API Application Security — Proficient, SIEM and Detection Engineering — Proficient, Network Fundamentals — Proficient, Client Reporting — Proficient, Secure SDLC Awareness — Developing, Cloud Telemetry — Developing</div>
                     </div>
                 </div>
 

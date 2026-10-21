@@ -1035,6 +1035,25 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero__medallion { opacity: 0.4; width: 90vw; right: -10vw; }
 }
 
+/* Capabilities corner mark — smaller page-identity echo of the hero
+   medallion, confined to the top-right corner and masked away from
+   the heading (same ornament-fades-before-text rule). */
+.cap-corner-mark {
+  position: absolute;
+  top: -8%;
+  right: -6%;
+  width: min(42vw, 360px);
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.8;
+  -webkit-mask-image: radial-gradient(circle at 60% 40%, #000 30%, transparent 72%);
+  mask-image: radial-gradient(circle at 60% 40%, #000 30%, transparent 72%);
+}
+@media (max-width: 760px) {
+  .cap-corner-mark { opacity: 0.35; width: 60vw; top: -4%; right: -10%; }
+}
+
 /* --- Buttons --- */
 .btn {
   display: inline-flex;
