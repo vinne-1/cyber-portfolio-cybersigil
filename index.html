@@ -939,12 +939,12 @@
                 <div class="anim-item" style="margin-top:1rem; padding:2rem; border:1px solid var(--border); background:var(--surface); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.5rem;">
                     <div>
                         <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Want early access?</h3>
-                        <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
-                            TithiPath is in Google Play Closed Testing right now. Join as a tester to help it reach production &mdash; install once, no action needed after that.
+                        <p id="closedTestingHint" style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
+                            TithiPath is in Google Play Closed Testing right now. Join as a tester to help it reach production &mdash; install once, no action needed after that. The invite link will activate here once the Play Console URL is published.
                         </p>
                     </div>
-                    <!-- TODO: replace # with the real Play Console closed-testing opt-in URL (Play Console -> Testing -> Closed testing -> Testers tab) -->
-                    <div class="magnetic-wrap"><a href="#" class="btn btn--outline" style="white-space:nowrap;">Join Closed Testing</a></div>
+                    <!-- TODO: replace disabled button with a real Play Console closed-testing opt-in URL (Play Console -> Testing -> Closed testing -> Testers tab) -->
+                    <div class="magnetic-wrap"><button type="button" class="btn btn--outline" style="white-space:nowrap;" disabled aria-describedby="closedTestingHint">Join Closed Testing</button></div>
                 </div>
 
                 <div class="anim-item" style="margin-top:5rem; margin-bottom:1.5rem;">
