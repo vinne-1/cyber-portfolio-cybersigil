@@ -5,19 +5,21 @@
 
 /* --- Custom Properties — Cybersigilism + Goth --- */
 :root {
-  --black:       #000000;
-  --charcoal:    #08040a;
-  --surface:     #0c0712;
-  --surface-2:   #110a16;
-  --surface-3:   #16101e;
-  --border:      #1c1228;
-  --border-light:#281a38;
+  /* Editorial monochrome from EM / Dribbble #27550614:
+     #040505 black, #3F433E olive, #7C817C / #9B9E9C gray, #F1F1EF paper. */
+  --black:       #040505;
+  --charcoal:    #040505;
+  --surface:     #0c0d0c;
+  --surface-2:   #141514;
+  --surface-3:   #1c1d1c;
+  --border:      #2a2c2a;
+  --border-light:#3F433E;
   color-scheme: dark;
 
-  /* Flat stage vs fluid ink — clear demarcation.
-     Background stays cool charcoal; liquid accents use a separate ink set. */
-  --grade-deep:  #07060c;
-  --stage:       #0a0812;
+  --grade-deep:  #040505;
+  --stage:       #040505;
+  --olive:       #3F433E;
+  --paper:       #F1F1EF;
 
   --crimson:     #a50d22;
   --crimson-dark:#6b0014;
@@ -33,13 +35,13 @@
   --purple-deep: #2d1b4e;
   --purple-glow: rgba(107, 76, 154, 0.2);
   --violet:      #8b6cc1;
-  --bone:        #d4cfc4;
+  --bone:        #F1F1EF;
 
-  /* Liquid ink accents (animation layer only — not the page stage) */
-  --fluid-a:     #7c6cf0;
-  --fluid-b:     #4ec4c8;
-  --fluid-c:     #b49ad9;
-  --fluid-glow:  rgba(124, 108, 240, 0.35);
+  /* Liquid ink stays inside the monochrome system — no purple/teal flood */
+  --fluid-a:     #3F433E;
+  --fluid-b:     #7C817C;
+  --fluid-c:     #9B9E9C;
+  --fluid-glow:  rgba(63, 67, 62, 0.35);
 
   /* Ornamental gold — iconic medallion motifs (Klimt/ukiyo-e inspired accents) */
   --gold:        #c9a227;
@@ -52,12 +54,12 @@
   --severity-low:      #4caf50;
   --status-active:     #28c840;
 
-  --white:       #e0dcd4;
-  --gray-100:    #b8b0a8;
-  --gray-200:    #8a8280;
-  --gray-300:    #807686; /* WCAG AA: 4.66:1 vs --surface, 4.76:1 vs --charcoal (was #6a6068 at 3.35:1 — failed AA for body text) */
-  --gray-400:    #3a2e40;
-  --gray-500:    #201828;
+  --white:       #F1F1EF;
+  --gray-100:    #c4c6c4;
+  --gray-200:    #9B9E9C;
+  --gray-300:    #8d918f; /* AA on #040505 (~5.6:1). Dribbble #7C817C is the mid tone; this is the text-safe step. */
+  --gray-400:    #3F433E;
+  --gray-500:    #1a1c1a;
 
   --font-display: 'Cinzel', 'Georgia', serif;
   --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -81,8 +83,7 @@
   pointer-events: none;
   opacity: 0.04;
   background-image:
-    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(201, 162, 39, 0.06) 0%, transparent 65%),
-    radial-gradient(ellipse 55% 40% at 18% 92%, rgba(165, 13, 34, 0.05) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(63, 67, 62, 0.18) 0%, transparent 65%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236b4c9a' stroke-width='0.3' opacity='0.45'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -175,7 +176,7 @@
   z-index: 1;
   pointer-events: none;
   opacity: 0.5;
-  filter: drop-shadow(0 0 6px rgba(201, 162, 39, 0.25)) drop-shadow(0 0 12px rgba(165, 13, 34, 0.12));
+  filter: drop-shadow(0 0 6px rgba(241, 241, 239, 0.12));
   animation: slashShimmer 8s ease-in-out infinite;
 }
 @keyframes slashShimmer {
@@ -427,10 +428,9 @@ body {
   /* Layered stage depth (design spec): charcoal field, purple pool on the
      ornament side, navy falloff at the bottom. Left text column stays dark. */
   background:
-    radial-gradient(ellipse 55% 70% at 82% 28%, rgba(45, 27, 78, 0.45) 0%, transparent 68%),
-    radial-gradient(ellipse 30% 40% at 88% 22%, rgba(201, 162, 39, 0.1) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 35% at 12% 88%, rgba(0, 160, 180, 0.07) 0%, transparent 70%),
-    linear-gradient(180deg, #100c16 0%, var(--stage) 28%, #070612 72%, #05040c 100%);
+    radial-gradient(ellipse 55% 70% at 82% 28%, rgba(63, 67, 62, 0.45) 0%, transparent 68%),
+    radial-gradient(ellipse 30% 40% at 88% 22%, rgba(241, 241, 239, 0.04) 0%, transparent 60%),
+    linear-gradient(180deg, #0a0b0a 0%, #040505 40%, #020303 100%);
 }
 #siteShell.ready {
   opacity: 1;
@@ -441,7 +441,7 @@ body {
   content: '';
   position: fixed;
   inset: clamp(0.5rem, 2vw, 1.5rem);
-  border: 1px solid rgba(201, 162, 39, 0.1);
+  border: 1px solid rgba(63, 67, 62, 0.45);
   pointer-events: none;
   z-index: 9998;
 }
@@ -451,15 +451,15 @@ body {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 90% 80% at 50% 40%, transparent 45%, rgba(5, 4, 12, 0.45) 100%);
+    radial-gradient(ellipse 90% 80% at 50% 40%, transparent 48%, rgba(4, 5, 5, 0.55) 100%);
   pointer-events: none;
   z-index: 9997;
 }
 
 
 ::selection {
-  background: rgba(107, 76, 154, 0.55);
-  color: var(--bone);
+  background: rgba(63, 67, 62, 0.85);
+  color: var(--paper);
 }
 
 img { display: block; max-width: 100%; }
@@ -644,10 +644,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   width: 46px;
   height: 4px;
-  background: linear-gradient(90deg, var(--crimson) 0%, var(--violet, var(--purple)) 100%);
+  background: linear-gradient(90deg, var(--paper) 0%, var(--olive) 100%);
   clip-path: polygon(0% 40%, 85% 0%, 100% 60%, 15% 100%);
   margin-bottom: 1.5rem;
-  filter: drop-shadow(0 0 4px rgba(165, 13, 34, 0.45));
+  filter: none;
 }
 .accent-bar::after {
   content: '';
@@ -673,8 +673,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   /* Dark glass only — no white haze at the top */
   background: linear-gradient(
     180deg,
-    rgba(8, 4, 10, 0.78) 0%,
-    rgba(8, 4, 10, 0.5) 70%,
+    rgba(4, 5, 5, 0.82) 0%,
+    rgba(4, 5, 5, 0.55) 70%,
     transparent 100%
   );
   backdrop-filter: blur(12px) saturate(1.05);
@@ -684,7 +684,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .nav--scrolled {
-  background: rgba(8, 4, 10, 0.9);
+  background: rgba(4, 5, 5, 0.92);
   backdrop-filter: blur(20px) saturate(1.05);
   -webkit-backdrop-filter: blur(20px) saturate(1.05);
   border-bottom: 1px solid var(--border);
@@ -711,9 +711,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 1px 2px rgba(0, 0, 0, 0.8);
   transition: text-shadow 0.35s ease;
 }
-.nav__logo span { color: var(--crimson-text); text-shadow: 0 0 12px rgba(223, 66, 89, 0.55); }
+.nav__logo span { color: var(--paper); text-shadow: none; }
 .nav__logo-sigil {
-  color: var(--violet);
+  color: var(--paper);
   opacity: 0.9;
   transition: opacity 0.3s ease, transform 0.5s var(--ease-out-expo), filter 0.35s ease, color 0.35s ease;
 }
@@ -1090,10 +1090,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 85% at 78% 46%, rgba(45, 27, 78, 0.55) 0%, rgba(15, 5, 30, 0.22) 42%, transparent 74%),
-    radial-gradient(ellipse 38% 48% at 84% 38%, rgba(201, 162, 39, 0.16) 0%, transparent 62%),
-    radial-gradient(ellipse 28% 36% at 70% 62%, rgba(0, 180, 200, 0.1) 0%, transparent 68%),
-    radial-gradient(ellipse 36% 30% at 8% 90%, rgba(165, 13, 34, 0.08) 0%, transparent 70%);
+    radial-gradient(ellipse 70% 85% at 78% 46%, rgba(63, 67, 62, 0.55) 0%, rgba(4, 5, 5, 0.2) 42%, transparent 74%),
+    radial-gradient(ellipse 38% 48% at 84% 38%, rgba(241, 241, 239, 0.06) 0%, transparent 62%),
+    radial-gradient(ellipse 28% 36% at 70% 62%, rgba(124, 129, 124, 0.12) 0%, transparent 68%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, #000 52%, #000 100%);
   mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, #000 52%, #000 100%);
 }
@@ -1126,7 +1125,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 70%;
   top: 8%;
   right: 6%;
-  background: radial-gradient(circle at 40% 40%, rgba(201, 162, 39, 0.55), rgba(201, 162, 39, 0.12) 55%, transparent 72%);
+  background: radial-gradient(circle at 40% 40%, rgba(155, 158, 156, 0.35), rgba(63, 67, 62, 0.2) 55%, transparent 72%);
   opacity: 0.7;
   animation: fluidMorphA 14s ease-in-out infinite, fluidDriftA 18s ease-in-out infinite;
 }
@@ -1135,7 +1134,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 55%;
   bottom: 6%;
   right: 22%;
-  background: radial-gradient(circle at 40% 40%, rgba(78, 196, 200, 0.5), rgba(78, 196, 200, 0.1) 55%, transparent 72%);
+  background: radial-gradient(circle at 40% 40%, rgba(124, 129, 124, 0.28), rgba(63, 67, 62, 0.12) 55%, transparent 72%);
   opacity: 0.6;
   animation: fluidMorphB 11s ease-in-out infinite reverse, fluidDriftB 16s ease-in-out infinite;
 }
@@ -1144,7 +1143,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 40%;
   top: 36%;
   right: 40%;
-  background: radial-gradient(circle at 50% 40%, rgba(223, 66, 89, 0.35), rgba(165, 13, 34, 0.08) 55%, transparent 72%);
+  background: radial-gradient(circle at 50% 40%, rgba(241, 241, 239, 0.12), rgba(63, 67, 62, 0.08) 55%, transparent 72%);
   opacity: 0.55;
   animation: fluidMorphC 9s ease-in-out infinite, fluidDriftC 13s ease-in-out infinite;
 }
@@ -1198,7 +1197,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: auto;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.82;
+  opacity: 0.42;
   -webkit-mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   animation: medallionBreathe 14s ease-in-out infinite;
@@ -1263,14 +1262,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: none;
 }
 .btn--primary {
-  background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 100%);
-  color: var(--white);
-  border: 1px solid rgba(201, 184, 232, 0.25);
-  box-shadow: 0 0 18px rgba(107, 76, 154, 0.22), 0 0 36px rgba(165, 13, 34, 0.08);
+  background: var(--paper);
+  color: var(--black);
+  border: 1px solid var(--paper);
+  box-shadow: none;
 }
 .btn--primary:hover {
-  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple) 100%);
-  box-shadow: 0 0 26px rgba(107, 76, 154, 0.35), 0 0 48px rgba(139, 108, 193, 0.2);
+  background: transparent;
+  color: var(--paper);
+  box-shadow: none;
 }
 .btn--outline {
   border: 1px solid var(--border-light);
@@ -1901,9 +1901,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   padding: 0;
   border-top: 1px solid var(--border);
   background:
-    radial-gradient(ellipse 50% 80% at 80% 0%, rgba(45, 27, 78, 0.25) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 10% 100%, rgba(201, 162, 39, 0.06) 0%, transparent 70%),
-    linear-gradient(to bottom, transparent, rgba(7, 6, 12, 0.55) 100%);
+    radial-gradient(ellipse 50% 80% at 80% 0%, rgba(63, 67, 62, 0.28) 0%, transparent 70%),
+    linear-gradient(to bottom, transparent, #040505 100%);
 }
 .footer__protocol {
   display: block;
@@ -2151,9 +2150,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 55% at 85% 10%, rgba(45, 27, 78, 0.22) 0%, transparent 68%),
-    radial-gradient(ellipse 40% 35% at 10% 90%, rgba(0, 160, 180, 0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 50% 30% at 70% 100%, rgba(201, 162, 39, 0.06) 0%, transparent 65%);
+    radial-gradient(ellipse 70% 55% at 85% 10%, rgba(63, 67, 62, 0.28) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 35% at 10% 90%, rgba(124, 129, 124, 0.06) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -2166,9 +2164,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 15% 0%, rgba(45, 27, 78, 0.28) 0%, transparent 62%),
-    radial-gradient(ellipse 55% 45% at 90% 100%, rgba(201, 162, 39, 0.08) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 35% at 70% 40%, rgba(0, 160, 180, 0.05) 0%, transparent 65%);
+    radial-gradient(ellipse 80% 50% at 15% 0%, rgba(63, 67, 62, 0.32) 0%, transparent 62%),
+    radial-gradient(ellipse 55% 45% at 90% 100%, rgba(124, 129, 124, 0.08) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
