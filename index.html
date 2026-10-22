@@ -1432,8 +1432,21 @@
     <!-- App -->
     <script defer src="/app.js"></script>
 
-    <!-- Umami Analytics (privacy-friendly, no cookies) -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="REPLACE_WITH_YOUR_UMAMI_ID"></script>
+    <!-- Umami Analytics (privacy-friendly, no cookies). The real website ID
+         is not yet assigned (open question, tracked separately) — this guard
+         just stops a guaranteed-to-fail request to Umami's API on every page
+         load until a real ID replaces the placeholder below. -->
+    <script>
+        (function () {
+            var UMAMI_WEBSITE_ID = 'REPLACE_WITH_YOUR_UMAMI_ID';
+            if (!UMAMI_WEBSITE_ID || UMAMI_WEBSITE_ID === 'REPLACE_WITH_YOUR_UMAMI_ID') { return; }
+            var s = document.createElement('script');
+            s.defer = true;
+            s.src = 'https://cloud.umami.is/script.js';
+            s.setAttribute('data-website-id', UMAMI_WEBSITE_ID);
+            document.head.appendChild(s);
+        })();
+    </script>
 
     <!-- Service Worker -->
     <script>
