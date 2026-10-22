@@ -631,6 +631,25 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   margin-bottom: 1.5rem;
   filter: drop-shadow(0 0 4px rgba(165, 13, 34, 0.45));
 }
+/* Alternate mark for a second (or later even-numbered) eyebrow label
+   stacked under the same page heading, so pages with multiple
+   sub-sections (About, Work, Credentials) don't repeat the identical
+   accent-bar three times in a row. */
+.accent-bar--rune {
+  width: 10px;
+  background: none;
+  clip-path: none;
+}
+.accent-bar--rune::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 1px;
+  background: var(--crimson);
+  transform: translateY(-50%);
+}
 .accent-bar::after {
   content: '';
   position: absolute;
