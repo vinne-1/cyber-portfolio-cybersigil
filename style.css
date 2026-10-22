@@ -3610,6 +3610,30 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   outline-offset: 2px;
 }
 
+/* --- Forced colors / high contrast mode baseline --- */
+@media (forced-colors: active) {
+  /* Decorative-only, non-semantic layers: don't let the system palette
+     repaint them into a flat, meaningless blob of color/noise. */
+  .cursor-dot, .cursor-ring, .grain-overlay, .vignette,
+  .atmo-particles, .measurement-lines {
+    forced-color-adjust: none;
+  }
+
+  /* Pin focus to the system Highlight color explicitly rather than relying
+     on each browser's own forced-colors override behavior. */
+  *:focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  /* .btn--primary's border is transparent (relies on its gradient fill for
+     an edge); once forced-colors flattens that fill to one system color,
+     an explicit ButtonText border keeps every button's edge visible. */
+  .btn, .btn--primary, .btn--outline, .nav__cta {
+    border: 1px solid ButtonText;
+  }
+}
+
 /* --- Utility --- */
 .text-crimson { color: var(--crimson); }
 .sr-only {
