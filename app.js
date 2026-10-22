@@ -887,11 +887,11 @@
             });
         }
 
-        var wash = app.querySelector('.hero__crimson-wash');
-        if (wash) {
-            gsap.to(wash, {
-                y: 80,
-                scale: 1.1,
+        var fluid = app.querySelector('.hero__fluid');
+        if (fluid) {
+            gsap.to(fluid, {
+                y: 60,
+                scale: 1.05,
                 ease: 'none',
                 scrollTrigger: {
                     trigger: '.hero',
@@ -1312,7 +1312,7 @@
         var chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
 
         function draw() {
-            ctx.fillStyle = 'rgba(10, 10, 10, 0.06)';
+            ctx.fillStyle = 'rgba(10, 8, 18, 0.07)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
             ctx.font = fontSize + 'px monospace';
@@ -1323,9 +1323,9 @@
                 var y = drops[j] * fontSize;
 
                 if (Math.random() > 0.97) {
-                    ctx.fillStyle = 'rgba(165, 13, 34, 0.9)';
+                    ctx.fillStyle = 'rgba(124, 108, 240, 0.85)';
                 } else {
-                    ctx.fillStyle = 'rgba(165, 13, 34, 0.15)';
+                    ctx.fillStyle = 'rgba(78, 196, 200, 0.14)';
                 }
 
                 ctx.fillText(char, x, y);
@@ -1394,8 +1394,10 @@
         function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            var nodeColor = 'rgba(165, 13, 34, 0.6)';
-            var lineColor = 'rgba(165, 13, 34, 0.12)';
+            // Fluid ink droplets (violet/teal) — distinct from flat stage
+            var nodeColor = 'rgba(124, 108, 240, 0.55)';
+            var nodeAlt = 'rgba(78, 196, 200, 0.45)';
+            var lineColor = 'rgba(124, 108, 240, 0.14)';
 
             for (var i = 0; i < particles.length; i++) {
                 var p = particles[i];
@@ -1406,8 +1408,8 @@
                 if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
                 ctx.beginPath();
-                ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-                ctx.fillStyle = nodeColor;
+                ctx.arc(p.x, p.y, p.r * 1.15, 0, Math.PI * 2);
+                ctx.fillStyle = (i % 3 === 0) ? nodeAlt : nodeColor;
                 ctx.fill();
 
                 for (var j = i + 1; j < particles.length; j++) {
@@ -1420,7 +1422,7 @@
                         ctx.moveTo(p.x, p.y);
                         ctx.lineTo(q.x, q.y);
                         ctx.strokeStyle = lineColor;
-                        ctx.lineWidth = 0.5;
+                        ctx.lineWidth = 0.6;
                         ctx.globalAlpha = 1 - (dist / CONNECTION_DIST);
                         ctx.stroke();
                         ctx.globalAlpha = 1;

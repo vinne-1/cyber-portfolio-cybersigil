@@ -14,12 +14,11 @@
   --border-light:#281a38;
   color-scheme: dark;
 
-  /* Vertical grade from Pinterest ref (Tokyo Ghoul painting):
-     misty sage-white at the top menu → deep wine-black for effects below. */
+  /* Flat stage vs fluid ink — clear demarcation.
+     Background stays cool charcoal; liquid accents use a separate ink set. */
   --grade-mist:  #e8ece4;
-  --grade-sage:  #9fb5a8;
-  --grade-wine:  #3a0c16;
-  --grade-deep:  #0a0306;
+  --grade-deep:  #07060c;
+  --stage:       #0a0812;
 
   --crimson:     #a50d22;
   --crimson-dark:#6b0014;
@@ -36,6 +35,12 @@
   --purple-glow: rgba(107, 76, 154, 0.2);
   --violet:      #8b6cc1;
   --bone:        #d4cfc4;
+
+  /* Liquid ink accents (animation layer only — not the page stage) */
+  --fluid-a:     #7c6cf0;
+  --fluid-b:     #4ec4c8;
+  --fluid-c:     #b49ad9;
+  --fluid-glow:  rgba(124, 108, 240, 0.35);
 
   /* Ornamental gold — iconic medallion motifs (Klimt/ukiyo-e inspired accents) */
   --gold:        #c9a227;
@@ -77,13 +82,11 @@
   pointer-events: none;
   opacity: 0.04;
   background-image:
-    /* Atmosphere only — never a screen over UI text.
-       Soft cool lift at the very top, wine/crimson weight at the bottom. */
-    linear-gradient(180deg, rgba(232, 236, 228, 0.12) 0%, transparent 18%),
-    radial-gradient(ellipse 90% 55% at 50% 100%, rgba(58, 12, 22, 0.55) 0%, transparent 65%),
-    radial-gradient(ellipse 70% 45% at 18% 88%, rgba(165, 13, 34, 0.28) 0%, transparent 70%),
-    radial-gradient(ellipse 55% 40% at 82% 92%, rgba(45, 27, 78, 0.2) 0%, transparent 65%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236b4c9a' stroke-width='0.3' opacity='0.55'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
+    /* Flat stage atmosphere — cool lift only, no bloody crush */
+    linear-gradient(180deg, rgba(232, 236, 228, 0.08) 0%, transparent 16%),
+    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(124, 108, 240, 0.12) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 40% at 18% 92%, rgba(78, 196, 200, 0.08) 0%, transparent 65%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236b4c9a' stroke-width='0.3' opacity='0.45'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* --- Scanline Overlay --- */
@@ -166,7 +169,7 @@
   to { transform: translateY(-50%) rotate(360deg); }
 }
 
-/* Bleach-style energy strike — a reiatsu slash cutting through the hero */
+/* Liquid ink ribbon — fluid stroke, not a bloody slash */
 .hero__slash {
   position: absolute;
   inset: 0;
@@ -174,16 +177,16 @@
   height: 100%;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.55;
-  filter: drop-shadow(0 0 6px rgba(165, 13, 34, 0.5)) drop-shadow(0 0 18px rgba(165, 13, 34, 0.2));
-  animation: slashShimmer 6s ease-in-out infinite;
+  opacity: 0.5;
+  filter: drop-shadow(0 0 8px rgba(124, 108, 240, 0.35)) drop-shadow(0 0 18px rgba(78, 196, 200, 0.15));
+  animation: slashShimmer 8s ease-in-out infinite;
 }
 @keyframes slashShimmer {
-  0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 6px rgba(165, 13, 34, 0.4)) drop-shadow(0 0 16px rgba(165, 13, 34, 0.15)); }
-  50% { opacity: 0.65; filter: drop-shadow(0 0 10px rgba(165, 13, 34, 0.65)) drop-shadow(0 0 26px rgba(165, 13, 34, 0.3)); }
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.55; }
 }
 @media (max-width: 768px) {
-  .hero__slash { opacity: 0.3; }
+  .hero__slash { opacity: 0.28; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero__slash { animation: none; }
@@ -414,7 +417,7 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
-  background: var(--grade-deep);
+  background: var(--stage);
 }
 
 /* #siteShell (not <body>) carries the FOUC-prevention fade, so #preloader —
@@ -424,19 +427,8 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   min-height: 100vh;
-  /* Smart grade: whisper of cool lift under the menu (behind text),
-     charcoal mid, wine-black depth for effects. Mist stays in the
-     background stack — never as a wash over UI. */
-  background:
-    linear-gradient(
-      180deg,
-      rgba(232, 236, 228, 0.055) 0%,
-      transparent 14%,
-      rgba(8, 4, 10, 0.28) 52%,
-      rgba(58, 12, 22, 0.4) 80%,
-      rgba(10, 3, 6, 0.7) 100%
-    ),
-    linear-gradient(180deg, #121014 0%, var(--charcoal) 36%, var(--grade-deep) 100%);
+  /* Flat stage color — liquid animations live in their own layer on top */
+  background: var(--stage);
 }
 #siteShell.ready {
   opacity: 1;
@@ -447,20 +439,17 @@ body {
   content: '';
   position: fixed;
   inset: clamp(0.5rem, 2vw, 1.5rem);
-  border: 1px solid rgba(107, 76, 154, 0.12);
-  border-bottom-color: rgba(165, 13, 34, 0.16);
+  border: 1px solid rgba(124, 108, 240, 0.12);
   pointer-events: none;
   z-index: 9998;
 }
 
-/* Vignette — NO top white wash (that sat on top of nav/hero text).
-   Keep only the bottom wine crush + soft edge darkening. */
+/* Soft edge vignette — cool charcoal only, no blood wash */
 .vignette {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 130% 75% at 50% 115%, rgba(58, 12, 22, 0.55) 0%, transparent 55%),
-    radial-gradient(ellipse at center, transparent 48%, rgba(8, 3, 6, 0.45) 100%);
+    radial-gradient(ellipse at center, transparent 50%, rgba(7, 6, 12, 0.5) 100%);
   pointer-events: none;
   z-index: 9997;
 }
@@ -1093,31 +1082,111 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   100% { top: 100%; }
 }
 
-/* Atmospheric grade — soft cool lift behind the hero (not over text),
-   wine-dark weight for lower effects / medallion zone */
+/* Flat stage grid — quiet, so fluid ink reads as a separate layer */
 .hero__bg-grid {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(232, 236, 228, 0.05) 0%, transparent 24%),
-    radial-gradient(ellipse 100% 70% at 50% 105%, rgba(58, 12, 22, 0.5) 0%, transparent 58%),
-    radial-gradient(ellipse 80% 90% at 55% 55%, rgba(45, 27, 78, 0.28) 0%, rgba(15, 5, 30, 0.16) 42%, transparent 100%),
-    radial-gradient(ellipse 50% 60% at 62% 48%, rgba(107, 76, 154, 0.07) 0%, transparent 70%);
+    linear-gradient(180deg, rgba(232, 236, 228, 0.03) 0%, transparent 20%),
+    radial-gradient(ellipse 70% 60% at 70% 45%, rgba(45, 27, 78, 0.18) 0%, transparent 70%);
   pointer-events: none;
 }
-.hero__crimson-wash {
+
+/* --- Liquid field (portfolio fluid / metaball-inspired) ---
+   Contained on the right so the left copy column stays on flat stage. */
+.hero__fluid {
   position: absolute;
-  top: auto;
-  bottom: -28%;
-  right: -12%;
-  width: 72vw;
-  height: 72vw;
-  background:
-    radial-gradient(circle, rgba(165, 13, 34, 0.26) 0%, transparent 52%),
-    radial-gradient(ellipse 70% 80% at 35% 65%, rgba(58, 12, 22, 0.4) 0%, transparent 65%),
-    radial-gradient(ellipse 50% 60% at 70% 40%, rgba(45, 27, 78, 0.12) 0%, transparent 60%);
+  top: 5%;
+  right: -2%;
+  width: min(62vw, 780px);
+  height: min(82vh, 780px);
+  z-index: 2;
   pointer-events: none;
+  /* Soft edge so ink doesn't spill into the text column */
+  -webkit-mask-image: radial-gradient(ellipse 72% 78% at 58% 48%, #000 42%, transparent 82%);
+  mask-image: radial-gradient(ellipse 72% 78% at 58% 48%, #000 42%, transparent 82%);
 }
+.hero__fluid-field {
+  position: absolute;
+  inset: 0;
+}
+.hero__blob {
+  position: absolute;
+  display: block;
+  border-radius: 42% 58% 48% 52% / 48% 42% 58% 52%;
+  will-change: border-radius, transform, filter;
+  /* Soft liquid edge — distinct ink layer over the flat stage */
+  filter: blur(32px);
+  mix-blend-mode: screen;
+}
+.hero__blob--a {
+  width: 62%;
+  height: 62%;
+  top: 8%;
+  right: 4%;
+  background: radial-gradient(circle at 35% 35%, #d2c4ff 0%, var(--fluid-a) 42%, transparent 70%);
+  opacity: 0.85;
+  animation: fluidMorphA 14s ease-in-out infinite, fluidDriftA 18s ease-in-out infinite;
+}
+.hero__blob--b {
+  width: 50%;
+  height: 50%;
+  bottom: 10%;
+  right: 18%;
+  background: radial-gradient(circle at 40% 40%, #8ef0f2 0%, var(--fluid-b) 45%, transparent 70%);
+  opacity: 0.8;
+  animation: fluidMorphB 11s ease-in-out infinite reverse, fluidDriftB 16s ease-in-out infinite;
+}
+.hero__blob--c {
+  width: 38%;
+  height: 38%;
+  top: 36%;
+  right: 34%;
+  background: radial-gradient(circle at 50% 40%, #f0ebe3 0%, var(--fluid-c) 48%, transparent 72%);
+  opacity: 0.7;
+  animation: fluidMorphC 9s ease-in-out infinite, fluidDriftC 13s ease-in-out infinite;
+}
+@keyframes fluidMorphA {
+  0%, 100% { border-radius: 42% 58% 48% 52% / 48% 42% 58% 52%; }
+  33% { border-radius: 58% 42% 62% 38% / 42% 58% 42% 58%; }
+  66% { border-radius: 38% 62% 44% 56% / 56% 38% 62% 44%; }
+}
+@keyframes fluidMorphB {
+  0%, 100% { border-radius: 60% 40% 55% 45% / 45% 55% 40% 60%; }
+  50% { border-radius: 40% 60% 35% 65% / 60% 40% 65% 35%; }
+}
+@keyframes fluidMorphC {
+  0%, 100% { border-radius: 50% 50% 40% 60% / 55% 45% 55% 45%; }
+  50% { border-radius: 35% 65% 55% 45% / 40% 60% 40% 60%; }
+}
+@keyframes fluidDriftA {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-4%, 5%) scale(1.06); }
+}
+@keyframes fluidDriftB {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(6%, -4%) scale(1.08); }
+}
+@keyframes fluidDriftC {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(-5%, 3%) rotate(8deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__blob { animation: none; }
+}
+@media (max-width: 900px) {
+  .hero__fluid {
+    width: 90vw;
+    height: 55vh;
+    top: auto;
+    bottom: 0;
+    right: -10%;
+    opacity: 0.7;
+  }
+}
+
+/* Legacy alias kept so any residual selectors still resolve */
+.hero__crimson-wash { display: none; }
 .hero__medallion {
   position: absolute;
   top: 50%;
@@ -1127,7 +1196,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: auto;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.8;
+  /* Quieter so liquid ink reads as the primary motion layer */
+  opacity: 0.45;
   -webkit-mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   animation: medallionBreathe 14s ease-in-out infinite;
@@ -1828,12 +1898,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* --- Footer --- */
 .footer {
   padding: 0;
-  border-top: 1px solid rgba(232, 236, 228, 0.06);
+  border-top: 1px solid var(--border);
   background: linear-gradient(
     to bottom,
     transparent,
-    rgba(58, 12, 22, 0.18) 45%,
-    rgba(10, 3, 6, 0.45) 100%
+    rgba(45, 27, 78, 0.12) 50%,
+    rgba(7, 6, 12, 0.35) 100%
   );
 }
 .footer__protocol {
