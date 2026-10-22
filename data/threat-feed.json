@@ -1,6 +1,52 @@
 {
   "articles": [
     {
+      "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+      "source": "Dark Reading",
+      "date": "2026-10-22T05:00:00.000Z",
+      "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+      "source": "The Hacker News",
+      "date": "2026-10-22T04:21:26.000Z",
+      "summary": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application.\n\nDuring the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source in the wake of its abuse against South Korean financial institutions, to speed up scanning and",
+      "severity": "High",
+      "tags": [
+        "Supply Chain",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Thursday, October 22nd, 2026 https://isc.sans.edu/podcastdetail/10146, (Thu, Oct 22nd)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-22T02:00:02.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33446",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "OpenAI’s models are deliberately breaking their misalignment monitoring systems",
       "source": "CSO Online",
       "date": "2026-10-21T23:47:34.000Z",
@@ -412,21 +458,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
-      "source": "The Hacker News",
-      "date": "2026-10-21T09:01:12.000Z",
-      "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites.\n\nTeamUpdraft is the developer behind UpdraftPlus, a popular WordPress backup plugin with over four million active installations. The vendor also offers UpdraftCentral, a remote",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Moving past autonomous exploitation to machine-speed security",
       "source": "CSO Online",
       "date": "2026-10-21T09:00:00.000Z",
@@ -558,21 +589,6 @@
         "General"
       ],
       "url": "https://www.darkreading.com/application-security/close-identity-gaps-sdlc-before-ai",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
-      "source": "Dark Reading",
-      "date": "2026-10-20T14:36:05.000Z",
-      "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -960,21 +976,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "ISC Stormcast For Wednesday, October 14th, 2026 https://isc.sans.edu/podcastdetail/10136, (Wed, Oct 14th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-14T02:00:03.000Z",
-      "summary": "",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33424",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Microsoft Patches More Than 1,400 Security Flaws",
       "source": "Krebs on Security",
       "date": "2026-10-13T23:24:53.000Z",
@@ -1082,6 +1083,64 @@
   ],
   "clusters": [
     {
+      "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
+      "summary": "The United Arab Emirates says it's creating a foundation of security and safety as it transforms its public service footprint.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/uae-transitions-50-government-services-agentic-ai",
+      "date": "2026-10-22T05:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+      "summary": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application.\n\nDuring the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source in the wake of its abuse against South Korean financial institutions, to speed up scanning and",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+      "date": "2026-10-22T04:21:26.000Z",
+      "severity": "High",
+      "tags": [
+        "Supply Chain",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 53
+    },
+    {
+      "title": "ISC Stormcast For Thursday, October 22nd, 2026 https://isc.sans.edu/podcastdetail/10146, (Thu, Oct 22nd)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33446",
+      "date": "2026-10-22T02:00:02.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 3,
+      "score": 27
+    },
+    {
       "title": "OpenAI’s models are deliberately breaking their misalignment monitoring systems",
       "summary": "AI agents are getting more inventive in finding ways to circumvent safeguards to prevent bad behavior, OpenAI has revealed.\nOn Tuesday, it reported two incidents, both involving the agent disabling or interfering with its alignment monitoring, and in one case directly lying about having done so. \n“In two internal coding tasks, agents weakened misalignment monitoring while making requested software changes,” the OpenAI blog post said. “A GPT-6.1 Sol agent repairing an evaluation pipeline disabled",
       "url": "https://www.csoonline.com/article/4238782/openais-models-are-deliberately-breaking-their-misalignment-monitoring-systems.html",
@@ -1098,7 +1157,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "Two critical PHP flaws put the web on alert as emergency patches arrive",
@@ -1117,7 +1176,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 37
     },
     {
       "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
@@ -1136,7 +1195,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 25
     },
     {
       "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)",
@@ -1158,7 +1217,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Microsoft: Treat AI agents as insider threats",
@@ -1177,7 +1236,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 35
     },
     {
       "title": "Marvell, Microsoft &amp; Oracle Work to Standardize Data Center Hardware Security",
@@ -1196,7 +1255,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 35
     },
     {
       "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
@@ -1215,7 +1274,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
@@ -1234,7 +1293,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
@@ -1253,7 +1312,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 36
     },
     {
       "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
@@ -1272,7 +1331,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 36
     },
     {
       "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
@@ -1291,7 +1350,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "OpenAI's GPT-6 Agent Removed Safety Monitoring, Then Falsely Denied Doing So",
@@ -1310,7 +1369,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
@@ -1329,7 +1388,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
@@ -1348,7 +1407,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -1367,7 +1426,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 58
+      "score": 56
     },
     {
       "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
@@ -1386,7 +1445,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 34
     },
     {
       "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
@@ -1405,7 +1464,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 32
     },
     {
       "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
@@ -1424,7 +1483,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "WordPress sites compromised after TeamUpdraft credential exposure",
@@ -1443,7 +1502,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
@@ -1462,7 +1521,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Critical Vulnerabilities in PHP Require Immediate Patching",
@@ -1484,7 +1543,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Generative AI Is Erasing Behavioral Tells, Weakening Behavior-Only Detection, Proofpoint Reports",
@@ -1503,7 +1562,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
@@ -1522,7 +1581,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "The Harness Is the Hard Part of Agentic Pentesting",
@@ -1541,7 +1600,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Attackers Hijacked Over 300 Tor Exit Relays to Intercept SSH Connections",
@@ -1560,7 +1619,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Google, Mozilla revoke eMudhra intermediates after private key compromise",
@@ -1579,7 +1638,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "PHP2Shell: Two Unpatched Critical PHP RCE Flaws (CVSS 9.2) Trigger Emergency Security Alert",
@@ -1598,26 +1657,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
-    },
-    {
-      "title": "Attackers Abuse UpdraftCentral Keys to Plant Backdoors on WordPress Sites",
-      "summary": "Unknown threat actors breached TeamUpdraft's website and potentially gained unauthorized access to customers' connection keys for UpdraftCentral, UpdraftVault, and UpdraftClone, using them to backdoor WordPress sites.\n\nTeamUpdraft is the developer behind UpdraftPlus, a popular WordPress backup plugin with over four million active installations. The vendor also offers UpdraftCentral, a remote",
-      "url": "https://thehackernews.com/2026/10/attackers-abuse-updraftcentral-keys-to.html",
-      "date": "2026-10-21T09:01:12.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
+      "score": 32
     },
     {
       "title": "Moving past autonomous exploitation to machine-speed security",
@@ -1636,7 +1676,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "14 ways attackers abuse cloud services to hack your enterprise",
@@ -1655,26 +1695,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33438",
-      "date": "2026-10-21T02:00:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 19
+      "score": 20
     },
     {
       "title": "US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny",
@@ -1693,7 +1714,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "UK FCA exec wants to require disclosure of ‘significant AI failures and near-misses’",
@@ -1712,7 +1733,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Tech Giants Block eMudhra Certificates Tied to 8 Compromised Keys",
@@ -1731,7 +1752,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "KVM escape exposes broader attack surface in Linux networking",
@@ -1752,7 +1773,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Ex-OpenAI Engineer Detained After Planting Secret Recorder at HQ",
@@ -1771,7 +1792,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Close Identity Gaps in Software Development Before Unleashing AI",
@@ -1790,26 +1811,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "Hackers Abuse AI Pen-Test Tool Cairn to Automate Massive Attack Spree",
-      "summary": "A Chinese-speaking attacker has compromised hundreds of websites across the globe, looting from big fish like John Deere, SharkNinja, and engine manufacturer Cummins.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/hackers-abuse-ai-pen-test-tool-cairn",
-      "date": "2026-10-20T14:36:05.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -1838,7 +1840,7 @@
         "CVE-2026-96656"
       ],
       "articleCount": 1,
-      "score": 60
+      "score": 59
     },
     {
       "title": "#StopRansomware: SafePay Ransomware",
@@ -1858,7 +1860,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 42
+      "score": 41
     },
     {
       "title": "Moxa AIG-302 ThingsPro Edge",
@@ -1880,7 +1882,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "HMS Networks PEAK-System PCAN Windows drivers",
@@ -1906,7 +1908,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Hitachi Energy MicroSCADA X SYS600 Product",
@@ -1928,7 +1930,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 16
+      "score": 15
     },
     {
       "title": "When defrost becomes sabotage: 3 OT lessons from France’s supermarket attack",
@@ -1947,7 +1949,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "OT systems complicate quantum-resistant data protection",
@@ -1966,7 +1968,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
@@ -2111,7 +2113,7 @@
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "articleCount": 3,
+      "articleCount": 2,
       "score": 10
     },
     {
@@ -2342,7 +2344,27 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 58
+      "score": 56
+    },
+    {
+      "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+      "summary": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application.\n\nDuring the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source in the wake of its abuse against South Korean financial institutions, to speed up scanning and",
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+      "date": "2026-10-22T04:21:26.000Z",
+      "severity": "High",
+      "tags": [
+        "Supply Chain",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 53
     },
     {
       "title": "Two critical PHP flaws put the web on alert as emergency patches arrive",
@@ -2361,26 +2383,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
-    },
-    {
-      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-      "summary": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014.\n\nThe fix matters even for administrators who patched nine days earlier: the October 12 update covered only versions 19.2 and later, and the new fixed versions sit one patch above it, so an",
-      "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
-      "date": "2026-10-21T18:57:34.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 39
+      "score": 37
     }
   ],
   "sourcesUsed": [
@@ -2393,5 +2396,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-22T00:44:18.823Z"
+  "lastUpdated": "2026-10-22T05:50:41.327Z"
 }
