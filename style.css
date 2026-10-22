@@ -1092,12 +1092,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 @keyframes medallionBreathe {
   0%, 100% { transform: translateY(-50%) rotate(0deg) scale(1); }
-  50% { transform: translateY(-50%) rotate(1.2deg) scale(1.015); }
+  35% { transform: translateY(-50%) rotate(0.7deg) scale(1.008); }
+  70% { transform: translateY(-50%) rotate(1.2deg) scale(1.015); }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero__medallion { animation: none; }
 }
-@media (max-width: 900px) {
+@media (max-width: 760px) {
   .hero__medallion { opacity: 0.4; width: 90vw; right: -10vw; }
 }
 
@@ -1113,11 +1114,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 1;
   pointer-events: none;
   opacity: 0.8;
-  -webkit-mask-image: radial-gradient(circle at 60% 40%, #000 30%, transparent 72%);
-  mask-image: radial-gradient(circle at 60% 40%, #000 30%, transparent 72%);
+  -webkit-mask-image: radial-gradient(circle at 60% 40%, #000 35%, transparent 72%);
+  mask-image: radial-gradient(circle at 60% 40%, #000 35%, transparent 72%);
 }
 @media (max-width: 760px) {
-  .cap-corner-mark { opacity: 0.35; width: 60vw; top: -4%; right: -10%; }
+  .cap-corner-mark { opacity: 0.4; width: 60vw; top: -4%; right: -10%; }
 }
 
 /* --- Buttons --- */
