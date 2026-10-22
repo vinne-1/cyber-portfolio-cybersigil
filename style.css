@@ -3144,6 +3144,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   align-items: center;
   font-size: 0.8rem;
   line-height: 1;
+  min-height: 44px;
 }
 .terminal__input {
   flex: 1;

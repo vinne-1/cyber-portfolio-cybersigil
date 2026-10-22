@@ -393,6 +393,15 @@
         }
     }
 
+    // The persistent footer's "Let's work together" CTA block repeats the
+    // Contact page's own copy and its own "Get in Touch" button when shown
+    // on /contact itself -- hide it there, show it everywhere else.
+    function syncFooterCta(route) {
+        var ctaBlock = document.querySelector('.footer__cta-block');
+        if (!ctaBlock) return;
+        ctaBlock.style.display = (route === '/contact') ? 'none' : '';
+    }
+
     /* ----------------------------------------------------------
        PAGE TRANSITIONS — Per-Route Variants
        ---------------------------------------------------------- */
@@ -518,6 +527,7 @@
         if (twitterDesc) twitterDesc.setAttribute('content', routeDescription);
 
         updateActiveNav(route);
+        syncFooterCta(route);
         var announcer = document.getElementById('routeAnnouncer');
         if (announcer) announcer.textContent = document.title;
 
