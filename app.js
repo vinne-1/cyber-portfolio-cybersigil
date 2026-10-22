@@ -173,6 +173,7 @@
        ROUTE CONFIG (HTML5 History API)
        ---------------------------------------------------------- */
     var BASE_PATH = window.location.hostname === 'vinne-1.github.io' ? '/cyber-portfolio-cybersigil' : '';
+    var SITE_ORIGIN = 'https://vineedoesstuff.in';
 
     var ROUTES = {
         '/':               'page-home',
@@ -382,7 +383,22 @@
 
         document.title = ROUTE_TITLES[route] || ROUTE_TITLES['/'];
         var metaDesc = document.querySelector('meta[name="description"]');
-        if (metaDesc) metaDesc.setAttribute('content', ROUTE_DESCRIPTIONS[route] || ROUTE_DESCRIPTIONS['/']);
+        var routeDescription = ROUTE_DESCRIPTIONS[route] || ROUTE_DESCRIPTIONS['/'];
+        if (metaDesc) metaDesc.setAttribute('content', routeDescription);
+
+        // Keep canonical URL / Open Graph metadata in sync with the route so
+        // crawlers and link-preview bots see the real page, not always the
+        // homepage (SPA routing never navigates, so these otherwise stay static).
+        var canonicalUrl = SITE_ORIGIN + (route === '/' ? '/' : route);
+        var canonicalLink = document.querySelector('link[rel="canonical"]');
+        if (canonicalLink) canonicalLink.setAttribute('href', canonicalUrl);
+        var ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.setAttribute('content', canonicalUrl);
+        var ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) ogTitle.setAttribute('content', document.title);
+        var ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc) ogDesc.setAttribute('content', routeDescription);
+
         updateActiveNav(route);
         var announcer = document.getElementById('routeAnnouncer');
         if (announcer) announcer.textContent = document.title;
