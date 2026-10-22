@@ -255,8 +255,8 @@
                 <path d="M150,90 C162,125 205,155 245,170 C215,162 170,142 150,158" stroke-width="1"/>
                 <path d="M55,170 C48,172 42,176 38,180" stroke-width="0.6"/>
                 <path d="M245,170 C252,172 258,176 262,180" stroke-width="0.6"/>
-                <circle cx="38" cy="180" r="2.5" fill="currentColor" opacity="0.5" style="color:var(--fluid-a, var(--violet))"/>
-                <circle cx="262" cy="180" r="2.5" fill="currentColor" opacity="0.5" style="color:var(--fluid-a, var(--violet))"/>
+                <circle cx="38" cy="180" r="2.5" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
+                <circle cx="262" cy="180" r="2.5" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
                 <!-- Secondary thorns (tier 1 — inner) -->
                 <path d="M150,110 C143,130 115,145 90,152" stroke-width="0.5" opacity="0.6"/>
                 <path d="M150,110 C157,130 185,145 210,152" stroke-width="0.5" opacity="0.6"/>
@@ -267,21 +267,21 @@
                 <path d="M150,260 C168,310 230,355 280,385 C240,372 175,340 150,365" stroke-width="1.2"/>
                 <path d="M20,385 C12,390 6,396 3,402" stroke-width="0.7"/>
                 <path d="M280,385 C288,390 294,396 297,402" stroke-width="0.7"/>
-                <circle cx="3" cy="402" r="3" fill="currentColor" opacity="0.5" style="color:var(--fluid-b, var(--violet))"/>
-                <circle cx="297" cy="402" r="3" fill="currentColor" opacity="0.5" style="color:var(--fluid-b, var(--violet))"/>
+                <circle cx="3" cy="402" r="3" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
+                <circle cx="297" cy="402" r="3" fill="currentColor" opacity="0.5" style="color:var(--crimson)"/>
                 <!-- Mid thorns (tier 2 — inner) -->
                 <path d="M150,290 C140,320 100,345 65,358" stroke-width="0.6" opacity="0.5"/>
                 <path d="M150,290 C160,320 200,345 235,358" stroke-width="0.6" opacity="0.5"/>
-                <circle cx="65" cy="358" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--fluid-a, var(--violet))"/>
-                <circle cx="235" cy="358" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--fluid-a, var(--violet))"/>
+                <circle cx="65" cy="358" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/>
+                <circle cx="235" cy="358" r="1.5" fill="currentColor" opacity="0.3" style="color:var(--crimson)"/>
                 <!-- Waist constriction lines -->
                 <line x1="138" y1="390" x2="138" y2="420" stroke-width="0.4" opacity="0.4"/>
                 <line x1="162" y1="390" x2="162" y2="420" stroke-width="0.4" opacity="0.4"/>
                 <!-- Lower thorn pair (tier 3 — inverted) -->
                 <path d="M150,430 C142,460 110,480 80,492 C105,486 140,470 150,480" stroke-width="0.9"/>
                 <path d="M150,430 C158,460 190,480 220,492 C195,486 160,470 150,480" stroke-width="0.9"/>
-                <circle cx="80" cy="492" r="2" fill="currentColor" opacity="0.4" style="color:var(--fluid-c, var(--violet))"/>
-                <circle cx="220" cy="492" r="2" fill="currentColor" opacity="0.4" style="color:var(--fluid-c, var(--violet))"/>
+                <circle cx="80" cy="492" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
+                <circle cx="220" cy="492" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
                 <!-- Lower diamond -->
                 <path d="M150,510 L165,540 L150,570 L135,540 Z" stroke-width="0.6"/>
                 <!-- Bottom thorn tendrils -->
@@ -289,7 +289,7 @@
                 <path d="M150,570 C155,590 170,600 185,608" stroke-width="0.5" opacity="0.5"/>
                 <!-- Terminal spike -->
                 <path d="M150,620 L158,655 L150,690 L142,655 Z" stroke-width="0.5"/>
-                <circle cx="150" cy="690" r="2" fill="currentColor" opacity="0.4" style="color:var(--fluid-a, var(--violet))"/>
+                <circle cx="150" cy="690" r="2" fill="currentColor" opacity="0.4" style="color:var(--crimson)"/>
                 <!-- Cross accents -->
                 <line x1="130" y1="180" x2="170" y2="180" stroke-width="0.3" opacity="0.3"/>
                 <line x1="125" y1="365" x2="175" y2="365" stroke-width="0.3" opacity="0.3"/>
@@ -298,49 +298,33 @@
             <svg class="hero__slash" aria-hidden="true" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
                 <defs>
                     <linearGradient id="slashFade1" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#F1F1EF" stop-opacity="0"/>
-                        <stop offset="40%" stop-color="#F1F1EF" stop-opacity="0.45"/>
-                        <stop offset="65%" stop-color="#9B9E9C" stop-opacity="0.3"/>
-                        <stop offset="100%" stop-color="#F1F1EF" stop-opacity="0"/>
+                        <stop offset="0%" stop-color="var(--crimson)" stop-opacity="0"/>
+                        <stop offset="45%" stop-color="var(--crimson)" stop-opacity="0.9"/>
+                        <stop offset="60%" stop-color="var(--bone, #d4cfc4)" stop-opacity="0.8"/>
+                        <stop offset="100%" stop-color="var(--crimson)" stop-opacity="0"/>
                     </linearGradient>
                     <linearGradient id="slashFade2" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#9B9E9C" stop-opacity="0"/>
-                        <stop offset="50%" stop-color="#7C817C" stop-opacity="0.3"/>
-                        <stop offset="100%" stop-color="#9B9E9C" stop-opacity="0"/>
+                        <stop offset="0%" stop-color="var(--crimson)" stop-opacity="0"/>
+                        <stop offset="50%" stop-color="var(--crimson)" stop-opacity="0.5"/>
+                        <stop offset="100%" stop-color="var(--crimson)" stop-opacity="0"/>
                     </linearGradient>
                 </defs>
-                <!-- Liquid ink ribbon -->
+                <!-- Primary zanpakuto-style energy strike -->
                 <path d="M 90,900 C 250,740 310,680 360,600 C 430,490 470,420 550,260 C 600,160 630,100 690,-50"
                       stroke="url(#slashFade1)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                                <path d="M 60,840 C 230,690 300,630 350,550 C 420,440 460,380 540,210"
+                <!-- Trailing secondary strokes (speed-line echo) -->
+                <path d="M 60,840 C 230,690 300,630 350,550 C 420,440 460,380 540,210"
                       stroke="url(#slashFade2)" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
                 <path d="M 120,900 C 280,740 340,680 390,600 C 460,490 500,420 580,260"
                       stroke="url(#slashFade2)" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.4"/>
-                                <circle cx="360" cy="600" r="2.2" fill="#F1F1EF" opacity="0.45"/>
-                <circle cx="440" cy="470" r="1.4" fill="#9B9E9C" opacity="0.4"/>
-                <circle cx="520" cy="320" r="1.8" fill="#F1F1EF" opacity="0.3"/>
-                <circle cx="570" cy="200" r="1" fill="#7C817C" opacity="0.35"/>
+                <!-- Ember particles along the strike -->
+                <circle cx="360" cy="600" r="2.2" fill="var(--crimson)" opacity="0.7"/>
+                <circle cx="440" cy="470" r="1.4" fill="var(--crimson)" opacity="0.6"/>
+                <circle cx="520" cy="320" r="1.8" fill="var(--crimson)" opacity="0.5"/>
+                <circle cx="570" cy="200" r="1" fill="var(--crimson)" opacity="0.6"/>
             </svg>
             <div class="hero__bg-grid"></div>
-            <!-- Liquid field: morphing ink blobs on a flat stage (clear demarcation) -->
-            <div class="hero__fluid" aria-hidden="true">
-                <svg width="0" height="0" aria-hidden="true" focusable="false">
-                    <defs>
-                        <filter id="fluidGoo">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
-                            <feColorMatrix in="blur" mode="matrix"
-                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -10"
-                                result="goo"/>
-                            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-                        </filter>
-                    </defs>
-                </svg>
-                <div class="hero__fluid-field">
-                    <span class="hero__blob hero__blob--a"></span>
-                    <span class="hero__blob hero__blob--b"></span>
-                    <span class="hero__blob hero__blob--c"></span>
-                </div>
-            </div>
+            <div class="hero__crimson-wash"></div>
             <!-- Ornamental medallion — gold mosaic + gear ring + aperture iris
                  (Klimt gold-leaf iconography, Puparia mechanical detailing,
                  ukiyo-e flat-block boldness), confined to the decorative
@@ -410,7 +394,7 @@
                 </div>
             </div>
             <div class="hero__scroll-indicator">
-                <span class="t-mono" aria-hidden="true" style="writing-mode:vertical-rl; font-size:0.6rem; letter-spacing:0.15em; color:var(--gray-300);">SCROLL</span>
+                <span class="t-mono" aria-hidden="true" style="writing-mode:vertical-rl; font-size:0.6rem; letter-spacing:0.15em; color:var(--gray-400);">SCROLL</span>
                 <div class="hero__scroll-line"></div>
             </div>
         </section>
@@ -952,7 +936,7 @@
                     <button type="button" class="device-3d-dot" aria-label="Show timings screen"></button>
                 </div>
 
-                <div class="anim-item callout-panel">
+                <div class="anim-item" style="margin-top:1rem; padding:2rem; border:1px solid var(--border); background:var(--surface); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:1.5rem;">
                     <div>
                         <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Want early access?</h3>
                         <p id="closedTestingHint" style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">

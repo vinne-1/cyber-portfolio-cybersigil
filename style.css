@@ -5,21 +5,14 @@
 
 /* --- Custom Properties — Cybersigilism + Goth --- */
 :root {
-  /* Editorial monochrome from EM / Dribbble #27550614:
-     #040505 black, #3F433E olive, #7C817C / #9B9E9C gray, #F1F1EF paper. */
-  --black:       #040505;
-  --charcoal:    #040505;
-  --surface:     #0c0d0c;
-  --surface-2:   #141514;
-  --surface-3:   #1c1d1c;
-  --border:      #2a2c2a;
-  --border-light:#3F433E;
+  --black:       #000000;
+  --charcoal:    #05020a;
+  --surface:     #0a0510;
+  --surface-2:   #0f0a18;
+  --surface-3:   #14101e;
+  --border:      #1a1228;
+  --border-light:#261a38;
   color-scheme: dark;
-
-  --grade-deep:  #040505;
-  --stage:       #040505;
-  --olive:       #3F433E;
-  --paper:       #F1F1EF;
 
   --crimson:     #a50d22;
   --crimson-dark:#6b0014;
@@ -35,13 +28,7 @@
   --purple-deep: #2d1b4e;
   --purple-glow: rgba(107, 76, 154, 0.2);
   --violet:      #8b6cc1;
-  --bone:        #F1F1EF;
-
-  /* Liquid ink stays inside the monochrome system — no purple/teal flood */
-  --fluid-a:     #3F433E;
-  --fluid-b:     #7C817C;
-  --fluid-c:     #9B9E9C;
-  --fluid-glow:  rgba(63, 67, 62, 0.35);
+  --bone:        #d4cfc4;
 
   /* Ornamental gold — iconic medallion motifs (Klimt/ukiyo-e inspired accents) */
   --gold:        #c9a227;
@@ -54,12 +41,12 @@
   --severity-low:      #4caf50;
   --status-active:     #28c840;
 
-  --white:       #F1F1EF;
-  --gray-100:    #c4c6c4;
-  --gray-200:    #9B9E9C;
-  --gray-300:    #8d918f; /* AA on #040505 (~5.6:1). Dribbble #7C817C is the mid tone; this is the text-safe step. */
-  --gray-400:    #3F433E;
-  --gray-500:    #1a1c1a;
+  --white:       #e0dcd4;
+  --gray-100:    #b8b0a8;
+  --gray-200:    #8a8280;
+  --gray-300:    #807686; /* WCAG AA: 4.66:1 vs --surface, 4.76:1 vs --charcoal (was #6a6068 at 3.35:1 — failed AA for body text) */
+  --gray-400:    #3a2e40;
+  --gray-500:    #201828;
 
   --font-display: 'Cinzel', 'Georgia', serif;
   --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -81,10 +68,11 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.04;
+  opacity: 0.025;
   background-image:
-    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(63, 67, 62, 0.18) 0%, transparent 65%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236b4c9a' stroke-width='0.3' opacity='0.45'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
+    radial-gradient(ellipse 80% 50% at 20% 80%, rgba(107, 76, 154, 0.15) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(165, 13, 34, 0.1) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236b4c9a' stroke-width='0.3' opacity='0.6'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* --- Scanline Overlay --- */
@@ -167,7 +155,7 @@
   to { transform: translateY(-50%) rotate(360deg); }
 }
 
-/* Liquid ink ribbon — fluid stroke, not a bloody slash */
+/* Bleach-style energy strike — a reiatsu slash cutting through the hero */
 .hero__slash {
   position: absolute;
   inset: 0;
@@ -175,16 +163,16 @@
   height: 100%;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.5;
-  filter: drop-shadow(0 0 6px rgba(241, 241, 239, 0.12));
-  animation: slashShimmer 8s ease-in-out infinite;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 6px rgba(165, 13, 34, 0.5)) drop-shadow(0 0 18px rgba(165, 13, 34, 0.2));
+  animation: slashShimmer 6s ease-in-out infinite;
 }
 @keyframes slashShimmer {
-  0%, 100% { opacity: 0.35; }
-  50% { opacity: 0.55; }
+  0%, 100% { opacity: 0.4; filter: drop-shadow(0 0 6px rgba(165, 13, 34, 0.4)) drop-shadow(0 0 16px rgba(165, 13, 34, 0.15)); }
+  50% { opacity: 0.65; filter: drop-shadow(0 0 10px rgba(165, 13, 34, 0.65)) drop-shadow(0 0 26px rgba(165, 13, 34, 0.3)); }
 }
 @media (max-width: 768px) {
-  .hero__slash { opacity: 0.28; }
+  .hero__slash { opacity: 0.3; }
 }
 @media (prefers-reduced-motion: reduce) {
   .hero__slash { animation: none; }
@@ -415,7 +403,7 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
-  background: var(--stage);
+  background: var(--black);
 }
 
 /* #siteShell (not <body>) carries the FOUC-prevention fade, so #preloader —
@@ -424,13 +412,6 @@ body {
 #siteShell {
   opacity: 0;
   transition: opacity 0.3s ease;
-  min-height: 100vh;
-  /* Layered stage depth (design spec): charcoal field, purple pool on the
-     ornament side, navy falloff at the bottom. Left text column stays dark. */
-  background:
-    radial-gradient(ellipse 55% 70% at 82% 28%, rgba(63, 67, 62, 0.45) 0%, transparent 68%),
-    radial-gradient(ellipse 30% 40% at 88% 22%, rgba(241, 241, 239, 0.04) 0%, transparent 60%),
-    linear-gradient(180deg, #0a0b0a 0%, #040505 40%, #020303 100%);
 }
 #siteShell.ready {
   opacity: 1;
@@ -441,52 +422,31 @@ body {
   content: '';
   position: fixed;
   inset: clamp(0.5rem, 2vw, 1.5rem);
-  border: 1px solid rgba(63, 67, 62, 0.45);
+  border: 1px solid rgba(107, 76, 154, 0.12);
   pointer-events: none;
   z-index: 9998;
 }
 
-/* Edge vignette — deepens corners without washing the text column */
+/* Dark vignette overlay — purple-tinged */
 .vignette {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse 90% 80% at 50% 40%, transparent 48%, rgba(4, 5, 5, 0.55) 100%);
+    radial-gradient(ellipse at center, transparent 35%, rgba(10, 5, 16, 0.6) 100%),
+    radial-gradient(ellipse 120% 80% at 50% 100%, rgba(45, 27, 78, 0.08) 0%, transparent 50%);
   pointer-events: none;
   z-index: 9997;
 }
 
 
 ::selection {
-  background: rgba(63, 67, 62, 0.85);
-  color: var(--paper);
+  background: var(--purple-deep);
+  color: var(--bone);
 }
 
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; }
-
-/* In-content links (About, Privacy, Threat Landscape cards, etc.) */
-.t-body a,
-.t-body-lg a,
-.legal-prose a,
-.about-hero a,
-.footer__cta-sub a {
-  color: var(--crimson-text);
-  text-decoration: underline;
-  text-decoration-color: rgba(223, 66, 89, 0.4);
-  text-underline-offset: 0.18em;
-  text-decoration-thickness: 1px;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
-}
-.t-body a:hover,
-.t-body-lg a:hover,
-.legal-prose a:hover,
-.about-hero a:hover,
-.footer__cta-sub a:hover {
-  color: var(--white);
-  text-decoration-color: var(--crimson-text);
-}
 
 /* --- Typography Scale --- */
 .t-display {
@@ -497,7 +457,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: -0.02em;
   color: var(--white);
   text-transform: uppercase;
-  text-wrap: balance;
 }
 
 .t-heading {
@@ -507,7 +466,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.0;
   letter-spacing: -0.03em;
   color: var(--white);
-  text-wrap: balance;
 }
 
 .t-subheading {
@@ -644,10 +602,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: relative;
   width: 46px;
   height: 4px;
-  background: linear-gradient(90deg, var(--paper) 0%, var(--olive) 100%);
+  background: linear-gradient(90deg, var(--crimson) 0%, var(--violet, var(--purple)) 100%);
   clip-path: polygon(0% 40%, 85% 0%, 100% 60%, 15% 100%);
   margin-bottom: 1.5rem;
-  filter: none;
+  filter: drop-shadow(0 0 4px rgba(165, 13, 34, 0.45));
 }
 .accent-bar::after {
   content: '';
@@ -670,23 +628,16 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   right: 0;
   z-index: 100;
   padding: 0 clamp(20px, 4vw, 48px);
-  /* Dark glass only — no white haze at the top */
-  background: linear-gradient(
-    180deg,
-    rgba(4, 5, 5, 0.82) 0%,
-    rgba(4, 5, 5, 0.55) 70%,
-    transparent 100%
-  );
-  backdrop-filter: blur(12px) saturate(1.05);
-  -webkit-backdrop-filter: blur(12px) saturate(1.05);
-  transition: background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease;
-  border-bottom: 1px solid transparent;
+  background: linear-gradient(180deg, rgba(5, 2, 10, 0.7) 0%, rgba(5, 2, 10, 0.4) 70%, transparent 100%);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
 
 .nav--scrolled {
-  background: rgba(4, 5, 5, 0.92);
-  backdrop-filter: blur(20px) saturate(1.05);
-  -webkit-backdrop-filter: blur(20px) saturate(1.05);
+  background: rgba(5, 2, 10, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -707,39 +658,17 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   align-items: center;
   gap: 8px;
-  position: relative;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 1px 2px rgba(0, 0, 0, 0.8);
-  transition: text-shadow 0.35s ease;
 }
-.nav__logo span { color: var(--paper); text-shadow: none; }
+.nav__logo span { color: var(--crimson); text-shadow: 0 0 12px rgba(165, 13, 34, 0.6); }
 .nav__logo-sigil {
-  color: var(--paper);
-  opacity: 0.9;
-  transition: opacity 0.3s ease, transform 0.5s var(--ease-out-expo), filter 0.35s ease, color 0.35s ease;
+  color: var(--purple);
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.5s var(--ease-out-expo);
 }
 .nav__logo:hover .nav__logo-sigil {
   opacity: 1;
   transform: rotate(45deg);
-}
-/* Home has no numbered nav item — the brand mark is the home active state */
-.nav__logo.active {
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 28px rgba(223, 66, 89, 0.28);
-}
-.nav__logo.active .nav__logo-sigil {
-  color: var(--crimson-text);
-  opacity: 1;
-  filter: drop-shadow(0 0 6px rgba(223, 66, 89, 0.55));
-}
-.nav__logo.active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -12px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--crimson-text), transparent 90%);
-  box-shadow: 0 0 10px rgba(223, 66, 89, 0.45);
-  pointer-events: none;
 }
 
 .nav__links {
@@ -754,9 +683,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  /* Slightly brighter against the misty top menu grade */
-  color: var(--gray-100);
-  text-shadow: 0 1px 10px rgba(8, 4, 10, 0.55);
+  color: var(--gray-300);
   transition: color 0.3s ease, opacity 0.3s ease;
   position: relative;
   display: flex;
@@ -910,9 +837,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: color 0.3s ease, letter-spacing 0.3s ease, text-shadow 0.3s ease;
 }
 .nav__mobile a:hover {
-  color: var(--crimson-text);
+  color: var(--crimson);
   letter-spacing: 0.05em;
-  text-shadow: 0 0 20px rgba(223, 66, 89, 0.35);
+  text-shadow: 0 0 20px rgba(165, 13, 34, 0.3);
 }
 .nav__mobile-plane-label {
   font-family: var(--font-mono);
@@ -920,7 +847,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold, #c9a227);
-  opacity: 1;
+  opacity: 0.7;
   margin-top: -0.5rem;
 }
 .nav__mobile-link--products:hover {
@@ -970,22 +897,19 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  /* --crimson fails AA as text (~2.6:1); --crimson-text clears ~4.5:1 */
-  color: var(--crimson-text);
+  color: var(--crimson);
   padding: 8px 16px;
-  background: rgba(165, 13, 34, 0.12);
+  background: rgba(165, 13, 34, 0.06);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(223, 66, 89, 0.38);
+  border: 1px solid rgba(165, 13, 34, 0.15);
   border-radius: 4px;
-  box-shadow: 0 0 24px rgba(165, 13, 34, 0.12);
 }
 .hero__status-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--crimson-text);
-  box-shadow: 0 0 8px rgba(223, 66, 89, 0.7);
+  background: var(--crimson);
   animation: pulse-dot 2s ease infinite;
 }
 @keyframes pulse-dot {
@@ -1001,10 +925,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 400;
   letter-spacing: 0.02em;
   text-transform: none;
-  /* Full-opacity light lavender — dimmed --purple failed AA and looked washed out */
-  color: var(--bone);
-  opacity: 1;
-  text-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
+  color: var(--purple);
+  opacity: 0.7;
 }
 
 /* Glitch text on hero headline hover */
@@ -1027,12 +949,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .hero__sub {
-  max-width: 560px;
+  max-width: 520px;
   margin-bottom: 3rem;
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   line-height: 1.7;
-  color: var(--gray-100);
-  text-wrap: pretty;
+  color: var(--gray-200);
 }
 .hero__cta-group {
   display: flex;
@@ -1082,112 +1003,26 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   100% { top: 100%; }
 }
 
-/* Hero depth — design-mock layered radials, masked away from the text column.
-   Gold + teal sit with the purple pool so the stage is not one hue. */
+/* Atmospheric radial gradients — kprverse-inspired layered depth */
 .hero__bg-grid {
   position: absolute;
   inset: 0;
-  z-index: 0;
-  pointer-events: none;
   background:
-    radial-gradient(ellipse 70% 85% at 78% 46%, rgba(63, 67, 62, 0.55) 0%, rgba(4, 5, 5, 0.2) 42%, transparent 74%),
-    radial-gradient(ellipse 38% 48% at 84% 38%, rgba(241, 241, 239, 0.06) 0%, transparent 62%),
-    radial-gradient(ellipse 28% 36% at 70% 62%, rgba(124, 129, 124, 0.12) 0%, transparent 68%);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, #000 52%, #000 100%);
-  mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, #000 52%, #000 100%);
-}
-
-/* Liquid accent — small ink pool behind the medallion, not the whole hero */
-.hero__fluid {
-  position: absolute;
-  top: 18%;
-  right: 4%;
-  width: min(34vw, 420px);
-  height: min(42vh, 420px);
-  z-index: 0;
+    radial-gradient(ellipse 80% 90% at 55% 50%, rgba(45, 27, 78, 0.35) 0%, rgba(15, 5, 30, 0.2) 40%, transparent 100%),
+    radial-gradient(ellipse 50% 60% at 60% 45%, rgba(107, 76, 154, 0.08) 0%, transparent 70%);
   pointer-events: none;
-  -webkit-mask-image: radial-gradient(circle at 55% 50%, #000 30%, transparent 72%);
-  mask-image: radial-gradient(circle at 55% 50%, #000 30%, transparent 72%);
 }
-.hero__fluid-field {
+.hero__crimson-wash {
   position: absolute;
-  inset: 0;
+  top: -20%;
+  right: -15%;
+  width: 60vw;
+  height: 60vw;
+  background:
+    radial-gradient(circle, rgba(165, 13, 34, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 80% at 30% 70%, rgba(45, 27, 78, 0.06) 0%, transparent 60%);
+  pointer-events: none;
 }
-.hero__blob {
-  position: absolute;
-  display: block;
-  border-radius: 42% 58% 48% 52% / 48% 42% 58% 52%;
-  will-change: border-radius, transform;
-  filter: blur(18px);
-}
-.hero__blob--a {
-  width: 70%;
-  height: 70%;
-  top: 8%;
-  right: 6%;
-  background: radial-gradient(circle at 40% 40%, rgba(155, 158, 156, 0.35), rgba(63, 67, 62, 0.2) 55%, transparent 72%);
-  opacity: 0.7;
-  animation: fluidMorphA 14s ease-in-out infinite, fluidDriftA 18s ease-in-out infinite;
-}
-.hero__blob--b {
-  width: 55%;
-  height: 55%;
-  bottom: 6%;
-  right: 22%;
-  background: radial-gradient(circle at 40% 40%, rgba(124, 129, 124, 0.28), rgba(63, 67, 62, 0.12) 55%, transparent 72%);
-  opacity: 0.6;
-  animation: fluidMorphB 11s ease-in-out infinite reverse, fluidDriftB 16s ease-in-out infinite;
-}
-.hero__blob--c {
-  width: 40%;
-  height: 40%;
-  top: 36%;
-  right: 40%;
-  background: radial-gradient(circle at 50% 40%, rgba(241, 241, 239, 0.12), rgba(63, 67, 62, 0.08) 55%, transparent 72%);
-  opacity: 0.55;
-  animation: fluidMorphC 9s ease-in-out infinite, fluidDriftC 13s ease-in-out infinite;
-}
-@keyframes fluidMorphA {
-  0%, 100% { border-radius: 42% 58% 48% 52% / 48% 42% 58% 52%; }
-  33% { border-radius: 58% 42% 62% 38% / 42% 58% 42% 58%; }
-  66% { border-radius: 38% 62% 44% 56% / 56% 38% 62% 44%; }
-}
-@keyframes fluidMorphB {
-  0%, 100% { border-radius: 60% 40% 55% 45% / 45% 55% 40% 60%; }
-  50% { border-radius: 40% 60% 35% 65% / 60% 40% 65% 35%; }
-}
-@keyframes fluidMorphC {
-  0%, 100% { border-radius: 50% 50% 40% 60% / 55% 45% 55% 45%; }
-  50% { border-radius: 35% 65% 55% 45% / 40% 60% 40% 60%; }
-}
-@keyframes fluidDriftA {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-4%, 5%) scale(1.06); }
-}
-@keyframes fluidDriftB {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(6%, -4%) scale(1.08); }
-}
-@keyframes fluidDriftC {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50% { transform: translate(-5%, 3%) rotate(8deg); }
-}
-@media (prefers-reduced-motion: reduce) {
-  .hero__blob { animation: none; }
-}
-@media (max-width: 900px) {
-  .hero__fluid {
-    width: 48vw;
-    height: 28vh;
-    top: auto;
-    bottom: 8%;
-    right: -4%;
-    opacity: 0.55;
-  }
-}
-
-/* Legacy alias kept so any residual selectors still resolve */
-.hero__crimson-wash { display: none; }
 .hero__medallion {
   position: absolute;
   top: 50%;
@@ -1197,7 +1032,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: auto;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.42;
+  opacity: 0.8;
   -webkit-mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   animation: medallionBreathe 14s ease-in-out infinite;
@@ -1262,15 +1097,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: none;
 }
 .btn--primary {
-  background: var(--paper);
-  color: var(--black);
-  border: 1px solid var(--paper);
-  box-shadow: none;
+  background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 100%);
+  color: var(--white);
+  border: 1px solid transparent;
 }
 .btn--primary:hover {
-  background: transparent;
-  color: var(--paper);
-  box-shadow: none;
+  background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple) 100%);
+  box-shadow: 0 0 20px rgba(107, 76, 154, 0.25), 0 0 40px rgba(139, 108, 193, 0.15);
 }
 .btn--outline {
   border: 1px solid var(--border-light);
@@ -1404,7 +1237,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .vapt-anim__line--1 { animation-delay: 0s; }
 .vapt-anim__line--2 { animation-delay: 0.5s; }
-.vapt-anim__line--flag { color: var(--crimson-text); animation-delay: 1s; }
+.vapt-anim__line--flag { color: var(--crimson); animation-delay: 1s; }
 @keyframes vaptLineReveal {
   0%, 4% { opacity: 0; transform: translateX(-4px); }
   12%, 80% { opacity: 0.9; transform: translateX(0); }
@@ -1900,16 +1733,14 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .footer {
   padding: 0;
   border-top: 1px solid var(--border);
-  background:
-    radial-gradient(ellipse 50% 80% at 80% 0%, rgba(63, 67, 62, 0.28) 0%, transparent 70%),
-    linear-gradient(to bottom, transparent, #040505 100%);
+  background: linear-gradient(to bottom, transparent, rgba(45, 27, 78, 0.03) 50%, rgba(10, 5, 16, 0.06));
 }
 .footer__protocol {
   display: block;
   font-size: 0.55rem;
   letter-spacing: 0.2em;
-  color: var(--crimson-text);
-  opacity: 0.85;
+  color: var(--crimson);
+  opacity: 0.5;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
@@ -1970,7 +1801,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 700;
   color: var(--white);
 }
-.footer__logo span { color: var(--crimson-text); }
+.footer__logo span { color: var(--crimson); }
 .footer__tagline {
   font-size: 0.65rem;
   color: var(--gray-300);
@@ -1994,7 +1825,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
   transition: color 0.3s ease, opacity 0.3s ease;
 }
-.footer__link:hover { color: var(--crimson-text); opacity: 1; }
+.footer__link:hover { color: var(--crimson); opacity: 1; }
 .footer__bottom-row {
   display: flex;
   gap: 1.5rem;
@@ -2004,7 +1835,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
 }
 .footer__copy--link { transition: color 0.3s ease; }
-.footer__copy--link:hover { color: var(--crimson-text); }
+.footer__copy--link:hover { color: var(--crimson); }
 
 /* Legal / policy page prose */
 .legal-prose h3 {
@@ -2150,8 +1981,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 55% at 85% 10%, rgba(63, 67, 62, 0.28) 0%, transparent 68%),
-    radial-gradient(ellipse 40% 35% at 10% 90%, rgba(124, 129, 124, 0.06) 0%, transparent 70%);
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(45, 27, 78, 0.08) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 40% at 80% 90%, rgba(165, 13, 34, 0.04) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -2164,8 +1995,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 15% 0%, rgba(63, 67, 62, 0.32) 0%, transparent 62%),
-    radial-gradient(ellipse 55% 45% at 90% 100%, rgba(124, 129, 124, 0.08) 0%, transparent 60%);
+    radial-gradient(ellipse 100% 50% at 30% 0%, rgba(45, 27, 78, 0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 70% 60% at 80% 100%, rgba(107, 76, 154, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(165, 13, 34, 0.03) 0%, transparent 40%);
   pointer-events: none;
   z-index: 0;
 }
@@ -2791,37 +2623,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: linear-gradient(90deg, rgba(165, 13, 34, 0.06), transparent 65%);
   padding-left: calc(clamp(1rem, 2vw, 1.5rem) + 10px);
 }
-@media (prefers-reduced-motion: reduce) {
-  .approach-row { transition: background 0.2s ease; }
-  .approach-row:hover { padding-left: clamp(1rem, 2vw, 1.5rem); }
-}
-
-/* Soft callout panel — used for product early-access / notice blocks */
-.callout-panel {
-  position: relative;
-  margin-top: 1rem;
-  padding: 2rem;
-  border: 1px solid var(--border-light);
-  background:
-    linear-gradient(135deg, rgba(165, 13, 34, 0.06), transparent 55%),
-    var(--surface);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  overflow: hidden;
-}
-.callout-panel::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: linear-gradient(180deg, var(--crimson-text), var(--violet));
-  box-shadow: 0 0 12px rgba(223, 66, 89, 0.35);
-}
 .approach-row__index {
   font-size: 1.4rem;
   font-weight: 600;
@@ -3443,10 +3244,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 100%;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.16;
-  /* Keep particle/matrix effects in the darker lower grade */
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.35) 28%, #000 62%, #000 100%);
-  mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.35) 28%, #000 62%, #000 100%);
+  opacity: 0.12;
 }
 
 .hero__particles {
@@ -3456,9 +3254,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 100%;
   z-index: 1;
   pointer-events: none;
-  opacity: 0.45;
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.4) 30%, #000 68%, #000 100%);
-  mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.4) 30%, #000 68%, #000 100%);
+  opacity: 0.4;
 }
 
 @media (prefers-reduced-motion: reduce) {
