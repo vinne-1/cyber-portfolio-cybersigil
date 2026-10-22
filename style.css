@@ -1552,6 +1552,32 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
   transition: color 0.3s var(--ease-out-expo), transform 0.3s var(--ease-out-expo), filter 0.3s ease;
 }
+.tool-grid__item .tool-grid__logo {
+  height: 28px;
+  width: auto;
+  max-width: 34px;
+  object-fit: contain;
+  filter: grayscale(1) brightness(1.6) opacity(0.75);
+  transition: filter 0.3s var(--ease-out-expo), transform 0.3s var(--ease-out-expo);
+}
+.tool-grid__item:hover .tool-grid__logo {
+  filter: grayscale(0) brightness(1) opacity(1) drop-shadow(0 0 4px rgba(165, 13, 34, 0.3));
+  transform: scale(1.15);
+}
+.tool-grid__item .tool-grid__logo--invert {
+  filter: invert(1) grayscale(1) brightness(1.6) opacity(0.75);
+}
+.tool-grid__item:hover .tool-grid__logo--invert {
+  filter: invert(1) grayscale(0) brightness(1) opacity(1) drop-shadow(0 0 4px rgba(165, 13, 34, 0.3));
+}
+.tool-grid__item .tool-grid__logo--mitre {
+  height: 26px;
+  filter: brightness(1.3) opacity(0.75);
+}
+.tool-grid__item:hover .tool-grid__logo--mitre {
+  filter: brightness(1) opacity(1) drop-shadow(0 0 4px rgba(165, 13, 34, 0.3));
+  transform: scale(1.15);
+}
 
 /* --- Skill Radar Chart --- */
 .skill-radar {
