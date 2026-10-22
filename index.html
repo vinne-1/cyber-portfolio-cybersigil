@@ -185,7 +185,7 @@
     <div id="routeAnnouncer" aria-live="polite" aria-atomic="true" class="sr-only"></div>
 
     <!-- Back to Top -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <button class="back-to-top" id="backToTop" aria-label="Back to top" aria-hidden="true" tabindex="-1" inert>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </button>
 
@@ -754,7 +754,7 @@
                     </div>
 
                     <div class="anim-item" style="margin-top:4rem; padding-top:2rem; border-top:1px solid var(--border);">
-                        <span class="t-caption" style="display:block; margin-bottom:1.5rem;">Primary Toolkit</span>
+                        <h3 class="t-caption" style="display:block; margin-bottom:1.5rem;">Primary Toolkit</h3>
                         <div class="tool-grid">
                             <div class="tool-grid__item">
                                 <img class="tool-grid__logo tool-grid__logo--invert" src="resources/logos/burpsuite.svg" alt="" aria-hidden="true">
@@ -804,7 +804,7 @@
                     </div>
 
                     <div class="anim-item" style="margin-top:4rem; padding-top:2rem; border-top:1px solid var(--border);">
-                        <span class="t-caption" style="display:block; margin-bottom:1.5rem;">Skill Proficiency</span>
+                        <h3 class="t-caption" style="display:block; margin-bottom:1.5rem;">Skill Proficiency</h3>
                         <div class="skill-radar">
                             <svg class="skill-radar__chart" viewBox="-60 -5 420 310" role="img" aria-label="Skill radar chart showing proficiency levels">
                                 <!-- Grid rings -->
@@ -863,10 +863,8 @@
 
                 <div class="anim-item product-section-label">
                     <span class="product-section-label__mark" aria-hidden="true"></span>
-                    <span class="t-caption">Apps</span>
+                    <h2 class="t-caption">Apps</h2>
                 </div>
-
-                <h2 class="sr-only">Apps</h2>
 
                 <div class="project-card anim-item product-showcase-card" style="padding:2rem;">
                     <div>
@@ -904,7 +902,7 @@
                 </div>
 
                 <div class="device-showcase anim-item">
-                    <div class="device-3d-stage" id="tithipath3d">
+                    <div class="device-3d-stage" id="tithipath3d" role="group" aria-roledescription="carousel" aria-label="TithiPath screenshots">
                         <div class="device-3d-phone">
                             <div class="device-3d-face device-3d-face--back"></div>
                             <div class="device-3d-face device-3d-face--top"></div>
@@ -920,9 +918,9 @@
                             <div class="device-3d-face device-3d-face--front">
                                 <div class="device-3d-camera" aria-hidden="true"></div>
                                 <div class="device-3d-screen">
-                                    <img class="device-3d-slide is-active" src="resources/products/tithipath/screenshot-calendar.png" alt="TithiPath calendar screen" loading="lazy">
-                                    <img class="device-3d-slide" src="resources/products/tithipath/screenshot-rashifal.png" alt="TithiPath Rashifal screen" loading="lazy">
-                                    <img class="device-3d-slide" src="resources/products/tithipath/screenshot-timings.png" alt="TithiPath timings and events screen" loading="lazy">
+                                    <img class="device-3d-slide is-active" src="resources/products/tithipath/screenshot-calendar.png" alt="TithiPath calendar screen" loading="lazy" aria-hidden="false">
+                                    <img class="device-3d-slide" src="resources/products/tithipath/screenshot-rashifal.png" alt="TithiPath Rashifal screen" loading="lazy" aria-hidden="true">
+                                    <img class="device-3d-slide" src="resources/products/tithipath/screenshot-timings.png" alt="TithiPath timings and events screen" loading="lazy" aria-hidden="true">
                                     <div class="device-3d-gesture-bar" aria-hidden="true"></div>
                                 </div>
                             </div>
@@ -930,10 +928,13 @@
                         <div class="device-3d-shadow" aria-hidden="true"></div>
                     </div>
                 </div>
-                <div class="device-3d-dots" id="tithipath3dDots">
-                    <button type="button" class="device-3d-dot is-active" aria-label="Show calendar screen"></button>
-                    <button type="button" class="device-3d-dot" aria-label="Show Rashifal screen"></button>
-                    <button type="button" class="device-3d-dot" aria-label="Show timings screen"></button>
+                <div class="device-3d-controls">
+                    <div class="device-3d-dots" id="tithipath3dDots" role="group" aria-label="Choose screenshot">
+                        <button type="button" class="device-3d-dot is-active" aria-label="Show calendar screen" aria-pressed="true"></button>
+                        <button type="button" class="device-3d-dot" aria-label="Show Rashifal screen" aria-pressed="false"></button>
+                        <button type="button" class="device-3d-dot" aria-label="Show timings screen" aria-pressed="false"></button>
+                    </div>
+                    <button type="button" class="device-3d-pause t-mono" id="tithipath3dPause">Pause slideshow</button>
                 </div>
 
                 <div class="anim-item callout-panel">
@@ -950,12 +951,11 @@
                 <div class="anim-item" style="margin-top:5rem; margin-bottom:1.5rem;">
                     <div class="product-section-label" style="margin-bottom:0.5rem; padding-bottom:0;">
                         <span class="product-section-label__mark" aria-hidden="true"></span>
-                        <span class="t-caption">Free Tools</span>
+                        <h2 class="t-caption">Free Tools</h2>
                     </div>
                     <p style="font-size:0.8rem; color:var(--gray-300); margin-top:0.5rem; max-width:560px; padding-bottom:0.75rem; border-bottom:1px solid var(--border);">No signup, no catch &mdash; built from the same offensive-security background as the work above.</p>
                 </div>
 
-                <h2 class="sr-only">Free tools</h2>
 
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap:1.5rem;">
                     <div class="project-card anim-item">
