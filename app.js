@@ -444,11 +444,16 @@
             }
             handleNavScroll();
 
-            // Fade in the new page
-            gsap.fromTo(app,
-                { opacity: 0, y: 15 },
-                { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }
-            );
+            // Fade in the new page (skip the tween under reduced motion —
+            // just land on the final state instantly)
+            if (prefersReducedMotion) {
+                gsap.set(app, { opacity: 1, y: 0 });
+            } else {
+                gsap.fromTo(app,
+                    { opacity: 0, y: 15 },
+                    { opacity: 1, y: 0, duration: 0.4, ease: 'power2.out' }
+                );
+            }
 
             animatePageEntrance();
 
