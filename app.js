@@ -398,6 +398,12 @@
         if (ogTitle) ogTitle.setAttribute('content', document.title);
         var ogDesc = document.querySelector('meta[property="og:description"]');
         if (ogDesc) ogDesc.setAttribute('content', routeDescription);
+        // Twitter Card tags mirror the OG ones -- without this they stay stuck
+        // on the homepage's title/description for every route, same bug as above.
+        var twitterTitle = document.querySelector('meta[name="twitter:title"]');
+        if (twitterTitle) twitterTitle.setAttribute('content', document.title);
+        var twitterDesc = document.querySelector('meta[name="twitter:description"]');
+        if (twitterDesc) twitterDesc.setAttribute('content', routeDescription);
 
         updateActiveNav(route);
         var announcer = document.getElementById('routeAnnouncer');
