@@ -218,6 +218,9 @@
     var app = document.getElementById('app');
     var currentRoute = null;
     var isTransitioning = false;
+    // Last-wins queue: rapid nav clicks during a transition used to pushState
+    // the new URL then bail out of loadPage, leaving URL and content out of sync.
+    var pendingRoute = null;
 
     /* ----------------------------------------------------------
        NAVIGATION
@@ -257,10 +260,19 @@
     }
     setMobileInert(true);
 
+    function syncBurgerLabel() {
+        if (!burger) return;
+        burger.setAttribute(
+            'aria-label',
+            mobileOpen ? 'Close navigation menu' : 'Open navigation menu'
+        );
+    }
+
     if (burger) burger.addEventListener('click', function () {
         mobileOpen = !mobileOpen;
         burger.setAttribute('aria-expanded', String(mobileOpen));
         burger.classList.toggle('open', mobileOpen);
+        syncBurgerLabel();
         if (mobileOpen) {
             mobileMenu.classList.add('active');
             mobileMenu.setAttribute('aria-hidden', 'false');
@@ -279,6 +291,7 @@
         mobileOpen = false;
         if (burger) burger.setAttribute('aria-expanded', 'false');
         if (burger) burger.classList.remove('open');
+        syncBurgerLabel();
         if (mobileMenu) {
             mobileMenu.classList.remove('active');
             mobileMenu.setAttribute('aria-hidden', 'true');
@@ -373,8 +386,36 @@
         return path;
     }
 
+    function focusMainLandmark() {
+        if (!app) return;
+        // Move keyboard/AT focus into the new page content after SPA navigation.
+        // tabindex=-1 keeps #app out of the normal tab order while allowing focus().
+        if (!app.hasAttribute('tabindex')) {
+            app.setAttribute('tabindex', '-1');
+        }
+        try {
+            app.focus({ preventScroll: true });
+        } catch (err) {
+            app.focus();
+        }
+    }
+
+    function finishRouteTransition() {
+        isTransitioning = false;
+        if (pendingRoute && pendingRoute !== currentRoute) {
+            var next = pendingRoute;
+            pendingRoute = null;
+            loadPage(next, false);
+        } else {
+            pendingRoute = null;
+        }
+    }
+
     function loadPage(route, skipTransition) {
-        if (isTransitioning) return;
+        if (isTransitioning) {
+            pendingRoute = route;
+            return;
+        }
 
         var templateId = ROUTES[route];
         if (!templateId) return;
@@ -411,8 +452,12 @@
         if (announcer) announcer.textContent = document.title;
 
         if (skipTransition || currentRoute === null) {
+            var isFirstLoad = currentRoute === null;
             renderPage(template);
             currentRoute = route;
+            if (!isFirstLoad) {
+                focusMainLandmark();
+            }
             if (skipTransition) {
                 animatePageEntrance();
             } else {
@@ -437,6 +482,7 @@
 
         transitionOut().then(function () {
             renderPage(template);
+            focusMainLandmark();
             if (lenis) {
                 lenis.scrollTo(0, { immediate: true });
             } else {
@@ -457,12 +503,10 @@
 
             animatePageEntrance();
 
-            setTimeout(function () {
-                isTransitioning = false;
-            }, 600);
+            setTimeout(finishRouteTransition, 600);
         }).catch(function () {
-            isTransitioning = false;
             gsap.set(app, { opacity: 1, y: 0 });
+            finishRouteTransition();
         });
     }
 
@@ -998,7 +1042,7 @@
         var wraps = app.querySelectorAll('.magnetic-wrap');
         wraps.forEach(function (wrap) {
             var btn = wrap.querySelector('.btn');
-            if (!btn) return;
+            if (!btn || btn.disabled || btn.getAttribute('aria-disabled') === 'true') return;
 
             wrap.addEventListener('mousemove', function (e) {
                 var rect = wrap.getBoundingClientRect();
