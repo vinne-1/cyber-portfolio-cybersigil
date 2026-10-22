@@ -62,7 +62,7 @@
 }
 
 /* --- Sigil Lattice Background Pattern --- */
-body::before {
+#siteShell::before {
   content: '';
   position: fixed;
   inset: 0;
@@ -76,7 +76,7 @@ body::before {
 }
 
 /* --- Scanline Overlay --- */
-body::after {
+#siteShell::after {
   content: '';
   position: fixed;
   inset: 0;
@@ -92,7 +92,7 @@ body::after {
   mix-blend-mode: multiply;
 }
 @media (prefers-reduced-motion: reduce) {
-  body::after { display: none; }
+  #siteShell::after { display: none; }
 }
 
 /* --- Cyber Sigilism --- */
@@ -404,15 +404,21 @@ body {
   font-weight: 400;
   line-height: 1.6;
   background: var(--black);
+}
+
+/* #siteShell (not <body>) carries the FOUC-prevention fade, so #preloader —
+   a sibling of #siteShell, not a descendant — is visible immediately rather
+   than compositing to black for the whole intro. */
+#siteShell {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-body.ready {
+#siteShell.ready {
   opacity: 1;
 }
 
 /* Gothic viewport frame — kprverse-inspired border lines */
-body::after {
+#siteShell::after {
   content: '';
   position: fixed;
   inset: clamp(0.5rem, 2vw, 1.5rem);
@@ -1884,7 +1890,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .cursor-ring {
     transition-duration: 0.01ms !important;
   }
-  body {
+  #siteShell {
     opacity: 1;
     transition: none;
   }
@@ -3470,12 +3476,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  html, body {
+  html, body, #siteShell {
     background: #fff !important;
     color: #000 !important;
     opacity: 1 !important;
   }
-  body::before, body::after { content: none !important; display: none !important; }
+  #siteShell::before, #siteShell::after { content: none !important; display: none !important; }
   .section,
   .section--atmosphere, .section--atmosphere::before,
   .section--atmosphere-deep, .section--atmosphere-deep::before,

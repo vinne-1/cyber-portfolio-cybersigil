@@ -79,11 +79,8 @@
 </head>
 <body>
 
-    <!-- Nav Frame Border Lines (kprverse NavFrame-inspired) -->
-    <div class="nav-frame-line nav-frame-line--left" aria-hidden="true"></div>
-    <div class="nav-frame-line nav-frame-line--right" aria-hidden="true"></div>
-
-    <!-- Preloader -->
+    <!-- Preloader (lives OUTSIDE #siteShell so it is never nested inside an
+         opacity-0 ancestor — see #siteShell below) -->
     <div class="preloader" id="preloader">
         <svg class="preloader__sigil" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <!-- Outer diamond frame -->
@@ -110,6 +107,15 @@
         <div class="preloader__logo">vineet<span>.</span></div>
         <div class="preloader__tagline">Offensive Security</div>
     </div>
+
+    <!-- #siteShell wraps all real page content. It (not <body>) carries the
+         opacity:0 -> .ready{opacity:1} FOUC-prevention fade, so the preloader
+         above — a sibling, not a descendant — is visible from the first frame. -->
+    <div id="siteShell">
+
+    <!-- Nav Frame Border Lines (kprverse NavFrame-inspired) -->
+    <div class="nav-frame-line nav-frame-line--left" aria-hidden="true"></div>
+    <div class="nav-frame-line nav-frame-line--right" aria-hidden="true"></div>
 
     <!-- Page Transition Sigil Flash -->
     <div class="transition-sigil" id="transitionSigil" aria-hidden="true">
@@ -226,6 +232,7 @@
         </div>
     </footer>
 
+    </div><!-- /#siteShell -->
 
     <!-- ============================================================
          PAGE TEMPLATES

@@ -22,7 +22,8 @@
             .forEach(function (el) { el.style.opacity = '1'; el.style.transform = 'none'; });
         var gsapFallbackPreloader = document.getElementById('preloader');
         if (gsapFallbackPreloader) { gsapFallbackPreloader.style.display = 'none'; }
-        document.body.classList.add('ready');
+        var siteShellFallback = document.getElementById('siteShell');
+        if (siteShellFallback) { siteShellFallback.classList.add('ready'); }
         return;
     }
     var hasScrollTrigger = typeof ScrollTrigger !== 'undefined';
@@ -2325,7 +2326,8 @@
             loadPage(route, false);
 
             requestAnimationFrame(function () {
-                document.body.classList.add('ready');
+                var siteShell = document.getElementById('siteShell');
+                if (siteShell) { siteShell.classList.add('ready'); }
             });
 
             handleNavScroll();
