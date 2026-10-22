@@ -75,10 +75,11 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.045;
+  opacity: 0.04;
   background-image:
-    /* Mist opens at the top; wine/crimson weight sinks to the bottom */
-    linear-gradient(180deg, rgba(232, 236, 228, 0.35) 0%, transparent 28%),
+    /* Atmosphere only — never a screen over UI text.
+       Soft cool lift at the very top, wine/crimson weight at the bottom. */
+    linear-gradient(180deg, rgba(232, 236, 228, 0.12) 0%, transparent 18%),
     radial-gradient(ellipse 90% 55% at 50% 100%, rgba(58, 12, 22, 0.55) 0%, transparent 65%),
     radial-gradient(ellipse 70% 45% at 18% 88%, rgba(165, 13, 34, 0.28) 0%, transparent 70%),
     radial-gradient(ellipse 55% 40% at 82% 92%, rgba(45, 27, 78, 0.2) 0%, transparent 65%),
@@ -423,18 +424,19 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   min-height: 100vh;
-  /* Page grade: pale mist near the menu → charcoal mid → wine-black depth */
+  /* Smart grade: whisper of cool lift under the menu (behind text),
+     charcoal mid, wine-black depth for effects. Mist stays in the
+     background stack — never as a wash over UI. */
   background:
     linear-gradient(
       180deg,
-      rgba(232, 236, 228, 0.18) 0%,
-      rgba(232, 236, 228, 0.07) 11%,
-      transparent 26%,
-      rgba(8, 4, 10, 0.35) 55%,
-      rgba(58, 12, 22, 0.42) 82%,
-      rgba(10, 3, 6, 0.72) 100%
+      rgba(232, 236, 228, 0.055) 0%,
+      transparent 14%,
+      rgba(8, 4, 10, 0.28) 52%,
+      rgba(58, 12, 22, 0.4) 80%,
+      rgba(10, 3, 6, 0.7) 100%
     ),
-    linear-gradient(180deg, #141216 0%, var(--charcoal) 38%, var(--grade-deep) 100%);
+    linear-gradient(180deg, #121014 0%, var(--charcoal) 36%, var(--grade-deep) 100%);
 }
 #siteShell.ready {
   opacity: 1;
@@ -445,20 +447,20 @@ body {
   content: '';
   position: fixed;
   inset: clamp(0.5rem, 2vw, 1.5rem);
-  border: 1px solid rgba(232, 236, 228, 0.08);
-  border-bottom-color: rgba(165, 13, 34, 0.18);
+  border: 1px solid rgba(107, 76, 154, 0.12);
+  border-bottom-color: rgba(165, 13, 34, 0.16);
   pointer-events: none;
   z-index: 9998;
 }
 
-/* Vignette — open/misty at the top, crushed wine-dark for lower effects */
+/* Vignette — NO top white wash (that sat on top of nav/hero text).
+   Keep only the bottom wine crush + soft edge darkening. */
 .vignette {
   position: fixed;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(232, 236, 228, 0.1) 0%, transparent 20%),
-    radial-gradient(ellipse 130% 75% at 50% 115%, rgba(58, 12, 22, 0.58) 0%, transparent 55%),
-    radial-gradient(ellipse at center, transparent 42%, rgba(8, 3, 6, 0.5) 100%);
+    radial-gradient(ellipse 130% 75% at 50% 115%, rgba(58, 12, 22, 0.55) 0%, transparent 55%),
+    radial-gradient(ellipse at center, transparent 48%, rgba(8, 3, 6, 0.45) 100%);
   pointer-events: none;
   z-index: 9997;
 }
@@ -677,29 +679,26 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   right: 0;
   z-index: 100;
   padding: 0 clamp(20px, 4vw, 48px);
-  /* White/mist toward the top menu (Pinterest grade), fading into the page */
+  /* Dark glass for readable menu text, with a hairline cool highlight
+     at the very top edge (grade cue without washing out links). */
   background: linear-gradient(
     180deg,
-    rgba(232, 236, 228, 0.32) 0%,
-    rgba(232, 236, 228, 0.14) 42%,
-    rgba(8, 4, 10, 0.22) 100%
+    rgba(232, 236, 228, 0.06) 0%,
+    rgba(8, 4, 10, 0.72) 28%,
+    rgba(8, 4, 10, 0.45) 78%,
+    transparent 100%
   );
-  backdrop-filter: blur(14px) saturate(1.12);
-  -webkit-backdrop-filter: blur(14px) saturate(1.12);
+  backdrop-filter: blur(12px) saturate(1.05);
+  -webkit-backdrop-filter: blur(12px) saturate(1.05);
   transition: background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease;
-  border-bottom: 1px solid rgba(232, 236, 228, 0.06);
+  border-bottom: 1px solid transparent;
 }
 
 .nav--scrolled {
-  background: linear-gradient(
-    180deg,
-    rgba(232, 236, 228, 0.12) 0%,
-    rgba(12, 8, 16, 0.9) 48%,
-    rgba(10, 6, 14, 0.94) 100%
-  );
+  background: rgba(8, 4, 10, 0.9);
   backdrop-filter: blur(20px) saturate(1.05);
   -webkit-backdrop-filter: blur(20px) saturate(1.05);
-  border-bottom: 1px solid rgba(232, 236, 228, 0.08);
+  border-bottom: 1px solid var(--border);
 }
 
 .nav__inner {
@@ -1094,12 +1093,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   100% { top: 100%; }
 }
 
-/* Atmospheric grade — misty light at the top, wine-dark weight for effects */
+/* Atmospheric grade — soft cool lift behind the hero (not over text),
+   wine-dark weight for lower effects / medallion zone */
 .hero__bg-grid {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(232, 236, 228, 0.16) 0%, rgba(232, 236, 228, 0.04) 22%, transparent 42%),
+    linear-gradient(180deg, rgba(232, 236, 228, 0.05) 0%, transparent 24%),
     radial-gradient(ellipse 100% 70% at 50% 105%, rgba(58, 12, 22, 0.5) 0%, transparent 58%),
     radial-gradient(ellipse 80% 90% at 55% 55%, rgba(45, 27, 78, 0.28) 0%, rgba(15, 5, 30, 0.16) 42%, transparent 100%),
     radial-gradient(ellipse 50% 60% at 62% 48%, rgba(107, 76, 154, 0.07) 0%, transparent 70%);
