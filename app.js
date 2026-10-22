@@ -2317,56 +2317,18 @@
     }
 
     /* ----------------------------------------------------------
-       LOADING SCREEN (kprverse-inspired progress bar)
-       ---------------------------------------------------------- */
-    function runLoadingScreen(callback) {
-        var screen = document.getElementById('loadingScreen');
-        var bar = document.getElementById('loadingBar');
-        var percent = document.getElementById('loadingPercent');
-        if (!screen || !bar || !percent) { callback(); return; }
-
-        if (prefersReducedMotion) {
-            screen.classList.add('is-hidden');
-            callback();
-            return;
-        }
-
-        var progress = 0;
-        var duration = 1200;
-        var tick = 30;
-        var step = (100 / (duration / tick));
-
-        var interval = setInterval(function () {
-            progress = Math.min(100, progress + step + (Math.random() * 2 - 1));
-            var rounded = Math.round(progress);
-            bar.style.width = rounded + '%';
-            percent.textContent = rounded;
-
-            if (rounded >= 100) {
-                clearInterval(interval);
-                setTimeout(function () {
-                    screen.classList.add('is-hidden');
-                    setTimeout(callback, 400);
-                }, 200);
-            }
-        }, tick);
-    }
-
-    /* ----------------------------------------------------------
        INIT
        ---------------------------------------------------------- */
     function init() {
-        runLoadingScreen(function () {
-            runPreloader(function () {
-                var route = getRouteFromPath();
-                loadPage(route, false);
+        runPreloader(function () {
+            var route = getRouteFromPath();
+            loadPage(route, false);
 
-                requestAnimationFrame(function () {
-                    document.body.classList.add('ready');
-                });
-
-                handleNavScroll();
+            requestAnimationFrame(function () {
+                document.body.classList.add('ready');
             });
+
+            handleNavScroll();
         });
     }
 
