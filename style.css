@@ -424,8 +424,13 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease;
   min-height: 100vh;
-  /* Flat stage color — liquid animations live in their own layer on top */
-  background: var(--stage);
+  /* Layered stage depth (design spec): charcoal field, purple pool on the
+     ornament side, navy falloff at the bottom. Left text column stays dark. */
+  background:
+    radial-gradient(ellipse 55% 70% at 82% 28%, rgba(45, 27, 78, 0.45) 0%, transparent 68%),
+    radial-gradient(ellipse 30% 40% at 88% 22%, rgba(201, 162, 39, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 35% at 12% 88%, rgba(0, 160, 180, 0.07) 0%, transparent 70%),
+    linear-gradient(180deg, #100c16 0%, var(--stage) 28%, #070612 72%, #05040c 100%);
 }
 #siteShell.ready {
   opacity: 1;
@@ -441,12 +446,12 @@ body {
   z-index: 9998;
 }
 
-/* Soft edge vignette — cool charcoal only, no blood wash */
+/* Edge vignette — deepens corners without washing the text column */
 .vignette {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(ellipse at center, transparent 50%, rgba(7, 6, 12, 0.5) 100%);
+    radial-gradient(ellipse 90% 80% at 50% 40%, transparent 45%, rgba(5, 4, 12, 0.45) 100%);
   pointer-events: none;
   z-index: 9997;
 }
@@ -1077,15 +1082,20 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   100% { top: 100%; }
 }
 
-/* Stage atmosphere — charcoal depth + gold warmth, not a purple flood */
+/* Hero depth — design-mock layered radials, masked away from the text column.
+   Gold + teal sit with the purple pool so the stage is not one hue. */
 .hero__bg-grid {
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 55% 50% at 78% 42%, rgba(201, 162, 39, 0.08) 0%, transparent 62%),
-    radial-gradient(ellipse 40% 35% at 18% 78%, rgba(165, 13, 34, 0.06) 0%, transparent 70%),
-    radial-gradient(ellipse 80% 70% at 50% 50%, rgba(7, 6, 12, 0) 40%, rgba(7, 6, 12, 0.35) 100%);
+  z-index: 0;
   pointer-events: none;
+  background:
+    radial-gradient(ellipse 70% 85% at 78% 46%, rgba(45, 27, 78, 0.55) 0%, rgba(15, 5, 30, 0.22) 42%, transparent 74%),
+    radial-gradient(ellipse 38% 48% at 84% 38%, rgba(201, 162, 39, 0.16) 0%, transparent 62%),
+    radial-gradient(ellipse 28% 36% at 70% 62%, rgba(0, 180, 200, 0.1) 0%, transparent 68%),
+    radial-gradient(ellipse 36% 30% at 8% 90%, rgba(165, 13, 34, 0.08) 0%, transparent 70%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, #000 52%, #000 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, transparent 28%, #000 52%, #000 100%);
 }
 
 /* Liquid accent — small ink pool behind the medallion, not the whole hero */
@@ -1890,12 +1900,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .footer {
   padding: 0;
   border-top: 1px solid var(--border);
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(45, 27, 78, 0.12) 50%,
-    rgba(7, 6, 12, 0.35) 100%
-  );
+  background:
+    radial-gradient(ellipse 50% 80% at 80% 0%, rgba(45, 27, 78, 0.25) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 100%, rgba(201, 162, 39, 0.06) 0%, transparent 70%),
+    linear-gradient(to bottom, transparent, rgba(7, 6, 12, 0.55) 100%);
 }
 .footer__protocol {
   display: block;
@@ -2143,8 +2151,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(45, 27, 78, 0.08) 0%, transparent 70%),
-    radial-gradient(ellipse 60% 40% at 80% 90%, rgba(165, 13, 34, 0.04) 0%, transparent 60%);
+    radial-gradient(ellipse 70% 55% at 85% 10%, rgba(45, 27, 78, 0.22) 0%, transparent 68%),
+    radial-gradient(ellipse 40% 35% at 10% 90%, rgba(0, 160, 180, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 30% at 70% 100%, rgba(201, 162, 39, 0.06) 0%, transparent 65%);
   pointer-events: none;
 }
 
@@ -2157,9 +2166,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 100% 50% at 30% 0%, rgba(45, 27, 78, 0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 70% 60% at 80% 100%, rgba(107, 76, 154, 0.06) 0%, transparent 50%),
-    radial-gradient(ellipse 40% 30% at 50% 50%, rgba(165, 13, 34, 0.03) 0%, transparent 40%);
+    radial-gradient(ellipse 80% 50% at 15% 0%, rgba(45, 27, 78, 0.28) 0%, transparent 62%),
+    radial-gradient(ellipse 55% 45% at 90% 100%, rgba(201, 162, 39, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 35% at 70% 40%, rgba(0, 160, 180, 0.05) 0%, transparent 65%);
   pointer-events: none;
   z-index: 0;
 }
