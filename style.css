@@ -440,13 +440,35 @@ body {
 
 
 ::selection {
-  background: var(--purple-deep);
+  background: rgba(107, 76, 154, 0.55);
   color: var(--bone);
 }
 
 img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration: none; }
 button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* In-content links (About, Privacy, Threat Landscape cards, etc.) */
+.t-body a,
+.t-body-lg a,
+.legal-prose a,
+.about-hero a,
+.footer__cta-sub a {
+  color: var(--crimson-text);
+  text-decoration: underline;
+  text-decoration-color: rgba(223, 66, 89, 0.4);
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 1px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.t-body a:hover,
+.t-body-lg a:hover,
+.legal-prose a:hover,
+.about-hero a:hover,
+.footer__cta-sub a:hover {
+  color: var(--white);
+  text-decoration-color: var(--crimson-text);
+}
 
 /* --- Typography Scale --- */
 .t-display {
@@ -457,6 +479,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: -0.02em;
   color: var(--white);
   text-transform: uppercase;
+  text-wrap: balance;
 }
 
 .t-heading {
@@ -466,6 +489,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.0;
   letter-spacing: -0.03em;
   color: var(--white);
+  text-wrap: balance;
 }
 
 .t-subheading {
@@ -658,17 +682,39 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 1px 2px rgba(0, 0, 0, 0.8);
+  transition: text-shadow 0.35s ease;
 }
-.nav__logo span { color: var(--crimson); text-shadow: 0 0 12px rgba(165, 13, 34, 0.6); }
+.nav__logo span { color: var(--crimson-text); text-shadow: 0 0 12px rgba(223, 66, 89, 0.55); }
 .nav__logo-sigil {
-  color: var(--purple);
-  opacity: 0.85;
-  transition: opacity 0.3s ease, transform 0.5s var(--ease-out-expo);
+  color: var(--violet);
+  opacity: 0.9;
+  transition: opacity 0.3s ease, transform 0.5s var(--ease-out-expo), filter 0.35s ease, color 0.35s ease;
 }
 .nav__logo:hover .nav__logo-sigil {
   opacity: 1;
   transform: rotate(45deg);
+}
+/* Home has no numbered nav item — the brand mark is the home active state */
+.nav__logo.active {
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.9), 0 0 28px rgba(223, 66, 89, 0.28);
+}
+.nav__logo.active .nav__logo-sigil {
+  color: var(--crimson-text);
+  opacity: 1;
+  filter: drop-shadow(0 0 6px rgba(223, 66, 89, 0.55));
+}
+.nav__logo.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--crimson-text), transparent 90%);
+  box-shadow: 0 0 10px rgba(223, 66, 89, 0.45);
+  pointer-events: none;
 }
 
 .nav__links {
@@ -837,9 +883,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transition: color 0.3s ease, letter-spacing 0.3s ease, text-shadow 0.3s ease;
 }
 .nav__mobile a:hover {
-  color: var(--crimson);
+  color: var(--crimson-text);
   letter-spacing: 0.05em;
-  text-shadow: 0 0 20px rgba(165, 13, 34, 0.3);
+  text-shadow: 0 0 20px rgba(223, 66, 89, 0.35);
 }
 .nav__mobile-plane-label {
   font-family: var(--font-mono);
@@ -847,7 +893,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--gold, #c9a227);
-  opacity: 0.7;
+  opacity: 1;
   margin-top: -0.5rem;
 }
 .nav__mobile-link--products:hover {
@@ -897,19 +943,22 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--crimson);
+  /* --crimson fails AA as text (~2.6:1); --crimson-text clears ~4.5:1 */
+  color: var(--crimson-text);
   padding: 8px 16px;
-  background: rgba(165, 13, 34, 0.06);
+  background: rgba(165, 13, 34, 0.12);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(165, 13, 34, 0.15);
+  border: 1px solid rgba(223, 66, 89, 0.38);
   border-radius: 4px;
+  box-shadow: 0 0 24px rgba(165, 13, 34, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 .hero__status-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--crimson);
+  background: var(--crimson-text);
+  box-shadow: 0 0 8px rgba(223, 66, 89, 0.7);
   animation: pulse-dot 2s ease infinite;
 }
 @keyframes pulse-dot {
@@ -925,8 +974,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 400;
   letter-spacing: 0.02em;
   text-transform: none;
-  color: var(--purple);
-  opacity: 0.7;
+  /* Full-opacity light lavender — dimmed --purple failed AA and looked washed out */
+  color: #cbb8e8;
+  opacity: 1;
+  text-shadow: 0 0 24px rgba(107, 76, 154, 0.35);
 }
 
 /* Glitch text on hero headline hover */
@@ -949,11 +1000,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 .hero__sub {
-  max-width: 520px;
+  max-width: 560px;
   margin-bottom: 3rem;
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   line-height: 1.7;
-  color: var(--gray-200);
+  color: var(--gray-100);
+  text-wrap: pretty;
 }
 .hero__cta-group {
   display: flex;
@@ -1099,11 +1151,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .btn--primary {
   background: linear-gradient(135deg, var(--purple) 0%, var(--violet) 100%);
   color: var(--white);
-  border: 1px solid transparent;
+  border: 1px solid rgba(201, 184, 232, 0.25);
+  box-shadow: 0 0 18px rgba(107, 76, 154, 0.22), 0 0 36px rgba(165, 13, 34, 0.08);
 }
 .btn--primary:hover {
   background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple) 100%);
-  box-shadow: 0 0 20px rgba(107, 76, 154, 0.25), 0 0 40px rgba(139, 108, 193, 0.15);
+  box-shadow: 0 0 26px rgba(107, 76, 154, 0.35), 0 0 48px rgba(139, 108, 193, 0.2);
 }
 .btn--outline {
   border: 1px solid var(--border-light);
@@ -1237,7 +1290,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .vapt-anim__line--1 { animation-delay: 0s; }
 .vapt-anim__line--2 { animation-delay: 0.5s; }
-.vapt-anim__line--flag { color: var(--crimson); animation-delay: 1s; }
+.vapt-anim__line--flag { color: var(--crimson-text); animation-delay: 1s; }
 @keyframes vaptLineReveal {
   0%, 4% { opacity: 0; transform: translateX(-4px); }
   12%, 80% { opacity: 0.9; transform: translateX(0); }
@@ -1739,8 +1792,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: block;
   font-size: 0.55rem;
   letter-spacing: 0.2em;
-  color: var(--crimson);
-  opacity: 0.5;
+  color: var(--crimson-text);
+  opacity: 0.85;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
@@ -1801,7 +1854,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-weight: 700;
   color: var(--white);
 }
-.footer__logo span { color: var(--crimson); }
+.footer__logo span { color: var(--crimson-text); }
 .footer__tagline {
   font-size: 0.65rem;
   color: var(--gray-300);
@@ -1825,7 +1878,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
   transition: color 0.3s ease, opacity 0.3s ease;
 }
-.footer__link:hover { color: var(--crimson); opacity: 1; }
+.footer__link:hover { color: var(--crimson-text); opacity: 1; }
 .footer__bottom-row {
   display: flex;
   gap: 1.5rem;
@@ -1835,7 +1888,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   color: var(--gray-300);
 }
 .footer__copy--link { transition: color 0.3s ease; }
-.footer__copy--link:hover { color: var(--crimson); }
+.footer__copy--link:hover { color: var(--crimson-text); }
 
 /* Legal / policy page prose */
 .legal-prose h3 {
@@ -2622,6 +2675,37 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .approach-row:hover {
   background: linear-gradient(90deg, rgba(165, 13, 34, 0.06), transparent 65%);
   padding-left: calc(clamp(1rem, 2vw, 1.5rem) + 10px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .approach-row { transition: background 0.2s ease; }
+  .approach-row:hover { padding-left: clamp(1rem, 2vw, 1.5rem); }
+}
+
+/* Soft callout panel — used for product early-access / notice blocks */
+.callout-panel {
+  position: relative;
+  margin-top: 1rem;
+  padding: 2rem;
+  border: 1px solid var(--border-light);
+  background:
+    linear-gradient(135deg, rgba(165, 13, 34, 0.06), transparent 55%),
+    var(--surface);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+.callout-panel::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--crimson-text), var(--violet));
+  box-shadow: 0 0 12px rgba(223, 66, 89, 0.35);
 }
 .approach-row__index {
   font-size: 1.4rem;

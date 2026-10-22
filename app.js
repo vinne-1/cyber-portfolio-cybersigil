@@ -321,6 +321,16 @@
                 link.classList.remove('active');
             }
         });
+        // Home has no numbered nav link — mark the brand logo instead so
+        // visitors can tell which "plane" they're on.
+        var logo = document.querySelector('.nav__logo');
+        if (logo) {
+            if (route === '/') {
+                logo.classList.add('active');
+            } else {
+                logo.classList.remove('active');
+            }
+        }
     }
 
     /* ----------------------------------------------------------
