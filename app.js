@@ -13,20 +13,13 @@
        REDUCED MOTION CHECK
        ---------------------------------------------------------- */
     var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var hasGSAP = typeof gsap !== 'undefined';
+    var animationsDisabled = prefersReducedMotion || !hasGSAP;
 
     /* ----------------------------------------------------------
        GSAP SETUP
        ---------------------------------------------------------- */
-    if (typeof gsap === 'undefined') {
-        document.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block')
-            .forEach(function (el) { el.style.opacity = '1'; el.style.transform = 'none'; });
-        var gsapFallbackPreloader = document.getElementById('preloader');
-        if (gsapFallbackPreloader) { gsapFallbackPreloader.style.display = 'none'; }
-        var siteShellFallback = document.getElementById('siteShell');
-        if (siteShellFallback) { siteShellFallback.classList.add('ready'); }
-        return;
-    }
-    var hasScrollTrigger = typeof ScrollTrigger !== 'undefined';
+    var hasScrollTrigger = hasGSAP && typeof ScrollTrigger !== 'undefined';
     if (hasScrollTrigger) {
         gsap.registerPlugin(ScrollTrigger);
     }
@@ -35,7 +28,7 @@
        LENIS SMOOTH SCROLL (skip if reduced motion)
        ---------------------------------------------------------- */
     var lenis = null;
-    if (!prefersReducedMotion && typeof Lenis !== 'undefined') {
+    if (!animationsDisabled && typeof Lenis !== 'undefined') {
         lenis = new Lenis({
             duration: 1.2,
             easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
@@ -93,7 +86,7 @@
     var mouseX = 0, mouseY = 0;
     var ringX = 0, ringY = 0;
 
-    if (cursorDot && cursorRing && window.matchMedia('(pointer: fine)').matches && !prefersReducedMotion) {
+    if (cursorDot && cursorRing && window.matchMedia('(pointer: fine)').matches && !animationsDisabled) {
         document.addEventListener('mousemove', function (e) {
             mouseX = e.clientX;
             mouseY = e.clientY;
@@ -153,19 +146,23 @@
        BACK TO TOP BUTTON
        ---------------------------------------------------------- */
     var backToTop = document.getElementById('backToTop');
+    function syncBackToTop() {
+        if (!backToTop) return;
+        var isVisible = window.scrollY > 400 && !mobileOpen;
+        backToTop.classList.toggle('visible', isVisible);
+        backToTop.toggleAttribute('inert', !isVisible);
+        backToTop.setAttribute('aria-hidden', String(!isVisible));
+        backToTop.tabIndex = isVisible ? 0 : -1;
+        if (!isVisible && document.activeElement === backToTop) backToTop.blur();
+    }
     if (backToTop) {
-        window.addEventListener('scroll', function () {
-            if (window.scrollY > 400) {
-                backToTop.classList.add('visible');
-            } else {
-                backToTop.classList.remove('visible');
-            }
-        }, { passive: true });
+        window.addEventListener('scroll', syncBackToTop, { passive: true });
+        syncBackToTop();
         backToTop.addEventListener('click', function () {
             if (lenis) {
                 lenis.scrollTo(0);
             } else {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
             }
         });
     }
@@ -222,6 +219,12 @@
     // the new URL then bail out of loadPage, leaving URL and content out of sync.
     var pendingRoute = null;
 
+    function showAppImmediately() {
+        if (!app) return;
+        app.style.opacity = '1';
+        app.style.transform = 'none';
+    }
+
     /* ----------------------------------------------------------
        NAVIGATION
        ---------------------------------------------------------- */
@@ -258,6 +261,29 @@
             }
         });
     }
+
+    function setMenuBackgroundInert(isInert) {
+        [
+            app,
+            document.querySelector('.skip-link'),
+            document.querySelector('.footer'),
+            document.querySelector('.nav__logo'),
+            document.querySelector('.nav__links'),
+            document.querySelector('.nav__cta-wrap')
+        ].forEach(function (el) {
+            if (!el) return;
+            el.toggleAttribute('inert', isInert);
+        });
+        syncBackToTop();
+    }
+
+    function getMobileFocusables() {
+        var focusables = mobileMenu
+            ? Array.prototype.slice.call(mobileMenu.querySelectorAll('a[href], button:not([disabled])'))
+            : [];
+        if (burger) focusables.unshift(burger);
+        return focusables;
+    }
     setMobileInert(true);
 
     function syncBurgerLabel() {
@@ -269,24 +295,24 @@
     }
 
     if (burger) burger.addEventListener('click', function () {
-        mobileOpen = !mobileOpen;
-        burger.setAttribute('aria-expanded', String(mobileOpen));
-        burger.classList.toggle('open', mobileOpen);
-        syncBurgerLabel();
         if (mobileOpen) {
-            mobileMenu.classList.add('active');
-            mobileMenu.setAttribute('aria-hidden', 'false');
-            setMobileInert(false);
-            document.body.style.overflow = 'hidden';
-        } else {
-            mobileMenu.classList.remove('active');
-            mobileMenu.setAttribute('aria-hidden', 'true');
-            setMobileInert(true);
-            document.body.style.overflow = '';
+            closeMobile();
+            return;
         }
+        mobileOpen = true;
+        burger.setAttribute('aria-expanded', 'true');
+        burger.classList.add('open');
+        syncBurgerLabel();
+        mobileMenu.classList.add('active');
+        mobileMenu.setAttribute('aria-hidden', 'false');
+        setMobileInert(false);
+        setMenuBackgroundInert(true);
+        document.body.style.overflow = 'hidden';
+        var focusables = getMobileFocusables();
+        if (focusables.length > 1) focusables[1].focus();
     });
 
-    function closeMobile() {
+    function closeMobile(restoreFocus) {
         var wasOpen = mobileOpen;
         mobileOpen = false;
         if (burger) burger.setAttribute('aria-expanded', 'false');
@@ -297,8 +323,9 @@
             mobileMenu.setAttribute('aria-hidden', 'true');
             setMobileInert(true);
         }
+        setMenuBackgroundInert(false);
         document.body.style.overflow = '';
-        if (wasOpen && burger) burger.focus();
+        if (wasOpen && burger && restoreFocus !== false) burger.focus();
     }
 
     mobileMenu.querySelectorAll('a').forEach(function (link) {
@@ -308,10 +335,43 @@
     document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && mobileOpen) {
             closeMobile();
+            return;
+        }
+        if (e.key === 'Tab' && mobileOpen) {
+            var focusables = getMobileFocusables();
+            if (!focusables.length) return;
+            var first = focusables[0];
+            var last = focusables[focusables.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            } else if (focusables.indexOf(document.activeElement) === -1) {
+                e.preventDefault();
+                first.focus();
+            }
         }
     });
 
+    window.addEventListener('resize', function () {
+        if (mobileOpen && window.innerWidth > 768) {
+            closeMobile(false);
+            focusMainLandmark();
+        }
+    }, { passive: true });
+
     function updateActiveNav(route) {
+        document.querySelectorAll('#nav [data-route], #navMobile [data-route]').forEach(function (link) {
+            var href = link.getAttribute('href');
+            var linkRoute = href ? href.replace(BASE_PATH, '') || '/' : '';
+            if (linkRoute === route) {
+                link.setAttribute('aria-current', 'page');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        });
         document.querySelectorAll('.nav__link').forEach(function (link) {
             var href = link.getAttribute('href');
             var linkRoute = href ? href.replace(BASE_PATH, '') || '/' : '';
@@ -339,7 +399,7 @@
     var transitionSigil = document.getElementById('transitionSigil');
 
     function transitionOut() {
-        if (prefersReducedMotion) return Promise.resolve();
+        if (animationsDisabled) return Promise.resolve();
 
         return new Promise(function (resolve) {
             var tl = gsap.timeline({ onComplete: resolve });
@@ -502,8 +562,8 @@
 
             // Fade in the new page (skip the tween under reduced motion —
             // just land on the final state instantly)
-            if (prefersReducedMotion) {
-                gsap.set(app, { opacity: 1, y: 0 });
+            if (animationsDisabled) {
+                showAppImmediately();
             } else {
                 gsap.fromTo(app,
                     { opacity: 0, y: 15 },
@@ -513,9 +573,13 @@
 
             animatePageEntrance();
 
-            setTimeout(finishRouteTransition, 600);
+            if (animationsDisabled) {
+                finishRouteTransition();
+            } else {
+                setTimeout(finishRouteTransition, 600);
+            }
         }).catch(function () {
-            gsap.set(app, { opacity: 1, y: 0 });
+            showAppImmediately();
             finishRouteTransition();
         });
     }
@@ -527,7 +591,7 @@
     }
 
     function animatePageEntrance() {
-        if (prefersReducedMotion) {
+        if (animationsDisabled) {
             // Just make everything visible immediately
             var allItems = app.querySelectorAll('.anim-item, .project-card, .cap-card, .trust-item, .stat-block, .split-heading .char');
             allItems.forEach(function (el) {
@@ -723,7 +787,7 @@
        TEXT STROKE OUTLINE-TO-FILL ON SCROLL
        ---------------------------------------------------------- */
     function setupTextStrokeReveal() {
-        if (prefersReducedMotion || !hasScrollTrigger) return;
+        if (animationsDisabled || !hasScrollTrigger) return;
         var headings = app.querySelectorAll('.t-heading:not(.hero__headline):not(.split-heading)');
         headings.forEach(function (h) {
             h.classList.add('text-stroke-reveal');
@@ -740,7 +804,7 @@
        3D CARD TILT WITH PERSPECTIVE
        ---------------------------------------------------------- */
     function setupCardTilt() {
-        if (prefersReducedMotion || window.matchMedia('(pointer: coarse)').matches) return;
+        if (animationsDisabled || window.matchMedia('(pointer: coarse)').matches) return;
         var cards = app.querySelectorAll('.project-card');
         cards.forEach(function (card) {
             card.style.transformStyle = 'preserve-3d';
@@ -784,7 +848,7 @@
         });
 
         // Draw-reveal sigils on scroll
-        if (prefersReducedMotion) return;
+        if (animationsDisabled) return;
         var drawSigils = app.querySelectorAll('.sigil--draw');
         drawSigils.forEach(function (s) {
             if (hasScrollTrigger) {
@@ -871,7 +935,7 @@
        SCROLL-TRIGGERED ANIMATIONS
        ---------------------------------------------------------- */
     function setupScrollAnimations() {
-        if (prefersReducedMotion) return;
+        if (animationsDisabled) return;
 
         var bgGrid = app.querySelector('.hero__bg-grid');
         if (bgGrid) {
@@ -1019,7 +1083,7 @@
        COUNTER ANIMATION
        ---------------------------------------------------------- */
     function setupCounters() {
-        if (prefersReducedMotion) return;
+        if (animationsDisabled) return;
 
         var counters = app.querySelectorAll('[data-count]');
         counters.forEach(function (el) {
@@ -1047,7 +1111,7 @@
     }
 
     function setupMagneticButtons() {
-        if (prefersReducedMotion) return;
+        if (animationsDisabled) return;
 
         var wraps = app.querySelectorAll('.magnetic-wrap');
         wraps.forEach(function (wrap) {
@@ -1195,9 +1259,9 @@
                 return;
             }
             if (e.key === 'Tab') {
-                e.preventDefault();
                 var partial = input.value.trim().toLowerCase();
                 if (!partial) return;
+                e.preventDefault();
                 var matches = Object.keys(TERMINAL_COMMANDS).filter(function (k) {
                     return k.indexOf(partial) === 0;
                 });
@@ -1244,7 +1308,7 @@
     function appendPromptLine(container, cmd) {
         var line = document.createElement('div');
         var user = document.createElement('span');
-        user.style.color = 'var(--crimson)';
+        user.style.color = 'var(--crimson-text)';
         user.textContent = 'visitor@vineet';
         var sep = document.createElement('span');
         sep.style.color = 'var(--gray-300)';
@@ -1486,7 +1550,7 @@
        PARALLAX ELEMENTS (About page 3D scroll)
        ---------------------------------------------------------- */
     function setupParallaxElements() {
-        if (prefersReducedMotion) return;
+        if (animationsDisabled) return;
 
         var parallaxItems = app.querySelectorAll('[data-parallax-y]');
         parallaxItems.forEach(function (el) {
@@ -1591,33 +1655,71 @@
         var slides = Array.prototype.slice.call(stage.querySelectorAll('.device-3d-slide'));
         var dotsWrap = app.querySelector('#tithipath3dDots');
         var dots = dotsWrap ? Array.prototype.slice.call(dotsWrap.querySelectorAll('.device-3d-dot')) : [];
+        var pauseButton = app.querySelector('#tithipath3dPause');
         if (!phone || !slides.length) return;
 
         var active = 0;
         var cycleTimer = null;
+        var isPaused = prefersReducedMotion;
 
         function showSlide(index) {
             active = (index + slides.length) % slides.length;
-            slides.forEach(function (s, i) { s.classList.toggle('is-active', i === active); });
-            dots.forEach(function (d, i) { d.classList.toggle('is-active', i === active); });
+            slides.forEach(function (slide, i) {
+                var isActive = i === active;
+                slide.classList.toggle('is-active', isActive);
+                slide.setAttribute('aria-hidden', String(!isActive));
+            });
+            dots.forEach(function (dot, i) {
+                var isActive = i === active;
+                dot.classList.toggle('is-active', isActive);
+                dot.setAttribute('aria-pressed', String(isActive));
+            });
+        }
+
+        function syncPlaybackControl() {
+            if (!pauseButton) return;
+            pauseButton.textContent = isPaused ? 'Start slideshow' : 'Pause slideshow';
         }
 
         function startCycle() {
             stopCycle();
+            isPaused = false;
             cycleTimer = trackInterval(function () { showSlide(active + 1); }, 3200);
+            syncPlaybackControl();
         }
         function stopCycle() {
             if (cycleTimer) { clearInterval(cycleTimer); cycleTimer = null; }
         }
 
+        function pauseCycle() {
+            isPaused = true;
+            stopCycle();
+            syncPlaybackControl();
+        }
+
         dots.forEach(function (dot, i) {
             dot.addEventListener('click', function () {
                 showSlide(i);
-                startCycle(); // restart the timer so a manual pick isn't immediately overridden
+                if (!isPaused) startCycle();
             });
         });
 
-        startCycle();
+        if (pauseButton) {
+            pauseButton.addEventListener('click', function () {
+                if (isPaused) {
+                    startCycle();
+                } else {
+                    pauseCycle();
+                }
+            });
+        }
+
+        showSlide(0);
+        if (prefersReducedMotion) {
+            pauseCycle();
+        } else {
+            startCycle();
+        }
 
         // Mouse-parallax tilt (desktop + reduced-motion-safe: skip entirely if the user prefers less motion)
         if (!prefersReducedMotion) {
@@ -1711,7 +1813,7 @@
         container.innerHTML =
             '<div style="font-size:0.7rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--gray-300); margin-bottom:1rem;">Top 3 Today &mdash; automated ranking, not an official severity rating</div>' +
             '<div class="top3-grid">' + top3.map(function (c, i) { return tlTop3CardHtml(c, i + 1); }).join('') + '</div>';
-        if (!prefersReducedMotion) {
+        if (!animationsDisabled) {
             gsap.fromTo(container.querySelectorAll('.top3-card'),
                 { opacity: 0, y: 20 },
                 { opacity: 1, y: 0, duration: 0.5, stagger: 0.08, ease: 'expo.out' }
@@ -1748,7 +1850,7 @@
 
                 feedEl.innerHTML = clusters.map(tlClusterCardHtml).join('');
 
-                if (!prefersReducedMotion) {
+                if (!animationsDisabled) {
                     var cards = feedEl.querySelectorAll('.threat-card');
                     gsap.fromTo(cards,
                         { opacity: 0, y: 20 },
@@ -1784,7 +1886,7 @@
             listEl.innerHTML = shown.length
                 ? shown.map(tlClusterCardHtml).join('') + capNote
                 : '<div class="threat-feed__fallback">No stories match this filter right now.</div>';
-            if (!prefersReducedMotion) {
+            if (!animationsDisabled) {
                 gsap.fromTo(listEl.querySelectorAll('.threat-card'),
                     { opacity: 0, y: 15 },
                     { opacity: 1, y: 0, duration: 0.4, stagger: 0.03, ease: 'power2.out' }
@@ -1845,6 +1947,9 @@
     function whrScoreCircle(label, score) {
         var display = (score === null || score === undefined) ? 'N/A' : score;
         var color = whrScoreColor(score);
+        var textColor = score !== null && score !== undefined && score < 50
+            ? 'var(--crimson-text)'
+            : color;
         var circumference = 2 * Math.PI * 26;
         // Rendered at dashoffset = full circumference (0%) initially; whrAnimateScoreCircles
         // tweens each one in to its real value once the results block is visible, matching
@@ -1855,7 +1960,7 @@
                 '<circle class="whr-ring" data-score="' + (score === null || score === undefined ? '' : score) + '" cx="32" cy="32" r="26" fill="none" stroke="' + color + '" stroke-width="5" ' +
                     'stroke-dasharray="' + circumference.toFixed(1) + '" stroke-dashoffset="' + circumference.toFixed(1) + '" stroke-linecap="round"/>' +
             '</svg>' +
-            '<div style="margin-top:-46px; font-family:var(--font-mono); font-weight:600; font-size:0.95rem; color:' + color + ';">' + escapeHtml(String(display)) + '</div>' +
+            '<div style="margin-top:-46px; font-family:var(--font-mono); font-weight:600; font-size:0.95rem; color:' + textColor + ';">' + escapeHtml(String(display)) + '</div>' +
             '<div style="margin-top:36px; font-size:0.7rem; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.05em;">' + escapeHtml(label) + '</div>' +
         '</div>';
     }
@@ -1867,7 +1972,7 @@
             var score = ring.getAttribute('data-score');
             var pct = score === '' ? 0 : Number(score);
             var targetOffset = circumference * (1 - pct / 100);
-            if (prefersReducedMotion) {
+            if (animationsDisabled) {
                 ring.setAttribute('stroke-dashoffset', targetOffset.toFixed(1));
                 return;
             }
@@ -2044,13 +2149,13 @@
         if (sslEl) {
             var ssl = report.ssl;
             if (ssl && ssl.ok) {
-                var expiryColor = ssl.daysRemaining < 14 ? 'var(--crimson)' : (ssl.daysRemaining < 30 ? '#ffd700' : '#28c840');
+                var expiryColor = ssl.daysRemaining < 14 ? 'var(--crimson-text)' : (ssl.daysRemaining < 30 ? '#ffd700' : '#28c840');
                 sslEl.innerHTML = whrInfoCardTitle('SSL / TLS') +
                     '<div style="font-size:0.85rem; color:var(--white);">' + escapeHtml(ssl.protocol || 'Unknown protocol') + (ssl.authorized ? ' &middot; Trusted chain' : ' &middot; Not trusted') + '</div>' +
                     '<div style="font-size:0.8rem; color:' + expiryColor + '; margin-top:0.35rem;">Expires in ' + escapeHtml(String(ssl.daysRemaining)) + ' days</div>' +
                     '<div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.35rem;">Issuer: ' + escapeHtml(ssl.issuer || 'Unknown') + '</div>';
             } else {
-                sslEl.innerHTML = whrInfoCardTitle('SSL / TLS') + '<div style="font-size:0.85rem; color:var(--crimson);">' + escapeHtml((ssl && ssl.error) || 'Could not check.') + '</div>';
+                sslEl.innerHTML = whrInfoCardTitle('SSL / TLS') + '<div style="font-size:0.85rem; color:var(--crimson-text);">' + escapeHtml((ssl && ssl.error) || 'Could not check.') + '</div>';
             }
         }
 
@@ -2099,7 +2204,7 @@
         }
 
         resultsEl.style.display = '';
-        if (!prefersReducedMotion) {
+        if (!animationsDisabled) {
             gsap.fromTo(resultsEl, { opacity: 0, y: 15 }, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' });
         }
     }
@@ -2330,7 +2435,7 @@
         var preloader = document.getElementById('preloader');
         if (!preloader) { callback(); return; }
 
-        if (prefersReducedMotion) {
+        if (animationsDisabled) {
             preloader.style.display = 'none';
             callback();
             return;
