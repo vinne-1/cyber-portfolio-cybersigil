@@ -16,7 +16,6 @@
 
   /* Flat stage vs fluid ink — clear demarcation.
      Background stays cool charcoal; liquid accents use a separate ink set. */
-  --grade-mist:  #e8ece4;
   --grade-deep:  #07060c;
   --stage:       #0a0812;
 
@@ -82,10 +81,8 @@
   pointer-events: none;
   opacity: 0.04;
   background-image:
-    /* Flat stage atmosphere — cool lift only, no bloody crush */
-    linear-gradient(180deg, rgba(232, 236, 228, 0.08) 0%, transparent 16%),
-    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(124, 108, 240, 0.12) 0%, transparent 65%),
-    radial-gradient(ellipse 55% 40% at 18% 92%, rgba(78, 196, 200, 0.08) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(124, 108, 240, 0.1) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 40% at 18% 92%, rgba(78, 196, 200, 0.06) 0%, transparent 65%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236b4c9a' stroke-width='0.3' opacity='0.45'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -668,13 +665,11 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   right: 0;
   z-index: 100;
   padding: 0 clamp(20px, 4vw, 48px);
-  /* Dark glass for readable menu text, with a hairline cool highlight
-     at the very top edge (grade cue without washing out links). */
+  /* Dark glass only — no white haze at the top */
   background: linear-gradient(
     180deg,
-    rgba(232, 236, 228, 0.06) 0%,
-    rgba(8, 4, 10, 0.72) 28%,
-    rgba(8, 4, 10, 0.45) 78%,
+    rgba(8, 4, 10, 0.78) 0%,
+    rgba(8, 4, 10, 0.5) 70%,
     transparent 100%
   );
   backdrop-filter: blur(12px) saturate(1.05);
@@ -978,7 +973,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(223, 66, 89, 0.38);
   border-radius: 4px;
-  box-shadow: 0 0 24px rgba(165, 13, 34, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 24px rgba(165, 13, 34, 0.12);
 }
 .hero__status-dot {
   width: 6px;
@@ -1087,7 +1082,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(232, 236, 228, 0.03) 0%, transparent 20%),
     radial-gradient(ellipse 70% 60% at 70% 45%, rgba(45, 27, 78, 0.18) 0%, transparent 70%);
   pointer-events: none;
 }
@@ -1124,8 +1118,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 62%;
   top: 8%;
   right: 4%;
-  background: radial-gradient(circle at 35% 35%, #d2c4ff 0%, var(--fluid-a) 42%, transparent 70%);
-  opacity: 0.85;
+  background: radial-gradient(circle at 35% 35%, #a89cff 0%, var(--fluid-a) 45%, transparent 70%);
+  opacity: 0.8;
   animation: fluidMorphA 14s ease-in-out infinite, fluidDriftA 18s ease-in-out infinite;
 }
 .hero__blob--b {
@@ -1133,8 +1127,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 50%;
   bottom: 10%;
   right: 18%;
-  background: radial-gradient(circle at 40% 40%, #8ef0f2 0%, var(--fluid-b) 45%, transparent 70%);
-  opacity: 0.8;
+  background: radial-gradient(circle at 40% 40%, #5ed8dc 0%, var(--fluid-b) 48%, transparent 70%);
+  opacity: 0.75;
   animation: fluidMorphB 11s ease-in-out infinite reverse, fluidDriftB 16s ease-in-out infinite;
 }
 .hero__blob--c {
@@ -1142,8 +1136,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: 38%;
   top: 36%;
   right: 34%;
-  background: radial-gradient(circle at 50% 40%, #f0ebe3 0%, var(--fluid-c) 48%, transparent 72%);
-  opacity: 0.7;
+  background: radial-gradient(circle at 50% 40%, #9b7fd4 0%, var(--fluid-c) 50%, transparent 72%);
+  opacity: 0.65;
   animation: fluidMorphC 9s ease-in-out infinite, fluidDriftC 13s ease-in-out infinite;
 }
 @keyframes fluidMorphA {
