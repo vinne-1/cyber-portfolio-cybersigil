@@ -1264,9 +1264,9 @@
                 var y = drops[j] * fontSize;
 
                 if (Math.random() > 0.97) {
-                    ctx.fillStyle = 'rgba(200, 16, 46, 0.9)';
+                    ctx.fillStyle = 'rgba(165, 13, 34, 0.9)';
                 } else {
-                    ctx.fillStyle = 'rgba(200, 16, 46, 0.15)';
+                    ctx.fillStyle = 'rgba(165, 13, 34, 0.15)';
                 }
 
                 ctx.fillText(char, x, y);
@@ -1335,8 +1335,8 @@
         function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            var nodeColor = 'rgba(200, 16, 46, 0.6)';
-            var lineColor = 'rgba(200, 16, 46, 0.12)';
+            var nodeColor = 'rgba(165, 13, 34, 0.6)';
+            var lineColor = 'rgba(165, 13, 34, 0.12)';
 
             for (var i = 0; i < particles.length; i++) {
                 var p = particles[i];
