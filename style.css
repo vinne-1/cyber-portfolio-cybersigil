@@ -81,8 +81,8 @@
   pointer-events: none;
   opacity: 0.04;
   background-image:
-    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(124, 108, 240, 0.1) 0%, transparent 65%),
-    radial-gradient(ellipse 55% 40% at 18% 92%, rgba(78, 196, 200, 0.06) 0%, transparent 65%),
+    radial-gradient(ellipse 70% 45% at 82% 88%, rgba(201, 162, 39, 0.06) 0%, transparent 65%),
+    radial-gradient(ellipse 55% 40% at 18% 92%, rgba(165, 13, 34, 0.05) 0%, transparent 65%),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%236b4c9a' stroke-width='0.3' opacity='0.45'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -175,7 +175,7 @@
   z-index: 1;
   pointer-events: none;
   opacity: 0.5;
-  filter: drop-shadow(0 0 8px rgba(124, 108, 240, 0.35)) drop-shadow(0 0 18px rgba(78, 196, 200, 0.15));
+  filter: drop-shadow(0 0 6px rgba(201, 162, 39, 0.25)) drop-shadow(0 0 12px rgba(165, 13, 34, 0.12));
   animation: slashShimmer 8s ease-in-out infinite;
 }
 @keyframes slashShimmer {
@@ -436,7 +436,7 @@ body {
   content: '';
   position: fixed;
   inset: clamp(0.5rem, 2vw, 1.5rem);
-  border: 1px solid rgba(124, 108, 240, 0.12);
+  border: 1px solid rgba(201, 162, 39, 0.1);
   pointer-events: none;
   z-index: 9998;
 }
@@ -997,9 +997,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   letter-spacing: 0.02em;
   text-transform: none;
   /* Full-opacity light lavender — dimmed --purple failed AA and looked washed out */
-  color: #cbb8e8;
+  color: var(--bone);
   opacity: 1;
-  text-shadow: 0 0 24px rgba(107, 76, 154, 0.35);
+  text-shadow: 0 0 18px rgba(0, 0, 0, 0.45);
 }
 
 /* Glitch text on hero headline hover */
@@ -1077,28 +1077,28 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   100% { top: 100%; }
 }
 
-/* Flat stage grid — quiet, so fluid ink reads as a separate layer */
+/* Stage atmosphere — charcoal depth + gold warmth, not a purple flood */
 .hero__bg-grid {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 70% 45%, rgba(45, 27, 78, 0.18) 0%, transparent 70%);
+    radial-gradient(ellipse 55% 50% at 78% 42%, rgba(201, 162, 39, 0.08) 0%, transparent 62%),
+    radial-gradient(ellipse 40% 35% at 18% 78%, rgba(165, 13, 34, 0.06) 0%, transparent 70%),
+    radial-gradient(ellipse 80% 70% at 50% 50%, rgba(7, 6, 12, 0) 40%, rgba(7, 6, 12, 0.35) 100%);
   pointer-events: none;
 }
 
-/* --- Liquid field (portfolio fluid / metaball-inspired) ---
-   Contained on the right so the left copy column stays on flat stage. */
+/* Liquid accent — small ink pool behind the medallion, not the whole hero */
 .hero__fluid {
   position: absolute;
-  top: 5%;
-  right: -2%;
-  width: min(62vw, 780px);
-  height: min(82vh, 780px);
-  z-index: 2;
+  top: 18%;
+  right: 4%;
+  width: min(34vw, 420px);
+  height: min(42vh, 420px);
+  z-index: 0;
   pointer-events: none;
-  /* Soft edge so ink doesn't spill into the text column */
-  -webkit-mask-image: radial-gradient(ellipse 72% 78% at 58% 48%, #000 42%, transparent 82%);
-  mask-image: radial-gradient(ellipse 72% 78% at 58% 48%, #000 42%, transparent 82%);
+  -webkit-mask-image: radial-gradient(circle at 55% 50%, #000 30%, transparent 72%);
+  mask-image: radial-gradient(circle at 55% 50%, #000 30%, transparent 72%);
 }
 .hero__fluid-field {
   position: absolute;
@@ -1108,36 +1108,34 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   display: block;
   border-radius: 42% 58% 48% 52% / 48% 42% 58% 52%;
-  will-change: border-radius, transform, filter;
-  /* Soft liquid edge — distinct ink layer over the flat stage */
-  filter: blur(32px);
-  mix-blend-mode: screen;
+  will-change: border-radius, transform;
+  filter: blur(18px);
 }
 .hero__blob--a {
-  width: 62%;
-  height: 62%;
+  width: 70%;
+  height: 70%;
   top: 8%;
-  right: 4%;
-  background: radial-gradient(circle at 35% 35%, #a89cff 0%, var(--fluid-a) 45%, transparent 70%);
-  opacity: 0.8;
+  right: 6%;
+  background: radial-gradient(circle at 40% 40%, rgba(201, 162, 39, 0.55), rgba(201, 162, 39, 0.12) 55%, transparent 72%);
+  opacity: 0.7;
   animation: fluidMorphA 14s ease-in-out infinite, fluidDriftA 18s ease-in-out infinite;
 }
 .hero__blob--b {
-  width: 50%;
-  height: 50%;
-  bottom: 10%;
-  right: 18%;
-  background: radial-gradient(circle at 40% 40%, #5ed8dc 0%, var(--fluid-b) 48%, transparent 70%);
-  opacity: 0.75;
+  width: 55%;
+  height: 55%;
+  bottom: 6%;
+  right: 22%;
+  background: radial-gradient(circle at 40% 40%, rgba(78, 196, 200, 0.5), rgba(78, 196, 200, 0.1) 55%, transparent 72%);
+  opacity: 0.6;
   animation: fluidMorphB 11s ease-in-out infinite reverse, fluidDriftB 16s ease-in-out infinite;
 }
 .hero__blob--c {
-  width: 38%;
-  height: 38%;
+  width: 40%;
+  height: 40%;
   top: 36%;
-  right: 34%;
-  background: radial-gradient(circle at 50% 40%, #9b7fd4 0%, var(--fluid-c) 50%, transparent 72%);
-  opacity: 0.65;
+  right: 40%;
+  background: radial-gradient(circle at 50% 40%, rgba(223, 66, 89, 0.35), rgba(165, 13, 34, 0.08) 55%, transparent 72%);
+  opacity: 0.55;
   animation: fluidMorphC 9s ease-in-out infinite, fluidDriftC 13s ease-in-out infinite;
 }
 @keyframes fluidMorphA {
@@ -1170,12 +1168,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 @media (max-width: 900px) {
   .hero__fluid {
-    width: 90vw;
-    height: 55vh;
+    width: 48vw;
+    height: 28vh;
     top: auto;
-    bottom: 0;
-    right: -10%;
-    opacity: 0.7;
+    bottom: 8%;
+    right: -4%;
+    opacity: 0.55;
   }
 }
 
@@ -1190,8 +1188,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   height: auto;
   z-index: 1;
   pointer-events: none;
-  /* Quieter so liquid ink reads as the primary motion layer */
-  opacity: 0.45;
+  opacity: 0.82;
   -webkit-mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   mask-image: radial-gradient(ellipse 70% 75% at 62% 50%, #000 40%, transparent 78%);
   animation: medallionBreathe 14s ease-in-out infinite;

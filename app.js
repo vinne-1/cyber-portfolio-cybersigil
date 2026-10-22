@@ -1323,9 +1323,9 @@
                 var y = drops[j] * fontSize;
 
                 if (Math.random() > 0.97) {
-                    ctx.fillStyle = 'rgba(124, 108, 240, 0.85)';
+                    ctx.fillStyle = 'rgba(201, 162, 39, 0.75)';
                 } else {
-                    ctx.fillStyle = 'rgba(78, 196, 200, 0.14)';
+                    ctx.fillStyle = 'rgba(223, 66, 89, 0.12)';
                 }
 
                 ctx.fillText(char, x, y);
@@ -1394,10 +1394,9 @@
         function draw() {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Fluid ink droplets (violet/teal) — distinct from flat stage
-            var nodeColor = 'rgba(124, 108, 240, 0.55)';
-            var nodeAlt = 'rgba(78, 196, 200, 0.45)';
-            var lineColor = 'rgba(124, 108, 240, 0.14)';
+            var nodeColor = 'rgba(201, 162, 39, 0.45)';
+            var nodeAlt = 'rgba(223, 66, 89, 0.35)';
+            var lineColor = 'rgba(201, 162, 39, 0.12)';
 
             for (var i = 0; i < particles.length; i++) {
                 var p = particles[i];
