@@ -1491,27 +1491,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   box-shadow: 0 0 8px rgba(107, 76, 154, 0.06);
   background: rgba(45, 27, 78, 0.04);
 }
-.project-card__metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
-}
-.project-card__metric-value {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1;
-}
-.project-card__metric-label {
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--gray-300);
-  margin-top: 4px;
-}
 
 /* --- Capability Cards --- */
 .cap-card {
@@ -2001,14 +1980,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* --- Cybersigilism Enhancements --- */
 
-/* Clip-path card cuts (kprverse-inspired) */
-.clip-card-left {
-  clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
-}
-.clip-card-right {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 12% 100%, 0 88%);
-}
-
 /* Floating particles animation */
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -2096,34 +2067,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   z-index: 0;
 }
 
-/* Scroll indicator — vertical text with animated line (kprverse style) */
-.scroll-indicator-kpr {
-  position: absolute;
-  bottom: 2rem;
-  right: clamp(0.5rem, 2vw, 1.5rem);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  z-index: 10;
-}
-.scroll-indicator-kpr__text {
-  font-family: var(--font-mono);
-  font-size: 0.5rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  writing-mode: vertical-rl;
-  color: var(--gray-300);
-}
-.scroll-indicator-kpr__arrow {
-  animation: float 2s ease-in-out infinite;
-}
-.scroll-indicator-kpr__arrow svg {
-  width: 12px;
-  height: 16px;
-  stroke: var(--gray-300);
-}
-
 /* Purple accent glow on hover for interactive elements */
 .glow-purple {
   transition: box-shadow 0.4s ease;
@@ -2181,54 +2124,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 @media (max-width: 768px) {
   .measurement-lines { display: none; }
-}
-
-/* --- Scattered Card Layout (kprverse-inspired asymmetric positioning) --- */
-.scattered-grid {
-  position: relative;
-  height: clamp(420px, 60vw, 700px);
-  margin-top: 2rem;
-}
-.scattered-grid .project-card {
-  position: absolute;
-  width: clamp(260px, 38vw, 420px);
-  transition: transform 0.5s var(--ease-out-expo), box-shadow 0.5s ease;
-}
-.scattered-grid .project-card:nth-child(1) {
-  top: 0;
-  left: 0;
-  transform: rotate(-1.5deg);
-  z-index: 2;
-}
-.scattered-grid .project-card:nth-child(2) {
-  top: 8%;
-  right: 0;
-  transform: rotate(1.2deg);
-  z-index: 3;
-}
-.scattered-grid .project-card:nth-child(3) {
-  top: 50%;
-  left: 12%;
-  transform: rotate(0.8deg);
-  z-index: 1;
-}
-.scattered-grid .project-card:hover {
-  transform: rotate(0deg) translateY(-4px) !important;
-  z-index: 10;
-  box-shadow: 0 12px 40px rgba(45, 27, 78, 0.2), 0 0 60px rgba(107, 76, 154, 0.08);
-}
-@media (max-width: 768px) {
-  .scattered-grid {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-  .scattered-grid .project-card {
-    position: static;
-    width: 100%;
-    transform: none !important;
-  }
 }
 
 /* --- Custom Cursor --- */
@@ -2989,9 +2884,15 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   position: absolute;
   inset: -15.5px;
 }
+.device-3d-dot:hover {
+  background: var(--gray-300);
+}
 .device-3d-dot.is-active {
   background: var(--crimson);
   transform: scale(1.3);
+}
+.device-3d-dot.is-active:hover {
+  background: var(--crimson);
 }
 .device-3d-pause {
   min-height: 32px;
@@ -3178,97 +3079,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .terminal__prompt::before { animation: none; }
 }
 
-/* --- Case Study --- */
-.case-study__back {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--gray-300);
-  transition: color 0.3s ease;
-}
-.case-study__back:hover { color: var(--crimson-text); }
-.case-study__section {
-  margin-bottom: 3rem;
-}
-.case-study__heading {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 1rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border);
-  border-image: linear-gradient(90deg, var(--purple-deep), var(--crimson), transparent) 1;
-}
-.case-study__steps {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.case-study__step {
-  display: flex;
-  gap: 1.25rem;
-  align-items: flex-start;
-}
-.case-study__step-num {
-  flex-shrink: 0;
-  color: var(--crimson);
-  font-size: 0.7rem;
-  padding-top: 3px;
-  width: 28px;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.case-study__step-num::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 1px solid rgba(165, 13, 34, 0.25);
-  transform: rotate(45deg);
-  transition: border-color 0.3s ease, transform 0.3s ease;
-}
-.case-study__step:hover .case-study__step-num::before {
-  border-color: rgba(165, 13, 34, 0.5);
-  transform: rotate(45deg) scale(1.1);
-}
-.case-study__step-title {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 0.3rem;
-}
-.case-study__step-text {
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: var(--gray-300);
-}
-.case-study__results {
-  list-style: none;
-  padding: 0;
-}
-.case-study__results li {
-  position: relative;
-  padding-left: 1.25rem;
-  margin-bottom: 0.75rem;
-  font-size: 0.9rem;
-  line-height: 1.7;
-  color: var(--gray-200);
-}
-.case-study__results li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 6px;
-  height: 6px;
-  background: var(--crimson);
-}
 
 /* --- Project Card CTA --- */
 .project-card__cta {
@@ -3293,78 +3103,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   transform: translateX(4px);
 }
 
-/* --- Testimonials --- */
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2px;
-}
-.testimonial {
-  background: linear-gradient(150deg, var(--surface) 0%, rgba(45, 27, 78, 0.05) 100%);
-  border: 1px solid var(--border);
-  border-left: 2px solid var(--purple-deep);
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  position: relative;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
-}
-.testimonial:nth-child(even) {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 92%);
-}
-.testimonial:hover {
-  border-color: var(--purple);
-  box-shadow: 0 4px 24px rgba(107, 76, 154, 0.1);
-}
-.testimonial::before {
-  content: '\201C';
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  font-size: 5rem;
-  line-height: 1;
-  color: var(--purple);
-  opacity: 0.15;
-  font-family: var(--font-serif);
-  pointer-events: none;
-}
-.testimonial::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--purple-deep), var(--crimson));
-  transition: width 0.5s var(--ease-out-expo);
-}
-.testimonial:hover::after {
-  width: 100%;
-}
-.testimonial__text {
-  font-size: 0.9rem;
-  color: var(--gray-200);
-  line-height: 1.7;
-  font-style: italic;
-  margin-bottom: 1.25rem;
-  position: relative;
-  z-index: 1;
-}
-.testimonial__footer {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-}
-.testimonial__name {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--white);
-  font-style: normal;
-}
-.testimonial__role {
-  font-size: 0.7rem;
-  color: var(--gray-400);
-  font-family: var(--font-mono);
-}
 
 /* --- Hero Matrix Canvas --- */
 .hero__matrix {
@@ -3452,61 +3190,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   clip-path: polygon(0 0, 95% 0, 100% 10%, 100% 100%, 0 100%);
 }
 
-/* --- Timeline --- */
-.timeline {
-  position: relative;
-  padding-left: 40px;
-}
-.timeline__line {
-  position: absolute;
-  top: 0;
-  left: 12px;
-  width: 1px;
-  height: 100%;
-  background: linear-gradient(to bottom, var(--purple), var(--crimson) 50%, var(--border) 80%, transparent);
-}
-.timeline__item {
-  position: relative;
-  padding-bottom: 3rem;
-  padding-left: 1.5rem;
-}
-.timeline__item:last-child {
-  padding-bottom: 0;
-}
-.timeline__dot {
-  position: absolute;
-  left: -34px;
-  top: 4px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--crimson), var(--purple));
-  border: 2px solid var(--black);
-  outline: 1px solid var(--purple);
-  box-shadow: 0 0 8px rgba(107, 76, 154, 0.3);
-}
-.timeline__item:hover .timeline__dot {
-  box-shadow: 0 0 12px rgba(107, 76, 154, 0.5), 0 0 4px rgba(165, 13, 34, 0.4);
-}
-.timeline__year {
-  font-size: 0.7rem;
-  color: var(--purple);
-  letter-spacing: 0.15em;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-.timeline__title {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--white);
-  margin-bottom: 0.4rem;
-}
-.timeline__text {
-  font-size: 0.85rem;
-  line-height: 1.7;
-  color: var(--gray-300);
-  max-width: 560px;
-}
 
 /* --- Page-Specific Transitions --- */
 
@@ -3683,11 +3366,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: clamp(3rem, 6vw, 8rem);
   align-items: start;
 }
-.border-top-section {
-  padding-top: 2rem;
-  border-top: 1px solid var(--border);
-}
-
 /* --- Accessibility --- */
 .skip-link {
   position: fixed;
@@ -3771,10 +3449,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .section { padding: clamp(48px, 8vh, 100px) 0; }
   .terminal { max-width: 100%; }
   .terminal__body { padding: 16px; min-height: 200px; }
-  .timeline { padding-left: 32px; }
-  .timeline__dot { left: -26px; }
-  .case-study__step { flex-direction: column; gap: 0.5rem; }
-  .testimonials-grid { grid-template-columns: 1fr; }
   .footer__cta-block { padding: clamp(3rem, 6vh, 5rem) 0; }
   .cursor-dot, .cursor-ring { display: none; }
 }

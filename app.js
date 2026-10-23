@@ -1594,42 +1594,6 @@
                 }
             );
         });
-
-        // Timeline line draw effect
-        var timelineLine = app.querySelector('.timeline__line');
-        if (timelineLine) {
-            gsap.fromTo(timelineLine,
-                { scaleY: 0, transformOrigin: 'top' },
-                {
-                    scaleY: 1,
-                    ease: 'none',
-                    scrollTrigger: {
-                        trigger: '.timeline',
-                        start: 'top 80%',
-                        end: 'bottom 40%',
-                        scrub: 1
-                    }
-                }
-            );
-        }
-
-        // Timeline dots pulse in
-        var timelineDots = app.querySelectorAll('.timeline__dot');
-        timelineDots.forEach(function (dot) {
-            gsap.fromTo(dot,
-                { scale: 0 },
-                {
-                    scale: 1,
-                    duration: 0.4,
-                    ease: 'back.out(2)',
-                    scrollTrigger: {
-                        trigger: dot,
-                        start: 'top 85%',
-                        once: true
-                    }
-                }
-            );
-        });
     }
 
     /* ----------------------------------------------------------
