@@ -57,6 +57,10 @@ const ROUTES = {
     title: 'Threat Landscape — Vineet Vishesh',
     description: 'Live cybersecurity threat landscape — deduplicated coverage from 6 sources, ranked by severity, corroboration, and recency.'
   },
+  '/guides/cisa-kev': {
+    title: 'What Is CISA KEV? — Vineet Vishesh',
+    description: 'What CISA’s Known Exploited Vulnerabilities (KEV) catalog is, why it’s the one authoritative severity signal in the Threat Landscape feed, and how it differs from CVSS.'
+  },
   '/credentials': {
     title: 'Credentials — Vineet Vishesh',
     description: 'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.'

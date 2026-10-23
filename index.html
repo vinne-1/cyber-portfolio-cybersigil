@@ -1178,7 +1178,7 @@
                 </div>
 
                 <p style="margin-top:3rem; font-size:0.8rem; color:var(--gray-300); max-width:600px;">
-                    Looking for shipped apps instead? See <a href="/products" data-route>Products</a>. Or read the <a href="/guides/security-headers" data-route>HTTP security headers guide</a> behind the Website Health Report's checks.
+                    Looking for shipped apps instead? See <a href="/products" data-route>Products</a>. Or read the <a href="/guides/security-headers" data-route>HTTP security headers guide</a> behind the Website Health Report's checks, or the <a href="/guides/cisa-kev" data-route>CISA KEV guide</a> behind the Threat Landscape's ranking.
                 </p>
 
                 <script type="application/ld+json">
@@ -1776,6 +1776,125 @@
         </section>
     </template>
 
+    <!-- GUIDE: CISA KEV -->
+    <template id="page-guide-cisa-kev">
+        <section class="section section--atmosphere-deep" data-page="guide-cisa-kev" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem; max-width:720px;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/threat-landscape" data-route style="color:var(--gray-300); text-decoration:none;">Threat Landscape</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">What Is CISA KEV?</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Guide</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">What Is CISA's KEV Catalog?</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem;">
+                        CISA KEV is the Known Exploited Vulnerabilities catalog maintained by the U.S. Cybersecurity and Infrastructure Security Agency &mdash; a list of specific CVEs that are confirmed, not just theoretically possible, to have been actively exploited in the wild.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="max-width:720px; display:grid; gap:2rem; margin-bottom:3rem;">
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Why KEV is different from a CVSS score</h2>
+                        <p class="t-body" style="color:var(--gray-300);">A CVSS score measures theoretical severity &mdash; how bad a vulnerability could be if exploited. KEV inclusion means CISA has confirmed real-world exploitation actually happened. A vulnerability can have a modest CVSS score and still be on KEV because attackers are actively using it, which is often the more urgent signal for prioritizing a patch.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How the Threat Landscape feed uses it</h2>
+                        <p class="t-body" style="color:var(--gray-300);">When an article mentions a CVE ID, that ID is checked directly against CISA's live KEV feed. A confirmed match is the one fully authoritative signal in this site's ranking &mdash; everything else (keyword-based severity, source corroboration, recency) is an honest heuristic over public RSS coverage, labeled as such, not presented as fact.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Who publishes KEV, and how often does it change</h2>
+                        <p class="t-body" style="color:var(--gray-300);">CISA, the U.S. government agency responsible for cybersecurity and infrastructure protection, publishes and maintains the catalog directly. It's updated a few times a week as new confirmed-exploited vulnerabilities are added.</p>
+                    </div>
+                </div>
+
+                <div class="anim-item callout-panel" style="margin-bottom:4rem;">
+                    <div>
+                        <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">See KEV-confirmed stories ranked live</h3>
+                        <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
+                            The free Threat Landscape feed cross-checks every CVE mentioned in current security news against CISA's KEV catalog in real time.
+                        </p>
+                    </div>
+                    <div class="magnetic-wrap">
+                        <a href="/threat-landscape" data-route class="btn btn--primary" style="white-space:nowrap;">
+                            View the Feed
+                            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is CISA KEV the same as the NVD (National Vulnerability Database)?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No. The NVD catalogs essentially every known CVE with its CVSS score, regardless of whether it's ever been exploited. KEV is a much smaller, curated subset: only vulnerabilities CISA has confirmed are being actively exploited.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Does a KEV listing mean I have to patch immediately?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">For U.S. federal agencies, KEV listings carry binding remediation deadlines under CISA directive. For everyone else, it's not legally binding, but it's one of the clearest "this is being exploited right now, not hypothetically" signals available, and is widely treated as a strong prioritization cue.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is the Threat Landscape feed's overall ranking authoritative?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No, and it says so directly on the page. Only the KEV match itself is fully authoritative; the rest of the composite ranking (severity keywords, source corroboration, recency) is an honest heuristic over public RSS coverage, not an official threat intelligence product.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Threat Landscape", "item": "https://vineedoesstuff.in/threat-landscape" },
+                    { "@type": "ListItem", "position": 3, "name": "What Is CISA KEV?", "item": "https://vineedoesstuff.in/guides/cisa-kev" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "TechArticle",
+                  "headline": "What Is CISA's KEV Catalog?",
+                  "description": "What CISA's Known Exploited Vulnerabilities catalog is, why it matters, and how it differs from a CVSS score.",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" },
+                  "url": "https://vineedoesstuff.in/guides/cisa-kev",
+                  "about": ["CISA", "Known Exploited Vulnerabilities", "CVE", "Vulnerability management"]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Is CISA KEV the same as the NVD (National Vulnerability Database)?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "No. The NVD catalogs essentially every known CVE with its CVSS score, regardless of whether it's ever been exploited. KEV is a much smaller, curated subset: only vulnerabilities CISA has confirmed are being actively exploited." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does a KEV listing mean I have to patch immediately?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "For U.S. federal agencies, KEV listings carry binding remediation deadlines under CISA directive. For everyone else, it's not legally binding, but it's one of the clearest \"this is being exploited right now, not hypothetically\" signals available, and is widely treated as a strong prioritization cue." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is the Threat Landscape feed's overall ranking authoritative?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "No, and it says so directly on the page. Only the KEV match itself is fully authoritative; the rest of the composite ranking (severity keywords, source corroboration, recency) is an honest heuristic over public RSS coverage, not an official threat intelligence product." }
+                    }
+                  ]
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
     <!-- THREAT LANDSCAPE -->
     <template id="page-threat-landscape">
         <section class="section section--atmosphere-deep" data-page="threat-landscape" style="padding-top:120px;">
@@ -1861,7 +1980,7 @@
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What does CISA KEV mean?</h3>
-                            <p class="t-body" style="color:var(--gray-300);">CISA KEV is the Known Exploited Vulnerabilities catalog maintained by the U.S. Cybersecurity and Infrastructure Security Agency &mdash; a list of vulnerabilities confirmed to have been actively exploited in the wild, used here to boost the severity signal of matching stories.</p>
+                            <p class="t-body" style="color:var(--gray-300);">CISA KEV is the Known Exploited Vulnerabilities catalog maintained by the U.S. Cybersecurity and Infrastructure Security Agency &mdash; a list of vulnerabilities confirmed to have been actively exploited in the wild, used here to boost the severity signal of matching stories. See the <a href="/guides/cisa-kev" data-route>full guide</a> for how it differs from a CVSS score.</p>
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Can I filter the threat feed by severity?</h3>
@@ -1914,7 +2033,7 @@
                     {
                       "@type": "Question",
                       "name": "What does CISA KEV mean?",
-                      "acceptedAnswer": { "@type": "Answer", "text": "CISA KEV is the Known Exploited Vulnerabilities catalog maintained by the U.S. Cybersecurity and Infrastructure Security Agency — a list of vulnerabilities confirmed to have been actively exploited in the wild, used here to boost the severity signal of matching stories." }
+                      "acceptedAnswer": { "@type": "Answer", "text": "CISA KEV is the Known Exploited Vulnerabilities catalog maintained by the U.S. Cybersecurity and Infrastructure Security Agency — a list of vulnerabilities confirmed to have been actively exploited in the wild, used here to boost the severity signal of matching stories. See the full guide for how it differs from a CVSS score." }
                     },
                     {
                       "@type": "Question",
