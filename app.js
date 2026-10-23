@@ -2314,10 +2314,33 @@
         [/\ba wide (?:range|variety) of\b/gi, 'many'],
         [/\bplays a (?:crucial|vital|key|important) role in\b/gi, 'matters for'],
         [/\bdelve(?:s|d)? into\b/gi, 'look at'],
+        // Verb-form-preserving swaps -- each tense/conjugation mapped to the
+        // matching form of its replacement, so "leverages" becomes "uses"
+        // (not the ungrammatical "use"), "leveraging" becomes "using", etc.
+        [/\bleverages\b/gi, 'uses'],
         [/\bleveraging\b/gi, 'using'],
-        [/\bleverag(?:e|es|ed)\b/gi, 'use'],
-        [/\butiliz(?:e|es|ed|ing)\b/gi, 'use'],
-        [/\bfacilitat(?:e|es|ed|ing)\b/gi, 'help'],
+        [/\bleveraged\b/gi, 'used'],
+        [/\bleverage\b/gi, 'use'],
+        [/\butilizes\b/gi, 'uses'],
+        [/\butilizing\b/gi, 'using'],
+        [/\butilized\b/gi, 'used'],
+        [/\butilize\b/gi, 'use'],
+        [/\bfacilitates\b/gi, 'helps'],
+        [/\bfacilitating\b/gi, 'helping'],
+        [/\bfacilitated\b/gi, 'helped'],
+        [/\bfacilitate\b/gi, 'help'],
+        [/\bempowers\b/gi, 'helps'],
+        [/\bempowering\b/gi, 'helping'],
+        [/\bempowered\b/gi, 'helped'],
+        [/\bempower\b/gi, 'help'],
+        [/\bunlocks\b/gi, 'opens'],
+        [/\bunlocking\b/gi, 'opening'],
+        [/\bunlocked\b/gi, 'opened'],
+        [/\bunlock\b/gi, 'open'],
+        [/\bharnesses\b/gi, 'uses'],
+        [/\bharnessing\b/gi, 'using'],
+        [/\bharnessed\b/gi, 'used'],
+        [/\bharness\b/gi, 'use'],
         [/\brobust\b/gi, 'solid'],
         [/\bcutting-edge\b/gi, 'new'],
         [/\bstate-of-the-art\b/gi, 'current'],
@@ -2338,10 +2361,17 @@
         [/\binnovative\b/gi, 'new'],
         [/\bmoreover,?\s*/gi, ''],
         [/\bfurthermore,?\s*/gi, ''],
-        [/\badditionally,?\s*/gi, 'Also, '],
-        [/\bhowever,\s*/gi, 'But '],
-        [/\btherefore,\s*/gi, 'So '],
-        [/\bthus,\s*/gi, 'So '],
+        // Lowercase on purpose -- these swaps run on the whole text before
+        // it's split into sentences, so a hardcoded capital here would stick
+        // even when the match lands mid-sentence (e.g. "the plan, however,
+        // failed" must become "the plan, but failed", not "...But failed").
+        // humanizerCapitalize() re-capitalizes the true start of each final
+        // sentence afterward, so sentence-initial occurrences still end up
+        // correctly capitalized.
+        [/\badditionally,?\s*/gi, 'also, '],
+        [/\bhowever,?\s*/gi, 'but '],
+        [/\btherefore,?\s*/gi, 'so '],
+        [/\bthus,?\s*/gi, 'so '],
         [/\boverall,\s*/gi, ''],
         [/\bin conclusion,?\s*/gi, ''],
         [/\bto summarize,?\s*/gi, ''],
@@ -2403,7 +2433,7 @@
         return s.charAt(0).toUpperCase() + s.slice(1);
     }
 
-    function humanizeText(raw, tone) {
+    function humanizeParagraph(raw, tone) {
         var text = humanizerApplySwaps(String(raw || ''));
         if (tone === 'direct') {
             text = text
@@ -2433,17 +2463,31 @@
                     continue;
                 }
             }
-            sentence = sentence.replace(/\bhelp ([A-Za-z]+) to\b/g, 'help $1');
+            sentence = sentence.replace(/\bhelp(s|ed|ing)? ([A-Za-z]+) to\b/gi, 'help$1 $2');
             if (!/[.!?]$/.test(sentence)) sentence += '.';
             out.push(humanizerCapitalize(sentence));
         }
-        if (tone === 'conversational' && out.length > 2) {
-            var last = out[out.length - 1];
-            if (/^so\b/i.test(last) === false && out.length > 3) {
-                /* leave the close as written; the stock closer was already stripped */
-            }
-        }
-        return out.join(' ').replace(/\s{2,}/g, ' ').trim();
+        var joined = out.join(' ').replace(/\s{2,}/g, ' ').trim();
+        // Removing a word (an intensifier, a stripped filler phrase) can
+        // leave "a" directly in front of a vowel-sound word it was never
+        // meant to pair with -- e.g. "really a very important system" with
+        // both qualifiers stripped becomes "a important system" otherwise.
+        joined = joined.replace(/\b(a)(\s+)(?=[aeiouAEIOU])/gi, function (m, article, space) {
+            return (article === 'A' ? 'An' : 'an') + space;
+        });
+        return joined;
+    }
+
+    function humanizeText(raw, tone) {
+        // Rewrite each paragraph independently and rejoin on blank lines --
+        // humanizerSentences() collapses all whitespace, so without this a
+        // multi-paragraph draft (the realistic case for this tool) would
+        // come back as one unbroken block of sentences.
+        var paragraphs = String(raw || '').split(/\n\s*\n/);
+        return paragraphs
+            .map(function (p) { return humanizeParagraph(p, tone); })
+            .filter(function (p) { return p.length > 0; })
+            .join('\n\n');
     }
 
     function setupTextHumanizer() {
