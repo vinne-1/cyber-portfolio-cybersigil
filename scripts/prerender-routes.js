@@ -49,6 +49,10 @@ const ROUTES = {
     title: 'Website Health Report — Vineet Vishesh',
     description: 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.'
   },
+  '/guides/security-headers': {
+    title: 'HTTP Security Headers Explained — Vineet Vishesh',
+    description: 'What HTTP security headers do, why they matter, and how to check whether your site has them — free, with the Website Health Report tool.'
+  },
   '/threat-landscape': {
     title: 'Threat Landscape — Vineet Vishesh',
     description: 'Live cybersecurity threat landscape — deduplicated coverage from 6 sources, ranked by severity, corroboration, and recency.'

@@ -1178,7 +1178,7 @@
                 </div>
 
                 <p style="margin-top:3rem; font-size:0.8rem; color:var(--gray-300); max-width:600px;">
-                    Looking for shipped apps instead? See <a href="/products" data-route>Products</a>.
+                    Looking for shipped apps instead? See <a href="/products" data-route>Products</a>. Or read the <a href="/guides/security-headers" data-route>HTTP security headers guide</a> behind the Website Health Report's checks.
                 </p>
 
                 <script type="application/ld+json">
@@ -1528,7 +1528,7 @@
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What security headers does this tool check?</h3>
-                            <p class="t-body" style="color:var(--gray-300);">It checks for Content-Security-Policy, HTTP Strict-Transport-Security (HSTS), X-Content-Type-Options, X-Frame-Options, and related response headers &mdash; the headers that protect a site against clickjacking, MIME-sniffing, and mixed-content attacks.</p>
+                            <p class="t-body" style="color:var(--gray-300);">It checks for Content-Security-Policy, HTTP Strict-Transport-Security (HSTS), X-Content-Type-Options, X-Frame-Options, and related response headers &mdash; the headers that protect a site against clickjacking, MIME-sniffing, and mixed-content attacks. See the <a href="/guides/security-headers" data-route>full guide</a> for what each one does and why it's weighted the way it is.</p>
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Does this tool store the URLs or results I check?</h3>
@@ -1596,7 +1596,7 @@
                     {
                       "@type": "Question",
                       "name": "What security headers does this tool check?",
-                      "acceptedAnswer": { "@type": "Answer", "text": "It checks for Content-Security-Policy, HTTP Strict-Transport-Security (HSTS), X-Content-Type-Options, X-Frame-Options, and related response headers — the headers that protect a site against clickjacking, MIME-sniffing, and mixed-content attacks." }
+                      "acceptedAnswer": { "@type": "Answer", "text": "It checks for Content-Security-Policy, HTTP Strict-Transport-Security (HSTS), X-Content-Type-Options, X-Frame-Options, and related response headers — the headers that protect a site against clickjacking, MIME-sniffing, and mixed-content attacks. See the full guide for what each one does and why it's weighted the way it is." }
                     },
                     {
                       "@type": "Question",
@@ -1617,6 +1617,157 @@
                       "@type": "Question",
                       "name": "Who built this free tool?",
                       "acceptedAnswer": { "@type": "Answer", "text": "It was built by Vineet Vishesh, a penetration tester and offensive security researcher, as a free way to apply the same initial-recon checks used in professional security assessments." }
+                    }
+                  ]
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
+    <!-- GUIDE: SECURITY HEADERS -->
+    <template id="page-guide-security-headers">
+        <section class="section section--atmosphere-deep" data-page="guide-security-headers" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem; max-width:720px;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/tools/website-health" data-route style="color:var(--gray-300); text-decoration:none;">Website Health Report</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">Security Headers Explained</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Guide</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">HTTP Security Headers, Explained</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem;">
+                        HTTP security headers are response headers a web server sends alongside a page that tell the browser how to behave defensively &mdash; what's allowed to load, embed, or read the page. Most sites are missing several of them, not because they're hard to add, but because nothing points it out until something goes wrong.
+                    </p>
+                    <p class="t-body" style="margin-top:1rem; color:var(--gray-300);">
+                        Below are the eight headers the free <a href="/tools/website-health" data-route>Website Health Report</a> tool checks, what each one actually does, and why it's weighted the way it is in that tool's security score.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="max-width:760px; display:grid; gap:2rem; margin-bottom:3rem;">
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Content-Security-Policy <span class="t-mono" style="font-size:0.7rem; color:var(--gray-300);">— heaviest-weighted check</span></h2>
+                        <p class="t-body" style="color:var(--gray-300);">Restricts which origins scripts, styles, and frames are allowed to load from. It's the single biggest mitigation against cross-site scripting (XSS) &mdash; even if an attacker manages to inject a script tag, a correctly scoped CSP stops the browser from running it.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Strict-Transport-Security (HSTS)</h2>
+                        <p class="t-body" style="color:var(--gray-300);">Forces browsers to use HTTPS for this domain going forward, even if a visitor types or clicks an http:// link. Add it with something like <code>max-age=31536000; includeSubDomains</code>.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">X-Frame-Options</h2>
+                        <p class="t-body" style="color:var(--gray-300);">Prevents other sites from embedding this page in an invisible iframe to trick visitors into clicking something they can't see (clickjacking). Set to <code>DENY</code> or <code>SAMEORIGIN</code> &mdash; or use CSP's <code>frame-ancestors</code> directive instead.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">X-Content-Type-Options</h2>
+                        <p class="t-body" style="color:var(--gray-300);">Set to <code>nosniff</code> to stop browsers from guessing a response's content type and running it as something more dangerous than what was actually declared.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Referrer-Policy</h2>
+                        <p class="t-body" style="color:var(--gray-300);">Controls how much of this page's URL gets sent as the "referrer" when a visitor clicks a link away from it. <code>strict-origin-when-cross-origin</code> is a sane default &mdash; it avoids leaking full URLs (which can contain query strings, session tokens, or search terms) to third-party sites.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Permissions-Policy</h2>
+                        <p class="t-body" style="color:var(--gray-300);">Restricts which browser features &mdash; camera, microphone, geolocation, and similar &mdash; this page is allowed to request at all, closing off capabilities a page never uses.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Cross-Origin-Opener-Policy</h2>
+                        <p class="t-body" style="color:var(--gray-300);">Set to <code>same-origin</code> to isolate this page's browsing context from cross-origin popups and tabs it opens, closing off a class of cross-window side-channel attacks.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Cross-Origin-Resource-Policy</h2>
+                        <p class="t-body" style="color:var(--gray-300);">Set to <code>same-origin</code> to stop other sites from embedding or reading this site's resources (images, scripts, fonts) directly.</p>
+                    </div>
+                </div>
+
+                <div class="anim-item callout-panel" style="margin-bottom:4rem;">
+                    <div>
+                        <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Check which of these your own site actually has</h3>
+                        <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
+                            The free Website Health Report checks all eight headers above against any public URL &mdash; along with SSL/TLS, DNS, on-page SEO, and real performance scoring &mdash; in about 30 seconds.
+                        </p>
+                    </div>
+                    <div class="magnetic-wrap">
+                        <a href="/tools/website-health" data-route class="btn btn--primary" style="white-space:nowrap;">
+                            Run a Free Report
+                            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What happens if my site is missing these headers?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Nothing happens immediately &mdash; the site still loads and works normally. The risk is conditional: if an attacker finds another way in (an XSS bug, a malicious embed, a misconfigured redirect), missing headers remove a layer that would have contained or blocked it.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Which header matters most?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Content-Security-Policy, by a wide margin &mdash; it's the single biggest mitigation against cross-site scripting, which is why it's the heaviest-weighted check in the Website Health Report's security score.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How do I actually add these headers to my site?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">It depends on what serves your site. Most reverse proxies (Nginx, Caddy), CDNs (Cloudflare, Fastly), and static hosts (Netlify, Vercel) let you set response headers through config rather than application code &mdash; look for "custom headers" or "response headers" in your host's docs.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Do these headers slow down my site?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No &mdash; they add a small amount of header text to each response, not meaningfully measurable against typical page weight, and require no extra round trips.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Website Health Report", "item": "https://vineedoesstuff.in/tools/website-health" },
+                    { "@type": "ListItem", "position": 3, "name": "Security Headers Explained", "item": "https://vineedoesstuff.in/guides/security-headers" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "TechArticle",
+                  "headline": "HTTP Security Headers, Explained",
+                  "description": "What HTTP security headers do, why they matter, and how to check whether your site has them.",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" },
+                  "url": "https://vineedoesstuff.in/guides/security-headers",
+                  "about": ["Content-Security-Policy", "HTTP Strict Transport Security", "X-Frame-Options", "Web security"]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What happens if my site is missing these headers?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Nothing happens immediately — the site still loads and works normally. The risk is conditional: if an attacker finds another way in (an XSS bug, a malicious embed, a misconfigured redirect), missing headers remove a layer that would have contained or blocked it." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Which header matters most?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Content-Security-Policy, by a wide margin — it's the single biggest mitigation against cross-site scripting, which is why it's the heaviest-weighted check in the Website Health Report's security score." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How do I actually add these headers to my site?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "It depends on what serves your site. Most reverse proxies (Nginx, Caddy), CDNs (Cloudflare, Fastly), and static hosts (Netlify, Vercel) let you set response headers through config rather than application code — look for \"custom headers\" or \"response headers\" in your host's docs." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Do these headers slow down my site?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "No — they add a small amount of header text to each response, not meaningfully measurable against typical page weight, and require no extra round trips." }
                     }
                   ]
                 }
