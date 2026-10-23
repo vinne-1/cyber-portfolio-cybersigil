@@ -202,7 +202,7 @@
     };
 
     var ROUTE_DESCRIPTIONS = {
-        '/':               'Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years of combined experience across web, API, network, and cloud environments.',
+        '/':               'Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years across web, API, network, and cloud security.',
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
         '/work':           'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.',
         '/products':       'Products built by Vineet Vishesh — independent apps, starting with TithiPath.',
