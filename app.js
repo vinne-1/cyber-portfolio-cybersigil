@@ -2360,7 +2360,17 @@
                 }
 
                 if (statusEl) statusEl.style.display = 'none';
-                whrRenderResults(report);
+                try {
+                    whrRenderResults(report);
+                } catch (renderErr) {
+                    // A 200 response with an unexpectedly-shaped body (missing a
+                    // nested field whrRenderResults assumes exists) would otherwise
+                    // throw here with resultsEl still hidden -- leaving the visitor
+                    // staring at a blank panel with no error and no results.
+                    if (resultsEl) resultsEl.style.display = 'none';
+                    if (emptyStateEl) emptyStateEl.style.display = '';
+                    showInlineError('Something went wrong rendering that report. Please try again.');
+                }
             }).finally(function () {
                 runBtn.disabled = false;
                 runBtn.textContent = 'Run Report';
