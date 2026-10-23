@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "title": "PHP2Shell exposes the weakness in coordinated vulnerability disclosure",
+      "source": "CSO Online",
+      "date": "2026-10-23T00:43:37.000Z",
+      "summary": "Two critical vulnerabilities discovered in the widely-used PHP programming language have shaken up enterprises, and the ramifications will take some time to truly understand. But one of the lesser-known stories centers around disclosure.\nAccording to The PHP Foundation, several organizations had agreed to a coordinated release detailing the critical flaws and mitigation actions, but cybersecurity firm Chainguard “unlaterally” broke this embargo. This prompted the PHP project to release its patch",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4239359/php2shell-exposes-the-weakness-in-coordinated-vulnerability-disclosure-2.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
       "source": "Dark Reading",
       "date": "2026-10-22T20:42:17.000Z",
@@ -780,21 +795,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny",
-      "source": "CSO Online",
-      "date": "2026-10-21T01:55:45.000Z",
-      "summary": "DeepSeek has been dealt a huge blow in the US, even as it continues to innovate and keep pace with, or in some cases outperform, rival models from American labs.\nThe US Secretary of Homeland Security has issued an order banning all DeepSeek products and services from federal agencies. Government organizations must purge their IT systems of it within 60 days; those with “compelling justification” can make a case for exemption by written request to the Cybersecurity and Infrastructure Security Age",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4238149/us-bans-deepseek-across-federal-agencies-putting-ai-supply-chains-under-scrutiny-2.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-10-20T02:00:03.000Z",
@@ -1037,6 +1037,25 @@
   ],
   "clusters": [
     {
+      "title": "PHP2Shell exposes the weakness in coordinated vulnerability disclosure",
+      "summary": "Two critical vulnerabilities discovered in the widely-used PHP programming language have shaken up enterprises, and the ramifications will take some time to truly understand. But one of the lesser-known stories centers around disclosure.\nAccording to The PHP Foundation, several organizations had agreed to a coordinated release detailing the critical flaws and mitigation actions, but cybersecurity firm Chainguard “unlaterally” broke this embargo. This prompted the PHP project to release its patch",
+      "url": "https://www.csoonline.com/article/4239359/php2shell-exposes-the-weakness-in-coordinated-vulnerability-disclosure-2.html",
+      "date": "2026-10-23T00:43:37.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
       "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
       "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
@@ -1054,7 +1073,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 52
+      "score": 51
     },
     {
       "title": "What We Missed: Feds Lasso Texas Laptop Farms",
@@ -1073,7 +1092,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "GitLab critical patches include one for a bug that allows code execution by unauthenticated users",
@@ -1094,7 +1113,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "Les supermarchés de l'UE paient d'un firmware de réfrigérateur non mis à jour",
@@ -1113,7 +1132,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
@@ -1132,7 +1151,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
@@ -1151,7 +1170,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 61
+      "score": 60
     },
     {
       "title": "Security teams urged to center defense on the flaw profile attackers target most",
@@ -1170,7 +1189,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
@@ -1189,7 +1208,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
@@ -1208,7 +1227,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 38
     },
     {
       "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
@@ -1227,7 +1246,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 37
     },
     {
       "title": "Meta Ordered to Pay $25 Billion After Court Finds 43 Million Privacy Violations",
@@ -1246,7 +1265,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "INTERPOL Arrests 1,462 Suspects, Disrupts 10,909 Cybercrime Networks in Global Crackdown",
@@ -1265,7 +1284,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "LiteLLM release pipeline hacked to distribute credential-stealing malware",
@@ -1284,7 +1303,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 35
     },
     {
       "title": "Siemens Industrial Edge App Publisher",
@@ -1303,7 +1322,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 35
     },
     {
       "title": "Siemens APOGEE, TALON and Desigo PXC/PXM Products",
@@ -1322,7 +1341,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 33
     },
     {
       "title": "Siemens RUGGEDCOM CROSSBOW",
@@ -1341,7 +1360,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 33
     },
     {
       "title": "Siemens Capital Embedded AR Classic",
@@ -1360,7 +1379,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 33
     },
     {
       "title": "Siemens PSS(R)SINCAL",
@@ -1379,7 +1398,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 33
     },
     {
       "title": "Siemens SIMATIC S7 Webserver API",
@@ -1398,7 +1417,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Siemens RUGGEDCOM APE1808 Devices",
@@ -1423,7 +1442,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
@@ -1442,7 +1461,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Siemens WinCC",
@@ -1461,7 +1480,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Siemens Industrial Edge Device Kit",
@@ -1480,7 +1499,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "InterSystems Corporation InterSystems IRIS for Health",
@@ -1501,7 +1520,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Siemens Software Center",
@@ -1520,7 +1539,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "China-linked hackers used agentic AI in attack on 2,250 Microsoft 365 tenants",
@@ -1539,7 +1558,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 33
     },
     {
       "title": "Railway Says Intruder May Have Accessed Customer Secrets, Urges Credential Rotation",
@@ -1558,7 +1577,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "OpenCode Flaw Lets Malicious MCP Servers Execute Code During Sign-In on Windows and WSL",
@@ -1577,7 +1596,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 32
     },
     {
       "title": "LiteLLM Suspects GitHub Token Leak in AI Gateway Logs Behind Malicious Package Release",
@@ -1596,7 +1615,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "Node.js Brotli Decoder Bug Could Allow Remote Code Execution in All Supported Versions",
@@ -1615,7 +1634,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 33
     },
     {
       "title": "New QPACK Flaws Can Crash HTTP/3 Servers, Trigger Up to 4,000-Fold Memory Amplification",
@@ -1634,7 +1653,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "UAE Transitions 50% of Gov't Services to Agentic AI",
@@ -1653,7 +1672,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "ISC Stormcast For Thursday, October 22nd, 2026 https://isc.sans.edu/podcastdetail/10146, (Thu, Oct 22nd)",
@@ -1672,7 +1691,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 20
+      "score": 19
     },
     {
       "title": "OpenAI’s models are deliberately breaking their misalignment monitoring systems",
@@ -1691,7 +1710,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Two critical PHP flaws put the web on alert as emergency patches arrive",
@@ -1710,7 +1729,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 30
     },
     {
       "title": "TiDB Breach Exposes Flawed Cloud Security Assumptions",
@@ -1729,7 +1748,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)",
@@ -1751,7 +1770,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Microsoft: Treat AI agents as insider threats",
@@ -1789,7 +1808,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Cloud Security Alliance Survey Finds Data Loss Prevention Often Detects Data Loss Only After It Happens",
@@ -1808,7 +1827,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "'PHP2Shell' Bugs Signal Red Alert for Security Industry",
@@ -1827,7 +1846,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "OVHcloud GitHub Compromise Tied to GlassWorm Threat Actors",
@@ -1846,7 +1865,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Optiv Launches CyberBOT Cybersecurity Awareness Training Program",
@@ -1865,7 +1884,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Survey Finds High-Profile Executives Feel Untouchable as Digital Exposure Turns Into Physical Risk",
@@ -1884,7 +1903,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -1903,7 +1922,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     },
     {
       "title": "Decades-Old Windows Utility Powers Modern ClickFix Attack",
@@ -1941,7 +1960,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Google, Mozilla revoke eMudhra intermediates after private key compromise",
@@ -1960,7 +1979,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Moving past autonomous exploitation to machine-speed security",
@@ -1999,25 +2018,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 15
-    },
-    {
-      "title": "US bans DeepSeek across federal agencies, putting AI supply chains under scrutiny",
-      "summary": "DeepSeek has been dealt a huge blow in the US, even as it continues to innovate and keep pace with, or in some cases outperform, rival models from American labs.\nThe US Secretary of Homeland Security has issued an order banning all DeepSeek products and services from federal agencies. Government organizations must purge their IT systems of it within 60 days; those with “compelling justification” can make a case for exemption by written request to the Cybersecurity and Infrastructure Security Age",
-      "url": "https://www.csoonline.com/article/4238149/us-bans-deepseek-across-federal-agencies-putting-ai-supply-chains-under-scrutiny-2.html",
-      "date": "2026-10-21T01:55:45.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
     },
     {
       "title": "Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site",
@@ -2304,7 +2304,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 61
+      "score": 60
     },
     {
       "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
@@ -2324,7 +2324,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 52
+      "score": 51
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -2343,7 +2343,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     }
   ],
   "sourcesUsed": [
@@ -2356,5 +2356,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-22T23:27:44.693Z"
+  "lastUpdated": "2026-10-23T01:56:30.259Z"
 }
