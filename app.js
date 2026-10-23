@@ -133,13 +133,12 @@
        SCROLL PROGRESS BAR
        ---------------------------------------------------------- */
     var scrollProgress = document.getElementById('scrollProgress');
-    if (scrollProgress && !prefersReducedMotion) {
-        window.addEventListener('scroll', function () {
-            var scrollTop = window.scrollY;
-            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
-            var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-            scrollProgress.style.width = pct + '%';
-        }, { passive: true });
+    function syncScrollProgress() {
+        if (!scrollProgress || prefersReducedMotion) return;
+        var scrollTop = window.scrollY;
+        var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        var pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        scrollProgress.style.width = pct + '%';
     }
 
     /* ----------------------------------------------------------
@@ -156,7 +155,6 @@
         if (!isVisible && document.activeElement === backToTop) backToTop.blur();
     }
     if (backToTop) {
-        window.addEventListener('scroll', syncBackToTop, { passive: true });
         syncBackToTop();
         backToTop.addEventListener('click', function () {
             if (lenis) {
@@ -241,7 +239,24 @@
             nav.classList.remove('nav--scrolled');
         }
     }
-    window.addEventListener('scroll', handleNavScroll, { passive: true });
+
+    // Single scroll listener batching all three scroll-driven syncs
+    // (progress bar, back-to-top visibility, nav scrolled state) into one
+    // requestAnimationFrame tick instead of three independent style
+    // read/writes per scroll event -- matters most during Lenis's inertia
+    // scrolling, which dispatches scroll events continuously.
+    var scrollSyncPending = false;
+    function onWindowScroll() {
+        if (scrollSyncPending) return;
+        scrollSyncPending = true;
+        requestAnimationFrame(function () {
+            scrollSyncPending = false;
+            syncScrollProgress();
+            syncBackToTop();
+            handleNavScroll();
+        });
+    }
+    window.addEventListener('scroll', onWindowScroll, { passive: true });
 
     function setMobileInert(isInert) {
         if (!mobileMenu) return;
