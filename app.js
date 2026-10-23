@@ -1907,6 +1907,25 @@
             });
         }
 
+        var shareBtn = app.querySelector('#tlShareBtn');
+        if (shareBtn) {
+            shareBtn.addEventListener('click', function () {
+                var toolUrl = 'https://vineedoesstuff.in/threat-landscape';
+                var topStory = allClusters[0] && allClusters[0].title;
+                var shareText = topStory
+                    ? 'Right now in cybersecurity: "' + topStory + '" — live, deduplicated threat digest:'
+                    : 'A live, deduplicated cybersecurity threat digest, free, updated automatically:';
+                if (navigator.share) {
+                    navigator.share({ title: 'Threat Landscape', text: shareText, url: toolUrl }).catch(function () {});
+                } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(shareText + ' ' + toolUrl).then(function () {
+                        shareBtn.textContent = 'Copied!';
+                        setTimeout(function () { shareBtn.textContent = 'Share This Digest'; }, 2000);
+                    }).catch(function () {});
+                }
+            });
+        }
+
         listEl.innerHTML = '<div class="whr-skel whr-skel-card"></div><div class="whr-skel whr-skel-card"></div><div class="whr-skel whr-skel-card"></div>';
 
         fetchThreatLandscape()
