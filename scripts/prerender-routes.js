@@ -39,7 +39,11 @@ const ROUTES = {
   },
   '/free-tools': {
     title: 'Free Tools — Vineet Vishesh',
-    description: 'Free cybersecurity tools by Vineet Vishesh — a Website Health Report (security, SSL, SEO, performance) and a live Threat Landscape feed. No signup required.'
+    description: 'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, and an on-device Text Humanizer. No signup required.'
+  },
+  '/tools/text-humanizer': {
+    title: 'Text Humanizer — Vineet Vishesh',
+    description: 'Free Text Humanizer — rewrite a stiff draft into plainer sentences in your browser. Nothing is uploaded.'
   },
   '/tools/website-health': {
     title: 'Website Health Report — Vineet Vishesh',

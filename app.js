@@ -178,6 +178,7 @@
         '/products':       'page-products',
         '/free-tools':     'page-free-tools',
         '/tools/website-health': 'page-tool-website-health',
+        '/tools/text-humanizer': 'page-tool-text-humanizer',
         '/threat-landscape': 'page-threat-landscape',
         '/credentials':    'page-credentials',
         '/contact':        'page-contact',
@@ -192,6 +193,7 @@
         '/products':       'Products — Vineet Vishesh',
         '/free-tools':     'Free Tools — Vineet Vishesh',
         '/tools/website-health': 'Website Health Report — Vineet Vishesh',
+        '/tools/text-humanizer': 'Text Humanizer — Vineet Vishesh',
         '/threat-landscape': 'Threat Landscape — Vineet Vishesh',
         '/credentials':    'Credentials — Vineet Vishesh',
         '/contact':        'Contact — Vineet Vishesh',
@@ -204,8 +206,9 @@
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
         '/work':           'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.',
         '/products':       'Products built by Vineet Vishesh — independent apps, starting with TithiPath.',
-        '/free-tools':     'Free cybersecurity tools by Vineet Vishesh — a Website Health Report (security, SSL, SEO, performance) and a live Threat Landscape feed. No signup required.',
+        '/free-tools':     'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, and an on-device Text Humanizer. No signup required.',
         '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
+        '/tools/text-humanizer': 'Free Text Humanizer — rewrite a stiff draft into plainer sentences in your browser. Nothing is uploaded.',
         '/threat-landscape': 'Live cybersecurity threat landscape — deduplicated coverage from 6 sources, ranked by severity, corroboration, and recency.',
         '/credentials':    'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.',
         '/contact':        'Get in touch with Vineet Vishesh for offensive security engagements, red team operations, and penetration testing.',
@@ -631,6 +634,7 @@
             setupThreatFeed();
             setupThreatLandscapePage();
             setupWebsiteHealthTool();
+            setupTextHumanizer();
             setupDevice3DShowcase();
             setupCardHoverGlow();
             return;
@@ -740,6 +744,7 @@
         setupThreatFeed();
         setupThreatLandscapePage();
         setupWebsiteHealthTool();
+        setupTextHumanizer();
         setupDevice3DShowcase();
         setupMatrixCanvas();
         setupParticleNetwork();
@@ -2293,6 +2298,227 @@
                 };
             });
         }).catch(function (err) { return { ok: false, error: err.message || 'PageSpeed Insights request failed.' }; });
+    }
+
+    var HUMANIZER_SWAPS = [
+        [/\bIn today's [^.]{0,90}?landscape\b,?\s*/gi, ''],
+        [/\bIn today's (?:fast-paced|rapidly evolving|ever-changing|digital|modern) (?:world|era|age)\b,?\s*/gi, ''],
+        [/\bIn the ever-evolving (?:world|landscape) of [^,]+,\s*/gi, ''],
+        [/\bIt is important to note that\s+/gi, ''],
+        [/\bIt's important to note that\s+/gi, ''],
+        [/\bIt is worth noting that\s+/gi, ''],
+        [/\bIt should be noted that\s+/gi, ''],
+        [/\bWhen it comes to\s+/gi, 'For '],
+        [/\bin order to\b/gi, 'to'],
+        [/\bdue to the fact that\b/gi, 'because'],
+        [/\ba wide (?:range|variety) of\b/gi, 'many'],
+        [/\bplays a (?:crucial|vital|key|important) role in\b/gi, 'matters for'],
+        [/\bdelve(?:s|d)? into\b/gi, 'look at'],
+        [/\bleveraging\b/gi, 'using'],
+        [/\bleverag(?:e|es|ed)\b/gi, 'use'],
+        [/\butiliz(?:e|es|ed|ing)\b/gi, 'use'],
+        [/\bfacilitat(?:e|es|ed|ing)\b/gi, 'help'],
+        [/\brobust\b/gi, 'solid'],
+        [/\bcutting-edge\b/gi, 'new'],
+        [/\bstate-of-the-art\b/gi, 'current'],
+        [/\bseamless(?:ly)?\b/gi, 'smooth'],
+        [/\bholistic\b/gi, 'full'],
+        [/\bmyriad\b/gi, 'many'],
+        [/\bpivotal\b/gi, 'important'],
+        [/\brealm\b/gi, 'area'],
+        [/\btapestry\b/gi, 'mix'],
+        [/\blandscape\b/gi, 'field'],
+        [/\bstakeholders\b/gi, 'people involved'],
+        [/\btransformative synerg(?:y|ies)\b/gi, 'shared work'],
+        [/\bsynerg(?:y|ies)\b/gi, 'overlap'],
+        [/\bempower(?:s|ed|ing)?\b/gi, 'help'],
+        [/\bunlock(?:s|ed|ing)?\b/gi, 'open'],
+        [/\bharness(?:es|ed|ing)?\b/gi, 'use'],
+        [/\bcomprehensive\b/gi, 'full'],
+        [/\binnovative\b/gi, 'new'],
+        [/\bmoreover,?\s*/gi, ''],
+        [/\bfurthermore,?\s*/gi, ''],
+        [/\badditionally,?\s*/gi, 'Also, '],
+        [/\bhowever,\s*/gi, 'But '],
+        [/\btherefore,\s*/gi, 'So '],
+        [/\bthus,\s*/gi, 'So '],
+        [/\boverall,\s*/gi, ''],
+        [/\bin conclusion,?\s*/gi, ''],
+        [/\bto summarize,?\s*/gi, ''],
+        [/\bto sum up,?\s*/gi, ''],
+        [/\bin summary,?\s*/gi, '']
+    ];
+
+    var HUMANIZER_CONTRACTIONS = [
+        [/\bdo not\b/gi, "don't"],
+        [/\bdoes not\b/gi, "doesn't"],
+        [/\bdid not\b/gi, "didn't"],
+        [/\bcannot\b/gi, "can't"],
+        [/\bcan not\b/gi, "can't"],
+        [/\bwill not\b/gi, "won't"],
+        [/\bit is\b/gi, "it's"],
+        [/\bthat is\b/gi, "that's"],
+        [/\bthere is\b/gi, "there's"],
+        [/\bwe are\b/gi, "we're"],
+        [/\bthey are\b/gi, "they're"],
+        [/\byou are\b/gi, "you're"],
+        [/\bI am\b/gi, "I'm"],
+        [/\bwe have\b/gi, "we've"],
+        [/\bthey have\b/gi, "they've"],
+        [/\bit has\b/gi, "it's"],
+        [/\blet us\b/gi, "let's"]
+    ];
+
+    function humanizerWordCount(text) {
+        var parts = text.trim().match(/[A-Za-z0-9''-]+/g);
+        return parts ? parts.length : 0;
+    }
+
+    function humanizerSentences(text) {
+        return text
+            .replace(/\s+/g, ' ')
+            .trim()
+            .split(/(?<=[.!?])\s+/)
+            .map(function (s) { return s.trim(); })
+            .filter(Boolean);
+    }
+
+    function humanizerApplySwaps(text) {
+        HUMANIZER_SWAPS.forEach(function (pair) {
+            text = text.replace(pair[0], pair[1]);
+        });
+        return text.replace(/\s{2,}/g, ' ').replace(/\s+([,.;!?])/g, '$1').trim();
+    }
+
+    function humanizerContract(text) {
+        HUMANIZER_CONTRACTIONS.forEach(function (pair) {
+            text = text.replace(pair[0], pair[1]);
+        });
+        return text;
+    }
+
+    function humanizerCapitalize(sentence) {
+        var s = sentence.trim();
+        if (!s) return s;
+        return s.charAt(0).toUpperCase() + s.slice(1);
+    }
+
+    function humanizeText(raw, tone) {
+        var text = humanizerApplySwaps(String(raw || ''));
+        if (tone === 'direct') {
+            text = text
+                .replace(/\b(?:really|very|just|quite|extremely|highly)\s+/gi, '')
+                .replace(/\b(?:in many cases|in most cases),?\s*/gi, '');
+        }
+        if (tone !== 'direct') {
+            text = humanizerContract(text);
+        }
+        var sentences = humanizerSentences(text).filter(function (s) {
+            return !/^(in conclusion|to conclude|ultimately|as a result of the above)\b/i.test(s);
+        });
+        var out = [];
+        for (var i = 0; i < sentences.length; i++) {
+            var sentence = sentences[i].replace(/^[,\s]+/, '');
+            if (tone === 'conversational' && i > 0 && /^this (?:is|means|allows|enables|ensures)\b/i.test(sentence)) {
+                sentence = sentence.replace(/^this/i, 'That');
+            }
+            if (tone === 'direct' && sentence.length > 180) {
+                var mid = sentence.indexOf(', ', 70);
+                if (mid > 60 && mid < 140) {
+                    var left = humanizerCapitalize(sentence.slice(0, mid));
+                    var right = humanizerCapitalize(sentence.slice(mid + 2));
+                    if (!/[.!?]$/.test(left)) left += '.';
+                    if (!/[.!?]$/.test(right)) right += '.';
+                    out.push(left, right);
+                    continue;
+                }
+            }
+            sentence = sentence.replace(/\bhelp ([A-Za-z]+) to\b/g, 'help $1');
+            if (!/[.!?]$/.test(sentence)) sentence += '.';
+            out.push(humanizerCapitalize(sentence));
+        }
+        if (tone === 'conversational' && out.length > 2) {
+            var last = out[out.length - 1];
+            if (/^so\b/i.test(last) === false && out.length > 3) {
+                /* leave the close as written; the stock closer was already stripped */
+            }
+        }
+        return out.join(' ').replace(/\s{2,}/g, ' ').trim();
+    }
+
+    function setupTextHumanizer() {
+        var input = app.querySelector('#humanizerInput');
+        var output = app.querySelector('#humanizerOutput');
+        var runBtn = app.querySelector('#humanizerRun');
+        if (!input || !output || !runBtn || runBtn.dataset.bound === '1') return;
+        runBtn.dataset.bound = '1';
+        var copyBtn = app.querySelector('#humanizerCopy');
+        var stats = app.querySelector('#humanizerStats');
+        var errorEl = app.querySelector('#humanizerError');
+        var tone = 'natural';
+
+        app.querySelectorAll('.humanizer-tone').forEach(function (btn) {
+            btn.addEventListener('click', function () {
+                tone = btn.getAttribute('data-tone') || 'natural';
+                app.querySelectorAll('.humanizer-tone').forEach(function (other) {
+                    var on = other === btn;
+                    other.classList.toggle('is-active', on);
+                    other.setAttribute('aria-pressed', on ? 'true' : 'false');
+                });
+            });
+        });
+
+        function showError(msg) {
+            if (!errorEl) return;
+            if (!msg) {
+                errorEl.style.display = 'none';
+                errorEl.textContent = '';
+                return;
+            }
+            errorEl.style.display = 'block';
+            errorEl.textContent = msg;
+        }
+
+        runBtn.addEventListener('click', function () {
+            var draft = input.value.trim();
+            showError('');
+            if (draft.length < 40) {
+                showError('Paste at least a couple of sentences.');
+                output.value = '';
+                if (copyBtn) copyBtn.disabled = true;
+                if (stats) stats.textContent = '';
+                return;
+            }
+            var rewritten = humanizeText(draft, tone);
+            if (!rewritten || rewritten === draft) {
+                showError('Nothing obvious to change. Try a longer draft, or switch tone.');
+            }
+            output.value = rewritten || draft;
+            if (copyBtn) copyBtn.disabled = !output.value;
+            if (stats) {
+                stats.textContent = humanizerWordCount(draft) + ' words in · ' + humanizerWordCount(output.value) + ' words out';
+            }
+        });
+
+        if (copyBtn) {
+            copyBtn.addEventListener('click', function () {
+                var text = output.value;
+                if (!text) return;
+                var done = function () {
+                    copyBtn.textContent = 'Copied';
+                    setTimeout(function () { copyBtn.textContent = 'Copy rewrite'; }, 1400);
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(text).then(done).catch(function () {
+                        output.focus();
+                        output.select();
+                    });
+                } else {
+                    output.focus();
+                    output.select();
+                }
+            });
+        }
     }
 
     function setupWebsiteHealthTool() {

@@ -1179,6 +1179,34 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   background: linear-gradient(135deg, var(--purple-deep) 0%, var(--purple) 100%);
   box-shadow: 0 0 26px rgba(107, 76, 154, 0.35), 0 0 48px rgba(139, 108, 193, 0.2);
 }
+.humanizer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 1.25rem;
+}
+.humanizer-field {
+  width: 100%;
+  min-height: 280px;
+  padding: 1rem 1.15rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  resize: vertical;
+}
+.humanizer-field:focus {
+  outline: 1px solid var(--crimson-text);
+  outline-offset: 2px;
+}
+.humanizer-field[readonly] {
+  color: var(--gray-100);
+}
+.humanizer-tone.is-active {
+  border-color: var(--crimson-text);
+  color: var(--white);
+}
 .btn--outline {
   border: 1px solid var(--border-light);
   color: var(--gray-100);

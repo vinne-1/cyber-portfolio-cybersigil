@@ -438,7 +438,7 @@
                     <span class="t-label">Live Intelligence</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h2 class="t-heading split-heading" style="margin-top:1.5rem; max-width:700px;">Threat landscape — real-time.</h2>
-                    <p class="t-body" style="margin-top:1rem; max-width:620px; color:var(--gray-300);">Aggregated and deduplicated from 6 sources: The Hacker News, Krebs on Security, Dark Reading, CSO Online, SANS ISC, and CISA Advisories. One of two free tools on this site &mdash; the other scans any website's security, SSL, SEO, and performance in one pass.</p>
+                    <p class="t-body" style="margin-top:1rem; max-width:620px; color:var(--gray-300);">Aggregated and deduplicated from 6 sources: The Hacker News, Krebs on Security, Dark Reading, CSO Online, SANS ISC, and CISA Advisories. One of the free tools on this site &mdash; the others scan a site&rsquo;s security and rewrite stiff drafts into plainer prose.</p>
                 </div>
 
                 <div class="anim-item" id="top3Today" style="margin-bottom:2.5rem;"></div>
@@ -959,7 +959,7 @@
                     <div>
                         <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Looking for the free tools?</h3>
                         <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
-                            The Website Health Report and the live Threat Landscape feed have their own dedicated section now &mdash; no signup, no catch.
+                            The Website Health Report, Threat Landscape feed, and Text Humanizer have their own section &mdash; no signup, no catch.
                         </p>
                     </div>
                     <div class="magnetic-wrap">
@@ -1000,7 +1000,7 @@
                         Free security &amp; SEO tools, no signup.
                     </h1>
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
-                        Two free tools built from the same offensive-security background as the client work on this site &mdash; a one-pass website health scan, and a live, deduplicated cybersecurity threat feed.
+                        Free tools with no signup &mdash; a website health scan, a live cybersecurity threat feed, and a text humanizer that rewrites stiff drafts in your browser.
                     </p>
                 </div>
 
@@ -1051,6 +1051,28 @@
                             </a>
                         </div>
                     </div>
+                    <div class="project-card anim-item">
+                        <div class="project-card__image">
+                            <div class="project-card__image-overlay"></div>
+                            <div class="project-card__image-inner">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h10M4 17h13"/><path d="M17 14l3 3-3 3"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__number">Writing</div>
+                            <h2 class="project-card__title" style="font-size:1.1rem;">Text Humanizer</h2>
+                            <p class="project-card__desc">Turn stiff, template-like drafts into plainer sentences. Runs in your browser &mdash; the text is not uploaded.</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">On-device</span>
+                                <span class="project-card__tag">No signup</span>
+                                <span class="project-card__tag">Copy out</span>
+                            </div>
+                            <a href="/tools/text-humanizer" class="project-card__cta" data-route>
+                                Open the Humanizer
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <p style="margin-top:3rem; font-size:0.8rem; color:var(--gray-300); max-width:600px;">
@@ -1067,6 +1089,63 @@
                   ]
                 }
                 </script>
+            </div>
+        </section>
+    </template>
+
+    <!-- TEXT HUMANIZER -->
+    <template id="page-tool-text-humanizer">
+        <section class="section section--atmosphere-deep" data-page="tool-text-humanizer" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">Text Humanizer</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">Text Humanizer</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Rewrite a stiff draft so it sounds like a person wrote it. Shorter rhythm, fewer stock phrases, same meaning.
+                    </p>
+                    <p class="t-body" style="margin-top:1rem; max-width:700px; color:var(--gray-300);">
+                        The rewrite runs in this browser. Your text is not sent to a server, and nothing is stored.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;" role="group" aria-label="Rewrite tone">
+                    <button type="button" class="btn btn--outline humanizer-tone is-active" data-tone="natural" aria-pressed="true">Natural</button>
+                    <button type="button" class="btn btn--outline humanizer-tone" data-tone="direct" aria-pressed="false">Direct</button>
+                    <button type="button" class="btn btn--outline humanizer-tone" data-tone="conversational" aria-pressed="false">Conversational</button>
+                </div>
+
+                <div class="anim-item humanizer-grid">
+                    <div>
+                        <label for="humanizerInput" class="t-caption" style="display:block; margin-bottom:0.6rem;">Draft</label>
+                        <textarea id="humanizerInput" class="humanizer-field" rows="14" maxlength="8000" placeholder="Paste a draft here..."></textarea>
+                    </div>
+                    <div>
+                        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:1rem; margin-bottom:0.6rem;">
+                            <label for="humanizerOutput" class="t-caption">Rewrite</label>
+                            <span id="humanizerStats" class="t-mono" style="font-size:0.7rem; color:var(--gray-300);"></span>
+                        </div>
+                        <textarea id="humanizerOutput" class="humanizer-field" rows="14" readonly aria-live="polite"></textarea>
+                    </div>
+                </div>
+
+                <p id="humanizerError" role="alert" style="display:none; margin-top:1rem; padding:0.85rem 1.1rem; border:1px solid var(--crimson); background:rgba(165,13,34,0.08); font-size:0.85rem; color:var(--crimson-text);"></p>
+
+                <div class="anim-item" style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.25rem;">
+                    <div class="magnetic-wrap">
+                        <button type="button" id="humanizerRun" class="btn btn--primary">Humanize</button>
+                    </div>
+                    <button type="button" id="humanizerCopy" class="btn btn--outline" disabled>Copy rewrite</button>
+                </div>
             </div>
         </section>
     </template>
@@ -1667,6 +1746,7 @@
 
                         <h3>Free tools</h3>
                         <p><strong>Website Health Report:</strong> when you submit a URL, it's used only to generate the report you requested (DNS, security headers, SSL/TLS, SEO, and performance checks via Google's PageSpeed Insights API). The URL and results are not logged or stored after your report is generated.</p>
+                        <p><strong>Text Humanizer:</strong> the rewrite runs entirely in your browser. The draft is not uploaded and is not stored on this site.</p>
                         <p><strong>Threat Landscape feed:</strong> built entirely from public security-news RSS feeds and the CISA KEV catalog on a fixed schedule. It involves no user input and no user data.</p>
 
                         <h3>Cookies &amp; local storage</h3>
