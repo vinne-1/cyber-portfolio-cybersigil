@@ -156,6 +156,7 @@
                 <li><a href="/credentials" class="nav__link" data-route><span class="nav__link-short" aria-hidden="true">03</span>Credentials</a></li>
                 <li class="nav__plane-divider" aria-hidden="true"></li>
                 <li><a href="/products" class="nav__link nav__link--products" data-route><span class="nav__link-short" aria-hidden="true">04</span>Products</a></li>
+                <li><a href="/free-tools" class="nav__link nav__link--products" data-route><span class="nav__link-short" aria-hidden="true">05</span>Free Tools</a></li>
             </ul>
 
             <div class="nav__cta-wrap">
@@ -176,6 +177,7 @@
         <a href="/credentials" data-route>Credentials</a>
         <span class="nav__mobile-plane-label" aria-hidden="true">Products &amp; Tools</span>
         <a href="/products" data-route class="nav__mobile-link--products">Products</a>
+        <a href="/free-tools" data-route class="nav__mobile-link--products">Free Tools</a>
         <a href="/contact" data-route>Contact</a>
     </nav>
 
@@ -436,7 +438,7 @@
                     <span class="t-label">Live Intelligence</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h2 class="t-heading split-heading" style="margin-top:1.5rem; max-width:700px;">Threat landscape — real-time.</h2>
-                    <p class="t-body" style="margin-top:1rem; max-width:620px; color:var(--gray-300);">Aggregated and deduplicated from 6 sources: The Hacker News, Krebs on Security, Dark Reading, CSO Online, SANS ISC, and CISA Advisories.</p>
+                    <p class="t-body" style="margin-top:1rem; max-width:620px; color:var(--gray-300);">Aggregated and deduplicated from 6 sources: The Hacker News, Krebs on Security, Dark Reading, CSO Online, SANS ISC, and CISA Advisories. One of two free tools on this site &mdash; the other scans any website's security, SSL, SEO, and performance in one pass.</p>
                 </div>
 
                 <div class="anim-item" id="top3Today" style="margin-bottom:2.5rem;"></div>
@@ -447,9 +449,13 @@
                     <div class="whr-skel whr-skel-card"></div>
                 </div>
 
-                <div class="anim-item" style="margin-top:2rem;">
+                <div class="anim-item" style="margin-top:2rem; display:flex; flex-wrap:wrap; gap:1.5rem;">
                     <a href="/threat-landscape" class="project-card__cta" data-route>
                         View Full Threat Landscape
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="/tools/website-health" class="project-card__cta" data-route>
+                        Run a Free Website Health Report
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -949,14 +955,47 @@
                     <div class="magnetic-wrap"><button type="button" class="btn btn--outline" style="white-space:nowrap;" disabled aria-describedby="closedTestingHint">Join Closed Testing</button></div>
                 </div>
 
-                <div class="anim-item" style="margin-top:5rem; margin-bottom:1.5rem;">
-                    <div class="product-section-label" style="margin-bottom:0.5rem; padding-bottom:0;">
-                        <span class="product-section-label__mark" aria-hidden="true"></span>
-                        <h2 class="t-caption">Free Tools</h2>
+                <div class="anim-item callout-panel" style="margin-top:5rem;">
+                    <div>
+                        <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Looking for the free tools?</h3>
+                        <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
+                            The Website Health Report and the live Threat Landscape feed have their own dedicated section now &mdash; no signup, no catch.
+                        </p>
                     </div>
-                    <p style="font-size:0.8rem; color:var(--gray-300); margin-top:0.5rem; max-width:560px; padding-bottom:0.75rem; border-bottom:1px solid var(--border);">No signup, no catch &mdash; built from the same offensive-security background as the work above.</p>
+                    <div class="magnetic-wrap">
+                        <a href="/free-tools" data-route class="btn btn--outline" style="white-space:nowrap;">
+                            Browse Free Tools
+                            <svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
                 </div>
 
+            </div>
+        </section>
+    </template>
+
+    <!-- FREE TOOLS -->
+    <template id="page-free-tools">
+        <section class="section section--atmosphere-deep" data-page="free-tools" style="padding-top:120px;">
+            <div class="atmo-particles" aria-hidden="true">
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+                <div class="atmo-particles__dot"></div>
+            </div>
+            <div class="container">
+
+                <div class="anim-item" style="margin-bottom:3rem;">
+                    <span class="t-label">Free Tools</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">
+                        Free security &amp; SEO tools, no signup.
+                    </h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Two free tools built from the same offensive-security background as the client work on this site &mdash; a one-pass website health scan, and a live, deduplicated cybersecurity threat feed.
+                    </p>
+                </div>
 
                 <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap:1.5rem;">
                     <div class="project-card anim-item">
@@ -968,7 +1007,7 @@
                         </div>
                         <div class="project-card__body">
                             <div class="project-card__number">Diagnostics</div>
-                            <h3 class="project-card__title">Website Health Report</h3>
+                            <h2 class="project-card__title" style="font-size:1.1rem;">Website Health Report</h2>
                             <p class="project-card__desc">Security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance scoring &mdash; for any public URL, in one report.</p>
                             <div class="project-card__tags">
                                 <span class="project-card__tag">Security</span>
@@ -992,7 +1031,7 @@
                         </div>
                         <div class="project-card__body">
                             <div class="project-card__number">Live Feed</div>
-                            <h3 class="project-card__title">Threat Landscape</h3>
+                            <h2 class="project-card__title" style="font-size:1.1rem;">Threat Landscape</h2>
                             <p class="project-card__desc">A ranked, auto-deduplicated feed of what's moving in cybersecurity right now &mdash; 6 sources, cross-checked against CISA's exploited-vulnerability catalog.</p>
                             <div class="project-card__tags">
                                 <span class="project-card__tag">CISA KEV</span>
@@ -1006,6 +1045,10 @@
                         </div>
                     </div>
                 </div>
+
+                <p style="margin-top:3rem; font-size:0.8rem; color:var(--gray-300); max-width:600px;">
+                    Looking for shipped apps instead? See <a href="/products" data-route>Products</a>.
+                </p>
 
             </div>
         </section>
@@ -1033,7 +1076,7 @@
             </svg>
             <div class="container">
                 <div class="anim-item" style="margin-bottom:2.5rem;">
-                    <a href="/products" data-route style="font-size:0.75rem; color:var(--gray-300); text-decoration:none;">&larr; Products</a>
+                    <a href="/free-tools" data-route style="font-size:0.75rem; color:var(--gray-300); text-decoration:none;">&larr; Free Tools</a>
                     <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h1 class="t-heading split-heading" style="margin-top:1.5rem;">
@@ -1124,6 +1167,9 @@
                             </div>
                             <div style="font-size:0.7rem; letter-spacing:0.1em; color:var(--gray-300); text-transform:uppercase; margin-top:0.75rem;">Overall Grade</div>
                             <a id="whrTargetUrl" class="whr-target-url" href="#" target="_blank" rel="noopener noreferrer"></a>
+                            <div style="margin-top:0.85rem;">
+                                <button type="button" id="whrShareBtn" class="btn btn--outline" style="font-size:0.7rem; padding:0.45rem 0.9rem;">Share Result</button>
+                            </div>
                         </div>
                         <div id="whrScoreCircles" style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; flex:1; min-width:200px;"></div>
                     </div>
@@ -1291,7 +1337,8 @@
             </svg>
             <div class="container">
                 <div class="anim-item" style="margin-bottom:2.5rem;">
-                    <span class="t-label">Threat Landscape</span>
+                    <a href="/free-tools" data-route style="font-size:0.75rem; color:var(--gray-300); text-decoration:none;">&larr; Free Tools</a>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Threat Landscape</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h1 class="t-heading split-heading" style="margin-top:1.5rem;">
                         What's moving right now.

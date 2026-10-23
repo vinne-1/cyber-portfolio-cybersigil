@@ -176,6 +176,7 @@
         '/about':          'page-about',
         '/work':           'page-work',
         '/products':       'page-products',
+        '/free-tools':     'page-free-tools',
         '/tools/website-health': 'page-tool-website-health',
         '/threat-landscape': 'page-threat-landscape',
         '/credentials':    'page-credentials',
@@ -189,6 +190,7 @@
         '/about':          'About — Vineet Vishesh',
         '/work':           'Work & Capabilities — Vineet Vishesh',
         '/products':       'Products — Vineet Vishesh',
+        '/free-tools':     'Free Tools — Vineet Vishesh',
         '/tools/website-health': 'Website Health Report — Vineet Vishesh',
         '/threat-landscape': 'Threat Landscape — Vineet Vishesh',
         '/credentials':    'Credentials — Vineet Vishesh',
@@ -201,7 +203,8 @@
         '/':               'Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years of combined experience across web, API, network, and cloud environments.',
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
         '/work':           'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.',
-        '/products':       'Products built by Vineet Vishesh — independent apps, starting with TithiPath, plus free tools including a Website Health Report and a live Threat Landscape feed.',
+        '/products':       'Products built by Vineet Vishesh — independent apps, starting with TithiPath.',
+        '/free-tools':     'Free cybersecurity tools by Vineet Vishesh — a Website Health Report (security, SSL, SEO, performance) and a live Threat Landscape feed. No signup required.',
         '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
         '/threat-landscape': 'Live cybersecurity threat landscape — deduplicated coverage from 6 sources, ranked by severity, corroboration, and recency.',
         '/credentials':    'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.',
@@ -2046,6 +2049,8 @@
         return '<h3 style="font-size:0.8rem; font-weight:600; color:var(--gray-300); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.75rem;">' + escapeHtml(text) + '</h3>';
     }
 
+    var whrLastShareData = null;
+
     function whrRenderResults(report) {
         var resultsEl = app.querySelector('#whrResults');
         if (!resultsEl) return;
@@ -2068,6 +2073,7 @@
         var grade = report.overallGrade || 'N/A';
         if (gradeEl) gradeEl.textContent = grade;
         if (gradeBadge) gradeBadge.setAttribute('data-grade', grade.charAt(0));
+        whrLastShareData = { grade: grade, url: report.url || '' };
         var urlEl = app.querySelector('#whrTargetUrl');
         if (urlEl) {
             var reportUrl = report.url || '';
@@ -2391,6 +2397,28 @@
                     lenis.scrollTo(input, { offset: -140 });
                 } else {
                     input.scrollIntoView({ block: 'center' });
+                }
+            });
+        }
+
+        var shareBtn = app.querySelector('#whrShareBtn');
+        if (shareBtn) {
+            shareBtn.addEventListener('click', function () {
+                if (!whrLastShareData) return;
+                var toolUrl = 'https://vineedoesstuff.in/tools/website-health';
+                var shareText = whrLastShareData.url
+                    ? 'My site scored a ' + whrLastShareData.grade + ' on this free Website Health Report (security, SSL, SEO & performance) — check yours:'
+                    : 'Check your site’s security, SSL, SEO, and performance free with this Website Health Report:';
+                var resetLabel = function () {
+                    setTimeout(function () { shareBtn.textContent = 'Share Result'; }, 2000);
+                };
+                if (navigator.share) {
+                    navigator.share({ title: 'Website Health Report', text: shareText, url: toolUrl }).catch(function () {});
+                } else if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(shareText + ' ' + toolUrl).then(function () {
+                        shareBtn.textContent = 'Copied!';
+                        resetLabel();
+                    }).catch(function () {});
                 }
             });
         }

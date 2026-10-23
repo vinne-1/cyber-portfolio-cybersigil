@@ -35,7 +35,11 @@ const ROUTES = {
   },
   '/products': {
     title: 'Products — Vineet Vishesh',
-    description: 'Products built by Vineet Vishesh — independent apps, starting with TithiPath, plus free tools including a Website Health Report and a live Threat Landscape feed.'
+    description: 'Products built by Vineet Vishesh — independent apps, starting with TithiPath.'
+  },
+  '/free-tools': {
+    title: 'Free Tools — Vineet Vishesh',
+    description: 'Free cybersecurity tools by Vineet Vishesh — a Website Health Report (security, SSL, SEO, performance) and a live Threat Landscape feed. No signup required.'
   },
   '/tools/website-health': {
     title: 'Website Health Report — Vineet Vishesh',
