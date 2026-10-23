@@ -36,6 +36,8 @@ jobs:
           SHA_SHORT="${GITHUB_SHA:0:8}"
           sed -i -E "s/(style\.css|app\.js)(\?v=[A-Za-z0-9]+)?\"/\1?v=${SHA_SHORT}\"/g" _site/index.html
           grep -o 'style\.css?v=[A-Za-z0-9]*\|app\.js?v=[A-Za-z0-9]*' _site/index.html
+      - name: Prerender route metadata for crawlers/link-unfurl bots
+        run: node scripts/prerender-routes.js _site/index.html _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
