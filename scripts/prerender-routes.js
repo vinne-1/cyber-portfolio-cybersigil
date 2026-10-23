@@ -61,6 +61,10 @@ const ROUTES = {
     title: 'What Is CISA KEV? — Vineet Vishesh',
     description: 'What CISA’s Known Exploited Vulnerabilities (KEV) catalog is, why it’s the one authoritative severity signal in the Threat Landscape feed, and how it differs from CVSS.'
   },
+  '/guides/ai-writing-phrases': {
+    title: 'Phrases That Make Writing Sound Stiff — Vineet Vishesh',
+    description: 'Common stock phrases and stiff sentence patterns that make writing sound formulaic — and how to fix them, free, with the Text Humanizer tool.'
+  },
   '/credentials': {
     title: 'Credentials — Vineet Vishesh',
     description: 'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.'

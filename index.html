@@ -1178,7 +1178,7 @@
                 </div>
 
                 <p style="margin-top:3rem; font-size:0.8rem; color:var(--gray-300); max-width:600px;">
-                    Looking for shipped apps instead? See <a href="/products" data-route>Products</a>. Or read the <a href="/guides/security-headers" data-route>HTTP security headers guide</a> behind the Website Health Report's checks, or the <a href="/guides/cisa-kev" data-route>CISA KEV guide</a> behind the Threat Landscape's ranking.
+                    Looking for shipped apps instead? See <a href="/products" data-route>Products</a>. Or read the <a href="/guides/security-headers" data-route>HTTP security headers guide</a> behind the Website Health Report's checks, the <a href="/guides/cisa-kev" data-route>CISA KEV guide</a> behind the Threat Landscape's ranking, or the <a href="/guides/ai-writing-phrases" data-route>stiff-writing phrases guide</a> behind the Text Humanizer.
                 </p>
 
                 <script type="application/ld+json">
@@ -1254,7 +1254,7 @@
                     <div style="display:grid; gap:1.75rem;">
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What is a text humanizer?</h3>
-                            <p class="t-body" style="color:var(--gray-300);">A text humanizer rewrites stiff or overly formal text into plainer sentences &mdash; removing stock phrases like &ldquo;in today's fast-paced landscape,&rdquo; fixing verb and article agreement after a swap, and splitting run-on sentences &mdash; while keeping the original meaning.</p>
+                            <p class="t-body" style="color:var(--gray-300);">A text humanizer rewrites stiff or overly formal text into plainer sentences &mdash; removing stock phrases like &ldquo;in today's fast-paced landscape,&rdquo; fixing verb and article agreement after a swap, and splitting run-on sentences &mdash; while keeping the original meaning. See the <a href="/guides/ai-writing-phrases" data-route>full guide</a> to the specific phrases it looks for.</p>
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is this Text Humanizer free?</h3>
@@ -1311,7 +1311,7 @@
                     {
                       "@type": "Question",
                       "name": "What is a text humanizer?",
-                      "acceptedAnswer": { "@type": "Answer", "text": "A text humanizer rewrites stiff or overly formal text into plainer sentences — removing stock phrases like \"in today's fast-paced landscape,\" fixing verb and article agreement after a swap, and splitting run-on sentences — while keeping the original meaning." }
+                      "acceptedAnswer": { "@type": "Answer", "text": "A text humanizer rewrites stiff or overly formal text into plainer sentences — removing stock phrases like \"in today's fast-paced landscape,\" fixing verb and article agreement after a swap, and splitting run-on sentences — while keeping the original meaning. See the full guide to the specific phrases it looks for." }
                     },
                     {
                       "@type": "Question",
@@ -1768,6 +1768,141 @@
                       "@type": "Question",
                       "name": "Do these headers slow down my site?",
                       "acceptedAnswer": { "@type": "Answer", "text": "No — they add a small amount of header text to each response, not meaningfully measurable against typical page weight, and require no extra round trips." }
+                    }
+                  ]
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
+    <!-- GUIDE: AI WRITING PHRASES -->
+    <template id="page-guide-ai-writing-phrases">
+        <section class="section section--atmosphere-deep" data-page="guide-ai-writing-phrases" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem; max-width:720px;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/tools/text-humanizer" data-route style="color:var(--gray-300); text-decoration:none;">Text Humanizer</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">Phrases That Make Writing Sound Stiff</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Guide</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">Phrases That Make Writing Sound Stiff</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem;">
+                        Certain phrases show up constantly in corporate copy, cover letters, and AI-drafted text alike &mdash; not because they're wrong, but because they're filler, hedging, or a roundabout way of saying something simpler. Below are the patterns the free <a href="/tools/text-humanizer" data-route>Text Humanizer</a> tool actually looks for and rewrites.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="max-width:720px; display:grid; gap:2rem; margin-bottom:3rem;">
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Throat-clearing openers</h2>
+                        <p class="t-body" style="color:var(--gray-300);">&ldquo;In today's fast-paced digital landscape&rdquo;, &ldquo;in today's rapidly evolving world&rdquo;, &ldquo;in the ever-evolving landscape of&hellip;&rdquo; &mdash; these set a scene nobody asked for before saying anything. Cutting them usually loses nothing.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Hedging phrases that announce a point instead of making it</h2>
+                        <p class="t-body" style="color:var(--gray-300);">&ldquo;It is important to note that&hellip;&rdquo;, &ldquo;it is worth noting that&hellip;&rdquo;, &ldquo;it should be noted that&hellip;&rdquo; &mdash; if a point is worth making, just make it. The hedge adds length, not credibility.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Wordier ways to say a short word</h2>
+                        <p class="t-body" style="color:var(--gray-300);">&ldquo;In order to&rdquo; is just &ldquo;to&rdquo;. &ldquo;Due to the fact that&rdquo; is just &ldquo;because&rdquo;. &ldquo;A wide range of&rdquo; is usually just &ldquo;many&rdquo;. &ldquo;When it comes to X&rdquo; can almost always become &ldquo;for X&rdquo;.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Vague verbs that sound important but say little</h2>
+                        <p class="t-body" style="color:var(--gray-300);">&ldquo;Leverage&rdquo;, &ldquo;utilize&rdquo;, &ldquo;facilitate&rdquo;, &ldquo;harness&rdquo; almost always just mean <em>use</em> or <em>help</em>. &ldquo;Empower&rdquo; and &ldquo;unlock&rdquo; usually mean <em>help</em> or <em>open up</em>. &ldquo;Plays a crucial role in&rdquo; usually just means <em>matters for</em>.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Adjectives that modify nothing specific</h2>
+                        <p class="t-body" style="color:var(--gray-300);">&ldquo;Robust&rdquo;, &ldquo;cutting-edge&rdquo;, &ldquo;state-of-the-art&rdquo;, &ldquo;seamless&rdquo;, &ldquo;holistic&rdquo;, &ldquo;comprehensive&rdquo;, &ldquo;innovative&rdquo; &mdash; these describe a feeling about the thing, not the thing itself. A specific detail almost always does more work than any of them.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Buzzwords that have lost their meaning through overuse</h2>
+                        <p class="t-body" style="color:var(--gray-300);">&ldquo;Myriad&rdquo;, &ldquo;pivotal&rdquo;, &ldquo;realm&rdquo;, &ldquo;tapestry&rdquo;, &ldquo;stakeholders&rdquo;, &ldquo;synergy&rdquo; &mdash; once distinctive, now filler. Plainer words (many, important, area, mix, people involved, overlap) usually read better precisely because they're less decorative.</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size:1.1rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Transition words doing more work than the sentence needs</h2>
+                        <p class="t-body" style="color:var(--gray-300);">&ldquo;Moreover&rdquo;, &ldquo;furthermore&rdquo;, &ldquo;additionally&rdquo;, &ldquo;however&rdquo;, &ldquo;therefore&rdquo;, &ldquo;thus&rdquo;, &ldquo;overall&rdquo;, &ldquo;in conclusion&rdquo; &mdash; useful occasionally, exhausting when every paragraph leans on one. Most can be deleted outright, or replaced with a plain "but" or "so".</p>
+                    </div>
+                </div>
+
+                <div class="anim-item callout-panel" style="margin-bottom:4rem;">
+                    <div>
+                        <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Run your own draft through this</h3>
+                        <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
+                            The free Text Humanizer rewrites all of the patterns above automatically, in three tones, entirely in your browser.
+                        </p>
+                    </div>
+                    <div class="magnetic-wrap">
+                        <a href="/tools/text-humanizer" data-route class="btn btn--primary" style="white-space:nowrap;">
+                            Try the Humanizer
+                            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Are these phrases always wrong?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No &mdash; "however" or "therefore" used once, where the logic actually needs it, is fine. The problem is density: when several of these show up in every paragraph, the writing starts reading as generic rather than considered.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Why do these specific phrases show up so often?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Most of them come from corporate and marketing writing conventions that predate AI text generation by decades &mdash; they just got amplified because AI models trained on that writing reproduce its patterns at scale.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Does fixing these phrases change the meaning of my text?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">It shouldn't &mdash; every example above is a shorter, plainer way of saying the same thing, not a different claim. That's the whole point: cut the padding, keep the meaning.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Text Humanizer", "item": "https://vineedoesstuff.in/tools/text-humanizer" },
+                    { "@type": "ListItem", "position": 3, "name": "Phrases That Make Writing Sound Stiff", "item": "https://vineedoesstuff.in/guides/ai-writing-phrases" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "TechArticle",
+                  "headline": "Phrases That Make Writing Sound Stiff",
+                  "description": "Common stock phrases and stiff sentence patterns that make writing sound formulaic, and how to fix them.",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" },
+                  "url": "https://vineedoesstuff.in/guides/ai-writing-phrases",
+                  "about": ["Writing style", "Plain language", "Editing"]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Are these phrases always wrong?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "No — \"however\" or \"therefore\" used once, where the logic actually needs it, is fine. The problem is density: when several of these show up in every paragraph, the writing starts reading as generic rather than considered." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Why do these specific phrases show up so often?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Most of them come from corporate and marketing writing conventions that predate AI text generation by decades — they just got amplified because AI models trained on that writing reproduce its patterns at scale." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does fixing these phrases change the meaning of my text?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "It shouldn't — every example above is a shorter, plainer way of saying the same thing, not a different claim. That's the whole point: cut the padding, keep the meaning." }
                     }
                   ]
                 }
