@@ -27,6 +27,7 @@ jobs:
           mkdir -p _site
           cp index.html app.js style.css sw.js _site/
           cp 404.html sitemap.xml manifest.json og-image.png robots.txt _site/
+          cp 874bf95870a9c22801c9abf904b7618a.txt _site/ 2>/dev/null || true
           cp resume.pdf "CompTIA Security+ ce certificate.pdf" _site/ 2>/dev/null || true
           cp -r resources _site/ 2>/dev/null || true
           cp -r data _site/ 2>/dev/null || true
