@@ -1042,6 +1042,9 @@
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
                         Security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance &mdash; checked live, for any public site.
                     </p>
+                    <p class="t-body" style="margin-top:1rem; max-width:700px; color:var(--gray-300);">
+                        A website health report is a free, automated scan that checks five things in one pass: HTTP security headers, SSL/TLS certificate validity, DNS configuration (SPF/DMARC), on-page SEO signals, and real Core Web Vitals performance &mdash; the same checks a penetration tester runs first, without the manual work.
+                    </p>
                 </div>
 
                 <div class="anim-item" id="whrForm" style="display:flex; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
@@ -1162,6 +1165,106 @@
                     </div>
 
                 </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What is a free website health checker?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">A free website health checker scans a URL for security headers, SSL/TLS configuration, DNS records, on-page SEO, and real performance data, then returns a single report &mdash; no signup or payment needed. This tool runs Core Web Vitals checks through Google's own PageSpeed Insights API, the same engine Google uses internally.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is this Website Health Report tool actually free?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Yes &mdash; there's no account, no email, and no payment required. Enter any public URL and get a full security, SEO, and performance report in about 30 seconds.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What does the overall grade (A&ndash;F) mean?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">The overall grade averages five scores: security headers, on-page SEO, and Lighthouse's performance, accessibility, and best-practices scores. A means 90 or above, B is 80+, C is 70+, D is 60+, and anything lower is graded F.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What security headers does this tool check?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">It checks for Content-Security-Policy, HTTP Strict-Transport-Security (HSTS), X-Content-Type-Options, X-Frame-Options, and related response headers &mdash; the headers that protect a site against clickjacking, MIME-sniffing, and mixed-content attacks.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Does this tool store the URLs or results I check?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No. The URL you submit is used only to generate the report you requested and is not logged or stored afterward. See the site's <a href="/privacy" data-route>Privacy Policy</a> for the full data-handling breakdown.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How is this different from using Google PageSpeed Insights alone?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">PageSpeed Insights measures performance only. This tool adds security headers, SSL/TLS validation, DNS and email-authentication checks (SPF, DMARC), and on-page SEO in the same report, so a site owner doesn't need to run four separate tools to get the full picture.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Can I check any website, or just my own?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Any public website. There's no verification or ownership check &mdash; the same way a penetration tester would assess the outward-facing security posture of any target during reconnaissance.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Who built this free tool?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">It was built by Vineet Vishesh, a penetration tester and offensive security researcher, as a free way to apply the same initial-recon checks used in professional security assessments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Website Health Report",
+                  "applicationCategory": "SecurityApplication",
+                  "operatingSystem": "Any (web-based)",
+                  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                  "description": "Free automated website scan covering security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance via Google PageSpeed Insights.",
+                  "url": "https://vineedoesstuff.in/tools/website-health",
+                  "creator": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" }
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What is a free website health checker?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "A free website health checker scans a URL for security headers, SSL/TLS configuration, DNS records, on-page SEO, and real performance data, then returns a single report — no signup or payment needed. This tool runs Core Web Vitals checks through Google's own PageSpeed Insights API, the same engine Google uses internally." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is this Website Health Report tool actually free?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Yes — there's no account, no email, and no payment required. Enter any public URL and get a full security, SEO, and performance report in about 30 seconds." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What does the overall grade (A–F) mean?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "The overall grade averages five scores: security headers, on-page SEO, and Lighthouse's performance, accessibility, and best-practices scores. A means 90 or above, B is 80+, C is 70+, D is 60+, and anything lower is graded F." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What security headers does this tool check?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "It checks for Content-Security-Policy, HTTP Strict-Transport-Security (HSTS), X-Content-Type-Options, X-Frame-Options, and related response headers — the headers that protect a site against clickjacking, MIME-sniffing, and mixed-content attacks." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Does this tool store the URLs or results I check?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "No. The URL you submit is used only to generate the report you requested and is not logged or stored afterward. See the site's Privacy Policy for the full data-handling breakdown." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How is this different from using Google PageSpeed Insights alone?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "PageSpeed Insights measures performance only. This tool adds security headers, SSL/TLS validation, DNS and email-authentication checks (SPF, DMARC), and on-page SEO in the same report, so a site owner doesn't need to run four separate tools to get the full picture." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can I check any website, or just my own?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Any public website. There's no verification or ownership check — the same way a penetration tester would assess the outward-facing security posture of any target during reconnaissance." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Who built this free tool?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "It was built by Vineet Vishesh, a penetration tester and offensive security researcher, as a free way to apply the same initial-recon checks used in professional security assessments." }
+                    }
+                  ]
+                }
+                </script>
             </div>
         </section>
     </template>
@@ -1196,6 +1299,9 @@
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
                         Aggregated and deduplicated from 6 sources &mdash; The Hacker News, Krebs on Security, Dark Reading, CSO Online, SANS ISC, and CISA Advisories.
                     </p>
+                    <p class="t-body" style="margin-top:1rem; max-width:700px; color:var(--gray-300);">
+                        A live threat landscape feed is a continuously updated summary of current cybersecurity threats, aggregated from multiple public sources and deduplicated into a single ranked list &mdash; refreshed automatically, with no manual curation.
+                    </p>
                     <p id="tlMethodology" style="margin-top:1rem; max-width:700px; font-size:0.75rem; color:var(--gray-300); font-style:italic;"></p>
                 </div>
 
@@ -1210,6 +1316,84 @@
                     <div class="whr-skel whr-skel-card"></div>
                     <div class="whr-skel whr-skel-card"></div>
                 </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What is a cybersecurity threat landscape feed?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">A threat landscape feed is a ranked, deduplicated summary of what's currently being reported across multiple cybersecurity news sources and official advisories, refreshed on a schedule so you don't have to check each source manually.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Where does this threat intelligence come from?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Six public sources: The Hacker News, Krebs on Security, Dark Reading, CSO Online, the SANS Internet Storm Center, and CISA Advisories &mdash; cross-checked against CISA's Known Exploited Vulnerabilities (KEV) catalog.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How often is the threat feed updated?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Automatically, roughly every 20 minutes, with no manual curation.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is this an official or authoritative threat ranking?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No &mdash; it's an automated heuristic ranking based on keyword-based severity signals, how many independent outlets covered the same story, confirmed matches against CISA's KEV catalog, and recency. It's a convenience digest, not a substitute for an official threat intelligence subscription.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is this threat feed free to use?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Yes. It's a free tool with no signup, built from publicly available security news and CISA's official advisories.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What does CISA KEV mean?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">CISA KEV is the Known Exploited Vulnerabilities catalog maintained by the U.S. Cybersecurity and Infrastructure Security Agency &mdash; a list of vulnerabilities confirmed to have been actively exploited in the wild, used here to boost the severity signal of matching stories.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Can I filter the threat feed by severity?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Yes &mdash; use the All / Critical / High / Medium / Low filter buttons above the list to narrow results to a specific severity level.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What is a cybersecurity threat landscape feed?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "A threat landscape feed is a ranked, deduplicated summary of what's currently being reported across multiple cybersecurity news sources and official advisories, refreshed on a schedule so you don't have to check each source manually." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Where does this threat intelligence come from?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Six public sources: The Hacker News, Krebs on Security, Dark Reading, CSO Online, the SANS Internet Storm Center, and CISA Advisories — cross-checked against CISA's Known Exploited Vulnerabilities (KEV) catalog." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How often is the threat feed updated?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Automatically, roughly every 20 minutes, with no manual curation." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is this an official or authoritative threat ranking?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "No — it's an automated heuristic ranking based on keyword-based severity signals, how many independent outlets covered the same story, confirmed matches against CISA's KEV catalog, and recency. It's a convenience digest, not a substitute for an official threat intelligence subscription." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is this threat feed free to use?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Yes. It's a free tool with no signup, built from publicly available security news and CISA's official advisories." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What does CISA KEV mean?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "CISA KEV is the Known Exploited Vulnerabilities catalog maintained by the U.S. Cybersecurity and Infrastructure Security Agency — a list of vulnerabilities confirmed to have been actively exploited in the wild, used here to boost the severity signal of matching stories." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can I filter the threat feed by severity?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Yes — use the All / Critical / High / Medium / Low filter buttons above the list to narrow results to a specific severity level." }
+                    }
+                  ]
+                }
+                </script>
             </div>
         </section>
     </template>
