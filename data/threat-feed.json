@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-25T19:57:53.000Z",
+      "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33454",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
       "source": "The Hacker News",
       "date": "2026-10-25T17:44:09.000Z",
@@ -925,21 +940,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-16T00:46:35.000Z",
-      "summary": "I believe the cybersecurity industry may be approaching AI security the wrong way.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33430",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
       "source": "Krebs on Security",
       "date": "2026-10-14T14:22:49.000Z",
@@ -1062,6 +1062,25 @@
   ],
   "clusters": [
     {
+      "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
+      "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
+      "url": "https://isc.sans.edu/diary/rss/33454",
+      "date": "2026-10-25T19:57:53.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
       "summary": "A single hacked device on a Tailscale network can be used to gain root access to other servers it can reach, according to a security researcher who published the findings this week.\n\nThe attack requires two things: Tailscale SSH set up to allow port forwarding, and an attacker who already controls one device that the network's access rules permit to connect to the target.\n\nThe findings were",
       "url": "https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html",
@@ -1078,7 +1097,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
@@ -1100,7 +1119,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
@@ -1119,7 +1138,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
@@ -1140,7 +1159,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 28
     },
     {
       "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
@@ -1277,7 +1296,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
@@ -1374,7 +1393,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Dual BIOS: The laptop security feature SMBs don’t know they need",
@@ -1589,7 +1608,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "The AI notetaker risk is now an everywhere problem",
@@ -1608,7 +1627,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "State Bank of India Suffers a Customer PII Data Leak",
@@ -1725,7 +1744,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Security teams urged to center defense on the flaw profile attackers target most",
@@ -1744,7 +1763,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "As AI Risks Grow, Insurers Split on Covering the Damage",
@@ -2157,25 +2176,6 @@
       "score": 10
     },
     {
-      "title": "Small Agents, Smaller Blast Radius: Controlling What AI Can Do, (Fri, Oct 16th)",
-      "summary": "I believe the cybersecurity industry may be approaching AI security the wrong way.",
-      "url": "https://isc.sans.edu/diary/rss/33430",
-      "date": "2026-10-16T00:46:35.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
       "title": "U.K. Sanctions Cryptomus for RU Money Laundering",
       "summary": "The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial restrictions.",
       "url": "https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/",
@@ -2330,6 +2330,25 @@
   ],
   "top3": [
     {
+      "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
+      "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
+      "url": "https://isc.sans.edu/diary/rss/33454",
+      "date": "2026-10-25T19:57:53.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
       "summary": "A memory-corruption flaw in Google's Brotli decoder sits in many programs that unpack Brotli-compressed data, among them Bun, the Python Brotli and brotlicffi packages, and Envoy proxies set up to decompress Brotli.\n\nTracked as CVE-2026-111497, the flaw allows crafted compressed data to overwrite past the end of a buffer and corrupt a program's memory, potentially",
       "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html",
@@ -2348,7 +2367,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 28
     },
     {
       "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
@@ -2367,29 +2386,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
-    },
-    {
-      "title": "PHP2Shell Exploitation Hits Government Entity Amid Global Scanning and Signs of AI-Assisted Hacking",
-      "summary": "Threat actors have been observed using agentic artificial intelligence (AI) platforms for post-exploitation activity following the abuse of the PHP2Shell vulnerabilities tracked as CVE-2026-109618 and CVE-2026-109619.\n\n\"In one case, the attackers targeted a government entity in Europe and within two hours of the initial exploitation they had successfully accessed password hashes and multi-factor",
-      "url": "https://thehackernews.com/2026/10/php2shell-exploitation-hits-government.html",
-      "date": "2026-10-25T17:19:46.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 28
+      "score": 27
     }
   ],
   "sourcesUsed": [
@@ -2402,5 +2399,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-25T19:56:31.746Z"
+  "lastUpdated": "2026-10-25T22:24:35.015Z"
 }
