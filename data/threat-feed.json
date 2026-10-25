@@ -336,17 +336,21 @@
       "source": "CISA Advisories",
       "date": "2026-10-23T12:00:00.000Z",
       "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilia",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-114625"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-114625"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-114625"
+      ]
     },
     {
       "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
@@ -1073,7 +1077,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
@@ -1113,7 +1117,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Google Says Gmail and Photos Data Shared With AI Search Could Be Used for Targeted Ads",
@@ -1132,7 +1136,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Researchers Push Over 2 Million Updates to Remotely Disable Popcorn Time Updater That Could Fuel a Botnet",
@@ -1174,7 +1178,7 @@
         "CVE-2026-110447"
       ],
       "articleCount": 1,
-      "score": 61
+      "score": 60
     },
     {
       "title": "Trust Is Not What It Seems — And Fraudsters Are Counting on It",
@@ -1193,7 +1197,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "(Reliable)&#x3f; php2shell exploitability, (Fri, Oct 23rd)",
@@ -1212,7 +1216,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
@@ -1231,7 +1235,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "BlackX UEFI Bootkit Bypasses Secure Boot on Patched Windows Systems Missing Revocations",
@@ -1250,7 +1254,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Oracle patches 1295 security vulnerabilities in October, including six scoring 10.0",
@@ -1271,7 +1275,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Ruby Fixes Three Regex Engine Bugs Responsible for Four Critical GitLab RCE Flaws",
@@ -1290,7 +1294,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Exposed Infrastructure Reveals How Ransomware Affiliates Used AI Agents to Execute Intrusions",
@@ -1309,7 +1313,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "AI Tools Are Generating Massive Attacks for Little Cost",
@@ -1385,7 +1389,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Hackers Breach Enterprise Firewalls and VPNs, Exposing Over 70,000 Credentials",
@@ -1423,7 +1427,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Cyber Insurance's New Reality: Underwriting Isn't Enough",
@@ -1442,7 +1446,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1451,8 +1455,7 @@
       "date": "2026-10-23T12:00:00.000Z",
       "severity": "Critical",
       "tags": [
-        "Confirmed in CISA KEV Catalog",
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "CISA Advisories"
@@ -1464,10 +1467,11 @@
         "CVE-2026-114625"
       ],
       "knownExploitedCves": [
-        "CVE-2026-110447"
+        "CVE-2026-110447",
+        "CVE-2026-114625"
       ],
       "articleCount": 2,
-      "score": 58
+      "score": 57
     },
     {
       "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
@@ -1486,7 +1490,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "PHP Warns of Another Unpatched RCE Risk Two Days After Emergency PHP2Shell Patches",
@@ -1757,7 +1761,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "LiteLLM release pipeline hacked to distribute credential-stealing malware",
@@ -1871,7 +1875,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Siemens RUGGEDCOM APE1808 Devices",
@@ -1896,7 +1900,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Siemens SIMATIC S7-1500 CPU 1518(F)-4 PN/DP MFP",
@@ -1915,7 +1919,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Siemens WinCC",
@@ -1934,7 +1938,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Siemens Industrial Edge Device Kit",
@@ -1953,7 +1957,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "InterSystems Corporation InterSystems IRIS for Health",
@@ -1974,7 +1978,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "China-linked hackers used agentic AI in attack on 2,250 Microsoft 365 tenants",
@@ -2344,7 +2348,7 @@
         "CVE-2026-110447"
       ],
       "articleCount": 1,
-      "score": 61
+      "score": 60
     },
     {
       "title": "Brotli Decoder Flaw Behind Node.js RCE Also Affects Bun, Python and Other Widely Used Software",
@@ -2384,7 +2388,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     }
   ],
   "sourcesUsed": [
@@ -2397,5 +2401,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-25T13:55:40.678Z"
+  "lastUpdated": "2026-10-25T17:30:25.437Z"
 }
