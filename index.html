@@ -370,12 +370,7 @@
                 </g>
             </svg>
             <div class="container" style="position:relative; z-index:2;">
-                <div class="hero__meta">
-                    <div class="hero__status">
-                        <span class="hero__status-dot"></span>
-                        Open to New Opportunities
-                    </div>
-                </div>
+                <div class="hero__meta"></div>
                 <h1 class="hero__headline t-display">
                     <span class="line"><span class="line-inner">Vineet</span></span>
                     <span class="line"><span class="line-inner">Vishesh<span style="color:var(--crimson)">.</span></span></span>
@@ -955,15 +950,25 @@
                     <button type="button" class="device-3d-pause t-mono" id="tithipath3dPause">Pause slideshow</button>
                 </div>
 
-                <div class="anim-item callout-panel">
+                <div class="anim-item callout-panel" style="flex-direction:column; align-items:flex-start; gap:1.25rem;">
                     <div>
                         <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Want early access?</h3>
-                        <p id="closedTestingHint" style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
-                            TithiPath is in Google Play Closed Testing right now. Join as a tester to help it reach production &mdash; install once, no action needed after that. The invite link will activate here once the Play Console URL is published.
+                        <p id="closedTestingHint" style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:520px;">
+                            TithiPath is in Google Play Closed Testing. Join the tester group, then opt in on Google Play to install it and help it reach general release.
                         </p>
                     </div>
-                    <!-- TODO: replace disabled button with a real Play Console closed-testing opt-in URL (Play Console -> Testing -> Closed testing -> Testers tab) -->
-                    <div class="magnetic-wrap"><button type="button" class="btn btn--outline" style="white-space:nowrap;" disabled aria-describedby="closedTestingHint">Join Closed Testing</button></div>
+                    <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+                        <div class="magnetic-wrap">
+                            <a href="https://groups.google.com/g/tithipath-testers" target="_blank" rel="noopener noreferrer" class="btn btn--outline" style="white-space:nowrap;">
+                                1. Join Tester Group<span class="sr-only"> (opens in a new tab)</span>
+                            </a>
+                        </div>
+                        <div class="magnetic-wrap">
+                            <a href="https://play.google.com/apps/testing/com.dailypanchang.app" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="white-space:nowrap;" aria-describedby="closedTestingHint">
+                                2. Become a Tester<span class="sr-only"> (opens in a new tab)</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="anim-item" style="margin-top:4rem; margin-bottom:4rem; max-width:720px;">
@@ -975,7 +980,7 @@
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is TithiPath available yet?</h3>
-                            <p class="t-body" style="color:var(--gray-300);">Not publicly. It's currently in Google Play Closed Testing with no public release date set. This page will link directly to the Play Store listing once it's generally available.</p>
+                            <p class="t-body" style="color:var(--gray-300);">Not yet on general release, but you can join Google Play Closed Testing right now using the links above &mdash; install it and help it reach general availability. This page will link directly to the public Play Store listing once that happens.</p>
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Does TithiPath need an internet connection?</h3>
@@ -992,6 +997,10 @@
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Who built TithiPath?</h3>
                             <p class="t-body" style="color:var(--gray-300);">It was built end-to-end &mdash; design, engineering, and release &mdash; by Vineet Vishesh, using Kotlin and Jetpack Compose.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How do I join the TithiPath beta?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Two steps, both above: join the tester group, then open the Play Store opt-in link and tap &ldquo;Become a tester.&rdquo; After that, install TithiPath from the Play Store like any other app.</p>
                         </div>
                     </div>
                 </div>
@@ -1031,7 +1040,7 @@
                     {
                       "@type": "Question",
                       "name": "Is TithiPath available yet?",
-                      "acceptedAnswer": { "@type": "Answer", "text": "Not publicly. It's currently in Google Play Closed Testing with no public release date set. This page will link directly to the Play Store listing once it's generally available." }
+                      "acceptedAnswer": { "@type": "Answer", "text": "Not yet on general release, but you can join Google Play Closed Testing right now and help it reach general availability. This page will link directly to the public Play Store listing once that happens." }
                     },
                     {
                       "@type": "Question",
@@ -1052,6 +1061,11 @@
                       "@type": "Question",
                       "name": "Who built TithiPath?",
                       "acceptedAnswer": { "@type": "Answer", "text": "It was built end-to-end — design, engineering, and release — by Vineet Vishesh, using Kotlin and Jetpack Compose." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How do I join the TithiPath beta?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Two steps: join the tester group, then open the Play Store opt-in link and tap \"Become a tester.\" After that, install TithiPath from the Play Store like any other app." }
                     }
                   ]
                 }

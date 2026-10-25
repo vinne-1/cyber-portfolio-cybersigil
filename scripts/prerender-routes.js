@@ -34,8 +34,8 @@ const ROUTES = {
     description: 'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.'
   },
   '/products': {
-    title: 'Products — Vineet Vishesh',
-    description: 'Products built by Vineet Vishesh — independent apps, starting with TithiPath.'
+    title: 'TithiPath — Panchang & Kundli App | Vineet Vishesh',
+    description: 'TithiPath: Hindu Panchang, Kundli (birth chart), and Rashifal for Android — 37 Indian cities, 9 languages, on-device. Currently in Google Play testing.'
   },
   '/free-tools': {
     title: 'Free Tools — Vineet Vishesh',
