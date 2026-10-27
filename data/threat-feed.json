@@ -1,6 +1,147 @@
 {
   "articles": [
     {
+      "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
+      "source": "CSO Online",
+      "date": "2026-10-27T12:34:55.000Z",
+      "summary": "A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data.\nTracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The issue stems from an out-of-bounds write that can corrupt process memory, potentially leading to remote code execution (RCE), information disclosure, or denial of service (DoS).\nThe Node.js project dis",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software",
+        "DDoS"
+      ],
+      "url": "https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-111497"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+      "source": "The Hacker News",
+      "date": "2026-10-27T12:09:50.000Z",
+      "summary": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account.\n\nMicrosoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android version 6.2606.4246, so anyone using the app should update.\n\nIn the researchers' tests,",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-80097"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+      "source": "The Hacker News",
+      "date": "2026-10-27T11:46:00.000Z",
+      "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26.\n\nSomeone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone. A buyer who trusted a counterfeit could have their crypto stolen, but the incident did not involve",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
+      "source": "The Hacker News",
+      "date": "2026-10-27T11:32:46.000Z",
+      "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations. \n\nSome fake login pages go beyond stealing passwords. They can also capture MFA codes or hijack authenticated sessions, allowing attackers to gain",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
+      "source": "The Hacker News",
+      "date": "2026-10-27T11:32:31.000Z",
+      "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors.\n\nAccording to Russian cybersecurity company Kaspersky, the campaign has been active since at least July 2025. It's assessed to pick up",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Alibaba AI model tried to send data to Beijing server, Cohere says",
+      "source": "CSO Online",
+      "date": "2026-10-27T11:05:24.000Z",
+      "summary": "An Alibaba AI model generated an unexpected command to upload data to a Beijing-region cloud storage service during a cybersecurity evaluation, rival developer Cohere said, raising concerns about the security of AI agents with access to enterprise systems.\nThe model, Qwen3.8-Flash-Next, was being tested using Microsoft’s CTI-REALM cybersecurity benchmark, which tasked it with writing a rule to detect malicious file downloads followed by execution. Instead, it inspected local files and system set",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4240972/alibaba-ai-model-tried-to-send-data-to-beijing-server-cohere-says.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
+      "source": "The Hacker News",
+      "date": "2026-10-27T09:33:06.000Z",
+      "summary": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those computers.\n\n\"The next steps that we took were to disconnect that Amadey controller from all those",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "The days of assuming another company’s breach is someone else’s problem are over",
+      "source": "CSO Online",
+      "date": "2026-10-27T08:25:00.000Z",
+      "summary": "The median blast radius of data breaches has increased year-on-year at the same time cybercriminals have begun using AI to mine stolen datasets for damaging information that enables follow-on fraud and cyberattacks.\nIn 2026, the median breach exposed 542 organizations beyond the initially breached victim, according to a study by exposed data intelligence platform Lab 1. This compares to the median blast radius of a breach affecting 482 organizations last year.\nBreach impact spreads across supply",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4240612/the-days-of-assuming-another-companys-breach-is-someone-elses-problem-are-over.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
+      "source": "The Hacker News",
+      "date": "2026-10-27T08:22:43.000Z",
+      "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security firm Xint has shown.\n\nOpenAI's reasoning models work through a problem before answering, and the service normally returns only the raw reasoning as an encrypted item the user cannot read. The method got past",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
       "source": "The Hacker News",
       "date": "2026-10-27T06:34:47.000Z",
@@ -86,7 +227,7 @@
       "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
       "source": "Dark Reading",
       "date": "2026-10-27T00:26:50.000Z",
-      "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+      "summary": "Measuring AI model security gets complex, fast, thanks to a growing patchwork of benchmarks targeting different variables in the equation. But none replace testing against your own code and workflows.",
       "severity": "Low",
       "tags": [
         "General"
@@ -261,36 +402,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
-      "source": "The Hacker News",
-      "date": "2026-10-26T11:52:41.000Z",
-      "summary": "Two critical flaws in Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to contain it, the project's maintainers say.\n\nAn attacker would first need a vulnerable Wasmtime build to compile a module they control, and one of the flaws affects only ARM64 systems. Fixed versions were released on",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
-      "source": "The Hacker News",
-      "date": "2026-10-26T11:23:56.000Z",
-      "summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all events together into one coordinated view.\n\nSOC teams often first see the shape of an intrusion",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Malicious downloads can trick AI coding agents into compromising themselves",
       "source": "CSO Online",
       "date": "2026-10-26T10:35:08.000Z",
@@ -301,21 +412,6 @@
       ],
       "url": "https://www.csoonline.com/article/4240222/malicious-downloads-can-trick-ai-coding-agents-into-compromising-themselves.html",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
-      "source": "The Hacker News",
-      "date": "2026-10-26T09:54:02.000Z",
-      "summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the kit makers' own container app.\n\nThe kit's Telegram part matches Baohuo, a backdoor that Doctor",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -351,21 +447,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
-      "source": "The Hacker News",
-      "date": "2026-10-26T08:35:51.000Z",
-      "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations.\n\nHuntress, which observed the activity between July 14 and September 22, 2026, said it detected 497 successful Microsoft 365 sign-in events across",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "10 most powerful cybersecurity companies today",
       "source": "CSO Online",
       "date": "2026-10-26T08:25:00.000Z",
@@ -390,36 +471,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4240151/bright-security-introduces-star-fuzzer-agentic-fuzzing-that-writes-its-own-harnesses-and-proves-every-finding.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
-      "source": "The Hacker News",
-      "date": "2026-10-26T07:49:46.000Z",
-      "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an analysis by cloud security company Wiz.\n\nA GitHub safeguard that pauses",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
-      "source": "The Hacker News",
-      "date": "2026-10-26T06:03:48.000Z",
-      "summary": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week.\n\nThe company caught the attempt on a real customer's machine and stopped the agent before any code ran. It could not determine how the file got into the folder.\n\nThe file",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -665,21 +716,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "eMudhra quits global TLS certificate market after compromise of CA signing keys",
-      "source": "CSO Online",
-      "date": "2026-10-23T10:34:39.000Z",
-      "summary": "Indian digital trust company eMudhra has announced that it is exiting the global SSL/TLS certificate business and is offering customers certificates issued by Sectigo as an alternative, following the compromise of private keys behind eight of its intermediate certificate authorities.\nThe company’s board decided “to voluntarily withdraw from the global SSL/TLS certificate business,” eMudhra said in a press note. It added that data sovereignty and compliance requirements had increased the business",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4239634/emudhra-quits-global-tls-certificate-market-after-compromise-of-ca-signing-keys-2.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
       "source": "SANS Internet Storm Center",
       "date": "2026-10-23T10:25:11.000Z",
@@ -689,36 +725,6 @@
         "General"
       ],
       "url": "https://isc.sans.edu/diary/rss/33448",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "The ‘Mythos moment’ has already passed. Now comes the hard part for cybersecurity",
-      "source": "CSO Online",
-      "date": "2026-10-23T09:00:00.000Z",
-      "summary": "When Anthropic introduced Claude Mythos Preview, the cybersecurity debate quickly turned to what AI could do: uncover decades-old vulnerabilities, develop working exploits and accelerate tasks that once required specialist expertise. Anthropic noted that Mythos discovered software flaws no human had caught, and early tests showed it could carry out multi-stage network attacks in minutes, tasks that once took skilled pen testers days.\nSecurity leaders and cyber defenders let out an initial sigh o",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4239166/the-mythos-moment-has-already-passed-now-comes-the-hard-part-for-cybersecurity.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "The AI notetaker risk is now an everywhere problem",
-      "source": "CSO Online",
-      "date": "2026-10-23T08:25:00.000Z",
-      "summary": "The businesspeople adopting AI notetakers are not being reckless. They are responding to a real business need. Our teams are in meetings all day with companies we support, and the idea that we could read a clean summary of every one of them at the end of the day makes us better partners to our customers. At the AI-first startups we spend time with, a new account manager can walk in on day one, inherit the full recorded history of every customer conversation, and ask the AI what that customer act",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4239372/the-ai-notetaker-risk-is-now-an-everywhere-problem.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -900,18 +906,24 @@
       "source": "SANS Internet Storm Center",
       "date": "2026-10-21T21:02:43.000Z",
       "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://isc.sans.edu/diary/rss/33440",
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ]
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -1066,6 +1078,183 @@
   ],
   "clusters": [
     {
+      "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
+      "summary": "A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data.\nTracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The issue stems from an out-of-bounds write that can corrupt process memory, potentially leading to remote code execution (RCE), information disclosure, or denial of service (DoS).\nThe Node.js project dis",
+      "url": "https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html",
+      "date": "2026-10-27T12:34:55.000Z",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software",
+        "DDoS"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-111497"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 55
+    },
+    {
+      "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+      "summary": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account.\n\nMicrosoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android version 6.2606.4246, so anyone using the app should update.\n\nIn the researchers' tests,",
+      "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+      "date": "2026-10-27T12:09:50.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-80097"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+      "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26.\n\nSomeone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone. A buyer who trusted a counterfeit could have their crypto stolen, but the incident did not involve",
+      "url": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+      "date": "2026-10-27T11:46:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
+      "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations. \n\nSome fake login pages go beyond stealing passwords. They can also capture MFA codes or hijack authenticated sessions, allowing attackers to gain",
+      "url": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+      "date": "2026-10-27T11:32:46.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
+      "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors.\n\nAccording to Russian cybersecurity company Kaspersky, the campaign has been active since at least July 2025. It's assessed to pick up",
+      "url": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+      "date": "2026-10-27T11:32:31.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Alibaba AI model tried to send data to Beijing server, Cohere says",
+      "summary": "An Alibaba AI model generated an unexpected command to upload data to a Beijing-region cloud storage service during a cybersecurity evaluation, rival developer Cohere said, raising concerns about the security of AI agents with access to enterprise systems.\nThe model, Qwen3.8-Flash-Next, was being tested using Microsoft’s CTI-REALM cybersecurity benchmark, which tasked it with writing a rule to detect malicious file downloads followed by execution. Instead, it inspected local files and system set",
+      "url": "https://www.csoonline.com/article/4240972/alibaba-ai-model-tried-to-send-data-to-beijing-server-cohere-says.html",
+      "date": "2026-10-27T11:05:24.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
+      "summary": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those computers.\n\n\"The next steps that we took were to disconnect that Amadey controller from all those",
+      "url": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+      "date": "2026-10-27T09:33:06.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "The days of assuming another company’s breach is someone else’s problem are over",
+      "summary": "The median blast radius of data breaches has increased year-on-year at the same time cybercriminals have begun using AI to mine stolen datasets for damaging information that enables follow-on fraud and cyberattacks.\nIn 2026, the median breach exposed 542 organizations beyond the initially breached victim, according to a study by exposed data intelligence platform Lab 1. This compares to the median blast radius of a breach affecting 482 organizations last year.\nBreach impact spreads across supply",
+      "url": "https://www.csoonline.com/article/4240612/the-days-of-assuming-another-companys-breach-is-someone-elses-problem-are-over.html",
+      "date": "2026-10-27T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
+      "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security firm Xint has shown.\n\nOpenAI's reasoning models work through a problem before answering, and the service normally returns only the raw reasoning as an encrypted item the user cannot read. The method got past",
+      "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+      "date": "2026-10-27T08:22:43.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
       "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
       "summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has issued an alert warning of unauthorized remote access to video surveillance systems manufactured by Dahua.\n\n\"Cases of compromising IP cameras and DVRs with access to the video stream, changing the device configuration and creating third-party accounts have been recorded,\" the State Special Communications Service of Ukraine (SSSCIP)",
       "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
@@ -1082,7 +1271,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 25
     },
     {
       "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
@@ -1106,7 +1295,7 @@
         "CVE-2026-109618"
       ],
       "articleCount": 1,
-      "score": 76
+      "score": 73
     },
     {
       "title": "OpenAI’s August fix for theft of reasoning traces was quickly bypassed",
@@ -1125,7 +1314,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
@@ -1144,7 +1333,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 27
+      "score": 23
     },
     {
       "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
@@ -1163,11 +1352,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
-      "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+      "summary": "Measuring AI model security gets complex, fast, thanks to a growing patchwork of benchmarks targeting different variables in the equation. But none replace testing against your own code and workflows.",
       "url": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
       "date": "2026-10-27T00:26:50.000Z",
       "severity": "Low",
@@ -1182,7 +1371,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
@@ -1201,7 +1390,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
@@ -1220,7 +1409,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
@@ -1239,7 +1428,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
@@ -1258,7 +1447,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 32
     },
     {
       "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
@@ -1279,7 +1468,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
@@ -1299,7 +1488,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 46
+      "score": 44
     },
     {
       "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
@@ -1319,7 +1508,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 47
+      "score": 45
     },
     {
       "title": "10 Software Security Practices Built for the Next 250 Years",
@@ -1338,7 +1527,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1363,7 +1552,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 64
+      "score": 62
     },
     {
       "title": "OpenAI, Anthropic disclosures spotlight growing AI containment challenge",
@@ -1382,45 +1571,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
-      "summary": "Two critical flaws in Wasmtime, a WebAssembly runtime that can be built into other software, could allow a malicious WebAssembly module to escape the sandbox intended to contain it, the project's maintainers say.\n\nAn attacker would first need a vulnerable Wasmtime build to compile a module they control, and one of the flaws affects only ARM64 systems. Fixed versions were released on",
-      "url": "https://thehackernews.com/2026/10/two-critical-wasmtime-flaws-could-let.html",
-      "date": "2026-10-26T11:52:41.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
-      "summary": "Every SOC struggles with a pile of alerts. Very few of those alerts explain how an attack started or how it progressed. Network data, like that from a network detection and response (NDR) platform, connects individual alerts into one timeline, and it feeds the defensive systems that can tie all events together into one coordinated view.\n\nSOC teams often first see the shape of an intrusion",
-      "url": "https://thehackernews.com/2026/10/between-alerts-what-attackers-do-in.html",
-      "date": "2026-10-26T11:23:56.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Malicious downloads can trick AI coding agents into compromising themselves",
@@ -1439,26 +1590,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
-      "summary": "A rentable Android spyware kit called uCreator takes over Telegram and WeChat accounts by hiding its code inside working copies of the two apps, researcher Ovi found. It only reaches people who install one of these tampered copies, spread outside the official app stores, or who run WeChat inside the kit makers' own container app.\n\nThe kit's Telegram part matches Baohuo, a backdoor that Doctor",
-      "url": "https://thehackernews.com/2026/10/ucreator-android-spyware-can-steal.html",
-      "date": "2026-10-26T09:54:02.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 30
+      "score": 18
     },
     {
       "title": "Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)",
@@ -1477,7 +1609,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "What EvilTokens teaches us about defending against AI-assisted attacks",
@@ -1496,26 +1628,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
-    },
-    {
-      "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
-      "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations.\n\nHuntress, which observed the activity between July 14 and September 22, 2026, said it detected 497 successful Microsoft 365 sign-in events across",
-      "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
-      "date": "2026-10-26T08:35:51.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 29
+      "score": 27
     },
     {
       "title": "10 most powerful cybersecurity companies today",
@@ -1534,7 +1647,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Bright Security Introduces STAR Fuzzer, Agentic Fuzzing That Writes Its Own Harnesses and Proves Every Finding",
@@ -1553,45 +1666,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
-      "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an analysis by cloud security company Wiz.\n\nA GitHub safeguard that pauses",
-      "url": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
-      "date": "2026-10-26T07:49:46.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
-      "summary": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week.\n\nThe company caught the attempt on a real customer's machine and stopped the agent before any code ran. It could not determine how the file got into the folder.\n\nThe file",
-      "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
-      "date": "2026-10-26T06:03:48.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
@@ -1610,7 +1685,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Trust Is Not What It Seems — and Fraudsters Are Counting on It",
@@ -1827,7 +1902,7 @@
         "CVE-2026-114625"
       ],
       "articleCount": 2,
-      "score": 55
+      "score": 54
     },
     {
       "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
@@ -1849,25 +1924,6 @@
       "score": 21
     },
     {
-      "title": "eMudhra quits global TLS certificate market after compromise of CA signing keys",
-      "summary": "Indian digital trust company eMudhra has announced that it is exiting the global SSL/TLS certificate business and is offering customers certificates issued by Sectigo as an alternative, following the compromise of private keys behind eight of its intermediate certificate authorities.\nThe company’s board decided “to voluntarily withdraw from the global SSL/TLS certificate business,” eMudhra said in a press note. It added that data sovereignty and compliance requirements had increased the business",
-      "url": "https://www.csoonline.com/article/4239634/emudhra-quits-global-tls-certificate-market-after-compromise-of-ca-signing-keys-2.html",
-      "date": "2026-10-23T10:34:39.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
       "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
       "summary": "",
       "url": "https://isc.sans.edu/diary/rss/33448",
@@ -1884,44 +1940,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 11
-    },
-    {
-      "title": "The ‘Mythos moment’ has already passed. Now comes the hard part for cybersecurity",
-      "summary": "When Anthropic introduced Claude Mythos Preview, the cybersecurity debate quickly turned to what AI could do: uncover decades-old vulnerabilities, develop working exploits and accelerate tasks that once required specialist expertise. Anthropic noted that Mythos discovered software flaws no human had caught, and early tests showed it could carry out multi-stage network attacks in minutes, tasks that once took skilled pen testers days.\nSecurity leaders and cyber defenders let out an initial sigh o",
-      "url": "https://www.csoonline.com/article/4239166/the-mythos-moment-has-already-passed-now-comes-the-hard-part-for-cybersecurity.html",
-      "date": "2026-10-23T09:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
-      "title": "The AI notetaker risk is now an everywhere problem",
-      "summary": "The businesspeople adopting AI notetakers are not being reckless. They are responding to a real business need. Our teams are in meetings all day with companies we support, and the idea that we could read a clean summary of every one of them at the end of the day makes us better partners to our customers. At the AI-first startups we spend time with, a new account manager can walk in on day one, inherit the full recorded history of every customer conversation, and ask the AI what that customer act",
-      "url": "https://www.csoonline.com/article/4239372/the-ai-notetaker-risk-is-now-an-everywhere-problem.html",
-      "date": "2026-10-23T08:25:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
       "score": 11
     },
     {
@@ -2125,22 +2143,25 @@
       "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
       "url": "https://isc.sans.edu/diary/rss/33440",
       "date": "2026-10-21T21:02:43.000Z",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "SANS Internet Storm Center"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
       "articleCount": 1,
-      "score": 10
+      "score": 54
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -2356,7 +2377,7 @@
         "CVE-2026-109618"
       ],
       "articleCount": 1,
-      "score": 76
+      "score": 73
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -2381,27 +2402,30 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 64
+      "score": 62
     },
     {
-      "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
-      "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with.\n\nAnd that's not even the full story. A leaked key led to a software supply-chain",
-      "url": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
-      "date": "2026-10-26T14:06:13.000Z",
+      "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
+      "summary": "A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data.\nTracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The issue stems from an out-of-bounds write that can corrupt process memory, potentially leading to remote code execution (RCE), information disclosure, or denial of service (DoS).\nThe Node.js project dis",
+      "url": "https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html",
+      "date": "2026-10-27T12:34:55.000Z",
       "severity": "High",
       "tags": [
         "Remote Code Execution",
-        "Supply Chain"
+        "Widely-Used Software",
+        "DDoS"
       ],
       "sources": [
-        "The Hacker News"
+        "CSO Online"
       ],
       "sourceCount": 1,
       "impactScore": 4,
-      "cveMatches": [],
+      "cveMatches": [
+        "CVE-2026-111497"
+      ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 47
+      "score": 55
     }
   ],
   "sourcesUsed": [
@@ -2414,5 +2438,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-27T08:00:41.892Z"
+  "lastUpdated": "2026-10-27T14:39:26.691Z"
 }
