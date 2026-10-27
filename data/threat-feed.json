@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
+      "source": "Dark Reading",
+      "date": "2026-10-27T00:26:50.000Z",
+      "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-26T23:34:37.000Z",
+      "summary": "Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33458",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
       "source": "Dark Reading",
       "date": "2026-10-26T21:44:33.000Z",
@@ -125,22 +155,28 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerability to Catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-26T12:00:00.000Z",
       "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching:  \nCVE-2026-109618 – PHP Memory Corruption Vulnerability \nCVE-2026-109619 – PHP Stale Internal Request-State Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing ",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerability-catalog",
-      "impactScore": 0,
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ]
     },
     {
       "title": "OpenAI, Anthropic disclosures spotlight growing AI containment challenge",
@@ -682,22 +718,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
-      "source": "Dark Reading",
-      "date": "2026-10-22T20:42:17.000Z",
-      "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
-      "severity": "High",
-      "tags": [
-        "Supply Chain",
-        "Widely-Used Software"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Siemens SIMATIC S7 Webserver API",
       "source": "CISA Advisories",
       "date": "2026-10-22T12:00:00.000Z",
@@ -858,18 +878,24 @@
       "source": "SANS Internet Storm Center",
       "date": "2026-10-21T21:02:43.000Z",
       "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://isc.sans.edu/diary/rss/33440",
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ]
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -896,21 +922,6 @@
         "General"
       ],
       "url": "https://isc.sans.edu/diary/rss/33438",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-20T02:00:03.000Z",
-      "summary": "",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33436",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -1054,6 +1065,44 @@
   ],
   "clusters": [
     {
+      "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
+      "summary": "Measuring AI model security gets complex fast — a growing patchwork of benchmarks targets different variables in the equation, but none replace testing against your own code and workflows.",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/benchmarking-security-of-ai-models-poses-challenges",
+      "date": "2026-10-27T00:26:50.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
+      "summary": "Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.",
+      "url": "https://isc.sans.edu/diary/rss/33458",
+      "date": "2026-10-26T23:34:37.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
       "summary": "Nvidia security executive Mark Weatherford says CISOs must help business leaders weigh AI's pros and cons, and ensure those deploying it own the risks.",
       "url": "https://www.darkreading.com/cybersecurity-careers/risks-rewards-ai-redefining-ciso-role",
@@ -1070,7 +1119,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 27
     },
     {
       "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
@@ -1089,7 +1138,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
@@ -1108,7 +1157,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
@@ -1127,7 +1176,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 38
     },
     {
       "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
@@ -1148,7 +1197,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 35
     },
     {
       "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
@@ -1168,7 +1217,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 50
+      "score": 48
     },
     {
       "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
@@ -1188,7 +1237,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     },
     {
       "title": "10 Software Security Practices Built for the Next 250 Years",
@@ -1207,29 +1256,32 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerability to Catalog",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching:  \nCVE-2026-109618 – PHP Memory Corruption Vulnerability \nCVE-2026-109619 – PHP Stale Internal Request-State Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing ",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerability-catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
       "date": "2026-10-26T12:00:00.000Z",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "CISA Advisories"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
       "articleCount": 1,
-      "score": 24
+      "score": 66
     },
     {
       "title": "OpenAI, Anthropic disclosures spotlight growing AI containment challenge",
@@ -1248,7 +1300,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Two Critical Wasmtime Flaws Could Let Malicious WebAssembly Modules Escape Sandboxes",
@@ -1267,7 +1319,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Between alerts: What Attackers Do in the Spaces Ordinary Detection Misses",
@@ -1286,7 +1338,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Malicious downloads can trick AI coding agents into compromising themselves",
@@ -1305,7 +1357,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "uCreator Android Spyware Can Steal Telegram 2FA Passwords and Clone WeChat Accounts",
@@ -1324,7 +1376,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 32
     },
     {
       "title": "Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)",
@@ -1343,7 +1395,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "What EvilTokens teaches us about defending against AI-assisted attacks",
@@ -1362,7 +1414,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
@@ -1381,7 +1433,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 31
     },
     {
       "title": "10 most powerful cybersecurity companies today",
@@ -1400,7 +1452,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "Bright Security Introduces STAR Fuzzer, Agentic Fuzzing That Writes Its Own Harnesses and Proves Every Finding",
@@ -1419,7 +1471,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
@@ -1438,7 +1490,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
@@ -1457,7 +1509,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)",
@@ -1476,7 +1528,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
@@ -1495,7 +1547,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Unpatched Tailscale SSH Flaws Could Let a Hacked Device Reach Root on Other Servers",
@@ -1533,7 +1585,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Trust Is Not What It Seems — and Fraudsters Are Counting on It",
@@ -1611,7 +1663,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "AI Tools Are Generating Massive Attacks for Little Cost",
@@ -1886,26 +1938,6 @@
       "score": 11
     },
     {
-      "title": "Microsoft Links Storm-0940 to ConnectWise Supply Chain Attack",
-      "summary": "The China-linked actor used an AI-enabled penetration-testing tool to automate and accelerate its attack on more than 2,200 tenants.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/microsoft-storm-0940-connectwise-supply-chain-attack",
-      "date": "2026-10-22T20:42:17.000Z",
-      "severity": "High",
-      "tags": [
-        "Supply Chain",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 35
-    },
-    {
       "title": "Siemens Industrial Edge App Publisher",
       "summary": "View CSAF\nSummary\nThe Industrial Edge App Publisher contains a vulnerability chain involving improper certificate validation and the rendering of unescaped data from backend responses. These issues can be combined to allow an attacker on the network to impersonate the management server and execute arbitrary code (RCE) on the local machine through Node.js integration. Siemens has released an update for the Industrial Edge App Publisher and recommends to update to the latest version.\nThe following",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-02",
@@ -2087,22 +2119,25 @@
       "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
       "url": "https://isc.sans.edu/diary/rss/33440",
       "date": "2026-10-21T21:02:43.000Z",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "SANS Internet Storm Center"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-109618",
         "CVE-2026-109619"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
       "articleCount": 1,
-      "score": 10
+      "score": 54
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -2139,7 +2174,7 @@
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "articleCount": 2,
+      "articleCount": 1,
       "score": 10
     },
     {
@@ -2316,6 +2351,31 @@
   ],
   "top3": [
     {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching:  \nCVE-2026-109618 – PHP Memory Corruption Vulnerability \nCVE-2026-109619 – PHP Stale Internal Request-State Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing ",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-26T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "articleCount": 1,
+      "score": 66
+    },
+    {
       "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
       "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with.\n\nAnd that's not even the full story. A leaked key led to a software supply-chain",
       "url": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
@@ -2333,7 +2393,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     },
     {
       "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
@@ -2353,26 +2413,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 50
-    },
-    {
-      "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
-      "summary": "An ongoing supply chain attack is harvesting credentials and sensitive data from thousands of developer repositories.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
-      "date": "2026-10-26T18:01:40.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 39
+      "score": 48
     }
   ],
   "sourcesUsed": [
@@ -2385,5 +2426,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-26T23:03:50.778Z"
+  "lastUpdated": "2026-10-27T02:09:31.939Z"
 }
