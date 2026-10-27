@@ -1,6 +1,85 @@
 {
   "articles": [
     {
+      "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+      "source": "The Hacker News",
+      "date": "2026-10-27T18:26:46.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator.\n\nTrendAI, which analyzed three exposed server environments used by threat actors to conduct the malicious cyber operations, described them as distinct from previously published",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
+      "source": "Dark Reading",
+      "date": "2026-10-27T17:43:07.000Z",
+      "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants",
+      "source": "Dark Reading",
+      "date": "2026-10-27T16:47:20.000Z",
+      "summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+      "source": "The Hacker News",
+      "date": "2026-10-27T13:59:48.000Z",
+      "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups.\n\nThe flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server checks a client certificate and vice versa, and a revocation list is configured to block revoked",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+      "source": "The Hacker News",
+      "date": "2026-10-27T13:59:09.000Z",
+      "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices.\n\nThe vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when processing a maliciously crafted file.\n\nPatches for the flaw were released last month by Apple in",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-86950"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-86950"
+      ],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
       "source": "CSO Online",
       "date": "2026-10-27T12:34:55.000Z",
@@ -32,6 +111,49 @@
       "impactScore": 1,
       "cveMatches": [
         "CVE-2026-80097"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "source": "CISA Advisories",
+      "date": "2026-10-27T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system.\nThe following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, ",
+      "severity": "Critical",
+      "tags": [
+        "DDoS",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2023-4863",
+        "CVE-2026-16436",
+        "CVE-2026-16437",
+        "CVE-2026-16438"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-4863"
+      ],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "EPICS Base",
+      "source": "CISA Advisories",
+      "date": "2026-10-27T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code.\nThe following versions of EPICS Base are affected:\nEPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nThe EPICS Community\nEPICS Base release\n\n\n\n\n\n\n3 Vulnerabilities\n\n\n\n\nInteger Overflow or Wraparound, Im",
+      "severity": "Medium",
+      "tags": [
+        "DDoS"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-114595",
+        "CVE-2026-114596",
+        "CVE-2026-114597",
+        "CVE-2026-114598"
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -294,55 +416,6 @@
       ],
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/gheist-stolen-github-tokens-cloud-secrets",
       "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-      "source": "The Hacker News",
-      "date": "2026-10-26T17:45:57.000Z",
-      "summary": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code.\n\nPHP says the flaw can be reached through the cURL extension when the extension decompresses HTTP responses automatically. cURL leaves that off by default, but",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
-      "source": "The Hacker News",
-      "date": "2026-10-26T15:52:40.000Z",
-      "summary": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware.\n\n\"A consistent pattern of attacker behavior has emerged across these incidents: the use of the same throwaway tenants, the same 'IT",
-      "severity": "High",
-      "tags": [
-        "Ransomware",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
-      "source": "The Hacker News",
-      "date": "2026-10-26T14:06:13.000Z",
-      "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with.\n\nAnd that's not even the full story. A leaked key led to a software supply-chain",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Supply Chain"
-      ],
-      "url": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
-      "impactScore": 4,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -701,21 +774,6 @@
       ]
     },
     {
-      "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
-      "source": "Dark Reading",
-      "date": "2026-10-23T11:38:28.000Z",
-      "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may compound — not contain — the risk.",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
       "source": "SANS Internet Storm Center",
       "date": "2026-10-23T10:25:11.000Z",
@@ -726,21 +784,6 @@
       ],
       "url": "https://isc.sans.edu/diary/rss/33448",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "State Bank of India Suffers a Customer PII Data Leak",
-      "source": "Dark Reading",
-      "date": "2026-10-23T03:30:00.000Z",
-      "summary": "Relatively small data breaches in India can turn quite serious, thanks to a sophisticated underground market for trading PII.",
-      "severity": "Medium",
-      "tags": [
-        "Data Breach"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -852,36 +895,6 @@
       ],
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Siemens Industrial Edge Device Kit",
-      "source": "CISA Advisories",
-      "date": "2026-10-22T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nUsers of Industrial Edge Devices are advised to consult the respective Security Advisories for their devices (for Siemens Industrial Edge devices see Additional Information). Industrial Edge Device Kit contains multiple path traversal vulnerabilities that could facilitate an authenticated remote attacker to access sensitive internal information. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends sp",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Siemens Capital Embedded AR Classic",
-      "source": "CISA Advisories",
-      "date": "2026-10-22T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nThe products listed below contain an out-of-bounds read vulnerability that could allow an attacker to cause abnormal product behavior, instability, or denial of service. Siemens has released a new version for Capital Embedded AR Classic R20-11 and recommends updating to the latest version. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available.\nThe following versions of Siemens Capital Embedded AR",
-      "severity": "Medium",
-      "tags": [
-        "DDoS"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1078,6 +1091,105 @@
   ],
   "clusters": [
     {
+      "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
+      "summary": "Cybersecurity researchers have disclosed details of three cyber attacks targeting organizations in Japan in which artificial intelligence (AI) was a key element, either in the driving seat or to assist a human operator.\n\nTrendAI, which analyzed three exposed server environments used by threat actors to conduct the malicious cyber operations, described them as distinct from previously published",
+      "url": "https://thehackernews.com/2026/10/cyberstrikeai-uses-44-ai-agents-to.html",
+      "date": "2026-10-27T18:26:46.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
+      "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
+      "date": "2026-10-27T17:43:07.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants",
+      "summary": "The malware's focus on AI tools expands the traditional infostealer playbook to expose a forest of AI sessions, sensitive business data, and developer infrastructure from a single compromised endpoint.",
+      "url": "https://www.darkreading.com/endpoint-security/aokigahara-stealer-developer-keyrings-ai-assistants",
+      "date": "2026-10-27T16:47:20.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
+      "summary": "The GoAhead embedded web server loaded a certificate revocation list into its default TLS backend but never turned revocation checking on, so a revoked client certificate could still pass login on affected setups.\n\nThe flaw is in builds that use the OpenSSL backend with mutual-TLS, where the server checks a client certificate and vice versa, and a revocation list is configured to block revoked",
+      "url": "https://thehackernews.com/2026/10/goahead-tls-flaws-allow-revoked-client.html",
+      "date": "2026-10-27T13:59:48.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 37
+    },
+    {
+      "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+      "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices.\n\nThe vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when processing a maliciously crafted file.\n\nPatches for the flaw were released last month by Apple in",
+      "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+      "date": "2026-10-27T13:59:09.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-86950"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-86950"
+      ],
+      "articleCount": 1,
+      "score": 70
+    },
+    {
       "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
       "summary": "A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data.\nTracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The issue stems from an out-of-bounds write that can corrupt process memory, potentially leading to remote code execution (RCE), information disclosure, or denial of service (DoS).\nThe Node.js project dis",
       "url": "https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html",
@@ -1098,7 +1210,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 55
+      "score": 52
     },
     {
       "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
@@ -1119,7 +1231,58 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 36
+    },
+    {
+      "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system.\nThe following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+      "date": "2026-10-27T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "DDoS",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2023-4863",
+        "CVE-2026-16436",
+        "CVE-2026-16437",
+        "CVE-2026-16438"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-4863"
+      ],
+      "articleCount": 1,
+      "score": 71
+    },
+    {
+      "title": "EPICS Base",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code.\nThe following versions of EPICS Base are affected:\nEPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nThe EPICS Community\nEPICS Base release\n\n\n\n\n\n\n3 Vulnerabilities\n\n\n\n\nInteger Overflow or Wraparound, Im",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
+      "date": "2026-10-27T12:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "DDoS"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-114595",
+        "CVE-2026-114596",
+        "CVE-2026-114597",
+        "CVE-2026-114598"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 36
     },
     {
       "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
@@ -1138,7 +1301,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 25
     },
     {
       "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
@@ -1157,7 +1320,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 25
     },
     {
       "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
@@ -1176,7 +1339,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 25
     },
     {
       "title": "Alibaba AI model tried to send data to Beijing server, Cohere says",
@@ -1195,7 +1358,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 35
     },
     {
       "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
@@ -1214,7 +1377,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "The days of assuming another company’s breach is someone else’s problem are over",
@@ -1233,7 +1396,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
@@ -1252,7 +1415,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
@@ -1271,7 +1434,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
@@ -1295,7 +1458,7 @@
         "CVE-2026-109618"
       ],
       "articleCount": 1,
-      "score": 73
+      "score": 70
     },
     {
       "title": "OpenAI’s August fix for theft of reasoning traces was quickly bypassed",
@@ -1314,7 +1477,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
@@ -1333,7 +1496,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
@@ -1352,7 +1515,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
@@ -1371,7 +1534,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
@@ -1390,7 +1553,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
@@ -1409,7 +1572,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
@@ -1428,7 +1591,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "'Gheist' Weaponizes GitHub Tokens to Steal Cloud Secrets",
@@ -1447,68 +1610,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
-    },
-    {
-      "title": "PHP Issues Second Windows Security Update in Five Days to Fix Brotli Code Execution Flaw",
-      "summary": "PHP has rebuilt its official Windows packages for PHP 8.2 through 8.5 to fix CVE-2026-111497, a flaw in the Brotli compression library that the packages include. The flaw can let an attacker corrupt memory and potentially run code.\n\nPHP says the flaw can be reached through the cURL extension when the extension decompresses HTTP responses automatically. cURL leaves that off by default, but",
-      "url": "https://thehackernews.com/2026/10/php-issues-second-windows-security.html",
-      "date": "2026-10-26T17:45:57.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 30
-    },
-    {
-      "title": "Attackers Use Microsoft Teams IT Support Scams to Deploy Malware and Ransomware",
-      "summary": "Cybersecurity researchers are calling attention to what they say is a \"recurring social engineering pattern\" across hundreds of cases in which threat actors use Microsoft Teams' external chat creation feature to conduct impersonation scams or to deliver malware.\n\n\"A consistent pattern of attacker behavior has emerged across these incidents: the use of the same throwaway tenants, the same 'IT",
-      "url": "https://thehackernews.com/2026/10/attackers-use-microsoft-teams-it.html",
-      "date": "2026-10-26T15:52:40.000Z",
-      "severity": "High",
-      "tags": [
-        "Ransomware",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 44
-    },
-    {
-      "title": "⚡ Weekly Recap: This2Shell, That2Shell, Everything's an RCE? Rogue AI, Supply Chain Chaos and More",
-      "summary": "This2Shell, That2Shell, Everything2Shell. That's pretty much how the last week went. Critical bugs that let attackers run code remotely are showing up everywhere. Hackers are scanning for targets, some flaws are already being used in attacks, and security teams have more urgent patches than they can keep up with.\n\nAnd that's not even the full story. A leaked key led to a software supply-chain",
-      "url": "https://thehackernews.com/2026/10/weekly-recap-this2shell-that2shell.html",
-      "date": "2026-10-26T14:06:13.000Z",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Supply Chain"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 45
+      "score": 31
     },
     {
       "title": "10 Software Security Practices Built for the Next 250 Years",
@@ -1527,7 +1629,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1552,7 +1654,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 62
+      "score": 61
     },
     {
       "title": "OpenAI, Anthropic disclosures spotlight growing AI containment challenge",
@@ -1571,7 +1673,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Malicious downloads can trick AI coding agents into compromising themselves",
@@ -1590,7 +1692,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)",
@@ -1609,7 +1711,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "What EvilTokens teaches us about defending against AI-assisted attacks",
@@ -1628,7 +1730,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "10 most powerful cybersecurity companies today",
@@ -1647,7 +1749,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Bright Security Introduces STAR Fuzzer, Agentic Fuzzing That Writes Its Own Harnesses and Proves Every Finding",
@@ -1666,7 +1768,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
@@ -1685,7 +1787,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Trust Is Not What It Seems — and Fraudsters Are Counting on It",
@@ -1839,7 +1941,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "PHP Vulnerability Wrap-Up, (Fri, Oct 23rd)",
@@ -1858,7 +1960,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Cyber Insurance's New Reality: Underwriting Isn't Enough",
@@ -1877,7 +1979,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1905,25 +2007,6 @@
       "score": 54
     },
     {
-      "title": "AI Agents as Insider Threats: Inside Microsoft's Bet on a Unified Security Stack",
-      "summary": "Microsoft's Project Perception adds Guardian Agents to monitor and contain anomalous AI agents, but experts warn that policing unpredictable agents with other agents may compound — not contain — the risk.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-agents-insider-threats-inside-microsoft-unified-security-stack",
-      "date": "2026-10-23T11:38:28.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
-    },
-    {
       "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
       "summary": "",
       "url": "https://isc.sans.edu/diary/rss/33448",
@@ -1940,26 +2023,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 11
-    },
-    {
-      "title": "State Bank of India Suffers a Customer PII Data Leak",
-      "summary": "Relatively small data breaches in India can turn quite serious, thanks to a sophisticated underground market for trading PII.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/state-bank-india-customer-pii-data-leak",
-      "date": "2026-10-23T03:30:00.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Data Breach"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
+      "score": 10
     },
     {
       "title": "Siemens Industrial Edge App Publisher",
@@ -2003,25 +2067,6 @@
       "title": "Siemens RUGGEDCOM CROSSBOW",
       "summary": "View CSAF\nSummary\nRUGGEDCOM CROSSBOW contains multiple vulnerabilities that could allow an attacker to execute arbitrary SQL commands on the underlying database, retrieve sensitive administrative credentials, escalate privileges, and perform unauthorized operations such as modifying system configurations or causing a denial of service. Siemens has released a new version for RUGGEDCOM CROSSBOW and recommends to update to the latest version.\nThe following versions of Siemens RUGGEDCOM CROSSBOW are",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-12",
-      "date": "2026-10-22T12:00:00.000Z",
-      "severity": "Medium",
-      "tags": [
-        "DDoS"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Siemens Capital Embedded AR Classic",
-      "summary": "View CSAF\nSummary\nThe products listed below contain an out-of-bounds read vulnerability that could allow an attacker to cause abnormal product behavior, instability, or denial of service. Siemens has released a new version for Capital Embedded AR Classic R20-11 and recommends updating to the latest version. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available.\nThe following versions of Siemens Capital Embedded AR",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-04",
       "date": "2026-10-22T12:00:00.000Z",
       "severity": "Medium",
       "tags": [
@@ -2104,25 +2149,6 @@
       "title": "Siemens WinCC",
       "summary": "View CSAF\nSummary\nMultiple SIMATIC WinCC versions are affected by a database privilege escalation vulnerability that could allow an authenticated user with access to the database to execute commands on the underlying host system. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fixes and recommends mitigations for products where fixes are not or not yet available.\nThe following versions of Siemens WinCC ",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-13",
-      "date": "2026-10-22T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Siemens Industrial Edge Device Kit",
-      "summary": "View CSAF\nSummary\nUsers of Industrial Edge Devices are advised to consult the respective Security Advisories for their devices (for Siemens Industrial Edge devices see Additional Information). Industrial Edge Device Kit contains multiple path traversal vulnerabilities that could facilitate an authenticated remote attacker to access sensitive internal information. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends sp",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
       "date": "2026-10-22T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -2356,6 +2382,56 @@
   ],
   "top3": [
     {
+      "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system.\nThe following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, ",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+      "date": "2026-10-27T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "DDoS",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2023-4863",
+        "CVE-2026-16436",
+        "CVE-2026-16437",
+        "CVE-2026-16438"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-4863"
+      ],
+      "articleCount": 1,
+      "score": 71
+    },
+    {
+      "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
+      "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices.\n\nThe vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when processing a maliciously crafted file.\n\nPatches for the flaw were released last month by Apple in",
+      "url": "https://thehackernews.com/2026/10/apple-backports-fix-for-exploited.html",
+      "date": "2026-10-27T13:59:09.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-86950"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-86950"
+      ],
+      "articleCount": 1,
+      "score": 70
+    },
+    {
       "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog.\n\nThe PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate unauthenticated remote code execution on affected deployments -\n\n\n  CVE-2026-109618 - An out-of-memory",
       "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
@@ -2377,55 +2453,7 @@
         "CVE-2026-109618"
       ],
       "articleCount": 1,
-      "score": 73
-    },
-    {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching:  \nCVE-2026-109618 – PHP Memory Corruption Vulnerability \nCVE-2026-109619 – PHP Stale Internal Request-State Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing ",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "date": "2026-10-26T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "articleCount": 1,
-      "score": 62
-    },
-    {
-      "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
-      "summary": "A vulnerability in Google’s Brotli compression library could allow attackers to execute arbitrary code in applications that use an affected Brotli decoder to process compressed data.\nTracked as CVE-2026-111497, the high-severity flaw was first flagged in the Brotli decoder bundled with Node.js. The issue stems from an out-of-bounds write that can corrupt process memory, potentially leading to remote code execution (RCE), information disclosure, or denial of service (DoS).\nThe Node.js project dis",
-      "url": "https://www.csoonline.com/article/4241027/node2shell-puts-microsoft-and-node-js-on-brotli-patch-duty.html",
-      "date": "2026-10-27T12:34:55.000Z",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software",
-        "DDoS"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 55
+      "score": 70
     }
   ],
   "sourcesUsed": [
@@ -2438,5 +2466,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-27T14:39:26.691Z"
+  "lastUpdated": "2026-10-27T19:40:16.174Z"
 }
