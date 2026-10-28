@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-28T02:30:11.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33464",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks",
+      "source": "CSO Online",
+      "date": "2026-10-28T02:10:33.000Z",
+      "summary": "Skynet is no longer a fictional adversary.\nAttackers have built an offensive agent that exploits unprotected AI models on the web with a ‘Skynet’ directive that allows them to run unattended for up to 100,000 steps.\nIn this mode, a reference to the humanity-destroying artificial neural network-based superintelligence system in the Terminator film franchise, the agent can kick off tools, scan for and infect targets, deploy data miners, steal credentials, reinfect hosts, and mine cryptocurrency, a",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4241421/attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattacks.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
       "source": "Dark Reading",
       "date": "2026-10-27T21:15:03.000Z",
@@ -732,21 +762,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Meta hit with $25 billion fine for illegally sharing user data",
-      "source": "CSO Online",
-      "date": "2026-10-23T15:23:54.000Z",
-      "summary": "A judge in New Mexico has fined Meta $25 billion for its flouting of data privacy laws between 2010 and 2021, including its controversial passing of data to Cambridge Analytica.\nThe action serves as a stark reminder to enterprises not to play fast and loose with data protection legislation, as the consequences could be highly damaging.\nMeta faced the court action after it was revealed that data company Cambridge Analytica had improperly obtained personal data that Facebook was holding.\nIt could ",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4239754/meta-hit-with-25-billion-fine-for-illegally-sharing-user-data-2.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "PHP Vulnerability Wrap-Up, (Fri, Oct 23rd)",
       "source": "SANS Internet Storm Center",
       "date": "2026-10-23T13:43:20.000Z",
@@ -930,30 +945,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-21T21:02:43.000Z",
-      "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33440",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ]
-    },
-    {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
       "source": "Krebs on Security",
       "date": "2026-10-21T15:26:07.000Z",
@@ -1106,6 +1097,44 @@
   ],
   "clusters": [
     {
+      "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33464",
+      "date": "2026-10-28T02:30:11.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 3,
+      "score": 30
+    },
+    {
+      "title": "Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks",
+      "summary": "Skynet is no longer a fictional adversary.\nAttackers have built an offensive agent that exploits unprotected AI models on the web with a ‘Skynet’ directive that allows them to run unattended for up to 100,000 steps.\nIn this mode, a reference to the humanity-destroying artificial neural network-based superintelligence system in the Terminator film franchise, the agent can kick off tools, scan for and infect targets, deploy data miners, steal credentials, reinfect hosts, and mine cryptocurrency, a",
+      "url": "https://www.csoonline.com/article/4241421/attackers-built-a-skynet-ai-agent-that-hijacks-exposed-models-to-run-cyberattacks.html",
+      "date": "2026-10-28T02:10:33.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 30
+    },
+    {
       "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
       "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
       "url": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
@@ -1122,7 +1151,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
@@ -1141,7 +1170,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 39
     },
     {
       "title": "SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack",
@@ -1160,7 +1189,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 38
     },
     {
       "title": "CyberStrikeAI Uses 44 AI Agents to Automate Hacking Operations Against Japan Targets",
@@ -1179,7 +1208,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
@@ -1198,7 +1227,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants",
@@ -1217,7 +1246,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "GoAhead TLS Flaws Allow Revoked Client Certificates and Enable Session Decryption",
@@ -1236,7 +1265,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Apple Backports Fix for Exploited CoreGraphics Flaw to Older iPhones and iPads",
@@ -1259,7 +1288,7 @@
         "CVE-2026-86950"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 67
     },
     {
       "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
@@ -1285,7 +1314,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 1,
-      "score": 77
+      "score": 75
     },
     {
       "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
@@ -1306,7 +1335,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 32
     },
     {
       "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
@@ -1333,7 +1362,7 @@
         "CVE-2023-4863"
       ],
       "articleCount": 1,
-      "score": 70
+      "score": 68
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1363,7 +1392,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 2,
-      "score": 70
+      "score": 68
     },
     {
       "title": "EPICS Base",
@@ -1387,7 +1416,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 32
     },
     {
       "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
@@ -1406,7 +1435,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
@@ -1425,7 +1454,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
@@ -1444,7 +1473,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Alibaba AI model tried to send data to Beijing server, Cohere says",
@@ -1463,7 +1492,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 32
     },
     {
       "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
@@ -1482,7 +1511,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "The days of assuming another company’s breach is someone else’s problem are over",
@@ -1501,7 +1530,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
@@ -1520,7 +1549,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
@@ -1539,7 +1568,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
@@ -1563,7 +1592,7 @@
         "CVE-2026-109618"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 68
     },
     {
       "title": "OpenAI’s August fix for theft of reasoning traces was quickly bypassed",
@@ -1582,26 +1611,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33462",
-      "date": "2026-10-27T02:55:13.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 20
+      "score": 19
     },
     {
       "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
@@ -1620,7 +1630,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
@@ -1639,7 +1649,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
@@ -1658,7 +1668,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "In-the-Wild Attack Abuses AI Agents' Trust in Markdown",
@@ -1677,7 +1687,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
@@ -1715,7 +1725,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 29
     },
     {
       "title": "10 Software Security Practices Built for the Next 250 Years",
@@ -1753,7 +1763,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Malicious downloads can trick AI coding agents into compromising themselves",
@@ -1772,7 +1782,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)",
@@ -1810,7 +1820,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "10 most powerful cybersecurity companies today",
@@ -1886,7 +1896,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "(Reliable)&#x3f; php2shell exploitability, (Fri, Oct 23rd)",
@@ -1905,7 +1915,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Exposed to PHP2Shell? Cyber Experts Weigh in With Advice",
@@ -1924,7 +1934,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Oracle patches 1295 security vulnerabilities in October, including six scoring 10.0",
@@ -1952,25 +1962,6 @@
       "summary": "Every security checklist starts with the basics: strong passwords, multifactor authentication, spotting phishing, and keeping software up to date. All four protect what happens after a laptop starts. But some attackers are more focused on what happens before.\nThat’s the domain of the BIOS, the first code that runs when a laptop powers on. It checks the hardware, then hands control to the operating system. Malware planted at this level can load before the operating system does, so it can evade an",
       "url": "https://www.csoonline.com/article/4239779/dual-bios-the-laptop-security-feature-smbs-dont-know-they-need.html",
       "date": "2026-10-23T15:54:22.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Meta hit with $25 billion fine for illegally sharing user data",
-      "summary": "A judge in New Mexico has fined Meta $25 billion for its flouting of data privacy laws between 2010 and 2021, including its controversial passing of data to Cambridge Analytica.\nThe action serves as a stark reminder to enterprises not to play fast and loose with data protection legislation, as the consequences could be highly damaging.\nMeta faced the court action after it was revealed that data company Cambridge Analytica had improperly obtained personal data that Facebook was holding.\nIt could ",
-      "url": "https://www.csoonline.com/article/4239754/meta-hit-with-25-billion-fine-for-illegally-sharing-user-data-2.html",
-      "date": "2026-10-23T15:23:54.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -2167,31 +2158,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
-    },
-    {
-      "title": "Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)",
-      "summary": "PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available.",
-      "url": "https://isc.sans.edu/diary/rss/33440",
-      "date": "2026-10-21T21:02:43.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "articleCount": 1,
-      "score": 54
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -2409,7 +2375,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 1,
-      "score": 77
+      "score": 75
     },
     {
       "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
@@ -2436,7 +2402,7 @@
         "CVE-2023-4863"
       ],
       "articleCount": 1,
-      "score": 70
+      "score": 68
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -2466,7 +2432,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 2,
-      "score": 70
+      "score": 68
     }
   ],
   "sourcesUsed": [
@@ -2479,5 +2445,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-27T23:37:06.257Z"
+  "lastUpdated": "2026-10-28T02:35:16.646Z"
 }
