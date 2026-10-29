@@ -1,6 +1,51 @@
 {
   "articles": [
     {
+      "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-29T06:17:41.000Z",
+      "summary": "Building your malware analysis lab is a key point before playing with malware. Today, thanks to virtualization, it&#;x26;#;39;s convenient to play with snapshots in your lab. Start a new investigation from a clean snapshot and take some more when you reached a critical step. But, if you need to revert to a previous snapshot, all changes applied to the VM are... lost! Therefore, it&#;x26;#;39;s important to store important data outside the VM.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33470",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Thursday, October 29th, 2026 https://isc.sans.edu/podcastdetail/10156, (Thu, Oct 29th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-29T03:10:12.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33468",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-29T00:42:15.000Z",
+      "summary": "Introduction",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33466",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
       "source": "Dark Reading",
       "date": "2026-10-28T19:39:00.000Z",
@@ -56,21 +101,6 @@
       ],
       "url": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
       "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-28T16:07:03.000Z",
-      "summary": "Introduction",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33466",
-      "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -794,21 +824,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "PHP Vulnerability Wrap-Up, (Fri, Oct 23rd)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-23T13:43:20.000Z",
-      "summary": "This morning, we returned to Infocon Green. As usual, we are raising the Infocon to alert you to emerging situations requiring immediate attention. PHP fit that description. By now, you either know about it, or you probably never will, so it is time to go back to \"business as usual\".",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33450",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-23T12:00:00.000Z",
@@ -849,21 +864,6 @@
       "recentlyAddedToKev": [
         "CVE-2026-114625"
       ]
-    },
-    {
-      "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-23T10:25:11.000Z",
-      "summary": "",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33448",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "Siemens RUGGEDCOM APE1808 Devices",
@@ -1099,6 +1099,63 @@
   ],
   "clusters": [
     {
+      "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
+      "summary": "Building your malware analysis lab is a key point before playing with malware. Today, thanks to virtualization, it&#;x26;#;39;s convenient to play with snapshots in your lab. Start a new investigation from a clean snapshot and take some more when you reached a critical step. But, if you need to revert to a previous snapshot, all changes applied to the VM are... lost! Therefore, it&#;x26;#;39;s important to store important data outside the VM.",
+      "url": "https://isc.sans.edu/diary/rss/33470",
+      "date": "2026-10-29T06:17:41.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 30
+    },
+    {
+      "title": "ISC Stormcast For Thursday, October 29th, 2026 https://isc.sans.edu/podcastdetail/10156, (Thu, Oct 29th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33468",
+      "date": "2026-10-29T03:10:12.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 2,
+      "score": 28
+    },
+    {
+      "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
+      "summary": "Introduction",
+      "url": "https://isc.sans.edu/diary/rss/33466",
+      "date": "2026-10-29T00:42:15.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
       "title": "GhostAction Hacking Wave Fizzles, But Attackers Lurk on in GitHub",
       "summary": "The supply chain attack campaign's shift toward developer endpoints and cloud access signals what could be next for the cybercrime outfit.",
       "url": "https://www.darkreading.com/application-security/ghostaction-hacking-wave-fizzles-attackers-github",
@@ -1115,7 +1172,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 36
     },
     {
       "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
@@ -1134,7 +1191,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 60
+      "score": 57
     },
     {
       "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
@@ -1153,7 +1210,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
@@ -1172,26 +1229,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
-    },
-    {
-      "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
-      "summary": "Introduction",
-      "url": "https://isc.sans.edu/diary/rss/33466",
-      "date": "2026-10-28T16:07:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 25
+      "score": 33
     },
     {
       "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
@@ -1210,7 +1248,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
@@ -1229,7 +1267,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
@@ -1251,7 +1289,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 48
+      "score": 45
     },
     {
       "title": "Fake ChatGPT, Claude apps spread malware via signed AI binaries",
@@ -1270,7 +1308,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "Gheist turns GitHub Actions into a secret extraction service",
@@ -1289,7 +1327,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1323,7 +1361,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 3,
-      "score": 69
+      "score": 67
     },
     {
       "title": "Trusting Unsloth’s trust setting could mean executing malicious code",
@@ -1344,7 +1382,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
@@ -1363,7 +1401,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Wazuh and AI for Enhanced SOC Workflows",
@@ -1382,7 +1420,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
@@ -1403,7 +1441,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
@@ -1422,7 +1460,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "When prevention fails: Why cyber resilience is the next big test of trust",
@@ -1441,7 +1479,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "10 ways attackers abuse AI services to hack your business",
@@ -1460,7 +1498,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
@@ -1479,7 +1517,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "FBI Seizes Virtualine Domain Over Alleged Criminal Hosting and Bitcoin Money Laundering",
@@ -1498,7 +1536,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
@@ -1517,7 +1555,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 29
     },
     {
       "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
@@ -1536,7 +1574,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Attackers compromised 42 GitHub repositories by using files too large to be searched",
@@ -1555,26 +1593,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33464",
-      "date": "2026-10-28T02:30:11.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 3,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Attackers built a ‘Skynet’ AI agent that hijacks exposed models to run cyberattacks",
@@ -1593,7 +1612,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
@@ -1612,7 +1631,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
@@ -1631,7 +1650,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 29
     },
     {
       "title": "SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack",
@@ -1650,7 +1669,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 29
     },
     {
       "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
@@ -1669,7 +1688,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "'Aokigahara' Stealer Targets 'Developer Keyrings' &amp; AI Assistants",
@@ -1688,7 +1707,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Node2Shell puts Microsoft and Node.js on Brotli patch duty",
@@ -1714,7 +1733,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 68
     },
     {
       "title": "Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
@@ -1741,7 +1760,7 @@
         "CVE-2023-4863"
       ],
       "articleCount": 1,
-      "score": 62
+      "score": 61
     },
     {
       "title": "EPICS Base",
@@ -1765,7 +1784,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Alibaba AI model tried to send data to Beijing server, Cohere says",
@@ -1784,7 +1803,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "The days of assuming another company’s breach is someone else’s problem are over",
@@ -1803,7 +1822,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "OpenAI’s August fix for theft of reasoning traces was quickly bypassed",
@@ -1822,7 +1841,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
+    },
+    {
+      "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33462",
+      "date": "2026-10-27T02:55:13.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 2,
+      "score": 13
     },
     {
       "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
@@ -1841,7 +1879,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "So Many AI Security Benchmarks, But None Tell the Whole Story",
@@ -1860,7 +1898,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Risks &amp; Rewards: How AI Is Redefining the CISO's Role",
@@ -1917,7 +1955,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "OpenAI, Anthropic disclosures spotlight growing AI containment challenge",
@@ -1996,25 +2034,6 @@
       "score": 10
     },
     {
-      "title": "PHP Vulnerability Wrap-Up, (Fri, Oct 23rd)",
-      "summary": "This morning, we returned to Infocon Green. As usual, we are raising the Infocon to alert you to emerging situations requiring immediate attention. PHP fit that description. By now, you either know about it, or you probably never will, so it is time to go back to \"business as usual\".",
-      "url": "https://isc.sans.edu/diary/rss/33450",
-      "date": "2026-10-23T13:43:20.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements f",
       "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
@@ -2038,25 +2057,6 @@
       ],
       "articleCount": 2,
       "score": 54
-    },
-    {
-      "title": "ISC Stormcast For Friday, October 23rd, 2026 https://isc.sans.edu/podcastdetail/10148, (Fri, Oct 23rd)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33448",
-      "date": "2026-10-23T10:25:11.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
     },
     {
       "title": "Siemens Capital Embedded AR Classic",
@@ -2383,7 +2383,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 3,
-      "score": 69
+      "score": 67
     },
     {
       "title": "Volt Typhoon Used Covert Silent Train Network in Four Zero-Day Exploitation Campaigns",
@@ -2402,7 +2402,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 60
+      "score": 57
     },
     {
       "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
@@ -2424,7 +2424,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 48
+      "score": 45
     }
   ],
   "sourcesUsed": [
@@ -2437,5 +2437,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-29T00:39:45.011Z"
+  "lastUpdated": "2026-10-29T06:30:29.782Z"
 }
