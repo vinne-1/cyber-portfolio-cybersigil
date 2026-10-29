@@ -1,6 +1,74 @@
 {
   "articles": [
     {
+      "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
+      "source": "Dark Reading",
+      "date": "2026-10-29T21:21:56.000Z",
+      "summary": "Obvious phishing emails with numerous red flags are somehow getting past some of the industry-leading secure email gateway (SEG) products.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Rethinking Cybersecurity Awareness in the AI Era",
+      "source": "Dark Reading",
+      "date": "2026-10-29T20:15:37.000Z",
+      "summary": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "New Cisco firewall zero-day being actively exploited",
+      "source": "CSO Online",
+      "date": "2026-10-29T19:31:38.000Z",
+      "summary": "A high-severity flaw in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) and Cisco Secure Firewall Threat Defense (FTD) is under active exploitation to crash vulnerable devices.\nThe vulnerability, tracked as CVE-2026-76418 and rated 8.6 in severity, is due to logic errors when secondary authentication is configured on a tunnel group, Cisco said in its advisory. It could allow a remote, unauthenticated attacker to send a crafted request when connecting ",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4242420/new-cisco-firewall-zero-day-being-actively-exploited.html",
+      "impactScore": 7,
+      "cveMatches": [
+        "CVE-2026-76418"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-76418"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-76418"
+      ]
+    },
+    {
+      "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+      "source": "The Hacker News",
+      "date": "2026-10-29T19:11:58.000Z",
+      "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't.\n\nThere's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familiar apps, websites, and AI tools. Some are using AI to speed things up. Others are leaving their",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
       "source": "Dark Reading",
       "date": "2026-10-29T18:15:59.000Z",
@@ -123,21 +191,29 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Siemens Mendix SAML Module",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-29T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nMendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions.\nThe following versions of Siemens Mendix SAML Module are affected:\nMendix SAML (Mendix 10 compatible) vers:intdot/<4.2.4 (CVE-2026-89209)\nMendix SAML (",
-      "severity": "Low",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability\nCVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risk",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
-      "impactScore": 0,
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "impactScore": 4,
       "cveMatches": [
-        "CVE-2026-89209"
+        "CVE-2026-97229",
+        "CVE-2026-76418"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-97229",
+        "CVE-2026-76418"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-97229",
+        "CVE-2026-76418"
+      ]
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -151,6 +227,23 @@
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-02",
       "impactScore": 2,
       "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Siemens Mendix SAML Module",
+      "source": "CISA Advisories",
+      "date": "2026-10-29T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nMendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions.\nThe following versions of Siemens Mendix SAML Module are affected:\nMendix SAML (Mendix 10 compatible) vers:intdot/<4.2.4 (CVE-2026-89209)\nMendix SAML (",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-89209"
+      ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -188,7 +281,7 @@
       "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
       "source": "The Hacker News",
       "date": "2026-10-29T11:39:18.000Z",
-      "summary": "A flaw in Telegram for Android allowed an attacker to run code on a victim's phone via a voice call once the victim answered, according to security startup NebuSec.\n\nThe attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec disclosed it on October 29.\n\nThe flaw can be triggered in every version from",
+      "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec.\n\nThe attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec disclosed it on October 29.\n\nCombined with an",
       "severity": "Medium",
       "tags": [
         "Widely-Used Software"
@@ -244,8 +337,12 @@
       "cveMatches": [
         "CVE-2026-76418"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-76418"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-76418"
+      ]
     },
     {
       "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
@@ -297,17 +394,21 @@
       "source": "The Hacker News",
       "date": "2026-10-29T09:05:39.000Z",
       "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October.\n\nThe flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-97229"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-97229"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-97229"
+      ]
     },
     {
       "title": "Securing MCP servers before the AI rollout outpaces security",
@@ -368,29 +469,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
-      "source": "The Hacker News",
-      "date": "2026-10-29T06:22:33.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector.\n\nThe vulnerability in question is CVE-2026-41709 (CVSS score:",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
-      "impactScore": 7,
-      "cveMatches": [
-        "CVE-2026-41709"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-41709"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-41709"
-      ]
     },
     {
       "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
@@ -600,21 +678,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Attackers compromised 42 GitHub repositories by using files too large to be searched",
-      "source": "CSO Online",
-      "date": "2026-10-28T02:58:27.000Z",
-      "summary": "A security research firm reported Monday that it had identified breaches of 42 third-party GitHub repositories in which attackers had deployed payload blobs large enough “to evade the GitHub search and API paths normally used to find this kind of compromise.”\nThe report from JFrog Security Research said the victimized repositories contained execution hooks for AI coding assistants and IDEs, along with polymorphic wrappers as large as 13.7MB that “all decoded to the same hidden CI-publisher paylo",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4241496/attackers-compromised-42-github-repositories-by-using-files-too-large-to-be-searched-2.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-10-28T02:30:11.000Z",
@@ -655,36 +718,6 @@
       ],
       "url": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
       "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack",
-      "source": "Dark Reading",
-      "date": "2026-10-27T19:58:06.000Z",
-      "summary": "A recent Shai-Hulud attack shows defenders need real-time visibility into production code and affected services to respond to supply chain compromises.",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
-      "source": "Dark Reading",
-      "date": "2026-10-27T17:43:07.000Z",
-      "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
-      "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -875,27 +908,6 @@
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-23T12:00:00.000Z",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements f",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-110447"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-110447"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-110447"
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "source": "CISA Advisories",
-      "date": "2026-10-23T12:00:00.000Z",
       "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilia",
       "severity": "Critical",
       "tags": [
@@ -914,37 +926,37 @@
       ]
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808 Devices",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "source": "CISA Advisories",
-      "date": "2026-10-22T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nNozomi Networks has published information on vulnerabilities in Nozomi Guardian/CMC. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Siemens recommends to contact customer support to receive patch and update information.\nThe following versions of Siemens RUGGEDCOM APE1808 Devices are affected:\nRUGGEDCOM APE1808 vers:all/* (CVE-2026-33387, CVE-2026-33388, CVE-2026-33389, CVE-2026-33391, CVE-2026-33920)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7",
-      "severity": "Low",
+      "date": "2026-10-23T12:00:00.000Z",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements f",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
-      "impactScore": 0,
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
+      "impactScore": 3,
       "cveMatches": [
-        "CVE-2026-33387",
-        "CVE-2026-33388",
-        "CVE-2026-33389",
-        "CVE-2026-33391",
-        "CVE-2026-33920"
+        "CVE-2026-110447"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-110447"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-110447"
+      ]
     },
     {
-      "title": "Siemens Industrial Edge Device Kit",
+      "title": "Siemens PSS(R)SINCAL",
       "source": "CISA Advisories",
       "date": "2026-10-22T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nUsers of Industrial Edge Devices are advised to consult the respective Security Advisories for their devices (for Siemens Industrial Edge devices see Additional Information). Industrial Edge Device Kit contains multiple path traversal vulnerabilities that could facilitate an authenticated remote attacker to access sensitive internal information. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends sp",
-      "severity": "Low",
+      "summary": "View CSAF\nSummary\nPSS(R)SINCAL uses WibuKey third-party product that contains an out-of-bounds write vulnerability. An attacker could exploit this vulnerability to cause a system crash, resulting in a denial-of-service condition. This affects PSS SINCAL only when configured to use the legacy WibuKey dongle license type. Siemens is actively preparing updates and recommends applicable mitigations for products where patches are currently unavailable.\nThe following versions of Siemens PSS(R)SINCAL a",
+      "severity": "Medium",
       "tags": [
-        "General"
+        "DDoS"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
-      "impactScore": 0,
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-06",
+      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1102,6 +1114,88 @@
   ],
   "clusters": [
     {
+      "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
+      "summary": "Obvious phishing emails with numerous red flags are somehow getting past some of the industry-leading secure email gateway (SEG) products.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
+      "date": "2026-10-29T21:21:56.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Rethinking Cybersecurity Awareness in the AI Era",
+      "summary": "This installment of the Reporters' Notebook video series discusses some of the trends and topics from Cybersecurity Awareness Month, from using AI for better training to educating next-generation workforces on modern risks and emerging threats.",
+      "url": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+      "date": "2026-10-29T20:15:37.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "New Cisco firewall zero-day being actively exploited",
+      "summary": "A high-severity flaw in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) and Cisco Secure Firewall Threat Defense (FTD) is under active exploitation to crash vulnerable devices.\nThe vulnerability, tracked as CVE-2026-76418 and rated 8.6 in severity, is due to logic errors when secondary authentication is configured on a tunnel group, Cisco said in its advisory. It could allow a remote, unauthenticated attacker to send a crafted request when connecting ",
+      "url": "https://www.csoonline.com/article/4242420/new-cisco-firewall-zero-day-being-actively-exploited.html",
+      "date": "2026-10-29T19:31:38.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 7,
+      "cveMatches": [
+        "CVE-2026-76418"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-76418"
+      ],
+      "articleCount": 1,
+      "score": 80
+    },
+    {
+      "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+      "summary": "Some attacks take real skill. Others just need someone to leave a door open. This week has both. Exposed passwords, old bugs still getting exploited, and trusted software doing things it shouldn't.\n\nThere's a strange mix of clever tricks and careless mistakes. Hackers are borrowing trust from familiar apps, websites, and AI tools. Some are using AI to speed things up. Others are leaving their",
+      "url": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+      "date": "2026-10-29T19:11:58.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
       "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
       "summary": "An unreleased version of the AI model has found and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux, Anthropic says.",
       "url": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
@@ -1118,7 +1212,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 37
     },
     {
       "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
@@ -1139,7 +1233,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 36
     },
     {
       "title": "Threat Modeling With 4 Simple Questions on a White Board",
@@ -1158,7 +1252,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
@@ -1177,7 +1271,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
@@ -1196,7 +1290,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Fake Anthropic AI previews lure in overeager employees",
@@ -1215,7 +1309,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 34
     },
     {
       "title": "Anthropic and OpenAI diverge on who should pull the plug on risky AI",
@@ -1234,7 +1328,41 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability\nCVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risk",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-29T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-97229",
+        "CVE-2026-76418",
+        "CVE-2026-41709",
+        "CVE-2026-46300",
+        "CVE-2026-48356",
+        "CVE-2026-111497"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-97229",
+        "CVE-2026-76418",
+        "CVE-2026-41709",
+        "CVE-2026-46300",
+        "CVE-2026-48356",
+        "CVE-2026-111497"
+      ],
+      "articleCount": 3,
+      "score": 70
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -1253,7 +1381,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 36
     },
     {
       "title": "Hitachi Energy CoreTec Product",
@@ -1272,7 +1400,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Siemens Mendix SAML Module",
@@ -1293,7 +1421,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Imposter abused trust in OpenAI, Anthropic, and 30 others to hunt for secrets",
@@ -1312,7 +1440,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
@@ -1331,11 +1459,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
-      "summary": "A flaw in Telegram for Android allowed an attacker to run code on a victim's phone via a voice call once the victim answered, according to security startup NebuSec.\n\nThe attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec disclosed it on October 29.\n\nThe flaw can be triggered in every version from",
+      "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec.\n\nThe attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec disclosed it on October 29.\n\nCombined with an",
       "url": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
       "date": "2026-10-29T11:39:18.000Z",
       "severity": "Medium",
@@ -1350,7 +1478,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
@@ -1369,7 +1497,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
@@ -1388,7 +1516,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
@@ -1408,9 +1536,11 @@
       "cveMatches": [
         "CVE-2026-76418"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-76418"
+      ],
       "articleCount": 1,
-      "score": 61
+      "score": 69
     },
     {
       "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
@@ -1429,7 +1559,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
@@ -1448,7 +1578,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Vulnerability exploitation rising as the root cause of many breaches",
@@ -1467,28 +1597,30 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
       "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October.\n\nThe flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
       "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
       "date": "2026-10-29T09:05:39.000Z",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-97229"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-97229"
+      ],
       "articleCount": 1,
-      "score": 24
+      "score": 66
     },
     {
       "title": "Securing MCP servers before the AI rollout outpaces security",
@@ -1507,7 +1639,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "PHP2Shell will persist in enterprise environments for years",
@@ -1526,7 +1658,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
@@ -1545,7 +1677,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 32
     },
     {
       "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
@@ -1564,32 +1696,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
-    },
-    {
-      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector.\n\nThe vulnerability in question is CVE-2026-41709 (CVSS score:",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
-      "date": "2026-10-29T06:22:33.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 7,
-      "cveMatches": [
-        "CVE-2026-41709"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-41709"
-      ],
-      "articleCount": 1,
-      "score": 76
+      "score": 22
     },
     {
       "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
@@ -1608,7 +1715,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "ISC Stormcast For Thursday, October 29th, 2026 https://isc.sans.edu/podcastdetail/10156, (Thu, Oct 29th)",
@@ -1627,7 +1734,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 21
+      "score": 20
     },
     {
       "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
@@ -1646,7 +1753,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
@@ -1665,7 +1772,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 30
     },
     {
       "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
@@ -1684,7 +1791,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
@@ -1703,7 +1810,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Fake ChatGPT, Claude apps spread malware via signed AI binaries",
@@ -1722,7 +1829,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Gheist turns GitHub Actions into a secret extraction service",
@@ -1741,41 +1848,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
-    },
-    {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability\nCVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates B",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "date": "2026-10-28T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-41709",
-        "CVE-2026-46300",
-        "CVE-2026-48356",
-        "CVE-2026-111497",
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-41709",
-        "CVE-2026-46300",
-        "CVE-2026-48356",
-        "CVE-2026-111497",
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "articleCount": 3,
-      "score": 63
+      "score": 16
     },
     {
       "title": "Trusting Unsloth’s trust setting could mean executing malicious code",
@@ -1796,7 +1869,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "When prevention fails: Why cyber resilience is the next big test of trust",
@@ -1834,7 +1907,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
@@ -1847,25 +1920,6 @@
       ],
       "sources": [
         "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "Attackers compromised 42 GitHub repositories by using files too large to be searched",
-      "summary": "A security research firm reported Monday that it had identified breaches of 42 third-party GitHub repositories in which attackers had deployed payload blobs large enough “to evade the GitHub search and API paths normally used to find this kind of compromise.”\nThe report from JFrog Security Research said the victimized repositories contained execution hooks for AI coding assistants and IDEs, along with polymorphic wrappers as large as 13.7MB that “all decoded to the same hidden CI-publisher paylo",
-      "url": "https://www.csoonline.com/article/4241496/attackers-compromised-42-github-repositories-by-using-files-too-large-to-be-searched-2.html",
-      "date": "2026-10-28T02:58:27.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
       ],
       "sourceCount": 1,
       "impactScore": 0,
@@ -1910,45 +1964,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
-    },
-    {
-      "title": "SBOMs Alone Can't Reveal the Scope of a Supply Chain Attack",
-      "summary": "A recent Shai-Hulud attack shows defenders need real-time visibility into production code and affected services to respond to supply chain compromises.",
-      "url": "https://www.darkreading.com/cyber-risk/sboms-alone-scope-supply-chain-attack",
-      "date": "2026-10-27T19:58:06.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
       "score": 26
-    },
-    {
-      "title": "Beware the Slasher: AI Could Kill Off Cybersecurity Pros' Skills",
-      "summary": "Nathan Hamiel outlines potential SecOps horror in the AI midst, as core technical capabilities go the way of reading an atlas or remembering phone numbers.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/ai-kill-off-cybersecurity-pros-skills",
-      "date": "2026-10-27T17:43:07.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
     },
     {
       "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
@@ -2040,6 +2056,31 @@
       "score": 12
     },
     {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching:  \nCVE-2026-109618 – PHP Memory Corruption Vulnerability \nCVE-2026-109619 – PHP Stale Internal Request-State Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing ",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-26T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "articleCount": 1,
+      "score": 55
+    },
+    {
       "title": "Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)",
       "summary": "[This is a Guest Diary by Jeffray Spence, an ISC intern as part of the SANS.edu BACS program]",
       "url": "https://isc.sans.edu/diary/rss/33442",
@@ -2098,8 +2139,8 @@
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements f",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-114625 Arista VeloCloud Orchestrator SQL Injection Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilia",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog",
       "date": "2026-10-23T12:00:00.000Z",
       "severity": "Critical",
       "tags": [
@@ -2111,59 +2152,34 @@
       "sourceCount": 1,
       "impactScore": 3,
       "cveMatches": [
-        "CVE-2026-110447",
-        "CVE-2026-114625"
+        "CVE-2026-114625",
+        "CVE-2026-110447"
       ],
       "knownExploitedCves": [
-        "CVE-2026-110447",
-        "CVE-2026-114625"
+        "CVE-2026-114625",
+        "CVE-2026-110447"
       ],
       "articleCount": 2,
       "score": 54
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808 Devices",
-      "summary": "View CSAF\nSummary\nNozomi Networks has published information on vulnerabilities in Nozomi Guardian/CMC. This advisory lists the related Siemens Industrial products affected by these vulnerabilities. Siemens recommends to contact customer support to receive patch and update information.\nThe following versions of Siemens RUGGEDCOM APE1808 Devices are affected:\nRUGGEDCOM APE1808 vers:all/* (CVE-2026-33387, CVE-2026-33388, CVE-2026-33389, CVE-2026-33391, CVE-2026-33920)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-18",
+      "title": "Siemens PSS(R)SINCAL",
+      "summary": "View CSAF\nSummary\nPSS(R)SINCAL uses WibuKey third-party product that contains an out-of-bounds write vulnerability. An attacker could exploit this vulnerability to cause a system crash, resulting in a denial-of-service condition. This affects PSS SINCAL only when configured to use the legacy WibuKey dongle license type. Siemens is actively preparing updates and recommends applicable mitigations for products where patches are currently unavailable.\nThe following versions of Siemens PSS(R)SINCAL a",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-06",
       "date": "2026-10-22T12:00:00.000Z",
-      "severity": "Low",
+      "severity": "Medium",
       "tags": [
-        "General"
+        "DDoS"
       ],
       "sources": [
         "CISA Advisories"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-33387",
-        "CVE-2026-33388",
-        "CVE-2026-33389",
-        "CVE-2026-33391",
-        "CVE-2026-33920"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Siemens Industrial Edge Device Kit",
-      "summary": "View CSAF\nSummary\nUsers of Industrial Edge Devices are advised to consult the respective Security Advisories for their devices (for Siemens Industrial Edge devices see Additional Information). Industrial Edge Device Kit contains multiple path traversal vulnerabilities that could facilitate an authenticated remote attacker to access sensitive internal information. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens recommends sp",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-295-09",
-      "date": "2026-10-22T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
+      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 10
+      "score": 20
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -2358,35 +2374,35 @@
   ],
   "top3": [
     {
-      "title": "China-Linked Hackers Exploited VMware ESX Zero-Day to Reduce Audit Trail Visibility",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a security flaw impacting Broadcom VMware ESX to its Known Exploited Vulnerabilities (KEV) catalog, after CrowdStrike revealed that it had been weaponized by a China-nexus threat actor known as Warp Panda in attacks targeting the U.S. legal sector.\n\nThe vulnerability in question is CVE-2026-41709 (CVSS score:",
-      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited-vmware.html",
-      "date": "2026-10-29T06:22:33.000Z",
+      "title": "New Cisco firewall zero-day being actively exploited",
+      "summary": "A high-severity flaw in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) and Cisco Secure Firewall Threat Defense (FTD) is under active exploitation to crash vulnerable devices.\nThe vulnerability, tracked as CVE-2026-76418 and rated 8.6 in severity, is due to logic errors when secondary authentication is configured on a tunnel group, Cisco said in its advisory. It could allow a remote, unauthenticated attacker to send a crafted request when connecting ",
+      "url": "https://www.csoonline.com/article/4242420/new-cisco-firewall-zero-day-being-actively-exploited.html",
+      "date": "2026-10-29T19:31:38.000Z",
       "severity": "Critical",
       "tags": [
         "Zero-Day",
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
+        "Actively Exploited",
+        "Widely-Used Software"
       ],
       "sources": [
-        "The Hacker News"
+        "CSO Online"
       ],
       "sourceCount": 1,
       "impactScore": 7,
       "cveMatches": [
-        "CVE-2026-41709"
+        "CVE-2026-76418"
       ],
       "knownExploitedCves": [
-        "CVE-2026-41709"
+        "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 76
+      "score": 80
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-41709 Broadcom VMWare ESX Insufficient Logging Vulnerability\nCVE-2026-46300 Linux Kernel Missing Initialization of a Variable Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates B",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "date": "2026-10-28T12:00:00.000Z",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability\nCVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risk",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-29T12:00:00.000Z",
       "severity": "Critical",
       "tags": [
         "Widely-Used Software",
@@ -2398,23 +2414,23 @@
       "sourceCount": 1,
       "impactScore": 4,
       "cveMatches": [
+        "CVE-2026-97229",
+        "CVE-2026-76418",
         "CVE-2026-41709",
         "CVE-2026-46300",
         "CVE-2026-48356",
-        "CVE-2026-111497",
-        "CVE-2026-109618",
-        "CVE-2026-109619"
+        "CVE-2026-111497"
       ],
       "knownExploitedCves": [
+        "CVE-2026-97229",
+        "CVE-2026-76418",
         "CVE-2026-41709",
         "CVE-2026-46300",
         "CVE-2026-48356",
-        "CVE-2026-111497",
-        "CVE-2026-109618",
-        "CVE-2026-109619"
+        "CVE-2026-111497"
       ],
       "articleCount": 3,
-      "score": 63
+      "score": 70
     },
     {
       "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
@@ -2434,9 +2450,11 @@
       "cveMatches": [
         "CVE-2026-76418"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-76418"
+      ],
       "articleCount": 1,
-      "score": 61
+      "score": 69
     }
   ],
   "sourcesUsed": [
@@ -2449,5 +2467,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-29T19:27:01.682Z"
+  "lastUpdated": "2026-10-29T23:34:37.065Z"
 }
