@@ -1,6 +1,129 @@
 {
   "articles": [
     {
+      "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
+      "source": "Dark Reading",
+      "date": "2026-10-30T15:39:54.000Z",
+      "summary": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Undead Software Projects Continue to Raise Security Risks",
+      "source": "Dark Reading",
+      "date": "2026-10-30T14:10:37.000Z",
+      "summary": "A security firm patched a decade-old app to prevent the takeover of millions of machines, highlighting that abandoned domains remain a boon to attackers.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Anthropic AI model finds Linux kernel bug that leads to remote root access",
+      "source": "CSO Online",
+      "date": "2026-10-30T12:27:11.000Z",
+      "summary": "Linux servers running Multipath TCP (MPTCP) could be vulnerable to remote code execution through a flaw in the kernel’s networking stack.\nAnthropic has disclosed a zero-click exploit developed with an unreleased Claude research model that allows an unauthenticated attacker to execute arbitrary commands as root, without requiring any user interaction.\nTracked as CVE-2026-98432, the vulnerability is a race-condition-induced use-after-free (UAF) bug in the Linux kernel. Anthropic demonstrated how a",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4242724/anthropic-ai-model-finds-linux-kernel-bug-that-leads-to-remote-root-access.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-98432"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+      "source": "The Hacker News",
+      "date": "2026-10-30T12:21:56.000Z",
+      "summary": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported.\n\nTrezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to move their funds to a new wallet with a new recovery phrase.\n\nTrezor said in a blog post",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
+      "source": "The Hacker News",
+      "date": "2026-10-30T11:58:53.000Z",
+      "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything. \n\nTheir concerns are practical. An IPS protection could block legitimate traffic. A configuration change could interrupt a service. An endpoint policy could affect an application",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
+      "source": "The Hacker News",
+      "date": "2026-10-30T10:40:45.000Z",
+      "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been sentenced by a U.S. federal court to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets.\n\nThe conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Mistral open-sources AI model despite warning it could aid cyberattacks",
+      "source": "CSO Online",
+      "date": "2026-10-30T10:24:29.000Z",
+      "summary": "A trillion-parameter AI model that its developer says could help attackers carry out real cyberattacks is now free to download, modify and run outside the developer’s control.\nMistral AI released the open weights of Mistral Large 4, which it calls “Le Chonk,” on Thursday, weeks after putting the multimodal model into public preview. The Paris-based company said it had monitored cybersecurity-related use of the preview in live traffic.\n“Though we observed the model refusing to comply with black-b",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Everyday channels are available in an incident, but you may not want them",
+      "source": "CSO Online",
+      "date": "2026-10-30T10:00:00.000Z",
+      "summary": "The first hours after a serious cyber incident are filled with activity. Security starts investigating, IT works to contain the impact, legal begins assessing potential obligations, and executives want to know what happened and what the company is doing about it. Most teams rely on the same tools they use every day to coordinate that work, which usually means email, Slack, Teams, shared documents and video calls.\nCoordination gets much more complicated when the company’s email or collaboration e",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4242184/everyday-channels-are-available-in-an-incident-but-you-may-not-want-them.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "We are not ready for what AI has done to red teaming",
       "source": "CSO Online",
       "date": "2026-10-30T09:00:00.000Z",
@@ -10,6 +133,21 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4242174/we-are-not-ready-for-what-ai-has-done-to-red-teaming.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+      "source": "The Hacker News",
+      "date": "2026-10-30T08:55:47.000Z",
+      "summary": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.\n\nThe malicious update, version 2.1.313, was distributed under the extension's legitimate publisher identity, prompting Cursor to temporarily shut",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -177,6 +315,21 @@
         "General"
       ],
       "url": "https://www.darkreading.com/cyber-risk/rethinking-cybersecurity-awareness-ai-era",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Why CTF Competitions May Be More Important Than Ever",
+      "source": "Dark Reading",
+      "date": "2026-10-29T19:56:44.000Z",
+      "summary": "As artificial intelligence squeezes early-career learning opportunities, capture-the-flag contests could be one way to help pick up the slack.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -430,73 +583,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
-      "source": "The Hacker News",
-      "date": "2026-10-29T11:39:18.000Z",
-      "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec.\n\nThe attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec disclosed it on October 29.\n\nCombined with an",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
-      "source": "The Hacker News",
-      "date": "2026-10-29T11:33:41.000Z",
-      "summary": "AI is beginning to take over much of the work that has traditionally defined the security analyst's job. Investigating alerts, collecting evidence, correlating activity across tools, and executing response actions are becoming tasks that AI systems can perform on their own. As these capabilities mature, security operations centers (SOCs) will see major changes in how work is organized, how",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
-      "source": "The Hacker News",
-      "date": "2026-10-29T11:33:15.000Z",
-      "summary": "26,400 credentials that developers left in public code on Gitee, a Chinese code-hosting service, still worked when a researcher tested them. Anyone who copied one from that code could have used it.\n\nIndependent researcher Ben Zimmermann found them by scanning 7.25 million public Gitee repositories and reported the results on October 28. Most were keys for cloud and AI services, led by",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-      "source": "The Hacker News",
-      "date": "2026-10-29T10:44:46.000Z",
-      "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system. Successful exploitation could allow an unauthenticated, remote attacker to cause the",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-76418"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-76418"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-76418"
-      ]
-    },
-    {
       "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
       "source": "Dark Reading",
       "date": "2026-10-29T10:00:00.000Z",
@@ -521,36 +607,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4241912/vulnerability-exploitation-rising-as-the-root-cause-of-many-breaches.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Securing MCP servers before the AI rollout outpaces security",
-      "source": "CSO Online",
-      "date": "2026-10-29T09:00:00.000Z",
-      "summary": "Your company’s CTO has a plan to implement your company’s first LLM-based application. The board approved it, and now you’re finding out about it. It’s a typical story I hear all the time, and I’ve lived it myself.\nYou’ve heard everything about models and LLMs, but now you see this new term all over the place: Model Context Protocol (MCP) servers —and the realization that you now need to make sure they are implemented securely.\nWhat is an MCP server?\nMCP servers are like the ODBC of the 1990s. B",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4241763/securing-mcp-servers-before-the-ai-rollout-outpaces-security.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "PHP2Shell will persist in enterprise environments for years",
-      "source": "CSO Online",
-      "date": "2026-10-29T08:25:00.000Z",
-      "summary": "Two critical vulnerabilities were announced last week in PHP, the internet’s most widely used web application runtime, and they came with the familiar warning to patch immediately. But CISOs will have to deal with the long tail of these flaws for years due to widespread PHP integration into third-party products with patching cycles customers don’t control.\nNAS devices, firewalls, VPN gateways, printers, building management panels, industrial IoT devices, and human-machine interfaces (HMIs) insid",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4241941/php2shell-will-persist-in-enterprise-environments-for-years.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -635,43 +691,13 @@
       "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
       "source": "Dark Reading",
       "date": "2026-10-28T15:29:06.000Z",
-      "summary": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
+      "summary": "Artificial intelligence is everywhere in healthcare, from doctors' intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
       "severity": "Low",
       "tags": [
         "General"
       ],
       "url": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
-      "source": "Dark Reading",
-      "date": "2026-10-28T14:37:52.000Z",
-      "summary": "The threat actor lurked behind bots posing as agents from OpenAI, Anthropic, Meta, and others to find exposed data.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Fake ChatGPT, Claude apps spread malware via signed AI binaries",
-      "source": "CSO Online",
-      "date": "2026-10-28T12:36:48.000Z",
-      "summary": "Attackers are distributing malware through fake ChatGPT and Claude desktop applications, using legitimate, digitally signed executables from OpenAI and Anthropic to load malicious code onto victims’ Windows systems, according to Check Point Research.\nThe campaign, tracked as Yoba, uses fake GitHub repositories and websites promoting purported AI applications, including “GPT-5.6 Sol,” “GPT-6 Astra” and “Claude Opus.”\n“These projects look convincing and use real GitHub infrastructure, which helps ",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.csoonline.com/article/4241634/fake-chatgpt-claude-apps-spread-malware-via-signed-ai-binaries.html",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -702,21 +728,6 @@
       ]
     },
     {
-      "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
-      "source": "Dark Reading",
-      "date": "2026-10-28T06:00:00.000Z",
-      "summary": "Interpol's annual Operation Serengeti, now in its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-10-28T02:30:11.000Z",
@@ -726,21 +737,6 @@
         "General"
       ],
       "url": "https://isc.sans.edu/diary/rss/33464",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
-      "source": "Dark Reading",
-      "date": "2026-10-27T21:15:03.000Z",
-      "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -1123,6 +1119,161 @@
   ],
   "clusters": [
     {
+      "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
+      "summary": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
+      "date": "2026-10-30T15:39:54.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Undead Software Projects Continue to Raise Security Risks",
+      "summary": "A security firm patched a decade-old app to prevent the takeover of millions of machines, highlighting that abandoned domains remain a boon to attackers.",
+      "url": "https://www.darkreading.com/application-security/undead-software-projects-raise-security-risks",
+      "date": "2026-10-30T14:10:37.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Anthropic AI model finds Linux kernel bug that leads to remote root access",
+      "summary": "Linux servers running Multipath TCP (MPTCP) could be vulnerable to remote code execution through a flaw in the kernel’s networking stack.\nAnthropic has disclosed a zero-click exploit developed with an unreleased Claude research model that allows an unauthenticated attacker to execute arbitrary commands as root, without requiring any user interaction.\nTracked as CVE-2026-98432, the vulnerability is a race-condition-induced use-after-free (UAF) bug in the Linux kernel. Anthropic demonstrated how a",
+      "url": "https://www.csoonline.com/article/4242724/anthropic-ai-model-finds-linux-kernel-bug-that-leads-to-remote-root-access.html",
+      "date": "2026-10-30T12:27:11.000Z",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-98432"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 52
+    },
+    {
+      "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
+      "summary": "A Trezor Safe 5 hardware wallet bought from the reseller CryptoBilis has an extra circuit board that sends out the recovery phrase over a mobile network, a customer has reported.\n\nTrezor has not yet examined the device. It is telling everyone who bought a Trezor from CryptoBilis since March 2026 to move their funds to a new wallet with a new recovery phrase.\n\nTrezor said in a blog post",
+      "url": "https://thehackernews.com/2026/10/trezor-warns-of-suspected-hardware.html",
+      "date": "2026-10-30T12:21:56.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
+      "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything. \n\nTheir concerns are practical. An IPS protection could block legitimate traffic. A configuration change could interrupt a service. An endpoint policy could affect an application",
+      "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
+      "date": "2026-10-30T11:58:53.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
+      "summary": "Ahmad Umar Agha, a Syrian Electronic Army hacker known online as \"Th3Pr0,\" has been sentenced by a U.S. federal court to 42 months in prison for his role in a hacking conspiracy that targeted Western news outlets.\n\nThe conspiracy was organized and led by members of former Syrian President Bashar al-Assad's inner circle, including the commander of Syria's General Intelligence",
+      "url": "https://thehackernews.com/2026/10/syrian-hacker-behind-fake-tweet-that.html",
+      "date": "2026-10-30T10:40:45.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Mistral open-sources AI model despite warning it could aid cyberattacks",
+      "summary": "A trillion-parameter AI model that its developer says could help attackers carry out real cyberattacks is now free to download, modify and run outside the developer’s control.\nMistral AI released the open weights of Mistral Large 4, which it calls “Le Chonk,” on Thursday, weeks after putting the multimodal model into public preview. The Paris-based company said it had monitored cybersecurity-related use of the preview in live traffic.\n“Though we observed the model refusing to comply with black-b",
+      "url": "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html",
+      "date": "2026-10-30T10:24:29.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Everyday channels are available in an incident, but you may not want them",
+      "summary": "The first hours after a serious cyber incident are filled with activity. Security starts investigating, IT works to contain the impact, legal begins assessing potential obligations, and executives want to know what happened and what the company is doing about it. Most teams rely on the same tools they use every day to coordinate that work, which usually means email, Slack, Teams, shared documents and video calls.\nCoordination gets much more complicated when the company’s email or collaboration e",
+      "url": "https://www.csoonline.com/article/4242184/everyday-channels-are-available-in-an-incident-but-you-may-not-want-them.html",
+      "date": "2026-10-30T10:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
       "title": "We are not ready for what AI has done to red teaming",
       "summary": "Something shifted in offensive security over the last eighteen months that most organizations haven’t fully absorbed yet. It isn’t that attackers got smarter. It’s that the economics of attack changed entirely — and those of us who run red teams have had a front-row seat to the transformation.\nThe conversation about AI in cybersecurity tends to fixate on defense: better anomaly detection, faster triage, and AI-assisted SOC analysts. That framing misses the more urgent story. The attack side of t",
       "url": "https://www.csoonline.com/article/4242174/we-are-not-ready-for-what-ai-has-done-to-red-teaming.html",
@@ -1139,7 +1290,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 25
+    },
+    {
+      "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
+      "summary": "Cybersecurity researchers have disclosed that a trojanized version of Anthropic's official Claude Code extension was distributed through the Cursor Marketplace as a legitimate update, attempting to install a persistent SSH backdoor on affected systems.\n\nThe malicious update, version 2.1.313, was distributed under the extension's legitimate publisher identity, prompting Cursor to temporarily shut",
+      "url": "https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html",
+      "date": "2026-10-30T08:55:47.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
     },
     {
       "title": "Beyond deterministic worms: Preparing the SOC for reasoning adversaries",
@@ -1158,7 +1328,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 25
     },
     {
       "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
@@ -1177,7 +1347,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 25
     },
     {
       "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
@@ -1198,7 +1368,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 62
+      "score": 59
     },
     {
       "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
@@ -1223,7 +1393,7 @@
         "CVE-2026-97229"
       ],
       "articleCount": 1,
-      "score": 79
+      "score": 75
     },
     {
       "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
@@ -1242,7 +1412,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
@@ -1261,7 +1431,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 26
+      "score": 23
     },
     {
       "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
@@ -1285,7 +1455,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 71
+      "score": 68
     },
     {
       "title": "A deep dive into China’s Volt Typhoon suggests it is preparing for an assault on infrastructure",
@@ -1304,7 +1474,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
     },
     {
       "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
@@ -1323,7 +1493,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Rethinking Cybersecurity Awareness in the AI Era",
@@ -1342,7 +1512,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
+    },
+    {
+      "title": "Why CTF Competitions May Be More Important Than Ever",
+      "summary": "As artificial intelligence squeezes early-career learning opportunities, capture-the-flag contests could be one way to help pick up the slack.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever",
+      "date": "2026-10-29T19:56:44.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 20
     },
     {
       "title": "New Cisco firewall zero-day being actively exploited",
@@ -1367,7 +1556,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 75
+      "score": 73
     },
     {
       "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
@@ -1386,7 +1575,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
@@ -1405,7 +1594,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
@@ -1426,7 +1615,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 29
     },
     {
       "title": "Threat Modeling With 4 Simple Questions on a White Board",
@@ -1445,7 +1634,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
@@ -1464,7 +1653,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
@@ -1483,7 +1672,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Fake Anthropic AI previews lure in overeager employees",
@@ -1502,7 +1691,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 28
     },
     {
       "title": "Anthropic and OpenAI diverge on who should pull the plug on risky AI",
@@ -1521,7 +1710,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1555,7 +1744,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 3,
-      "score": 66
+      "score": 64
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -1574,7 +1763,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "Hitachi Energy CoreTec Product",
@@ -1593,7 +1782,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Siemens Mendix SAML Module",
@@ -1614,7 +1803,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Imposter abused trust in OpenAI, Anthropic, and 30 others to hunt for secrets",
@@ -1633,7 +1822,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
@@ -1652,88 +1841,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
-      "summary": "A flaw in Telegram for Android could be chained with two other bugs to take full control of a victim's phone through a voice call, once the victim answered, according to security startup NebuSec.\n\nThe attacker needed only an ordinary Telegram account. Telegram fixed the flaw in version 12.10.4 of the app, released in late September, and NebuSec disclosed it on October 29.\n\nCombined with an",
-      "url": "https://thehackernews.com/2026/10/telegram-android-flaw-lets-attackers.html",
-      "date": "2026-10-29T11:39:18.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 30
-    },
-    {
-      "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
-      "summary": "AI is beginning to take over much of the work that has traditionally defined the security analyst's job. Investigating alerts, collecting evidence, correlating activity across tools, and executing response actions are becoming tasks that AI systems can perform on their own. As these capabilities mature, security operations centers (SOCs) will see major changes in how work is organized, how",
-      "url": "https://thehackernews.com/2026/10/the-rise-of-threat-operator-how-ai-will.html",
-      "date": "2026-10-29T11:33:41.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
-      "summary": "26,400 credentials that developers left in public code on Gitee, a Chinese code-hosting service, still worked when a researcher tested them. Anyone who copied one from that code could have used it.\n\nIndependent researcher Ben Zimmermann found them by scanning 7.25 million public Gitee repositories and reported the results on October 28. Most were keys for cloud and AI services, led by",
-      "url": "https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html",
-      "date": "2026-10-29T11:33:15.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-      "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system. Successful exploitation could allow an unauthenticated, remote attacker to cause the",
-      "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-      "date": "2026-10-29T10:44:46.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-76418"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-76418"
-      ],
-      "articleCount": 1,
-      "score": 65
+      "score": 17
     },
     {
       "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
@@ -1752,7 +1860,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Vulnerability exploitation rising as the root cause of many breaches",
@@ -1771,45 +1879,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "Securing MCP servers before the AI rollout outpaces security",
-      "summary": "Your company’s CTO has a plan to implement your company’s first LLM-based application. The board approved it, and now you’re finding out about it. It’s a typical story I hear all the time, and I’ve lived it myself.\nYou’ve heard everything about models and LLMs, but now you see this new term all over the place: Model Context Protocol (MCP) servers —and the realization that you now need to make sure they are implemented securely.\nWhat is an MCP server?\nMCP servers are like the ODBC of the 1990s. B",
-      "url": "https://www.csoonline.com/article/4241763/securing-mcp-servers-before-the-ai-rollout-outpaces-security.html",
-      "date": "2026-10-29T09:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "PHP2Shell will persist in enterprise environments for years",
-      "summary": "Two critical vulnerabilities were announced last week in PHP, the internet’s most widely used web application runtime, and they came with the familiar warning to patch immediately. But CISOs will have to deal with the long tail of these flaws for years due to widespread PHP integration into third-party products with patching cycles customers don’t control.\nNAS devices, firewalls, VPN gateways, printers, building management panels, industrial IoT devices, and human-machine interfaces (HMIs) insid",
-      "url": "https://www.csoonline.com/article/4241941/php2shell-will-persist-in-enterprise-environments-for-years.html",
-      "date": "2026-10-29T08:25:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
@@ -1828,7 +1898,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
@@ -1847,7 +1917,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
@@ -1866,7 +1936,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
@@ -1885,11 +1955,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
-      "summary": "Artificial intelligence (AI) is everywhere in healthcare, from doctors’ intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
+      "summary": "Artificial intelligence is everywhere in healthcare, from doctors' intake forms to cancer screenings. But in some cases, life-and-death uses are outpacing cybersecurity.",
       "url": "https://www.darkreading.com/cybersecurity-operations/ai-root-hospital-corridors-raised-security-stakes",
       "date": "2026-10-28T15:29:06.000Z",
       "severity": "Low",
@@ -1904,64 +1974,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
-      "summary": "The threat actor lurked behind bots posing as agents from OpenAI, Anthropic, Meta, and others to find exposed data.",
-      "url": "https://www.darkreading.com/cyber-risk/attacker-impersonates-ai-bots-scans-credentials",
-      "date": "2026-10-28T14:37:52.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "Fake ChatGPT, Claude apps spread malware via signed AI binaries",
-      "summary": "Attackers are distributing malware through fake ChatGPT and Claude desktop applications, using legitimate, digitally signed executables from OpenAI and Anthropic to load malicious code onto victims’ Windows systems, according to Check Point Research.\nThe campaign, tracked as Yoba, uses fake GitHub repositories and websites promoting purported AI applications, including “GPT-5.6 Sol,” “GPT-6 Astra” and “Claude Opus.”\n“These projects look convincing and use real GitHub infrastructure, which helps ",
-      "url": "https://www.csoonline.com/article/4241634/fake-chatgpt-claude-apps-spread-malware-via-signed-ai-binaries.html",
-      "date": "2026-10-28T12:36:48.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 24
-    },
-    {
-      "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
-      "summary": "Interpol's annual Operation Serengeti, now in its third iteration, led to 1,462 arrests across 20 African countries and the US, recovering $105 million in stolen funds.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/third-serengeti-sweep-1400-arrests-investigations-mature",
-      "date": "2026-10-28T06:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 13
+      "score": 14
     },
     {
       "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
@@ -1980,25 +1993,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 13
-    },
-    {
-      "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
-      "summary": "Cyber leaders can get ahead of AI liability with rigorous documentation, transparency, and smart contract negotiations with AI vendors.",
-      "url": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
-      "date": "2026-10-27T21:15:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
       "score": 12
     },
     {
@@ -2094,7 +2088,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 55
+      "score": 54
     },
     {
       "title": "Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)",
@@ -2113,7 +2107,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
@@ -2393,7 +2387,7 @@
         "CVE-2026-97229"
       ],
       "articleCount": 1,
-      "score": 79
+      "score": 75
     },
     {
       "title": "New Cisco firewall zero-day being actively exploited",
@@ -2418,7 +2412,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 75
+      "score": 73
     },
     {
       "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
@@ -2442,7 +2436,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 71
+      "score": 68
     }
   ],
   "sourcesUsed": [
@@ -2455,5 +2449,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-30T09:48:27.608Z"
+  "lastUpdated": "2026-10-30T16:35:07.879Z"
 }
