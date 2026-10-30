@@ -1,6 +1,43 @@
 {
   "articles": [
     {
+      "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
+      "source": "CSO Online",
+      "date": "2026-10-30T00:55:47.000Z",
+      "summary": "The PHP2Shell saga continues, with attackers discovering new ways to exploit the critical vulnerability impacting millions of organizations worldwide.\nThe US Cybersecurity and Infrastructure Security Agency (CISA) has warned of a high severity Linux kernel privilege escalation flaw that attackers are chaining with PHP2Shell bugs in the wild.\nIdentified as CVE-2026-46300, it could allow attackers to run malicious code with root permissions, giving them unrestricted ability to run commands, tamper",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-46300"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-46300"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-46300"
+      ]
+    },
+    {
+      "title": "A deep dive into China’s Volt Typhoon suggests it is preparing for an assault on infrastructure",
+      "source": "CSO Online",
+      "date": "2026-10-30T00:10:15.000Z",
+      "summary": "In a deep dive into the Silent Train attack tactic used by China’s Volt Typhoon cybercrime group, Lumen’s Black Lotus Labs highlighted evidence of efforts to pre-position access within what it described as “strategic communications, critical infrastructure and other ecosystems that become essential during geopolitical tensions or crises.” \nThe report, released on Wednesday, said that Silent Train is built around “rapidly rotating chains of compromised SOHO, IoT and enterprise devices that are ex",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.csoonline.com/article/4242439/a-deep-dive-into-chinas-volt-typhoon-suggests-it-is-preparing-for-an-assault-on-infrastructure.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
       "source": "Dark Reading",
       "date": "2026-10-29T21:21:56.000Z",
@@ -633,36 +670,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "When prevention fails: Why cyber resilience is the next big test of trust",
-      "source": "CSO Online",
-      "date": "2026-10-28T10:00:00.000Z",
-      "summary": "Imagine arriving at work on a Monday morning to find employees cannot log in, customer service is unavailable, and critical business applications have stopped working. Security alerts are flashing. The IT team is investigating. Business leaders want to know when operations will resume.\nThen comes the question everyone hopes they never have to ask: Can we recover safely, and how long will it take?\nMost organizations have invested in cybersecurity, from firewalls to identity controls to monitoring",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4241129/when-prevention-fails-why-cyber-resilience-is-the-next-big-test-of-trust.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "10 ways attackers abuse AI services to hack your business",
-      "source": "CSO Online",
-      "date": "2026-10-28T08:25:00.000Z",
-      "summary": "Attackers are starting to exploit AI systems to mount attacks in the same way they once relied on built-in enterprise tools such as PowerShell.\nInstead of relying on malware, cybercriminals are increasingly abusing AI tools enterprises depend on — a trend some experts describe as “living off the AI land.” The expanded abuse of AI ecosystems features a growing array of tactics, including poisoned models, compromised MCP servers, prompt injection attacks, and AI supply-chain vulnerabilities.\n“We’r",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4154222/6-ways-attackers-abuse-ai-services-to-hack-your-business.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
       "source": "Dark Reading",
       "date": "2026-10-28T06:00:00.000Z",
@@ -1114,6 +1121,49 @@
   ],
   "clusters": [
     {
+      "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
+      "summary": "The PHP2Shell saga continues, with attackers discovering new ways to exploit the critical vulnerability impacting millions of organizations worldwide.\nThe US Cybersecurity and Infrastructure Security Agency (CISA) has warned of a high severity Linux kernel privilege escalation flaw that attackers are chaining with PHP2Shell bugs in the wild.\nIdentified as CVE-2026-46300, it could allow attackers to run malicious code with root permissions, giving them unrestricted ability to run commands, tamper",
+      "url": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html",
+      "date": "2026-10-30T00:55:47.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-46300"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-46300"
+      ],
+      "articleCount": 1,
+      "score": 75
+    },
+    {
+      "title": "A deep dive into China’s Volt Typhoon suggests it is preparing for an assault on infrastructure",
+      "summary": "In a deep dive into the Silent Train attack tactic used by China’s Volt Typhoon cybercrime group, Lumen’s Black Lotus Labs highlighted evidence of efforts to pre-position access within what it described as “strategic communications, critical infrastructure and other ecosystems that become essential during geopolitical tensions or crises.” \nThe report, released on Wednesday, said that Silent Train is built around “rapidly rotating chains of compromised SOHO, IoT and enterprise devices that are ex",
+      "url": "https://www.csoonline.com/article/4242439/a-deep-dive-into-chinas-volt-typhoon-suggests-it-is-preparing-for-an-assault-on-infrastructure.html",
+      "date": "2026-10-30T00:10:15.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 41
+    },
+    {
       "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
       "summary": "Obvious phishing emails with numerous red flags are somehow getting past some of the industry-leading secure email gateway (SEG) products.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/anthropic-phishing-emails-bypass-security-tools",
@@ -1130,7 +1180,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "Rethinking Cybersecurity Awareness in the AI Era",
@@ -1149,7 +1199,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "New Cisco firewall zero-day being actively exploited",
@@ -1174,7 +1224,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 80
+      "score": 78
     },
     {
       "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
@@ -1193,7 +1243,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
@@ -1212,7 +1262,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 35
     },
     {
       "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
@@ -1233,7 +1283,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 34
     },
     {
       "title": "Threat Modeling With 4 Simple Questions on a White Board",
@@ -1252,7 +1302,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
@@ -1271,7 +1321,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
@@ -1290,7 +1340,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Fake Anthropic AI previews lure in overeager employees",
@@ -1309,7 +1359,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 33
     },
     {
       "title": "Anthropic and OpenAI diverge on who should pull the plug on risky AI",
@@ -1328,7 +1378,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1362,7 +1412,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 3,
-      "score": 70
+      "score": 68
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -1381,7 +1431,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 34
     },
     {
       "title": "Hitachi Energy CoreTec Product",
@@ -1400,7 +1450,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Siemens Mendix SAML Module",
@@ -1421,7 +1471,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Imposter abused trust in OpenAI, Anthropic, and 30 others to hunt for secrets",
@@ -1440,7 +1490,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
@@ -1459,7 +1509,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
@@ -1478,7 +1528,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 32
     },
     {
       "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
@@ -1497,7 +1547,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
@@ -1516,7 +1566,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
@@ -1540,7 +1590,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 68
     },
     {
       "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
@@ -1559,7 +1609,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
@@ -1578,7 +1628,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Vulnerability exploitation rising as the root cause of many breaches",
@@ -1597,7 +1647,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
@@ -1620,7 +1670,7 @@
         "CVE-2026-97229"
       ],
       "articleCount": 1,
-      "score": 66
+      "score": 65
     },
     {
       "title": "Securing MCP servers before the AI rollout outpaces security",
@@ -1639,7 +1689,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "PHP2Shell will persist in enterprise environments for years",
@@ -1658,7 +1708,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
@@ -1677,7 +1727,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 31
     },
     {
       "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
@@ -1696,7 +1746,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
@@ -1715,7 +1765,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "ISC Stormcast For Thursday, October 29th, 2026 https://isc.sans.edu/podcastdetail/10156, (Thu, Oct 29th)",
@@ -1734,7 +1784,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 20
+      "score": 19
     },
     {
       "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
@@ -1753,7 +1803,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
@@ -1772,7 +1822,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 29
     },
     {
       "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
@@ -1791,7 +1841,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
@@ -1848,7 +1898,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Trusting Unsloth’s trust setting could mean executing malicious code",
@@ -1867,44 +1917,6 @@
       "cveMatches": [
         "CVE-2026-93348"
       ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "When prevention fails: Why cyber resilience is the next big test of trust",
-      "summary": "Imagine arriving at work on a Monday morning to find employees cannot log in, customer service is unavailable, and critical business applications have stopped working. Security alerts are flashing. The IT team is investigating. Business leaders want to know when operations will resume.\nThen comes the question everyone hopes they never have to ask: Can we recover safely, and how long will it take?\nMost organizations have invested in cybersecurity, from firewalls to identity controls to monitoring",
-      "url": "https://www.csoonline.com/article/4241129/when-prevention-fails-why-cyber-resilience-is-the-next-big-test-of-trust.html",
-      "date": "2026-10-28T10:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "10 ways attackers abuse AI services to hack your business",
-      "summary": "Attackers are starting to exploit AI systems to mount attacks in the same way they once relied on built-in enterprise tools such as PowerShell.\nInstead of relying on malware, cybercriminals are increasingly abusing AI tools enterprises depend on — a trend some experts describe as “living off the AI land.” The expanded abuse of AI ecosystems features a growing array of tactics, including poisoned models, compromised MCP servers, prompt injection attacks, and AI supply-chain vulnerabilities.\n“We’r",
-      "url": "https://www.csoonline.com/article/4154222/6-ways-attackers-abuse-ai-services-to-hack-your-business.html",
-      "date": "2026-10-28T08:25:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 15
@@ -1926,7 +1938,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
@@ -1945,7 +1957,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
@@ -1991,7 +2003,7 @@
         "CVE-2023-4863"
       ],
       "articleCount": 1,
-      "score": 59
+      "score": 58
     },
     {
       "title": "EPICS Base",
@@ -2116,7 +2128,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "(Reliable)&#x3f; php2shell exploitability, (Fri, Oct 23rd)",
@@ -2396,7 +2408,31 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 80
+      "score": 78
+    },
+    {
+      "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
+      "summary": "The PHP2Shell saga continues, with attackers discovering new ways to exploit the critical vulnerability impacting millions of organizations worldwide.\nThe US Cybersecurity and Infrastructure Security Agency (CISA) has warned of a high severity Linux kernel privilege escalation flaw that attackers are chaining with PHP2Shell bugs in the wild.\nIdentified as CVE-2026-46300, it could allow attackers to run malicious code with root permissions, giving them unrestricted ability to run commands, tamper",
+      "url": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html",
+      "date": "2026-10-30T00:55:47.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-46300"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-46300"
+      ],
+      "articleCount": 1,
+      "score": 75
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -2430,31 +2466,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 3,
-      "score": 70
-    },
-    {
-      "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
-      "summary": "Cisco has released patches to address a high-severity security flaw in Secure Firewall Adaptive Security Appliance (ASA) Software and Secure Firewall Threat Defense (FTD) Software that it said has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-76418, is rated 8.6 on the CVSS scoring system. Successful exploitation could allow an unauthenticated, remote attacker to cause the",
-      "url": "https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html",
-      "date": "2026-10-29T10:44:46.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-76418"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-76418"
-      ],
-      "articleCount": 1,
-      "score": 69
+      "score": 68
     }
   ],
   "sourcesUsed": [
@@ -2467,5 +2479,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-29T23:34:37.065Z"
+  "lastUpdated": "2026-10-30T02:56:22.611Z"
 }
