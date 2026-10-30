@@ -1,6 +1,121 @@
 {
   "articles": [
     {
+      "title": "We are not ready for what AI has done to red teaming",
+      "source": "CSO Online",
+      "date": "2026-10-30T09:00:00.000Z",
+      "summary": "Something shifted in offensive security over the last eighteen months that most organizations haven’t fully absorbed yet. It isn’t that attackers got smarter. It’s that the economics of attack changed entirely — and those of us who run red teams have had a front-row seat to the transformation.\nThe conversation about AI in cybersecurity tends to fixate on defense: better anomaly detection, faster triage, and AI-assisted SOC analysts. That framing misses the more urgent story. The attack side of t",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4242174/we-are-not-ready-for-what-ai-has-done-to-red-teaming.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Beyond deterministic worms: Preparing the SOC for reasoning adversaries",
+      "source": "CSO Online",
+      "date": "2026-10-30T08:25:00.000Z",
+      "summary": "In May 2017, the WannaCry cryptoworm spread across the internet, compromising more than 200,000 computers in at least 100 countries. The National Audit Office called it the largest cyberattack ever to hit the NHS in England. At least 80 of 236 hospital trusts were infected or disrupted, an estimated 19,000 appointments were cancelled, five hospitals diverted ambulances, and more than 1,200 pieces of diagnostic equipment were infected.\nWhat stopped WannaCry was a stroke of luck. A researcher reve",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4242253/beyond-deterministic-worms-preparing-the-soc-for-reasoning-adversaries.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
+      "source": "Dark Reading",
+      "date": "2026-10-30T08:00:00.000Z",
+      "summary": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+      "source": "The Hacker News",
+      "date": "2026-10-30T07:45:30.000Z",
+      "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component.\n\nThe vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.\n\n\"This module enables you to sell goods and services to customers through an included shopping cart",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-118539"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "source": "The Hacker News",
+      "date": "2026-10-30T07:27:05.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "impactScore": 6,
+      "cveMatches": [
+        "CVE-2026-97229"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-97229"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-97229"
+      ]
+    },
+    {
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "source": "The Hacker News",
+      "date": "2026-10-30T04:14:59.000Z",
+      "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.\n\nThe world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. \n\nTether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-10-30T03:30:17.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33472",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
       "source": "CSO Online",
       "date": "2026-10-30T00:55:47.000Z",
@@ -382,21 +497,6 @@
       ]
     },
     {
-      "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
-      "source": "The Hacker News",
-      "date": "2026-10-29T10:26:33.000Z",
-      "summary": "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time.\n\n\"The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate,\" GitHub said.\n\nThe feature, which currently supports only npm packages, is available in public preview",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
       "source": "Dark Reading",
       "date": "2026-10-29T10:00:00.000Z",
@@ -427,27 +527,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-      "source": "The Hacker News",
-      "date": "2026-10-29T09:05:39.000Z",
-      "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October.\n\nThe flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-97229"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-97229"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-97229"
-      ]
-    },
-    {
       "title": "Securing MCP servers before the AI rollout outpaces security",
       "source": "CSO Online",
       "date": "2026-10-29T09:00:00.000Z",
@@ -473,21 +552,6 @@
       ],
       "url": "https://www.csoonline.com/article/4241941/php2shell-will-persist-in-enterprise-environments-for-years.html",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
-      "source": "The Hacker News",
-      "date": "2026-10-29T08:24:22.000Z",
-      "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network.\n\nThe malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use, Cisco Talos said on October 28. Talos calls the attacks historical but does not specify when they",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -613,21 +677,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Gheist turns GitHub Actions into a secret extraction service",
-      "source": "CSO Online",
-      "date": "2026-10-28T12:05:42.000Z",
-      "summary": "A threat actor dubbed Gheist is turning compromised GitHub accounts into credential-harvesting platforms. By planting malicious GitHub Actions workflows in private repositories, the attackers can expose repository and environment secrets, then retrieve them through GitHub APIs before deleting evidence of the activity.\nTracked since September 15 by Wiz Research, the campaign has left more than 13,500 malicious branches across over 850 compromised accounts, spanning personal projects and private e",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4241625/gheist-turns-github-actions-into-a-secret-extraction-service.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-28T12:00:00.000Z",
@@ -651,23 +700,6 @@
         "CVE-2026-41709",
         "CVE-2026-46300"
       ]
-    },
-    {
-      "title": "Trusting Unsloth’s trust setting could mean executing malicious code",
-      "source": "CSO Online",
-      "date": "2026-10-28T11:53:22.000Z",
-      "summary": "AI developers may have a security setting enabled and still end up running attacker-controlled code. Pillar Security has disclosed a high-severity vulnerability in Unsloth’s model loader that could allow arbitrary Python code execution when processing a maliciously crafted model configuration.\nTracked as CVE-2026-93348, the vulnerability carries a CVSS score of 8.6. Setting trust_remote_code=False does not prevent exploitation because the vulnerable code path does not rely on Hugging Face’s remo",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4241619/trusting-unsloths-trust-setting-could-mean-executing-malicious-code.html",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-93348"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
@@ -710,21 +742,6 @@
       ],
       "url": "https://www.darkreading.com/cyber-risk/3-frameworks-cisos-ai-liability",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
-      "source": "Dark Reading",
-      "date": "2026-10-27T20:42:40.000Z",
-      "summary": "Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "url": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
-      "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -891,21 +908,6 @@
         "General"
       ],
       "url": "https://isc.sans.edu/diary/rss/33454",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "(Reliable)&#x3f; php2shell exploitability, (Fri, Oct 23rd)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-23T20:04:47.000Z",
-      "summary": "Yesterday everyone was running around like crazy (me included :) because of the php2shell vulnerability.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33452",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -1121,6 +1123,147 @@
   ],
   "clusters": [
     {
+      "title": "We are not ready for what AI has done to red teaming",
+      "summary": "Something shifted in offensive security over the last eighteen months that most organizations haven’t fully absorbed yet. It isn’t that attackers got smarter. It’s that the economics of attack changed entirely — and those of us who run red teams have had a front-row seat to the transformation.\nThe conversation about AI in cybersecurity tends to fixate on defense: better anomaly detection, faster triage, and AI-assisted SOC analysts. That framing misses the more urgent story. The attack side of t",
+      "url": "https://www.csoonline.com/article/4242174/we-are-not-ready-for-what-ai-has-done-to-red-teaming.html",
+      "date": "2026-10-30T09:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Beyond deterministic worms: Preparing the SOC for reasoning adversaries",
+      "summary": "In May 2017, the WannaCry cryptoworm spread across the internet, compromising more than 200,000 computers in at least 100 countries. The National Audit Office called it the largest cyberattack ever to hit the NHS in England. At least 80 of 236 hospital trusts were infected or disrupted, an estimated 19,000 appointments were cancelled, five hospitals diverted ambulances, and more than 1,200 pieces of diagnostic equipment were infected.\nWhat stopped WannaCry was a stroke of luck. A researcher reve",
+      "url": "https://www.csoonline.com/article/4242253/beyond-deterministic-worms-preparing-the-soc-for-reasoning-adversaries.html",
+      "date": "2026-10-30T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
+      "summary": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
+      "url": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
+      "date": "2026-10-30T08:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+      "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component.\n\nThe vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13.\n\n\"This module enables you to sell goods and services to customers through an included shopping cart",
+      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+      "date": "2026-10-30T07:45:30.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-118539"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 62
+    },
+    {
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "date": "2026-10-30T07:27:05.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 6,
+      "cveMatches": [
+        "CVE-2026-97229"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-97229"
+      ],
+      "articleCount": 1,
+      "score": 79
+    },
+    {
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets.\n\nThe world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. \n\nTether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The",
+      "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+      "date": "2026-10-30T04:14:59.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33472",
+      "date": "2026-10-30T03:30:17.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 2,
+      "score": 26
+    },
+    {
       "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
       "summary": "The PHP2Shell saga continues, with attackers discovering new ways to exploit the critical vulnerability impacting millions of organizations worldwide.\nThe US Cybersecurity and Infrastructure Security Agency (CISA) has warned of a high severity Linux kernel privilege escalation flaw that attackers are chaining with PHP2Shell bugs in the wild.\nIdentified as CVE-2026-46300, it could allow attackers to run malicious code with root permissions, giving them unrestricted ability to run commands, tamper",
       "url": "https://www.csoonline.com/article/4242454/php2shell-plus-fragnesia-a-dangerous-new-route-from-web-server-to-root.html",
@@ -1142,7 +1285,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 75
+      "score": 71
     },
     {
       "title": "A deep dive into China’s Volt Typhoon suggests it is preparing for an assault on infrastructure",
@@ -1161,7 +1304,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 41
+      "score": 37
     },
     {
       "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
@@ -1180,7 +1323,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Rethinking Cybersecurity Awareness in the AI Era",
@@ -1199,7 +1342,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "New Cisco firewall zero-day being actively exploited",
@@ -1224,7 +1367,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 78
+      "score": 75
     },
     {
       "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
@@ -1243,7 +1386,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
@@ -1262,7 +1405,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 32
     },
     {
       "title": "Linux Kernel TCP Flaw With 9.8 CVSS Score Affects Ubuntu, Red Hat and Other Distributions",
@@ -1283,7 +1426,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "Threat Modeling With 4 Simple Questions on a White Board",
@@ -1302,7 +1445,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "Fake ChatGPT and Claude Apps Abuse Signed Executables to Deploy Crypto Miners",
@@ -1321,7 +1464,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Google's Gemini 4 Carbon Leads Benchmarks for Finding, Exploiting, and Patching Vulnerabilities",
@@ -1340,7 +1483,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Fake Anthropic AI previews lure in overeager employees",
@@ -1359,7 +1502,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 30
     },
     {
       "title": "Anthropic and OpenAI diverge on who should pull the plug on risky AI",
@@ -1378,7 +1521,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1412,7 +1555,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 3,
-      "score": 68
+      "score": 66
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -1431,7 +1574,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 32
     },
     {
       "title": "Hitachi Energy CoreTec Product",
@@ -1450,7 +1593,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Siemens Mendix SAML Module",
@@ -1471,7 +1614,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Imposter abused trust in OpenAI, Anthropic, and 30 others to hunt for secrets",
@@ -1490,7 +1633,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Webinar: How to Build AI Threat Readiness Into Your Security Operations",
@@ -1509,7 +1652,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Telegram Android Flaw Lets Attackers Run Code When Users Answer Voice Calls",
@@ -1528,7 +1671,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "The Rise of the Threat Operator: How AI Will Redefine Security Operations and Careers",
@@ -1547,7 +1690,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "26,400 Valid Cloud and AI Credentials Found Exposed in Public Gitee Repositories",
@@ -1566,7 +1709,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Cisco Patches Actively Exploited ASA and FTD VPN Flaw That Can Crash Firewalls",
@@ -1590,26 +1733,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 68
-    },
-    {
-      "title": "GitHub Launches npm Firewall to Block Malicious Packages Before Installation",
-      "summary": "GitHub has announced that it's introducing a new package firewall as a preview to block installation of suspicious npm packages during installation time.\n\n\"The firewall inspects both metadata requests and package downloads for signs of malicious activity, acting as an install-time policy gate,\" GitHub said.\n\nThe feature, which currently supports only npm packages, is available in public preview",
-      "url": "https://thehackernews.com/2026/10/github-launches-npm-firewall-to-block.html",
-      "date": "2026-10-29T10:26:33.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
+      "score": 65
     },
     {
       "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
@@ -1628,7 +1752,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Vulnerability exploitation rising as the root cause of many breaches",
@@ -1647,30 +1771,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "Attacker Tried to Exploit Alpine Linux’s GitLab via CVSS 10.0 Flaw Its Ruby Left Open",
-      "summary": "An attacker tried to exploit a critical GitLab vulnerability on the Alpine Linux project's own GitLab server a week after GitLab released a fix, Alpine Linux said on 28 October.\n\nThe flaw, CVE-2026-97229 (CVSS score: 10.0), can let an attacker run code on a GitLab server through a crafted regular expression in a CI configuration. Alpine found no evidence that the attack worked but",
-      "url": "https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html",
-      "date": "2026-10-29T09:05:39.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-97229"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-97229"
-      ],
-      "articleCount": 1,
-      "score": 65
+      "score": 19
     },
     {
       "title": "Securing MCP servers before the AI rollout outpaces security",
@@ -1689,7 +1790,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "PHP2Shell will persist in enterprise environments for years",
@@ -1708,26 +1809,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "Hackers Exploited Cisco SD-WAN Flaw to Plant Malware Built to Steal Encryption Keys",
-      "summary": "Hackers exploited a critical Cisco Catalyst SD-WAN flaw, fixed in February, to plant custom malware inside the systems that control an organization's SD-WAN network.\n\nThe malware, called KeyDrift, is designed to copy the keys that encrypt traffic between sites and store them for later use, Cisco Talos said on October 28. Talos calls the attacks historical but does not specify when they",
-      "url": "https://thehackernews.com/2026/10/hackers-exploited-cisco-sd-wan-flaw-to.html",
-      "date": "2026-10-29T08:24:22.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 31
+      "score": 18
     },
     {
       "title": "Cyber Vulnerabilities Besiege Italy, Absent Clear Cause",
@@ -1746,7 +1828,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
@@ -1765,26 +1847,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "ISC Stormcast For Thursday, October 29th, 2026 https://isc.sans.edu/podcastdetail/10156, (Thu, Oct 29th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33468",
-      "date": "2026-10-29T03:10:12.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Yet Another ClickFix Campaign, (Wed, Oct 28th)",
@@ -1803,7 +1866,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "GhostAction Hacking Wave Fizzles, but Attackers Lurk on in GitHub",
@@ -1822,7 +1885,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 28
     },
     {
       "title": "AI Takes Root in Hospital Corridors, Raises Security Stakes",
@@ -1841,7 +1904,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Attacker Relentlessly Scans for Credentials by Impersonating AI Bots",
@@ -1860,7 +1923,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Fake ChatGPT, Claude apps spread malware via signed AI binaries",
@@ -1879,47 +1942,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
-    },
-    {
-      "title": "Gheist turns GitHub Actions into a secret extraction service",
-      "summary": "A threat actor dubbed Gheist is turning compromised GitHub accounts into credential-harvesting platforms. By planting malicious GitHub Actions workflows in private repositories, the attackers can expose repository and environment secrets, then retrieve them through GitHub APIs before deleting evidence of the activity.\nTracked since September 15 by Wiz Research, the campaign has left more than 13,500 malicious branches across over 850 compromised accounts, spanning personal projects and private e",
-      "url": "https://www.csoonline.com/article/4241625/gheist-turns-github-actions-into-a-secret-extraction-service.html",
-      "date": "2026-10-28T12:05:42.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "Trusting Unsloth’s trust setting could mean executing malicious code",
-      "summary": "AI developers may have a security setting enabled and still end up running attacker-controlled code. Pillar Security has disclosed a high-severity vulnerability in Unsloth’s model loader that could allow arbitrary Python code execution when processing a maliciously crafted model configuration.\nTracked as CVE-2026-93348, the vulnerability carries a CVSS score of 8.6. Setting trust_remote_code=False does not prevent exploitation because the vulnerable code path does not rely on Hugging Face’s remo",
-      "url": "https://www.csoonline.com/article/4241619/trusting-unsloths-trust-setting-could-mean-executing-malicious-code.html",
-      "date": "2026-10-28T11:53:22.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-93348"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
+      "score": 24
     },
     {
       "title": "Third Serengeti Sweep Tops 1,400 Arrests as Investigations Mature",
@@ -1938,7 +1961,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
+    },
+    {
+      "title": "ISC Stormcast For Wednesday, October 28th, 2026 https://isc.sans.edu/podcastdetail/10154, (Wed, Oct 28th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33464",
+      "date": "2026-10-28T02:30:11.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 3,
+      "score": 13
     },
     {
       "title": "3 Frameworks to Protect CISOs &amp; Orgs Against AI Liability",
@@ -1957,26 +1999,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
-    },
-    {
-      "title": "External Teams Chats Anchor 15-Minute Malware Delivery",
-      "summary": "Mail bombing is getting a new look with a wide-scale, ongoing social engineering campaign that might be tied to the Black Basta ransomware gang.",
-      "url": "https://www.darkreading.com/cloud-security/email-bombing-external-teams-chats-repeatable-access-path",
-      "date": "2026-10-27T20:42:40.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 26
+      "score": 12
     },
     {
       "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
@@ -2027,26 +2050,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
-    },
-    {
-      "title": "ISC Stormcast For Tuesday, October 27th, 2026 https://isc.sans.edu/podcastdetail/10152, (Tue, Oct 27th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33462",
-      "date": "2026-10-27T02:55:13.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 12
+      "score": 22
     },
     {
       "title": "Apple Patches for October 2026, (Mon, Oct 26th)",
@@ -2065,7 +2069,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -2116,25 +2120,6 @@
       "summary": "YARA-X&#;x26;#;39;s 1.22.0 release brings 11 improvements and 9 bugfixes.",
       "url": "https://isc.sans.edu/diary/rss/33454",
       "date": "2026-10-25T19:57:53.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "(Reliable)&#x3f; php2shell exploitability, (Fri, Oct 23rd)",
-      "summary": "Yesterday everyone was running around like crazy (me included :) because of the php2shell vulnerability.",
-      "url": "https://isc.sans.edu/diary/rss/33452",
-      "date": "2026-10-23T20:04:47.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -2386,6 +2371,31 @@
   ],
   "top3": [
     {
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "date": "2026-10-30T07:27:05.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 6,
+      "cveMatches": [
+        "CVE-2026-97229"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-97229"
+      ],
+      "articleCount": 1,
+      "score": 79
+    },
+    {
       "title": "New Cisco firewall zero-day being actively exploited",
       "summary": "A high-severity flaw in the Remote Access SSL VPN service of Cisco Secure Firewall Adaptive Security Appliance (ASA) and Cisco Secure Firewall Threat Defense (FTD) is under active exploitation to crash vulnerable devices.\nThe vulnerability, tracked as CVE-2026-76418 and rated 8.6 in severity, is due to logic errors when secondary authentication is configured on a tunnel group, Cisco said in its advisory. It could allow a remote, unauthenticated attacker to send a crafted request when connecting ",
       "url": "https://www.csoonline.com/article/4242420/new-cisco-firewall-zero-day-being-actively-exploited.html",
@@ -2408,7 +2418,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 78
+      "score": 75
     },
     {
       "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
@@ -2432,41 +2442,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 75
-    },
-    {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability\nCVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risk",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "date": "2026-10-29T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-97229",
-        "CVE-2026-76418",
-        "CVE-2026-41709",
-        "CVE-2026-46300",
-        "CVE-2026-48356",
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-97229",
-        "CVE-2026-76418",
-        "CVE-2026-41709",
-        "CVE-2026-46300",
-        "CVE-2026-48356",
-        "CVE-2026-111497"
-      ],
-      "articleCount": 3,
-      "score": 68
+      "score": 71
     }
   ],
   "sourcesUsed": [
@@ -2479,5 +2455,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-30T02:56:22.611Z"
+  "lastUpdated": "2026-10-30T09:48:27.608Z"
 }
