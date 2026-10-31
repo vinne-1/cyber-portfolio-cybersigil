@@ -12,6 +12,9 @@
     "express-rate-limit": "^7.5.0",
     "helmet": "^8.0.0",
     "rss-parser": "^3.13.0"
+  },
+  "overrides": {
+    "qs": "^6.16.1"
   }
 }
 
