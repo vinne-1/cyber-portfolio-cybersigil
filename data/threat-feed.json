@@ -1143,7 +1143,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
@@ -1162,7 +1162,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 28
+      "score": 26
     },
     {
       "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
@@ -1181,7 +1181,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
@@ -1206,7 +1206,7 @@
         "CVE-2026-111357"
       ],
       "articleCount": 1,
-      "score": 77
+      "score": 75
     },
     {
       "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
@@ -1225,7 +1225,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
@@ -1244,7 +1244,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Choosing a WAAP in 2026: 3 questions that separate the shortlist",
@@ -1263,7 +1263,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "Devs Hit by Trojanized Claude Code Extension for Cursor",
@@ -1282,7 +1282,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Behind the Scenes of How Operation Blackout Went Down",
@@ -1301,7 +1301,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Why identity governance demands executive attention",
@@ -1320,7 +1320,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
@@ -1339,7 +1339,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
@@ -1358,7 +1358,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "TeamViewer Flaw Lets Remote Computers Attack Users Who Connect to Control Them",
@@ -1377,7 +1377,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Undead Software Projects Continue to Raise Security Risks",
@@ -1396,7 +1396,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "WordPress RCE Flaw Draws Nearly 63,000 Attack Attempts in Just 24 Hours",
@@ -1415,7 +1415,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "Anthropic AI model finds Linux kernel bug that leads to remote root access",
@@ -1437,7 +1437,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 43
+      "score": 42
     },
     {
       "title": "Trezor Warns of Suspected Hardware Implant in One of Its Wallets Sold by CryptoBilis",
@@ -1456,7 +1456,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1490,7 +1490,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 3,
-      "score": 65
+      "score": 63
     },
     {
       "title": "Why Urgent Security Fixes Aren't Fixed. Observe, Prove, Act, Confirm Gets Them Moving",
@@ -1509,7 +1509,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Syrian Hacker Behind Fake Tweet That Triggered $136 Billion Market Drop Gets 42 Months in Prison",
@@ -1528,7 +1528,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Mistral open-sources AI model despite warning it could aid cyberattacks",
@@ -1547,7 +1547,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Everyday channels are available in an incident, but you may not want them",
@@ -1566,7 +1566,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "We are not ready for what AI has done to red teaming",
@@ -1585,7 +1585,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Official Claude Code Extension on Cursor Marketplace Trojanized with Persistent SSH Backdoor",
@@ -1604,7 +1604,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Beyond deterministic worms: Preparing the SOC for reasoning adversaries",
@@ -1623,7 +1623,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
@@ -1642,7 +1642,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
@@ -1663,7 +1663,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     },
     {
       "title": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
@@ -1682,7 +1682,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 16
+      "score": 15
     },
     {
       "title": "PHP2Shell plus Fragnesia: A dangerous new route from web server to root",
@@ -1706,7 +1706,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 62
+      "score": 61
     },
     {
       "title": "A deep dive into China’s Volt Typhoon suggests it is preparing for an assault on infrastructure",
@@ -1725,7 +1725,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Anthropic-Themed Phishing Emails Bypass Top Security Tools",
@@ -1744,7 +1744,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Rethinking Cybersecurity Awareness in the AI Era",
@@ -1763,7 +1763,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Why CTF Competitions May Be More Important Than Ever",
@@ -1782,7 +1782,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "New Cisco firewall zero-day being actively exploited",
@@ -1807,7 +1807,7 @@
         "CVE-2026-76418"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 67
     },
     {
       "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
@@ -1826,7 +1826,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Threat Modeling With 4 Simple Questions on a White Board",
@@ -1864,7 +1864,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Anthropic and OpenAI diverge on who should pull the plug on risky AI",
@@ -1883,7 +1883,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -1921,7 +1921,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Siemens Mendix SAML Module",
@@ -1942,7 +1942,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Shadowy AI Relay Disables OpenAI Codex, Claude Code Sandboxes",
@@ -2379,7 +2379,7 @@
         "CVE-2026-111357"
       ],
       "articleCount": 1,
-      "score": 77
+      "score": 75
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -2413,7 +2413,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 3,
-      "score": 65
+      "score": 63
     },
     {
       "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
@@ -2434,7 +2434,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     }
   ],
   "sourcesUsed": [
@@ -2447,5 +2447,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-10-31T13:25:43.622Z"
+  "lastUpdated": "2026-10-31T17:55:25.007Z"
 }
