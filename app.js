@@ -2548,7 +2548,39 @@
         [/\bin conclusion,?\s*/gi, ''],
         [/\bto summarize,?\s*/gi, ''],
         [/\bto sum up,?\s*/gi, ''],
-        [/\bin summary,?\s*/gi, '']
+        [/\bin summary,?\s*/gi, ''],
+        // Added 2026-11-01: more stock phrases/filler intros and a few more
+        // marketing-speak verbs, following the same verb-form-preserving and
+        // low-false-positive-risk approach as the existing entries above
+        // (deliberately skipped words like "navigate" or "foster" that have
+        // strong everyday literal meanings outside corporate writing).
+        [/\bit'?s worth (?:mentioning|pointing out) that\s+/gi, ''],
+        [/\bneedless to say,?\s*/gi, ''],
+        [/\bit goes without saying that\s+/gi, ''],
+        [/\bat the end of the day,?\s*/gi, ''],
+        [/\bthe bottom line is(?: that)?\s+/gi, ''],
+        [/\bin a nutshell,?\s*/gi, ''],
+        [/\bas previously mentioned,?\s*/gi, ''],
+        // Lowercase replacements on purpose, same reason as however/therefore
+        // above: these run before sentence-splitting, so a hardcoded capital
+        // would stick even mid-sentence. humanizerCapitalize() fixes the real
+        // sentence-initial case afterward.
+        [/\bwith that (?:being )?said,?\s*/gi, 'still, '],
+        [/\bfirst and foremost,?\s*/gi, 'first, '],
+        [/\blast but not least,?\s*/gi, 'finally, '],
+        [/\bthe fact of the matter is(?: that)?\s+/gi, ''],
+        [/\bboasts\b/gi, 'has'],
+        [/\bboasting\b/gi, 'having'],
+        [/\bboasted\b/gi, 'had'],
+        [/\bboast\b/gi, 'have'],
+        [/\belevates\b/gi, 'improves'],
+        [/\belevating\b/gi, 'improving'],
+        [/\belevated\b/gi, 'improved'],
+        [/\belevate\b/gi, 'improve'],
+        [/\bgame-changing\b/gi, 'significant'],
+        [/\ba game[\s-]changer\b/gi, 'a significant change'],
+        [/\bunprecedented\b/gi, 'new'],
+        [/\bin light of\b/gi, 'given']
     ];
 
     var HUMANIZER_CONTRACTIONS = [
@@ -2590,6 +2622,25 @@
             text = text.replace(pair[0], pair[1]);
         });
         return text.replace(/\s{2,}/g, ' ').replace(/\s+([,.;!?])/g, '$1').trim();
+    }
+
+    // A swap can land a replacement word right after "a"/"an" with the wrong
+    // one for it ("an unprecedented" -> "an new" once "unprecedented" becomes
+    // "new"). Corrects based on the replacement word's actual sound, not
+    // just whether it starts with a vowel LETTER -- a few common words break
+    // that rule in both directions, so those are special-cased rather than
+    // left wrong (spelled-vowel-but-consonant-sound: university, one, use...;
+    // spelled-consonant-but-vowel-sound: hour, honest, heir...). Not a full
+    // grammar checker, just enough to make the common post-swap cases right.
+    var HUMANIZER_AN_EXCEPTIONS = /^(?:unicorn|unicycle|uniform(?:s|ly)?|uni(?:on|ons|que|ted|t|ts|versal|versity|versities|verse)|us(?:e|es|ed|ing|er|ers|ual|ually|able|ability|eful|eless)|one(?:self)?|once|European?s?|ouija)/i;
+    var HUMANIZER_A_EXCEPTIONS = /^(?:hour(?:s|ly)?|honest(?:y|ly)?|hono(?:r|ur)(?:s|ed|able)?|heir(?:s|ess)?|herb(?:s|al)?)/i;
+    function humanizerFixArticles(text) {
+        return text.replace(/\b([Aa]n?)(\s+)([A-Za-z][\w'-]*)/g, function (match, article, space, word) {
+            var vowelSound = HUMANIZER_A_EXCEPTIONS.test(word) || (/^[aeiou]/i.test(word) && !HUMANIZER_AN_EXCEPTIONS.test(word));
+            var correct = vowelSound ? 'an' : 'a';
+            if (article[0] === article[0].toUpperCase()) correct = correct.charAt(0).toUpperCase() + correct.slice(1);
+            return correct + space + word;
+        });
     }
 
     function humanizerContract(text) {
@@ -2640,14 +2691,14 @@
             out.push(humanizerCapitalize(sentence));
         }
         var joined = out.join(' ').replace(/\s{2,}/g, ' ').trim();
-        // Removing a word (an intensifier, a stripped filler phrase) can
-        // leave "a" directly in front of a vowel-sound word it was never
-        // meant to pair with -- e.g. "really a very important system" with
-        // both qualifiers stripped becomes "a important system" otherwise.
-        joined = joined.replace(/\b(a)(\s+)(?=[aeiouAEIOU])/gi, function (m, article, space) {
-            return (article === 'A' ? 'An' : 'an') + space;
-        });
-        return joined;
+        // Run the a/an fix last, after every transformation (swaps,
+        // intensifier-stripping, sentence rejoining) that could have left a
+        // mismatch -- e.g. a swap like "unprecedented" -> "new" needs "an"
+        // flipped to "a", and stripping "very" from "a very important system"
+        // needs the reverse. One exception-aware pass at the end catches
+        // both, instead of an early pass and a separate naive one at the end
+        // disagreeing with each other.
+        return humanizerFixArticles(joined);
     }
 
     function humanizeText(raw, tone) {
