@@ -1121,6 +1121,64 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero__medallion { opacity: 0.4; width: 90vw; right: -10vw; }
 }
 
+/* Hero eye -- #heroEyeIris translates (via --eye-x/--eye-y, set in app.js) to
+   track the cursor or lock to center; #heroEye blinks as a whole so the
+   socket ring closes along with the iris/pupil, not just the pupil alone. */
+.hero__eye-iris {
+  transform-origin: 300px 300px;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: translate(var(--eye-x, 0px), var(--eye-y, 0px));
+}
+.hero__eye {
+  transform-origin: 300px 300px;
+  transition: transform 0.12s ease-in;
+}
+.hero__eye.is-blinking {
+  transform: scaleY(0.05);
+}
+.hero__eye-pupil {
+  transition: opacity 0.6s ease;
+}
+.hero__eye.is-watching .hero__eye-pupil {
+  opacity: 0.65;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero__eye-iris, .hero__eye { transition: none; }
+}
+
+/* Seal ring + pentagram spin on hover -- the eye lives outside this group
+   (see markup) so it keeps tracking/blinking steadily through the spin. */
+.hero__medallion-spin {
+  transform-origin: 300px 300px;
+}
+.hero__medallion-hotspot {
+  position: absolute;
+  top: 50%;
+  right: clamp(-12vw, -4vw, 2vw);
+  transform: translateY(-50%);
+  width: clamp(420px, 48vw, 760px);
+  height: clamp(420px, 48vw, 760px);
+  clip-path: circle(36% at 50% 50%);
+  z-index: 3;
+  pointer-events: auto;
+  cursor: default;
+}
+@media (max-width: 760px) {
+  .hero__medallion-hotspot { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero__medallion-spin.is-spinning {
+    animation: medallionSpin 0.5s linear infinite;
+  }
+}
+@keyframes medallionSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.medallion-ring-text {
+  font-family: var(--font-mono, monospace);
+}
+
 /* Capabilities corner mark — smaller page-identity echo of the hero
    medallion, confined to the top-right corner and masked away from
    the heading (same ornament-fades-before-text rule). */

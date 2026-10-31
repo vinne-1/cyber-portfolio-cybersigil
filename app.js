@@ -595,6 +595,8 @@
         stopHeroVisibilityObserver();
         stopMatrixCanvas();
         stopParticleNetwork();
+        stopHeroEye();
+        stopHeroMedallionSpin();
 
         transitionOut().then(function () {
             renderPage(template);
@@ -1560,6 +1562,151 @@
     }
 
     /* ----------------------------------------------------------
+       HERO EYE
+       #heroEyeIris tracks the cursor (soft pull, not a hard lock --
+       it reads as "aware", not literally aimed). On a random interval
+       it breaks the 4th wall: locks to dead-center as if looking
+       straight out at the visitor, holds briefly, then resumes
+       tracking. Blinks on its own schedule for a living feel. No-ops
+       entirely under prefers-reduced-motion.
+       ---------------------------------------------------------- */
+    var heroEyeRaf = null;
+    var heroEyeStareTimer = null;
+    var heroEyeBlinkTimer = null;
+    var heroEyeListeners = null;
+
+    function setupHeroEye() {
+        stopHeroEye();
+        if (prefersReducedMotion) return;
+
+        var socket = app.querySelector('#heroEyeSocket');
+        var iris = app.querySelector('#heroEyeIris');
+        var eyeGroup = app.querySelector('#heroEye');
+        if (!socket || !iris || !eyeGroup) return;
+
+        var MAX_OFFSET = 20; // svg user units -- iris r=40 minus pupil r=14, with margin
+        var socketRect = socket.getBoundingClientRect();
+        var mouseX = null;
+        var mouseY = null;
+        var isStaring = true; // begin centered, as if already meeting the visitor's gaze
+        var framePending = false;
+
+        function refreshRect() { socketRect = socket.getBoundingClientRect(); }
+
+        function applyLook(nx, ny) {
+            iris.style.setProperty('--eye-x', (nx * MAX_OFFSET).toFixed(1) + 'px');
+            iris.style.setProperty('--eye-y', (ny * MAX_OFFSET).toFixed(1) + 'px');
+        }
+
+        function frame() {
+            framePending = false;
+            if (isStaring || mouseX === null) {
+                applyLook(0, 0);
+                return;
+            }
+            var cx = socketRect.left + socketRect.width / 2;
+            var cy = socketRect.top + socketRect.height / 2;
+            var dx = mouseX - cx;
+            var dy = mouseY - cy;
+            var dist = Math.sqrt(dx * dx + dy * dy) || 1;
+            // Saturates quickly with distance so the pupil nudges toward the
+            // cursor rather than literally aiming at it from anywhere on screen.
+            var pull = Math.min(dist / 400, 1);
+            applyLook((dx / dist) * pull, (dy / dist) * pull);
+        }
+
+        function onMouseMove(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            if (!framePending) {
+                framePending = true;
+                heroEyeRaf = requestAnimationFrame(frame);
+            }
+        }
+
+        function enterStare(holdMs) {
+            isStaring = true;
+            eyeGroup.classList.add('is-watching');
+            applyLook(0, 0);
+            heroEyeStareTimer = setTimeout(function () {
+                isStaring = false;
+                eyeGroup.classList.remove('is-watching');
+                scheduleStare();
+            }, holdMs);
+        }
+
+        function scheduleStare() {
+            heroEyeStareTimer = setTimeout(function () {
+                enterStare(1800 + Math.random() * 900);
+            }, 5000 + Math.random() * 6000);
+        }
+
+        function scheduleBlink() {
+            heroEyeBlinkTimer = setTimeout(function () {
+                eyeGroup.classList.add('is-blinking');
+                heroEyeBlinkTimer = setTimeout(function () {
+                    eyeGroup.classList.remove('is-blinking');
+                    scheduleBlink();
+                }, 180);
+            }, 3500 + Math.random() * 5000);
+        }
+
+        window.addEventListener('mousemove', onMouseMove, { passive: true });
+        window.addEventListener('resize', refreshRect);
+        window.addEventListener('scroll', refreshRect, { passive: true });
+
+        // Meet the visitor's gaze briefly on load, then settle into tracking.
+        enterStare(1500);
+        scheduleBlink();
+
+        heroEyeListeners = { onMouseMove: onMouseMove, refreshRect: refreshRect };
+    }
+
+    function stopHeroEye() {
+        if (heroEyeRaf) { cancelAnimationFrame(heroEyeRaf); heroEyeRaf = null; }
+        if (heroEyeStareTimer) { clearTimeout(heroEyeStareTimer); heroEyeStareTimer = null; }
+        if (heroEyeBlinkTimer) { clearTimeout(heroEyeBlinkTimer); heroEyeBlinkTimer = null; }
+        if (heroEyeListeners) {
+            window.removeEventListener('mousemove', heroEyeListeners.onMouseMove);
+            window.removeEventListener('resize', heroEyeListeners.refreshRect);
+            window.removeEventListener('scroll', heroEyeListeners.refreshRect);
+            heroEyeListeners = null;
+        }
+    }
+
+    /* ----------------------------------------------------------
+       HERO MEDALLION SPIN
+       Hovering the seal's hotspot spins the ring/pentagram/text --
+       the eye lives outside that group (see markup) so it keeps
+       tracking/blinking steadily through the spin.
+       ---------------------------------------------------------- */
+    var heroMedallionSpinListeners = null;
+
+    function setupHeroMedallionSpin() {
+        stopHeroMedallionSpin();
+
+        var hotspot = app.querySelector('.hero__medallion-hotspot');
+        var spinGroup = app.querySelector('.hero__medallion-spin');
+        if (!hotspot || !spinGroup) return;
+
+        function onEnter() { spinGroup.classList.add('is-spinning'); }
+        function onLeave() { spinGroup.classList.remove('is-spinning'); }
+
+        hotspot.addEventListener('mouseenter', onEnter);
+        hotspot.addEventListener('mouseleave', onLeave);
+
+        heroMedallionSpinListeners = { el: hotspot, onEnter: onEnter, onLeave: onLeave };
+    }
+
+    function stopHeroMedallionSpin() {
+        if (heroMedallionSpinListeners) {
+            heroMedallionSpinListeners.el.removeEventListener('mouseenter', heroMedallionSpinListeners.onEnter);
+            heroMedallionSpinListeners.el.removeEventListener('mouseleave', heroMedallionSpinListeners.onLeave);
+            heroMedallionSpinListeners = null;
+        }
+    }
+
+    /* ----------------------------------------------------------
        HERO VISIBILITY OBSERVER
        Pauses the matrix/particle canvases while the hero is
        scrolled off-screen, resumes them when it re-enters view.
@@ -1579,9 +1726,13 @@
                     // (e.g. the initial observe firing right after setup).
                     if (!matrixAnimFrame) setupMatrixCanvas();
                     if (!particleAnimFrame) setupParticleNetwork();
+                    setupHeroEye();
+                    setupHeroMedallionSpin();
                 } else {
                     stopMatrixCanvas();
                     stopParticleNetwork();
+                    stopHeroEye();
+                    stopHeroMedallionSpin();
                 }
             });
         }, { threshold: 0 });
