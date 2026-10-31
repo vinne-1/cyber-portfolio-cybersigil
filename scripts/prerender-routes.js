@@ -69,6 +69,10 @@ const ROUTES = {
     title: 'Phrases That Make Writing Sound Stiff — Vineet Vishesh',
     description: 'Common stock phrases and stiff sentence patterns that make writing sound formulaic — and how to fix them, free, with the Text Humanizer tool.'
   },
+  '/guides/browser-file-conversion': {
+    title: 'Why Convert Files In Your Browser — Vineet Vishesh',
+    description: "What client-side file conversion actually means, why it's a real privacy difference, and what a browser-only tool genuinely can't do — free, with the File Converter tool."
+  },
   '/credentials': {
     title: 'Credentials — Vineet Vishesh',
     description: 'Certifications and credentials — CompTIA Security+, Certified Red Team Analyst (CRTA), and professional endorsements.'
