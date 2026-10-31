@@ -2035,8 +2035,25 @@
         var top3El = app.querySelector('#tlTop3');
         var filtersEl = app.querySelector('#tlFilters');
         var methodologyEl = app.querySelector('#tlMethodology');
+        var lastUpdatedEl = app.querySelector('#tlLastUpdated');
         var allClusters = [];
         var activeFilter = 'all';
+        var feedLastUpdatedMs = null;
+
+        function renderLastUpdated() {
+            if (!lastUpdatedEl || !feedLastUpdatedMs) return;
+            var diffMs = Date.now() - feedLastUpdatedMs;
+            var mins = Math.max(0, Math.round(diffMs / 60000));
+            var text;
+            if (mins < 1) text = 'Updated just now';
+            else if (mins === 1) text = 'Updated 1 minute ago';
+            else if (mins < 60) text = 'Updated ' + mins + ' minutes ago';
+            else {
+                var hrs = Math.round(mins / 60);
+                text = 'Updated ' + hrs + ' hour' + (hrs === 1 ? '' : 's') + ' ago';
+            }
+            lastUpdatedEl.textContent = text + ' — refreshes automatically every ~20 minutes';
+        }
 
         var LIST_DISPLAY_CAP = 30;
 
@@ -2106,6 +2123,17 @@
                 allClusters = data.clusters || [];
                 tlRenderTop3Into(top3El, data.top3);
                 if (methodologyEl) methodologyEl.textContent = data.rankingMethodology || '';
+                if (data.lastUpdated) {
+                    var parsed = Date.parse(data.lastUpdated);
+                    if (!isNaN(parsed)) {
+                        feedLastUpdatedMs = parsed;
+                        renderLastUpdated();
+                        // Re-render every 30s so "X minutes ago" stays accurate
+                        // for a visitor lingering on the page -- cleaned up
+                        // automatically on route change via cleanupPending().
+                        trackInterval(renderLastUpdated, 30000);
+                    }
+                }
                 renderFilters();
                 renderList();
             })
