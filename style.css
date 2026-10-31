@@ -2639,6 +2639,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .whr-row--fail { border-left-color: var(--crimson); }
 .whr-row--pass { border-left-color: #28c840; }
+.whr-row--unknown { border-left-color: var(--gray-300); }
 
 .whr-passed-toggle {
   display: flex;

@@ -2170,8 +2170,10 @@
     }
 
     function whrChecklistRow(label, pass, detail) {
-        return '<div class="whr-row ' + (pass ? 'whr-row--pass' : 'whr-row--fail') + '">' +
-            '<span style="width:8px; height:8px; border-radius:50%; background:' + (pass ? '#28c840' : 'var(--crimson)') + '; margin-top:0.35rem; flex-shrink:0;"></span>' +
+        var rowClass = pass === null ? 'whr-row--unknown' : (pass ? 'whr-row--pass' : 'whr-row--fail');
+        var dotColor = pass === null ? 'var(--gray-300)' : (pass ? '#28c840' : 'var(--crimson)');
+        return '<div class="whr-row ' + rowClass + '">' +
+            '<span style="width:8px; height:8px; border-radius:50%; background:' + dotColor + '; margin-top:0.35rem; flex-shrink:0;"></span>' +
             '<div>' +
                 '<div style="font-size:0.85rem; color:var(--white); font-weight:500;">' + escapeHtml(label) + '</div>' +
                 (detail ? '<div style="font-size:0.75rem; color:var(--gray-300); margin-top:0.15rem;">' + escapeHtml(String(detail)) + '</div>' : '') +
@@ -2186,11 +2188,13 @@
     var whrGroupIdCounter = 0;
     function whrRenderGroupedChecklist(targetEl, items) {
         if (!targetEl) return;
-        var fails = items.filter(function (i) { return !i.pass; });
-        var passes = items.filter(function (i) { return i.pass; });
+        var fails = items.filter(function (i) { return i.pass === false; });
+        var unknowns = items.filter(function (i) { return i.pass === null; });
+        var passes = items.filter(function (i) { return i.pass === true; });
         var groupId = 'whrGroup' + (whrGroupIdCounter++);
 
         var html = fails.map(function (i) { return whrChecklistRow(i.label, false, i.detail); }).join('');
+        html += unknowns.map(function (i) { return whrChecklistRow(i.label, null, i.detail); }).join('');
 
         if (passes.length) {
             html += '<button type="button" class="whr-passed-toggle" aria-expanded="false" aria-controls="' + groupId + '">' +

@@ -236,6 +236,19 @@ function extractMetaContent(html, nameOrProperty, attr = 'name') {
   return m ? decodeHtmlEntities((m[1] || m[2] || '').trim()) : null;
 }
 
+// Strips <template>...</template> blocks before any check that counts or
+// scans body content. <template> content is inert per the HTML5 spec --
+// never part of the live DOM, never rendered, never seen by a real visitor
+// or by Googlebot -- until something clones it with JS. Client-side-routed
+// SPAs (this site included) commonly keep every route's markup, one <h1>
+// apiece, sitting dormant in <template> tags, which a naive raw-HTML scan
+// over-counts. Checks that look at single <head> tags (title, canonical,
+// OG, etc.) are unaffected since <head> itself is never duplicated inside
+// a <template>; only whole-body scans like h1 count and image/alt need this.
+function stripTemplateTags(html) {
+  return html.replace(/<template[^>]*>[\s\S]*?<\/template>/gi, '');
+}
+
 function parseSeo(html) {
   const title = extractTag(html, /<title[^>]*>([^<]*)<\/title>/i);
   const description = extractMetaContent(html, 'description');
@@ -247,9 +260,25 @@ function parseSeo(html) {
   const ogImage = extractMetaContent(html, 'og:image', 'property');
   const twitterCard = extractMetaContent(html, 'twitter:card');
   const hasJsonLd = /<script[^>]+type=["']application\/ld\+json["']/i.test(html);
-  const h1Count = (html.match(/<h1[\s>]/gi) || []).length;
-  const imgTags = html.match(/<img\b[^>]*>/gi) || [];
+  const hasTemplates = /<template[\s>]/i.test(html);
+  const rawH1Count = (html.match(/<h1[\s>]/gi) || []).length;
+  const rawImgTags = html.match(/<img\b[^>]*>/gi) || [];
+  const renderedHtml = stripTemplateTags(html);
+  const h1Count = (renderedHtml.match(/<h1[\s>]/gi) || []).length;
+  const imgTags = renderedHtml.match(/<img\b[^>]*>/gi) || [];
   const imagesMissingAlt = imgTags.filter((tag) => !/\balt=/i.test(tag)).length;
+
+  // Client-side-routed SPAs can keep every route's markup -- real content
+  // included -- dormant inside <template> tags until JS clones it in. This
+  // tool deliberately doesn't run a headless browser (see file header), so
+  // when a check's only matches live inside <template> blocks, it genuinely
+  // can't tell pass from fail -- that content may render fine once JS runs,
+  // or may not. Reporting a hard pass/fail either way would be a guess
+  // dressed up as a measurement, so these come through as `pass: null`
+  // ("can't verify") instead, excluded from the score rather than silently
+  // counted as a failure.
+  const h1Unverifiable = h1Count === 0 && hasTemplates && rawH1Count > 0;
+  const altUnverifiable = imgTags.length === 0 && hasTemplates && rawImgTags.length > 0;
 
   const checks = [
     { label: 'Title tag', pass: Boolean(title && title.length > 0 && title.length <= 60), detail: title || 'Missing' },
@@ -259,12 +288,17 @@ function parseSeo(html) {
     { label: 'Open Graph tags', pass: Boolean(ogTitle && ogDescription && ogImage), detail: ogTitle ? 'Present' : 'Missing' },
     { label: 'Twitter Card tag', pass: Boolean(twitterCard), detail: twitterCard || 'Missing' },
     { label: 'Structured data (JSON-LD)', pass: hasJsonLd, detail: hasJsonLd ? 'Present' : 'Missing' },
-    { label: 'Exactly one <h1>', pass: h1Count === 1, detail: `${h1Count} found` },
-    { label: 'Images have alt text', pass: imagesMissingAlt === 0, detail: imgTags.length ? `${imagesMissingAlt}/${imgTags.length} missing alt` : 'No images' },
+    h1Unverifiable
+      ? { label: 'Exactly one <h1>', pass: null, detail: 'Could not verify — this page\'s content is rendered by JavaScript' }
+      : { label: 'Exactly one <h1>', pass: h1Count === 1, detail: `${h1Count} found` },
+    altUnverifiable
+      ? { label: 'Images have alt text', pass: null, detail: 'Could not verify — this page\'s content is rendered by JavaScript' }
+      : { label: 'Images have alt text', pass: imagesMissingAlt === 0, detail: imgTags.length ? `${imagesMissingAlt}/${imgTags.length} missing alt` : 'No images' },
     { label: 'robots meta not blocking indexing', pass: !robotsMeta || !/noindex/i.test(robotsMeta), detail: robotsMeta || 'Not set (defaults to index)' }
   ];
 
-  const score = Math.round((checks.filter((c) => c.pass).length / checks.length) * 100);
+  const scored = checks.filter((c) => c.pass !== null);
+  const score = scored.length ? Math.round((scored.filter((c) => c.pass).length / scored.length) * 100) : null;
   return { score, title, description, checks };
 }
 
