@@ -1906,7 +1906,13 @@
        LIVE THREAT FEED / THREAT LANDSCAPE
        ---------------------------------------------------------- */
     // Backend-free: a GitHub Actions workflow (.github/workflows/update-threat-feed.yml)
-    // regenerates this static JSON every ~20 minutes using the exact same
+    // regenerates this static JSON on a `*/20 * * * *` cron schedule, using
+    // the exact same -- though note GitHub Actions does not guarantee that
+    // cadence for scheduled workflows on free/public repos in practice;
+    // observed real gaps between runs have been 3-6+ hours (checked via
+    // `gh run list --workflow=update-threat-feed.yml`), not 20 minutes. Don't
+    // advertise "every ~20 minutes" to users anywhere based on this comment
+    // alone -- verify current real cadence first if it matters.
     // aggregation/dedup/ranking logic as backend/threatLandscape.js (no
     // duplication — the script requires that module directly), and commits
     // it straight into the repo. Served same-origin from GitHub Pages, so
@@ -2024,7 +2030,7 @@
                 }
             })
             .catch(function () {
-                feedEl.innerHTML = '<div class="threat-feed__fallback">Threat feed data unavailable right now — it refreshes automatically every ~20 minutes.</div>';
+                feedEl.innerHTML = '<div class="threat-feed__fallback">Threat feed data unavailable right now — it refreshes automatically on a schedule, try again shortly.</div>';
             });
     }
 
@@ -2052,7 +2058,14 @@
                 var hrs = Math.round(mins / 60);
                 text = 'Updated ' + hrs + ' hour' + (hrs === 1 ? '' : 's') + ' ago';
             }
-            lastUpdatedEl.textContent = text + ' — refreshes automatically every ~20 minutes';
+            // Not claiming a specific cadence here (the workflow is declared
+            // every ~20min, but GitHub Actions throttles/delays frequent
+            // scheduled workflows on free/public repos in practice -- real
+            // observed gaps between runs have been 3-6+ hours, not 20
+            // minutes, confirmed via `gh run list`). Overpromising a cadence
+            // that isn't actually happening would be the kind of claim this
+            // site has otherwise been careful not to make.
+            lastUpdatedEl.textContent = text + ' — refreshed automatically on a schedule, not on a fixed clock';
         }
 
         var LIST_DISPLAY_CAP = 30;
@@ -2138,7 +2151,7 @@
                 renderList();
             })
             .catch(function () {
-                listEl.innerHTML = '<div class="threat-feed__fallback">Threat landscape data unavailable right now — it refreshes automatically every ~20 minutes.</div>';
+                listEl.innerHTML = '<div class="threat-feed__fallback">Threat landscape data unavailable right now — it refreshes automatically on a schedule, try again shortly.</div>';
             });
     }
 

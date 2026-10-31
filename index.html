@@ -2537,7 +2537,7 @@
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How often is the threat feed updated?</h3>
-                            <p class="t-body" style="color:var(--gray-300);">Automatically, roughly every 20 minutes, with no manual curation.</p>
+                            <p class="t-body" style="color:var(--gray-300);">Automatically, via a scheduled background job, with no manual curation &mdash; exactly how often can vary (GitHub's own scheduler doesn't guarantee a fixed cadence for automated jobs like this one). The &ldquo;Updated X ago&rdquo; line above the feed shows the real timestamp of the data you're looking at.</p>
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is this an official or authoritative threat ranking?</h3>
@@ -2587,7 +2587,7 @@
                     {
                       "@type": "Question",
                       "name": "How often is the threat feed updated?",
-                      "acceptedAnswer": { "@type": "Answer", "text": "Automatically, roughly every 20 minutes, with no manual curation." }
+                      "acceptedAnswer": { "@type": "Answer", "text": "Automatically, via a scheduled background job, with no manual curation — exactly how often can vary, since GitHub's own scheduler doesn't guarantee a fixed cadence for automated jobs like this one. The page shows the real timestamp of the data you're looking at." }
                     },
                     {
                       "@type": "Question",
