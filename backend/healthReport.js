@@ -249,7 +249,7 @@ function stripTemplateTags(html) {
   return html.replace(/<template[^>]*>[\s\S]*?<\/template>/gi, '');
 }
 
-function parseSeo(html) {
+function parseSeo(html, pageOrigin) {
   const title = extractTag(html, /<title[^>]*>([^<]*)<\/title>/i);
   const description = extractMetaContent(html, 'description');
   const viewport = extractMetaContent(html, 'viewport');
@@ -280,6 +280,26 @@ function parseSeo(html) {
   const h1Unverifiable = h1Count === 0 && hasTemplates && rawH1Count > 0;
   const altUnverifiable = imgTags.length === 0 && hasTemplates && rawImgTags.length > 0;
 
+  // Subresource Integrity: only meaningful for CROSS-origin scripts (that's
+  // the actual threat model -- a compromised or MITM'd third-party CDN
+  // serving different bytes than expected). Same-origin scripts don't need
+  // it; they're already covered by whatever protects the site's own deploy,
+  // and flagging them would just be noise unrelated to the real risk.
+  const scriptTags = renderedHtml.match(/<script\b[^>]*\bsrc=["'][^"']+["'][^>]*>/gi) || [];
+  const crossOriginScripts = scriptTags.filter((tag) => {
+    const m = tag.match(/\bsrc=["']([^"']+)["']/i);
+    if (!m) return false;
+    const src = m[1];
+    if (src.startsWith('/') || src.startsWith('./') || src.startsWith('../') || !/^https?:\/\//i.test(src)) return false;
+    if (!pageOrigin) return false;
+    try {
+      return new URL(src).origin !== pageOrigin;
+    } catch {
+      return false;
+    }
+  });
+  const crossOriginMissingSri = crossOriginScripts.filter((tag) => !/\bintegrity=/i.test(tag)).length;
+
   const checks = [
     { label: 'Title tag', pass: Boolean(title && title.length > 0 && title.length <= 60), detail: title || 'Missing' },
     { label: 'Meta description', pass: Boolean(description && description.length > 0 && description.length <= 160), detail: description || 'Missing' },
@@ -294,7 +314,14 @@ function parseSeo(html) {
     altUnverifiable
       ? { label: 'Images have alt text', pass: null, detail: 'Could not verify — this page\'s content is rendered by JavaScript' }
       : { label: 'Images have alt text', pass: imagesMissingAlt === 0, detail: imgTags.length ? `${imagesMissingAlt}/${imgTags.length} missing alt` : 'No images' },
-    { label: 'robots meta not blocking indexing', pass: !robotsMeta || !/noindex/i.test(robotsMeta), detail: robotsMeta || 'Not set (defaults to index)' }
+    { label: 'robots meta not blocking indexing', pass: !robotsMeta || !/noindex/i.test(robotsMeta), detail: robotsMeta || 'Not set (defaults to index)' },
+    {
+      label: 'Cross-origin scripts use Subresource Integrity (SRI)',
+      pass: crossOriginMissingSri === 0,
+      detail: crossOriginScripts.length
+        ? `${crossOriginMissingSri}/${crossOriginScripts.length} third-party script(s) missing integrity=`
+        : 'No cross-origin scripts'
+    }
   ];
 
   const scored = checks.filter((c) => c.pass !== null);
@@ -498,7 +525,7 @@ async function generateHealthReport(rawUrl) {
 
   const page = pageRes.value;
   const security = checkSecurityHeaders(page.headers);
-  const seo = parseSeo(page.body);
+  const seo = parseSeo(page.body, target.origin);
 
   const psiResult = psi.status === 'fulfilled' ? psi.value : { ok: false, error: psi.reason.message };
 

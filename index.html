@@ -1937,6 +1937,10 @@
                             <p class="t-body" style="color:var(--gray-300);">Yes &mdash; there's no account, no email, and no payment required. Enter any public URL and get a full security, SEO, and performance report in about 30 seconds.</p>
                         </div>
                         <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What is Subresource Integrity (SRI), and why does the report check for it?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">SRI is an <code>integrity="sha384-..."</code> attribute on a third-party script tag &mdash; it tells the browser the exact expected hash of that file, so if a CDN ever gets compromised or MITM'd and starts serving different bytes, the browser refuses to run it instead of silently executing whatever arrived. The report only flags scripts loaded from a <em>different</em> origin than the page itself; same-origin scripts don't need it.</p>
+                        </div>
+                        <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What does the overall grade (A&ndash;F) mean?</h3>
                             <p class="t-body" style="color:var(--gray-300);">The overall grade averages five scores: security headers, on-page SEO, and Lighthouse's performance, accessibility, and best-practices scores. A means 90 or above, B is 80+, C is 70+, D is 60+, and anything lower is graded F.</p>
                         </div>
@@ -2001,6 +2005,11 @@
                       "@type": "Question",
                       "name": "Is this Website Health Report tool actually free?",
                       "acceptedAnswer": { "@type": "Answer", "text": "Yes — there's no account, no email, and no payment required. Enter any public URL and get a full security, SEO, and performance report in about 30 seconds." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What is Subresource Integrity (SRI), and why does the report check for it?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "SRI is an integrity=\"sha384-...\" attribute on a third-party script tag — it tells the browser the exact expected hash of that file, so if a CDN ever gets compromised or MITM'd and starts serving different bytes, the browser refuses to run it instead of silently executing whatever arrived. The report only flags scripts loaded from a different origin than the page itself; same-origin scripts don't need it." }
                     },
                     {
                       "@type": "Question",
