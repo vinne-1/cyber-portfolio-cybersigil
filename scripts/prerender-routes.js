@@ -46,8 +46,8 @@ const ROUTES = {
     description: 'Free Text Humanizer — rewrite a stiff draft into plainer sentences in your browser. Nothing is uploaded.'
   },
   '/tools/file-converter': {
-    title: 'Free File Converter — DOCX/Image to PDF, PDF to Text | Vineet Vishesh',
-    description: 'Free file converter — convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, and pull the text out of a PDF. Runs in your browser, nothing uploaded.'
+    title: 'Free File Converter — Merge PDFs, DOCX/Image to PDF, PDF to Text | Vineet Vishesh',
+    description: 'Free file converter — merge PDFs, convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, and pull the text out of a PDF. Runs in your browser, nothing uploaded.'
   },
   '/tools/website-health': {
     title: 'Website Health Report — Vineet Vishesh',

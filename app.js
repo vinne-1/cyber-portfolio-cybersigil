@@ -199,7 +199,7 @@
         '/free-tools':     'Free Tools — Vineet Vishesh',
         '/tools/website-health': 'Website Health Report — Vineet Vishesh',
         '/tools/text-humanizer': 'Text Humanizer — Vineet Vishesh',
-        '/tools/file-converter': 'Free File Converter — DOCX/Image to PDF, PDF to Text | Vineet Vishesh',
+        '/tools/file-converter': 'Free File Converter — Merge PDFs, DOCX/Image to PDF, PDF to Text | Vineet Vishesh',
         '/guides/security-headers': 'HTTP Security Headers Explained — Vineet Vishesh',
         '/guides/cisa-kev': 'What Is CISA KEV? — Vineet Vishesh',
         '/guides/ai-writing-phrases': 'Phrases That Make Writing Sound Stiff — Vineet Vishesh',
@@ -219,7 +219,7 @@
         '/free-tools':     'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, an on-device Text Humanizer, and a File Converter. No signup required.',
         '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
         '/tools/text-humanizer': 'Free Text Humanizer — rewrite a stiff draft into plainer sentences in your browser. Nothing is uploaded.',
-        '/tools/file-converter': 'Free file converter — convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, and pull the text out of a PDF. Runs in your browser, nothing uploaded.',
+        '/tools/file-converter': 'Free file converter — merge PDFs, convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, and pull the text out of a PDF. Runs in your browser, nothing uploaded.',
         '/guides/security-headers': 'What HTTP security headers do, why they matter, and how to check whether your site has them — free, with the Website Health Report tool.',
         '/guides/cisa-kev': "What CISA's Known Exploited Vulnerabilities (KEV) catalog is, why it's the one authoritative severity signal in the Threat Landscape feed, and how it differs from CVSS.",
         '/guides/ai-writing-phrases': "Common stock phrases and stiff sentence patterns that make writing sound formulaic — and how to fix them, free, with the Text Humanizer tool.",
@@ -3029,6 +3029,124 @@
                 var text = extractOutput.value;
                 if (!text) return;
                 fcDownloadBlob(new Blob([text], { type: 'text/plain' }), 'extracted-text.txt');
+            });
+        }
+
+        /* ---- Merge PDFs (pdf-lib) ---- */
+        var mergeInput = root.querySelector('#fcMergeInput');
+        var mergeList = root.querySelector('#fcMergeList');
+        var mergeRunBtn = root.querySelector('#fcMergeRunBtn');
+        var mergeStatus = root.querySelector('#fcMergeStatus');
+        var mergeResult = root.querySelector('#fcMergeResult');
+        var mergeFiles = []; // accumulates across multiple file-picker selections
+
+        function renderMergeList() {
+            if (!mergeList) return;
+            mergeList.innerHTML = '';
+            mergeFiles.forEach(function (file, i) {
+                var row = document.createElement('div');
+                row.className = 'fc-merge-item';
+
+                var name = document.createElement('span');
+                name.className = 'fc-merge-item__name';
+                name.textContent = (i + 1) + '. ' + file.name;
+                row.appendChild(name);
+
+                var upBtn = document.createElement('button');
+                upBtn.type = 'button';
+                upBtn.textContent = '↑';
+                upBtn.setAttribute('aria-label', 'Move ' + file.name + ' up');
+                upBtn.disabled = i === 0;
+                upBtn.addEventListener('click', function () {
+                    var tmp = mergeFiles[i - 1];
+                    mergeFiles[i - 1] = mergeFiles[i];
+                    mergeFiles[i] = tmp;
+                    renderMergeList();
+                });
+                row.appendChild(upBtn);
+
+                var downBtn = document.createElement('button');
+                downBtn.type = 'button';
+                downBtn.textContent = '↓';
+                downBtn.setAttribute('aria-label', 'Move ' + file.name + ' down');
+                downBtn.disabled = i === mergeFiles.length - 1;
+                downBtn.addEventListener('click', function () {
+                    var tmp = mergeFiles[i + 1];
+                    mergeFiles[i + 1] = mergeFiles[i];
+                    mergeFiles[i] = tmp;
+                    renderMergeList();
+                });
+                row.appendChild(downBtn);
+
+                var removeBtn = document.createElement('button');
+                removeBtn.type = 'button';
+                removeBtn.textContent = '×';
+                removeBtn.setAttribute('aria-label', 'Remove ' + file.name);
+                removeBtn.addEventListener('click', function () {
+                    mergeFiles.splice(i, 1);
+                    renderMergeList();
+                });
+                row.appendChild(removeBtn);
+
+                mergeList.appendChild(row);
+            });
+        }
+
+        if (mergeInput) {
+            mergeInput.addEventListener('change', function () {
+                var picked = Array.prototype.slice.call(mergeInput.files || []);
+                picked.forEach(function (f) { mergeFiles.push(f); });
+                mergeInput.value = ''; // allow re-picking the same file(s) later
+                setStatus(mergeStatus, '');
+                if (mergeResult) mergeResult.innerHTML = '';
+                renderMergeList();
+            });
+        }
+
+        if (mergeRunBtn) {
+            mergeRunBtn.addEventListener('click', function () {
+                if (mergeResult) mergeResult.innerHTML = '';
+                if (mergeFiles.length < 2) {
+                    setStatus(mergeStatus, 'Add at least two PDF files to merge.', true);
+                    return;
+                }
+                var tooBigFile = mergeFiles.find(function (f) { return f.size > FC_MAX_BYTES; });
+                if (tooBigFile) {
+                    setStatus(mergeStatus, '"' + tooBigFile.name + '" is over 25MB — too large to process in the browser tab.', true);
+                    return;
+                }
+                setStatus(mergeStatus, 'Loading the PDF engine…', false);
+                fcLoadScriptOnce('/vendor/pdf-lib.min.js').then(function () {
+                    setStatus(mergeStatus, 'Merging ' + mergeFiles.length + ' files…', false);
+                    return PDFLib.PDFDocument.create().then(function (mergedPdf) {
+                        var chain = Promise.resolve();
+                        mergeFiles.forEach(function (file) {
+                            chain = chain.then(function () {
+                                return file.arrayBuffer()
+                                    .then(function (bytes) { return PDFLib.PDFDocument.load(bytes); })
+                                    .then(function (srcPdf) { return mergedPdf.copyPages(srcPdf, srcPdf.getPageIndices()); })
+                                    .then(function (copiedPages) {
+                                        copiedPages.forEach(function (page) { mergedPdf.addPage(page); });
+                                    });
+                            });
+                        });
+                        return chain.then(function () { return mergedPdf.save(); });
+                    });
+                }).then(function (mergedBytes) {
+                    var blob = new Blob([mergedBytes], { type: 'application/pdf' });
+                    if (mergeResult) {
+                        mergeResult.innerHTML = '';
+                        var link = document.createElement('a');
+                        link.href = URL.createObjectURL(blob);
+                        link.download = 'merged.pdf';
+                        link.className = 'btn btn--primary';
+                        link.textContent = 'Download merged.pdf';
+                        mergeResult.appendChild(link);
+                    }
+                    setStatus(mergeStatus, 'Done — ' + mergeFiles.length + ' files merged, ' + Math.round(blob.size / 1024) + 'KB.', false);
+                }).catch(function () {
+                    setStatus(mergeStatus, 'Could not merge those files. Make sure each one is a valid PDF.', true);
+                });
             });
         }
     }

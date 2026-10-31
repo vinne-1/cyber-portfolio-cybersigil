@@ -1244,11 +1244,11 @@
                         <div class="project-card__body">
                             <div class="project-card__number">Conversion</div>
                             <h2 class="project-card__title" style="font-size:1.1rem;">File Converter</h2>
-                            <p class="project-card__desc">Convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, or pull the text out of a PDF.</p>
+                            <p class="project-card__desc">Merge PDFs, convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, or pull the text out of a PDF.</p>
                             <div class="project-card__tags">
                                 <span class="project-card__tag">On-device</span>
                                 <span class="project-card__tag">No signup</span>
-                                <span class="project-card__tag">DOCX to PDF</span>
+                                <span class="project-card__tag">Merge PDFs</span>
                             </div>
                             <a href="/tools/file-converter" class="project-card__cta" data-route>
                                 Open the Converter
@@ -1444,7 +1444,7 @@
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h1 class="t-heading split-heading" style="margin-top:1.5rem;">File Converter</h1>
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
-                        Convert images, turn a document into a PDF, or pull the text out of a PDF &mdash; all three run in this browser.
+                        Merge PDFs, convert images, turn a document into a PDF, or pull the text out of a PDF &mdash; all four run in this browser.
                     </p>
                     <p class="t-body" style="margin-top:1rem; max-width:700px; color:var(--gray-300);">
                         Nothing is uploaded. Your file never leaves this tab.
@@ -1456,6 +1456,7 @@
                         <button type="button" class="btn btn--outline fc-tab is-active" data-fc-tab="image" role="tab" aria-selected="true">Image Converter</button>
                         <button type="button" class="btn btn--outline fc-tab" data-fc-tab="pdf" role="tab" aria-selected="false">Convert to PDF</button>
                         <button type="button" class="btn btn--outline fc-tab" data-fc-tab="extract" role="tab" aria-selected="false">PDF to Text</button>
+                        <button type="button" class="btn btn--outline fc-tab" data-fc-tab="merge" role="tab" aria-selected="false">Merge PDFs</button>
                     </div>
 
                     <div class="anim-item fc-panel fc-field" data-fc-panel="image">
@@ -1504,6 +1505,19 @@
                             <button type="button" id="fcExtractDownload" class="btn btn--outline" disabled>Download .txt</button>
                         </div>
                     </div>
+
+                    <div class="anim-item fc-panel fc-field" data-fc-panel="merge" hidden>
+                        <h2 class="t-caption" style="margin-bottom:0.75rem;">Merge PDFs</h2>
+                        <p class="t-body" style="color:var(--gray-300); margin-bottom:1.25rem; font-size:0.85rem;">Combine multiple PDFs into one, in the order listed below. Add more files any time before merging &mdash; nothing is uploaded.</p>
+                        <label for="fcMergeInput" class="t-caption" style="display:block; margin-bottom:0.5rem; font-size:0.75rem;">PDF files (choose 2 or more &mdash; you can add more files in a second pick)</label>
+                        <input type="file" id="fcMergeInput" accept=".pdf" multiple style="margin-bottom:1rem;">
+                        <div id="fcMergeList" style="display:grid; gap:0.4rem; margin-bottom:1.25rem;"></div>
+                        <div class="magnetic-wrap" style="display:inline-block;">
+                            <button type="button" id="fcMergeRunBtn" class="btn btn--primary">Merge PDFs</button>
+                        </div>
+                        <p id="fcMergeStatus" style="display:none; margin-top:1rem; font-size:0.85rem;"></p>
+                        <div id="fcMergeResult" style="margin-top:1rem;"></div>
+                    </div>
                 </div>
 
                 <div class="anim-item" style="margin-top:5rem; max-width:720px;">
@@ -1524,6 +1538,10 @@
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Why didn't PDF to Text extract anything?</h3>
                             <p class="t-body" style="color:var(--gray-300);">If a PDF is a scanned document or a set of flattened images, there's no underlying text layer to read &mdash; only OCR (optical character recognition) could recover text from that, which this tool doesn't do. It works on any PDF that was generated from a text-based source (Word, a browser, a text editor, etc.).</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How does merging PDFs work, and is there a page limit?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Pick two or more PDFs (you can add more in a second file-picker if you forget one), reorder them with the up/down arrows, and merge &mdash; the pages combine in exactly that order into one downloadable PDF. There's no fixed page-count limit, only the same 25MB-per-file ceiling as everything else on this page, since each file is read into the browser tab's own memory.</p>
                         </div>
                         <div>
                             <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is there a file size limit?</h3>
@@ -1555,7 +1573,7 @@
                   "applicationCategory": "UtilitiesApplication",
                   "operatingSystem": "Any (web-based)",
                   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-                  "description": "Free in-browser file converter: convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF via the browser's print dialog, and extract text from a PDF. Nothing is uploaded.",
+                  "description": "Free in-browser file converter: merge multiple PDFs into one, convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF via the browser's print dialog, and extract text from a PDF. Nothing is uploaded.",
                   "url": "https://vineedoesstuff.in/tools/file-converter",
                   "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" }
                 }
@@ -1584,6 +1602,11 @@
                       "@type": "Question",
                       "name": "Why didn't PDF to Text extract anything?",
                       "acceptedAnswer": { "@type": "Answer", "text": "If a PDF is a scanned document or a set of flattened images, there's no underlying text layer to read — only OCR (optical character recognition) could recover text from that, which this tool doesn't do. It works on any PDF that was generated from a text-based source (Word, a browser, a text editor, etc.)." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How does merging PDFs work, and is there a page limit?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Pick two or more PDFs (you can add more in a second file-picker if you forget one), reorder them with the up/down arrows, and merge — the pages combine in exactly that order into one downloadable PDF. There's no fixed page-count limit, only the same 25MB-per-file ceiling as everything else on this page, since each file is read into the browser tab's own memory." }
                     },
                     {
                       "@type": "Question",

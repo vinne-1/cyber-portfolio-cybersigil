@@ -1288,6 +1288,40 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-family: var(--font-body);
   font-size: 0.85rem;
 }
+.fc-merge-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--charcoal);
+  border: 1px solid var(--border-light);
+  font-size: 0.8rem;
+}
+.fc-merge-item__name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--gray-100);
+}
+.fc-merge-item button {
+  background: none;
+  border: 1px solid var(--border-light);
+  color: var(--gray-300);
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 0.85rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.fc-merge-item button:hover:not(:disabled) {
+  border-color: var(--crimson-text);
+  color: var(--white);
+}
+.fc-merge-item button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
 .btn--outline {
   border: 1px solid var(--border-light);
   color: var(--gray-100);
