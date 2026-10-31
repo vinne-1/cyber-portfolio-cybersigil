@@ -2740,7 +2740,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .device-3d-phone {
   --phone-w: clamp(210px, 24vw, 280px);
-  --phone-h: calc(var(--phone-w) * 19.5 / 9);
+  /* 16:9, matching the real screenshots' 1080x1920 export -- not the
+     common 19.5:9 flagship ratio. Using a mismatched frame ratio here
+     crops the edges of every slide via object-fit:cover on .device-3d-slide. */
+  --phone-h: calc(var(--phone-w) * 16 / 9);
   --phone-depth: 14px;
   --phone-radius: 2.2rem;
   position: relative;
