@@ -7,7 +7,14 @@
          GitHub Pages serves only static files and can't set this as a real HTTP header, so
          frame-ancestors (clickjacking protection) isn't settable here -- browsers ignore that
          directive when delivered via meta, per spec. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://cyber-portfolio-hcxt.onrender.com https://gateway.umami.is https://www.googleapis.com https://cloudflare-dns.com; object-src 'none'; base-uri 'self';">
+    <!-- script-src uses exact sha256 hashes for the 3 inline <script> blocks
+         instead of 'unsafe-inline', so an injected inline script (e.g. via a
+         future XSS bug) would be blocked from executing. There's no build
+         step to compute these automatically: if you edit any inline <script>
+         block's content, you MUST recompute its hash (sha256, base64) or that
+         script silently stops running under CSP. JSON-LD <script> blocks are
+         unaffected -- CSP's script-src only governs executable script. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-yjAcnUOpYMJEWaO5mgxm3Phf4DWZ5NNA/em+CDA7ceU=' 'sha256-tXuKa9eP40Uhd6SKQQ4qzkQdPYq44EYDgYAvDEUVlss=' 'sha256-Oa0G5QLmahiqnpW2KJSY9P+MKZr2US///v7yPDxhf68=' https://cdnjs.cloudflare.com https://unpkg.com https://cloud.umami.is; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://cyber-portfolio-hcxt.onrender.com https://gateway.umami.is https://www.googleapis.com https://cloudflare-dns.com; object-src 'none'; base-uri 'self';">
     <title>Vineet Vishesh — Offensive Security</title>
     <meta name="description" content="Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years across web, API, network, and cloud security.">
     <meta name="theme-color" content="#000000">
