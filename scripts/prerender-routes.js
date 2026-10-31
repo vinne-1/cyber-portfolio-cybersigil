@@ -39,11 +39,15 @@ const ROUTES = {
   },
   '/free-tools': {
     title: 'Free Tools — Vineet Vishesh',
-    description: 'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, and an on-device Text Humanizer. No signup required.'
+    description: 'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, an on-device Text Humanizer, and a File Converter. No signup required.'
   },
   '/tools/text-humanizer': {
     title: 'Text Humanizer — Vineet Vishesh',
     description: 'Free Text Humanizer — rewrite a stiff draft into plainer sentences in your browser. Nothing is uploaded.'
+  },
+  '/tools/file-converter': {
+    title: 'Free File Converter — DOCX/Image to PDF, PDF to Text | Vineet Vishesh',
+    description: 'Free file converter — convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, and pull the text out of a PDF. Runs in your browser, nothing uploaded.'
   },
   '/tools/website-health': {
     title: 'Website Health Report — Vineet Vishesh',

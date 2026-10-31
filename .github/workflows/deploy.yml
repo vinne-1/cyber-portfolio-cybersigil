@@ -31,6 +31,7 @@ jobs:
           cp resume.pdf "CompTIA Security+ ce certificate.pdf" _site/ 2>/dev/null || true
           cp -r resources _site/ 2>/dev/null || true
           cp -r data _site/ 2>/dev/null || true
+          cp -r vendor _site/ 2>/dev/null || true
           cp CNAME _site/ 2>/dev/null || true
       - name: Cache-bust style.css / app.js
         run: |

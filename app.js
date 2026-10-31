@@ -179,6 +179,7 @@
         '/free-tools':     'page-free-tools',
         '/tools/website-health': 'page-tool-website-health',
         '/tools/text-humanizer': 'page-tool-text-humanizer',
+        '/tools/file-converter': 'page-tool-file-converter',
         '/guides/security-headers': 'page-guide-security-headers',
         '/guides/cisa-kev': 'page-guide-cisa-kev',
         '/guides/ai-writing-phrases': 'page-guide-ai-writing-phrases',
@@ -197,6 +198,7 @@
         '/free-tools':     'Free Tools — Vineet Vishesh',
         '/tools/website-health': 'Website Health Report — Vineet Vishesh',
         '/tools/text-humanizer': 'Text Humanizer — Vineet Vishesh',
+        '/tools/file-converter': 'Free File Converter — DOCX/Image to PDF, PDF to Text | Vineet Vishesh',
         '/guides/security-headers': 'HTTP Security Headers Explained — Vineet Vishesh',
         '/guides/cisa-kev': 'What Is CISA KEV? — Vineet Vishesh',
         '/guides/ai-writing-phrases': 'Phrases That Make Writing Sound Stiff — Vineet Vishesh',
@@ -212,9 +214,10 @@
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
         '/work':           'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.',
         '/products':       'TithiPath: Hindu Panchang, Kundli (birth chart), and Rashifal for Android — 37 Indian cities, 9 languages, on-device. Currently in Google Play testing.',
-        '/free-tools':     'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, and an on-device Text Humanizer. No signup required.',
+        '/free-tools':     'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, an on-device Text Humanizer, and a File Converter. No signup required.',
         '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
         '/tools/text-humanizer': 'Free Text Humanizer — rewrite a stiff draft into plainer sentences in your browser. Nothing is uploaded.',
+        '/tools/file-converter': 'Free file converter — convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, and pull the text out of a PDF. Runs in your browser, nothing uploaded.',
         '/guides/security-headers': 'What HTTP security headers do, why they matter, and how to check whether your site has them — free, with the Website Health Report tool.',
         '/guides/cisa-kev': "What CISA's Known Exploited Vulnerabilities (KEV) catalog is, why it's the one authoritative severity signal in the Threat Landscape feed, and how it differs from CVSS.",
         '/guides/ai-writing-phrases': "Common stock phrases and stiff sentence patterns that make writing sound formulaic — and how to fix them, free, with the Text Humanizer tool.",
@@ -644,6 +647,7 @@
             setupThreatLandscapePage();
             setupWebsiteHealthTool();
             setupTextHumanizer();
+            setupFileConverterTool();
             setupDevice3DShowcase();
             setupCardHoverGlow();
             return;
@@ -754,6 +758,7 @@
         setupThreatLandscapePage();
         setupWebsiteHealthTool();
         setupTextHumanizer();
+        setupFileConverterTool();
         setupDevice3DShowcase();
         setupMatrixCanvas();
         setupParticleNetwork();
@@ -2570,6 +2575,302 @@
                     output.focus();
                     output.select();
                 }
+            });
+        }
+    }
+
+    /* ----------------------------------------------------------
+       FILE CONVERTER — everything below runs entirely client-side.
+       mammoth.js and pdf.js are vendored (not CDN-loaded) and lazy-
+       loaded only when this page's elements exist, so no other page
+       pays for their ~2MB combined weight.
+       ---------------------------------------------------------- */
+    var fcScriptPromises = {};
+    function fcLoadScriptOnce(src) {
+        if (!fcScriptPromises[src]) {
+            fcScriptPromises[src] = new Promise(function (resolve, reject) {
+                var s = document.createElement('script');
+                s.src = src;
+                s.onload = function () { resolve(); };
+                s.onerror = function () { reject(new Error('Could not load ' + src)); };
+                document.head.appendChild(s);
+            });
+        }
+        return fcScriptPromises[src];
+    }
+
+    function fcEscapeHtml(str) {
+        return String(str).replace(/[&<>"]/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+        });
+    }
+
+    function fcDownloadBlob(blob, filename) {
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+    }
+
+    function fcPrintHtmlAsPdf(bodyHtml, docTitle) {
+        var iframe = document.createElement('iframe');
+        iframe.style.cssText = 'position:fixed; right:0; bottom:0; width:0; height:0; border:0;';
+        document.body.appendChild(iframe);
+        var doc = iframe.contentWindow.document;
+        doc.open();
+        doc.write(
+            '<!doctype html><html><head><meta charset="utf-8"><title>' + fcEscapeHtml(docTitle) + '</title>' +
+            '<style>body{font-family:Georgia,"Times New Roman",serif;color:#111;line-height:1.55;padding:0 8mm;} ' +
+            'img{max-width:100%;} pre{white-space:pre-wrap;font-family:inherit;} h1,h2,h3{font-family:Arial,sans-serif;} ' +
+            '@page{margin:18mm;}</style></head><body>' + bodyHtml + '</body></html>'
+        );
+        doc.close();
+
+        function go() {
+            iframe.contentWindow.focus();
+            iframe.contentWindow.print();
+        }
+        var images = doc.querySelectorAll('img');
+        if (images.length) {
+            var pending = images.length;
+            var dec = function () { pending -= 1; if (pending === 0) go(); };
+            images.forEach(function (img) {
+                if (img.complete) { dec(); return; }
+                img.addEventListener('load', dec);
+                img.addEventListener('error', dec);
+            });
+        } else {
+            setTimeout(go, 60);
+        }
+        iframe.contentWindow.addEventListener('afterprint', function () {
+            if (iframe.parentNode) iframe.parentNode.removeChild(iframe);
+        });
+    }
+
+    function setupFileConverterTool() {
+        var root = app.querySelector('#fcRoot');
+        if (!root || root.dataset.bound === '1') return;
+        root.dataset.bound = '1';
+
+        var FC_MAX_BYTES = 25 * 1024 * 1024; // 25MB -- generous for docs/images, keeps the tab responsive
+
+        var tabs = root.querySelectorAll('.fc-tab');
+        var panels = root.querySelectorAll('.fc-panel');
+        tabs.forEach(function (tab) {
+            tab.addEventListener('click', function () {
+                var target = tab.getAttribute('data-fc-tab');
+                tabs.forEach(function (t) {
+                    var on = t === tab;
+                    t.classList.toggle('is-active', on);
+                    t.setAttribute('aria-selected', on ? 'true' : 'false');
+                });
+                panels.forEach(function (p) {
+                    p.hidden = p.getAttribute('data-fc-panel') !== target;
+                });
+            });
+        });
+
+        function setStatus(el, msg, isError) {
+            if (!el) return;
+            el.textContent = msg || '';
+            el.style.display = msg ? 'block' : 'none';
+            el.style.color = isError ? 'var(--crimson-text)' : 'var(--gray-300)';
+        }
+
+        function tooBig(file, statusEl) {
+            if (file.size > FC_MAX_BYTES) {
+                setStatus(statusEl, 'That file is over 25MB — too large to process in the browser tab.', true);
+                return true;
+            }
+            return false;
+        }
+
+        /* ---- Image format converter (pure Canvas, no library) ---- */
+        var imgInput = root.querySelector('#fcImageInput');
+        var imgFormat = root.querySelector('#fcImageFormat');
+        var imgRunBtn = root.querySelector('#fcImageRunBtn');
+        var imgStatus = root.querySelector('#fcImageStatus');
+        var imgResult = root.querySelector('#fcImageResult');
+        var IMG_EXT = { 'image/png': 'png', 'image/jpeg': 'jpg', 'image/webp': 'webp' };
+
+        if (imgRunBtn) {
+            imgRunBtn.addEventListener('click', function () {
+                var file = imgInput.files && imgInput.files[0];
+                if (imgResult) imgResult.innerHTML = '';
+                if (!file) { setStatus(imgStatus, 'Choose an image first.', true); return; }
+                if (tooBig(file, imgStatus)) return;
+                setStatus(imgStatus, 'Converting…', false);
+                var reader = new FileReader();
+                reader.onload = function () {
+                    var img = new Image();
+                    img.onload = function () {
+                        var canvas = document.createElement('canvas');
+                        canvas.width = img.naturalWidth;
+                        canvas.height = img.naturalHeight;
+                        var ctx = canvas.getContext('2d');
+                        var targetType = imgFormat.value;
+                        if (targetType === 'image/jpeg') {
+                            // JPEG has no alpha channel -- flatten transparent areas to white first
+                            ctx.fillStyle = '#fff';
+                            ctx.fillRect(0, 0, canvas.width, canvas.height);
+                        }
+                        ctx.drawImage(img, 0, 0);
+                        canvas.toBlob(function (blob) {
+                            if (!blob) { setStatus(imgStatus, 'Conversion failed in this browser — try a different format.', true); return; }
+                            var filename = 'converted.' + IMG_EXT[targetType];
+                            if (imgResult) {
+                                imgResult.innerHTML = '';
+                                var link = document.createElement('a');
+                                link.href = URL.createObjectURL(blob);
+                                link.download = filename;
+                                link.className = 'btn btn--primary';
+                                link.textContent = 'Download ' + filename;
+                                imgResult.appendChild(link);
+                            }
+                            setStatus(imgStatus, 'Done — ' + Math.round(blob.size / 1024) + 'KB.', false);
+                        }, targetType, 0.92);
+                    };
+                    img.onerror = function () { setStatus(imgStatus, 'Could not read that image.', true); };
+                    img.src = reader.result;
+                };
+                reader.onerror = function () { setStatus(imgStatus, 'Could not read that file.', true); };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        /* ---- Convert to PDF: DOCX (mammoth.js) / TXT / image, via the browser's print dialog ---- */
+        var pdfInput = root.querySelector('#fcPdfInput');
+        var pdfRunBtn = root.querySelector('#fcPdfRunBtn');
+        var pdfStatus = root.querySelector('#fcPdfStatus');
+
+        function baseName(name) {
+            return name.replace(/\.[^.]+$/, '') || 'document';
+        }
+
+        if (pdfRunBtn) {
+            pdfRunBtn.addEventListener('click', function () {
+                var file = pdfInput.files && pdfInput.files[0];
+                if (!file) { setStatus(pdfStatus, 'Choose a .docx, .txt, or image file first.', true); return; }
+                if (tooBig(file, pdfStatus)) return;
+                var name = file.name.toLowerCase();
+                var title = baseName(file.name);
+
+                if (name.endsWith('.docx')) {
+                    setStatus(pdfStatus, 'Reading the document…', false);
+                    fcLoadScriptOnce('/vendor/mammoth.browser.min.js').then(function () {
+                        return file.arrayBuffer();
+                    }).then(function (ab) {
+                        return mammoth.convertToHtml({ arrayBuffer: ab });
+                    }).then(function (result) {
+                        fcPrintHtmlAsPdf('<h1>' + fcEscapeHtml(title) + '</h1>' + result.value, title);
+                        setStatus(pdfStatus, 'Opening your browser\'s print dialog — choose "Save as PDF" as the destination.', false);
+                    }).catch(function () {
+                        setStatus(pdfStatus, 'Could not read that .docx file. Is it a valid Word document?', true);
+                    });
+                } else if (name.endsWith('.txt')) {
+                    setStatus(pdfStatus, 'Reading the file…', false);
+                    var txtReader = new FileReader();
+                    txtReader.onload = function () {
+                        var body = '<h1>' + fcEscapeHtml(title) + '</h1><pre>' + fcEscapeHtml(txtReader.result) + '</pre>';
+                        fcPrintHtmlAsPdf(body, title);
+                        setStatus(pdfStatus, 'Opening your browser\'s print dialog — choose "Save as PDF" as the destination.', false);
+                    };
+                    txtReader.onerror = function () { setStatus(pdfStatus, 'Could not read that file.', true); };
+                    txtReader.readAsText(file);
+                } else if (/\.(png|jpe?g|webp|gif)$/.test(name)) {
+                    setStatus(pdfStatus, 'Reading the image…', false);
+                    var imgReader = new FileReader();
+                    imgReader.onload = function () {
+                        var body = '<img src="' + imgReader.result + '" alt="">';
+                        fcPrintHtmlAsPdf(body, title);
+                        setStatus(pdfStatus, 'Opening your browser\'s print dialog — choose "Save as PDF" as the destination.', false);
+                    };
+                    imgReader.onerror = function () { setStatus(pdfStatus, 'Could not read that image.', true); };
+                    imgReader.readAsDataURL(file);
+                } else {
+                    setStatus(pdfStatus, 'Unsupported file type. Use a .docx, .txt, or image (.png/.jpg/.webp) file.', true);
+                }
+            });
+        }
+
+        /* ---- PDF to text (pdf.js) ---- */
+        var extractInput = root.querySelector('#fcExtractInput');
+        var extractRunBtn = root.querySelector('#fcExtractRunBtn');
+        var extractStatus = root.querySelector('#fcExtractStatus');
+        var extractOutput = root.querySelector('#fcExtractOutput');
+        var extractCopyBtn = root.querySelector('#fcExtractCopy');
+        var extractDownloadBtn = root.querySelector('#fcExtractDownload');
+
+        if (extractRunBtn) {
+            extractRunBtn.addEventListener('click', function () {
+                var file = extractInput.files && extractInput.files[0];
+                if (extractOutput) extractOutput.value = '';
+                if (extractCopyBtn) extractCopyBtn.disabled = true;
+                if (extractDownloadBtn) extractDownloadBtn.disabled = true;
+                if (!file) { setStatus(extractStatus, 'Choose a PDF first.', true); return; }
+                if (!/\.pdf$/i.test(file.name)) { setStatus(extractStatus, 'That doesn\'t look like a PDF.', true); return; }
+                if (tooBig(file, extractStatus)) return;
+
+                setStatus(extractStatus, 'Loading the PDF engine…', false);
+                fcLoadScriptOnce('/vendor/pdf.min.js').then(function () {
+                    pdfjsLib.GlobalWorkerOptions.workerSrc = '/vendor/pdf.worker.min.js';
+                    return file.arrayBuffer();
+                }).then(function (ab) {
+                    setStatus(extractStatus, 'Extracting text…', false);
+                    return pdfjsLib.getDocument({ data: ab }).promise;
+                }).then(function (pdf) {
+                    var pageTextPromises = [];
+                    for (var i = 1; i <= pdf.numPages; i++) {
+                        pageTextPromises.push(
+                            pdf.getPage(i).then(function (page) {
+                                return page.getTextContent();
+                            }).then(function (content) {
+                                return content.items.map(function (item) { return item.str; }).join(' ');
+                            })
+                        );
+                    }
+                    return Promise.all(pageTextPromises);
+                }).then(function (pages) {
+                    var text = pages.join('\n\n');
+                    if (extractOutput) extractOutput.value = text;
+                    if (extractCopyBtn) extractCopyBtn.disabled = !text;
+                    if (extractDownloadBtn) extractDownloadBtn.disabled = !text;
+                    setStatus(extractStatus, text ? ('Done — ' + pages.length + ' page(s).') : 'No extractable text found (the PDF may be scanned images).', !text);
+                }).catch(function () {
+                    setStatus(extractStatus, 'Could not read that PDF.', true);
+                });
+            });
+        }
+
+        if (extractCopyBtn) {
+            extractCopyBtn.addEventListener('click', function () {
+                var text = extractOutput.value;
+                if (!text) return;
+                var done = function () {
+                    extractCopyBtn.textContent = 'Copied';
+                    setTimeout(function () { extractCopyBtn.textContent = 'Copy text'; }, 1400);
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(text).then(done).catch(function () {
+                        extractOutput.focus();
+                        extractOutput.select();
+                    });
+                } else {
+                    extractOutput.focus();
+                    extractOutput.select();
+                }
+            });
+        }
+
+        if (extractDownloadBtn) {
+            extractDownloadBtn.addEventListener('click', function () {
+                var text = extractOutput.value;
+                if (!text) return;
+                fcDownloadBlob(new Blob([text], { type: 'text/plain' }), 'extracted-text.txt');
             });
         }
     }

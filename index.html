@@ -1075,7 +1075,7 @@
                     <div>
                         <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Looking for the free tools?</h3>
                         <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
-                            The Website Health Report, Threat Landscape feed, and Text Humanizer have their own section &mdash; no signup, no catch.
+                            The Website Health Report, Threat Landscape feed, Text Humanizer, and File Converter have their own section &mdash; no signup, no catch.
                         </p>
                     </div>
                     <div class="magnetic-wrap">
@@ -1116,7 +1116,7 @@
                         Free security &amp; SEO tools, no signup.
                     </h1>
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
-                        Free tools with no signup &mdash; a website health scan, a live cybersecurity threat feed, and a text humanizer that rewrites stiff drafts in your browser.
+                        Free tools with no signup &mdash; a website health scan, a live cybersecurity threat feed, a text humanizer, and a file converter, all running in your browser.
                     </p>
                 </div>
 
@@ -1185,6 +1185,28 @@
                             </div>
                             <a href="/tools/text-humanizer" class="project-card__cta" data-route>
                                 Open the Humanizer
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card anim-item">
+                        <div class="project-card__image">
+                            <div class="project-card__image-overlay"></div>
+                            <div class="project-card__image-inner">
+                                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M12 18v-6M9 15l3-3 3 3"/></svg>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__number">Conversion</div>
+                            <h2 class="project-card__title" style="font-size:1.1rem;">File Converter</h2>
+                            <p class="project-card__desc">Convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, or pull the text out of a PDF.</p>
+                            <div class="project-card__tags">
+                                <span class="project-card__tag">On-device</span>
+                                <span class="project-card__tag">No signup</span>
+                                <span class="project-card__tag">DOCX to PDF</span>
+                            </div>
+                            <a href="/tools/file-converter" class="project-card__cta" data-route>
+                                Open the Converter
                                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                             </a>
                         </div>
@@ -1351,6 +1373,182 @@
                       "@type": "Question",
                       "name": "Is there a length limit?",
                       "acceptedAnswer": { "@type": "Answer", "text": "Up to 8,000 characters per rewrite. Multi-paragraph drafts are rewritten paragraph by paragraph, so the original paragraph breaks are preserved." }
+                    }
+                  ]
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
+    <!-- FILE CONVERTER -->
+    <template id="page-tool-file-converter">
+        <section class="section section--atmosphere-deep" data-page="tool-file-converter" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">File Converter</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">File Converter</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Convert images, turn a document into a PDF, or pull the text out of a PDF &mdash; all three run in this browser.
+                    </p>
+                    <p class="t-body" style="margin-top:1rem; max-width:700px; color:var(--gray-300);">
+                        Nothing is uploaded. Your file never leaves this tab.
+                    </p>
+                </div>
+
+                <div id="fcRoot">
+                    <div class="anim-item" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;" role="tablist" aria-label="Conversion type">
+                        <button type="button" class="btn btn--outline fc-tab is-active" data-fc-tab="image" role="tab" aria-selected="true">Image Converter</button>
+                        <button type="button" class="btn btn--outline fc-tab" data-fc-tab="pdf" role="tab" aria-selected="false">Convert to PDF</button>
+                        <button type="button" class="btn btn--outline fc-tab" data-fc-tab="extract" role="tab" aria-selected="false">PDF to Text</button>
+                    </div>
+
+                    <div class="anim-item fc-panel fc-field" data-fc-panel="image">
+                        <h2 class="t-caption" style="margin-bottom:0.75rem;">Image Converter</h2>
+                        <p class="t-body" style="color:var(--gray-300); margin-bottom:1.25rem; font-size:0.85rem;">Convert between PNG, JPEG, and WEBP. Processed on a canvas in your browser.</p>
+                        <label for="fcImageInput" class="t-caption" style="display:block; margin-bottom:0.5rem; font-size:0.75rem;">Image file</label>
+                        <input type="file" id="fcImageInput" accept="image/png,image/jpeg,image/webp,image/gif" style="margin-bottom:1rem;">
+                        <label for="fcImageFormat" class="t-caption" style="display:block; margin-bottom:0.5rem; font-size:0.75rem;">Convert to</label>
+                        <select id="fcImageFormat" style="margin-bottom:1.25rem;">
+                            <option value="image/png">PNG</option>
+                            <option value="image/jpeg">JPEG</option>
+                            <option value="image/webp">WEBP</option>
+                        </select>
+                        <div class="magnetic-wrap" style="display:inline-block;">
+                            <button type="button" id="fcImageRunBtn" class="btn btn--primary">Convert</button>
+                        </div>
+                        <p id="fcImageStatus" style="display:none; margin-top:1rem; font-size:0.85rem;"></p>
+                        <div id="fcImageResult" style="margin-top:1rem;"></div>
+                    </div>
+
+                    <div class="anim-item fc-panel fc-field" data-fc-panel="pdf" hidden>
+                        <h2 class="t-caption" style="margin-bottom:0.75rem;">Convert to PDF</h2>
+                        <p class="t-body" style="color:var(--gray-300); margin-bottom:1.25rem; font-size:0.85rem;">Works with a .docx document, a .txt file, or an image (.png/.jpg/.webp). Opens your browser's print dialog &mdash; choose &ldquo;Save as PDF&rdquo; as the destination.</p>
+                        <label for="fcPdfInput" class="t-caption" style="display:block; margin-bottom:0.5rem; font-size:0.75rem;">Document or image</label>
+                        <input type="file" id="fcPdfInput" accept=".docx,.txt,.png,.jpg,.jpeg,.webp,.gif" style="margin-bottom:1.25rem;">
+                        <div class="magnetic-wrap" style="display:inline-block;">
+                            <button type="button" id="fcPdfRunBtn" class="btn btn--primary">Convert to PDF</button>
+                        </div>
+                        <p id="fcPdfStatus" style="display:none; margin-top:1rem; font-size:0.85rem;"></p>
+                    </div>
+
+                    <div class="anim-item fc-panel fc-field" data-fc-panel="extract" hidden>
+                        <h2 class="t-caption" style="margin-bottom:0.75rem;">PDF to Text</h2>
+                        <p class="t-body" style="color:var(--gray-300); margin-bottom:1.25rem; font-size:0.85rem;">Extracts selectable text from a PDF. Won't work on a scanned/image-only PDF &mdash; there's no text layer to read.</p>
+                        <label for="fcExtractInput" class="t-caption" style="display:block; margin-bottom:0.5rem; font-size:0.75rem;">PDF file</label>
+                        <input type="file" id="fcExtractInput" accept=".pdf" style="margin-bottom:1.25rem;">
+                        <div class="magnetic-wrap" style="display:inline-block;">
+                            <button type="button" id="fcExtractRunBtn" class="btn btn--primary">Extract Text</button>
+                        </div>
+                        <p id="fcExtractStatus" style="display:none; margin-top:1rem; font-size:0.85rem;"></p>
+                        <div style="margin-top:1.25rem;">
+                            <textarea id="fcExtractOutput" class="humanizer-field" rows="12" readonly aria-live="polite" placeholder="Extracted text will appear here."></textarea>
+                        </div>
+                        <div style="display:flex; flex-wrap:wrap; gap:1rem; margin-top:1rem;">
+                            <button type="button" id="fcExtractCopy" class="btn btn--outline" disabled>Copy text</button>
+                            <button type="button" id="fcExtractDownload" class="btn btn--outline" disabled>Download .txt</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is anything uploaded to a server?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No. The image conversion runs on an HTML canvas, the DOCX/text reading uses the mammoth.js library, and the PDF text extraction uses Mozilla's pdf.js &mdash; all three run entirely in your browser's JavaScript. Your file is never sent anywhere.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How does &ldquo;Convert to PDF&rdquo; actually create the PDF?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">It renders your document as a styled page and opens your browser's native print dialog, where you choose &ldquo;Save as PDF&rdquo; as the destination. That produces a real, selectable-text PDF &mdash; not a blurry screenshot &mdash; without needing a server to do the conversion.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Will complex Word formatting survive the DOCX-to-PDF conversion?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Basic formatting &mdash; headings, bold/italic, lists, tables &mdash; carries over. Multi-column layouts, exact fonts, and embedded objects won't be pixel-perfect, since the conversion reads the document's text content rather than rendering Word's native layout engine. For straightforward documents (resumes, letters, reports) it holds up well.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Why didn't PDF to Text extract anything?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">If a PDF is a scanned document or a set of flattened images, there's no underlying text layer to read &mdash; only OCR (optical character recognition) could recover text from that, which this tool doesn't do. It works on any PDF that was generated from a text-based source (Word, a browser, a text editor, etc.).</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is there a file size limit?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">25MB per file &mdash; generous for documents and most images, and a practical ceiling for keeping a browser tab responsive since there's no server doing the heavy lifting.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is this File Converter free?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Yes &mdash; no signup, no account, and no limit on how many times you use it.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://vineedoesstuff.in/free-tools" },
+                    { "@type": "ListItem", "position": 3, "name": "File Converter", "item": "https://vineedoesstuff.in/tools/file-converter" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "File Converter",
+                  "applicationCategory": "UtilitiesApplication",
+                  "operatingSystem": "Any (web-based)",
+                  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                  "description": "Free in-browser file converter: convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF via the browser's print dialog, and extract text from a PDF. Nothing is uploaded.",
+                  "url": "https://vineedoesstuff.in/tools/file-converter",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" }
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "Is anything uploaded to a server?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "No. The image conversion runs on an HTML canvas, the DOCX/text reading uses the mammoth.js library, and the PDF text extraction uses Mozilla's pdf.js — all three run entirely in your browser's JavaScript. Your file is never sent anywhere." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How does \"Convert to PDF\" actually create the PDF?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "It renders your document as a styled page and opens your browser's native print dialog, where you choose \"Save as PDF\" as the destination. That produces a real, selectable-text PDF — not a blurry screenshot — without needing a server to do the conversion." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Will complex Word formatting survive the DOCX-to-PDF conversion?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Basic formatting — headings, bold/italic, lists, tables — carries over. Multi-column layouts, exact fonts, and embedded objects won't be pixel-perfect, since the conversion reads the document's text content rather than rendering Word's native layout engine. For straightforward documents (resumes, letters, reports) it holds up well." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Why didn't PDF to Text extract anything?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "If a PDF is a scanned document or a set of flattened images, there's no underlying text layer to read — only OCR (optical character recognition) could recover text from that, which this tool doesn't do. It works on any PDF that was generated from a text-based source (Word, a browser, a text editor, etc.)." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is there a file size limit?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "25MB per file — generous for documents and most images, and a practical ceiling for keeping a browser tab responsive since there's no server doing the heavy lifting." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Is this File Converter free?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Yes — no signup, no account, and no limit on how many times you use it." }
                     }
                   ]
                 }
@@ -2368,6 +2566,7 @@
                         <p><strong>Website Health Report:</strong> when you submit a URL, it's used only to generate the report you requested (DNS, security headers, SSL/TLS, SEO, and performance checks via Google's PageSpeed Insights API). The URL and results are not logged or stored after your report is generated.</p>
                         <p><strong>Text Humanizer:</strong> the rewrite runs entirely in your browser. The draft is not uploaded and is not stored on this site.</p>
                         <p><strong>Threat Landscape feed:</strong> built entirely from public security-news RSS feeds and the CISA KEV catalog on a fixed schedule. It involves no user input and no user data.</p>
+                        <p><strong>File Converter:</strong> image conversion, document-to-PDF, and PDF text extraction all run in your browser's JavaScript. Your file is never uploaded or sent to a server — the only thing loaded externally is the converter code itself (mammoth.js and pdf.js), served from this site.</p>
 
                         <h3>Cookies &amp; local storage</h3>
                         <p>This site doesn't currently use any browser storage of its own beyond what's needed for normal page function. Nothing is used for tracking.</p>
