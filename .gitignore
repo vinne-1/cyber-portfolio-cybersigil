@@ -8,3 +8,5 @@ kprverse-clone/
 cybersigil-variant/.next/
 cybersigil-variant/node_modules/
 .claude/
+.agents/
+skills-lock.json

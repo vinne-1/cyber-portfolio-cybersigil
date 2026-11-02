@@ -2619,6 +2619,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .product-showcase-card img {
     max-width: 160px !important;
   }
+  .product-showcase-card video {
+    max-width: 160px !important;
+  }
 }
 
 /* --- Website Health Report: grade badge, grouped checklists --- */
