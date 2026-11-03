@@ -1,6 +1,98 @@
 {
   "articles": [
     {
+      "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
+      "source": "Dark Reading",
+      "date": "2026-11-03T21:57:12.000Z",
+      "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "UK organisations warned to brace for AI-powered ransomware attacks",
+      "source": "CSO Online",
+      "date": "2026-11-03T18:53:08.000Z",
+      "summary": "AI-powered malware is “highly likely” to be used in ransomware attacks on Britain’s critical national infrastructure within the next two years.\nThe head of GCHQ’s National Cyber Security Centre, Dr. Richard Horne, warned that abuse of AI technologies is making it much easier for attackers to rapidly expose and exploit long-neglected security weaknesses.\nDr. Horne argued that underinvestment in technology and security have left organisations carrying a technical debt that leave them wide open to ",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "url": "https://www.csoonline.com/article/4244138/uk-organisations-warned-to-brace-for-ai-powered-ransomware-attacks.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+      "source": "The Hacker News",
+      "date": "2026-11-03T18:46:38.000Z",
+      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys.\n\nThe warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+      "source": "The Hacker News",
+      "date": "2026-11-03T18:16:19.000Z",
+      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure.\n\nThe incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week.\n\n\"An external attacker gained unauthorized access to part of",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "source": "The Hacker News",
+      "date": "2026-11-03T16:55:58.000Z",
+      "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers.\n\n\"It was not a single isolated breach or a simple phishing incident,\"",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+      "source": "The Hacker News",
+      "date": "2026-11-03T15:59:19.000Z",
+      "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device.\n\nThe vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection vulnerability, have been assigned the CVE identifiers CVE-2026-116606 (CVSS score: 9.3)",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-116606"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
       "source": "The Hacker News",
       "date": "2026-11-03T15:41:53.000Z",
@@ -16,7 +108,7 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "9 Cyber Awareness Tips That Actually Match Today’s Maze of Threats",
+      "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
       "source": "Dark Reading",
       "date": "2026-11-03T15:38:20.000Z",
       "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits that help reduce enterprise risk.",
@@ -31,7 +123,7 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "LLMJacking Emerges as Thriving Cybercriminal Enterprise",
+      "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
       "source": "Dark Reading",
       "date": "2026-11-03T15:35:50.000Z",
       "summary": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
@@ -107,6 +199,27 @@
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "source": "CISA Advisories",
+      "date": "2026-11-03T12:00:00.000Z",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirement",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-119977"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-119977"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-119977"
+      ]
     },
     {
       "title": "Enterprises pay $100,000 a day for AI they never ordered",
@@ -247,40 +360,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
-      "source": "The Hacker News",
-      "date": "2026-11-03T05:34:41.000Z",
-      "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.\n\nThe vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code.\n\n\"SIMATIC IoT2050 Advanced devices running",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-58115"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
-      "source": "The Hacker News",
-      "date": "2026-11-03T05:34:37.000Z",
-      "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber.\n\nThe vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the flaw could permit unauthenticated users to delete arbitrary files on the server and extract",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-81648"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
       "source": "Krebs on Security",
       "date": "2026-11-03T02:24:31.000Z",
@@ -336,37 +415,6 @@
       ],
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-      "source": "The Hacker News",
-      "date": "2026-11-02T16:57:56.000Z",
-      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.\n\nThen there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software",
-        "DDoS"
-      ],
-      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-      "source": "The Hacker News",
-      "date": "2026-11-02T15:50:26.000Z",
-      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.\n\nGoogle says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals.\n\nThey used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -629,21 +677,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Why identity governance demands executive attention",
-      "source": "CSO Online",
-      "date": "2026-10-30T17:09:23.000Z",
-      "summary": "The identity landscape you’re responsible for looks nothing like it did just a few years ago. Employees and contractors now share the enterprise with service accounts, machine identities, and a fast-growing population of AI agents — all accessing business systems and data. \nEvery one of those identities represents an access decision, and every access decision is now a potential point of accountability that lands on your desk. Regulators and boards want proof. They expect security leaders to show",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4242864/why-identity-governance-demands-executive-attention.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
       "source": "Dark Reading",
       "date": "2026-10-30T15:39:54.000Z",
@@ -699,21 +732,6 @@
       ]
     },
     {
-      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
-      "source": "Dark Reading",
-      "date": "2026-10-30T08:00:00.000Z",
-      "summary": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-10-30T03:30:17.000Z",
@@ -729,19 +747,29 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Hitachi Energy CoreTec Product",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-29T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nHitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy CoreTec Product are affected:\nCoreTec5 vers:CoreTec5/<=3.4.0, 5.0",
-      "severity": "Low",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability\nCVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risk",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-97229",
+        "CVE-2026-76418"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-97229",
+        "CVE-2026-76418"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-97229",
+        "CVE-2026-76418"
+      ]
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -776,29 +804,19 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "title": "Hitachi Energy CoreTec Product",
       "source": "CISA Advisories",
       "date": "2026-10-29T12:00:00.000Z",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-97229 GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound vulnerability\nCVE-2026-76418 Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risk",
-      "severity": "Critical",
+      "summary": "View CSAF\nSummary\nHitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy CoreTec Product are affected:\nCoreTec5 vers:CoreTec5/<=3.4.0, 5.0",
+      "severity": "Low",
       "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
+        "General"
       ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/29/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-97229",
-        "CVE-2026-76418"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-97229",
-        "CVE-2026-76418"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-97229",
-        "CVE-2026-76418"
-      ]
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
     },
     {
       "title": "Deploying a Local Ghidra Server for Your Malware Analysis Lab, (Thu, Oct 29th)",
@@ -856,31 +874,6 @@
       ]
     },
     {
-      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
-      "source": "CISA Advisories",
-      "date": "2026-10-27T12:00:00.000Z",
-      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability\nCVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritiz",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-48356",
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-48356",
-        "CVE-2026-111497"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-48356",
-        "CVE-2026-111497"
-      ]
-    },
-    {
       "title": "EPICS Base",
       "source": "CISA Advisories",
       "date": "2026-10-27T12:00:00.000Z",
@@ -926,6 +919,31 @@
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
+      "date": "2026-10-27T12:00:00.000Z",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-48356 Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability\nCVE-2026-111497 Google Brotli Unchecked Return Value Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritiz",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/27/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-48356",
+        "CVE-2026-111497"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-48356",
+        "CVE-2026-111497"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-48356",
+        "CVE-2026-111497"
+      ]
+    },
+    {
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
       "date": "2026-10-26T12:00:00.000Z",
       "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching:  \nCVE-2026-109618 – PHP Memory Corruption Vulnerability \nCVE-2026-109619 – PHP Stale Internal Request-State Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Directive (BOD) 26-04: Prioritizing ",
       "severity": "Critical",
@@ -945,27 +963,6 @@
       "recentlyAddedToKev": [
         "CVE-2026-109618",
         "CVE-2026-109619"
-      ]
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "source": "CISA Advisories",
-      "date": "2026-10-23T12:00:00.000Z",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements f",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-110447"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-110447"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-110447"
       ]
     },
     {
@@ -1106,6 +1103,122 @@
   ],
   "clusters": [
     {
+      "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
+      "summary": "German police led a multinational probe that exposed an alleged crime-as-a-service provider supplying fraudulent trading platforms to investment scammers.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
+      "date": "2026-11-03T21:57:12.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 30
+    },
+    {
+      "title": "UK organisations warned to brace for AI-powered ransomware attacks",
+      "summary": "AI-powered malware is “highly likely” to be used in ransomware attacks on Britain’s critical national infrastructure within the next two years.\nThe head of GCHQ’s National Cyber Security Centre, Dr. Richard Horne, warned that abuse of AI technologies is making it much easier for attackers to rapidly expose and exploit long-neglected security weaknesses.\nDr. Horne argued that underinvestment in technology and security have left organisations carrying a technical debt that leave them wide open to ",
+      "url": "https://www.csoonline.com/article/4244138/uk-organisations-warned-to-brace-for-ai-powered-ransomware-attacks.html",
+      "date": "2026-11-03T18:53:08.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 40
+    },
+    {
+      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
+      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys.\n\nThe warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
+      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
+      "date": "2026-11-03T18:46:38.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Chainstack Reports Production Systems Breach Exposing Customer Data and Password Hashes",
+      "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure.\n\nThe incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week.\n\n\"An external attacker gained unauthorized access to part of",
+      "url": "https://thehackernews.com/2026/11/chainstack-reports-production-systems.html",
+      "date": "2026-11-03T18:16:19.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
+      "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers.\n\n\"It was not a single isolated breach or a simple phishing incident,\"",
+      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
+      "date": "2026-11-03T16:55:58.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
+      "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device.\n\nThe vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection vulnerability, have been assigned the CVE identifiers CVE-2026-116606 (CVSS score: 9.3)",
+      "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
+      "date": "2026-11-03T15:59:19.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-116606"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
       "title": "Google Warns LLMjacking Attacks Are Costing Some Enterprises Up to $1 Million in Cloud Charges",
       "summary": "Google on Monday warned that threat actors are hijacking enterprise access to Large Language Models (LLMs) to fraudulently leverage expensive computing resources and AI services.\n\nThe tactic is called LLMjacking, a form of resource hijacking adapted for the LLM era, where an attacker obtains an API key through phishing, source code leaks, misconfigured environments, or exposed client-side code",
       "url": "https://thehackernews.com/2026/11/google-warns-llmjacking-attacks-are.html",
@@ -1122,10 +1235,10 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
-      "title": "9 Cyber Awareness Tips That Actually Match Today’s Maze of Threats",
+      "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
       "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits that help reduce enterprise risk.",
       "url": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
       "date": "2026-11-03T15:38:20.000Z",
@@ -1141,10 +1254,10 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
-      "title": "LLMJacking Emerges as Thriving Cybercriminal Enterprise",
+      "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
       "summary": "Cybercriminals have turned reselling cloud access to LLMs into a lucrative business model, with some victims paying as much as $1 million in resource consumption before access was revoked.",
       "url": "https://www.darkreading.com/cloud-security/llmjacking-thriving-cybercriminal-enterprise",
       "date": "2026-11-03T15:35:50.000Z",
@@ -1160,7 +1273,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "cPGuard Update Channel Hijacked to Backdoor Linux Servers and Collect Password Hashes",
@@ -1179,7 +1292,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
@@ -1198,7 +1311,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 25
     },
     {
       "title": "Network appliances go more than a year without patches as exploits speed up",
@@ -1217,7 +1330,30 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirement",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "date": "2026-11-03T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-119977"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-119977"
+      ],
+      "articleCount": 1,
+      "score": 68
     },
     {
       "title": "Subnet Solutions PowerSYSTEM Center",
@@ -1239,7 +1375,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "Enterprises pay $100,000 a day for AI they never ordered",
@@ -1258,7 +1394,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
@@ -1280,7 +1416,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 48
     },
     {
       "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
@@ -1299,7 +1435,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
@@ -1318,7 +1454,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Armed with AI, hackers target endpoint security blind spots, raising stakes for CISOs",
@@ -1337,7 +1473,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
@@ -1356,7 +1492,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "67% of security leaders say their teams struggle to meet business needs",
@@ -1375,7 +1511,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
@@ -1394,7 +1530,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 35
     },
     {
       "title": "New Wave of Refrigeration Cyberattacks Hits Supermarkets Across Europe, Forcing Stores to Pull Food",
@@ -1413,49 +1549,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
-    },
-    {
-      "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
-      "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed.\n\nThe vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code.\n\n\"SIMATIC IoT2050 Advanced devices running",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
-      "date": "2026-11-03T05:34:41.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-58115"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 23
-    },
-    {
-      "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
-      "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber.\n\nThe vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the flaw could permit unauthenticated users to delete arbitrary files on the server and extract",
-      "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
-      "date": "2026-11-03T05:34:37.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-81648"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
@@ -1474,7 +1568,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "ISC Stormcast For Tuesday, November 3rd, 2026 https://isc.sans.edu/podcastdetail/10162, (Tue, Nov 3rd)",
@@ -1493,7 +1587,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 22
+      "score": 20
     },
     {
       "title": "European supermarkets that failed to act after French freezer attack are now feeling the heat",
@@ -1512,7 +1606,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
@@ -1531,46 +1625,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
-      "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.\n\nThen there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
-      "date": "2026-11-02T16:57:56.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software",
-        "DDoS"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 31
-    },
-    {
-      "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
-      "summary": "A botnet of more than 1.3 million Android devices, mostly TV set-top boxes, lost control of its servers in late October in a takedown led by Google.\n\nGoogle says it is highly confident that device maker Videostrong intentionally put a backdoor in the boxes and sold access to criminals.\n\nThey used the boxes for ad fraud and to pass other people's internet traffic through owners' home",
-      "url": "https://thehackernews.com/2026/11/google-disrupts-13-million-device.html",
-      "date": "2026-11-02T15:50:26.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 29
+      "score": 19
     },
     {
       "title": "Microsoft's AI Risk Report Misses This Key Detail",
@@ -1589,7 +1644,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Mutipath TCP: Use and Detection, (Mon, Nov 2nd)",
@@ -1610,7 +1665,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
@@ -1629,7 +1684,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "A compromised DevOps laptop caused the $6.3B Binance breach",
@@ -1648,7 +1703,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Cursor removes malicious Claude Code extension after SSH backdoor attempt",
@@ -1667,7 +1722,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Why do we keep testing employees for yesterday’s phishing attacks",
@@ -1686,7 +1741,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Who approves the files that control your AI coding assistant?",
@@ -1705,7 +1760,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "What a security strategy that survives 2027 looks like",
@@ -1724,7 +1779,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "OneNote File Extraction, (Sun, Nov 1st)",
@@ -1743,7 +1798,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
@@ -1860,25 +1915,6 @@
       "score": 11
     },
     {
-      "title": "Why identity governance demands executive attention",
-      "summary": "The identity landscape you’re responsible for looks nothing like it did just a few years ago. Employees and contractors now share the enterprise with service accounts, machine identities, and a fast-growing population of AI agents — all accessing business systems and data. \nEvery one of those identities represents an access decision, and every access decision is now a potential point of accountability that lands on your desk. Regulators and boards want proof. They expect security leaders to show",
-      "url": "https://www.csoonline.com/article/4242864/why-identity-governance-demands-executive-attention.html",
-      "date": "2026-10-30T17:09:23.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
       "title": "L’Italia è afflitta da vulnerabilità informatiche, senza una causa chiara",
       "summary": "I ricercatori non riescono a spiegare del tutto perché le minacce informatiche in Italia siano così diverse rispetto a quelle di qualsiasi altro Paese.",
       "url": "https://www.darkreading.com/cybersecurity-analytics/cyber-vulnerabilities-besiege-italy-italian",
@@ -1895,7 +1931,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Undead Software Projects Continue to Raise Security Risks",
@@ -1914,7 +1950,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1949,25 +1985,6 @@
       ],
       "articleCount": 3,
       "score": 57
-    },
-    {
-      "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
-      "summary": "The \"FrostyNeighbor\" advanced persistent threat (APT) launched a destructive attack in Ukraine and is raising concerns about deeper alignment with Russian cyber objectives.",
-      "url": "https://www.darkreading.com/physical-security/russia-cyber-war-belarus-steps-forward",
-      "date": "2026-10-30T08:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
     },
     {
       "title": "ISC Stormcast For Friday, October 30th, 2026 https://isc.sans.edu/podcastdetail/10158, (Fri, Oct 30th)",
@@ -2008,25 +2025,6 @@
       "score": 23
     },
     {
-      "title": "Hitachi Energy CoreTec Product",
-      "summary": "View CSAF\nSummary\nHitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy CoreTec Product are affected:\nCoreTec5 vers:CoreTec5/<=3.4.0, 5.0",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
-      "date": "2026-10-29T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
       "title": "Siemens Mendix SAML Module",
       "summary": "View CSAF\nSummary\nMendix SAML module contains an authentication bypass vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access by replaying a valid SAML assertion in IdP-initiated authentication flows. Siemens has released new versions for the affected products and recommends to update to the latest versions.\nThe following versions of Siemens Mendix SAML Module are affected:\nMendix SAML (Mendix 10 compatible) vers:intdot/<4.2.4 (CVE-2026-89209)\nMendix SAML (",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-01",
@@ -2043,6 +2041,25 @@
       "cveMatches": [
         "CVE-2026-89209"
       ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 10
+    },
+    {
+      "title": "Hitachi Energy CoreTec Product",
+      "summary": "View CSAF\nSummary\nHitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.\nThe following versions of Hitachi Energy CoreTec Product are affected:\nCoreTec5 vers:CoreTec5/<=3.4.0, 5.0",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03",
+      "date": "2026-10-29T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
@@ -2065,6 +2082,33 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
+    },
+    {
+      "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system.\nThe following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, M",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
+      "date": "2026-10-27T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "DDoS",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2023-4863",
+        "CVE-2026-16436",
+        "CVE-2026-16437",
+        "CVE-2026-16438"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-4863"
+      ],
+      "articleCount": 1,
+      "score": 56
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -2097,33 +2141,6 @@
       "score": 56
     },
     {
-      "title": "Mitsubishi Electric and Mitsubishi Electric Iconics Digital Solutions GENESIS, GENESIS64, ICONICS Suite, Hyper Historian, AnalytiX, MobileHMI, IoTWorX, MC Works64, GENESIS32 and BizViz",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code (CVE-2023-4863), bypass authentication (CVE-2026-16436 and CVE-2026-16437), or perform arbitrary operations (CVE-2026-16438), resulting in information disclosure, tampering with, destruction, or deletion of information, and a denial-of-service (DoS) condition of the system.\nThe following versions of Mitsubishi Electric GENESIS, GENESIS64, ICONICS Suite, HyperHistorian, AnalytiX, M",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-02",
-      "date": "2026-10-27T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "DDoS",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2023-4863",
-        "CVE-2026-16436",
-        "CVE-2026-16437",
-        "CVE-2026-16438"
-      ],
-      "knownExploitedCves": [
-        "CVE-2023-4863"
-      ],
-      "articleCount": 1,
-      "score": 56
-    },
-    {
       "title": "EPICS Base",
       "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to cause a denial-of-service condition, corrupt memory, disclose sensitive information, or potentially execute arbitrary code.\nThe following versions of EPICS Base are affected:\nEPICS Base release <=7.0.10 (CVE-2026-114595, CVE-2026-114596, CVE-2026-114597, CVE-2026-114598)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nThe EPICS Community\nEPICS Base release\n\n\n\n\n\n\n3 Vulnerabilities\n\n\n\n\nInteger Overflow or Wraparound, Im",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-300-01",
@@ -2146,29 +2163,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 20
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-110447 Collabora Online – Built-in CODE Server OS Command Injection Vulnerability \nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements f",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/10/23/cisa-adds-one-known-exploited-vulnerability-catalog-0",
-      "date": "2026-10-23T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-110447"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-110447"
-      ],
-      "articleCount": 1,
-      "score": 54
     },
     {
       "title": "Widespread PHP Flaw May Cause Many Site Outages Today",
@@ -2344,6 +2338,29 @@
   ],
   "top3": [
     {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-119977 WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirement",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "date": "2026-11-03T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-119977"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-119977"
+      ],
+      "articleCount": 1,
+      "score": 68
+    },
+    {
       "title": "Red Hat Patches 9.8-Rated Linux TCP RCE Flaw While Ubuntu Releases Fixes for Testing",
       "summary": "Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update.\n\nThe flaw, tracked as CVE-2026-98432, can be reached by a remote, unauthenticated attacker and can",
       "url": "https://thehackernews.com/2026/11/red-hat-patches-98-rated-linux-tcp-rce.html",
@@ -2363,45 +2380,26 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 48
     },
     {
-      "title": "Network appliances go more than a year without patches as exploits speed up",
-      "summary": "The median vulnerability on enterprise network appliances stays unpatched for more than a year, Microsoft’s own telemetry shows, even as the most damaging software flaws are being weaponized within days of disclosure.\nMicrosoft Security Research reported the findings Monday in an analysis of roughly 383,000 CVEs disclosed from 1999 through September 2026. It shows that the median time to patch a vulnerability exceeds a year for network appliances. The period is more than a month for Windows serv",
-      "url": "https://www.csoonline.com/article/4243874/network-appliances-go-more-than-a-year-without-patches-as-exploits-speed-up.html",
-      "date": "2026-11-03T12:32:10.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 37
-    },
-    {
-      "title": "Synology NAS Devices Targeted in Ransomware Attacks Exploiting Patched DSM Flaw",
-      "summary": "Synology is urging customers to update the DiskStation Manager (DSM) software powering its Network Attached Storage (NAS) devices following ransomware attacks.\n\nThe Taiwanese vendor said it observed threat actors exploiting a vulnerability patched in December 2024 to target devices running outdated versions of DSM.\n\n\"These attacks aim to encrypt data and extort ransom,\" it said in a statement",
-      "url": "https://thehackernews.com/2026/11/synology-nas-devices-targeted-in.html",
-      "date": "2026-11-03T07:43:07.000Z",
+      "title": "UK organisations warned to brace for AI-powered ransomware attacks",
+      "summary": "AI-powered malware is “highly likely” to be used in ransomware attacks on Britain’s critical national infrastructure within the next two years.\nThe head of GCHQ’s National Cyber Security Centre, Dr. Richard Horne, warned that abuse of AI technologies is making it much easier for attackers to rapidly expose and exploit long-neglected security weaknesses.\nDr. Horne argued that underinvestment in technology and security have left organisations carrying a technical debt that leave them wide open to ",
+      "url": "https://www.csoonline.com/article/4244138/uk-organisations-warned-to-brace-for-ai-powered-ransomware-attacks.html",
+      "date": "2026-11-03T18:53:08.000Z",
       "severity": "Medium",
       "tags": [
         "Ransomware"
       ],
       "sources": [
-        "The Hacker News"
+        "CSO Online"
       ],
       "sourceCount": 1,
       "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 40
     }
   ],
   "sourcesUsed": [
@@ -2414,5 +2412,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-03T17:09:50.008Z"
+  "lastUpdated": "2026-11-03T22:21:55.256Z"
 }
