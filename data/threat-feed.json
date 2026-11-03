@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "title": "European supermarkets that failed to act after French freezer attack are now feeling the heat",
+      "source": "CSO Online",
+      "date": "2026-11-03T00:23:35.000Z",
+      "summary": "Just a couple of weeks after a cyberattack on French supermarket refrigeration systems resulted in spoiled food, and even some fires, retailers in Belgium, Ireland, Sweden, Finland, and Estonia were hit with nearly-identical attacks on Monday.\nThe mid-October attack prompted an advisory from the French Computer Emergency Response Team (CERT-FR) recommending that organizations disconnect any refrigeration control systems with public IP addresses from the internet, and to reconnect them via a secu",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4243371/european-supermarkets-that-failed-to-act-after-french-freezer-attack-are-now-feeling-the-heat.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "source": "Dark Reading",
+      "date": "2026-11-02T22:27:24.000Z",
+      "summary": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
       "source": "The Hacker News",
       "date": "2026-11-02T16:57:56.000Z",
@@ -572,21 +602,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "We are not ready for what AI has done to red teaming",
-      "source": "CSO Online",
-      "date": "2026-10-30T09:00:00.000Z",
-      "summary": "Something shifted in offensive security over the last eighteen months that most organizations haven’t fully absorbed yet. It isn’t that attackers got smarter. It’s that the economics of attack changed entirely — and those of us who run red teams have had a front-row seat to the transformation.\nThe conversation about AI in cybersecurity tends to fixate on defense: better anomaly detection, faster triage, and AI-assisted SOC analysts. That framing misses the more urgent story. The attack side of t",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4242174/we-are-not-ready-for-what-ai-has-done-to-red-teaming.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "As Russia's Cyberwar Evolves, Belarus Steps Forward",
       "source": "Dark Reading",
       "date": "2026-10-30T08:00:00.000Z",
@@ -657,21 +672,6 @@
       ],
       "url": "https://www.darkreading.com/cybersecurity-operations/why-ctf-more-important-than-ever",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
-      "source": "Dark Reading",
-      "date": "2026-10-29T18:15:59.000Z",
-      "summary": "An unreleased version of the AI model has found and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux, Anthropic says.",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1105,6 +1105,44 @@
   ],
   "clusters": [
     {
+      "title": "European supermarkets that failed to act after French freezer attack are now feeling the heat",
+      "summary": "Just a couple of weeks after a cyberattack on French supermarket refrigeration systems resulted in spoiled food, and even some fires, retailers in Belgium, Ireland, Sweden, Finland, and Estonia were hit with nearly-identical attacks on Monday.\nThe mid-October attack prompted an advisory from the French Computer Emergency Response Team (CERT-FR) recommending that organizations disconnect any refrigeration control systems with public IP addresses from the internet, and to reconnect them via a secu",
+      "url": "https://www.csoonline.com/article/4243371/european-supermarkets-that-failed-to-act-after-french-freezer-attack-are-now-feeling-the-heat.html",
+      "date": "2026-11-03T00:23:35.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "One Compromised Laptop, Billions Lost: The Binance Attack-Path Warning",
+      "summary": "The record theft shows how weak system separation, inadequate controls, and untested attack possibilities can turn one breach into systemic loss.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/binance-hack-test-attack-paths",
+      "date": "2026-11-02T22:27:24.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "⚡ Weekly Recap: Critical CVEs, Linux DDoS Botnet, Device-Code Phishing, Android Spyware and More",
       "summary": "Some attacks this week didn't need much of a trick. A fake support call, a trusted extension, a shared link, or a device with no password. Small things that people barely think about. Yet each was enough to cause serious trouble.\n\nThen there were the bigger messes. Billions stolen, hidden networks of hacked devices, poisoned software, and attackers finding new ways to turn normal tools against",
       "url": "https://thehackernews.com/2026/11/weekly-recap-critical-cves-linux-ddos.html",
@@ -1122,7 +1160,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 41
+      "score": 37
     },
     {
       "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
@@ -1141,7 +1179,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 34
     },
     {
       "title": "Microsoft's AI Risk Report Misses This Key Detail",
@@ -1160,7 +1198,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
     },
     {
       "title": "Mutipath TCP: Use and Detection, (Mon, Nov 2nd)",
@@ -1181,7 +1219,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "DarkBlinders Compromises Israeli Target and Iraqi Kurdish Government Cloud Environment",
@@ -1200,7 +1238,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "PapRAT Cyber-Espionage Campaign Leaves a 'Bitter' Taste in South Asia",
@@ -1219,7 +1257,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
     },
     {
       "title": "A compromised DevOps laptop caused the $6.3B Binance breach",
@@ -1238,7 +1276,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Critical Langflow Flaws Could Let Unauthenticated Attackers Run Code on Servers",
@@ -1257,7 +1295,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Cursor removes malicious Claude Code extension after SSH backdoor attempt",
@@ -1276,7 +1314,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
@@ -1295,7 +1333,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
@@ -1314,7 +1352,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 32
     },
     {
       "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
@@ -1333,7 +1371,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Why do we keep testing employees for yesterday’s phishing attacks",
@@ -1352,7 +1390,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Who approves the files that control your AI coding assistant?",
@@ -1371,7 +1409,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "What a security strategy that survives 2027 looks like",
@@ -1390,7 +1428,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "New VOLTA Infostealer Uses Claude, Gemini, and Kimi AI to Rank Victims by Financial Value",
@@ -1409,7 +1447,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 30
     },
     {
       "title": "ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)",
@@ -1428,7 +1466,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "OneNote File Extraction, (Sun, Nov 1st)",
@@ -1447,7 +1485,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
@@ -1466,7 +1504,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
@@ -1485,7 +1523,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
@@ -1504,7 +1542,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
@@ -1523,7 +1561,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
@@ -1542,7 +1580,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 13
+      "score": 12
     },
     {
       "title": "YARA-X 1.22.0 Release, (Sun, Oct 25th)",
@@ -1561,7 +1599,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Choosing a WAAP in 2026: 3 questions that separate the shortlist",
@@ -1599,7 +1637,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Devs Hit by Trojanized Claude Code Extension for Cursor",
@@ -1618,7 +1656,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Behind the Scenes of How Operation Blackout Went Down",
@@ -1637,7 +1675,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Why identity governance demands executive attention",
@@ -1735,7 +1773,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 35
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1795,25 +1833,6 @@
       "summary": "The first hours after a serious cyber incident are filled with activity. Security starts investigating, IT works to contain the impact, legal begins assessing potential obligations, and executives want to know what happened and what the company is doing about it. Most teams rely on the same tools they use every day to coordinate that work, which usually means email, Slack, Teams, shared documents and video calls.\nCoordination gets much more complicated when the company’s email or collaboration e",
       "url": "https://www.csoonline.com/article/4242184/everyday-channels-are-available-in-an-incident-but-you-may-not-want-them.html",
       "date": "2026-10-30T10:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
-      "title": "We are not ready for what AI has done to red teaming",
-      "summary": "Something shifted in offensive security over the last eighteen months that most organizations haven’t fully absorbed yet. It isn’t that attackers got smarter. It’s that the economics of attack changed entirely — and those of us who run red teams have had a front-row seat to the transformation.\nThe conversation about AI in cybersecurity tends to fixate on defense: better anomaly detection, faster triage, and AI-assisted SOC analysts. That framing misses the more urgent story. The attack side of t",
-      "url": "https://www.csoonline.com/article/4242174/we-are-not-ready-for-what-ai-has-done-to-red-teaming.html",
-      "date": "2026-10-30T09:00:00.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -1902,7 +1921,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Why CTF Competitions May Be More Important Than Ever",
@@ -1921,26 +1940,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
-    },
-    {
-      "title": "Claude Model Builds Exploits Across Major Browsers &amp; OSes",
-      "summary": "An unreleased version of the AI model has found and chained multiple vulnerabilities in Chrome, Safari, Android, Windows, and Linux, Anthropic says.",
-      "url": "https://www.darkreading.com/application-security/claude-model-exploits-major-browsers-oses",
-      "date": "2026-10-29T18:15:59.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
+      "score": 10
     },
     {
       "title": "Hitachi Energy TRO600 series products",
@@ -2355,7 +2355,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 41
+      "score": 37
     },
     {
       "title": "Google Disrupts 1.3 Million-Device Android Botnet, Says TV Box Maker Sold Criminal Access",
@@ -2374,7 +2374,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 34
     },
     {
       "title": "Microsoft's AI Risk Report Misses This Key Detail",
@@ -2393,7 +2393,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
     }
   ],
   "sourcesUsed": [
@@ -2406,5 +2406,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-02T19:36:17.544Z"
+  "lastUpdated": "2026-11-03T01:46:27.739Z"
 }
