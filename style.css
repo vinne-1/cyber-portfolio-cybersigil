@@ -417,6 +417,13 @@ body {
   opacity: 1;
 }
 
+html[data-prerendered] #siteShell {
+  opacity: 1;
+}
+html[data-prerendered] .preloader {
+  display: none;
+}
+
 /* Gothic viewport frame — kprverse-inspired border lines */
 #siteShell::after {
   content: '';

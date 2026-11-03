@@ -180,6 +180,10 @@
         '/tools/website-health': 'page-tool-website-health',
         '/tools/text-humanizer': 'page-tool-text-humanizer',
         '/tools/file-converter': 'page-tool-file-converter',
+        '/tools/merge-pdf':    'page-tool-merge-pdf',
+        '/tools/pdf-to-text':  'page-tool-pdf-to-text',
+        '/tools/webp-to-png':  'page-tool-webp-to-png',
+        '/tools/docx-to-pdf':  'page-tool-docx-to-pdf',
         '/guides/security-headers': 'page-guide-security-headers',
         '/guides/cisa-kev': 'page-guide-cisa-kev',
         '/guides/ai-writing-phrases': 'page-guide-ai-writing-phrases',
@@ -196,10 +200,14 @@
         '/about':          'About — Vineet Vishesh',
         '/work':           'Work & Capabilities — Vineet Vishesh',
         '/products':       'TithiPath — Panchang & Kundli App | Vineet Vishesh',
-        '/free-tools':     'Free Tools — Vineet Vishesh',
-        '/tools/website-health': 'Website Health Report — Vineet Vishesh',
-        '/tools/text-humanizer': 'Text Humanizer — Vineet Vishesh',
-        '/tools/file-converter': 'Free File Converter — Merge PDFs, DOCX/Image to PDF, PDF to Text | Vineet Vishesh',
+        '/free-tools':     'Free Online Tools: Website Checker, PDF & Text | Vineet Vishesh',
+        '/tools/website-health': 'Free Website Health Checker: Security & SEO | Vineet Vishesh',
+        '/tools/text-humanizer': 'Free Text Humanizer - No Signup, Browser-Based | Vineet Vishesh',
+        '/tools/file-converter': 'Free File Converter: PDFs & Images, No Upload | Vineet Vishesh',
+        '/tools/merge-pdf':    'Merge PDFs Free - No Upload, No Signup | Vineet Vishesh',
+        '/tools/pdf-to-text':  'PDF to Text Converter Free - No Upload | Vineet Vishesh',
+        '/tools/webp-to-png':  'WEBP to PNG Converter Free - No Upload | Vineet Vishesh',
+        '/tools/docx-to-pdf':  'DOCX to PDF Converter Free - No Signup | Vineet Vishesh',
         '/guides/security-headers': 'HTTP Security Headers Explained — Vineet Vishesh',
         '/guides/cisa-kev': 'What Is CISA KEV? — Vineet Vishesh',
         '/guides/ai-writing-phrases': 'Phrases That Make Writing Sound Stiff — Vineet Vishesh',
@@ -216,10 +224,14 @@
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
         '/work':           'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.',
         '/products':       'TithiPath: Hindu Panchang, Kundli (birth chart), and Rashifal for Android — 37 Indian cities, 9 languages, on-device. Currently in Google Play testing.',
-        '/free-tools':     'Free tools by Vineet Vishesh — a Website Health Report, a live Threat Landscape feed, an on-device Text Humanizer, and a File Converter. No signup required.',
-        '/tools/website-health': 'Free Website Health Report — security headers, SEO, performance, SSL/TLS, and DNS analysis for any URL.',
-        '/tools/text-humanizer': 'Free Text Humanizer — rewrite a stiff draft into plainer sentences in your browser. Nothing is uploaded.',
+        '/free-tools':     'Free online tools by Vineet Vishesh — a website health checker, a live threat landscape feed, a browser-based text humanizer, and a file converter. No signup required.',
+        '/tools/website-health': 'Free website health checker — security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance analysis for any public URL.',
+        '/tools/text-humanizer': 'Free text humanizer — rewrite a stiff draft into plainer sentences in your browser. Rule-based, no signup, nothing is uploaded.',
         '/tools/file-converter': 'Free file converter — merge PDFs, convert images between PNG/JPEG/WEBP, turn a DOCX, TXT, or image into a PDF, and pull the text out of a PDF. Runs in your browser, nothing uploaded.',
+        '/tools/merge-pdf':    'Merge two or more PDFs into one file in the order you choose — free, no signup, nothing uploaded. Runs entirely in your browser.',
+        '/tools/pdf-to-text':  'Extract selectable text from a PDF right in your browser — free, no signup, nothing uploaded. Copy the text or download it as a .txt file.',
+        '/tools/webp-to-png':  'Convert a WEBP image to PNG — or between PNG, JPEG, and WEBP — on a canvas in your browser. Free, no signup, nothing uploaded.',
+        '/tools/docx-to-pdf':  'Turn a .docx document into a PDF using your browser\'s print-to-PDF dialog — free, no signup, nothing uploaded.',
         '/guides/security-headers': 'What HTTP security headers do, why they matter, and how to check whether your site has them — free, with the Website Health Report tool.',
         '/guides/cisa-kev': "What CISA's Known Exploited Vulnerabilities (KEV) catalog is, why it's the one authoritative severity signal in the Threat Landscape feed, and how it differs from CVSS.",
         '/guides/ai-writing-phrases': "Common stock phrases and stiff sentence patterns that make writing sound formulaic — and how to fix them, free, with the Text Humanizer tool.",
@@ -542,6 +554,8 @@
         var metaDesc = document.querySelector('meta[name="description"]');
         var routeDescription = ROUTE_DESCRIPTIONS[route] || ROUTE_DESCRIPTIONS['/'];
         if (metaDesc) metaDesc.setAttribute('content', routeDescription);
+        var robotsMeta = document.querySelector('meta[name="robots"]');
+        if (robotsMeta) robotsMeta.setAttribute('content', route === '/404' ? 'noindex, follow' : 'index, follow');
 
         // Keep canonical URL / Open Graph metadata in sync with the route so
         // crawlers and link-preview bots see the real page, not always the
@@ -635,6 +649,10 @@
     function renderPage(template) {
         app.innerHTML = '';
         var content = template.content.cloneNode(true);
+        content.querySelectorAll('[data-tool-embed="file-converter"]').forEach(function (slot) {
+            var controls = document.getElementById('tool-file-converter-controls');
+            if (controls) slot.appendChild(controls.content.cloneNode(true));
+        });
         app.appendChild(content);
     }
 
@@ -2910,17 +2928,24 @@
 
         var tabs = root.querySelectorAll('.fc-tab');
         var panels = root.querySelectorAll('.fc-panel');
+
+        function selectTab(target) {
+            tabs.forEach(function (t) {
+                var on = t.getAttribute('data-fc-tab') === target;
+                t.classList.toggle('is-active', on);
+                t.setAttribute('aria-selected', on ? 'true' : 'false');
+            });
+            panels.forEach(function (p) {
+                p.hidden = p.getAttribute('data-fc-panel') !== target;
+            });
+        }
+
+        var defaultScope = root.closest('[data-fc-default]');
+        if (defaultScope) selectTab(defaultScope.getAttribute('data-fc-default'));
+
         tabs.forEach(function (tab) {
             tab.addEventListener('click', function () {
-                var target = tab.getAttribute('data-fc-tab');
-                tabs.forEach(function (t) {
-                    var on = t === tab;
-                    t.classList.toggle('is-active', on);
-                    t.setAttribute('aria-selected', on ? 'true' : 'false');
-                });
-                panels.forEach(function (p) {
-                    p.hidden = p.getAttribute('data-fc-panel') !== target;
-                });
+                selectTab(tab.getAttribute('data-fc-tab'));
             });
         });
 
@@ -3429,7 +3454,7 @@
         var preloader = document.getElementById('preloader');
         if (!preloader) { callback(); return; }
 
-        if (animationsDisabled) {
+        if (animationsDisabled || document.documentElement.hasAttribute('data-prerendered')) {
             preloader.style.display = 'none';
             callback();
             return;

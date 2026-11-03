@@ -19,6 +19,7 @@
     <meta name="description" content="Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years across web, API, network, and cloud security.">
     <meta name="theme-color" content="#000000">
     <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="LDprEP-lEzFZyLN6-VwCKeUt5_4LjRqKgmTNt9Pm8Ow">
     <link rel="canonical" href="https://vineedoesstuff.in/">
     <link rel="manifest" href="/manifest.json">
     <meta property="og:title" content="Vineet Vishesh — Offensive Security">
@@ -38,7 +39,7 @@
     <link rel="preconnect" href="https://unpkg.com" crossorigin>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <noscript><style>body{opacity:1!important}</style></noscript>
+    <noscript><style>body{opacity:1!important}#siteShell{opacity:1!important}.preloader{display:none!important}</style></noscript>
     <!-- GitHub Pages SPA redirect restore -->
     <script>
         (function(){
@@ -235,6 +236,7 @@
                     <div class="footer__bottom-row">
                         <span class="footer__copy">&copy; 2026 Vineet Vishesh</span>
                         <span class="footer__copy">Based in India</span>
+                        <a href="/free-tools" class="footer__copy footer__copy--link" data-route>Free Tools</a>
                         <a href="/privacy" class="footer__copy footer__copy--link" data-route>Privacy</a>
                     </div>
                 </div>
@@ -1162,10 +1164,10 @@
                     <span class="t-label" style="display:block; margin-top:1rem;">Free Tools</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h1 class="t-heading split-heading" style="margin-top:1.5rem;">
-                        Free security &amp; SEO tools, no signup.
+                        Free online tools, no signup.
                     </h1>
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
-                        Free tools with no signup &mdash; a website health scan, a live cybersecurity threat feed, a text humanizer, and a file converter, all running in your browser.
+                        Free tools with no signup &mdash; a website health scan, a live cybersecurity threat feed, a text humanizer, and a file converter. The humanizer and converter run entirely in your browser; the health scan and threat feed pull public sources through a small backend.
                     </p>
                 </div>
 
@@ -1262,6 +1264,17 @@
                     </div>
                 </div>
 
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">File conversion quick tasks</h2>
+                    <p class="t-body" style="color:var(--gray-300); margin-bottom:1.25rem;">Jump straight to the job &mdash; each page opens the same in-browser converter pre-set for that task.</p>
+                    <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
+                        <a href="/tools/merge-pdf" class="btn btn--outline" data-route>Merge PDFs</a>
+                        <a href="/tools/pdf-to-text" class="btn btn--outline" data-route>PDF to Text</a>
+                        <a href="/tools/webp-to-png" class="btn btn--outline" data-route>WEBP to PNG</a>
+                        <a href="/tools/docx-to-pdf" class="btn btn--outline" data-route>DOCX to PDF</a>
+                    </div>
+                </div>
+
                 <p style="margin-top:3rem; font-size:0.8rem; color:var(--gray-300); max-width:600px;">
                     Looking for shipped apps instead? See <a href="/products" data-route>Products</a>. Or read the <a href="/guides/security-headers" data-route>HTTP security headers guide</a> behind the Website Health Report's checks, the <a href="/guides/cisa-kev" data-route>CISA KEV guide</a> behind the Threat Landscape's ranking, or the <a href="/guides/ai-writing-phrases" data-route>stiff-writing phrases guide</a> behind the Text Humanizer.
                 </p>
@@ -1296,7 +1309,7 @@
                     </nav>
                     <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
-                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">Text Humanizer</h1>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">Free Text Humanizer</h1>
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
                         Rewrite a stiff draft so it sounds like a person wrote it. Shorter rhythm, fewer stock phrases, same meaning.
                     </p>
@@ -1332,6 +1345,13 @@
                         <button type="button" id="humanizerRun" class="btn btn--primary">Humanize</button>
                     </div>
                     <button type="button" id="humanizerCopy" class="btn btn--outline" disabled>Copy rewrite</button>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">What it won't do</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        This is a rule-based rewriter, not a generative model &mdash; it swaps stock phrases, adjusts rhythm, and applies fixed tone rules, so it won't invent new arguments or paraphrase creatively. Drafts are capped at 8,000 characters. Always proofread the output before sending it anywhere, and don't treat it as a guarantee against AI-detection tools &mdash; no deterministic rewriter can promise that.
+                    </p>
                 </div>
 
                 <div class="anim-item" style="margin-top:5rem; max-width:720px;">
@@ -1430,32 +1450,9 @@
         </section>
     </template>
 
-    <!-- FILE CONVERTER -->
-    <template id="page-tool-file-converter">
-        <section class="section section--atmosphere-deep" data-page="tool-file-converter" style="padding-top:120px;">
-            <div class="container">
-                <div class="anim-item" style="margin-bottom:2.5rem;">
-                    <nav aria-label="Breadcrumb">
-                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
-                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
-                            <li aria-hidden="true">/</li>
-                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
-                            <li aria-hidden="true">/</li>
-                            <li aria-current="page" style="color:var(--white);">File Converter</li>
-                        </ol>
-                    </nav>
-                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
-                    <div class="accent-bar" style="margin-top:1rem;"></div>
-                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">File Converter</h1>
-                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
-                        Merge PDFs, convert images, turn a document into a PDF, or pull the text out of a PDF &mdash; all four run in this browser.
-                    </p>
-                    <p class="t-body" style="margin-top:1rem; max-width:700px; color:var(--gray-300);">
-                        Nothing is uploaded. Your file never leaves this tab.
-                    </p>
-                </div>
-
-                <div id="fcRoot">
+    <template id="tool-file-converter-controls">
+        <div id="fcRoot">
+                    <noscript><p style="padding:0.85rem 1.1rem; border:1px solid var(--border); font-size:0.85rem; color:var(--gray-300); margin-bottom:1.25rem;">JavaScript is required to convert files. The instructions and privacy information below are still available.</p></noscript>
                     <div class="anim-item" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem;" role="tablist" aria-label="Conversion type">
                         <button type="button" class="btn btn--outline fc-tab is-active" data-fc-tab="image" role="tab" aria-selected="true">Image Converter</button>
                         <button type="button" class="btn btn--outline fc-tab" data-fc-tab="pdf" role="tab" aria-selected="false">Convert to PDF</button>
@@ -1521,6 +1518,45 @@
                         </div>
                         <p id="fcMergeStatus" style="display:none; margin-top:1rem; font-size:0.85rem;"></p>
                         <div id="fcMergeResult" style="margin-top:1rem;"></div>
+                    </div>
+                </div>
+    </template>
+
+    <!-- FILE CONVERTER -->
+    <template id="page-tool-file-converter">
+        <section class="section section--atmosphere-deep" data-page="tool-file-converter" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">File Converter</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">Free File Converter</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Merge PDFs, convert images, turn a document into a PDF, or pull the text out of a PDF &mdash; all four run in this browser.
+                    </p>
+                    <p class="t-body" style="margin-top:1rem; max-width:700px; color:var(--gray-300);">
+                        Nothing is uploaded. Your file never leaves this tab.
+                    </p>
+                </div>
+
+                <div data-tool-embed="file-converter"></div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">Jump to a specific task</h2>
+                    <p class="t-body" style="color:var(--gray-300); margin-bottom:1.25rem;">Each of these opens this same converter pre-set for one job:</p>
+                    <div style="display:flex; flex-wrap:wrap; gap:0.75rem;">
+                        <a href="/tools/merge-pdf" class="btn btn--outline" data-route>Merge PDFs</a>
+                        <a href="/tools/pdf-to-text" class="btn btn--outline" data-route>PDF to Text</a>
+                        <a href="/tools/webp-to-png" class="btn btn--outline" data-route>WEBP to PNG</a>
+                        <a href="/tools/docx-to-pdf" class="btn btn--outline" data-route>DOCX to PDF</a>
                     </div>
                 </div>
 
@@ -1629,6 +1665,366 @@
         </section>
     </template>
 
+    <template id="page-tool-merge-pdf">
+        <section class="section section--atmosphere-deep" data-page="tool-merge-pdf" data-fc-default="merge" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">Merge PDFs</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">Merge PDFs Free Online</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Combine two or more PDFs into a single file, in exactly the order you set. It runs in this browser tab &mdash; nothing is uploaded.
+                    </p>
+                </div>
+
+                <div data-tool-embed="file-converter"></div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">How to merge PDFs</h2>
+                    <ol class="t-body" style="color:var(--gray-300); padding-left:1.25rem; display:grid; gap:0.5rem;">
+                        <li>Pick two or more PDF files &mdash; if you forget one, pick again and it's added to the list.</li>
+                        <li>Use the up/down arrows to set the order pages appear in.</li>
+                        <li>Click Merge PDFs and download the combined file.</li>
+                    </ol>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">What it won't do</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        It merges whole documents only &mdash; there's no picking individual pages out of each file. You need at least two PDFs, each up to 25MB, and every file has to be a valid, unencrypted PDF or the merge will fail. Since everything happens in the tab's own memory, very large batches can be slow on low-memory devices.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Are my PDFs uploaded anywhere?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No. The merge uses the pdf-lib library running entirely in your browser's JavaScript &mdash; your files never leave this tab. See the <a href="/guides/browser-file-conversion" data-route>browser conversion guide</a> for how that works and why it matters.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Can I control the order pages end up in?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Yes &mdash; reorder the files with the up/down arrows before merging and pages are combined in exactly that order. You can also drop a file from the list with its &times; button.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is it free, and is there a size limit?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Free, with no signup and no usage cap. Each file can be up to 25MB; there's no fixed cap on how many PDFs you combine &mdash; the practical limit is your device's memory.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">More free file tools</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        Pull text out of a PDF with <a href="/tools/pdf-to-text" data-route>PDF to Text</a>, turn a document into a PDF with <a href="/tools/docx-to-pdf" data-route>DOCX to PDF</a>, re-encode an image with <a href="/tools/webp-to-png" data-route>WEBP to PNG</a>, or use the all-in-one <a href="/tools/file-converter" data-route>File Converter</a>. Back to <a href="/free-tools" data-route>all free tools</a>.
+                    </p>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://vineedoesstuff.in/free-tools" },
+                    { "@type": "ListItem", "position": 3, "name": "Merge PDFs", "item": "https://vineedoesstuff.in/tools/merge-pdf" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "Merge PDFs",
+                  "applicationCategory": "UtilitiesApplication",
+                  "operatingSystem": "Any (web-based)",
+                  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                  "description": "Free in-browser tool to combine two or more PDFs into one file, with up/down reordering before merge. Nothing is uploaded.",
+                  "url": "https://vineedoesstuff.in/tools/merge-pdf",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" }
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
+    <template id="page-tool-pdf-to-text">
+        <section class="section section--atmosphere-deep" data-page="tool-pdf-to-text" data-fc-default="extract" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">PDF to Text</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">PDF to Text Converter</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Pull the selectable text out of a PDF and copy it or save it as a .txt file. Runs in this browser tab &mdash; nothing is uploaded.
+                    </p>
+                </div>
+
+                <div data-tool-embed="file-converter"></div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">How to extract text from a PDF</h2>
+                    <ol class="t-body" style="color:var(--gray-300); padding-left:1.25rem; display:grid; gap:0.5rem;">
+                        <li>Choose a PDF file (up to 25MB).</li>
+                        <li>Click Extract Text &mdash; the text layer is read locally with pdf.js.</li>
+                        <li>Copy the result or download it as a .txt file.</li>
+                    </ol>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">What it won't do</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        There's no OCR &mdash; a scanned or photographed PDF is just images, so there's no text layer to read and the result will be empty. Text comes out in the order the PDF stores its content; complex multi-column or table layouts may read out of order, and fonts, tables, and images aren't preserved.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Why did extraction return nothing?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">The PDF may be scanned or image-only &mdash; there's no text layer for the extractor to read &mdash; or the file may be corrupt or encrypted. The tool works on any PDF generated from a text source (Word, a browser, a text editor).</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is my PDF uploaded or stored?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No. pdf.js reads the file inside this tab &mdash; nothing is sent to a server or saved. Free, no signup, up to 25MB per file.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">More free file tools</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        Combine PDFs with <a href="/tools/merge-pdf" data-route>Merge PDFs</a>, create one with <a href="/tools/docx-to-pdf" data-route>DOCX to PDF</a>, convert an image with <a href="/tools/webp-to-png" data-route>WEBP to PNG</a>, or use the all-in-one <a href="/tools/file-converter" data-route>File Converter</a>. How it works: <a href="/guides/browser-file-conversion" data-route>why convert files in your browser</a>. Back to <a href="/free-tools" data-route>all free tools</a>.
+                    </p>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://vineedoesstuff.in/free-tools" },
+                    { "@type": "ListItem", "position": 3, "name": "PDF to Text", "item": "https://vineedoesstuff.in/tools/pdf-to-text" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "PDF to Text Converter",
+                  "applicationCategory": "UtilitiesApplication",
+                  "operatingSystem": "Any (web-based)",
+                  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                  "description": "Free in-browser tool to extract selectable text from a PDF via pdf.js, then copy it or download it as a .txt file. No OCR; nothing is uploaded.",
+                  "url": "https://vineedoesstuff.in/tools/pdf-to-text",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" }
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
+    <template id="page-tool-webp-to-png">
+        <section class="section section--atmosphere-deep" data-page="tool-webp-to-png" data-fc-default="image" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">WEBP to PNG</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">WEBP to PNG Converter</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Convert a WEBP image to PNG &mdash; or between PNG, JPEG, and WEBP generally. Processed on a canvas in this browser tab; nothing is uploaded.
+                    </p>
+                </div>
+
+                <div data-tool-embed="file-converter"></div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">How to convert WEBP to PNG</h2>
+                    <ol class="t-body" style="color:var(--gray-300); padding-left:1.25rem; display:grid; gap:0.5rem;">
+                        <li>Choose a .webp file (PNG, JPEG, and GIF inputs also work, up to 25MB).</li>
+                        <li>Leave the output on PNG &mdash; it's pre-selected &mdash; or pick JPEG or WEBP instead.</li>
+                        <li>Click Convert and download the result.</li>
+                    </ol>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">What it won't do</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        The image is decoded and re-encoded on a canvas, so an animated WEBP comes out as a single still frame and EXIF/metadata isn't carried over. Re-encoding also can't add detail &mdash; a heavily compressed source still looks compressed as a PNG.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is the image uploaded to a server?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No. Conversion happens on an HTML canvas inside this tab &mdash; the file never leaves your device. Free, no signup, up to 25MB per image.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Can I convert other formats too?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Yes &mdash; the same panel converts between PNG, JPEG, and WEBP in either direction (and accepts GIF input). Just pick the output format from the dropdown.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">More free file tools</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        Combine PDFs with <a href="/tools/merge-pdf" data-route>Merge PDFs</a>, pull text out of one with <a href="/tools/pdf-to-text" data-route>PDF to Text</a>, turn a document into a PDF with <a href="/tools/docx-to-pdf" data-route>DOCX to PDF</a>, or use the all-in-one <a href="/tools/file-converter" data-route>File Converter</a>. How it works: <a href="/guides/browser-file-conversion" data-route>why convert files in your browser</a>. Back to <a href="/free-tools" data-route>all free tools</a>.
+                    </p>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://vineedoesstuff.in/free-tools" },
+                    { "@type": "ListItem", "position": 3, "name": "WEBP to PNG", "item": "https://vineedoesstuff.in/tools/webp-to-png" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "WEBP to PNG Converter",
+                  "applicationCategory": "UtilitiesApplication",
+                  "operatingSystem": "Any (web-based)",
+                  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                  "description": "Free in-browser image converter: re-encode WEBP to PNG, or convert between PNG, JPEG, and WEBP, on an HTML canvas. Nothing is uploaded.",
+                  "url": "https://vineedoesstuff.in/tools/webp-to-png",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" }
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
+    <template id="page-tool-docx-to-pdf">
+        <section class="section section--atmosphere-deep" data-page="tool-docx-to-pdf" data-fc-default="pdf" style="padding-top:120px;">
+            <div class="container">
+                <div class="anim-item" style="margin-bottom:2.5rem;">
+                    <nav aria-label="Breadcrumb">
+                        <ol style="display:flex; flex-wrap:wrap; gap:0.4rem; list-style:none; padding:0; margin:0; font-size:0.75rem; color:var(--gray-300);">
+                            <li><a href="/" data-route style="color:var(--gray-300); text-decoration:none;">Home</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
+                            <li aria-hidden="true">/</li>
+                            <li aria-current="page" style="color:var(--white);">DOCX to PDF</li>
+                        </ol>
+                    </nav>
+                    <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
+                    <div class="accent-bar" style="margin-top:1rem;"></div>
+                    <h1 class="t-heading split-heading" style="margin-top:1.5rem;">DOCX to PDF Converter</h1>
+                    <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
+                        Turn a .docx document into a PDF using your browser's own print dialog &mdash; no upload, no signup.
+                    </p>
+                </div>
+
+                <div data-tool-embed="file-converter"></div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">How to convert a DOCX to PDF</h2>
+                    <ol class="t-body" style="color:var(--gray-300); padding-left:1.25rem; display:grid; gap:0.5rem;">
+                        <li>Choose a .docx file (a .txt file or an image also works, up to 25MB).</li>
+                        <li>Click Convert to PDF &mdash; the document renders as a clean page and the print dialog opens.</li>
+                        <li>In the dialog, set the destination to &ldquo;Save as PDF&rdquo; and save.</li>
+                    </ol>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">What it won't do</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        It reads modern .docx files only &mdash; the older binary .doc format isn't supported (open it in Word or LibreOffice and save as .docx first). The layout is approximate: headings, bold/italic, lists, and tables carry over, but multi-column layouts, exact fonts, and embedded objects won't be pixel-perfect, since the tool reads the document's content rather than running Word's layout engine.
+                    </p>
+                </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Why does it open a print dialog?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Because your browser already contains a high-quality PDF writer &mdash; choosing &ldquo;Save as PDF&rdquo; produces a real, selectable-text PDF without your document ever leaving the tab. The document is read locally with mammoth.js; nothing is uploaded.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Does it handle .doc files?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">No &mdash; only the modern .docx format (Word 2007 and later). For a legacy .doc, open it in Word or LibreOffice and save a copy as .docx first.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">Is it free?</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Yes &mdash; no signup, no account, and no limit on how many documents you convert.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="margin-top:3rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1rem;">More free file tools</h2>
+                    <p class="t-body" style="color:var(--gray-300);">
+                        Combine PDFs with <a href="/tools/merge-pdf" data-route>Merge PDFs</a>, pull text out of one with <a href="/tools/pdf-to-text" data-route>PDF to Text</a>, convert an image with <a href="/tools/webp-to-png" data-route>WEBP to PNG</a>, or use the all-in-one <a href="/tools/file-converter" data-route>File Converter</a>. How it works: <a href="/guides/browser-file-conversion" data-route>why convert files in your browser</a>. Back to <a href="/free-tools" data-route>all free tools</a>.
+                    </p>
+                </div>
+
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "BreadcrumbList",
+                  "itemListElement": [
+                    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
+                    { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://vineedoesstuff.in/free-tools" },
+                    { "@type": "ListItem", "position": 3, "name": "DOCX to PDF", "item": "https://vineedoesstuff.in/tools/docx-to-pdf" }
+                  ]
+                }
+                </script>
+                <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareApplication",
+                  "name": "DOCX to PDF Converter",
+                  "applicationCategory": "UtilitiesApplication",
+                  "operatingSystem": "Any (web-based)",
+                  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                  "description": "Free in-browser tool that renders a .docx document and produces a PDF via the browser's print-to-PDF dialog. Layout is approximate; nothing is uploaded.",
+                  "url": "https://vineedoesstuff.in/tools/docx-to-pdf",
+                  "author": { "@type": "Person", "name": "Vineet Vishesh", "url": "https://vineedoesstuff.in/" }
+                }
+                </script>
+            </div>
+        </section>
+    </template>
+
     <!-- GUIDE: BROWSER-BASED FILE CONVERSION -->
     <template id="page-guide-browser-file-conversion">
         <section class="section section--atmosphere-deep" data-page="guide-browser-file-conversion" style="padding-top:120px;">
@@ -1674,7 +2070,7 @@
                     <div>
                         <h3 style="color:var(--white); font-weight:600; font-size:1.05rem; margin-bottom:0.4rem;">Try it yourself</h3>
                         <p style="font-size:0.85rem; color:var(--gray-300); line-height:1.6; max-width:480px;">
-                            Convert an image, turn a document into a PDF, or pull text out of a PDF &mdash; nothing leaves this tab.
+                            Convert an image, turn a document into a PDF, or pull text out of a PDF &mdash; nothing leaves this tab. Jump straight to a task: <a href="/tools/merge-pdf" data-route>merge PDFs</a>, <a href="/tools/pdf-to-text" data-route>PDF to text</a>, <a href="/tools/webp-to-png" data-route>WEBP to PNG</a>, or <a href="/tools/docx-to-pdf" data-route>DOCX to PDF</a>.
                         </p>
                     </div>
                     <div class="magnetic-wrap">
@@ -1791,13 +2187,13 @@
                             <li aria-hidden="true">/</li>
                             <li><a href="/free-tools" data-route style="color:var(--gray-300); text-decoration:none;">Free Tools</a></li>
                             <li aria-hidden="true">/</li>
-                            <li aria-current="page" style="color:var(--white);">Website Health Report</li>
+                            <li aria-current="page" style="color:var(--white);">Website Health Checker</li>
                         </ol>
                     </nav>
                     <span class="t-label" style="display:block; margin-top:1rem;">Free Tool</span>
                     <div class="accent-bar" style="margin-top:1rem;"></div>
                     <h1 class="t-heading split-heading" style="margin-top:1.5rem;">
-                        Website Health Report
+                        Free Website Health Checker
                     </h1>
                     <p class="t-body-lg" style="margin-top:1.5rem; max-width:700px;">
                         Security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance &mdash; checked live, for any public site.
@@ -1930,6 +2326,20 @@
                 </div>
 
                 <div class="anim-item" style="margin-top:5rem; max-width:720px;">
+                    <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">How to use it &mdash; and what it won't tell you</h2>
+                    <div style="display:grid; gap:1.75rem;">
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">How to run a check</h3>
+                            <p class="t-body" style="color:var(--gray-300);">Paste any public URL into the field above and hit Run Report &mdash; results land in about 30 seconds. Security headers, SSL/TLS, DNS, and on-page SEO are fetched through a small SSRF-hardened backend; the performance score comes from Google's PageSpeed Insights API.</p>
+                        </div>
+                        <div>
+                            <h3 style="font-size:0.95rem; font-weight:600; color:var(--white); margin-bottom:0.4rem;">What it can't do</h3>
+                            <p class="t-body" style="color:var(--gray-300);">This is an automated surface scan, not a penetration test &mdash; it checks what a client can observe from outside and won't find exploitable vulnerabilities. Performance figures are Lighthouse lab measurements for this run, not field Core Web Vitals or a guarantee of real-user performance. For a manual assessment, see my <a href="/work" data-route>work and capabilities</a> or <a href="/contact" data-route>get in touch</a>; the <a href="/guides/security-headers" data-route>security headers guide</a> explains what each header check means.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim-item" style="margin-top:5rem; max-width:720px;">
                     <h2 class="t-caption" style="display:block; margin-bottom:1.5rem;">Frequently Asked Questions</h2>
                     <div style="display:grid; gap:1.75rem;">
                         <div>
@@ -1978,7 +2388,7 @@
                   "itemListElement": [
                     { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://vineedoesstuff.in/" },
                     { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://vineedoesstuff.in/free-tools" },
-                    { "@type": "ListItem", "position": 3, "name": "Website Health Report", "item": "https://vineedoesstuff.in/tools/website-health" }
+                    { "@type": "ListItem", "position": 3, "name": "Website Health Checker", "item": "https://vineedoesstuff.in/tools/website-health" }
                   ]
                 }
                 </script>
@@ -1986,7 +2396,7 @@
                 {
                   "@context": "https://schema.org",
                   "@type": "SoftwareApplication",
-                  "name": "Website Health Report",
+                  "name": "Website Health Checker",
                   "applicationCategory": "SecurityApplication",
                   "operatingSystem": "Any (web-based)",
                   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },

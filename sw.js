@@ -1,4 +1,4 @@
-var CACHE_NAME = 'vineet-portfolio-cybersigil-v11';
+var CACHE_NAME = 'vineet-portfolio-cybersigil-v12';
 var ASSETS = [
   './',
   './index.html',
@@ -42,19 +42,19 @@ self.addEventListener('fetch', function (e) {
   // SPA navigation: always serve index.html (no 404.html round-trip)
   if (e.request.mode === 'navigate') {
     e.respondWith(
-      caches.match('./index.html').then(function (cached) {
-        // Refresh index.html cache in background
-        var fetchPromise = fetch(self.registration.scope)
-          .then(function (response) {
-            if (response.ok) {
-              var clone = response.clone();
-              caches.open(CACHE_NAME).then(function (cache) {
-                cache.put('./index.html', clone);
-              });
-            }
-            return response;
-          }).catch(function () { return cached; });
-        return cached || fetchPromise;
+      fetch(e.request).then(function (response) {
+        if (response.ok) {
+          var clone = response.clone();
+          // Refresh index.html cache in background
+          caches.open(CACHE_NAME).then(function (cache) {
+            cache.put(e.request, clone);
+          });
+        }
+        return response;
+      }).catch(function () {
+        return caches.match(e.request).then(function (cached) {
+          return cached || caches.match('./index.html');
+        });
       })
     );
     return;

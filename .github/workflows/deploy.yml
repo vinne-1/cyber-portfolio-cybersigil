@@ -40,6 +40,12 @@ jobs:
           grep -o 'style\.css?v=[A-Za-z0-9]*\|app\.js?v=[A-Za-z0-9]*' _site/index.html
       - name: Prerender route metadata for crawlers/link-unfurl bots
         run: node scripts/prerender-routes.js _site/index.html _site
+      - name: SEO regression checks
+        run: |
+          node --check app.js
+          node --check sw.js
+          node --check scripts/prerender-routes.js
+          node --test scripts/seo.test.js
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
