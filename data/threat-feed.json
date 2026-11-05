@@ -1,6 +1,66 @@
 {
   "articles": [
     {
+      "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
+      "source": "CSO Online",
+      "date": "2026-11-05T04:55:50.000Z",
+      "summary": "AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions.\nJoe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbox run.\nAdaptive Detonation uses AI agents to examine execution results, identify obstacles preventing a sample from revealing relevant behavior, and select targeted interventions. These can include pa",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4244970/the-sandbox-fights-back-joe-security-launches-adaptive-detonation.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Want to Rent an Internet Address at the White House?",
+      "source": "Krebs on Security",
+      "date": "2026-11-05T04:36:17.000Z",
+      "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+      "source": "The Hacker News",
+      "date": "2026-11-05T04:31:16.000Z",
+      "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.\n\n\"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically reproduced 1,724 vulnerabilities, and produced 948 local privilege escalation (LPE)",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Attackers turned OpsShield’s trusted update channel into a supply-chain attack",
+      "source": "CSO Online",
+      "date": "2026-11-05T03:03:06.000Z",
+      "summary": "The kinks in the software supply chain are once again being exposed, with attackers now targeting OpsShield’s update process.\nThis week, threat actors used compromised credentials to push malicious updates out to cPGuard customers. They then accessed data stored on the vendor’s servers and in its billing portal accounts, and made copies of at least three of OpsShield’s cloud servers.\nThe company said in an advisory that it has “shut the attacker out of every system we know they reached, and … ar",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "url": "https://www.csoonline.com/article/4244961/attackers-turned-opsshields-trusted-update-channel-into-a-supply-chain-attack-2.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
       "source": "Dark Reading",
       "date": "2026-11-04T21:48:18.000Z",
@@ -81,7 +141,7 @@
       "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
       "source": "The Hacker News",
       "date": "2026-11-04T14:27:52.000Z",
-      "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
+      "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
       "severity": "High",
       "tags": [
         "Supply Chain",
@@ -438,21 +498,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
-      "source": "The Hacker News",
-      "date": "2026-11-03T18:46:38.000Z",
-      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys.\n\nThe warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
       "source": "Dark Reading",
       "date": "2026-11-03T15:38:20.000Z",
@@ -522,36 +567,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4243863/enterprises-pay-100000-a-day-for-ai-they-never-ordered.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Armed with AI, hackers target endpoint security blind spots, raising stakes for CISOs",
-      "source": "CSO Online",
-      "date": "2026-11-03T10:53:10.000Z",
-      "summary": "A China-linked hacking group’s use of AI agents to identify security weaknesses during a global espionage campaign is raising concerns about whether enterprises can detect gaps in their defenses before automated attacks exploit them.\nCrowdStrike reported that the group, tracked as VAPOR PANDA, used an AI-powered penetration testing framework called ARTEX to target more than 200 organizations worldwide over an 11-day period beginning October 17. The organizations included government agencies and ",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4243816/armed-with-ai-hackers-target-endpoint-security-blind-spots-raising-stakes-for-cisos.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "67% of security leaders say their teams struggle to meet business needs",
-      "source": "CSO Online",
-      "date": "2026-11-03T08:25:00.000Z",
-      "summary": "AI, identity-based attacks, and expanding digital operations are putting pressure on already overstretched cybersecurity teams.\nSecurity vendor Barracuda’s Cybersecurity Skills Gap report also found that security teams are struggling to keep pace with expanding responsibilities. The vast majority of the 2,000 IT and security decision-makers surveyed report cybersecurity skills gaps.\nIn particular, the most common challenges are linked to AI-related risks (68%) and advanced identity and phishing ",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4243598/67-of-security-leaders-say-their-teams-struggle-to-meet-business-needs.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -843,24 +858,85 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
+    }
+  ],
+  "clusters": [
     {
-      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
-      "source": "Krebs on Security",
-      "date": "2026-09-16T18:14:22.000Z",
-      "summary": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement officials. In the face of repeated stonewalling and prevarication by attorneys for Radaris, the judge i",
+      "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
+      "summary": "AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions.\nJoe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during an initial sandbox run.\nAdaptive Detonation uses AI agents to examine execution results, identify obstacles preventing a sample from revealing relevant behavior, and select targeted interventions. These can include pa",
+      "url": "https://www.csoonline.com/article/4244970/the-sandbox-fights-back-joe-security-launches-adaptive-detonation.html",
+      "date": "2026-11-05T04:55:50.000Z",
       "severity": "Low",
       "tags": [
         "General"
       ],
-      "url": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    }
-  ],
-  "clusters": [
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Want to Rent an Internet Address at the White House?",
+      "summary": "Several staffers at the White House are using computers or mobile devices equipped with residential proxy services that render their internet address available for others to rent, security experts warned today. One of the proxy services is a Russian company whose founder's web hosting business was ground zero for cyberattacks against election systems in Arizona and Illinois in 2016.",
+      "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
+      "date": "2026-11-05T04:36:17.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
+      "summary": "OpenAI on Wednesday detailed a pipeline that employed an upcoming cyber-focused artificial intelligence (AI) model to validate and patch 948 local privilege escalation vulnerabilities in Linux for $1.2 million in API costs.\n\n\"Our prototype identified and analyzed 2,308 candidate Linux kernel findings, dynamically reproduced 1,724 vulnerabilities, and produced 948 local privilege escalation (LPE)",
+      "url": "https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html",
+      "date": "2026-11-05T04:31:16.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
+    },
+    {
+      "title": "Attackers turned OpsShield’s trusted update channel into a supply-chain attack",
+      "summary": "The kinks in the software supply chain are once again being exposed, with attackers now targeting OpsShield’s update process.\nThis week, threat actors used compromised credentials to push malicious updates out to cPGuard customers. They then accessed data stored on the vendor’s servers and in its billing portal accounts, and made copies of at least three of OpsShield’s cloud servers.\nThe company said in an advisory that it has “shut the attacker out of every system we know they reached, and … ar",
+      "url": "https://www.csoonline.com/article/4244961/attackers-turned-opsshields-trusted-update-channel-into-a-supply-chain-attack-2.html",
+      "date": "2026-11-05T03:03:06.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 41
+    },
     {
       "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
       "summary": "An attacker could write arbitrary files and read sensitive files via images uploaded to the Rails Active Storage ImageMagick integration, possibly positioning a threat actor for lateral movement.",
@@ -878,7 +954,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 25
     },
     {
       "title": "Debian and Ubuntu APT Flaw Lets MitM Attackers Swap Verified Packages and Run Code as Root",
@@ -897,7 +973,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
@@ -918,7 +994,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
@@ -937,7 +1013,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "Researchers Uncover Prompt Adware Hidden in OpenAI Codex Jailbreak Toolkit",
@@ -956,11 +1032,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-      "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
+      "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
       "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
       "date": "2026-11-04T14:27:52.000Z",
       "severity": "High",
@@ -976,7 +1052,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 49
+      "score": 46
     },
     {
       "title": "Incidents Move Too Fast for Pen &amp; Paper",
@@ -995,7 +1071,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "The Classics Return: Vulnerable E-Mail Scripts, (Wed, Nov 4th)",
@@ -1016,7 +1092,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "Fake software installers are turning your PCs into profit centers for hackers",
@@ -1035,7 +1111,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
@@ -1054,7 +1130,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "CrowdStrike launches AI kill switch to shut down rogue agents",
@@ -1073,7 +1149,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
@@ -1092,7 +1168,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
@@ -1111,7 +1187,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "CrowdStrike to acquire Fiddler, Dreadnode to extend AI security across agent lifecycle",
@@ -1130,7 +1206,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
@@ -1149,7 +1225,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "CrowdStrike’s AI SOC vision evolves as agentic uncertainty adds new twist",
@@ -1168,7 +1244,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Russian Police Arrest 3 Suspected VasyGrek Hackers, Dismantle Criminal Infrastructure",
@@ -1187,7 +1263,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Google Issues Patches for Critical Android Flaw That Could Allow RCE Without User Interaction",
@@ -1209,7 +1285,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 46
+      "score": 44
     },
     {
       "title": "CISA Confirms Hackers Exploiting WordPress Core Flaw During Software Upgrades",
@@ -1232,7 +1308,7 @@
         "CVE-2026-119977"
       ],
       "articleCount": 1,
-      "score": 65
+      "score": 63
     },
     {
       "title": "Barracuda’s security appliances have a security problem of their own",
@@ -1253,7 +1329,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Node-RED authentication hole being exploited in the wild",
@@ -1273,7 +1349,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 58
+      "score": 57
     },
     {
       "title": "ISC Stormcast For Wednesday, November 4th, 2026 https://isc.sans.edu/podcastdetail/10164, (Wed, Nov 4th)",
@@ -1292,7 +1368,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
@@ -1311,7 +1387,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
@@ -1330,7 +1406,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Critical Langflow flaws enable authentication bypass and RCE",
@@ -1349,7 +1425,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 30
     },
     {
       "title": "Fresh European Fridge Attacks Put Cold-Chain Security in Focus",
@@ -1368,7 +1444,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
@@ -1387,7 +1463,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "UK organisations warned to brace for AI-powered ransomware attacks",
@@ -1406,26 +1482,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
-    },
-    {
-      "title": "mSecure Warns Users to Change Passwords, Reset 2FA and Passkeys After Suspicious Activity",
-      "summary": "Customers of the mSecure password manager are being urged to act now to protect the confidential information they store in it, possibly by changing passwords, resetting two-factor authentication (2FA), and removing passkeys.\n\nThe warning came in an email sent on November 3 in the name of developer mSeven Software. It says the company recently learned of suspicious activity linked to the app but",
-      "url": "https://thehackernews.com/2026/11/msecure-warns-users-to-change-passwords.html",
-      "date": "2026-11-03T18:46:38.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 17
+      "score": 29
     },
     {
       "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
@@ -1444,7 +1501,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "LLMjacking Emerges as Thriving Cybercriminal Enterprise",
@@ -1463,7 +1520,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "3AM Affiliate Embraces AI-Like Loops in European School Attack",
@@ -1482,7 +1539,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Network appliances go more than a year without patches as exploits speed up",
@@ -1501,51 +1558,13 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Enterprises pay $100,000 a day for AI they never ordered",
       "summary": "Enterprises deploying large language models (LLMs) in production may be unknowingly footing the bill for someone else’s AI business. Google Threat Intelligence Group (GTIG) is warning of financially motivated LLMjacking campaigns in which cybercriminals hijack enterprise cloud and model access before reselling it through underground subscription services.\nThe activity can generate fake cloud charges exceeding $100,000 in a single day, GTIG said in a blog post. In some incidents, cumulative charg",
       "url": "https://www.csoonline.com/article/4243863/enterprises-pay-100000-a-day-for-ai-they-never-ordered.html",
       "date": "2026-11-03T11:52:38.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "Armed with AI, hackers target endpoint security blind spots, raising stakes for CISOs",
-      "summary": "A China-linked hacking group’s use of AI agents to identify security weaknesses during a global espionage campaign is raising concerns about whether enterprises can detect gaps in their defenses before automated attacks exploit them.\nCrowdStrike reported that the group, tracked as VAPOR PANDA, used an AI-powered penetration testing framework called ARTEX to target more than 200 organizations worldwide over an 11-day period beginning October 17. The organizations included government agencies and ",
-      "url": "https://www.csoonline.com/article/4243816/armed-with-ai-hackers-target-endpoint-security-blind-spots-raising-stakes-for-cisos.html",
-      "date": "2026-11-03T10:53:10.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "67% of security leaders say their teams struggle to meet business needs",
-      "summary": "AI, identity-based attacks, and expanding digital operations are putting pressure on already overstretched cybersecurity teams.\nSecurity vendor Barracuda’s Cybersecurity Skills Gap report also found that security teams are struggling to keep pace with expanding responsibilities. The vast majority of the 2,000 IT and security decision-makers surveyed report cybersecurity skills gaps.\nIn particular, the most common challenges are linked to AI-related risks (68%) and advanced identity and phishing ",
-      "url": "https://www.csoonline.com/article/4243598/67-of-security-leaders-say-their-teams-struggle-to-meet-business-needs.html",
-      "date": "2026-11-03T08:25:00.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -1596,7 +1615,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Microsoft's AI Risk Report Misses This Key Detail",
@@ -1636,7 +1655,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "ISC Stormcast For Monday, November 2nd, 2026 https://isc.sans.edu/podcastdetail/10160, (Mon, Nov 2nd)",
@@ -1655,7 +1674,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "OneNote File Extraction, (Sun, Nov 1st)",
@@ -1884,25 +1903,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
-    },
-    {
-      "title": "Data Broker Radaris Loses Domains in Privacy Fight",
-      "summary": "The consumer data broker Radaris.com has long had a reputation for ignoring requests to remove personal information from its vast empire of people-search services online. That reputation caught up with the company recently in a lawsuit alleging Radaris violated a New Jersey privacy law that provides for hefty fines against data brokers that publish personal information on state law enforcement officials. In the face of repeated stonewalling and prevarication by attorneys for Radaris, the judge i",
-      "url": "https://krebsonsecurity.com/2026/09/data-broker-radaris-loses-domains-in-privacy-fight/",
-      "date": "2026-09-16T18:14:22.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Krebs on Security"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
     }
   ],
   "top3": [
@@ -1927,7 +1927,7 @@
         "CVE-2026-119977"
       ],
       "articleCount": 1,
-      "score": 65
+      "score": 63
     },
     {
       "title": "Node-RED authentication hole being exploited in the wild",
@@ -1947,11 +1947,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 58
+      "score": 57
     },
     {
       "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-      "summary": "The Russia-linked threat actor known as APT29 is said to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
+      "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker.\n\n\"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
       "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
       "date": "2026-11-04T14:27:52.000Z",
       "severity": "High",
@@ -1967,7 +1967,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 49
+      "score": 46
     }
   ],
   "sourcesUsed": [
@@ -1982,5 +1982,5 @@
     "CISA Advisories"
   ],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-04T23:45:50.283Z"
+  "lastUpdated": "2026-11-05T05:43:53.784Z"
 }
