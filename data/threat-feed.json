@@ -1,6 +1,144 @@
 {
   "articles": [
     {
+      "title": "A mole in the White House? Residential proxies are everywhere",
+      "source": "CSO Online",
+      "date": "2026-11-06T15:00:54.000Z",
+      "summary": "Residential proxies are often used by bad actors to hide the true source of internet traffic — and now one of them appears to have taken up residence in the White House.\nThe Residential Proxy Observatory, set up by Layer3 Intel to monitor the threat of anonymized network activity, has identified proxy exit activity on one particular network, AS2650, which is registered to the executive office of the US President and operated out of the White House.\nResidential proxies — so-called because they ty",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4245791/a-mole-in-the-white-house-residential-proxies-are-everywhere.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
+      "source": "Dark Reading",
+      "date": "2026-11-06T14:00:00.000Z",
+      "summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "source": "The Hacker News",
+      "date": "2026-11-06T12:06:43.000Z",
+      "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.\n\nThe fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today.\n\nThe flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-83844"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+      "source": "The Hacker News",
+      "date": "2026-11-06T12:06:35.000Z",
+      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.\n\nThe attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Railway’s AI agents go off the track on a rival’s network",
+      "source": "CSO Online",
+      "date": "2026-11-06T11:37:44.000Z",
+      "summary": "AI agents operated by cloud infrastructure and application hosting platform, Railway, have attempted to access a rival platform’s infrastructure, prompting the cloud provider’s leadership to acknowledge the incident on social media.\nRailway senior product engineer Jake Runzer acknowledged running agents to perform signups and agentic testing on similar platforms after Primcloud founder Josh Manders publicly questioned why Railway employees were attempting to breach his infrastructure.\nRunzer sai",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4245637/railways-ai-agents-go-off-the-track-on-a-rivals-network.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "The Flood is Coming And The Pipes Were Already Full",
+      "source": "The Hacker News",
+      "date": "2026-11-06T11:30:00.000Z",
+      "summary": "An update on Athena, and some unsolicited predictions on what's coming next\n\nOn Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May.\n\nThe hardest piece of his",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
+      "source": "CSO Online",
+      "date": "2026-11-06T11:14:26.000Z",
+      "summary": "A memory-safety flaw in CPython can allow malicious AI model templates to escape code sandboxes and execute arbitrary code inside inference servers, according to security researchers at RunSybil.\n“By exploiting this vulnerability, attackers could gain a foothold inside servers responsible for processing millions of user requests,” Darius Houle, a security researcher at RunSybil, wrote in a blog post. “They also could strike directly at the underlying cloud infrastructure hosting those workloads.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4245592/cpython-flaw-exposes-ai-inference-servers-to-sandbox-escape-attacks.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
+      "source": "Dark Reading",
+      "date": "2026-11-06T09:00:00.000Z",
+      "summary": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+      "source": "The Hacker News",
+      "date": "2026-11-06T08:04:49.000Z",
+      "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users.\n\n\"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
       "source": "The Hacker News",
       "date": "2026-11-06T05:58:54.000Z",
@@ -375,21 +513,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
-      "source": "The Hacker News",
-      "date": "2026-11-05T09:13:28.000Z",
-      "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3.\n\nThe change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by sharing a link and making it accessible to \"Anyone with the link.\"\n\nWhen users choose this option,",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Building incident playbooks for machine identity breaches",
       "source": "CSO Online",
       "date": "2026-11-05T09:00:00.000Z",
@@ -403,58 +526,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
-      "source": "The Hacker News",
-      "date": "2026-11-05T08:42:03.000Z",
-      "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country.\n\nDescribing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
-      "source": "The Hacker News",
-      "date": "2026-11-05T07:06:33.000Z",
-      "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found.\n\nThe exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has released new firmware for 10 GS1900 models that closes the hole.\n\nThe earlier fix is the 2.90",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Actively Exploited"
-      ],
-      "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
-      "impactScore": 6,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-      "source": "The Hacker News",
-      "date": "2026-11-05T05:17:04.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability in question is CVE-2024-27834 (CVSS score: 5.5), a case of improper authentication that could allow an attacker with",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2024-27834"
-      ],
-      "knownExploitedCves": [
-        "CVE-2024-27834"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2024-27834"
-      ]
     },
     {
       "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
@@ -487,21 +558,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Attackers turned OpsShield’s trusted update channel into a supply-chain attack",
-      "source": "CSO Online",
-      "date": "2026-11-05T03:03:06.000Z",
-      "summary": "The kinks in the software supply chain are once again being exposed, with attackers now targeting OpsShield’s update process.\nThis week, threat actors used compromised credentials to push malicious updates out to cPGuard customers. They then accessed data stored on the vendor’s servers and in its billing portal accounts, and made copies of at least three of OpsShield’s cloud servers.\nThe company said in an advisory that it has “shut the attacker out of every system we know they reached, and … ar",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "url": "https://www.csoonline.com/article/4244961/attackers-turned-opsshields-trusted-update-channel-into-a-supply-chain-attack-2.html",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
       "source": "Dark Reading",
       "date": "2026-11-04T21:48:18.000Z",
@@ -520,7 +576,7 @@
       "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
       "source": "Dark Reading",
       "date": "2026-11-04T16:24:08.000Z",
-      "summary": "Google alleges that Android device manufacturer Videostrong ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.",
+      "summary": "Android device manufacturer Videostrong allegedly ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.",
       "severity": "Medium",
       "tags": [
         "Widely-Used Software"
@@ -560,36 +616,6 @@
       "cveMatches": [
         "CVE-2000-0411"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Fake software installers are turning your PCs into profit centers for hackers",
-      "source": "CSO Online",
-      "date": "2026-11-04T12:35:33.000Z",
-      "summary": "Users looking for cracked commercial software, free games, plugins, and unofficial utilities could be signing up for more than a free download. Microsoft has observed an evolving campaign that uses trojanized installers to turn the downloading Windows devices into money-making machines, consuming their computing resources and internet bandwidth without informed consent.\nThe campaign uses fake download pages and Inno Setup-style installers to deliver multiple software packages during a single ins",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.csoonline.com/article/4244528/fake-software-installers-are-turning-your-pcs-into-profit-centers-for-hackers.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "CrowdStrike launches AI kill switch to shut down rogue agents",
-      "source": "CSO Online",
-      "date": "2026-11-04T12:06:50.000Z",
-      "summary": "With a notable rise in autonomous AI agents veering off-script inside corporate networks, CrowdStrike has launched an enterprise AI Kill Switch, giving security teams control to cut off and disable models when they go rogue. \nIntegrated into its Falcon Guardian platform, this AI Kill Switch will provide security teams with the human control to terminate the agent at its root, where it runs, block it from launching again, and even cut off its enterprise network access.\nThe launch comes as enterpr",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4244509/crowdstrike-launches-ai-kill-switch-to-shut-down-rogue-agents.html",
-      "impactScore": 0,
-      "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -648,7 +674,7 @@
       "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
       "source": "Dark Reading",
       "date": "2026-11-04T01:05:40.000Z",
-      "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant authentication gap. Plus: post-quantum YubiKey beta.",
+      "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing an important authentication gap. Plus: post-quantum YubiKey beta.",
       "severity": "Low",
       "tags": [
         "General"
@@ -669,36 +695,6 @@
         "General"
       ],
       "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
-      "source": "Dark Reading",
-      "date": "2026-11-03T21:57:12.000Z",
-      "summary": "Authorities seized more than 100 servers and arrested seven as part of a crackdown on a fraud network spanning more than 50 countries.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
-      "source": "Dark Reading",
-      "date": "2026-11-03T15:38:20.000Z",
-      "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits can reduce enterprise risk.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -1103,6 +1099,180 @@
   ],
   "clusters": [
     {
+      "title": "A mole in the White House? Residential proxies are everywhere",
+      "summary": "Residential proxies are often used by bad actors to hide the true source of internet traffic — and now one of them appears to have taken up residence in the White House.\nThe Residential Proxy Observatory, set up by Layer3 Intel to monitor the threat of anonymized network activity, has identified proxy exit activity on one particular network, AS2650, which is registered to the executive office of the US President and operated out of the White House.\nResidential proxies — so-called because they ty",
+      "url": "https://www.csoonline.com/article/4245791/a-mole-in-the-white-house-residential-proxies-are-everywhere.html",
+      "date": "2026-11-06T15:00:54.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
+      "summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
+      "url": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
+      "date": "2026-11-06T14:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.\n\nThe fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today.\n\nThe flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
+      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "date": "2026-11-06T12:06:43.000Z",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-83844"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 52
+    },
+    {
+      "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
+      "summary": "A browser extension that can run scripts on claude.ai could make Claude Desktop run code on a person's computer, researchers at Forever Security, an endpoint security company, showed in a test.\n\nThe attack needs Dispatch, a Claude feature that lets people send tasks from their phone to Claude Desktop. The flaw that makes this possible can still be exploited, the researchers said earlier this",
+      "url": "https://thehackernews.com/2026/11/malicious-browser-extensions-could-use.html",
+      "date": "2026-11-06T12:06:35.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Railway’s AI agents go off the track on a rival’s network",
+      "summary": "AI agents operated by cloud infrastructure and application hosting platform, Railway, have attempted to access a rival platform’s infrastructure, prompting the cloud provider’s leadership to acknowledge the incident on social media.\nRailway senior product engineer Jake Runzer acknowledged running agents to perform signups and agentic testing on similar platforms after Primcloud founder Josh Manders publicly questioned why Railway employees were attempting to breach his infrastructure.\nRunzer sai",
+      "url": "https://www.csoonline.com/article/4245637/railways-ai-agents-go-off-the-track-on-a-rivals-network.html",
+      "date": "2026-11-06T11:37:44.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "The Flood is Coming And The Pipes Were Already Full",
+      "summary": "An update on Athena, and some unsolicited predictions on what's coming next\n\nOn Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been staring at since May.\n\nThe hardest piece of his",
+      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+      "date": "2026-11-06T11:30:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
+      "summary": "A memory-safety flaw in CPython can allow malicious AI model templates to escape code sandboxes and execute arbitrary code inside inference servers, according to security researchers at RunSybil.\n“By exploiting this vulnerability, attackers could gain a foothold inside servers responsible for processing millions of user requests,” Darius Houle, a security researcher at RunSybil, wrote in a blog post. “They also could strike directly at the underlying cloud infrastructure hosting those workloads.",
+      "url": "https://www.csoonline.com/article/4245592/cpython-flaw-exposes-ai-inference-servers-to-sandbox-escape-attacks.html",
+      "date": "2026-11-06T11:14:26.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
+      "summary": "Britain's new Labour-led government is making a concerted push to get ahead of the AI risks to its national networks and the industrial complex.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/uk-warns-critical-infrastructure-grave-risk",
+      "date": "2026-11-06T09:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+      "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users.\n\n\"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence that any investigations data has been accessed",
+      "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+      "date": "2026-11-06T08:04:49.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
       "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
       "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week.\n\nThe backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs. Installing it takes root access, so the attackers must already control the server.",
       "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
@@ -1119,7 +1289,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 24
     },
     {
       "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
@@ -1140,7 +1310,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 24
     },
     {
       "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
@@ -1159,7 +1329,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 26
+      "score": 22
     },
     {
       "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
@@ -1180,7 +1350,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "French banking group hit by supply chain cyberattack",
@@ -1199,7 +1369,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 33
     },
     {
       "title": "Binance heist is stark example of AI governance gaps and basic security failures",
@@ -1218,7 +1388,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "US Government Email Systems Open to Abuse Thanks to Typos",
@@ -1237,7 +1407,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "What We Missed: Knicks Phishing Test Goes Out of Bounds",
@@ -1256,7 +1426,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "APT29's Watering Holes Target Thousands of Mobile Users",
@@ -1275,7 +1445,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "OpenAI built an AI pipeline to find, exploit and patch Linux flaws",
@@ -1294,7 +1464,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "OpenAI’s GPT-6 Cyber ups the ante on vulnerability discovery",
@@ -1313,7 +1483,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 29
     },
     {
       "title": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
@@ -1332,7 +1502,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
@@ -1351,7 +1521,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
@@ -1370,7 +1540,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
@@ -1394,7 +1564,7 @@
         "CVE-2023-20198"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 65
     },
     {
       "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
@@ -1414,7 +1584,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 45
+      "score": 43
     },
     {
       "title": "Is Your Exposure Management Platform Leaving You Exposed? Five Tests to Find Out",
@@ -1433,7 +1603,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Debian, Ubuntu patch APT flaw that could hand attackers root",
@@ -1454,7 +1624,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "OpenAI AI Pipeline Generates 948 Linux Root Escalation Exploits in 30-Hour Run",
@@ -1473,7 +1643,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 28
     },
     {
       "title": "Post-Quantum Questions to Ask Your Vendors",
@@ -1492,7 +1662,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
@@ -1511,7 +1681,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "5 Active Cyber Threats That Put US Enterprises at Risk in October 2026",
@@ -1530,7 +1700,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Zyxel patches a zero-day hiding behind an old fix",
@@ -1551,26 +1721,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 53
-    },
-    {
-      "title": "Apple to Start Scanning Publicly Shared iCloud Photos and Files for Harmful Content",
-      "summary": "Apple has revealed that it plans to start checking public iCloud links for harmful content starting with iOS 27.3, iPadOS 27.3, macOS 27.3, and visionOS 27.3.\n\nThe change specifically applies to scenarios where users share iCloud content, such as photos in iCloud Photos or files in iCloud Drive, by sharing a link and making it accessible to \"Anyone with the link.\"\n\nWhen users choose this option,",
-      "url": "https://thehackernews.com/2026/11/apple-to-start-scanning-publicly-shared.html",
-      "date": "2026-11-05T09:13:28.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 29
+      "score": 51
     },
     {
       "title": "Building incident playbooks for machine identity breaches",
@@ -1589,69 +1740,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "CERT-In Flags AI-Driven Attacks as Backdoored ARTEX Exposes 62 Consoles to Root Access",
-      "summary": "The Indian Computer Emergency Response Team (CERT-In) has disclosed that an artificial intelligence (AI)-assisted threat actor it tracks as Crafty Falcon is targeting organizations in the Banking, Financial Services, and Insurance (BFSI) sectors in the country.\n\nDescribing the threat as active and ongoing, the activity involves the use of publicly-available AI-driven offensive security tools",
-      "url": "https://thehackernews.com/2026/11/backdoored-docker-image-for-artex-ai.html",
-      "date": "2026-11-05T08:42:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
-      "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found.\n\nThe exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has released new firmware for 10 GS1900 models that closes the hole.\n\nThe earlier fix is the 2.90",
-      "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
-      "date": "2026-11-05T07:06:33.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Actively Exploited"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 6,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 59
-    },
-    {
-      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability in question is CVE-2024-27834 (CVSS score: 5.5), a case of improper authentication that could allow an attacker with",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-      "date": "2026-11-05T05:17:04.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2024-27834"
-      ],
-      "knownExploitedCves": [
-        "CVE-2024-27834"
-      ],
-      "articleCount": 1,
-      "score": 62
+      "score": 17
     },
     {
       "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
@@ -1670,7 +1759,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Want to Rent an Internet Address at the White House?",
@@ -1689,26 +1778,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
-    },
-    {
-      "title": "Attackers turned OpsShield’s trusted update channel into a supply-chain attack",
-      "summary": "The kinks in the software supply chain are once again being exposed, with attackers now targeting OpsShield’s update process.\nThis week, threat actors used compromised credentials to push malicious updates out to cPGuard customers. They then accessed data stored on the vendor’s servers and in its billing portal accounts, and made copies of at least three of OpsShield’s cloud servers.\nThe company said in an advisory that it has “shut the attacker out of every system we know they reached, and … ar",
-      "url": "https://www.csoonline.com/article/4244961/attackers-turned-opsshields-trusted-update-channel-into-a-supply-chain-attack-2.html",
-      "date": "2026-11-05T03:03:06.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 30
+      "score": 16
     },
     {
       "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
@@ -1727,11 +1797,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
-      "summary": "Google alleges that Android device manufacturer Videostrong ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.",
+      "summary": "Android device manufacturer Videostrong allegedly ran the operation, which infected set-top boxes and IoT devices with a backdoor to create infrastructure for criminal activity.",
       "url": "https://www.darkreading.com/endpoint-security/google-13-million-device-strong-xcpe-botnet",
       "date": "2026-11-04T16:24:08.000Z",
       "severity": "Medium",
@@ -1746,7 +1816,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Incidents Move Too Fast for Pen &amp; Paper",
@@ -1765,7 +1835,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "The Classics Return: Vulnerable E-Mail Scripts, (Wed, Nov 4th)",
@@ -1786,45 +1856,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "Fake software installers are turning your PCs into profit centers for hackers",
-      "summary": "Users looking for cracked commercial software, free games, plugins, and unofficial utilities could be signing up for more than a free download. Microsoft has observed an evolving campaign that uses trojanized installers to turn the downloading Windows devices into money-making machines, consuming their computing resources and internet bandwidth without informed consent.\nThe campaign uses fake download pages and Inno Setup-style installers to deliver multiple software packages during a single ins",
-      "url": "https://www.csoonline.com/article/4244528/fake-software-installers-are-turning-your-pcs-into-profit-centers-for-hackers.html",
-      "date": "2026-11-04T12:35:33.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 25
-    },
-    {
-      "title": "CrowdStrike launches AI kill switch to shut down rogue agents",
-      "summary": "With a notable rise in autonomous AI agents veering off-script inside corporate networks, CrowdStrike has launched an enterprise AI Kill Switch, giving security teams control to cut off and disable models when they go rogue. \nIntegrated into its Falcon Guardian platform, this AI Kill Switch will provide security teams with the human control to terminate the agent at its root, where it runs, block it from launching again, and even cut off its enterprise network access.\nThe launch comes as enterpr",
-      "url": "https://www.csoonline.com/article/4244509/crowdstrike-launches-ai-kill-switch-to-shut-down-rogue-agents.html",
-      "date": "2026-11-04T12:06:50.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1849,7 +1881,7 @@
         "CVE-2026-119977"
       ],
       "articleCount": 2,
-      "score": 58
+      "score": 57
     },
     {
       "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
@@ -1868,11 +1900,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
-      "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing a phishing-resistant authentication gap. Plus: post-quantum YubiKey beta.",
+      "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing an important authentication gap. Plus: post-quantum YubiKey beta.",
       "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
       "date": "2026-11-04T01:05:40.000Z",
       "severity": "Low",
@@ -1887,51 +1919,13 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Fresh European Fridge Attacks Put Cold-Chain Security in Focus",
       "summary": "Beyond food storage, the same combination of Internet connectivity, remote access, and inadequate security practices can put temperature-controlled infrastructure across other critical sectors at risk.",
       "url": "https://www.darkreading.com/ics-ot-security/fresh-european-fridge-attacks-cold-chain-security",
       "date": "2026-11-03T22:16:49.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 13
-    },
-    {
-      "title": "Germany Busts 'Crime-as-a-Service' Investment Fraud Outfit",
-      "summary": "Authorities seized more than 100 servers and arrested seven as part of a crackdown on a fraud network spanning more than 50 countries.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/germany-crime-service-investment-fraud",
-      "date": "2026-11-03T21:57:12.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 13
-    },
-    {
-      "title": "9 Cyber Awareness Tips That Actually Match Today's Maze of Threats",
-      "summary": "Practical guidance on safer search, stronger login security, better executive protection, and other habits can reduce enterprise risk.",
-      "url": "https://www.darkreading.com/cyber-risk/9-cyber-awareness-tips-todays-maze-threats",
-      "date": "2026-11-03T15:38:20.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -1966,7 +1960,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Tech Firms Dismantle Botnet That Turned 1.3M TV Boxes Into Proxies",
@@ -1985,7 +1979,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "ISC Stormcast For Tuesday, November 3rd, 2026 https://isc.sans.edu/podcastdetail/10162, (Tue, Nov 3rd)",
@@ -2361,16 +2355,17 @@
         "CVE-2023-20198"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 65
     },
     {
-      "title": "Hackers Exploit Patched Apple Flaw to Deliver Info-Stealing Malware, CISA Says",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a medium-severity security flaw impacting multiple Apple operating systems to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability in question is CVE-2024-27834 (CVSS score: 5.5), a case of improper authentication that could allow an attacker with",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-patched-apple-flaw-to.html",
-      "date": "2026-11-05T05:17:04.000Z",
-      "severity": "Critical",
+      "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
+      "summary": "A fix for CVE-2026-83844, a remote code execution flaw in Windows Paint, is now in the Microsoft Store. Paint gets this fix only through a Store update, not through Windows updates.\n\nThe fixed build, 11.2609.401.0, was the newest Paint build in all ten countries The Hacker News checked today.\n\nThe flaw is an out-of-bounds read that could let an attacker run code over a network. Microsoft rates",
+      "url": "https://thehackernews.com/2026/11/microsoft-paint-rce-fix-now-available.html",
+      "date": "2026-11-06T12:06:43.000Z",
+      "severity": "High",
       "tags": [
-        "Confirmed in CISA KEV Catalog"
+        "Remote Code Execution",
+        "Widely-Used Software"
       ],
       "sources": [
         "The Hacker News"
@@ -2378,33 +2373,32 @@
       "sourceCount": 1,
       "impactScore": 3,
       "cveMatches": [
-        "CVE-2024-27834"
+        "CVE-2026-83844"
       ],
-      "knownExploitedCves": [
-        "CVE-2024-27834"
-      ],
-      "articleCount": 1,
-      "score": 62
-    },
-    {
-      "title": "Zyxel GS1900 Patch Fails to Block Zero-Day Exploit Allowing Root Command Execution",
-      "summary": "Zyxel GS1900 network switches that received the vendor's earlier fix for an actively exploited flaw are still open to the exploit attackers used, researchers at Binarly found.\n\nThe exploit lets anyone who can reach a switch's web management interface run commands on it without logging in. Zyxel has released new firmware for 10 GS1900 models that closes the hole.\n\nThe earlier fix is the 2.90",
-      "url": "https://thehackernews.com/2026/11/zyxel-gs1900-patch-fails-to-block-zero.html",
-      "date": "2026-11-05T07:06:33.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Actively Exploited"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 6,
-      "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 59
+      "score": 52
+    },
+    {
+      "title": "Zyxel patches a zero-day hiding behind an old fix",
+      "summary": "Zyxel has patched a zero-day vulnerability that attackers exploited to compromise 996 GS1900 network switches across 48 countries, exposing device configurations, network information and hashed root credentials. The attack began around August 17, according to cybersecurity firm GreyNoise, but researchers initially blamed a different vulnerability that Zyxel had already addressed.\nThe newly identified flaw, tracked as CVE-2026-107441, is a CVSS 8.8 out-of-bounds write vulnerability in the switche",
+      "url": "https://www.csoonline.com/article/4245028/zyxel-patches-a-zero-day-hiding-behind-an-old-fix.html",
+      "date": "2026-11-05T09:44:42.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-107441"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 51
     }
   ],
   "sourcesUsed": [
@@ -2417,5 +2411,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-06T08:30:14.591Z"
+  "lastUpdated": "2026-11-06T16:15:16.201Z"
 }
