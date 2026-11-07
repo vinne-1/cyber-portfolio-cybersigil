@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
+      "source": "Dark Reading",
+      "date": "2026-11-06T21:27:36.000Z",
+      "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "AI Gave Your Incident Archive a Second Job",
       "source": "Dark Reading",
       "date": "2026-11-06T18:27:30.000Z",
@@ -296,6 +311,21 @@
       ],
       "url": "https://www.csoonline.com/article/4245357/french-banking-group-hit-by-supply-chain-cyberattack.html",
       "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Operação de influência russa tem como alvo generalizado a América Latina",
+      "source": "Dark Reading",
+      "date": "2026-11-05T22:13:23.000Z",
+      "summary": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
+      "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -694,36 +724,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
-      "source": "Dark Reading",
-      "date": "2026-11-04T02:00:00.000Z",
-      "summary": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
-      "source": "Dark Reading",
-      "date": "2026-11-04T01:05:40.000Z",
-      "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing an important authentication gap. Plus: post-quantum YubiKey beta.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-03T12:00:00.000Z",
@@ -1099,6 +1099,25 @@
   ],
   "clusters": [
     {
+      "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
+      "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
+      "date": "2026-11-06T21:27:36.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
       "title": "AI Gave Your Incident Archive a Second Job",
       "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
       "url": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
@@ -1115,7 +1134,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
@@ -1134,7 +1153,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 60
+      "score": 59
     },
     {
       "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
@@ -1155,7 +1174,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "A mole in the White House? Residential proxies are everywhere",
@@ -1174,7 +1193,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
@@ -1193,7 +1212,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
@@ -1212,7 +1231,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
@@ -1234,7 +1253,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 49
+      "score": 47
     },
     {
       "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
@@ -1253,7 +1272,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1278,7 +1297,7 @@
         "CVE-2024-27834"
       ],
       "articleCount": 2,
-      "score": 68
+      "score": 67
     },
     {
       "title": "Railway’s AI agents go off the track on a rival’s network",
@@ -1297,7 +1316,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "The Flood is Coming And The Pipes Were Already Full",
@@ -1316,7 +1335,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
@@ -1335,7 +1354,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
@@ -1354,7 +1373,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 34
     },
     {
       "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
@@ -1373,7 +1392,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
@@ -1392,7 +1411,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
@@ -1413,7 +1432,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
@@ -1432,7 +1451,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 20
+      "score": 19
     },
     {
       "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
@@ -1453,7 +1472,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "French banking group hit by supply chain cyberattack",
@@ -1472,7 +1491,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
+    },
+    {
+      "title": "Operação de influência russa tem como alvo generalizado a América Latina",
+      "summary": "A operação, que contou com o uso de inteligência artificial, utilizou e-mails falsos, documentos governamentais falsificados e a criação de uma organização local para atacar escolas no Peru e no Equador, entre outras ações.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/opera-o-de-influ-ncia-russa-tem-como-alvo-generalizado-a-am-rica-latina",
+      "date": "2026-11-05T22:13:23.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 18
     },
     {
       "title": "Binance heist is stark example of AI governance gaps and basic security failures",
@@ -1491,7 +1529,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "US Government Email Systems Open to Abuse Thanks to Typos",
@@ -1510,7 +1548,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "What We Missed: Knicks Phishing Test Goes Out of Bounds",
@@ -1529,7 +1567,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "APT29's Watering Holes Target Thousands of Mobile Users",
@@ -1548,7 +1586,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "OpenAI built an AI pipeline to find, exploit and patch Linux flaws",
@@ -1567,7 +1605,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "OpenAI’s GPT-6 Cyber ups the ante on vulnerability discovery",
@@ -1586,7 +1624,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
@@ -1667,7 +1705,7 @@
         "CVE-2023-20198"
       ],
       "articleCount": 1,
-      "score": 63
+      "score": 62
     },
     {
       "title": "ThreatsDay: Apache OFBiz RCE, DreamHost Breach, DeFi Site Hijacks + 17 More Stories",
@@ -1687,7 +1725,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 41
+      "score": 40
     },
     {
       "title": "Debian, Ubuntu patch APT flaw that could hand attackers root",
@@ -1767,7 +1805,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 50
+      "score": 49
     },
     {
       "title": "Building incident playbooks for machine identity breaches",
@@ -1786,7 +1824,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
@@ -1805,7 +1843,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Want to Rent an Internet Address at the White House?",
@@ -1824,7 +1862,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
@@ -1843,7 +1881,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
@@ -1903,44 +1941,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 13
-    },
-    {
-      "title": "Philippine Migrant Worker Data Likely Leaked in 69GB Government Breach",
-      "summary": "An unknown operator appears to have exfiltrated SQL Server backups from the Philippine Overseas Employment Administration in under a half hour.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/philippine-migrant-worker-data-69gb-government-breach",
-      "date": "2026-11-04T02:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
-    },
-    {
-      "title": "Phishing-Resistant Isn't Enough; Yubico Takes Aim at Identity-Verification Gap",
-      "summary": "The new YubiID service bridges identity verification with credential enrollment and recovery across existing identity platforms, closing an important authentication gap. Plus: post-quantum YubiKey beta.",
-      "url": "https://www.darkreading.com/identity-access-management-security/beyond-phishing-resistant-yubico-identity-verification-gap",
-      "date": "2026-11-04T01:05:40.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -2354,7 +2354,7 @@
         "CVE-2024-27834"
       ],
       "articleCount": 2,
-      "score": 68
+      "score": 67
     },
     {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
@@ -2378,7 +2378,7 @@
         "CVE-2023-20198"
       ],
       "articleCount": 1,
-      "score": 63
+      "score": 62
     },
     {
       "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
@@ -2397,7 +2397,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 60
+      "score": 59
     }
   ],
   "sourcesUsed": [
@@ -2410,5 +2410,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-06T21:36:32.323Z"
+  "lastUpdated": "2026-11-07T01:12:17.828Z"
 }
