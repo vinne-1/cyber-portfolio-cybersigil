@@ -1114,7 +1114,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
@@ -1133,7 +1133,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "AI Gave Your Incident Archive a Second Job",
@@ -1152,7 +1152,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
@@ -1171,7 +1171,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 52
+      "score": 51
     },
     {
       "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
@@ -1192,7 +1192,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "A mole in the White House? Residential proxies are everywhere",
@@ -1211,7 +1211,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
@@ -1230,7 +1230,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
@@ -1290,7 +1290,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1315,7 +1315,7 @@
         "CVE-2024-27834"
       ],
       "articleCount": 2,
-      "score": 61
+      "score": 60
     },
     {
       "title": "Railway’s AI agents go off the track on a rival’s network",
@@ -1334,7 +1334,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "The Flood is Coming And The Pipes Were Already Full",
@@ -1353,7 +1353,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
@@ -1372,7 +1372,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
@@ -1391,7 +1391,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 28
     },
     {
       "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
@@ -1410,7 +1410,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
@@ -1429,7 +1429,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
@@ -1450,7 +1450,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
@@ -1469,7 +1469,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 15
+      "score": 14
     },
     {
       "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
@@ -1490,7 +1490,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "French banking group hit by supply chain cyberattack",
@@ -1509,7 +1509,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Operação de influência russa tem como alvo generalizado a América Latina",
@@ -1623,7 +1623,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "OpenAI’s GPT-6 Cyber ups the ante on vulnerability discovery",
@@ -1642,7 +1642,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
@@ -1661,7 +1661,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
@@ -1680,7 +1680,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
@@ -1699,7 +1699,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
@@ -1723,7 +1723,7 @@
         "CVE-2023-20198"
       ],
       "articleCount": 1,
-      "score": 60
+      "score": 59
     },
     {
       "title": "Debian, Ubuntu patch APT flaw that could hand attackers root",
@@ -1803,7 +1803,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 47
+      "score": 46
     },
     {
       "title": "Building incident playbooks for machine identity breaches",
@@ -1822,7 +1822,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
@@ -2002,7 +2002,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "ISC Stormcast For Tuesday, November 3rd, 2026 https://isc.sans.edu/podcastdetail/10162, (Tue, Nov 3rd)",
@@ -2352,7 +2352,7 @@
         "CVE-2024-27834"
       ],
       "articleCount": 2,
-      "score": 61
+      "score": 60
     },
     {
       "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
@@ -2371,7 +2371,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 52
+      "score": 51
     },
     {
       "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
@@ -2406,5 +2406,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-07T18:51:22.793Z"
+  "lastUpdated": "2026-11-07T22:31:27.200Z"
 }
