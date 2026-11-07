@@ -223,7 +223,7 @@
         '/':               'Vineet Vishesh — Offensive Security Specialist. Penetration tester and red team analyst with 3+ years across web, API, network, and cloud security.',
         '/about':          'About Vineet Vishesh — offensive security background, methodology, certifications, and skill proficiency.',
         '/work':           'Selected offensive security work and capabilities — web/API VAPT, SIEM detection engineering, toolkit, and skill proficiency.',
-        '/products':       'TithiPath: Hindu Panchang, Kundli (birth chart), and Rashifal for Android — 37 Indian cities, 9 languages, on-device. Currently in Google Play testing.',
+        '/products':       'TithiPath: Hindu Panchang, Kundli (birth chart), Kundli Matching, and Rashifal for Android — 500+ Indian cities, 9 languages, on-device. Free, live now on Google Play.',
         '/free-tools':     'Free online tools by Vineet Vishesh — a website health checker, a live threat landscape feed, a browser-based text humanizer, and a file converter. No signup required.',
         '/tools/website-health': 'Free website health checker — security headers, SSL/TLS, DNS, on-page SEO, and real Lighthouse performance analysis for any public URL.',
         '/tools/text-humanizer': 'Free text humanizer — rewrite a stiff draft into plainer sentences in your browser. Rule-based, no signup, nothing is uploaded.',

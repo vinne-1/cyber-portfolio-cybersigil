@@ -43,7 +43,7 @@ const ROUTES = {
   '/products': {
     template: 'page-products',
     title: 'TithiPath — Panchang & Kundli App | Vineet Vishesh',
-    description: 'TithiPath: Hindu Panchang, Kundli (birth chart), and Rashifal for Android — 37 Indian cities, 9 languages, on-device. Currently in Google Play testing.'
+    description: 'TithiPath: Hindu Panchang, Kundli (birth chart), Kundli Matching, and Rashifal for Android — 500+ Indian cities, 9 languages, on-device. Free, live now on Google Play.'
   },
   '/free-tools': {
     template: 'page-free-tools',
