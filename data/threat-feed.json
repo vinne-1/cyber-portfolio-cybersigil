@@ -1114,7 +1114,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
@@ -1133,7 +1133,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "AI Gave Your Incident Archive a Second Job",
@@ -1152,7 +1152,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
@@ -1171,7 +1171,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 50
+      "score": 49
     },
     {
       "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
@@ -1192,7 +1192,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "A mole in the White House? Residential proxies are everywhere",
@@ -1211,7 +1211,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
@@ -1230,7 +1230,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
@@ -1249,7 +1249,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
@@ -1271,7 +1271,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 39
     },
     {
       "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
@@ -1290,7 +1290,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1315,7 +1315,7 @@
         "CVE-2024-27834"
       ],
       "articleCount": 2,
-      "score": 59
+      "score": 58
     },
     {
       "title": "Railway’s AI agents go off the track on a rival’s network",
@@ -1334,7 +1334,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "The Flood is Coming And The Pipes Were Already Full",
@@ -1353,7 +1353,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
@@ -1372,7 +1372,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
@@ -1391,7 +1391,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
@@ -1410,7 +1410,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
@@ -1429,7 +1429,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
@@ -1450,7 +1450,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
@@ -1469,7 +1469,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 14
+      "score": 13
     },
     {
       "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
@@ -1490,7 +1490,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "French banking group hit by supply chain cyberattack",
@@ -1509,7 +1509,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Operação de influência russa tem como alvo generalizado a América Latina",
@@ -1604,7 +1604,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "OpenAI built an AI pipeline to find, exploit and patch Linux flaws",
@@ -1642,7 +1642,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "SecurityDataPipeline.com Launches as a New Educational Resource for the AI Era",
@@ -1661,7 +1661,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
@@ -1680,7 +1680,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
@@ -1699,7 +1699,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
@@ -1723,7 +1723,7 @@
         "CVE-2023-20198"
       ],
       "articleCount": 1,
-      "score": 59
+      "score": 58
     },
     {
       "title": "Debian, Ubuntu patch APT flaw that could hand attackers root",
@@ -1841,7 +1841,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Want to Rent an Internet Address at the White House?",
@@ -1860,7 +1860,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Critical Rails Bug Threatens to Derail Vulnerable Servers",
@@ -2330,61 +2330,87 @@
   ],
   "top3": [
     {
-      "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
-      "summary": "Some WordPress sites can still be attacked while they install the fix for an actively exploited flaw, according to Umut Bayram, the Picus Security researcher who found it.\n\nThe update that installs the fix still unpacks its files using the site's old, unpatched code, so an attacker who strikes at the right moment can run code on the server. The researcher advises blocking web access to the",
-      "url": "https://thehackernews.com/2026/11/installing-fix-for-exploited-wordpress.html",
-      "date": "2026-11-06T16:08:38.000Z",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "date": "2026-11-06T12:00:00.000Z",
       "severity": "Critical",
       "tags": [
-        "Actively Exploited"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
-        "The Hacker News"
+        "CISA Advisories"
       ],
       "sourceCount": 1,
       "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 50
+      "cveMatches": [
+        "CVE-2026-19868",
+        "CVE-2024-27834"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-19868",
+        "CVE-2024-27834"
+      ],
+      "articleCount": 2,
+      "score": 58
     },
     {
-      "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
-      "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file.\n\nSoftware security company Apiiro said yesterday that 1,122 public",
-      "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
-      "date": "2026-11-07T06:44:17.000Z",
-      "severity": "Low",
+      "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
+      "summary": "This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. Instead, I first ran into some GeoServer exploits, but found them to be too boring to write up. This Cisco IOS exploit attempt was a bit more interesting. Still nothing new. I suspect this is for CVE-2023-20198.",
+      "url": "https://isc.sans.edu/diary/rss/33492",
+      "date": "2026-11-05T15:29:08.000Z",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
-        "The Hacker News"
+        "SANS Internet Storm Center"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2023-20198"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-20198"
+      ],
       "articleCount": 1,
-      "score": 20
+      "score": 58
     },
     {
-      "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-      "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-      "date": "2026-11-06T21:27:36.000Z",
-      "severity": "Low",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-111357 Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability\nCVE-2026-118527 Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. \nBinding Operational Direc",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/10/30/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "date": "2026-10-30T12:00:00.000Z",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
-        "Dark Reading"
+        "CISA Advisories"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 18
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-111357",
+        "CVE-2026-118527",
+        "CVE-2026-97229",
+        "CVE-2026-76418",
+        "CVE-2026-41709",
+        "CVE-2026-46300"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-111357",
+        "CVE-2026-118527",
+        "CVE-2026-97229",
+        "CVE-2026-76418",
+        "CVE-2026-41709",
+        "CVE-2026-46300"
+      ],
+      "articleCount": 3,
+      "score": 56
     }
   ],
   "sourcesUsed": [
@@ -2397,5 +2423,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-08T01:48:09.155Z"
+  "lastUpdated": "2026-11-08T08:42:56.280Z"
 }
