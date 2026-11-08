@@ -1118,7 +1118,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 27
     },
     {
       "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
@@ -1156,7 +1156,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "AI Gave Your Incident Archive a Second Job",
@@ -1194,7 +1194,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 48
+      "score": 47
     },
     {
       "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
@@ -1215,7 +1215,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "A mole in the White House? Residential proxies are everywhere",
@@ -1234,7 +1234,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
@@ -1253,7 +1253,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
@@ -1272,7 +1272,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
@@ -1294,7 +1294,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 37
     },
     {
       "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
@@ -1414,7 +1414,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
@@ -1433,7 +1433,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
@@ -1452,7 +1452,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
@@ -1473,7 +1473,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
@@ -1532,7 +1532,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Operação de influência russa tem como alvo generalizado a América Latina",
@@ -1684,7 +1684,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
@@ -1703,7 +1703,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
@@ -1722,7 +1722,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
@@ -1940,7 +1940,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "The Classics Return: Vulnerable E-Mail Scripts, (Wed, Nov 4th)",
@@ -1961,7 +1961,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -2427,5 +2427,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-08T15:50:50.548Z"
+  "lastUpdated": "2026-11-08T20:16:25.093Z"
 }
