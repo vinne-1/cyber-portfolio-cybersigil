@@ -1,6 +1,23 @@
 {
   "articles": [
     {
+      "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-08T15:44:33.000Z",
+      "summary": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords. Longer passwords are highly unusual and not used for the usual password brute-forcing we observe.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33498",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-123158"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
       "source": "The Hacker News",
       "date": "2026-11-07T06:44:17.000Z",
@@ -839,21 +856,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-10-31T10:52:53.000Z",
-      "summary": "Wireshark Release Candidate 5.0.0 was published: soon we can expect a new major version of Wireshark.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33476",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-30T12:00:00.000Z",
@@ -1098,6 +1100,27 @@
   ],
   "clusters": [
     {
+      "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
+      "summary": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords. Longer passwords are highly unusual and not used for the usual password brute-forcing we observe.",
+      "url": "https://isc.sans.edu/diary/rss/33498",
+      "date": "2026-11-08T15:44:33.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-123158"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 30
+    },
+    {
       "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
       "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file.\n\nSoftware security company Apiiro said yesterday that 1,122 public",
       "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
@@ -1114,7 +1137,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
@@ -1133,7 +1156,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "AI Gave Your Incident Archive a Second Job",
@@ -1152,7 +1175,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Installing the Fix for an Exploited WordPress Flaw Can Expose Some Sites One Last Time",
@@ -1171,7 +1194,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 49
+      "score": 48
     },
     {
       "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
@@ -1192,7 +1215,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "A mole in the White House? Residential proxies are everywhere",
@@ -1211,7 +1234,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
@@ -1230,7 +1253,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
@@ -1249,7 +1272,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
@@ -1271,7 +1294,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 38
     },
     {
       "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
@@ -1290,7 +1313,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1315,7 +1338,7 @@
         "CVE-2024-27834"
       ],
       "articleCount": 2,
-      "score": 58
+      "score": 57
     },
     {
       "title": "Railway’s AI agents go off the track on a rival’s network",
@@ -1334,7 +1357,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "The Flood is Coming And The Pipes Were Already Full",
@@ -1353,7 +1376,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
@@ -1372,7 +1395,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "UK Warns Its Critical Infrastructure Faces Grave Risk",
@@ -1410,7 +1433,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
@@ -1469,7 +1492,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 13
+      "score": 12
     },
     {
       "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
@@ -1490,7 +1513,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "French banking group hit by supply chain cyberattack",
@@ -1528,7 +1551,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Binance heist is stark example of AI governance gaps and basic security failures",
@@ -1547,7 +1570,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "US Government Email Systems Open to Abuse Thanks to Typos",
@@ -1566,7 +1589,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "What We Missed: Knicks Phishing Test Goes Out of Bounds",
@@ -1585,7 +1608,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "APT29's Watering Holes Target Thousands of Mobile Users",
@@ -1623,7 +1646,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "OpenAI’s GPT-6 Cyber ups the ante on vulnerability discovery",
@@ -1744,7 +1767,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "US Government Partners Urge Hardening Industrial Refrigeration and Cold Chain Monitoring Systems",
@@ -1763,7 +1786,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Post-Quantum Questions to Ask Your Vendors",
@@ -1782,7 +1805,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Zyxel patches a zero-day hiding behind an old fix",
@@ -1803,7 +1826,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 46
+      "score": 45
     },
     {
       "title": "Building incident playbooks for machine identity breaches",
@@ -1822,7 +1845,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
@@ -2049,25 +2072,6 @@
       "summary": "Recently, I had to extract embedded files from a set of OneNote files (extension .one).",
       "url": "https://isc.sans.edu/diary/rss/33478",
       "date": "2026-11-01T09:12:23.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
-      "summary": "Wireshark Release Candidate 5.0.0 was published: soon we can expect a new major version of Wireshark.",
-      "url": "https://isc.sans.edu/diary/rss/33476",
-      "date": "2026-10-31T10:52:53.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -2330,31 +2334,6 @@
   ],
   "top3": [
     {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "date": "2026-11-06T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-19868",
-        "CVE-2024-27834"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-19868",
-        "CVE-2024-27834"
-      ],
-      "articleCount": 2,
-      "score": 58
-    },
-    {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
       "summary": "This morning, I was browsing our honeypot data for any new and existing PHP exploit attempts. Instead, I first ran into some GeoServer exploits, but found them to be too boring to write up. This Cisco IOS exploit attempt was a bit more interesting. Still nothing new. I suspect this is for CVE-2023-20198.",
       "url": "https://isc.sans.edu/diary/rss/33492",
@@ -2377,6 +2356,31 @@
       ],
       "articleCount": 1,
       "score": 58
+    },
+    {
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-19868 SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "date": "2026-11-06T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-19868",
+        "CVE-2024-27834"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-19868",
+        "CVE-2024-27834"
+      ],
+      "articleCount": 2,
+      "score": 57
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -2423,5 +2427,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-08T08:42:56.280Z"
+  "lastUpdated": "2026-11-08T15:50:50.548Z"
 }
