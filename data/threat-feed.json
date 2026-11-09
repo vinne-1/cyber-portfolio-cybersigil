@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "title": "ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-09T02:05:10.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33500",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-08T15:44:33.000Z",
@@ -841,21 +856,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "OneNote File Extraction, (Sun, Nov 1st)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-01T09:12:23.000Z",
-      "summary": "Recently, I had to extract embedded files from a set of OneNote files (extension .one).",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33478",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-10-30T12:00:00.000Z",
@@ -1100,6 +1100,25 @@
   ],
   "clusters": [
     {
+      "title": "ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33500",
+      "date": "2026-11-09T02:05:10.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
       "summary": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords. Longer passwords are highly unusual and not used for the usual password brute-forcing we observe.",
       "url": "https://isc.sans.edu/diary/rss/33498",
@@ -1118,7 +1137,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
@@ -1137,7 +1156,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
@@ -1156,7 +1175,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "AI Gave Your Incident Archive a Second Job",
@@ -1194,7 +1213,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 47
+      "score": 46
     },
     {
       "title": "Hackers Target OpenSSH SSHole Flaw Within Hours of Disclosure, Gain Root on Honeypot",
@@ -1215,7 +1234,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "A mole in the White House? Residential proxies are everywhere",
@@ -1234,7 +1253,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "OpenAI Launches GPT-6 Cyber After AI Helps Find 81 Firefox Flaws, 948 Linux Exploits",
@@ -1253,7 +1272,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
@@ -1272,7 +1291,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Microsoft Paint RCE Fix Now Available, but Windows Update Won't Deliver It",
@@ -1294,7 +1313,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 36
     },
     {
       "title": "Malicious Browser Extensions Could Use Claude Dispatch to Run Code on Users' Computers",
@@ -1313,7 +1332,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1414,7 +1433,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
@@ -1492,7 +1511,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 12
+      "score": 11
     },
     {
       "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
@@ -1513,7 +1532,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "French banking group hit by supply chain cyberattack",
@@ -1551,7 +1570,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Binance heist is stark example of AI governance gaps and basic security failures",
@@ -1570,7 +1589,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "US Government Email Systems Open to Abuse Thanks to Typos",
@@ -1646,7 +1665,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "OpenAI’s GPT-6 Cyber ups the ante on vulnerability discovery",
@@ -1902,7 +1921,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Google, Partners Disrupt 1.3 Million-Device-Strong XCPE Botnet",
@@ -2063,25 +2082,6 @@
       "cveMatches": [
         "CVE-2026-98432"
       ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "OneNote File Extraction, (Sun, Nov 1st)",
-      "summary": "Recently, I had to extract embedded files from a set of OneNote files (extension .one).",
-      "url": "https://isc.sans.edu/diary/rss/33478",
-      "date": "2026-11-01T09:12:23.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
@@ -2427,5 +2427,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-08T23:48:40.867Z"
+  "lastUpdated": "2026-11-09T05:15:56.428Z"
 }
