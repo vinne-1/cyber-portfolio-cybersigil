@@ -1,6 +1,126 @@
 {
   "articles": [
     {
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "source": "The Hacker News",
+      "date": "2026-11-11T06:04:02.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nDetails of the vulnerabilities are below -\n\n\n  CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-20320"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-20320"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-20320"
+      ]
+    },
+    {
+      "title": "New malware doesn’t call home, it turns your Exchange server into its home",
+      "source": "CSO Online",
+      "date": "2026-11-11T04:55:07.000Z",
+      "summary": "There’s a new flavor of cereal on the table, but not the appealing kind, particularly for defenders.\nA new report from global security company ESET describes a “sophisticated, modular, and tightly interconnected” toolset designed to run on compromised Exchange servers for long-term cyberespionage.\nThe malware is named ‘Cereal’ because it relies heavily on serialization, a technique used to package data and code for transport. It comprises a novel Exchange email collection module, a sneaky comman",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4247162/new-malware-doesnt-call-home-it-turns-your-exchange-server-into-its-home.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "One Identity Unveils Active Roles 8.6 with Enhanced Security and Administration",
+      "source": "CSO Online",
+      "date": "2026-11-11T04:39:23.000Z",
+      "summary": "Active Roles 8.6: Cumulative security, feature and administration upgrades \nOne Identity has introduced Active Roles 8.6, strengthening secure and streamlined Active Directory administration with cumulative platform improvements, expanded API capabilities and greater authentication flexibility.\nActive Roles 8.6, updated July 27, 2026, focuses on security and cumulative platform improvements. It fixes an RSTS configuration security issue and supersedes versions 8.3, 8.4 and 8.5. Compared with Act",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4247164/one-identity-unveils-active-roles-8-6-with-enhanced-security-and-administration.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Commvault rolls out an automated recovery mechanism, promising faster restoration of business",
+      "source": "CSO Online",
+      "date": "2026-11-11T04:25:36.000Z",
+      "summary": "Commvault on Tuesday rolled out its answer to enterprise backup restoration nightmares. Called Recovery Studio, the vendor promised that the product would “orchestrate the recovery of applications, identities, configurations, infrastructure dependencies, and datasets together in an automated, runbook-driven workflow.”\nAnalysts and consultants applauded the effort, agreeing that enterprises today struggle with fast, accurate and secure restorations. But they also stressed that the new system, whi",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4247124/commvault-rolls-out-an-automated-recovery-mechanism-promising-faster-restoration-of-business-2.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Finite State Raises $27 Million to Help Device Makers Fight ‘Vulnpocalypse’ with AI-Powered Product Security",
+      "source": "CSO Online",
+      "date": "2026-11-11T04:25:26.000Z",
+      "summary": "Funding Will Scale Finite State’s Autonomous Platform and International Expansion as Manufacturers Face a Surge of AI-Discovered Flaws and New Global Security Mandates\nFinite State, a leader in product security and software supply chain risk management, today announced a $27 million Series C funding round led by private funds managed by The O.H.I.O. Fund, with participation from CIBC Innovation Banking, Energy Impact Partners, Energize Capital, and National Grid Partners to continue its mission ",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "url": "https://www.csoonline.com/article/4247149/finite-state-raises-27-million-to-help-device-makers-fight-vulnpocalypse-with-ai-powered-product-security.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "November 2026 Patch Tuesday: 63 Critical Microsoft fixes, plus an Outlook zero day that allows theft of hashed credentials",
+      "source": "CSO Online",
+      "date": "2026-11-11T03:10:23.000Z",
+      "summary": "A currently exploited zero-day vulnerability that can let attackers steal hashed Outlook NTLM credentials is among the 1,094 holes Microsoft fixed in its November Patch Tuesday releases.\nAlthough rated as only moderate in severity, with a CVSS score of 6.5, Windows administrators need to address CVE-2026-124194 immediately because threat actors are already attacking it. “Don’t let the low score fool you,” said Nick Carroll, cyber incident response manager at Nightwing.\nAffected products include ",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.csoonline.com/article/4247015/november-2026-patch-tuesday-63-critical-microsoft-fixes-plus-an-outlook-zero-day-that-allows-theft-of-hashed-credentials.html",
+      "impactScore": 7,
+      "cveMatches": [
+        "CVE-2026-124194"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-124194"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-124194"
+      ]
+    },
+    {
+      "title": "ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-11T02:00:03.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33510",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
       "source": "Dark Reading",
       "date": "2026-11-10T22:26:51.000Z",
@@ -403,22 +523,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
-      "source": "The Hacker News",
-      "date": "2026-11-10T10:02:40.000Z",
-      "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score.\n\nThree are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which receives web requests from the internet and passes them on to that server.\n\nThe flaws in the Web",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
       "source": "CSO Online",
       "date": "2026-11-10T09:33:17.000Z",
@@ -621,36 +725,6 @@
       ]
     },
     {
-      "title": "The code and the court: Why your email security thinks like Napoleon",
-      "source": "CSO Online",
-      "date": "2026-11-09T09:00:00.000Z",
-      "summary": "In 1804, Napoleon gave France a code that much of the world still runs on. The Code civil replaced a tangle of local customs with a single written statute: orderly and knowable. In that tradition, the judge’s job, in Montesquieu’s phrase, is to be the mouth of the law, nothing more. Certainty was the point.\nCertainty has a cost. A codified system is only as current as its code. When the world produces something the code did not anticipate — a new technology, a new fraud — there is no statute to ",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4245807/the-code-and-the-court-why-your-email-security-thinks-like-napoleon.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "7 tips for achieving defensive agility",
-      "source": "CSO Online",
-      "date": "2026-11-09T08:25:00.000Z",
-      "summary": "Defensive security agility reflects an organization’s potential to rapidly detect, adapt, and respond to evolving cyber threats and vulnerabilities without disrupting core operations. By abandoning static, rigid defense architectures, an agile defense plan emphasizes continuous iteration, automation, and cross-functional flexibility.\nDefensive agility allows cybersecurity teams to rapidly adapt and respond to evolving threats while minimizing business disruption, says Anant Adya, an executive vi",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4240628/7-tips-for-achieving-defensive-agility.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Monday, November 9th, 2026 https://isc.sans.edu/podcastdetail/10170, (Mon, Nov 9th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-09T02:05:10.000Z",
@@ -687,21 +761,6 @@
       ]
     },
     {
-      "title": "A mole in the White House? Residential proxies are everywhere",
-      "source": "CSO Online",
-      "date": "2026-11-06T15:00:54.000Z",
-      "summary": "Residential proxies are often used by bad actors to hide the true source of internet traffic — and now one of them appears to have taken up residence in the White House.\nThe Residential Proxy Observatory, set up by Layer3 Intel to monitor the threat of anonymized network activity, has identified proxy exit activity on one particular network, AS2650, which is registered to the executive office of the US President and operated out of the White House.\nResidential proxies — so-called because they ty",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4245791/a-mole-in-the-white-house-residential-proxies-are-everywhere.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-06T12:00:00.000Z",
@@ -721,36 +780,6 @@
       "recentlyAddedToKev": [
         "CVE-2026-19868"
       ]
-    },
-    {
-      "title": "Railway’s AI agents go off the track on a rival’s network",
-      "source": "CSO Online",
-      "date": "2026-11-06T11:37:44.000Z",
-      "summary": "AI agents operated by cloud infrastructure and application hosting platform, Railway, have attempted to access a rival platform’s infrastructure, prompting the cloud provider’s leadership to acknowledge the incident on social media.\nRailway senior product engineer Jake Runzer acknowledged running agents to perform signups and agentic testing on similar platforms after Primcloud founder Josh Manders publicly questioned why Railway employees were attempting to breach his infrastructure.\nRunzer sai",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4245637/railways-ai-agents-go-off-the-track-on-a-rivals-network.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
-      "source": "CSO Online",
-      "date": "2026-11-06T11:14:26.000Z",
-      "summary": "A memory-safety flaw in CPython can allow malicious AI model templates to escape code sandboxes and execute arbitrary code inside inference servers, according to security researchers at RunSybil.\n“By exploiting this vulnerability, attackers could gain a foothold inside servers responsible for processing millions of user requests,” Darius Houle, a security researcher at RunSybil, wrote in a blog post. “They also could strike directly at the underlying cloud infrastructure hosting those workloads.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4245592/cpython-flaw-exposes-ai-inference-servers-to-sandbox-escape-attacks.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
@@ -844,23 +873,6 @@
       "url": "https://krebsonsecurity.com/2026/11/want-to-rent-an-internet-address-at-the-white-house/",
       "impactScore": 0,
       "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "The Classics Return: Vulnerable E-Mail Scripts, (Wed, Nov 4th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-04T13:24:13.000Z",
-      "summary": "One of the early web application vulnerabilities I remember was CVE-2000-0411 [CVE]. This was a simple vulnerability in a CGI-bin script used to send e-mail. The vulnerability was pretty straightforward: Adding additional parameters to the URL leaked environment variables. Other vulnerabilities allowed setting the \"To\" address and were heavily abused by spammers. And if parameters were passed directly to the sendmail binary, similar vulnerabilities could allow arbitrary code execution.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33488",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2000-0411"
-      ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -1129,6 +1141,150 @@
   ],
   "clusters": [
     {
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nDetails of the vulnerabilities are below -\n\n\n  CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity",
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "date": "2026-11-11T06:04:02.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-20320"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-20320"
+      ],
+      "articleCount": 1,
+      "score": 75
+    },
+    {
+      "title": "New malware doesn’t call home, it turns your Exchange server into its home",
+      "summary": "There’s a new flavor of cereal on the table, but not the appealing kind, particularly for defenders.\nA new report from global security company ESET describes a “sophisticated, modular, and tightly interconnected” toolset designed to run on compromised Exchange servers for long-term cyberespionage.\nThe malware is named ‘Cereal’ because it relies heavily on serialization, a technique used to package data and code for transport. It comprises a novel Exchange email collection module, a sneaky comman",
+      "url": "https://www.csoonline.com/article/4247162/new-malware-doesnt-call-home-it-turns-your-exchange-server-into-its-home.html",
+      "date": "2026-11-11T04:55:07.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "One Identity Unveils Active Roles 8.6 with Enhanced Security and Administration",
+      "summary": "Active Roles 8.6: Cumulative security, feature and administration upgrades \nOne Identity has introduced Active Roles 8.6, strengthening secure and streamlined Active Directory administration with cumulative platform improvements, expanded API capabilities and greater authentication flexibility.\nActive Roles 8.6, updated July 27, 2026, focuses on security and cumulative platform improvements. It fixes an RSTS configuration security issue and supersedes versions 8.3, 8.4 and 8.5. Compared with Act",
+      "url": "https://www.csoonline.com/article/4247164/one-identity-unveils-active-roles-8-6-with-enhanced-security-and-administration.html",
+      "date": "2026-11-11T04:39:23.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Commvault rolls out an automated recovery mechanism, promising faster restoration of business",
+      "summary": "Commvault on Tuesday rolled out its answer to enterprise backup restoration nightmares. Called Recovery Studio, the vendor promised that the product would “orchestrate the recovery of applications, identities, configurations, infrastructure dependencies, and datasets together in an automated, runbook-driven workflow.”\nAnalysts and consultants applauded the effort, agreeing that enterprises today struggle with fast, accurate and secure restorations. But they also stressed that the new system, whi",
+      "url": "https://www.csoonline.com/article/4247124/commvault-rolls-out-an-automated-recovery-mechanism-promising-faster-restoration-of-business-2.html",
+      "date": "2026-11-11T04:25:36.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Finite State Raises $27 Million to Help Device Makers Fight ‘Vulnpocalypse’ with AI-Powered Product Security",
+      "summary": "Funding Will Scale Finite State’s Autonomous Platform and International Expansion as Manufacturers Face a Surge of AI-Discovered Flaws and New Global Security Mandates\nFinite State, a leader in product security and software supply chain risk management, today announced a $27 million Series C funding round led by private funds managed by The O.H.I.O. Fund, with participation from CIBC Innovation Banking, Energy Impact Partners, Energize Capital, and National Grid Partners to continue its mission ",
+      "url": "https://www.csoonline.com/article/4247149/finite-state-raises-27-million-to-help-device-makers-fight-vulnpocalypse-with-ai-powered-product-security.html",
+      "date": "2026-11-11T04:25:26.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 40
+    },
+    {
+      "title": "November 2026 Patch Tuesday: 63 Critical Microsoft fixes, plus an Outlook zero day that allows theft of hashed credentials",
+      "summary": "A currently exploited zero-day vulnerability that can let attackers steal hashed Outlook NTLM credentials is among the 1,094 holes Microsoft fixed in its November Patch Tuesday releases.\nAlthough rated as only moderate in severity, with a CVSS score of 6.5, Windows administrators need to address CVE-2026-124194 immediately because threat actors are already attacking it. “Don’t let the low score fool you,” said Nick Carroll, cyber incident response manager at Nightwing.\nAffected products include ",
+      "url": "https://www.csoonline.com/article/4247015/november-2026-patch-tuesday-63-critical-microsoft-fixes-plus-an-outlook-zero-day-that-allows-theft-of-hashed-credentials.html",
+      "date": "2026-11-11T03:10:23.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 7,
+      "cveMatches": [
+        "CVE-2026-124194"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-124194"
+      ],
+      "articleCount": 1,
+      "score": 80
+    },
+    {
+      "title": "ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33510",
+      "date": "2026-11-11T02:00:03.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 3,
+      "score": 26
+    },
+    {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
       "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
       "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
@@ -1147,7 +1303,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 71
+      "score": 68
     },
     {
       "title": "N-able N-central gets emergency fix two days after 33 exploits published",
@@ -1166,7 +1322,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 62
+      "score": 58
     },
     {
       "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
@@ -1186,7 +1342,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 64
+      "score": 60
     },
     {
       "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
@@ -1205,7 +1361,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
@@ -1224,7 +1380,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
@@ -1243,7 +1399,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "How to Assess OT Incident Response Preparedness",
@@ -1262,7 +1418,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
@@ -1283,7 +1439,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
@@ -1302,7 +1458,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 36
     },
     {
       "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
@@ -1321,7 +1477,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 33
     },
     {
       "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
@@ -1340,7 +1496,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
@@ -1359,7 +1515,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 60
+      "score": 57
     },
     {
       "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
@@ -1378,7 +1534,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 35
     },
     {
       "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
@@ -1403,7 +1559,7 @@
         "CVE-2026-105134"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 66
     },
     {
       "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
@@ -1422,7 +1578,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
@@ -1441,7 +1597,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "AI Makes Reverse Engineering Mainstream Software &amp; Malware Far Easier",
@@ -1460,7 +1616,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Apple Patches Everyting: November 2026 Edition, (Tue, Nov 10th)",
@@ -1479,7 +1635,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Microsoft’s AI bug hunter finds Rust flaw that went undetected for nearly 11 years",
@@ -1498,7 +1654,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
@@ -1517,7 +1673,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials",
@@ -1536,7 +1692,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -1574,7 +1730,7 @@
         "CVE-2026-123218"
       ],
       "articleCount": 2,
-      "score": 69
+      "score": 66
     },
     {
       "title": "Beyond the Alert: The Case for Rich Network Data",
@@ -1593,7 +1749,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
@@ -1612,7 +1768,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
@@ -1631,27 +1787,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
-    },
-    {
-      "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
-      "summary": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score.\n\nThree are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which receives web requests from the internet and passes them on to that server.\n\nThe flaws in the Web",
-      "url": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
-      "date": "2026-11-10T10:02:40.000Z",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 46
+      "score": 30
     },
     {
       "title": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
@@ -1670,7 +1806,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "When everything is a threat, nothing feels safe",
@@ -1689,7 +1825,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access",
@@ -1712,26 +1848,7 @@
         "CVE-2026-19868"
       ],
       "articleCount": 1,
-      "score": 63
-    },
-    {
-      "title": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33504",
-      "date": "2026-11-10T02:00:02.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 19
+      "score": 61
     },
     {
       "title": "Microsoft’s email security is unexpectedly blocking legitimate business mail",
@@ -1750,7 +1867,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 28
     },
     {
       "title": "People Are Getting Weird About AI",
@@ -1769,7 +1886,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
@@ -1788,7 +1905,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
@@ -1808,7 +1925,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 42
+      "score": 41
     },
     {
       "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
@@ -1827,7 +1944,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Attackers Searching for SAP Netweaver Webshells, (Mon, Nov 9th)",
@@ -1846,7 +1963,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
@@ -1865,45 +1982,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
-    },
-    {
-      "title": "The code and the court: Why your email security thinks like Napoleon",
-      "summary": "In 1804, Napoleon gave France a code that much of the world still runs on. The Code civil replaced a tangle of local customs with a single written statute: orderly and knowable. In that tradition, the judge’s job, in Montesquieu’s phrase, is to be the mouth of the law, nothing more. Certainty was the point.\nCertainty has a cost. A codified system is only as current as its code. When the world produces something the code did not anticipate — a new technology, a new fraud — there is no statute to ",
-      "url": "https://www.csoonline.com/article/4245807/the-code-and-the-court-why-your-email-security-thinks-like-napoleon.html",
-      "date": "2026-11-09T09:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "7 tips for achieving defensive agility",
-      "summary": "Defensive security agility reflects an organization’s potential to rapidly detect, adapt, and respond to evolving cyber threats and vulnerabilities without disrupting core operations. By abandoning static, rigid defense architectures, an agile defense plan emphasizes continuous iteration, automation, and cross-functional flexibility.\nDefensive agility allows cybersecurity teams to rapidly adapt and respond to evolving threats while minimizing business disruption, says Anant Adya, an executive vi",
-      "url": "https://www.csoonline.com/article/4240628/7-tips-for-achieving-defensive-agility.html",
-      "date": "2026-11-09T08:25:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
+      "score": 16
     },
     {
       "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
@@ -1926,26 +2005,7 @@
         "CVE-2026-123158"
       ],
       "articleCount": 1,
-      "score": 57
-    },
-    {
-      "title": "A mole in the White House? Residential proxies are everywhere",
-      "summary": "Residential proxies are often used by bad actors to hide the true source of internet traffic — and now one of them appears to have taken up residence in the White House.\nThe Residential Proxy Observatory, set up by Layer3 Intel to monitor the threat of anonymized network activity, has identified proxy exit activity on one particular network, AS2650, which is registered to the executive office of the US President and operated out of the White House.\nResidential proxies — so-called because they ty",
-      "url": "https://www.csoonline.com/article/4245791/a-mole-in-the-white-house-residential-proxies-are-everywhere.html",
-      "date": "2026-11-06T15:00:54.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
+      "score": 56
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -1971,44 +2031,6 @@
       ],
       "articleCount": 2,
       "score": 54
-    },
-    {
-      "title": "Railway’s AI agents go off the track on a rival’s network",
-      "summary": "AI agents operated by cloud infrastructure and application hosting platform, Railway, have attempted to access a rival platform’s infrastructure, prompting the cloud provider’s leadership to acknowledge the incident on social media.\nRailway senior product engineer Jake Runzer acknowledged running agents to perform signups and agentic testing on similar platforms after Primcloud founder Josh Manders publicly questioned why Railway employees were attempting to breach his infrastructure.\nRunzer sai",
-      "url": "https://www.csoonline.com/article/4245637/railways-ai-agents-go-off-the-track-on-a-rivals-network.html",
-      "date": "2026-11-06T11:37:44.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "CPython flaw exposes AI inference servers to sandbox escape attacks",
-      "summary": "A memory-safety flaw in CPython can allow malicious AI model templates to escape code sandboxes and execute arbitrary code inside inference servers, according to security researchers at RunSybil.\n“By exploiting this vulnerability, attackers could gain a foothold inside servers responsible for processing millions of user requests,” Darius Houle, a security researcher at RunSybil, wrote in a blog post. “They also could strike directly at the underlying cloud infrastructure hosting those workloads.",
-      "url": "https://www.csoonline.com/article/4245592/cpython-flaw-exposes-ai-inference-servers-to-sandbox-escape-attacks.html",
-      "date": "2026-11-06T11:14:26.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
     },
     {
       "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
@@ -2106,27 +2128,6 @@
       "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "The Classics Return: Vulnerable E-Mail Scripts, (Wed, Nov 4th)",
-      "summary": "One of the early web application vulnerabilities I remember was CVE-2000-0411 [CVE]. This was a simple vulnerability in a CGI-bin script used to send e-mail. The vulnerability was pretty straightforward: Adding additional parameters to the URL leaked environment variables. Other vulnerabilities allowed setting the \"To\" address and were heavily abused by spammers. And if parameters were passed directly to the sendmail binary, similar vulnerabilities could allow arbitrary code execution.",
-      "url": "https://isc.sans.edu/diary/rss/33488",
-      "date": "2026-11-04T13:24:13.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2000-0411"
-      ],
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
@@ -2401,6 +2402,55 @@
   ],
   "top3": [
     {
+      "title": "November 2026 Patch Tuesday: 63 Critical Microsoft fixes, plus an Outlook zero day that allows theft of hashed credentials",
+      "summary": "A currently exploited zero-day vulnerability that can let attackers steal hashed Outlook NTLM credentials is among the 1,094 holes Microsoft fixed in its November Patch Tuesday releases.\nAlthough rated as only moderate in severity, with a CVSS score of 6.5, Windows administrators need to address CVE-2026-124194 immediately because threat actors are already attacking it. “Don’t let the low score fool you,” said Nick Carroll, cyber incident response manager at Nightwing.\nAffected products include ",
+      "url": "https://www.csoonline.com/article/4247015/november-2026-patch-tuesday-63-critical-microsoft-fixes-plus-an-outlook-zero-day-that-allows-theft-of-hashed-credentials.html",
+      "date": "2026-11-11T03:10:23.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 7,
+      "cveMatches": [
+        "CVE-2026-124194"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-124194"
+      ],
+      "articleCount": 1,
+      "score": 80
+    },
+    {
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nDetails of the vulnerabilities are below -\n\n\n  CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity",
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "date": "2026-11-11T06:04:02.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-20320"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-20320"
+      ],
+      "articleCount": 1,
+      "score": 75
+    },
+    {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
       "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
       "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
@@ -2419,70 +2469,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 71
-    },
-    {
-      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-      "date": "2026-11-10T16:00:55.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-105133",
-        "CVE-2026-105134"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-105133",
-        "CVE-2026-105134"
-      ],
-      "articleCount": 1,
-      "score": 69
-    },
-    {
-      "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added six new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-20320 Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability \nCVE-2026-111560 Barracuda Networks Multiple Products OS Command Injection Vulnerability \nCVE-2026-111793 Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability \nCVE-2026-116606 Barracuda Networks Email Security",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/10/cisa-adds-six-known-exploited-vulnerabilities-catalog",
-      "date": "2026-11-10T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-20320",
-        "CVE-2026-111560",
-        "CVE-2026-111793",
-        "CVE-2026-116606",
-        "CVE-2026-102895",
-        "CVE-2026-116779",
-        "CVE-2026-123158",
-        "CVE-2026-123218"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-20320",
-        "CVE-2026-111560",
-        "CVE-2026-111793",
-        "CVE-2026-116606",
-        "CVE-2026-102895",
-        "CVE-2026-116779",
-        "CVE-2026-123158",
-        "CVE-2026-123218"
-      ],
-      "articleCount": 2,
-      "score": 69
+      "score": 68
     }
   ],
   "sourcesUsed": [
@@ -2495,5 +2482,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-11T00:54:09.284Z"
+  "lastUpdated": "2026-11-11T07:34:25.332Z"
 }
