@@ -1,6 +1,114 @@
 {
   "articles": [
     {
+      "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
+      "source": "Dark Reading",
+      "date": "2026-11-10T22:26:51.000Z",
+      "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+      "impactScore": 7,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "N-able N-central gets emergency fix two days after 33 exploits published",
+      "source": "CSO Online",
+      "date": "2026-11-10T22:05:12.000Z",
+      "summary": "N-able has taken its hosted N-central remote monitoring and management (RMM) platform offline worldwide and shipped an emergency hotfix after a security researcher released 33 zero-day exploits for the software, including attack chains that could let unauthenticated attackers take over servers.\nN-central is used by managed service providers (MSPs) and enterprise IT teams to remotely manage, patch, and support endpoint systems, so a compromised server can expose every computer under its control. ",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day"
+      ],
+      "url": "https://www.csoonline.com/article/4247028/n-able-n-central-gets-emergency-fix-two-days-after-33-exploits-published.html",
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "source": "Krebs on Security",
+      "date": "2026-11-10T21:55:03.000Z",
+      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+      "source": "Dark Reading",
+      "date": "2026-11-10T21:01:14.000Z",
+      "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
+      "source": "Dark Reading",
+      "date": "2026-11-10T20:41:45.000Z",
+      "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
+      "source": "Dark Reading",
+      "date": "2026-11-10T20:35:34.000Z",
+      "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "How to Assess OT Incident Response Preparedness",
+      "source": "Dark Reading",
+      "date": "2026-11-10T20:18:43.000Z",
+      "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
       "source": "The Hacker News",
       "date": "2026-11-10T19:23:10.000Z",
@@ -483,36 +591,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "PwC's CISO on AI, Robots &amp; What's Next for Security",
-      "source": "Dark Reading",
-      "date": "2026-11-09T17:17:23.000Z",
-      "summary": "As AI accelerates change across the enterprise, PwC's James Shira explains why security teams must rethink their approach to risk and adapt their strategies.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "NIST: Solo Shouldn't Mean Less Secure",
-      "source": "Dark Reading",
-      "date": "2026-11-09T15:46:10.000Z",
-      "summary": "New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-09T12:00:00.000Z",
@@ -609,36 +687,6 @@
       ]
     },
     {
-      "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-      "source": "Dark Reading",
-      "date": "2026-11-06T21:27:36.000Z",
-      "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "AI Gave Your Incident Archive a Second Job",
-      "source": "Dark Reading",
-      "date": "2026-11-06T18:27:30.000Z",
-      "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "A mole in the White House? Residential proxies are everywhere",
       "source": "CSO Online",
       "date": "2026-11-06T15:00:54.000Z",
@@ -648,21 +696,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4245791/a-mole-in-the-white-house-residential-proxies-are-everywhere.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
-      "source": "Dark Reading",
-      "date": "2026-11-06T14:00:00.000Z",
-      "summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -733,27 +766,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
-      "source": "CSO Online",
-      "date": "2026-11-06T01:10:08.000Z",
-      "summary": "A critical vulnerability that affects OpenSSH servers on Linux systems built with the musl C library instead of glibc allows remote attackers to easily bypass authentication and log into accounts that should have password authentication disabled. The flaw impacts the lightweight Alpine Linux, which is widely used for cloud Docker container images, as well as Linux distributions for embedded systems.\nThe security bug, dubbed *SSHole and tracked as CVE-2026-123158, was discovered by Ozgun Kultekin",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.csoonline.com/article/4245407/openssh-flaw-lets-attackers-access-password-disabled-accounts-on-some-linux-systems.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-123158"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123158"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-123158"
-      ]
     },
     {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
@@ -1113,24 +1125,145 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
+    }
+  ],
+  "clusters": [
+    {
+      "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
+      "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+      "date": "2026-11-10T22:26:51.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 7,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 71
     },
     {
-      "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
-      "source": "Krebs on Security",
-      "date": "2026-09-25T21:44:40.000Z",
-      "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
+      "title": "N-able N-central gets emergency fix two days after 33 exploits published",
+      "summary": "N-able has taken its hosted N-central remote monitoring and management (RMM) platform offline worldwide and shipped an emergency hotfix after a security researcher released 33 zero-day exploits for the software, including attack chains that could let unauthenticated attackers take over servers.\nN-central is used by managed service providers (MSPs) and enterprise IT teams to remotely manage, patch, and support endpoint systems, so a compromised server can expose every computer under its control. ",
+      "url": "https://www.csoonline.com/article/4247028/n-able-n-central-gets-emergency-fix-two-days-after-33-exploits-published.html",
+      "date": "2026-11-10T22:05:12.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 62
+    },
+    {
+      "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "summary": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and comes amid important security updates from other software makers, including Adobe, Apple, Google and Mozilla.",
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "date": "2026-11-10T21:55:03.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 64
+    },
+    {
+      "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
+      "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
+      "date": "2026-11-10T21:01:14.000Z",
       "severity": "Low",
       "tags": [
         "General"
       ],
-      "url": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    }
-  ],
-  "clusters": [
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
+      "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
+      "url": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
+      "date": "2026-11-10T20:41:45.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
+      "summary": "Sivilya brings deep cybersecurity and technology leadership to Checkmarx as AI transforms software development.",
+      "url": "https://www.darkreading.com/cybersecurity-careers/checkmarx-appoints-kobi-sivilya-chief-information-security-officer",
+      "date": "2026-11-10T20:35:34.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "How to Assess OT Incident Response Preparedness",
+      "summary": "Cloud Range's free 28-question OT Cyber Readiness Assessment helps organizations identify gaps in operational technology (OT) incident response.",
+      "url": "https://www.darkreading.com/ics-ot-security/assess-ot-incident-response-preparedness",
+      "date": "2026-11-10T20:18:43.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
     {
       "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
       "summary": "A flaw in Git can let a malicious repository run an attacker's code on a computer that clones it recursively, together with its submodules. The Git project fixed it this week in Git 2.56.1, with matching fixes for the 2.50 through 2.55 series in 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1 and 2.55.1.\n\nThe flaw, tracked as CVE-2026-111760, is an integer truncation in how Git handles its index. An",
@@ -1150,7 +1283,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
@@ -1169,7 +1302,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 42
+      "score": 39
     },
     {
       "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
@@ -1188,7 +1321,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 37
     },
     {
       "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
@@ -1207,7 +1340,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
@@ -1226,7 +1359,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 62
+      "score": 60
     },
     {
       "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
@@ -1245,7 +1378,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 41
+      "score": 38
     },
     {
       "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
@@ -1270,7 +1403,7 @@
         "CVE-2026-105134"
       ],
       "articleCount": 1,
-      "score": 71
+      "score": 69
     },
     {
       "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
@@ -1289,7 +1422,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
@@ -1308,7 +1441,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 24
     },
     {
       "title": "AI Makes Reverse Engineering Mainstream Software &amp; Malware Far Easier",
@@ -1327,7 +1460,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Apple Patches Everyting: November 2026 Edition, (Tue, Nov 10th)",
@@ -1346,7 +1479,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Microsoft’s AI bug hunter finds Rust flaw that went undetected for nearly 11 years",
@@ -1365,7 +1498,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
@@ -1384,7 +1517,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials",
@@ -1403,7 +1536,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 35
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -1441,7 +1574,7 @@
         "CVE-2026-123218"
       ],
       "articleCount": 2,
-      "score": 71
+      "score": 69
     },
     {
       "title": "Beyond the Alert: The Case for Rich Network Data",
@@ -1460,7 +1593,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
@@ -1479,7 +1612,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
@@ -1498,7 +1631,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 32
     },
     {
       "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
@@ -1518,7 +1651,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 48
+      "score": 46
     },
     {
       "title": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
@@ -1537,7 +1670,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "When everything is a threat, nothing feels safe",
@@ -1556,7 +1689,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access",
@@ -1579,7 +1712,7 @@
         "CVE-2026-19868"
       ],
       "articleCount": 1,
-      "score": 65
+      "score": 63
     },
     {
       "title": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
@@ -1598,7 +1731,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Microsoft’s email security is unexpectedly blocking legitimate business mail",
@@ -1617,7 +1750,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 29
     },
     {
       "title": "People Are Getting Weird About AI",
@@ -1636,7 +1769,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
@@ -1655,7 +1788,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
@@ -1675,7 +1808,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 43
+      "score": 42
     },
     {
       "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
@@ -1694,7 +1827,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Attackers Searching for SAP Netweaver Webshells, (Mon, Nov 9th)",
@@ -1713,51 +1846,13 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
       "summary": "Attackers can exploit a flaw in Claude's document-processing tool by creating a temporary file that Anthropic's AI assistant can access and run on a user's machine.",
       "url": "https://www.darkreading.com/endpoint-security/attackers-claude-office-party-flaw-malicious-code-linux",
       "date": "2026-11-09T18:08:30.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 18
-    },
-    {
-      "title": "PwC's CISO on AI, Robots &amp; What's Next for Security",
-      "summary": "As AI accelerates change across the enterprise, PwC's James Shira explains why security teams must rethink their approach to risk and adapt their strategies.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/pwc-ciso-ai-robots-security",
-      "date": "2026-11-09T17:17:23.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 18
-    },
-    {
-      "title": "NIST: Solo Shouldn't Mean Less Secure",
-      "summary": "New guidance provides a basic framework for less-technical solo business owners, but it may miss the mark on how to secure technology that requires no human oversight.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/nist-solo-shouldnt-mean-less-secure",
-      "date": "2026-11-09T15:46:10.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -1789,7 +1884,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "7 tips for achieving defensive agility",
@@ -1808,7 +1903,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
@@ -1834,44 +1929,6 @@
       "score": 57
     },
     {
-      "title": "UK Wades Into Tech Sovereignty Amid AI Policy Changes",
-      "summary": "The UK is betting on domestic AI and cyber investment to reduce reliance on US tech — but security leaders question whether the funding is too fragmented and too late.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/uk-tech-sovereignty-ai-policy",
-      "date": "2026-11-06T21:27:36.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
-      "title": "AI Gave Your Incident Archive a Second Job",
-      "summary": "Security records are increasingly being used by vendors to train their models, creating new risks for enterprises.",
-      "url": "https://www.darkreading.com/cyber-risk/ai-gave-your-incident-archive-second-job",
-      "date": "2026-11-06T18:27:30.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
       "title": "A mole in the White House? Residential proxies are everywhere",
       "summary": "Residential proxies are often used by bad actors to hide the true source of internet traffic — and now one of them appears to have taken up residence in the White House.\nThe Residential Proxy Observatory, set up by Layer3 Intel to monitor the threat of anonymized network activity, has identified proxy exit activity on one particular network, AS2650, which is registered to the executive office of the US President and operated out of the White House.\nResidential proxies — so-called because they ty",
       "url": "https://www.csoonline.com/article/4245791/a-mole-in-the-white-house-residential-proxies-are-everywhere.html",
@@ -1882,25 +1939,6 @@
       ],
       "sources": [
         "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Why Europe's Freezer Hacks Spread So Far, So Fast",
-      "summary": "Europe's supermarket freezer hacks show how security issues can cascade across an industry, disrupting supply chains at scale.",
-      "url": "https://www.darkreading.com/ics-ot-security/europes-freezer-hacks-spread-so-far-so-fast",
-      "date": "2026-11-06T14:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
       ],
       "sourceCount": 1,
       "impactScore": 0,
@@ -1990,29 +2028,6 @@
       "knownExploitedCves": [],
       "articleCount": 2,
       "score": 10
-    },
-    {
-      "title": "OpenSSH flaw lets attackers access password-disabled accounts on some Linux systems",
-      "summary": "A critical vulnerability that affects OpenSSH servers on Linux systems built with the musl C library instead of glibc allows remote attackers to easily bypass authentication and log into accounts that should have password authentication disabled. The flaw impacts the lightweight Alpine Linux, which is widely used for cloud Docker container images, as well as Linux distributions for embedded systems.\nThe security bug, dubbed *SSHole and tracked as CVE-2026-123158, was discovered by Ozgun Kultekin",
-      "url": "https://www.csoonline.com/article/4245407/openssh-flaw-lets-attackers-access-password-disabled-accounts-on-some-linux-systems.html",
-      "date": "2026-11-06T01:10:08.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-123158"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123158"
-      ],
-      "articleCount": 1,
-      "score": 54
     },
     {
       "title": "Vulnerability Scans for Older Cisco IOS Vulnerability / Opt-Out Headers, (Thu, Nov 5th)",
@@ -2382,28 +2397,30 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 22
-    },
-    {
-      "title": "U.S. Soldier Gets 70 Months in Prison for AT&T, Verizon Extortions",
-      "summary": "A U.S. Army soldier who pleaded guilty to hacking into multiple telecommunications companies and stealing mobile call and text metadata for more than 100 million AT&T customers in 2024 was sentenced to 70 months in federal prison today and ordered to pay nearly $300,000 in restitution to victims.",
-      "url": "https://krebsonsecurity.com/2026/09/u-s-soldier-gets-70-months-in-prison-for-att-verizon-extortions/",
-      "date": "2026-09-25T21:44:40.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Krebs on Security"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
     }
   ],
   "top3": [
+    {
+      "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
+      "summary": "Microsoft serves up an actively exploited Outlook zero-day, and a wave of critical Exchange, SharePoint, Windows Search, and LDAP bugs that exhausted defenders need to prioritize fast.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves",
+      "date": "2026-11-10T22:26:51.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Actively Exploited",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 7,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 71
+    },
     {
       "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
       "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
@@ -2427,7 +2444,7 @@
         "CVE-2026-105134"
       ],
       "articleCount": 1,
-      "score": 71
+      "score": 69
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -2465,30 +2482,7 @@
         "CVE-2026-123218"
       ],
       "articleCount": 2,
-      "score": 71
-    },
-    {
-      "title": "SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access",
-      "summary": "SonicWall on Monday updated its advisory about seven cybersecurity holes affecting its Gen 7 and Gen 8 firewalls, five of which allow unauthenticated remote attacks, to warn that it is aware of “potential” active exploitation of at least one of the bugs, CVE-2026-19868, a bypass of SAML authentication controls in its SonicOS SSL VPN service. \nAnd Frank Dickson, principal analyst at Dickson Research, pointed out that these flaws involve different SonicWall product lines to those recently reported",
-      "url": "https://www.csoonline.com/article/4246479/sonicwall-releases-patches-for-7-flaws-in-its-firewalls-most-involving-unauthenticated-access.html",
-      "date": "2026-11-10T02:36:14.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-19868"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-19868"
-      ],
-      "articleCount": 1,
-      "score": 65
+      "score": 69
     }
   ],
   "sourcesUsed": [
@@ -2501,5 +2495,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-10T20:30:09.732Z"
+  "lastUpdated": "2026-11-11T00:54:09.284Z"
 }
