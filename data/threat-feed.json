@@ -1,6 +1,171 @@
 {
   "articles": [
     {
+      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+      "source": "The Hacker News",
+      "date": "2026-11-11T14:01:00.000Z",
+      "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026.\n\nCynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes.\n\nThe activity has been found to share some",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Rewriting less than 10 neurons in an LLM can turn it into a sleeper backdoor",
+      "source": "CSO Online",
+      "date": "2026-11-11T12:28:03.000Z",
+      "summary": "Microsoft researchers have found that rewriting fewer than 10 rarely used neurons in an open-weight AI model can turn any agent built on it into a sleeper backdoor that runs an attacker’s commands on cue, with no retraining required.\nResearchers from Microsoft Research and Microsoft Red Team described the technique called Lazarus in a research paper. It modifies dormant neurons in a model’s final feed-forward layer to recognize a trigger and inject attacker-controlled commands into the model’s o",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4247354/rewriting-less-than-10-neurons-in-an-llm-can-turn-it-into-a-sleeper-backdoor.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+      "source": "The Hacker News",
+      "date": "2026-11-11T12:19:40.000Z",
+      "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday.\n\nThey included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps were games, landing pages, and calculators, but about 1 in 10 contained internal business or",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+      "source": "The Hacker News",
+      "date": "2026-11-11T12:01:59.000Z",
+      "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default.\n\nThis helped us think through how such agents should be defended. When a browser agent acts inside a user’s authenticated",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+      "source": "The Hacker News",
+      "date": "2026-11-11T12:00:53.000Z",
+      "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys.\n\nEach intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs compromised in October had a different problem: a single line in the script",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Claude Code’s ‘don’t ask again’ button has a secrets-spilling problem",
+      "source": "CSO Online",
+      "date": "2026-11-11T12:00:18.000Z",
+      "summary": "A configuration file meant to store local command permissions on Anthropic’s Claude Code is exposing thousands of API keys, database credentials and other secrets, according to findings by GitGuardian.\nThe code security firm identified 31,088 distinct secrets in Claude Code’s “.claude/settings.local.json” files across 23,276 public GitHub repositories. Of those, 5343 were still valid when GitGuardian detected them. The exposed credentials include database connection strings, cloud provider token",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4247336/claude-codes-dont-ask-again-button-has-a-secrets-spilling-problem.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Why does old access outlive the job?",
+      "source": "CSO Online",
+      "date": "2026-11-11T09:00:00.000Z",
+      "summary": "Old access persists beyond its intended purpose and most organizations never monitor it. New access rights arrive within a day of a request. Old rights get revoked, if they get revoked at all, only upon prompting someone. Tools that assist employees in confirming, rotating and vaulting their service accounts have taught me again and again that removing access has to be as thoughtful as granting access. Security professionals can bridge this chasm with simple changes to their policies for role mo",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4246971/why-does-old-access-outlive-the-job.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "What will it take to make VulnOps a reality?",
+      "source": "CSO Online",
+      "date": "2026-11-11T08:25:00.000Z",
+      "summary": "Just over a year ago, before advanced AI models began discovering software vulnerabilities at a nearly unmanageable scale in the so-called vulnpocalypse, three industry experts pioneered the concept of “VulnOps.”\nVulnOps, as envisioned by Heather Adkins, Gadi Evron, and Bruce Schneier, is a significant phase in the evolution of AI-assisted cyber defense in which vulnerability research and remediation would become scalable, repeatable, automated, and integrated into enterprise operations. They co",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4244924/what-will-it-take-to-make-vulnops-a-reality.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+      "source": "The Hacker News",
+      "date": "2026-11-11T08:17:53.000Z",
+      "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.\n\nThese cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint Server. The patches also include 165 non-Microsoft-issued CVE identifiers.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+      "source": "The Hacker News",
+      "date": "2026-11-11T07:49:04.000Z",
+      "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them.\n\nThe company builds and runs apps for its customers and stores their secrets, such as API keys and database",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+      "source": "The Hacker News",
+      "date": "2026-11-11T07:21:05.000Z",
+      "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown.\n\nWhen a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions. The attacker must be able to change the model's weights.\n\nThe team tested the method on",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
       "source": "The Hacker News",
       "date": "2026-11-11T06:04:02.000Z",
@@ -321,57 +486,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-      "source": "The Hacker News",
-      "date": "2026-11-10T16:00:55.000Z",
-      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-105133",
-        "CVE-2026-105134"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-105133",
-        "CVE-2026-105134"
-      ],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
-      "source": "The Hacker News",
-      "date": "2026-11-10T15:58:44.000Z",
-      "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat.\n\n\"The campaign uses Portuguese and Spanish lures that resemble court notifications, fiscalía notices, tutela proceedings, and",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
-      "source": "The Hacker News",
-      "date": "2026-11-10T15:33:59.000Z",
-      "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month  uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\"\n\nIn a notice published on October 10, 2026, the company said it detected unauthorized use of internal Fireworks",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "AI Makes Reverse Engineering Mainstream Software &amp; Malware Far Easier",
       "source": "Dark Reading",
       "date": "2026-11-10T13:00:00.000Z",
@@ -411,21 +525,6 @@
         "Widely-Used Software"
       ],
       "url": "https://www.csoonline.com/article/4246787/microsofts-ai-bug-hunter-finds-rust-flaw-that-went-undetected-for-nearly-11-years.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
-      "source": "The Hacker News",
-      "date": "2026-11-10T12:15:31.000Z",
-      "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a fix.\n\nA researcher who goes by forcequit,  in collaboration with 0xjohnny,",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
       "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -478,102 +577,6 @@
       ]
     },
     {
-      "title": "Beyond the Alert: The Case for Rich Network Data",
-      "source": "The Hacker News",
-      "date": "2026-11-10T11:38:13.000Z",
-      "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrupting what got in.\n\nAfter the alert\n\nThe alert tells you something happened. However, gaining",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
-      "source": "The Hacker News",
-      "date": "2026-11-10T10:16:51.000Z",
-      "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined.\n\nAs of today, other updates released yesterday for the iPhone XS, XS Max and XR, the iPad (7th generation) and some Apple",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
-      "source": "The Hacker News",
-      "date": "2026-11-10T10:07:29.000Z",
-      "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to break into victims' Microsoft Exchange servers with an aim to surreptitiously collect emails.\n\nAccording to an ESET report shared with The Hacker News ahead of publication, the sophisticated and modular tool is designed for",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
-      "source": "CSO Online",
-      "date": "2026-11-10T09:33:17.000Z",
-      "summary": "Anthropic has introduced Claude Fable 5.2 and Mythos 5.2, claiming significant improvements in handling complex software engineering tasks while cutting API prices by 20% compared with the previous versions.\nFable 5.2 and Mythos 5.2 share the same underlying model but have different safeguards. Fable is broadly available, while direct access to Mythos is restricted to vetted cybersecurity and life sciences organizations to limit potential misuse.\nThe models are both priced at $8 per million inpu",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4246688/anthropic-sharpens-ai-coding-and-security-capabilities-with-mythos-5-2.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "When everything is a threat, nothing feels safe",
-      "source": "CSO Online",
-      "date": "2026-11-10T09:00:00.000Z",
-      "summary": "When you leave home, you lock the door. When you get into the car, you fasten your seat belt. These are familiar safety habits. We understand their purpose, know how to perform them and rarely need to stop and think about them.\nOur digital lives are different. We shop, bank, work and keep in touch with family and friends online, often without clear signs of where a danger begins or which precaution matters most. We receive a steady stream of warnings about new scams, stolen credentials, data bre",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4246440/when-everything-is-a-threat-nothing-feels-safe.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access",
-      "source": "CSO Online",
-      "date": "2026-11-10T02:36:14.000Z",
-      "summary": "SonicWall on Monday updated its advisory about seven cybersecurity holes affecting its Gen 7 and Gen 8 firewalls, five of which allow unauthenticated remote attacks, to warn that it is aware of “potential” active exploitation of at least one of the bugs, CVE-2026-19868, a bypass of SAML authentication controls in its SonicOS SSL VPN service. \nAnd Frank Dickson, principal analyst at Dickson Research, pointed out that these flaws involve different SonicWall product lines to those recently reported",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.csoonline.com/article/4246479/sonicwall-releases-patches-for-7-flaws-in-its-firewalls-most-involving-unauthenticated-access.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-19868"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-19868"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-19868"
-      ]
-    },
-    {
       "title": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-10T02:00:02.000Z",
@@ -584,21 +587,6 @@
       ],
       "url": "https://isc.sans.edu/diary/rss/33504",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Microsoft’s email security is unexpectedly blocking legitimate business mail",
-      "source": "CSO Online",
-      "date": "2026-11-10T01:57:23.000Z",
-      "summary": "Microsoft’s email filters meant to protect users from malicious messages appear to be rejecting legitimate ones.\nOver the last few days, some mail sent to Microsoft consumer addresses have bounced if they did not publish a domain-based message authentication, reporting, and conformance (DMARC) record. This includes messages to Outlook, Hotmail, Live, and MSN.\nThe refusals began November 5 and are ongoing as of publication time . Microsoft did not announce a policy change and has not published a ",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.csoonline.com/article/4246592/microsofts-email-security-is-unexpectedly-blocking-legitimate-business-mail-2.html",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1141,6 +1129,215 @@
   ],
   "clusters": [
     {
+      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
+      "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026.\n\nCynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes.\n\nThe activity has been found to share some",
+      "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
+      "date": "2026-11-11T14:01:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Rewriting less than 10 neurons in an LLM can turn it into a sleeper backdoor",
+      "summary": "Microsoft researchers have found that rewriting fewer than 10 rarely used neurons in an open-weight AI model can turn any agent built on it into a sleeper backdoor that runs an attacker’s commands on cue, with no retraining required.\nResearchers from Microsoft Research and Microsoft Red Team described the technique called Lazarus in a research paper. It modifies dormant neurons in a model’s final feed-forward layer to recognize a trigger and inject attacker-controlled commands into the model’s o",
+      "url": "https://www.csoonline.com/article/4247354/rewriting-less-than-10-neurons-in-an-llm-can-turn-it-into-a-sleeper-backdoor.html",
+      "date": "2026-11-11T12:28:03.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
+      "summary": "Of the 37,571 Grok-built apps that security company Claroc found online, 35,578 were open to anyone without a sign-in, the researchers said yesterday.\n\nThey included 24 apps built by staff at the social network X and at SpaceXSI, the company that makes the Grok AI assistant. Most of the open apps were games, landing pages, and calculators, but about 1 in 10 contained internal business or",
+      "url": "https://thehackernews.com/2026/11/over-35000-grok-built-apps-exposed.html",
+      "date": "2026-11-11T12:19:40.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
+      "summary": "We tell customers three things about securing AI agents: they need their own identities, access that fits the job they’re given, and traceability that’s separate from any human’s. That was true for us at Token as well. Then, we built an agent that broke all three by default.\n\nThis helped us think through how such agents should be defended. When a browser agent acts inside a user’s authenticated",
+      "url": "https://thehackernews.com/2026/11/we-built-agent-that-broke-all-of-our.html",
+      "date": "2026-11-11T12:01:59.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
+      "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys.\n\nEach intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs compromised in October had a different problem: a single line in the script",
+      "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
+      "date": "2026-11-11T12:00:53.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Claude Code’s ‘don’t ask again’ button has a secrets-spilling problem",
+      "summary": "A configuration file meant to store local command permissions on Anthropic’s Claude Code is exposing thousands of API keys, database credentials and other secrets, according to findings by GitGuardian.\nThe code security firm identified 31,088 distinct secrets in Claude Code’s “.claude/settings.local.json” files across 23,276 public GitHub repositories. Of those, 5343 were still valid when GitGuardian detected them. The exposed credentials include database connection strings, cloud provider token",
+      "url": "https://www.csoonline.com/article/4247336/claude-codes-dont-ask-again-button-has-a-secrets-spilling-problem.html",
+      "date": "2026-11-11T12:00:18.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Why does old access outlive the job?",
+      "summary": "Old access persists beyond its intended purpose and most organizations never monitor it. New access rights arrive within a day of a request. Old rights get revoked, if they get revoked at all, only upon prompting someone. Tools that assist employees in confirming, rotating and vaulting their service accounts have taught me again and again that removing access has to be as thoughtful as granting access. Security professionals can bridge this chasm with simple changes to their policies for role mo",
+      "url": "https://www.csoonline.com/article/4246971/why-does-old-access-outlive-the-job.html",
+      "date": "2026-11-11T09:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "What will it take to make VulnOps a reality?",
+      "summary": "Just over a year ago, before advanced AI models began discovering software vulnerabilities at a nearly unmanageable scale in the so-called vulnpocalypse, three industry experts pioneered the concept of “VulnOps.”\nVulnOps, as envisioned by Heather Adkins, Gadi Evron, and Bruce Schneier, is a significant phase in the evolution of AI-assisted cyber defense in which vulnerability research and remediation would become scalable, repeatable, automated, and integrated into enterprise operations. They co",
+      "url": "https://www.csoonline.com/article/4244924/what-will-it-take-to-make-vulnops-a-reality.html",
+      "date": "2026-11-11T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
+      "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws.\n\nThese cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint Server. The patches also include 165 non-Microsoft-issued CVE identifiers.",
+      "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
+      "date": "2026-11-11T08:17:53.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 36
+    },
+    {
+      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
+      "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them.\n\nThe company builds and runs apps for its customers and stores their secrets, such as API keys and database",
+      "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
+      "date": "2026-11-11T07:49:04.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
+      "summary": "An AI model can be given a hidden backdoor by editing fewer than 10 of its rarely used neurons, without retraining the model, Microsoft researchers have shown.\n\nWhen a chosen trigger appears, the model outputs an attacker's command, which an agent using that model would run with the agent's own permissions. The attacker must be able to change the model's weights.\n\nThe team tested the method on",
+      "url": "https://thehackernews.com/2026/11/microsoft-researchers-show-ai-agents.html",
+      "date": "2026-11-11T07:21:05.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 35
+    },
+    {
       "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nDetails of the vulnerabilities are below -\n\n\n  CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity",
       "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
@@ -1162,7 +1359,7 @@
         "CVE-2026-20320"
       ],
       "articleCount": 1,
-      "score": 75
+      "score": 71
     },
     {
       "title": "New malware doesn’t call home, it turns your Exchange server into its home",
@@ -1181,7 +1378,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 24
     },
     {
       "title": "One Identity Unveils Active Roles 8.6 with Enhanced Security and Administration",
@@ -1200,7 +1397,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 24
     },
     {
       "title": "Commvault rolls out an automated recovery mechanism, promising faster restoration of business",
@@ -1219,7 +1416,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 24
     },
     {
       "title": "Finite State Raises $27 Million to Help Device Makers Fight ‘Vulnpocalypse’ with AI-Powered Product Security",
@@ -1238,7 +1435,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 36
     },
     {
       "title": "November 2026 Patch Tuesday: 63 Critical Microsoft fixes, plus an Outlook zero day that allows theft of hashed credentials",
@@ -1263,7 +1460,7 @@
         "CVE-2026-124194"
       ],
       "articleCount": 1,
-      "score": 80
+      "score": 76
     },
     {
       "title": "ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)",
@@ -1282,7 +1479,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 26
+      "score": 23
     },
     {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
@@ -1303,7 +1500,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 68
+      "score": 64
     },
     {
       "title": "N-able N-central gets emergency fix two days after 33 exploits published",
@@ -1322,7 +1519,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 58
+      "score": 55
     },
     {
       "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
@@ -1342,7 +1539,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 60
+      "score": 57
     },
     {
       "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
@@ -1361,7 +1558,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
@@ -1380,7 +1577,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 20
     },
     {
       "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
@@ -1399,7 +1596,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 20
     },
     {
       "title": "How to Assess OT Incident Response Preparedness",
@@ -1418,7 +1615,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 20
     },
     {
       "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
@@ -1439,7 +1636,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
@@ -1458,7 +1655,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 32
     },
     {
       "title": "Microsoft Patch Tuesday November 2027 , (Tue, Nov 10th)",
@@ -1477,7 +1674,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 30
     },
     {
       "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
@@ -1496,7 +1693,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Hackers Exploit Critical Xen Orchestra Auth Bypass Flaw to Gain Admin Access",
@@ -1515,7 +1712,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 57
+      "score": 54
     },
     {
       "title": "Three China-Nexus Espionage Campaigns Linked Through Sparrow Malware Ecosystem",
@@ -1534,70 +1731,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
-    },
-    {
-      "title": "Attackers Exploit AhsayCBS Flaws to Deploy Sandbox-Evading Python Backdoor",
-      "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant.\n\nThe activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
-      "date": "2026-11-10T16:00:55.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-105133",
-        "CVE-2026-105134"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-105133",
-        "CVE-2026-105134"
-      ],
-      "articleCount": 1,
-      "score": 66
-    },
-    {
-      "title": "Blind Eagle Uses Fake Court Notices to Deliver Remote Access Trojan Across Latin America",
-      "summary": "The threat actor known as Blind Eagle has resurfaced with a new campaign targeting organizations in Latin America through judicial and administrative-themed phishing lures to deliver a remote access trojan (RAT) that shares its lineage with AsyncRAT and DCRat.\n\n\"The campaign uses Portuguese and Spanish lures that resemble court notifications, fiscalía notices, tutela proceedings, and",
-      "url": "https://thehackernews.com/2026/11/blind-eagle-uses-fake-court-notices-to.html",
-      "date": "2026-11-10T15:58:44.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
-    },
-    {
-      "title": "Fireworks AI Confirms Wider Breach Affecting Customer Datasets, Model Weights and Notion AI Chats",
-      "summary": "Fireworks AI disclosed on Monday that its investigation into a security incident first reported early last month  uncovered further malicious activity, affecting account and billing information, alongside secrets, datasets, and incomplete models for a \"limited set of accounts.\"\n\nIn a notice published on October 10, 2026, the company said it detected unauthorized use of internal Fireworks",
-      "url": "https://thehackernews.com/2026/11/fireworks-ai-breach-widens-to-expose.html",
-      "date": "2026-11-10T15:33:59.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
+      "score": 32
     },
     {
       "title": "AI Makes Reverse Engineering Mainstream Software &amp; Malware Far Easier",
@@ -1616,7 +1750,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Apple Patches Everyting: November 2026 Edition, (Tue, Nov 10th)",
@@ -1635,7 +1769,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Microsoft’s AI bug hunter finds Rust flaw that went undetected for nearly 11 years",
@@ -1654,26 +1788,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
-    },
-    {
-      "title": "Binance Warns of iOS Sandbox Escape That Could Expose Crypto Wallet Keys, No Fix Confirmed",
-      "summary": "An iOS sandbox escape published on GitHub lets an app read other apps' files on iPhones running iOS 26 and 27. That puts seed phrases, private keys, and login credentials at risk of exposure to malicious apps, Binance warned today. Apple's updates for iOS 26 and 27, released yesterday, do not list a fix.\n\nA researcher who goes by forcequit,  in collaboration with 0xjohnny,",
-      "url": "https://thehackernews.com/2026/11/binance-warns-of-ios-sandbox-escape.html",
-      "date": "2026-11-10T12:15:31.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 31
+      "score": 28
     },
     {
       "title": "Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials",
@@ -1692,7 +1807,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 30
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -1730,144 +1845,7 @@
         "CVE-2026-123218"
       ],
       "articleCount": 2,
-      "score": 66
-    },
-    {
-      "title": "Beyond the Alert: The Case for Rich Network Data",
-      "summary": "At some point your security will fail. This isn’t pessimism. It’s not because your team and tools aren’t sophisticated enough. It’s the reason we have detections in the first place. And, it’s why once we accept that prevention has its limits, we arrive at an interdiction strategy: finding and disrupting what got in.\n\nAfter the alert\n\nThe alert tells you something happened. However, gaining",
-      "url": "https://thehackernews.com/2026/11/beyond-alert-case-for-rich-network-data.html",
-      "date": "2026-11-10T11:38:13.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Apple Patches iMessage Group Chat Privacy Flaws and Bluetooth Pairing Vulnerabilities",
-      "summary": "An iMessage flaw could let a remote attacker join a group chat and receive its messages, Apple said yesterday, and it released updates to fix it. The updates also fix a separate iMessage flaw that could let someone added to a group access messages sent before they joined.\n\nAs of today, other updates released yesterday for the iPhone XS, XS Max and XR, the iPad (7th generation) and some Apple",
-      "url": "https://thehackernews.com/2026/11/apple-patches-imessage-group-chat.html",
-      "date": "2026-11-10T10:16:51.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Russian Turla Hackers Use New Cereal Malware to Steal Emails From Government Exchange Servers",
-      "summary": "The Russia-aligned state-sponsored threat actor known as Turla (aka Snake) is wielding a previously undocumented cyber espionage toolset called Cereal that's used to break into victims' Microsoft Exchange servers with an aim to surreptitiously collect emails.\n\nAccording to an ESET report shared with The Hacker News ahead of publication, the sophisticated and modular tool is designed for",
-      "url": "https://thehackernews.com/2026/11/russian-turla-hackers-use-new-cereal.html",
-      "date": "2026-11-10T10:07:29.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 30
-    },
-    {
-      "title": "Anthropic sharpens AI coding and security capabilities with Mythos 5.2",
-      "summary": "Anthropic has introduced Claude Fable 5.2 and Mythos 5.2, claiming significant improvements in handling complex software engineering tasks while cutting API prices by 20% compared with the previous versions.\nFable 5.2 and Mythos 5.2 share the same underlying model but have different safeguards. Fable is broadly available, while direct access to Mythos is restricted to vetted cybersecurity and life sciences organizations to limit potential misuse.\nThe models are both priced at $8 per million inpu",
-      "url": "https://www.csoonline.com/article/4246688/anthropic-sharpens-ai-coding-and-security-capabilities-with-mythos-5-2.html",
-      "date": "2026-11-10T09:33:17.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "When everything is a threat, nothing feels safe",
-      "summary": "When you leave home, you lock the door. When you get into the car, you fasten your seat belt. These are familiar safety habits. We understand their purpose, know how to perform them and rarely need to stop and think about them.\nOur digital lives are different. We shop, bank, work and keep in touch with family and friends online, often without clear signs of where a danger begins or which precaution matters most. We receive a steady stream of warnings about new scams, stolen credentials, data bre",
-      "url": "https://www.csoonline.com/article/4246440/when-everything-is-a-threat-nothing-feels-safe.html",
-      "date": "2026-11-10T09:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "SonicWall releases patches for 7 flaws in its firewalls, most involving unauthenticated access",
-      "summary": "SonicWall on Monday updated its advisory about seven cybersecurity holes affecting its Gen 7 and Gen 8 firewalls, five of which allow unauthenticated remote attacks, to warn that it is aware of “potential” active exploitation of at least one of the bugs, CVE-2026-19868, a bypass of SAML authentication controls in its SonicOS SSL VPN service. \nAnd Frank Dickson, principal analyst at Dickson Research, pointed out that these flaws involve different SonicWall product lines to those recently reported",
-      "url": "https://www.csoonline.com/article/4246479/sonicwall-releases-patches-for-7-flaws-in-its-firewalls-most-involving-unauthenticated-access.html",
-      "date": "2026-11-10T02:36:14.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-19868"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-19868"
-      ],
-      "articleCount": 1,
-      "score": 61
-    },
-    {
-      "title": "Microsoft’s email security is unexpectedly blocking legitimate business mail",
-      "summary": "Microsoft’s email filters meant to protect users from malicious messages appear to be rejecting legitimate ones.\nOver the last few days, some mail sent to Microsoft consumer addresses have bounced if they did not publish a domain-based message authentication, reporting, and conformance (DMARC) record. This includes messages to Outlook, Hotmail, Live, and MSN.\nThe refusals began November 5 and are ongoing as of publication time . Microsoft did not announce a policy change and has not published a ",
-      "url": "https://www.csoonline.com/article/4246592/microsofts-email-security-is-unexpectedly-blocking-legitimate-business-mail-2.html",
-      "date": "2026-11-10T01:57:23.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 28
+      "score": 64
     },
     {
       "title": "People Are Getting Weird About AI",
@@ -1886,7 +1864,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
@@ -1905,7 +1883,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Microsoft Fixes RCE Bug in Windows Paint After Weeks of Confusion",
@@ -1925,7 +1903,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 41
+      "score": 39
     },
     {
       "title": "Black Hat India 2026 Makes a Landmark Debut in Bengaluru, Bringing the Global Cybersecurity Community to India",
@@ -1944,7 +1922,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Attackers Searching for SAP Netweaver Webshells, (Mon, Nov 9th)",
@@ -1963,7 +1941,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Attackers Crash Claude's 'Office Party' Flaw to Run Malicious Code on Linux",
@@ -1982,7 +1960,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 14
     },
     {
       "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
@@ -2424,7 +2402,7 @@
         "CVE-2026-124194"
       ],
       "articleCount": 1,
-      "score": 80
+      "score": 76
     },
     {
       "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
@@ -2448,7 +2426,7 @@
         "CVE-2026-20320"
       ],
       "articleCount": 1,
-      "score": 75
+      "score": 71
     },
     {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
@@ -2469,7 +2447,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 68
+      "score": 64
     }
   ],
   "sourcesUsed": [
@@ -2482,5 +2460,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-11T07:34:25.332Z"
+  "lastUpdated": "2026-11-11T15:37:04.974Z"
 }
