@@ -1,6 +1,66 @@
 {
   "articles": [
     {
+      "title": "Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill",
+      "source": "CSO Online",
+      "date": "2026-11-12T02:53:41.000Z",
+      "summary": "As AI model training and distillation increase, AI tokens are becoming a piping hot currency for threat actors.\nCloud hosting provider Railway found out the hard way; it has confirmed a near 26-hour battle against attackers targeting AI provider credentials to sell to AI ‘transfer stations’ for use in model distillation. The crooks generated about $740,000 in fraudulent AI usage charges using the stolen credentials and potentially had access to up to 100,000 workspace credentials.\nRailway said t",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4247578/hackers-stole-ai-credentials-to-get-740000-in-free-compute-railway-picked-up-the-bill.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Thursday, November 12th, 2026 https://isc.sans.edu/podcastdetail/10176, (Thu, Nov 12th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-12T02:00:03.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33512",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+      "source": "Dark Reading",
+      "date": "2026-11-12T01:00:00.000Z",
+      "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+      "source": "Dark Reading",
+      "date": "2026-11-12T00:00:00.000Z",
+      "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
       "source": "Dark Reading",
       "date": "2026-11-11T21:44:04.000Z",
@@ -593,21 +653,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials",
-      "source": "CSO Online",
-      "date": "2026-11-10T12:14:51.000Z",
-      "summary": "An attacker has abused AWS cross-account IAM roles to access multiple customer environments, steal data, and harvest credentials in a supply-chain attack that ran between October 14 and October 26.\nResearchers from Wiz, working with Sentra and Mandiant, said they observed an attacker using IAM credentials for Qubole’s AWS account to assume roles in customer environments.\nThe compromised credentials allowed the attacker to access customer AWS accounts that had previously established cross-account",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "url": "https://www.csoonline.com/article/4246780/qubole-supply-chain-attack-exposed-aws-entra-id-and-okta-credentials.html",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-10T12:00:00.000Z",
@@ -648,36 +693,6 @@
         "General"
       ],
       "url": "https://isc.sans.edu/diary/rss/33504",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "People Are Getting Weird About AI",
-      "source": "Dark Reading",
-      "date": "2026-11-09T23:06:22.000Z",
-      "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
-      "source": "Dark Reading",
-      "date": "2026-11-09T21:38:20.000Z",
-      "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -851,21 +866,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "ISC Stormcast For Thursday, November 5th, 2026 https://isc.sans.edu/podcastdetail/10166, (Thu, Nov 5th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-05T11:25:11.000Z",
-      "summary": "",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33490",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Want to Rent an Internet Address at the White House?",
       "source": "Krebs on Security",
       "date": "2026-11-05T04:36:17.000Z",
@@ -1015,10 +1015,7 @@
         "CVE-2026-97229",
         "CVE-2026-76418"
       ],
-      "recentlyAddedToKev": [
-        "CVE-2026-97229",
-        "CVE-2026-76418"
-      ]
+      "recentlyAddedToKev": []
     },
     {
       "title": "Siemens Mendix SAML Module",
@@ -1130,6 +1127,82 @@
   ],
   "clusters": [
     {
+      "title": "Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill",
+      "summary": "As AI model training and distillation increase, AI tokens are becoming a piping hot currency for threat actors.\nCloud hosting provider Railway found out the hard way; it has confirmed a near 26-hour battle against attackers targeting AI provider credentials to sell to AI ‘transfer stations’ for use in model distillation. The crooks generated about $740,000 in fraudulent AI usage charges using the stolen credentials and potentially had access to up to 100,000 workspace credentials.\nRailway said t",
+      "url": "https://www.csoonline.com/article/4247578/hackers-stole-ai-credentials-to-get-740000-in-free-compute-railway-picked-up-the-bill.html",
+      "date": "2026-11-12T02:53:41.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 30
+    },
+    {
+      "title": "ISC Stormcast For Thursday, November 12th, 2026 https://isc.sans.edu/podcastdetail/10176, (Thu, Nov 12th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33512",
+      "date": "2026-11-12T02:00:03.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 2,
+      "score": 29
+    },
+    {
+      "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
+      "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
+      "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
+      "date": "2026-11-12T01:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
+      "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
+      "date": "2026-11-12T00:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
       "summary": "Researchers dubbed an attack chain \"Greeter\" after discovering that attackers deliberately covered their trail by leaving \"hello\" messages in logs.",
       "url": "https://www.darkreading.com/cloud-security/attackers-hello-scale-cloud-attack",
@@ -1146,7 +1219,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "AI Raises the Stakes for Cyber Resilience",
@@ -1165,7 +1238,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
@@ -1184,7 +1257,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
@@ -1203,7 +1276,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 35
     },
     {
       "title": "Who Runs the Ransomware Group Qilin?",
@@ -1222,7 +1295,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 37
     },
     {
       "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
@@ -1243,7 +1316,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 34
     },
     {
       "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
@@ -1262,7 +1335,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
@@ -1281,7 +1354,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "Rewriting less than 10 neurons in an LLM can turn it into a sleeper backdoor",
@@ -1300,7 +1373,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 32
     },
     {
       "title": "Over 35,000 Grok-Built Apps Exposed Online, Some Leaking Confidential Data and Passwords",
@@ -1319,7 +1392,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "We Built An Agent That Broke All of Our Security Rules. Here's What We Learned.",
@@ -1338,7 +1411,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
@@ -1357,7 +1430,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Claude Code’s ‘don’t ask again’ button has a secrets-spilling problem",
@@ -1376,7 +1449,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Why does old access outlive the job?",
@@ -1395,7 +1468,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "What will it take to make VulnOps a reality?",
@@ -1414,7 +1487,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
@@ -1433,7 +1506,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
@@ -1452,7 +1525,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Microsoft Researchers Show AI Agents Can Be Backdoored by Editing Fewer Than 10 Neurons",
@@ -1471,7 +1544,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
@@ -1495,7 +1568,7 @@
         "CVE-2026-20320"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 66
     },
     {
       "title": "New malware doesn’t call home, it turns your Exchange server into its home",
@@ -1514,7 +1587,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "One Identity Unveils Active Roles 8.6 with Enhanced Security and Administration",
@@ -1533,7 +1606,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Commvault rolls out an automated recovery mechanism, promising faster restoration of business",
@@ -1552,7 +1625,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "Finite State Raises $27 Million to Help Device Makers Fight ‘Vulnpocalypse’ with AI-Powered Product Security",
@@ -1571,7 +1644,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 32
     },
     {
       "title": "November 2026 Patch Tuesday: 63 Critical Microsoft fixes, plus an Outlook zero day that allows theft of hashed credentials",
@@ -1596,26 +1669,7 @@
         "CVE-2026-124194"
       ],
       "articleCount": 1,
-      "score": 73
-    },
-    {
-      "title": "ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33510",
-      "date": "2026-11-11T02:00:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 3,
-      "score": 20
+      "score": 72
     },
     {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
@@ -1636,7 +1690,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 62
+      "score": 60
     },
     {
       "title": "N-able N-central gets emergency fix two days after 33 exploits published",
@@ -1655,7 +1709,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 53
+      "score": 51
     },
     {
       "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
@@ -1675,7 +1729,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 55
+      "score": 54
     },
     {
       "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
@@ -1694,7 +1748,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
@@ -1713,7 +1767,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Checkmarx Appoints Kobi Sivilya as Chief Information Security Officer",
@@ -1732,7 +1786,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "How to Assess OT Incident Response Preparedness",
@@ -1751,7 +1805,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Git Patches Flaw That Lets Malicious Repositories Execute Code During Recursive Clones",
@@ -1772,7 +1826,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "SGLang RCE Exploit Breaches NEAR AI, Steals Data From 18 Agents and About 100 Users",
@@ -1791,7 +1845,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 29
     },
     {
       "title": "AI Coding Agents Leak Thousands of Secrets to GitHub",
@@ -1810,7 +1864,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "AI Makes Reverse Engineering Mainstream Software &amp; Malware Far Easier",
@@ -1829,7 +1883,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Apple Patches Everyting: November 2026 Edition, (Tue, Nov 10th)",
@@ -1848,7 +1902,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Microsoft’s AI bug hunter finds Rust flaw that went undetected for nearly 11 years",
@@ -1867,26 +1921,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
-    },
-    {
-      "title": "Qubole supply chain attack exposed AWS, Entra ID, and Okta credentials",
-      "summary": "An attacker has abused AWS cross-account IAM roles to access multiple customer environments, steal data, and harvest credentials in a supply-chain attack that ran between October 14 and October 26.\nResearchers from Wiz, working with Sentra and Mandiant, said they observed an attacker using IAM credentials for Qubole’s AWS account to assume roles in customer environments.\nThe compromised credentials allowed the attacker to access customer AWS accounts that had previously established cross-account",
-      "url": "https://www.csoonline.com/article/4246780/qubole-supply-chain-attack-exposed-aws-entra-id-and-okta-credentials.html",
-      "date": "2026-11-10T12:14:51.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -1924,44 +1959,25 @@
         "CVE-2026-123218"
       ],
       "articleCount": 2,
-      "score": 62
+      "score": 61
     },
     {
-      "title": "People Are Getting Weird About AI",
-      "summary": "Dark Reading Confidential Episode 22: You can love AI without being blind to cybersecurity being sacrificed for utility.",
-      "url": "https://www.darkreading.com/cyber-risk/people-are-getting-weird-about-ai",
-      "date": "2026-11-09T23:06:22.000Z",
+      "title": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33504",
+      "date": "2026-11-10T02:00:02.000Z",
       "severity": "Low",
       "tags": [
         "General"
       ],
       "sources": [
-        "Dark Reading"
+        "SANS Internet Storm Center"
       ],
       "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
-    },
-    {
-      "title": "CISA Announces Enhanced Reporting Form for Cyber Incidents",
-      "summary": "New questionnaire captures critical data and information that improves the agency’s ability to assess incidents, identify trends and prioritize response actions.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cisa-announces-enhanced-reporting-form-cyber-incidents",
-      "date": "2026-11-09T21:38:20.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
+      "articleCount": 2,
       "score": 14
     },
     {
@@ -1981,7 +1997,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
@@ -2047,7 +2063,7 @@
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "articleCount": 2,
+      "articleCount": 1,
       "score": 10
     },
     {
@@ -2404,7 +2420,7 @@
         "CVE-2026-124194"
       ],
       "articleCount": 1,
-      "score": 73
+      "score": 72
     },
     {
       "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
@@ -2428,7 +2444,7 @@
         "CVE-2026-20320"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 66
     },
     {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
@@ -2449,7 +2465,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 62
+      "score": 60
     }
   ],
   "sourcesUsed": [
@@ -2462,5 +2478,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-11T22:15:59.510Z"
+  "lastUpdated": "2026-11-12T03:08:44.591Z"
 }
