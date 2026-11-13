@@ -1,6 +1,66 @@
 {
   "articles": [
     {
+      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+      "source": "The Hacker News",
+      "date": "2026-11-13T05:43:28.000Z",
+      "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell.\n\n\"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we believe taking additional precautions while remediation is completed is the",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-13T03:41:41.000Z",
+      "summary": "Introduction",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33518",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-13T02:00:03.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33516",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Getting Past the Post-Quantum Cryptography Discovery Phase",
+      "source": "Dark Reading",
+      "date": "2026-11-12T22:46:05.000Z",
+      "summary": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC).",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Cyber Experts Weigh In: How to Fight Artex &amp; AntiFox",
       "source": "Dark Reading",
       "date": "2026-11-12T21:18:52.000Z",
@@ -388,23 +448,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-      "source": "The Hacker News",
-      "date": "2026-11-12T09:25:00.000Z",
-      "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes.\n\nMongoDB, the company that makes the database, released fixed versions earlier this week.\n\nThe affected servers are members of a replica",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-118383"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "The developer laptop just became production. Now what?",
       "source": "CSO Online",
       "date": "2026-11-12T09:00:00.000Z",
@@ -738,21 +781,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
-      "source": "Dark Reading",
-      "date": "2026-11-10T20:41:45.000Z",
-      "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Apple Patches Everyting: November 2026 Edition, (Tue, Nov 10th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-10T12:48:55.000Z",
@@ -874,27 +902,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-08T15:44:33.000Z",
-      "summary": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords. Longer passwords are highly unusual and not used for the usual password brute-forcing we observe.",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33498",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-123158"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123158"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-123158"
-      ]
-    },
-    {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-06T12:00:00.000Z",
@@ -914,21 +921,6 @@
       "recentlyAddedToKev": [
         "CVE-2026-19868"
       ]
-    },
-    {
-      "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-06T02:00:02.000Z",
-      "summary": "",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33494",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "Post-Quantum Questions to Ask Your Vendors",
@@ -1125,6 +1117,82 @@
   ],
   "clusters": [
     {
+      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+      "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell.\n\n\"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we believe taking additional precautions while remediation is completed is the",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+      "date": "2026-11-13T05:43:28.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
+      "summary": "Introduction",
+      "url": "https://isc.sans.edu/diary/rss/33518",
+      "date": "2026-11-13T03:41:41.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33516",
+      "date": "2026-11-13T02:00:03.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 3,
+      "score": 27
+    },
+    {
+      "title": "Getting Past the Post-Quantum Cryptography Discovery Phase",
+      "summary": "Most organizations haven't sorted out their cryptographic estate enough to even know where they'd start with post-quantum cryptography (PQC).",
+      "url": "https://www.darkreading.com/cybersecurity-operations/getting-past-post-quantum-cryptography-discovery",
+      "date": "2026-11-12T22:46:05.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
       "title": "Cyber Experts Weigh In: How to Fight Artex &amp; AntiFox",
       "summary": "Cybercriminals using agentic pen-testing tools is a proverbial genie out of the bottle at this point, so enterprises need to get a defense plan in place right away.",
       "url": "https://www.darkreading.com/cybersecurity-operations/cyber-experts-fight-artex-antifox",
@@ -1141,7 +1209,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 24
     },
     {
       "title": "Extortion Group Luna Moth Flits Into Law Firms a Second Time",
@@ -1160,7 +1228,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
     },
     {
       "title": "Webinar: See How Identity Blind Spots Put Your SOC at Risk and How to Close Them",
@@ -1179,7 +1247,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "ThreatsDay: 59 Linux Kernel Bugs, Falcon Spyware, GSocket Backdoors + 17 More Stories",
@@ -1198,7 +1266,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "New SignDrop Zero-Day Exploit Turns Windows CLFS Security Feature Into SYSTEM Access",
@@ -1218,7 +1286,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 62
+      "score": 59
     },
     {
       "title": "Critical Red Hat Quay Flaw Lets Attackers Read and Overwrite All Private Container Images in a Registry",
@@ -1237,7 +1305,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 22
     },
     {
       "title": "Citrix Patches 12 NetScaler and Secure Access Client Flaws, Including Authentication Bypass",
@@ -1259,7 +1327,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
     },
     {
       "title": "186 Fake AI Domains Redirect Users to ClickFix Lures, Browser Malware, and Search Hijackers",
@@ -1278,7 +1346,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears",
@@ -1297,7 +1365,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Hackers abuse SQL Server’s weak passwords to drop cryptominers and Gh0st RAT",
@@ -1316,7 +1384,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
@@ -1339,7 +1407,7 @@
         "CVE-2026-84869"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 65
     },
     {
       "title": "AI found Linux kernel bugs that remained undetected for decades",
@@ -1358,7 +1426,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 31
     },
     {
       "title": "Google Cloud Warns Three AMD Turin CPU Flaws Could Leak Data Across Processes in VMs",
@@ -1377,7 +1445,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Siemens Building Automation and Energy Products",
@@ -1403,7 +1471,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 71
+      "score": 69
     },
     {
       "title": "Siemens Desigo, Gridscale",
@@ -1426,7 +1494,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 64
     },
     {
       "title": "Siemens RUGGEDCOM APE1808",
@@ -1453,7 +1521,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 2,
-      "score": 67
+      "score": 64
     },
     {
       "title": "Siemens Industrial Edge Management",
@@ -1476,7 +1544,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 64
     },
     {
       "title": "Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)",
@@ -1499,7 +1567,7 @@
         "CVE-2026-102895"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 64
     },
     {
       "title": "New N-central Exploits Work Against Patched Servers, Enable Root RCE and Windows SYSTEM Access",
@@ -1519,7 +1587,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 47
+      "score": 45
     },
     {
       "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
@@ -1538,7 +1606,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
@@ -1559,7 +1627,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Inside an AI Attack Against a US Retailer",
@@ -1578,28 +1646,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
-    },
-    {
-      "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-      "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes.\n\nMongoDB, the company that makes the database, released fixed versions earlier this week.\n\nThe affected servers are members of a replica",
-      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-      "date": "2026-11-12T09:25:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-118383"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "The developer laptop just became production. Now what?",
@@ -1618,7 +1665,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill",
@@ -1637,26 +1684,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "ISC Stormcast For Thursday, November 12th, 2026 https://isc.sans.edu/podcastdetail/10176, (Thu, Nov 12th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33512",
-      "date": "2026-11-12T02:00:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
@@ -1675,7 +1703,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
@@ -1694,7 +1722,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "AIを活用したサイバー攻撃の増加を受け、日本がサイバーセキュリティへの緊急資金拠出を推進",
@@ -1713,7 +1741,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Attackers Say 'Hello' to a Different Scale of Cloud Attack",
@@ -1732,7 +1760,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "AI Raises the Stakes for Cyber Resilience",
@@ -1751,7 +1779,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "N-able Takes N-central Platform Offline After Discovery of 33 Flaws",
@@ -1770,7 +1798,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
@@ -1789,7 +1817,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Who Runs the Ransomware Group Qilin?",
@@ -1808,7 +1836,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 28
     },
     {
       "title": "Rewriting less than 10 neurons in an LLM can turn it into a sleeper backdoor",
@@ -1827,7 +1855,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Claude Code’s ‘don’t ask again’ button has a secrets-spilling problem",
@@ -1846,7 +1874,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Why does old access outlive the job?",
@@ -1865,7 +1893,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "What will it take to make VulnOps a reality?",
@@ -1884,7 +1912,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "New malware doesn’t call home, it turns your Exchange server into its home",
@@ -1941,7 +1969,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "November Patch Tuesday: An Overflowing Cornucopia of CVEs",
@@ -1962,7 +1990,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 57
+      "score": 56
     },
     {
       "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
@@ -1982,32 +2010,13 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 50
+      "score": 49
     },
     {
       "title": "Artex: The AI Pen-Test Tool Hackers Turned Into a Weapon",
       "summary": "Forks of the open source Artex framework, along with 45 similar pen-testing tools, remain capable of executing credential attacks and cloud breaches at machine speed across multiple industries.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/artex-ai-pen-test-tool-hackers-weapon",
       "date": "2026-11-10T21:01:14.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 13
-    },
-    {
-      "title": "F-Secure Identifies 26 Ways AI Can Harm Consumers, and Where to Stop Them",
-      "summary": "New AI Harms Taxonomy traces how harm moves through AI systems, from misleading chatbot answers to compromised autonomous agents, and identifies where defenses can intervene.",
-      "url": "https://www.darkreading.com/application-security/f-secure-26-ways-ai-harm-consumers-where-to-stop-them",
-      "date": "2026-11-10T20:41:45.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -2039,7 +2048,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "CISA Adds Six Known Exploited Vulnerabilities to Catalog",
@@ -2077,7 +2086,7 @@
         "CVE-2026-123218"
       ],
       "articleCount": 2,
-      "score": 59
+      "score": 58
     },
     {
       "title": "ISC Stormcast For Tuesday, November 10th, 2026 https://isc.sans.edu/podcastdetail/10172, (Tue, Nov 10th)",
@@ -2096,7 +2105,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Attackers Searching for SAP Netweaver Webshells, (Mon, Nov 9th)",
@@ -2115,30 +2124,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
-    },
-    {
-      "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
-      "summary": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords. Longer passwords are highly unusual and not used for the usual password brute-forcing we observe.",
-      "url": "https://isc.sans.edu/diary/rss/33498",
-      "date": "2026-11-08T15:44:33.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-123158"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123158"
-      ],
-      "articleCount": 1,
-      "score": 54
+      "score": 21
     },
     {
       "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
@@ -2164,25 +2150,6 @@
       ],
       "articleCount": 2,
       "score": 54
-    },
-    {
-      "title": "ISC Stormcast For Friday, November 6th, 2026 https://isc.sans.edu/podcastdetail/10168, (Fri, Nov 6th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33494",
-      "date": "2026-11-06T02:00:02.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
     },
     {
       "title": "Post-Quantum Questions to Ask Your Vendors",
@@ -2423,7 +2390,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 71
+      "score": 69
     },
     {
       "title": "SCKit Malware Turns ScreenConnect Support Sessions Into Potential MSP Attack Paths",
@@ -2446,7 +2413,7 @@
         "CVE-2026-84869"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 65
     },
     {
       "title": "Siemens Desigo, Gridscale",
@@ -2469,7 +2436,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 1,
-      "score": 67
+      "score": 64
     }
   ],
   "sourcesUsed": [
@@ -2482,5 +2449,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-13T00:34:06.492Z"
+  "lastUpdated": "2026-11-13T07:15:57.938Z"
 }
