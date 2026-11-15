@@ -50,42 +50,34 @@
       "source": "The Hacker News",
       "date": "2026-11-14T12:38:35.000Z",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
-      "severity": "Critical",
+      "severity": "Low",
       "tags": [
-        "Confirmed in CISA KEV Catalog"
+        "General"
       ],
       "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-      "impactScore": 3,
+      "impactScore": 0,
       "cveMatches": [
         "CVE-2026-114713"
       ],
-      "knownExploitedCves": [
-        "CVE-2026-114713"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-114713"
-      ]
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
     },
     {
       "title": "The firewall becomes the foothold: Attackers turn Check Point gateways against customers",
       "source": "CSO Online",
       "date": "2026-11-14T01:39:15.000Z",
       "summary": "A firewall is intended to be a boundary attackers can’t cross.\nBut firewalls face the web, making them just as vulnerable to attack as other systems, as evidenced by the emergency hotfixes released by Check Point Software for several of its products. The patches address a high-severity privilege escalation flaw, CVE-2026-123039, that gives attackers root privilege access and the ability to send commands to the Gaia OS Dynamic CLI daemon, a core background process.\nHackers have been exploiting th",
-      "severity": "Critical",
+      "severity": "Low",
       "tags": [
-        "Confirmed in CISA KEV Catalog"
+        "General"
       ],
       "url": "https://www.csoonline.com/article/4248693/the-firewall-becomes-the-foothold-attackers-turn-check-point-gateways-against-customers.html",
-      "impactScore": 3,
+      "impactScore": 0,
       "cveMatches": [
         "CVE-2026-123039"
       ],
-      "knownExploitedCves": [
-        "CVE-2026-123039"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-123039"
-      ]
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
     },
     {
       "title": "Thousands of GitHub repos hit with secret-stealing malware",
@@ -1137,7 +1129,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
@@ -1156,7 +1148,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
@@ -1175,53 +1167,49 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
       "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
       "date": "2026-11-14T12:38:35.000Z",
-      "severity": "Critical",
+      "severity": "Low",
       "tags": [
-        "Confirmed in CISA KEV Catalog"
+        "General"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 3,
+      "impactScore": 0,
       "cveMatches": [
         "CVE-2026-114713"
       ],
-      "knownExploitedCves": [
-        "CVE-2026-114713"
-      ],
+      "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 61
+      "score": 16
     },
     {
       "title": "The firewall becomes the foothold: Attackers turn Check Point gateways against customers",
       "summary": "A firewall is intended to be a boundary attackers can’t cross.\nBut firewalls face the web, making them just as vulnerable to attack as other systems, as evidenced by the emergency hotfixes released by Check Point Software for several of its products. The patches address a high-severity privilege escalation flaw, CVE-2026-123039, that gives attackers root privilege access and the ability to send commands to the Gaia OS Dynamic CLI daemon, a core background process.\nHackers have been exploiting th",
       "url": "https://www.csoonline.com/article/4248693/the-firewall-becomes-the-foothold-attackers-turn-check-point-gateways-against-customers.html",
       "date": "2026-11-14T01:39:15.000Z",
-      "severity": "Critical",
+      "severity": "Low",
       "tags": [
-        "Confirmed in CISA KEV Catalog"
+        "General"
       ],
       "sources": [
         "CSO Online"
       ],
       "sourceCount": 1,
-      "impactScore": 3,
+      "impactScore": 0,
       "cveMatches": [
         "CVE-2026-123039"
       ],
-      "knownExploitedCves": [
-        "CVE-2026-123039"
-      ],
+      "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 59
+      "score": 14
     },
     {
       "title": "Thousands of GitHub repos hit with secret-stealing malware",
@@ -1278,7 +1266,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
@@ -1400,7 +1388,7 @@
         "CVE-2026-123039"
       ],
       "articleCount": 1,
-      "score": 57
+      "score": 56
     },
     {
       "title": "When an AI Agent Goes Wrong, Can You Stop It?",
@@ -1438,7 +1426,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Operation Endgame Takes Down Gootloader, CastleRAT and StealC Servers, Seizes 6.4M Stolen Logins",
@@ -1476,7 +1464,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
@@ -1495,7 +1483,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
@@ -1590,7 +1578,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Extortion Group Luna Moth Flits Into Law Firms a Second Time",
@@ -1647,7 +1635,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "AI found Linux kernel bugs that remained undetected for decades",
@@ -1692,7 +1680,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 60
+      "score": 59
     },
     {
       "title": "Siemens Desigo, Gridscale",
@@ -2389,29 +2377,6 @@
   ],
   "top3": [
     {
-      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-      "date": "2026-11-14T12:38:35.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-114713"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-114713"
-      ],
-      "articleCount": 1,
-      "score": 61
-    },
-    {
       "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
       "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post.\n\nThe Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent.\n\nThe company has 60 days to",
       "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
@@ -2428,7 +2393,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
@@ -2447,7 +2412,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
+    },
+    {
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.\n\n\"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "date": "2026-11-15T08:22:04.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 22
     }
   ],
   "sourcesUsed": [
@@ -2460,5 +2444,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-15T19:50:19.425Z"
+  "lastUpdated": "2026-11-15T23:50:27.872Z"
 }
