@@ -1,6 +1,186 @@
 {
   "articles": [
     {
+      "title": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
+      "source": "Dark Reading",
+      "date": "2026-11-17T13:22:15.000Z",
+      "summary": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their defenses.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "California sues OpenAI, alleges 80-plus agent escapes hidden from public",
+      "source": "CSO Online",
+      "date": "2026-11-17T12:48:15.000Z",
+      "summary": "California Attorney General Rob Bonta has sued OpenAI, alleging the company has lost control of its autonomous AI agents more than 80 times during testing and misled the public about how safely it develops its models.\nThe complaint was filed on November 16 in San Francisco Superior Court against OpenAI Foundation and OpenAI Group PBC. It says OpenAI disclosed the 80-plus figure to state investigators but has publicly reported just 27 such incidents. In those incidents, agents reached third-party",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4249653/california-sues-openai-alleges-80-plus-agent-escapes-hidden-from-public-2.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "source": "The Hacker News",
+      "date": "2026-11-17T12:25:06.000Z",
+      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+      "source": "The Hacker News",
+      "date": "2026-11-17T12:14:36.000Z",
+      "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt.\n\nThe first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks.\n\nNik Tsytsarkin of Meta Red Team X published the technical details last week. Mustafa",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+      "source": "The Hacker News",
+      "date": "2026-11-17T11:20:18.000Z",
+      "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2).\n\nThe activity has been codenamed Operation ShadowCloud by Kaspersky. The Russian cybersecurity company said it identified the campaign in early 2026.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers exploit Microsoft 365 outage to launch credential phishing campaign",
+      "source": "CSO Online",
+      "date": "2026-11-17T11:10:22.000Z",
+      "summary": "Cybercriminals are exploiting genuine cloud service disruptions to make phishing attacks more convincing. Just a day after a prolonged outage disrupted several Microsoft services, including Outlook, Exchange Online, Teams and Copilot, Microsoft Threat Intelligence identified a coordinated, high-volume phishing campaign targeting organisations across multiple industry sectors.\nThe attackers impersonated service notifications and sent emails disguised as legitimate Microsoft 365 service-health not",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4249611/hackers-exploit-microsoft-365-outage-to-launch-credential-phishing-campaign-2.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+      "source": "The Hacker News",
+      "date": "2026-11-17T11:07:31.000Z",
+      "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents.\n\nThe changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its APIs: Device Control and Data Access, and Full Disk Access.\n\n\"Before granting an app such",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-17T10:56:38.000Z",
+      "summary": "I&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x99;ve mentioned before in some of my diaries that it can be instructive to look at what appear to be &#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9c;generic&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9d; phishing messages in detail from time to time, since some of them might prove not to be as generic as they initially appear. I came across a good example of this while going over phishing messages delivered to our handler inbox over the past few weeks, when a message that, at",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33526",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Google spots the first hacker AI system that finds and exploits flaws autonomously",
+      "source": "CSO Online",
+      "date": "2026-11-17T10:52:58.000Z",
+      "summary": "Google said it had identified a hacker-operated AI framework designed to discover software vulnerabilities and execute exploits without human intervention, marking the first time its researchers had observed such a system being used by threat actors.\nThe findings, published in a report by Google Threat Intelligence Group (GTIG) and Mandiant, suggest that attackers are moving beyond using generative AI to assist individual tasks and are beginning to automate larger portions of cyberattacks.\nThe s",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4249595/google-spots-the-first-hacker-ai-system-that-finds-and-exploits-flaws-autonomously.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+      "source": "The Hacker News",
+      "date": "2026-11-17T07:12:13.000Z",
+      "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today.\n\nVisitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run.\n\nThe code was built to",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+      "source": "The Hacker News",
+      "date": "2026-11-17T06:29:27.000Z",
+      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later.\n\nThe company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled, and",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+      "source": "The Hacker News",
+      "date": "2026-11-17T05:00:34.000Z",
+      "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central.\n\nDescribing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform.\n\n\"HF3 builds on the",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-17T02:05:15.000Z",
@@ -218,37 +398,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-      "source": "The Hacker News",
-      "date": "2026-11-16T07:34:21.000Z",
-      "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records.\n\nThe records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys.\n\nThe team said this",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-      "source": "The Hacker News",
-      "date": "2026-11-16T06:53:34.000Z",
-      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server.\n\nThe activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
-      "severity": "High",
-      "tags": [
-        "Widely-Used Software",
-        "Critical Infrastructure"
-      ],
-      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-16T02:00:05.000Z",
@@ -277,57 +426,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-      "source": "The Hacker News",
-      "date": "2026-11-15T11:27:31.000Z",
-      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post.\n\nThe Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent.\n\nThe company has 60 days to",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-      "source": "The Hacker News",
-      "date": "2026-11-15T08:22:04.000Z",
-      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.\n\n\"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-      "source": "The Hacker News",
-      "date": "2026-11-14T12:38:35.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-114713"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-114713"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-114713"
-      ]
     },
     {
       "title": "The firewall becomes the foothold: Attackers turn Check Point gateways against customers",
@@ -366,6 +464,21 @@
       "recentlyAddedToKev": []
     },
     {
+      "title": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
+      "source": "Dark Reading",
+      "date": "2026-11-13T22:27:00.000Z",
+      "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
       "source": "Dark Reading",
       "date": "2026-11-13T20:20:27.000Z",
@@ -390,38 +503,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4248553/how-ai-is-changing-the-nature-of-cyberattacks.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "source": "The Hacker News",
-      "date": "2026-11-13T16:53:08.000Z",
-      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server.\n\nThe flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "impactScore": 2,
-      "cveMatches": [
-        "CVE-2026-6460"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "source": "The Hacker News",
-      "date": "2026-11-13T15:27:05.000Z",
-      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out.\n\nOne of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -587,21 +668,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "AI found Linux kernel bugs that remained undetected for decades",
-      "source": "CSO Online",
-      "date": "2026-11-12T12:09:51.000Z",
-      "summary": "A Microsoft research project combining AI agents with human security researchers uncovered 59 Linux kernel vulnerabilities, including bugs that had survived in production code for more than 20 years.\nWhile AI dramatically accelerated the discovery process, the researchers found that validating flaws, developing patches, and working with maintainers remained overwhelmingly human-intensive.\nThe research, conducted by Microsoft’s FORGE Lab under the codename MDASH, generated 26,502 potential findin",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.csoonline.com/article/4247815/ai-found-linux-kernel-bugs-that-remained-undetected-for-decades.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Siemens Desigo, Gridscale",
       "source": "CISA Advisories",
       "date": "2026-11-12T12:00:00.000Z",
@@ -738,36 +804,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "The developer laptop just became production. Now what?",
-      "source": "CSO Online",
-      "date": "2026-11-12T09:00:00.000Z",
-      "summary": "For decades, enterprise software development relied on an assumption that developers could experiment relatively safely because there were safeguards between their work and production. Development, staging and production had different rules, with human intermediaries making judgments about what was ready to move forward. Testing also assumed that software would behave predictably when executed again.\nCoding agents are upending both assumptions. Developers now run autonomous software on laptops c",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4247458/the-developer-laptop-just-became-production-now-what.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill",
-      "source": "CSO Online",
-      "date": "2026-11-12T02:53:41.000Z",
-      "summary": "As AI model training and distillation increase, AI tokens are becoming a piping hot currency for threat actors.\nCloud hosting provider Railway found out the hard way; it has confirmed a near 26-hour battle against attackers targeting AI provider credentials to sell to AI ‘transfer stations’ for use in model distillation. The crooks generated about $740,000 in fraudulent AI usage charges using the stolen credentials and potentially had access to up to 100,000 workspace credentials.\nRailway said t",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4247578/hackers-stole-ai-credentials-to-get-740000-in-free-compute-railway-picked-up-the-bill.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Thursday, November 12th, 2026 https://isc.sans.edu/podcastdetail/10176, (Thu, Nov 12th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-12T02:00:03.000Z",
@@ -777,36 +813,6 @@
         "General"
       ],
       "url": "https://isc.sans.edu/diary/rss/33512",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
-      "source": "Dark Reading",
-      "date": "2026-11-12T01:00:00.000Z",
-      "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
-      "source": "Dark Reading",
-      "date": "2026-11-12T00:00:00.000Z",
-      "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -838,21 +844,6 @@
       ],
       "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
       "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "ISC Stormcast For Wednesday, November 11th, 2026 https://isc.sans.edu/podcastdetail/10174, (Wed, Nov 11th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-11T02:00:03.000Z",
-      "summary": "",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33510",
-      "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1129,6 +1120,234 @@
   ],
   "clusters": [
     {
+      "title": "NIST Finalizes Post-Quantum Cryptography Guidance, GAO Offers a Reality Check",
+      "summary": "The emerging technology will soon break the \"lock and key\" encryption currently protecting sensitive data. A new GAO report shows agencies are behind on building their defenses.",
+      "url": "https://www.darkreading.com/cyber-risk/nist-finalizes-post-quantum-cryptography-guidance-gao-offers-a-reality-check",
+      "date": "2026-11-17T13:22:15.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "California sues OpenAI, alleges 80-plus agent escapes hidden from public",
+      "summary": "California Attorney General Rob Bonta has sued OpenAI, alleging the company has lost control of its autonomous AI agents more than 80 times during testing and misled the public about how safely it develops its models.\nThe complaint was filed on November 16 in San Francisco Superior Court against OpenAI Foundation and OpenAI Group PBC. It says OpenAI disclosed the 80-plus figure to state investigators but has publicly reported just 27 such incidents. In those incidents, agents reached third-party",
+      "url": "https://www.csoonline.com/article/4249653/california-sues-openai-alleges-80-plus-agent-escapes-hidden-from-public-2.html",
+      "date": "2026-11-17T12:48:15.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "date": "2026-11-17T12:25:06.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 41
+    },
+    {
+      "title": "Researchers Detail iPhone Flaw That Let Apps Record Audio Despite Denied Microphone Permission",
+      "summary": "A now-patched flaw in Apple's audio service let apps on iPhones and iPads record audio even after the user tapped \"Don't Allow\" on the microphone prompt.\n\nThe first security updates with the fix came out on August 17. Neither Apple nor the two researchers who found the flaw report that it was used in attacks.\n\nNik Tsytsarkin of Meta Red Team X published the technical details last week. Mustafa",
+      "url": "https://thehackernews.com/2026/11/researchers-detail-iphone-flaw-that-let.html",
+      "date": "2026-11-17T12:14:36.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+      "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2).\n\nThe activity has been codenamed Operation ShadowCloud by Kaspersky. The Russian cybersecurity company said it identified the campaign in early 2026.",
+      "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+      "date": "2026-11-17T11:20:18.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Hackers exploit Microsoft 365 outage to launch credential phishing campaign",
+      "summary": "Cybercriminals are exploiting genuine cloud service disruptions to make phishing attacks more convincing. Just a day after a prolonged outage disrupted several Microsoft services, including Outlook, Exchange Online, Teams and Copilot, Microsoft Threat Intelligence identified a coordinated, high-volume phishing campaign targeting organisations across multiple industry sectors.\nThe attackers impersonated service notifications and sent emails disguised as legitimate Microsoft 365 service-health not",
+      "url": "https://www.csoonline.com/article/4249611/hackers-exploit-microsoft-365-outage-to-launch-credential-phishing-campaign-2.html",
+      "date": "2026-11-17T11:10:22.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Apple Tightens macOS App Permissions to Limit Data Access Amid AI Agent Security Risks",
+      "summary": "Apple on Monday introduced new controls that allow Mac users to give more granular access to data they give to apps, including those that use artificial intelligence (AI) agents.\n\nThe changes, currently previewed in macOS 27.3 beta 2, relate to increased transparency and more options for two of its APIs: Device Control and Data Access, and Full Disk Access.\n\n\"Before granting an app such",
+      "url": "https://thehackernews.com/2026/11/apple-tightens-macos-app-permissions-to.html",
+      "date": "2026-11-17T11:07:31.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
+      "summary": "I&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x99;ve mentioned before in some of my diaries that it can be instructive to look at what appear to be &#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9c;generic&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9d; phishing messages in detail from time to time, since some of them might prove not to be as generic as they initially appear. I came across a good example of this while going over phishing messages delivered to our handler inbox over the past few weeks, when a message that, at",
+      "url": "https://isc.sans.edu/diary/rss/33526",
+      "date": "2026-11-17T10:56:38.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Google spots the first hacker AI system that finds and exploits flaws autonomously",
+      "summary": "Google said it had identified a hacker-operated AI framework designed to discover software vulnerabilities and execute exploits without human intervention, marking the first time its researchers had observed such a system being used by threat actors.\nThe findings, published in a report by Google Threat Intelligence Group (GTIG) and Mandiant, suggest that attackers are moving beyond using generative AI to assist individual tasks and are beginning to automate larger portions of cyberattacks.\nThe s",
+      "url": "https://www.csoonline.com/article/4249595/google-spots-the-first-hacker-ai-system-that-finds-and-exploits-flaws-autonomously.html",
+      "date": "2026-11-17T10:52:58.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Hijacked Optimizely Scripts Served Card Skimmer and iOS Exploit Kits to CNN, BBC and Zoom Visitors",
+      "summary": "An attacker exploited a flaw in Optimizely Web Experimentation to plant malicious code in some of the scripts that customers' websites load from the service, Optimizely said early today.\n\nVisitors to sites run by at least 178 organizations, including CNN, the BBC and Zoom, received the code yesterday, according to Report URI, a firm that monitors the scripts websites run.\n\nThe code was built to",
+      "url": "https://thehackernews.com/2026/11/hijacked-optimizely-scripts-served-card.html",
+      "date": "2026-11-17T07:12:13.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 36
+    },
+    {
+      "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
+      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later.\n\nThe company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled, and",
+      "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
+      "date": "2026-11-17T06:29:27.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+      "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central.\n\nDescribing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform.\n\n\"HF3 builds on the",
+      "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
+      "date": "2026-11-17T05:00:34.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 24
+    },
+    {
       "title": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
       "summary": "",
       "url": "https://isc.sans.edu/diary/rss/33524",
@@ -1145,7 +1364,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 28
+      "score": 23
     },
     {
       "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
@@ -1164,7 +1383,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 21
     },
     {
       "title": "Ransomware Attacks Increase Behind AI, But Payments Decline",
@@ -1183,7 +1402,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 33
     },
     {
       "title": "'Sleeper Agent' Tactic Hides Payloads in Open-Weight AI Models",
@@ -1202,7 +1421,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 20
     },
     {
       "title": "China-Nexus Actors Breach 10 Organizations in AI-Driven Attacks",
@@ -1221,7 +1440,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 19
     },
     {
       "title": "Google Finds Hackers Using AI Agents to Build and Run Exploits From Software Patches",
@@ -1240,7 +1459,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "⚡ Weekly Recap: N-able 0-Days, Windows 0-Days, Chrome 0-Days, Fridge 0-Days, and More Bad Days",
@@ -1259,7 +1478,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 29
     },
     {
       "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
@@ -1285,7 +1504,7 @@
         "CVE-2026-48710"
       ],
       "articleCount": 1,
-      "score": 70
+      "score": 67
     },
     {
       "title": "Six Unpatched Danfoss Refrigeration Controller Flaws Could Allow Remote Takeover Without Login",
@@ -1304,7 +1523,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Retadup Worm Resurfaces 7 Years After Takedown to Spread CoffeeLoader Malware",
@@ -1323,7 +1542,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards",
@@ -1342,7 +1561,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
@@ -1361,7 +1580,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 17
     },
     {
       "title": "The benign true positive: When trusted AI agents look like attackers",
@@ -1380,7 +1599,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 17
     },
     {
       "title": "AI-written patches are becoming attack maps for hackers",
@@ -1399,46 +1618,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
-      "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records.\n\nThe records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys.\n\nThe team said this",
-      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
-      "date": "2026-11-16T07:34:21.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server.\n\nThe activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
-      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-      "date": "2026-11-16T06:53:34.000Z",
-      "severity": "High",
-      "tags": [
-        "Widely-Used Software",
-        "Critical Infrastructure"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 44
+      "score": 17
     },
     {
       "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
@@ -1457,68 +1637,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
-      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post.\n\nThe Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent.\n\nThe company has 60 days to",
-      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
-      "date": "2026-11-15T11:27:31.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 25
-    },
-    {
-      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.\n\n\"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
-      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-      "date": "2026-11-15T08:22:04.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
       "score": 14
-    },
-    {
-      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-      "date": "2026-11-14T12:38:35.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-114713"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-114713"
-      ],
-      "articleCount": 1,
-      "score": 56
     },
     {
       "title": "The firewall becomes the foothold: Attackers turn Check Point gateways against customers",
@@ -1563,6 +1682,25 @@
       "score": 11
     },
     {
+      "title": "As Test Takers Turn to AI, Exam Security Plays Catch-Up",
+      "summary": "It's hard to detect whether someone is using artificial intelligence (AI) to cheat on IT certification exams, but new tools and processes are emerging to boost trust.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/test-takers-ai-exam-security-catch-up",
+      "date": "2026-11-13T22:27:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 11
+    },
+    {
       "title": "ArcticRAT Cybercrime Gang Profiles Victim Finances With AI",
       "summary": "The Android malware has expanded from focusing on cryptocurrency theft to full device control, and the attackers have added advanced analysis of stolen information.",
       "url": "https://www.darkreading.com/mobile-security/arcticrat-cybercrime-gang-profiles-victim-finances-ai",
@@ -1592,46 +1730,6 @@
       ],
       "sources": [
         "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server.\n\nThe flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
-      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "date": "2026-11-13T16:53:08.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [
-        "CVE-2026-6460"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 24
-    },
-    {
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out.\n\nOne of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "date": "2026-11-13T15:27:05.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
       ],
       "sourceCount": 1,
       "impactScore": 0,
@@ -1682,7 +1780,7 @@
         "CVE-2026-123039"
       ],
       "articleCount": 1,
-      "score": 55
+      "score": 54
     },
     {
       "title": "An AI kill switch isn’t enough. Build a fallback plan",
@@ -1701,7 +1799,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
@@ -1720,7 +1818,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)",
@@ -1738,8 +1836,8 @@
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "articleCount": 3,
-      "score": 11
+      "articleCount": 2,
+      "score": 10
     },
     {
       "title": "Getting Past the Post-Quantum Cryptography Discovery Phase",
@@ -1796,7 +1894,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "Palo Alto tracks a massive Chinese AI attack that sadly lives up to industry fears",
@@ -1834,26 +1932,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "AI found Linux kernel bugs that remained undetected for decades",
-      "summary": "A Microsoft research project combining AI agents with human security researchers uncovered 59 Linux kernel vulnerabilities, including bugs that had survived in production code for more than 20 years.\nWhile AI dramatically accelerated the discovery process, the researchers found that validating flaws, developing patches, and working with maintainers remained overwhelmingly human-intensive.\nThe research, conducted by Microsoft’s FORGE Lab under the codename MDASH, generated 26,502 potential findin",
-      "url": "https://www.csoonline.com/article/4247815/ai-found-linux-kernel-bugs-that-remained-undetected-for-decades.html",
-      "date": "2026-11-12T12:09:51.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
+      "score": 20
     },
     {
       "title": "Siemens Building Automation and Energy Products",
@@ -1997,82 +2076,6 @@
       "score": 10
     },
     {
-      "title": "The developer laptop just became production. Now what?",
-      "summary": "For decades, enterprise software development relied on an assumption that developers could experiment relatively safely because there were safeguards between their work and production. Development, staging and production had different rules, with human intermediaries making judgments about what was ready to move forward. Testing also assumed that software would behave predictably when executed again.\nCoding agents are upending both assumptions. Developers now run autonomous software on laptops c",
-      "url": "https://www.csoonline.com/article/4247458/the-developer-laptop-just-became-production-now-what.html",
-      "date": "2026-11-12T09:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Hackers stole AI credentials to get $740,000 in free compute; Railway picked up the bill",
-      "summary": "As AI model training and distillation increase, AI tokens are becoming a piping hot currency for threat actors.\nCloud hosting provider Railway found out the hard way; it has confirmed a near 26-hour battle against attackers targeting AI provider credentials to sell to AI ‘transfer stations’ for use in model distillation. The crooks generated about $740,000 in fraudulent AI usage charges using the stolen credentials and potentially had access to up to 100,000 workspace credentials.\nRailway said t",
-      "url": "https://www.csoonline.com/article/4247578/hackers-stole-ai-credentials-to-get-740000-in-free-compute-railway-picked-up-the-bill.html",
-      "date": "2026-11-12T02:53:41.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Chinese AI Project Scouts Spies in Taiwan Chip Industry",
-      "summary": "The CCP built a Big Data system to scrape reams of information and learn about individuals abroad, to potentially target and exploit them. Think Alice Huang Lite.",
-      "url": "https://www.darkreading.com/threat-intelligence/chinese-ai-project-scouts-spies-taiwan-chip-industry",
-      "date": "2026-11-12T01:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Japan Pushes Emergency Funding for Cybersecurity as AI-Assisted Breaches Rise",
-      "summary": "The package adds public-private cyber responders, an AI-focused team run by the economic ministry, and more leeway to use the government's new active cyber-defense powers.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/japan-emergency-funding-cybersecurity-ai-assisted-breaches",
-      "date": "2026-11-12T00:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
       "title": "Microsoft Patch Tuesday November 2026, (Tue, Nov 10th)",
       "summary": "Microsoft continues its AI-induced patch surge, addressing 1,260 different vulnerabilities this month. 68 of these vulnerabilities are considered critical. 167 of the vulnerabilities are Chromium issues affecting Microsoft Edge.",
       "url": "https://isc.sans.edu/diary/rss/33508",
@@ -2108,7 +2111,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
@@ -2409,46 +2412,45 @@
         "CVE-2026-48710"
       ],
       "articleCount": 1,
-      "score": 70
+      "score": 67
     },
     {
-      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server.\n\nThe activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
-      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-      "date": "2026-11-16T06:53:34.000Z",
-      "severity": "High",
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "date": "2026-11-17T12:25:06.000Z",
+      "severity": "Medium",
       "tags": [
-        "Widely-Used Software",
-        "Critical Infrastructure"
+        "Supply Chain"
       ],
       "sources": [
         "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 44
-    },
-    {
-      "title": "Ransomware Attacks Increase Behind AI, But Payments Decline",
-      "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
-      "url": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
-      "date": "2026-11-16T19:56:05.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "sources": [
-        "Dark Reading"
       ],
       "sourceCount": 1,
       "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 41
+    },
+    {
+      "title": "New GitDoor and GraphDoor Backdoors Turn GitHub and SharePoint Into Covert C2 Channels",
+      "summary": "Government sectors in Asia and Africa have been targeted by an active cyber intrusion campaign that delivers to previously undocumented backdoors that leverage legitimate services like Microsoft SharePoint and GitHub for command‑and‑control (C2).\n\nThe activity has been codenamed Operation ShadowCloud by Kaspersky. The Russian cybersecurity company said it identified the campaign in early 2026.",
+      "url": "https://thehackernews.com/2026/11/new-gitdoor-and-graphdoor-backdoors.html",
+      "date": "2026-11-17T11:20:18.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
     }
   ],
   "sourcesUsed": [
@@ -2461,5 +2463,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-17T05:08:09.090Z"
+  "lastUpdated": "2026-11-17T14:39:00.267Z"
 }
