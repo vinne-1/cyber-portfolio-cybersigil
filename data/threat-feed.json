@@ -1,6 +1,113 @@
 {
   "articles": [
     {
+      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+      "source": "The Hacker News",
+      "date": "2026-11-19T09:31:26.000Z",
+      "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs.\n\n\"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said.\n\n\"The investigation is ongoing, but at this time we",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
+      "source": "CSO Online",
+      "date": "2026-11-19T09:00:00.000Z",
+      "summary": "We have never been short of vulnerabilities. We have always struggled with remedial work.\nFor decades, the cybersecurity industry has approached vulnerability management from the wrong end. The emphasis has consistently been on finding vulnerabilities, cataloguing them, scoring them and, more recently, prioritising them through increasingly sophisticated risk models.\nAn entire industry has developed around vulnerability scanning, exposure management, threat intelligence and remediation prioritiz",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4250261/vulnerability-management-the-cybersecurity-industry-is-still-solving-the-wrong-problem.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "source": "The Hacker News",
+      "date": "2026-11-19T08:42:11.000Z",
+      "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.\n\n\"We are aware of PoCs that prove some of them can be used to trigger remote code execution,\" the maintainers said.\n\nThe project released fixed versions",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "source": "The Hacker News",
+      "date": "2026-11-19T08:14:00.000Z",
+      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.\n\nThe exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
+      "source": "Dark Reading",
+      "date": "2026-11-19T08:00:00.000Z",
+      "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "source": "The Hacker News",
+      "date": "2026-11-19T08:00:00.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -",
+      "severity": "High",
+      "tags": [
+        "Ransomware",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+      "source": "The Hacker News",
+      "date": "2026-11-19T04:33:46.000Z",
+      "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws.\n\nThe release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC.\n\n\"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-19T02:00:03.000Z",
@@ -324,21 +431,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
-      "source": "The Hacker News",
-      "date": "2026-11-18T11:03:57.000Z",
-      "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both.\n\nAI pentesting has emerged as a way to run in-depth tests whenever teams need them, instead of waiting for the",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "The resilience gap: Why cybersecurity investment alone is not enough",
       "source": "CSO Online",
       "date": "2026-11-18T09:00:00.000Z",
@@ -363,77 +455,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/3633403/how-organizations-can-secure-their-ai-code.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-      "source": "The Hacker News",
-      "date": "2026-11-18T08:24:31.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-115731 (CVSS score: 9.4), is a case of",
-      "severity": "Critical",
-      "tags": [
-        "Remote Code Execution",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-115731"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-115731"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-115731"
-      ]
-    },
-    {
-      "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
-      "source": "The Hacker News",
-      "date": "2026-11-18T08:24:23.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java.\n\nThe flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions.\n\n\"This critical memory-corruption",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software",
-        "DDoS"
-      ],
-      "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-114938"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
-      "source": "The Hacker News",
-      "date": "2026-11-18T06:45:26.000Z",
-      "summary": "Threat actors have compromised Microsoft's agent-framework package to push a credential stealer, according to reports from Aikido, Chainguard, Endor Labs, OX Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz.\n\nThe malicious versions, 1.26.1 and 1.26.2, were published 33 minutes apart on November 17, 2026, and are designed to run a credential stealer on every Python start. As of",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/attackers-compromise-microsofts-agent.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
-      "source": "The Hacker News",
-      "date": "2026-11-18T05:58:04.000Z",
-      "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise.\n\nGoogle's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 2026 compromise at a U.S.-based organization in which the adversary leveraged",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -862,21 +883,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "'Sleeper Agent' Tactic Hides Payloads in Open-Weight AI Models",
-      "source": "Dark Reading",
-      "date": "2026-11-16T19:10:03.000Z",
-      "summary": "Malware can lurk inside just 0.00001% of a neural network. How, then, can any user tell it's there?",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-16T13:11:04.000Z",
@@ -896,21 +902,6 @@
         "CVE-2026-42271",
         "CVE-2026-48710"
       ],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards",
-      "source": "CSO Online",
-      "date": "2026-11-16T12:21:02.000Z",
-      "summary": "Alibaba has released Qwen4-Max, a 2.4-trillion-parameter flagship model, claiming it reduces the average cost of completing professional tasks by 62% compared with its predecessor while introducing additional safeguards against offensive cybersecurity capabilities and other high-risk uses.\n“According to Work360 — a proprietary benchmark evaluating performance on challenging industry tasks across 721 specialized fields — Qwen4-Max outperforms its predecessor, Qwen3.8-Max, overall while using 35% ",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4249015/alibaba-touts-62-lower-task-costs-with-qwen4-max-adds-cyber-safeguards-2.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
     {
@@ -1097,6 +1088,141 @@
   ],
   "clusters": [
     {
+      "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+      "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs.\n\n\"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said.\n\n\"The investigation is ongoing, but at this time we",
+      "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
+      "date": "2026-11-19T09:31:26.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
+      "summary": "We have never been short of vulnerabilities. We have always struggled with remedial work.\nFor decades, the cybersecurity industry has approached vulnerability management from the wrong end. The emphasis has consistently been on finding vulnerabilities, cataloguing them, scoring them and, more recently, prioritising them through increasingly sophisticated risk models.\nAn entire industry has developed around vulnerability scanning, exposure management, threat intelligence and remediation prioritiz",
+      "url": "https://www.csoonline.com/article/4250261/vulnerability-management-the-cybersecurity-industry-is-still-solving-the-wrong-problem.html",
+      "date": "2026-11-19T09:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.\n\n\"We are aware of PoCs that prove some of them can be used to trigger remote code execution,\" the maintainers said.\n\nThe project released fixed versions",
+      "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
+      "date": "2026-11-19T08:42:11.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 41
+    },
+    {
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.\n\nThe exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no",
+      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+      "date": "2026-11-19T08:14:00.000Z",
+      "severity": "High",
+      "tags": [
+        "Remote Code Execution",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 53
+    },
+    {
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -",
+      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "date": "2026-11-19T08:00:00.000Z",
+      "severity": "High",
+      "tags": [
+        "Ransomware",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 52
+    },
+    {
+      "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
+      "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally.",
+      "url": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
+      "date": "2026-11-19T08:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
+      "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws.\n\nThe release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC.\n\n\"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
+      "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
+      "date": "2026-11-19T04:33:46.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
       "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
       "summary": "",
       "url": "https://isc.sans.edu/diary/rss/33536",
@@ -1113,7 +1239,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 29
+      "score": 25
     },
     {
       "title": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)",
@@ -1132,7 +1258,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 25
     },
     {
       "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
@@ -1151,7 +1277,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 36
     },
     {
       "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
@@ -1170,7 +1296,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 23
     },
     {
       "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
@@ -1189,7 +1315,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 22
     },
     {
       "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
@@ -1208,7 +1334,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 35
     },
     {
       "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
@@ -1227,7 +1353,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 35
     },
     {
       "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -1246,7 +1372,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 32
     },
     {
       "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
@@ -1267,7 +1393,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 21
     },
     {
       "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
@@ -1286,7 +1412,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
     },
     {
       "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
@@ -1308,7 +1434,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 49
+      "score": 45
     },
     {
       "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
@@ -1327,7 +1453,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
@@ -1346,7 +1472,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
@@ -1365,7 +1491,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Major Brazilian Signature Apps Enable RCE &amp; Fraud",
@@ -1384,7 +1510,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 32
     },
     {
       "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
@@ -1403,7 +1529,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 30
     },
     {
       "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
@@ -1422,7 +1548,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1454,7 +1580,7 @@
         "CVE-2026-115731"
       ],
       "articleCount": 2,
-      "score": 68
+      "score": 65
     },
     {
       "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
@@ -1466,15 +1592,14 @@
         "Widely-Used Software"
       ],
       "sources": [
-        "CSO Online",
-        "The Hacker News"
+        "CSO Online"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
       "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 37
+      "articleCount": 1,
+      "score": 29
     },
     {
       "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
@@ -1495,26 +1620,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
-    },
-    {
-      "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
-      "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both.\n\nAI pentesting has emerged as a way to run in-depth tests whenever teams need them, instead of waiting for the",
-      "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-      "date": "2026-11-18T11:03:57.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
+      "score": 32
     },
     {
       "title": "The resilience gap: Why cybersecurity investment alone is not enough",
@@ -1533,7 +1639,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "How organizations can secure their AI-generated code",
@@ -1552,73 +1658,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-115731 (CVSS score: 9.4), is a case of",
-      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
-      "date": "2026-11-18T08:24:31.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Remote Code Execution",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-115731"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-115731"
-      ],
-      "articleCount": 1,
-      "score": 69
-    },
-    {
-      "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java.\n\nThe flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain conditions.\n\n\"This critical memory-corruption",
-      "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
-      "date": "2026-11-18T08:24:23.000Z",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software",
-        "DDoS"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-114938"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 47
-    },
-    {
-      "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
-      "summary": "The Russia-linked cyber espionage group known as Cold Relic (formerly COLDRIVER and UNC4057) has been observed weaponizing a single cloud compromise into a launchpad for a series of linked intrusions resulting in third-party compromise.\n\nGoogle's Mandiant and Threat Intelligence Group (GTIG) said it investigated a 2026 compromise at a U.S.-based organization in which the adversary leveraged",
-      "url": "https://thehackernews.com/2026/11/russian-cold-relic-hackers-use-stolen.html",
-      "date": "2026-11-18T05:58:04.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -1637,7 +1677,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
@@ -1656,7 +1696,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Google and Anthropic push for faster patches as AI collapses bug discovery timelines",
@@ -1675,7 +1715,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
@@ -1694,7 +1734,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
@@ -1713,7 +1753,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
@@ -1732,7 +1772,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Grok Bots Attempt to Access Corporate Data Without User Approval",
@@ -1751,7 +1791,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 14
     },
     {
       "title": "California sues OpenAI, alleges 80-plus agent escapes hidden from public",
@@ -1770,7 +1810,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Siemens Industrial Software Products",
@@ -1793,7 +1833,7 @@
         "CVE-2026-111497"
       ],
       "articleCount": 2,
-      "score": 59
+      "score": 58
     },
     {
       "title": "Critical Java Vulnerability Requires Immediate Patching",
@@ -1815,7 +1855,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 38
     },
     {
       "title": "Siemens RUGGEDCOM APE1808",
@@ -1836,7 +1876,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "Siemens ROS#",
@@ -1857,7 +1897,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Dorsett Controls InfoScan",
@@ -1883,7 +1923,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Siemens Mendix Studio Pro",
@@ -1902,7 +1942,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
@@ -1921,7 +1961,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Siemens Simcenter Femap",
@@ -1942,7 +1982,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Siemens SIMATIC",
@@ -1963,7 +2003,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Hackers exploit Microsoft 365 outage to launch credential phishing campaign",
@@ -1982,7 +2022,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
@@ -2001,7 +2041,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Google spots the first hacker AI system that finds and exploits flaws autonomously",
@@ -2020,7 +2060,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
@@ -2039,7 +2079,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
@@ -2058,26 +2098,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
-    },
-    {
-      "title": "'Sleeper Agent' Tactic Hides Payloads in Open-Weight AI Models",
-      "summary": "Malware can lurk inside just 0.00001% of a neural network. How, then, can any user tell it's there?",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/sleeper-agent-tactic-payloads-open-weight-ai-models",
-      "date": "2026-11-16T19:10:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 13
+      "score": 25
     },
     {
       "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
@@ -2103,26 +2124,7 @@
         "CVE-2026-48710"
       ],
       "articleCount": 1,
-      "score": 61
-    },
-    {
-      "title": "Alibaba touts 62% lower task costs with Qwen4-Max, adds cyber safeguards",
-      "summary": "Alibaba has released Qwen4-Max, a 2.4-trillion-parameter flagship model, claiming it reduces the average cost of completing professional tasks by 62% compared with its predecessor while introducing additional safeguards against offensive cybersecurity capabilities and other high-risk uses.\n“According to Work360 — a proprietary benchmark evaluating performance on challenging industry tasks across 721 specialized fields — Qwen4-Max outperforms its predecessor, Qwen3.8-Max, overall while using 35% ",
-      "url": "https://www.csoonline.com/article/4249015/alibaba-touts-62-lower-task-costs-with-qwen4-max-adds-cyber-safeguards-2.html",
-      "date": "2026-11-16T12:21:02.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
+      "score": 60
     },
     {
       "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
@@ -2141,7 +2143,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
@@ -2356,30 +2358,6 @@
   ],
   "top3": [
     {
-      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-115731 (CVSS score: 9.4), is a case of",
-      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
-      "date": "2026-11-18T08:24:31.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Remote Code Execution",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-115731"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-115731"
-      ],
-      "articleCount": 1,
-      "score": 69
-    },
-    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. \nCVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability\nCVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability\nCVE-2026-90436 Apache Axis Unsafe Reflection Vulnerability\nCVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability\nThese types of vu",
       "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
@@ -2409,13 +2387,13 @@
         "CVE-2026-115731"
       ],
       "articleCount": 2,
-      "score": 68
+      "score": 65
     },
     {
-      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF)\n\nThe vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.\n\n\"Deserialization of Untrusted",
-      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-      "date": "2026-11-18T17:10:45.000Z",
+      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
+      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.\n\nThe exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no",
+      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
+      "date": "2026-11-19T08:14:00.000Z",
       "severity": "High",
       "tags": [
         "Remote Code Execution",
@@ -2426,12 +2404,30 @@
       ],
       "sourceCount": 1,
       "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-129448"
-      ],
+      "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 49
+      "score": 53
+    },
+    {
+      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -",
+      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+      "date": "2026-11-19T08:00:00.000Z",
+      "severity": "High",
+      "tags": [
+        "Ransomware",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 52
     }
   ],
   "sourcesUsed": [
@@ -2444,5 +2440,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-19T02:39:27.054Z"
+  "lastUpdated": "2026-11-19T10:45:34.885Z"
 }
