@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+      "source": "The Hacker News",
+      "date": "2026-11-19T16:59:56.000Z",
+      "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server.\n\nToday's PHP releases fix the flaw, called phpAfterShell.\n\nThe flaw is tracked as CVE-2026-126714 and rated",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-126714"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "source": "The Hacker News",
+      "date": "2026-11-19T15:18:07.000Z",
+      "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560.\n\nThe release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-115560"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+      "source": "The Hacker News",
+      "date": "2026-11-19T15:11:06.000Z",
+      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.\n\nFixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines.\n\nThe",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "source": "The Hacker News",
+      "date": "2026-11-19T14:33:06.000Z",
+      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site.\n\nThat can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday.\n\nThe Drupal Security Team disclosed",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Why Holiday Security Can't Wait for Black Friday",
+      "source": "Dark Reading",
+      "date": "2026-11-19T14:00:00.000Z",
+      "summary": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Elecbrakes EB2, VM1, ELBC2000",
+      "source": "CISA Advisories",
+      "date": "2026-11-19T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features.\nThe following versions of Elecbrakes EB2, VM1, ELBC2000 are affected:\nEB2 <=3.0.4.2.0 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\nELBC2000 vers:all/* (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\nVM1 <1.3.4.2.1 (CVE-2026-124281, CVE-20",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-124281",
+        "CVE-2026-125273",
+        "CVE-2026-96805"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "libumqtt",
+      "source": "CISA Advisories",
+      "date": "2026-11-19T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.\nThe following versions of libumqtt are affected:\nlibumqtt <=1.1.1 (CVE-2026-125132)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.6\nlibumqtt\nlibumqtt\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nInteger Underflow (Wrap or Wraparound)\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Wa",
+      "severity": "High",
+      "tags": [
+        "DDoS",
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-125132"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Autonomy Logic OpenPLC Runtime",
+      "source": "CISA Advisories",
+      "date": "2026-11-19T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.\nThe following versions of Autonomy Logic OpenPLC Runtime are affected:\nOpenPLC Runtime <=4.2.4 (CVE-2026-126088)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nAutonomy Logic\nOpenPLC Runtime\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nConcurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Ene",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-126088"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "source": "The Hacker News",
+      "date": "2026-11-19T11:52:23.000Z",
+      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
+      "source": "CSO Online",
+      "date": "2026-11-19T11:36:10.000Z",
+      "summary": "Palo Alto Networks has agreed to buy Applied Compute in an all-stock deal valued at $4.5 billion, a move the company said will let it train, deploy and secure open-weight AI models for enterprises in the public cloud or in their own sovereign environments.\n“The acquisition will bring Applied Compute’s platform and world-class AI research team to Palo Alto Networks to help enterprises adopt AI securely, whether they choose open-weight models, closed frontier models, or both,” the company said in ",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4250669/palo-alto-networks-bets-4-5b-on-enterprise-ai-with-applied-compute-acquisition.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
       "source": "The Hacker News",
       "date": "2026-11-19T09:31:26.000Z",
@@ -65,7 +234,7 @@
       "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
       "source": "Dark Reading",
       "date": "2026-11-19T08:00:00.000Z",
-      "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally.",
+      "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top 5 most-attacked countries globally.",
       "severity": "Low",
       "tags": [
         "General"
@@ -156,7 +325,7 @@
       "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
       "source": "Dark Reading",
       "date": "2026-11-18T21:59:46.000Z",
-      "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
+      "summary": "The state-sponsored threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
       "severity": "Low",
       "tags": [
         "General"
@@ -260,24 +429,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-      "source": "The Hacker News",
-      "date": "2026-11-18T17:10:45.000Z",
-      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF)\n\nThe vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.\n\n\"Deserialization of Untrusted",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-129448"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
       "source": "Dark Reading",
       "date": "2026-11-18T16:54:52.000Z",
@@ -308,21 +459,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-      "source": "The Hacker News",
-      "date": "2026-11-18T14:11:28.000Z",
-      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines.\n\n\"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Major Brazilian Signature Apps Enable RCE &amp; Fraud",
       "source": "Dark Reading",
       "date": "2026-11-18T14:00:00.000Z",
@@ -333,36 +469,6 @@
       ],
       "url": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
       "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-      "source": "The Hacker News",
-      "date": "2026-11-18T12:28:30.000Z",
-      "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say.\n\nThat leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way.\n\nBoth PINs were set by the",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-      "source": "The Hacker News",
-      "date": "2026-11-18T12:15:00.000Z",
-      "summary": "TL;DR\n\n\n  Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day.\n  AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows, your coverage, and your production safety.\n  Make",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-      "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -410,23 +516,6 @@
       "url": "https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html",
       "impactScore": 1,
       "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-      "source": "The Hacker News",
-      "date": "2026-11-18T11:55:49.000Z",
-      "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week.\n\nThe flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel and AMD chips that support the AVX-512 VBMI feature.\n\nTracked as",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-      "impactScore": 2,
-      "cveMatches": [
-        "CVE-2026-114938"
-      ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -596,18 +685,18 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Siemens ROS#",
+      "title": "Siemens Simcenter Femap",
       "source": "CISA Advisories",
       "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version.\nThe following versions of Siemens ROS# are affected:\nROS# vers:intdot/<2.3.1 (CVE-2026-109097)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nSiemens\nROS#\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nImproper",
+      "summary": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version.\nThe following versions of Siemens Simcenter Femap are affected:\nSimcenter Femap vers:intdot/<2606.0002 (CVE-2026-64629)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nSiemen",
       "severity": "Low",
       "tags": [
         "General"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
       "impactScore": 0,
       "cveMatches": [
-        "CVE-2026-109097"
+        "CVE-2026-64629"
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -702,18 +791,18 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Siemens Simcenter Femap",
+      "title": "Siemens ROS#",
       "source": "CISA Advisories",
       "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version.\nThe following versions of Siemens Simcenter Femap are affected:\nSimcenter Femap vers:intdot/<2606.0002 (CVE-2026-64629)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nSiemen",
+      "summary": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version.\nThe following versions of Siemens ROS# are affected:\nROS# vers:intdot/<2.3.1 (CVE-2026-109097)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nSiemens\nROS#\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nImproper",
       "severity": "Low",
       "tags": [
         "General"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
       "impactScore": 0,
       "cveMatches": [
-        "CVE-2026-64629"
+        "CVE-2026-109097"
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -734,63 +823,6 @@
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "Siemens Industrial Automation Software Products",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens products. Siemens has released new versions for several affec",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-03",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-111497"
-      ],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information\nThe following versions of Siemens RUGGEDCOM APE1808 are affected:\nRUGGEDCOM APE1808 vers:all/* (CVE-2026-106175)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 2.3\nSiemens\nRUGGEDCOM APE18",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2026-106175"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-115731 Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability\nThis type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements fo",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/cisa-adds-one-known-exploited-vulnerability-catalog",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-115731"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-115731"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-115731"
-      ]
     },
     {
       "title": "Hackers exploit Microsoft 365 outage to launch credential phishing campaign",
@@ -823,21 +855,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Google spots the first hacker AI system that finds and exploits flaws autonomously",
-      "source": "CSO Online",
-      "date": "2026-11-17T10:52:58.000Z",
-      "summary": "Google said it had identified a hacker-operated AI framework designed to discover software vulnerabilities and execute exploits without human intervention, marking the first time its researchers had observed such a system being used by threat actors.\nThe findings, published in a report by Google Threat Intelligence Group (GTIG) and Mandiant, suggest that attackers are moving beyond using generative AI to assist individual tasks and are beginning to automate larger portions of cyberattacks.\nThe s",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4249595/google-spots-the-first-hacker-ai-system-that-finds-and-exploits-flaws-autonomously.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-17T02:05:15.000Z",
@@ -863,21 +880,6 @@
       ],
       "url": "https://www.darkreading.com/vulnerabilities-threats/google-project-zero-bug-disclosure-deadlines",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
-      "source": "Dark Reading",
-      "date": "2026-11-16T19:56:05.000Z",
-      "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "url": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
-      "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1088,6 +1090,215 @@
   ],
   "clusters": [
     {
+      "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
+      "summary": "PHP's default file-based session storage can be made to return objects an attacker chose, by cutting off a session write at the right moment. When combined with a second weakness, such as a suitable gadget chain in the app, those objects can allow the attacker to run code on the server.\n\nToday's PHP releases fix the flaw, called phpAfterShell.\n\nThe flaw is tracked as CVE-2026-126714 and rated",
+      "url": "https://thehackernews.com/2026/11/phpaftershell-explained-how-hackers.html",
+      "date": "2026-11-19T16:59:56.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-126714"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
+      "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560.\n\nThe release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
+      "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
+      "date": "2026-11-19T15:18:07.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-115560"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 40
+    },
+    {
+      "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.\n\nFixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines.\n\nThe",
+      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
+      "date": "2026-11-19T15:11:06.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 37
+    },
+    {
+      "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
+      "summary": "Under specific conditions, a critical vulnerability in Drupal core can allow an attacker without login credentials to use the built-in installer to attempt to reinstall a site.\n\nThat can lead to a site takeover or remote code execution, and the project rates the vulnerable configurations as uncommon. Fixed releases for all supported branches shipped yesterday.\n\nThe Drupal Security Team disclosed",
+      "url": "https://thehackernews.com/2026/11/drupal-patches-critical-installer-flaw.html",
+      "date": "2026-11-19T14:33:06.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
+    },
+    {
+      "title": "Why Holiday Security Can't Wait for Black Friday",
+      "summary": "Bot-driven fraud and holiday social engineering attacks stretch across many weeks, straining security teams and small businesses alike.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/why-holiday-security-cant-wait-black-friday",
+      "date": "2026-11-19T14:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "libumqtt",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.\nThe following versions of libumqtt are affected:\nlibumqtt <=1.1.1 (CVE-2026-125132)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.6\nlibumqtt\nlibumqtt\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nInteger Underflow (Wrap or Wraparound)\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Wa",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+      "date": "2026-11-19T12:00:00.000Z",
+      "severity": "High",
+      "tags": [
+        "DDoS",
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-125132"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 50
+    },
+    {
+      "title": "Autonomy Logic OpenPLC Runtime",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.\nThe following versions of Autonomy Logic OpenPLC Runtime are affected:\nOpenPLC Runtime <=4.2.4 (CVE-2026-126088)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nAutonomy Logic\nOpenPLC Runtime\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nConcurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Ene",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+      "date": "2026-11-19T12:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-126088"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Elecbrakes EB2, VM1, ELBC2000",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to gain control of the brakes of a trailer, modify the firmware, disable the brake lights, modify the brake conditions or disable other critical safety features.\nThe following versions of Elecbrakes EB2, VM1, ELBC2000 are affected:\nEB2 <=3.0.4.2.0 (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\nELBC2000 vers:all/* (CVE-2026-124281, CVE-2026-125273, CVE-2026-96805)\nVM1 <1.3.4.2.1 (CVE-2026-124281, CVE-20",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-02",
+      "date": "2026-11-19T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-124281",
+        "CVE-2026-125273",
+        "CVE-2026-96805"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
+      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "date": "2026-11-19T11:52:23.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "articleCount": 1,
+      "score": 69
+    },
+    {
+      "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
+      "summary": "Palo Alto Networks has agreed to buy Applied Compute in an all-stock deal valued at $4.5 billion, a move the company said will let it train, deploy and secure open-weight AI models for enterprises in the public cloud or in their own sovereign environments.\n“The acquisition will bring Applied Compute’s platform and world-class AI research team to Palo Alto Networks to help enterprises adopt AI securely, whether they choose open-weight models, closed frontier models, or both,” the company said in ",
+      "url": "https://www.csoonline.com/article/4250669/palo-alto-networks-bets-4-5b-on-enterprise-ai-with-applied-compute-acquisition.html",
+      "date": "2026-11-19T11:36:10.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
       "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
       "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs.\n\n\"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said.\n\n\"The investigation is ongoing, but at this time we",
       "url": "https://thehackernews.com/2026/11/n-able-confirms-hackers-accessed-cloud.html",
@@ -1104,7 +1315,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 24
     },
     {
       "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
@@ -1123,7 +1334,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 24
     },
     {
       "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
@@ -1142,7 +1353,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 41
+      "score": 36
     },
     {
       "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
@@ -1162,7 +1373,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 53
+      "score": 48
     },
     {
       "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
@@ -1182,11 +1393,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 52
+      "score": 48
     },
     {
       "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
-      "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top-5 most attacked countries globally.",
+      "summary": "Nigeria faced more than double the cyber threats of the previous year, with Angola and Kenya also in the top 5 most-attacked countries globally.",
       "url": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
       "date": "2026-11-19T08:00:00.000Z",
       "severity": "Low",
@@ -1201,7 +1412,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 23
     },
     {
       "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
@@ -1220,7 +1431,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 22
     },
     {
       "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
@@ -1239,7 +1450,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 25
+      "score": 21
     },
     {
       "title": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)",
@@ -1258,7 +1469,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 21
     },
     {
       "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
@@ -1277,11 +1488,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
-      "summary": "The Russia-linked threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
+      "summary": "The state-sponsored threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
       "date": "2026-11-18T21:59:46.000Z",
       "severity": "Low",
@@ -1296,7 +1507,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
@@ -1315,7 +1526,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
@@ -1334,7 +1545,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 32
     },
     {
       "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
@@ -1353,7 +1564,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 32
     },
     {
       "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -1372,7 +1583,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 29
     },
     {
       "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
@@ -1393,7 +1604,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
@@ -1412,29 +1623,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
-    },
-    {
-      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF)\n\nThe vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code execution.\n\n\"Deserialization of Untrusted",
-      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-      "date": "2026-11-18T17:10:45.000Z",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-129448"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 45
+      "score": 31
     },
     {
       "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
@@ -1453,7 +1642,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
@@ -1472,26 +1661,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
-    },
-    {
-      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines.\n\n\"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes with every recompile, a domain costs a few",
-      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-      "date": "2026-11-18T14:11:28.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
+      "score": 30
     },
     {
       "title": "Major Brazilian Signature Apps Enable RCE &amp; Fraud",
@@ -1510,45 +1680,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
-    },
-    {
-      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-      "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say.\n\nThat leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way.\n\nBoth PINs were set by the",
-      "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-      "date": "2026-11-18T12:28:30.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
       "score": 30
-    },
-    {
-      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-      "summary": "TL;DR\n\n\n  Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day.\n  AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows, your coverage, and your production safety.\n  Make",
-      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-      "date": "2026-11-18T12:15:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1569,18 +1701,16 @@
         "CVE-2024-10441",
         "CVE-2026-40217",
         "CVE-2026-90436",
-        "CVE-2026-90817",
-        "CVE-2026-115731"
+        "CVE-2026-90817"
       ],
       "knownExploitedCves": [
         "CVE-2024-10441",
         "CVE-2026-40217",
         "CVE-2026-90436",
-        "CVE-2026-90817",
-        "CVE-2026-115731"
+        "CVE-2026-90817"
       ],
-      "articleCount": 2,
-      "score": 65
+      "articleCount": 1,
+      "score": 63
     },
     {
       "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
@@ -1599,28 +1729,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
-    },
-    {
-      "title": "Java4Shell Flaw (CVE-2026-114938) Enables Pre-Auth RCE in Jira, Jenkins, Keycloak and More",
-      "summary": "A Java flaw called Java4Shell can let attackers without an account run their own code on Jira, Jenkins, Keycloak, and three other widely used applications, says Calif, the security research firm that disclosed it this week.\n\nThe flaw is present in Java 17.0.6 and later, and the vulnerable code runs only on x86-64 Intel and AMD chips that support the AVX-512 VBMI feature.\n\nTracked as",
-      "url": "https://thehackernews.com/2026/11/java4shell-cve-2026-114938-enables-pre.html",
-      "date": "2026-11-18T11:55:49.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [
-        "CVE-2026-114938"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 32
+      "score": 27
     },
     {
       "title": "The resilience gap: Why cybersecurity investment alone is not enough",
@@ -1639,7 +1748,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "How organizations can secure their AI-generated code",
@@ -1658,7 +1767,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -1677,7 +1786,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
@@ -1696,7 +1805,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Google and Anthropic push for faster patches as AI collapses bug discovery timelines",
@@ -1715,7 +1824,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 14
     },
     {
       "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
@@ -1734,7 +1843,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 14
     },
     {
       "title": "'TheMailer' Phishing Kit Puts AI in the Driver's Seat",
@@ -1753,7 +1862,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Cursor Traces Malicious Claude Code Extensions to Third-Party Breach",
@@ -1772,7 +1881,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Grok Bots Attempt to Access Corporate Data Without User Approval",
@@ -1791,7 +1900,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "California sues OpenAI, alleges 80-plus agent escapes hidden from public",
@@ -1810,7 +1919,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Siemens Industrial Software Products",
@@ -1832,8 +1941,8 @@
       "knownExploitedCves": [
         "CVE-2026-111497"
       ],
-      "articleCount": 2,
-      "score": 58
+      "articleCount": 1,
+      "score": 57
     },
     {
       "title": "Critical Java Vulnerability Requires Immediate Patching",
@@ -1855,33 +1964,12 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 37
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "summary": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information\nThe following versions of Siemens RUGGEDCOM APE1808 are affected:\nRUGGEDCOM APE1808 vers:all/* (CVE-2026-106175)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 2.3\nSiemens\nRUGGEDCOM APE18",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-      "date": "2026-11-17T12:00:00.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2026-106175"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 24
-    },
-    {
-      "title": "Siemens ROS#",
-      "summary": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version.\nThe following versions of Siemens ROS# are affected:\nROS# vers:intdot/<2.3.1 (CVE-2026-109097)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nSiemens\nROS#\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nImproper",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+      "title": "Siemens Simcenter Femap",
+      "summary": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version.\nThe following versions of Siemens Simcenter Femap are affected:\nSimcenter Femap vers:intdot/<2606.0002 (CVE-2026-64629)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nSiemen",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
       "date": "2026-11-17T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -1893,11 +1981,11 @@
       "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [
-        "CVE-2026-109097"
+        "CVE-2026-64629"
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Dorsett Controls InfoScan",
@@ -1923,7 +2011,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Siemens Mendix Studio Pro",
@@ -1942,7 +2030,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
@@ -1961,12 +2049,12 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
-      "title": "Siemens Simcenter Femap",
-      "summary": "View CSAF\nSummary\nSimcenter Femap is affected by an out of bounds read vulnerability that could be triggered when the application reads files in X_T format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version.\nThe following versions of Siemens Simcenter Femap are affected:\nSimcenter Femap vers:intdot/<2606.0002 (CVE-2026-64629)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nSiemen",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-10",
+      "title": "Siemens ROS#",
+      "summary": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version.\nThe following versions of Siemens ROS# are affected:\nROS# vers:intdot/<2.3.1 (CVE-2026-109097)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nSiemens\nROS#\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nImproper",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
       "date": "2026-11-17T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -1978,11 +2066,11 @@
       "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [
-        "CVE-2026-64629"
+        "CVE-2026-109097"
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Siemens SIMATIC",
@@ -2003,7 +2091,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Hackers exploit Microsoft 365 outage to launch credential phishing campaign",
@@ -2022,7 +2110,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
@@ -2041,26 +2129,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
-    },
-    {
-      "title": "Google spots the first hacker AI system that finds and exploits flaws autonomously",
-      "summary": "Google said it had identified a hacker-operated AI framework designed to discover software vulnerabilities and execute exploits without human intervention, marking the first time its researchers had observed such a system being used by threat actors.\nThe findings, published in a report by Google Threat Intelligence Group (GTIG) and Mandiant, suggest that attackers are moving beyond using generative AI to assist individual tasks and are beginning to automate larger portions of cyberattacks.\nThe s",
-      "url": "https://www.csoonline.com/article/4249595/google-spots-the-first-hacker-ai-system-that-finds-and-exploits-flaws-autonomously.html",
-      "date": "2026-11-17T10:52:58.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Google Project Zero Slashes Bug Disclosure Deadlines, Splitting Experts",
@@ -2080,25 +2149,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 12
-    },
-    {
-      "title": "Ransomware Attacks Increase Behind AI, but Payments Decline",
-      "summary": "Large language models and other AI systems allow a growing number of ransomware groups to create convincing phishing emails and identify sensitive data quickly.",
-      "url": "https://www.darkreading.com/threat-intelligence/ransomware-attacks-increase-ai-payments-decline",
-      "date": "2026-11-16T19:56:05.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 25
     },
     {
       "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
@@ -2358,6 +2408,31 @@
   ],
   "top3": [
     {
+      "title": "Everything Is a Web Application, Including Your Firewall",
+      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
+      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
+      "date": "2026-11-19T11:52:23.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-109618",
+        "CVE-2026-109619"
+      ],
+      "articleCount": 1,
+      "score": 69
+    },
+    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. \nCVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability\nCVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability\nCVE-2026-90436 Apache Axis Unsafe Reflection Vulnerability\nCVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability\nThese types of vu",
       "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
@@ -2376,58 +2451,38 @@
         "CVE-2024-10441",
         "CVE-2026-40217",
         "CVE-2026-90436",
-        "CVE-2026-90817",
-        "CVE-2026-115731"
+        "CVE-2026-90817"
       ],
       "knownExploitedCves": [
         "CVE-2024-10441",
         "CVE-2026-40217",
         "CVE-2026-90436",
-        "CVE-2026-90817",
-        "CVE-2026-115731"
+        "CVE-2026-90817"
       ],
-      "articleCount": 2,
-      "score": 65
+      "articleCount": 1,
+      "score": 63
     },
     {
-      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
-      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.\n\nThe exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no",
-      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
-      "date": "2026-11-19T08:14:00.000Z",
+      "title": "libumqtt",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.\nThe following versions of libumqtt are affected:\nlibumqtt <=1.1.1 (CVE-2026-125132)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.6\nlibumqtt\nlibumqtt\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nInteger Underflow (Wrap or Wraparound)\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Wa",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
+      "date": "2026-11-19T12:00:00.000Z",
       "severity": "High",
       "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software"
+        "DDoS",
+        "Critical Infrastructure"
       ],
       "sources": [
-        "The Hacker News"
+        "CISA Advisories"
       ],
       "sourceCount": 1,
       "impactScore": 3,
-      "cveMatches": [],
+      "cveMatches": [
+        "CVE-2026-125132"
+      ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 53
-    },
-    {
-      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -",
-      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
-      "date": "2026-11-19T08:00:00.000Z",
-      "severity": "High",
-      "tags": [
-        "Ransomware",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 52
+      "score": 50
     }
   ],
   "sourcesUsed": [
@@ -2440,5 +2495,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-19T10:45:34.885Z"
+  "lastUpdated": "2026-11-19T19:23:58.587Z"
 }
