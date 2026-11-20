@@ -1,6 +1,69 @@
 {
   "articles": [
     {
+      "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+      "source": "Dark Reading",
+      "date": "2026-11-20T21:03:27.000Z",
+      "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "In Security, Words Matter as Much as Tools, Maybe More",
+      "source": "Dark Reading",
+      "date": "2026-11-20T18:35:40.000Z",
+      "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "source": "The Hacker News",
+      "date": "2026-11-20T17:57:20.000Z",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages.\n\nThe vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4.\n\nThe issue could",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-23871"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
+      "source": "Dark Reading",
+      "date": "2026-11-20T17:04:04.000Z",
+      "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from Jensen Huang's resignation from Nvidia to Microsoft's recent cloud outage.",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
       "source": "The Hacker News",
       "date": "2026-11-20T16:58:16.000Z",
@@ -31,6 +94,37 @@
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
+      "date": "2026-11-20T12:00:00.000Z",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability\nCVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCVE-2026-123890 VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability\nCVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerab",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2025-42884",
+        "CVE-2026-76466",
+        "CVE-2026-123890",
+        "CVE-2026-129448"
+      ],
+      "knownExploitedCves": [
+        "CVE-2025-42884",
+        "CVE-2026-76466",
+        "CVE-2026-123890",
+        "CVE-2026-129448"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2025-42884",
+        "CVE-2026-76466",
+        "CVE-2026-123890",
+        "CVE-2026-129448"
+      ]
     },
     {
       "title": "The Path to AI Autonomy in the SOC",
@@ -67,17 +161,22 @@
       "source": "The Hacker News",
       "date": "2026-11-20T10:32:50.000Z",
       "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.\n\nThe activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-      "impactScore": 1,
+      "impactScore": 4,
       "cveMatches": [
         "CVE-2026-76466"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-76466"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-76466"
+      ]
     },
     {
       "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
@@ -87,15 +186,20 @@
       "severity": "Critical",
       "tags": [
         "Zero-Day",
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "impactScore": 4,
+      "impactScore": 7,
       "cveMatches": [
         "CVE-2026-123890"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-123890"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-123890"
+      ]
     },
     {
       "title": "Do AI’s mathematical advances put PKI under threat?",
@@ -209,20 +313,25 @@
       "source": "CSO Online",
       "date": "2026-11-19T21:07:25.000Z",
       "summary": "Broadcom has released patches for bugs in multiple products, one of which, fixing a VMware vCenter authentication bypass vulnerability, is rated 9.8 out of 10 in severity.\nThe company’s advisory describes the flaw, tracked as CVE-2026-123890, as “an authentication bypass vulnerability in the VMware Directory Service,” that could let a threat actor with network access gain unauthorized access to the system, and says there are no workarounds. It advises immediate patching.\nBroadcom has provided fi",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
-      "impactScore": 1,
+      "impactScore": 4,
       "cveMatches": [
         "CVE-2026-123890"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2026-123890"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-123890"
+      ]
     },
     {
-      "title": "Second Norwegian Energy Company Breached in Two Days",
+      "title": "Second Norwegian Energy Company Breached in 2 Days",
       "source": "Dark Reading",
       "date": "2026-11-19T20:14:15.000Z",
       "summary": "No specific link has been drawn between the two incidents, though they certainly sing the same notes.",
@@ -312,22 +421,6 @@
       "cveMatches": [
         "CVE-2026-115560"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
-      "source": "The Hacker News",
-      "date": "2026-11-19T15:11:06.000Z",
-      "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.\n\nFixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines.\n\nThe",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-      "impactScore": 4,
-      "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -566,21 +659,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
-      "source": "Dark Reading",
-      "date": "2026-11-18T16:54:52.000Z",
-      "summary": "Discovered using AI, the memory corruption vulnerability affects the OpenJDK runtime and could allow unauthenticated attackers to take over systems.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
       "source": "CSO Online",
       "date": "2026-11-18T14:54:07.000Z",
@@ -596,39 +674,35 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Major Brazilian Signature Apps Enable RCE &amp; Fraud",
-      "source": "Dark Reading",
-      "date": "2026-11-18T14:00:00.000Z",
-      "summary": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "url": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-18T12:00:00.000Z",
       "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. \nCVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability\nCVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability\nCVE-2026-90436 Apache Axis Unsafe Reflection Vulnerability\nCVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability\nThese types of vu",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "impactScore": 1,
+      "impactScore": 4,
       "cveMatches": [
         "CVE-2024-10441",
         "CVE-2026-40217",
         "CVE-2026-90436",
         "CVE-2026-90817"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
+      "knownExploitedCves": [
+        "CVE-2024-10441",
+        "CVE-2026-40217",
+        "CVE-2026-90436",
+        "CVE-2026-90817"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2024-10441",
+        "CVE-2026-40217",
+        "CVE-2026-90436",
+        "CVE-2026-90817"
+      ]
     },
     {
       "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
@@ -700,21 +774,6 @@
         "General"
       ],
       "url": "https://isc.sans.edu/diary/rss/33528",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
-      "source": "Dark Reading",
-      "date": "2026-11-17T22:34:22.000Z",
-      "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -844,23 +903,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Siemens SIMATIC",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nThe products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available.\nThe following versions of Siemens SIMATIC are affected:\nSIMATIC BATCH V9.1 vers:all/* (CVE-2026-58114)\nSIMATIC Information Server 2020 vers:a",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-58114"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-17T10:56:38.000Z",
@@ -895,17 +937,21 @@
       "source": "SANS Internet Storm Center",
       "date": "2026-11-16T13:11:04.000Z",
       "summary": "This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit CVE-2026-42271 and CVE-2026-48710. Horizon3.ai published a short write-up about how these vulnerabilities can be chained to achieve remote code execution without authentication [Horizon3]",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Remote Code Execution"
+        "Remote Code Execution",
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://isc.sans.edu/diary/rss/33522",
-      "impactScore": 2,
+      "impactScore": 5,
       "cveMatches": [
         "CVE-2026-42271",
         "CVE-2026-48710"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-42271",
+        "CVE-2026-48710"
+      ],
       "recentlyAddedToKev": []
     },
     {
@@ -1077,6 +1123,85 @@
   ],
   "clusters": [
     {
+      "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+      "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+      "date": "2026-11-20T21:03:27.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 64
+    },
+    {
+      "title": "In Security, Words Matter as Much as Tools, Maybe More",
+      "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
+      "date": "2026-11-20T18:35:40.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages.\n\nThe vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4.\n\nThe issue could",
+      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "date": "2026-11-20T17:57:20.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-23871"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 37
+    },
+    {
+      "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
+      "summary": "In this video, Dark Reading editors discuss some of the news they didn't get a chance to cover, from Jensen Huang's resignation from Nvidia to Microsoft's recent cloud outage.",
+      "url": "https://www.darkreading.com/cyber-risk/what-we-missed-nvidia-ceo-scandal-rocks-ai-industry",
+      "date": "2026-11-20T17:04:04.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 36
+    },
+    {
       "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
       "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale.\n\nDutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan.\n\n\"Bazuka is a full malware framework,",
       "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
@@ -1093,7 +1218,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 36
     },
     {
       "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
@@ -1114,7 +1239,45 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 34
+    },
+    {
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability\nCVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCVE-2026-123890 VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability\nCVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerab",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-20T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2025-42884",
+        "CVE-2026-76466",
+        "CVE-2026-123890",
+        "CVE-2026-129448",
+        "CVE-2024-10441",
+        "CVE-2026-40217",
+        "CVE-2026-90436",
+        "CVE-2026-90817"
+      ],
+      "knownExploitedCves": [
+        "CVE-2025-42884",
+        "CVE-2026-76466",
+        "CVE-2026-123890",
+        "CVE-2026-129448",
+        "CVE-2024-10441",
+        "CVE-2026-40217",
+        "CVE-2026-90436",
+        "CVE-2026-90817"
+      ],
+      "articleCount": 2,
+      "score": 70
     },
     {
       "title": "The Path to AI Autonomy in the SOC",
@@ -1133,7 +1296,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
@@ -1152,28 +1315,31 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
       "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.\n\nThe activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
       "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
       "date": "2026-11-20T10:32:50.000Z",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 1,
+      "impactScore": 4,
       "cveMatches": [
         "CVE-2026-76466"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-76466"
+      ],
       "articleCount": 1,
-      "score": 36
+      "score": 69
     },
     {
       "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
@@ -1183,19 +1349,22 @@
       "severity": "Critical",
       "tags": [
         "Zero-Day",
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 4,
+      "impactScore": 7,
       "cveMatches": [
         "CVE-2026-123890"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-123890"
+      ],
       "articleCount": 1,
-      "score": 61
+      "score": 75
     },
     {
       "title": "Do AI’s mathematical advances put PKI under threat?",
@@ -1214,7 +1383,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs  ",
@@ -1233,7 +1402,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
@@ -1253,7 +1422,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 59
+      "score": 57
     },
     {
       "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
@@ -1273,7 +1442,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 46
+      "score": 44
     },
     {
       "title": "European Commission HR hit by cyber attack",
@@ -1292,7 +1461,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
@@ -1311,7 +1480,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
@@ -1330,7 +1499,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Critical flaw in VMware vCenter allows authentication bypass",
@@ -1340,23 +1509,24 @@
       "severity": "Critical",
       "tags": [
         "Widely-Used Software",
-        "Zero-Day"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
-        "CSO Online",
-        "The Hacker News"
+        "CSO Online"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
       "impactScore": 4,
       "cveMatches": [
         "CVE-2026-123890"
       ],
-      "knownExploitedCves": [],
-      "articleCount": 2,
-      "score": 61
+      "knownExploitedCves": [
+        "CVE-2026-123890"
+      ],
+      "articleCount": 1,
+      "score": 64
     },
     {
-      "title": "Second Norwegian Energy Company Breached in Two Days",
+      "title": "Second Norwegian Energy Company Breached in 2 Days",
       "summary": "No specific link has been drawn between the two incidents, though they certainly sing the same notes.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached",
       "date": "2026-11-19T20:14:15.000Z",
@@ -1372,7 +1542,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "Critical PHP Flaws Allow Code Execution, but Don't Panic 'PHP2Shell'-Style",
@@ -1391,7 +1561,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Navigating Vulnerability Hysteria in the AI Era",
@@ -1410,7 +1580,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 18
     },
     {
       "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
@@ -1429,7 +1599,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
@@ -1450,7 +1620,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
@@ -1471,7 +1641,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 29
     },
     {
       "title": "Why Holiday Security Can't Wait for Black Friday",
@@ -1490,7 +1660,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "libumqtt",
@@ -1512,7 +1682,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 42
+      "score": 40
     },
     {
       "title": "Autonomy Logic OpenPLC Runtime",
@@ -1533,7 +1703,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 28
     },
     {
       "title": "Elecbrakes EB2, VM1, ELBC2000",
@@ -1556,7 +1726,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
@@ -1575,7 +1745,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
@@ -1594,7 +1764,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
@@ -1613,7 +1783,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)",
@@ -1632,7 +1802,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
@@ -1651,7 +1821,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
@@ -1689,7 +1859,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
@@ -1708,7 +1878,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
@@ -1727,7 +1897,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -1749,25 +1919,6 @@
       "score": 24
     },
     {
-      "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
-      "summary": "Discovered using AI, the memory corruption vulnerability affects the OpenJDK runtime and could allow unauthenticated attackers to take over systems.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/java4shell-flaw-threatens-global-java-application-ecosystem",
-      "date": "2026-11-18T16:54:52.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
-    },
-    {
       "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
       "summary": "New technology monitors critical vulnerabilities and supply chain threats, automatically assessing customer exposure and guiding remediation\nOX Security, a leader in AI-native application protection, today announced the launch of OX Radar and Response Center, giving security teams one place to track high-priority cyber threats, determine whether their organizations are affected, and manage remediation.\nOX Radar continuously monitors emerging vulnerabilities, compromised software dependencies, an",
       "url": "https://www.csoonline.com/article/4250228/ox-security-launches-ox-radar-and-response-center-to-show-companies-which-cyber-threats-actually-affect-them-2.html",
@@ -1784,50 +1935,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
-    },
-    {
-      "title": "Major Brazilian Signature Apps Enable RCE &amp; Fraud",
-      "summary": "Government-sanctioned authentication middleware is used for exceptionally important legal documents, yet it's often rife with RCE bugs.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/major-brazilian-signature-app-rce-fraud",
-      "date": "2026-11-18T14:00:00.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 26
-    },
-    {
-      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. \nCVE-2024-10441 Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability\nCVE-2026-40217 BerriAI LiteLLM Unprotected Alternate Channel Vulnerability\nCVE-2026-90436 Apache Axis Unsafe Reflection Vulnerability\nCVE-2026-90817 Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability\nThese types of vu",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/18/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "date": "2026-11-18T12:00:00.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2024-10441",
-        "CVE-2026-40217",
-        "CVE-2026-90436",
-        "CVE-2026-90817"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 23
+      "score": 25
     },
     {
       "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
@@ -1865,7 +1973,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "How organizations can secure their AI-generated code",
@@ -1884,7 +1992,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -1897,25 +2005,6 @@
       ],
       "sources": [
         "Krebs on Security"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
-    },
-    {
-      "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
-      "summary": "At least 178 organizations, including several major brands, unwittingly exposed website visitors to hydra-like malware via a third-party platform.",
-      "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
-      "date": "2026-11-17T22:34:22.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
       ],
       "sourceCount": 1,
       "impactScore": 0,
@@ -1967,7 +2056,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 35
     },
     {
       "title": "Siemens Simcenter Femap",
@@ -2076,27 +2165,6 @@
       "score": 11
     },
     {
-      "title": "Siemens SIMATIC",
-      "summary": "View CSAF\nSummary\nThe products listed below contain an authentication bypass vulnerability that could allow an on-path attacker to take over the session of a legitimate user and execute arbitrary code with the privileges of the victim user. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available.\nThe following versions of Siemens SIMATIC are affected:\nSIMATIC BATCH V9.1 vers:all/* (CVE-2026-58114)\nSIMATIC Information Server 2020 vers:a",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-08",
-      "date": "2026-11-17T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-58114"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
       "title": "A phishing page interested in MX records, (Tue, Nov 17th)",
       "summary": "I&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x99;ve mentioned before in some of my diaries that it can be instructive to look at what appear to be &#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9c;generic&#;x26;#;xe2;&#;x26;#;x80;&#;x26;#;x9d; phishing messages in detail from time to time, since some of them might prove not to be as generic as they initially appear. I came across a good example of this while going over phishing messages delivered to our handler inbox over the past few weeks, when a message that, at",
       "url": "https://isc.sans.edu/diary/rss/33526",
@@ -2139,22 +2207,26 @@
       "summary": "This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit CVE-2026-42271 and CVE-2026-48710. Horizon3.ai published a short write-up about how these vulnerabilities can be chained to achieve remote code execution without authentication [Horizon3]",
       "url": "https://isc.sans.edu/diary/rss/33522",
       "date": "2026-11-16T13:11:04.000Z",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Remote Code Execution"
+        "Remote Code Execution",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "SANS Internet Storm Center"
       ],
       "sourceCount": 1,
-      "impactScore": 2,
+      "impactScore": 5,
       "cveMatches": [
         "CVE-2026-42271",
         "CVE-2026-48710"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-42271",
+        "CVE-2026-48710"
+      ],
       "articleCount": 1,
-      "score": 23
+      "score": 59
     },
     {
       "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
@@ -2357,62 +2429,84 @@
       "severity": "Critical",
       "tags": [
         "Zero-Day",
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 4,
+      "impactScore": 7,
       "cveMatches": [
         "CVE-2026-123890"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-123890"
+      ],
       "articleCount": 1,
-      "score": 61
+      "score": 75
     },
     {
-      "title": "Critical flaw in VMware vCenter allows authentication bypass",
-      "summary": "Broadcom has released patches for bugs in multiple products, one of which, fixing a VMware vCenter authentication bypass vulnerability, is rated 9.8 out of 10 in severity.\nThe company’s advisory describes the flaw, tracked as CVE-2026-123890, as “an authentication bypass vulnerability in the VMware Directory Service,” that could let a threat actor with network access gain unauthorized access to the system, and says there are no workarounds. It advises immediate patching.\nBroadcom has provided fi",
-      "url": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
-      "date": "2026-11-19T21:07:25.000Z",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability\nCVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCVE-2026-123890 VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability\nCVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerab",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-20T12:00:00.000Z",
       "severity": "Critical",
       "tags": [
         "Widely-Used Software",
-        "Zero-Day"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
-        "CSO Online",
-        "The Hacker News"
+        "CISA Advisories"
       ],
-      "sourceCount": 2,
+      "sourceCount": 1,
       "impactScore": 4,
       "cveMatches": [
-        "CVE-2026-123890"
+        "CVE-2025-42884",
+        "CVE-2026-76466",
+        "CVE-2026-123890",
+        "CVE-2026-129448",
+        "CVE-2024-10441",
+        "CVE-2026-40217",
+        "CVE-2026-90436",
+        "CVE-2026-90817"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2025-42884",
+        "CVE-2026-76466",
+        "CVE-2026-123890",
+        "CVE-2026-129448",
+        "CVE-2024-10441",
+        "CVE-2026-40217",
+        "CVE-2026-90436",
+        "CVE-2026-90817"
+      ],
       "articleCount": 2,
-      "score": 61
+      "score": 70
     },
     {
-      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-      "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine.\n\nThe method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker",
-      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-      "date": "2026-11-20T05:30:01.000Z",
+      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
+      "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.\n\nThe activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
+      "date": "2026-11-20T10:32:50.000Z",
       "severity": "Critical",
       "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
       "impactScore": 4,
-      "cveMatches": [],
-      "knownExploitedCves": [],
+      "cveMatches": [
+        "CVE-2026-76466"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-76466"
+      ],
       "articleCount": 1,
-      "score": 59
+      "score": 69
     }
   ],
   "sourcesUsed": [
@@ -2425,5 +2519,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-20T17:53:27.423Z"
+  "lastUpdated": "2026-11-20T23:46:03.934Z"
 }
