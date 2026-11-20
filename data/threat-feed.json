@@ -1,6 +1,116 @@
 {
   "articles": [
     {
+      "title": "Do AI’s mathematical advances put PKI under threat?",
+      "source": "CSO Online",
+      "date": "2026-11-20T08:25:00.000Z",
+      "summary": "Warnings by a leading cryptographer that industry-wide public-key cryptography could fail because of advances in AI has sparked a debate in the security community.\nIn a series of post on X, Johns Hopkins cryptographer Matthew Green warned that existing public-key cryptography systems were at risk because machines have begun outperforming humans in their ability to address some mathematical problems.\n“I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confide",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4248694/do-ais-mathematical-advances-put-pki-under-threat.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs  ",
+      "source": "The Hacker News",
+      "date": "2026-11-20T07:11:39.000Z",
+      "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS.\n\n\"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while retaining ClickFix and signed binary sideloading techniques,\" Blackpoint",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+      "source": "The Hacker News",
+      "date": "2026-11-20T06:33:31.000Z",
+      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-123890"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+      "source": "The Hacker News",
+      "date": "2026-11-20T05:30:01.000Z",
+      "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine.\n\nThe method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
+      "source": "CSO Online",
+      "date": "2026-11-20T03:10:04.000Z",
+      "summary": "The most dangerous actor in a software supply chain may now be an automated script with powerful credentials and no idea where it’s sending them.\nResearchers from pen-testing company Cycode have discovered a now patched critical zero-click supply chain vulnerability in the open-source Windows Package Manager (WinGet), which sits on billions of devices worldwide.\nA single pull request could have tricked Microsoft’s internal tooling into freely handing over a moderator’s GitHub access token, with ",
+      "severity": "High",
+      "tags": [
+        "Supply Chain",
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4251117/a-single-pull-request-could-have-handed-attackers-the-keys-to-microsofts-software-supply-chain.html",
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "European Commission HR hit by cyber attack",
+      "source": "CSO Online",
+      "date": "2026-11-20T02:08:48.000Z",
+      "summary": "Barely a week after the US Federal Bureau of Investigation (FBI) warned companies of the cyber attacker interest in an open source penetration testing tool called ARTEX, the European Commission has confirmed that attackers armed with that tool broke into its HR systems.\nThe attack, which Commission officials detected on October 22, forced them to shut off much of the access to the systems for more than 10 days.\n“As a protective and preventive measure, we temporarily took down several application",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4251068/european-commission-hr-hit-by-cyber-attack.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-20T02:00:02.000Z",
+      "summary": "",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33538",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
       "source": "Dark Reading",
       "date": "2026-11-19T22:40:03.000Z",
@@ -127,16 +237,17 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+      "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
       "source": "The Hacker News",
       "date": "2026-11-19T15:11:06.000Z",
       "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today.\n\nFixed versions are out for all supported branches, and the company lists no workaround. vCenter is the central console for managing an organization's ESX hosts and virtual machines.\n\nThe",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
+        "Zero-Day",
         "Widely-Used Software"
       ],
       "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
-      "impactScore": 1,
+      "impactScore": 4,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -292,7 +403,7 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
       "source": "The Hacker News",
       "date": "2026-11-19T08:42:11.000Z",
       "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.\n\n\"We are aware of PoCs that prove some of them can be used to trigger remote code execution,\" the maintainers said.\n\nThe project released fixed versions",
@@ -332,37 +443,6 @@
         "General"
       ],
       "url": "https://www.darkreading.com/threat-intelligence/africa-top-spot-most-attacked-region-nigeria-surge",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-      "source": "The Hacker News",
-      "date": "2026-11-19T08:00:00.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -",
-      "severity": "High",
-      "tags": [
-        "Ransomware",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
-      "source": "The Hacker News",
-      "date": "2026-11-19T04:33:46.000Z",
-      "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws.\n\nThe release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC.\n\n\"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -485,23 +565,6 @@
       "url": "https://isc.sans.edu/diary/rss/33532",
       "impactScore": 1,
       "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
-      "source": "The Hacker News",
-      "date": "2026-11-18T18:31:17.000Z",
-      "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in.\n\nThe decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today.\n\nF5, the company behind NGINX, says attackers can run code where",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-123007"
-      ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
@@ -657,36 +720,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
-      "source": "CSO Online",
-      "date": "2026-11-18T01:22:59.000Z",
-      "summary": "Attackers apparently from China used an authentication security hole within the popular Optimizely AI platform for marketers to steal from at least 178 sites owned by some of the planet’s largest companies. \nNamed victims featured vendors including Zoom, Paychex, Equifax, and GitLab, and end-user enterprises including Starbucks, IKEA, Mattel, American Eagle, Air France, Mutual of Omaha, Heineken, Home Chef, Cinnabon, American Eagle, Levi, Costco and HSBC.\nSalesforce issued a statement confirming",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Google and Anthropic push for faster patches as AI collapses bug discovery timelines",
-      "source": "CSO Online",
-      "date": "2026-11-17T23:29:35.000Z",
-      "summary": "AI-assisted vulnerability discovery has made it untenable for software vendors to sit on privately reported flaws for months, and Google Project Zero is responding by shrinking its vulnerability disclosure deadline from 90 to 60 days, with plans to drop it to 30 days a year from now. Anthropic is following suit with an even more aggressive timeline.\nProject Zero is Google’s elite vulnerability research team that regularly reports vulnerabilities in widely used open-source and proprietary softwar",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4249915/google-and-anthropic-push-for-faster-patches-as-ai-collapses-bug-discovery-timelines.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
       "source": "Dark Reading",
       "date": "2026-11-17T22:34:22.000Z",
@@ -696,21 +729,6 @@
         "General"
       ],
       "url": "https://www.darkreading.com/cyber-risk/optimizely-malware-attacks-third-party-vendor-risks",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "California sues OpenAI, alleges 80-plus agent escapes hidden from public",
-      "source": "CSO Online",
-      "date": "2026-11-17T12:48:15.000Z",
-      "summary": "California Attorney General Rob Bonta has sued OpenAI, alleging the company has lost control of its autonomous AI agents more than 80 times during testing and misled the public about how safely it develops its models.\nThe complaint was filed on November 16 in San Francisco Superior Court against OpenAI Foundation and OpenAI Group PBC. It says OpenAI disclosed the 80-plus figure to state investigators but has publicly reported just 27 such incidents. In those incidents, agents reached third-party",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4249653/california-sues-openai-alleges-80-plus-agent-escapes-hidden-from-public-2.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -939,21 +957,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-13T03:41:41.000Z",
-      "summary": "Introduction",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33518",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Who Runs the Ransomware Group Qilin?",
       "source": "Krebs on Security",
       "date": "2026-11-11T18:06:01.000Z",
@@ -1092,6 +1095,144 @@
   ],
   "clusters": [
     {
+      "title": "Do AI’s mathematical advances put PKI under threat?",
+      "summary": "Warnings by a leading cryptographer that industry-wide public-key cryptography could fail because of advances in AI has sparked a debate in the security community.\nIn a series of post on X, Johns Hopkins cryptographer Matthew Green warned that existing public-key cryptography systems were at risk because machines have begun outperforming humans in their ability to address some mathematical problems.\n“I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confide",
+      "url": "https://www.csoonline.com/article/4248694/do-ais-mathematical-advances-put-pki-under-threat.html",
+      "date": "2026-11-20T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs  ",
+      "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS.\n\n\"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while retaining ClickFix and signed binary sideloading techniques,\" Blackpoint",
+      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+      "date": "2026-11-20T07:11:39.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
+      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+      "date": "2026-11-20T06:33:31.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-123890"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 64
+    },
+    {
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+      "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine.\n\nThe method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker",
+      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+      "date": "2026-11-20T05:30:01.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 64
+    },
+    {
+      "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
+      "summary": "The most dangerous actor in a software supply chain may now be an automated script with powerful credentials and no idea where it’s sending them.\nResearchers from pen-testing company Cycode have discovered a now patched critical zero-click supply chain vulnerability in the open-source Windows Package Manager (WinGet), which sits on billions of devices worldwide.\nA single pull request could have tricked Microsoft’s internal tooling into freely handing over a moderator’s GitHub access token, with ",
+      "url": "https://www.csoonline.com/article/4251117/a-single-pull-request-could-have-handed-attackers-the-keys-to-microsofts-software-supply-chain.html",
+      "date": "2026-11-20T03:10:04.000Z",
+      "severity": "High",
+      "tags": [
+        "Supply Chain",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 51
+    },
+    {
+      "title": "European Commission HR hit by cyber attack",
+      "summary": "Barely a week after the US Federal Bureau of Investigation (FBI) warned companies of the cyber attacker interest in an open source penetration testing tool called ARTEX, the European Commission has confirmed that attackers armed with that tool broke into its HR systems.\nThe attack, which Commission officials detected on October 22, forced them to shut off much of the access to the systems for more than 10 days.\n“As a protective and preventive measure, we temporarily took down several application",
+      "url": "https://www.csoonline.com/article/4251068/european-commission-hr-hit-by-cyber-attack.html",
+      "date": "2026-11-20T02:08:48.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33538",
+      "date": "2026-11-20T02:00:02.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 3,
+      "score": 26
+    },
+    {
       "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
       "summary": "Companies deploying AI agents have the illusion of control, but several incidents demonstrate that businesses need to be ready to enforce directions.",
       "url": "https://www.darkreading.com/cyber-risk/qwen-incidents-self-hosted-ai-models-stronger-steering",
@@ -1108,29 +1249,30 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 24
     },
     {
       "title": "Critical flaw in VMware vCenter allows authentication bypass",
       "summary": "Broadcom has released patches for bugs in multiple products, one of which, fixing a VMware vCenter authentication bypass vulnerability, is rated 9.8 out of 10 in severity.\nThe company’s advisory describes the flaw, tracked as CVE-2026-123890, as “an authentication bypass vulnerability in the VMware Directory Service,” that could let a threat actor with network access gain unauthorized access to the system, and says there are no workarounds. It advises immediate patching.\nBroadcom has provided fi",
       "url": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
       "date": "2026-11-19T21:07:25.000Z",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Widely-Used Software"
+        "Widely-Used Software",
+        "Zero-Day"
       ],
       "sources": [
         "CSO Online",
         "The Hacker News"
       ],
       "sourceCount": 2,
-      "impactScore": 1,
+      "impactScore": 4,
       "cveMatches": [
         "CVE-2026-123890"
       ],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 42
+      "score": 64
     },
     {
       "title": "Second Norwegian Energy Company Breached in Two Days",
@@ -1149,7 +1291,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 23
     },
     {
       "title": "Critical PHP Flaws Allow Code Execution, But Don't Panic 'PHP2Shell'-Style",
@@ -1168,7 +1310,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Navigating Vulnerability Hysteria in the AI Era",
@@ -1187,7 +1329,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
@@ -1206,7 +1348,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 22
     },
     {
       "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
@@ -1227,7 +1369,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 21
     },
     {
       "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
@@ -1248,7 +1390,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 33
     },
     {
       "title": "Drupal Patches Critical Installer Flaw That Could Give Unauthenticated Attackers Control of Sites",
@@ -1267,7 +1409,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "Why Holiday Security Can't Wait for Black Friday",
@@ -1286,7 +1428,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "libumqtt",
@@ -1308,7 +1450,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 47
+      "score": 44
     },
     {
       "title": "Autonomy Logic OpenPLC Runtime",
@@ -1329,7 +1471,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 32
     },
     {
       "title": "Elecbrakes EB2, VM1, ELBC2000",
@@ -1352,7 +1494,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Everything Is a Web Application, Including Your Firewall",
@@ -1377,7 +1519,7 @@
         "CVE-2026-109619"
       ],
       "articleCount": 1,
-      "score": 66
+      "score": 64
     },
     {
       "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
@@ -1396,7 +1538,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
@@ -1415,7 +1557,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
@@ -1434,10 +1576,10 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
-      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
       "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine.\n\n\"We are aware of PoCs that prove some of them can be used to trigger remote code execution,\" the maintainers said.\n\nThe project released fixed versions",
       "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
       "date": "2026-11-19T08:42:11.000Z",
@@ -1453,7 +1595,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
@@ -1473,27 +1615,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 45
-    },
-    {
-      "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added four vulnerabilities impacting Synology DiskStation Manager (DSM), BerriAI LiteLLM, Apache Axis, and Vanderbilt University Research Electronic Data Capture (REDCap) to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -",
-      "url": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
-      "date": "2026-11-19T08:00:00.000Z",
-      "severity": "High",
-      "tags": [
-        "Ransomware",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 45
+      "score": 43
     },
     {
       "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
@@ -1512,45 +1634,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "PHP Warns of Critical Security Flaws Affecting All Supported Versions, Fixes Coming November 19",
-      "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws.\n\nThe release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC.\n\n\"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
-      "url": "https://thehackernews.com/2026/11/php-warns-of-critical-security-flaws.html",
-      "date": "2026-11-19T04:33:46.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33536",
-      "date": "2026-11-19T02:00:03.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 3,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)",
@@ -1569,7 +1653,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
@@ -1588,7 +1672,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 29
     },
     {
       "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
@@ -1607,7 +1691,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
@@ -1626,7 +1710,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
@@ -1645,7 +1729,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 28
     },
     {
       "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
@@ -1664,7 +1748,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 28
     },
     {
       "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -1683,28 +1767,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
-    },
-    {
-      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
-      "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in.\n\nThe decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today.\n\nF5, the company behind NGINX, says attackers can run code where",
-      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-      "date": "2026-11-18T18:31:17.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-123007"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 17
+      "score": 26
     },
     {
       "title": "Java4Shell Flaw Threatens Global Enterprises, Java Application Ecosystem",
@@ -1723,7 +1786,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
@@ -1742,7 +1805,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 27
     },
     {
       "title": "Major Brazilian Signature Apps Enable RCE &amp; Fraud",
@@ -1761,7 +1824,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1791,7 +1854,7 @@
         "CVE-2026-90817"
       ],
       "articleCount": 1,
-      "score": 62
+      "score": 60
     },
     {
       "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
@@ -1810,7 +1873,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 24
     },
     {
       "title": "The resilience gap: Why cybersecurity investment alone is not enough",
@@ -1829,7 +1892,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "How organizations can secure their AI-generated code",
@@ -1848,7 +1911,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -1867,45 +1930,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
-    },
-    {
-      "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
-      "summary": "Attackers apparently from China used an authentication security hole within the popular Optimizely AI platform for marketers to steal from at least 178 sites owned by some of the planet’s largest companies. \nNamed victims featured vendors including Zoom, Paychex, Equifax, and GitLab, and end-user enterprises including Starbucks, IKEA, Mattel, American Eagle, Air France, Mutual of Omaha, Heineken, Home Chef, Cinnabon, American Eagle, Levi, Costco and HSBC.\nSalesforce issued a statement confirming",
-      "url": "https://www.csoonline.com/article/4249925/optimizely-confirms-massive-cyberattack-on-customer-websites-injected-stealer-malware.html",
-      "date": "2026-11-18T01:22:59.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
-    },
-    {
-      "title": "Google and Anthropic push for faster patches as AI collapses bug discovery timelines",
-      "summary": "AI-assisted vulnerability discovery has made it untenable for software vendors to sit on privately reported flaws for months, and Google Project Zero is responding by shrinking its vulnerability disclosure deadline from 90 to 60 days, with plans to drop it to 30 days a year from now. Anthropic is following suit with an even more aggressive timeline.\nProject Zero is Google’s elite vulnerability research team that regularly reports vulnerabilities in widely used open-source and proprietary softwar",
-      "url": "https://www.csoonline.com/article/4249915/google-and-anthropic-push-for-faster-patches-as-ai-collapses-bug-discovery-timelines.html",
-      "date": "2026-11-17T23:29:35.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
@@ -1925,25 +1950,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 13
-    },
-    {
-      "title": "California sues OpenAI, alleges 80-plus agent escapes hidden from public",
-      "summary": "California Attorney General Rob Bonta has sued OpenAI, alleging the company has lost control of its autonomous AI agents more than 80 times during testing and misled the public about how safely it develops its models.\nThe complaint was filed on November 16 in San Francisco Superior Court against OpenAI Foundation and OpenAI Group PBC. It says OpenAI disclosed the 80-plus figure to state investigators but has publicly reported just 27 such incidents. In those incidents, agents reached third-party",
-      "url": "https://www.csoonline.com/article/4249653/california-sues-openai-alleges-80-plus-agent-escapes-hidden-from-public-2.html",
-      "date": "2026-11-17T12:48:15.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
     },
     {
       "title": "Siemens Industrial Software Products",
@@ -1988,7 +1994,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 36
     },
     {
       "title": "Siemens Simcenter Femap",
@@ -2137,6 +2143,25 @@
       "score": 12
     },
     {
+      "title": "ISC Stormcast For Tuesday, November 17th, 2026 https://isc.sans.edu/podcastdetail/10182, (Tue, Nov 17th)",
+      "summary": "",
+      "url": "https://isc.sans.edu/diary/rss/33524",
+      "date": "2026-11-17T02:05:15.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 2,
+      "score": 11
+    },
+    {
       "title": "Scans for LiteLLM/Starlette (CVE-2026-42271, CVE-2026-48710), (Mon, Nov 16th)",
       "summary": "This weekend, we started seeing requests for /mcp-rest/test/tools/list hitting our honeypots. These requests appear to attempt to exploit CVE-2026-42271 and CVE-2026-48710. Horizon3.ai published a short write-up about how these vulnerabilities can be chained to achieve remote code execution without authentication [Horizon3]",
       "url": "https://isc.sans.edu/diary/rss/33522",
@@ -2163,48 +2188,10 @@
       "score": 59
     },
     {
-      "title": "ISC Stormcast For Monday, November 16th, 2026 https://isc.sans.edu/podcastdetail/10180, (Mon, Nov 16th)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33520",
-      "date": "2026-11-16T02:00:05.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
       "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
       "summary": "YARA-X&#;x26;#;39;s 1.23.0 release brings 4 improvements and 16 bugfixes.",
       "url": "https://isc.sans.edu/diary/rss/33496",
       "date": "2026-11-15T18:17:27.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)",
-      "summary": "Introduction",
-      "url": "https://isc.sans.edu/diary/rss/33518",
-      "date": "2026-11-13T03:41:41.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -2394,71 +2381,69 @@
   ],
   "top3": [
     {
-      "title": "Everything Is a Web Application, Including Your Firewall",
-      "summary": "One of the early targets of PHP2Shell exploitation was the firewall. On October 28, Palo Alto Networks confirmed that attackers were exploiting the two PHP vulnerabilities, CVE-2026-109618 and CVE-2026-109619, against PAN-OS management interfaces exposed to the internet. Both flaws let anyone execute code on the web server without authentication. The disclosure itself went a little wrong.",
-      "url": "https://thehackernews.com/2026/11/everything-is-web-application-including.html",
-      "date": "2026-11-19T11:52:23.000Z",
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
+      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+      "date": "2026-11-20T06:33:31.000Z",
       "severity": "Critical",
       "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-109618",
-        "CVE-2026-109619"
-      ],
-      "articleCount": 1,
-      "score": 66
-    },
-    {
-      "title": "libumqtt",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.\nThe following versions of libumqtt are affected:\nlibumqtt <=1.1.1 (CVE-2026-125132)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.6\nlibumqtt\nlibumqtt\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nInteger Underflow (Wrap or Wraparound)\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Energy, Information Technology, Transportation Systems, Wa",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-03",
-      "date": "2026-11-19T12:00:00.000Z",
-      "severity": "High",
-      "tags": [
-        "DDoS",
-        "Critical Infrastructure"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-125132"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 47
-    },
-    {
-      "title": "Researcher Demonstrates Database RCE Exploits Affecting PostgreSQL, MySQL and Oracle",
-      "summary": "Low-privilege database accounts that cannot read a single application table can still be used to run code on the database server itself, a researcher has shown, by reaching memory-corruption bugs in the engine code behind ordinary SQL.\n\nThe exploits, published yesterday, are the researcher's proofs of concept against PostgreSQL, MySQL and ClickHouse, plus a separate Oracle chain that needs no",
-      "url": "https://thehackernews.com/2026/11/researcher-demonstrates-database-rce.html",
-      "date": "2026-11-19T08:14:00.000Z",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
+        "Zero-Day",
         "Widely-Used Software"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 3,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-123890"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 64
+    },
+    {
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+      "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine.\n\nThe method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker",
+      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+      "date": "2026-11-20T05:30:01.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 45
+      "score": 64
+    },
+    {
+      "title": "Critical flaw in VMware vCenter allows authentication bypass",
+      "summary": "Broadcom has released patches for bugs in multiple products, one of which, fixing a VMware vCenter authentication bypass vulnerability, is rated 9.8 out of 10 in severity.\nThe company’s advisory describes the flaw, tracked as CVE-2026-123890, as “an authentication bypass vulnerability in the VMware Directory Service,” that could let a threat actor with network access gain unauthorized access to the system, and says there are no workarounds. It advises immediate patching.\nBroadcom has provided fi",
+      "url": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
+      "date": "2026-11-19T21:07:25.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Zero-Day"
+      ],
+      "sources": [
+        "CSO Online",
+        "The Hacker News"
+      ],
+      "sourceCount": 2,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-123890"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 2,
+      "score": 64
     }
   ],
   "sourcesUsed": [
@@ -2471,5 +2456,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-20T01:26:16.396Z"
+  "lastUpdated": "2026-11-20T09:10:01.252Z"
 }
