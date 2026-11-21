@@ -1,6 +1,51 @@
 {
   "articles": [
     {
+      "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
+      "source": "CSO Online",
+      "date": "2026-11-21T00:39:17.000Z",
+      "summary": "PHP continues to root out flaws in its architecture, this week releasing fixes for a slew of additional security issues in the wake of PHP2Shell.\nThe patches address 18 vulnerabilities, including a critical request smuggling flaw that could allow unauthenticated attackers to remotely execute code on vulnerable servers. Other vulnerabilities affect PHP’s core engine, session handling, process manager, and Common Gateway Interface (CGI) protocol, which bridges web servers with external application",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "source": "Krebs on Security",
+      "date": "2026-11-21T00:36:39.000Z",
+      "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
+      "severity": "Medium",
+      "tags": [
+        "Ransomware"
+      ],
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "F5 scrambles to fix more critical BIG-IP security flaws",
+      "source": "CSO Online",
+      "date": "2026-11-21T00:16:44.000Z",
+      "summary": "F5 has released a batch of out of band patches for BIG-IP Access Policy Manager (APM) and BIG-IP iRule programmable scripting, five of which are rated 9.8 (Critical) in severity. BIG-IP Access Policy Manager (APM) is the vendor’s application access management and security product while BIG-IP iRules lets network administrators customize how BIG-IP handles application traffic.\nAll five of the patches are stack-based buffer overflows that could let an unauthenticated threat actor terminate the Tra",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4251711/f5-scrambles-to-fix-more-critical-big-ip-security-flaws-2.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
       "source": "Dark Reading",
       "date": "2026-11-20T21:03:27.000Z",
@@ -96,6 +141,21 @@
       "recentlyAddedToKev": []
     },
     {
+      "title": "The Path to AI Autonomy in the SOC",
+      "source": "The Hacker News",
+      "date": "2026-11-20T12:00:00.000Z",
+      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027.\n\nThe pressure",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-20T12:00:00.000Z",
@@ -125,21 +185,6 @@
         "CVE-2026-123890",
         "CVE-2026-129448"
       ]
-    },
-    {
-      "title": "The Path to AI Autonomy in the SOC",
-      "source": "The Hacker News",
-      "date": "2026-11-20T12:00:00.000Z",
-      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027.\n\nThe pressure",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
@@ -720,36 +765,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "The resilience gap: Why cybersecurity investment alone is not enough",
-      "source": "CSO Online",
-      "date": "2026-11-18T09:00:00.000Z",
-      "summary": "Death, taxes and cyber incidents. It’s not quite the original saying, but for today’s CISO, all three carry a certain inevitability, and most organizations have come to accept that reality.\nProtiviti’s 2027 CISO Top Risks and Opportunities study confirms that cybersecurity remains the top investment priority for CISOs. Yet even well-funded security programs can struggle when something goes wrong.\nWhy? The cause is rarely missing plans or controls; it’s silos. Service owners; security, recovery a",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4249721/the-resilience-gap-why-cybersecurity-investment-alone-is-not-enough.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "How organizations can secure their AI-generated code",
-      "source": "CSO Online",
-      "date": "2026-11-18T08:25:00.000Z",
-      "summary": "The IT manager didn’t know the company hired a “vibe coder” straight out of school. By the time they met a few months later, the new hire had already built a web application that operated with customer data and private contracts.\nThe app ran under a domain the new hire controlled, stored data on Supabase’s free plan, and deployed directly from his GitHub repository to Cloudflare’s serverless infrastructure.\n“He vibe-codes everything straight into production, on servers all over the world,” the I",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/3633403/how-organizations-can-secure-their-ai-code.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
       "source": "Krebs on Security",
       "date": "2026-11-18T02:52:04.000Z",
@@ -1104,24 +1119,66 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
+    }
+  ],
+  "clusters": [
+    {
+      "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
+      "summary": "PHP continues to root out flaws in its architecture, this week releasing fixes for a slew of additional security issues in the wake of PHP2Shell.\nThe patches address 18 vulnerabilities, including a critical request smuggling flaw that could allow unauthenticated attackers to remotely execute code on vulnerable servers. Other vulnerabilities affect PHP’s core engine, session handling, process manager, and Common Gateway Interface (CGI) protocol, which bridges web servers with external application",
+      "url": "https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html",
+      "date": "2026-11-21T00:39:17.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
     },
     {
-      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-      "source": "Krebs on Security",
-      "date": "2026-10-10T00:17:42.000Z",
-      "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
+      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use \"advanced cryptographic tools\" to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup for work that was never performed.",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "date": "2026-11-21T00:36:39.000Z",
       "severity": "Medium",
       "tags": [
         "Ransomware"
       ],
-      "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
+      "sources": [
+        "Krebs on Security"
+      ],
+      "sourceCount": 1,
       "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    }
-  ],
-  "clusters": [
+      "articleCount": 1,
+      "score": 39
+    },
+    {
+      "title": "F5 scrambles to fix more critical BIG-IP security flaws",
+      "summary": "F5 has released a batch of out of band patches for BIG-IP Access Policy Manager (APM) and BIG-IP iRule programmable scripting, five of which are rated 9.8 (Critical) in severity. BIG-IP Access Policy Manager (APM) is the vendor’s application access management and security product while BIG-IP iRules lets network administrators customize how BIG-IP handles application traffic.\nAll five of the patches are stack-based buffer overflows that could let an unauthenticated threat actor terminate the Tra",
+      "url": "https://www.csoonline.com/article/4251711/f5-scrambles-to-fix-more-critical-big-ip-security-flaws-2.html",
+      "date": "2026-11-21T00:16:44.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
     {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
       "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
@@ -1140,7 +1197,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 64
+      "score": 61
     },
     {
       "title": "In Security, Words Matter as Much as Tools, Maybe More",
@@ -1159,7 +1216,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 23
     },
     {
       "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
@@ -1180,7 +1237,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 33
     },
     {
       "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
@@ -1199,7 +1256,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
@@ -1218,7 +1275,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 33
     },
     {
       "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
@@ -1239,7 +1296,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1277,7 +1334,7 @@
         "CVE-2026-90817"
       ],
       "articleCount": 2,
-      "score": 70
+      "score": 67
     },
     {
       "title": "The Path to AI Autonomy in the SOC",
@@ -1296,7 +1353,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
@@ -1315,7 +1372,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
@@ -1339,7 +1396,7 @@
         "CVE-2026-76466"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 66
     },
     {
       "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
@@ -1364,7 +1421,7 @@
         "CVE-2026-123890"
       ],
       "articleCount": 1,
-      "score": 75
+      "score": 73
     },
     {
       "title": "Do AI’s mathematical advances put PKI under threat?",
@@ -1383,7 +1440,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs  ",
@@ -1402,7 +1459,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 19
     },
     {
       "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
@@ -1422,7 +1479,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 57
+      "score": 55
     },
     {
       "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
@@ -1442,7 +1499,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 44
+      "score": 42
     },
     {
       "title": "European Commission HR hit by cyber attack",
@@ -1461,7 +1518,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 18
     },
     {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
@@ -1480,7 +1537,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 19
+      "score": 18
     },
     {
       "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
@@ -1499,7 +1556,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "Critical flaw in VMware vCenter allows authentication bypass",
@@ -1523,7 +1580,7 @@
         "CVE-2026-123890"
       ],
       "articleCount": 1,
-      "score": 64
+      "score": 63
     },
     {
       "title": "Second Norwegian Energy Company Breached in 2 Days",
@@ -1542,7 +1599,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Critical PHP Flaws Allow Code Execution, but Don't Panic 'PHP2Shell'-Style",
@@ -1561,7 +1618,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Navigating Vulnerability Hysteria in the AI Era",
@@ -1580,7 +1637,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
@@ -1599,7 +1656,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "phpAfterShell Explained: How Hackers Could Turn a PHP Session Flaw Into Code Execution",
@@ -1620,7 +1677,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "PHP Fixes 7 Critical Flaws, Including Bugs That Could Allow Remote Code Execution",
@@ -1641,7 +1698,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 28
     },
     {
       "title": "Why Holiday Security Can't Wait for Black Friday",
@@ -1660,7 +1717,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "libumqtt",
@@ -1682,7 +1739,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 39
     },
     {
       "title": "Autonomy Logic OpenPLC Runtime",
@@ -1703,7 +1760,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Elecbrakes EB2, VM1, ELBC2000",
@@ -1726,7 +1783,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
@@ -1745,7 +1802,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
@@ -1764,7 +1821,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
@@ -1783,7 +1840,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)",
@@ -1802,7 +1859,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
@@ -1840,7 +1897,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
@@ -1878,7 +1935,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "AttackIQ Research Reveals How Iranian Cyber Groups Hand Off Network Access to Enable Destructive Attacks",
@@ -1897,7 +1954,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -1916,7 +1973,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
@@ -1954,45 +2011,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
-    },
-    {
-      "title": "The resilience gap: Why cybersecurity investment alone is not enough",
-      "summary": "Death, taxes and cyber incidents. It’s not quite the original saying, but for today’s CISO, all three carry a certain inevitability, and most organizations have come to accept that reality.\nProtiviti’s 2027 CISO Top Risks and Opportunities study confirms that cybersecurity remains the top investment priority for CISOs. Yet even well-funded security programs can struggle when something goes wrong.\nWhy? The cause is rarely missing plans or controls; it’s silos. Service owners; security, recovery a",
-      "url": "https://www.csoonline.com/article/4249721/the-resilience-gap-why-cybersecurity-investment-alone-is-not-enough.html",
-      "date": "2026-11-18T09:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
-    },
-    {
-      "title": "How organizations can secure their AI-generated code",
-      "summary": "The IT manager didn’t know the company hired a “vibe coder” straight out of school. By the time they met a few months later, the new hire had already built a web application that operated with customer data and private contracts.\nThe app ran under a domain the new hire controlled, stored data on Supabase’s free plan, and deployed directly from his GitHub repository to Cloudflare’s serverless infrastructure.\n“He vibe-codes everything straight into production, on servers all over the world,” the I",
-      "url": "https://www.csoonline.com/article/3633403/how-organizations-can-secure-their-ai-code.html",
-      "date": "2026-11-18T08:25:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
+      "score": 22
     },
     {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -2011,7 +2030,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Siemens Industrial Software Products",
@@ -2399,25 +2418,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 20
-    },
-    {
-      "title": "FBI Arrests Executive at Ransomware Negotiation Firm",
-      "summary": "Agents with the Federal Bureau of Investigation (FBI) on Thursday arrested the co-founder of a Canadian cybersecurity firm in connection with an investigation into the ShinyHunters hacking group that recently relieved the FBI of sensitive data on thousands of agents, multiple sources tell KrebsOnSecurity.",
-      "url": "https://krebsonsecurity.com/2026/10/fbi-arrests-founder-of-ransomware-negotiation-firm/",
-      "date": "2026-10-10T00:17:42.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "sources": [
-        "Krebs on Security"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
     }
   ],
   "top3": [
@@ -2444,7 +2444,7 @@
         "CVE-2026-123890"
       ],
       "articleCount": 1,
-      "score": 75
+      "score": 73
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -2482,7 +2482,7 @@
         "CVE-2026-90817"
       ],
       "articleCount": 2,
-      "score": 70
+      "score": 67
     },
     {
       "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
@@ -2506,7 +2506,7 @@
         "CVE-2026-76466"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 66
     }
   ],
   "sourcesUsed": [
@@ -2519,5 +2519,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-20T23:46:03.934Z"
+  "lastUpdated": "2026-11-21T06:08:18.638Z"
 }
