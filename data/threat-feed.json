@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
+      "source": "SANS Internet Storm Center",
+      "date": "2026-11-22T18:40:18.000Z",
+      "summary": "BLUF: Debian and Ubuntu dropped a config directive in the rsyslogd package in early 2023.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://isc.sans.edu/diary/rss/33530",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
       "source": "The Hacker News",
       "date": "2026-11-22T05:06:55.000Z",
@@ -974,21 +989,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
-      "source": "SANS Internet Storm Center",
-      "date": "2026-11-15T18:17:27.000Z",
-      "summary": "YARA-X&#;x26;#;39;s 1.23.0 release brings 4 improvements and 16 bugfixes.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://isc.sans.edu/diary/rss/33496",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Who Runs the Ransomware Group Qilin?",
       "source": "Krebs on Security",
       "date": "2026-11-11T18:06:01.000Z",
@@ -1112,6 +1112,25 @@
   ],
   "clusters": [
     {
+      "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
+      "summary": "BLUF: Debian and Ubuntu dropped a config directive in the rsyslogd package in early 2023.",
+      "url": "https://isc.sans.edu/diary/rss/33530",
+      "date": "2026-11-22T18:40:18.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
       "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
       "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
@@ -1128,7 +1147,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 21
     },
     {
       "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
@@ -1147,7 +1166,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 34
     },
     {
       "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
@@ -1166,7 +1185,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
@@ -1187,7 +1206,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
@@ -1206,7 +1225,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     },
     {
       "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
@@ -1225,7 +1244,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
@@ -1249,7 +1268,7 @@
         "CVE-2026-129448"
       ],
       "articleCount": 1,
-      "score": 63
+      "score": 62
     },
     {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
@@ -1268,7 +1287,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -1287,7 +1306,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "F5 scrambles to fix more critical BIG-IP security flaws",
@@ -1306,7 +1325,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
@@ -1326,7 +1345,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     },
     {
       "title": "In Security, Words Matter as Much as Tools, Maybe More",
@@ -1345,7 +1364,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
@@ -1385,7 +1404,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
@@ -1404,7 +1423,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
@@ -1425,7 +1444,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1520,7 +1539,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
@@ -1540,7 +1559,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 36
     },
     {
       "title": "European Commission HR hit by cyber attack",
@@ -1659,7 +1678,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Navigating Vulnerability Hysteria in the AI Era",
@@ -1678,7 +1697,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Why Holiday Security Can't Wait for Black Friday",
@@ -1719,7 +1738,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 35
     },
     {
       "title": "Autonomy Logic OpenPLC Runtime",
@@ -2228,25 +2247,6 @@
       "score": 58
     },
     {
-      "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
-      "summary": "YARA-X&#;x26;#;39;s 1.23.0 release brings 4 improvements and 16 bugfixes.",
-      "url": "https://isc.sans.edu/diary/rss/33496",
-      "date": "2026-11-15T18:17:27.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
       "title": "Who Runs the Ransomware Group Qilin?",
       "summary": "The cybercrime group Qilin has emerged as the world's most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man living in St. Petersburg, Russia.",
       "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
@@ -2402,30 +2402,6 @@
   ],
   "top3": [
     {
-      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-129448 (CVSS score: 9.8) - A deserialization of untrusted data vulnerability in",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
-      "date": "2026-11-21T08:49:13.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-129448"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-129448"
-      ],
-      "articleCount": 1,
-      "score": 63
-    },
-    {
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
       "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week.\n\nThe flaw allows an attacker with no account to write files outside the server's storage folder, and it affects MONAI Label 0.8.5 and earlier in the default setup,",
       "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
@@ -2442,7 +2418,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 51
+      "score": 50
     },
     {
       "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
@@ -2461,7 +2437,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 36
+      "score": 34
+    },
+    {
+      "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
+      "summary": "BLUF: Debian and Ubuntu dropped a config directive in the rsyslogd package in early 2023.",
+      "url": "https://isc.sans.edu/diary/rss/33530",
+      "date": "2026-11-22T18:40:18.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "SANS Internet Storm Center"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
     }
   ],
   "sourcesUsed": [
@@ -2474,5 +2469,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-22T16:24:42.663Z"
+  "lastUpdated": "2026-11-22T22:00:07.212Z"
 }
