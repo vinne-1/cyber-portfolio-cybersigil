@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+      "source": "The Hacker News",
+      "date": "2026-11-22T05:06:55.000Z",
+      "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+      "source": "The Hacker News",
+      "date": "2026-11-22T05:03:41.000Z",
+      "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly.\n\nSecurity firm pwn.ai showed this week that ordinary upload,",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
       "source": "The Hacker News",
       "date": "2026-11-21T11:53:07.000Z",
@@ -225,6 +255,21 @@
       "recentlyAddedToKev": []
     },
     {
+      "title": "The Path to AI Autonomy in the SOC",
+      "source": "The Hacker News",
+      "date": "2026-11-20T12:00:00.000Z",
+      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027.\n\nThe pressure",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-20T12:00:00.000Z",
@@ -256,21 +301,6 @@
       ]
     },
     {
-      "title": "The Path to AI Autonomy in the SOC",
-      "source": "The Hacker News",
-      "date": "2026-11-20T12:00:00.000Z",
-      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027.\n\nThe pressure",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
       "source": "The Hacker News",
       "date": "2026-11-20T10:38:22.000Z",
@@ -284,51 +314,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-      "source": "The Hacker News",
-      "date": "2026-11-20T10:32:50.000Z",
-      "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.\n\nThe activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-76466"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-76466"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-76466"
-      ]
-    },
-    {
-      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "source": "The Hacker News",
-      "date": "2026-11-20T09:38:15.000Z",
-      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "impactScore": 7,
-      "cveMatches": [
-        "CVE-2026-123890"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123890"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-123890"
-      ]
     },
     {
       "title": "Do AI’s mathematical advances put PKI under threat?",
@@ -1127,6 +1112,44 @@
   ],
   "clusters": [
     {
+      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+      "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
+      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "date": "2026-11-22T05:06:55.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+      "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly.\n\nSecurity firm pwn.ai showed this week that ordinary upload,",
+      "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "date": "2026-11-22T05:03:41.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 40
+    },
+    {
       "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
       "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown.\n\nThe same attack could be extended to reach the credentials Muse stores for the user's connected accounts.\n\nThe work was a laboratory demonstration, not an attack on real users, and it stayed inside the individual user's",
       "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
@@ -1143,7 +1166,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 20
     },
     {
       "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
@@ -1164,7 +1187,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 20
     },
     {
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
@@ -1183,7 +1206,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 56
+      "score": 54
     },
     {
       "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
@@ -1202,7 +1225,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 29
     },
     {
       "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
@@ -1226,7 +1249,7 @@
         "CVE-2026-129448"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 65
     },
     {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
@@ -1245,7 +1268,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -1264,7 +1287,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
+      "score": 29
     },
     {
       "title": "F5 scrambles to fix more critical BIG-IP security flaws",
@@ -1283,7 +1306,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
@@ -1303,7 +1326,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 54
+      "score": 52
     },
     {
       "title": "In Security, Words Matter as Much as Tools, Maybe More",
@@ -1322,7 +1345,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 16
     },
     {
       "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
@@ -1343,7 +1366,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
@@ -1362,7 +1385,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
@@ -1381,7 +1404,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
@@ -1402,7 +1425,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1440,7 +1463,7 @@
         "CVE-2026-90817"
       ],
       "articleCount": 2,
-      "score": 62
+      "score": 61
     },
     {
       "title": "The Path to AI Autonomy in the SOC",
@@ -1459,7 +1482,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 14
     },
     {
       "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
@@ -1478,56 +1501,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-      "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit.\n\nThe activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-      "date": "2026-11-20T10:32:50.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-76466"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-76466"
-      ],
-      "articleCount": 1,
-      "score": 62
-    },
-    {
-      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
-      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "date": "2026-11-20T09:38:15.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 7,
-      "cveMatches": [
-        "CVE-2026-123890"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123890"
-      ],
-      "articleCount": 1,
-      "score": 68
+      "score": 14
     },
     {
       "title": "Do AI’s mathematical advances put PKI under threat?",
@@ -1546,7 +1520,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
@@ -1585,7 +1559,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
@@ -1604,7 +1578,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
@@ -1623,7 +1597,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Critical flaw in VMware vCenter allows authentication bypass",
@@ -1647,7 +1621,7 @@
         "CVE-2026-123890"
       ],
       "articleCount": 1,
-      "score": 60
+      "score": 59
     },
     {
       "title": "Second Norwegian Energy Company Breached in 2 Days",
@@ -1685,7 +1659,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Navigating Vulnerability Hysteria in the AI Era",
@@ -1704,7 +1678,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Why Holiday Security Can't Wait for Black Friday",
@@ -1723,7 +1697,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "libumqtt",
@@ -1745,7 +1719,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 36
     },
     {
       "title": "Autonomy Logic OpenPLC Runtime",
@@ -1766,7 +1740,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Elecbrakes EB2, VM1, ELBC2000",
@@ -1865,7 +1839,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
@@ -1979,7 +1953,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 21
     },
     {
       "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
@@ -1998,7 +1972,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
@@ -2036,7 +2010,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "Siemens Industrial Software Products",
@@ -2449,7 +2423,7 @@
         "CVE-2026-129448"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 65
     },
     {
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
@@ -2468,7 +2442,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 56
+      "score": 54
     },
     {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
@@ -2488,7 +2462,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 54
+      "score": 52
     }
   ],
   "sourcesUsed": [
@@ -2501,5 +2475,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-22T01:01:31.023Z"
+  "lastUpdated": "2026-11-22T08:09:25.684Z"
 }
