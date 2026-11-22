@@ -1143,7 +1143,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
@@ -1164,7 +1164,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
@@ -1183,7 +1183,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 58
+      "score": 56
     },
     {
       "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
@@ -1202,7 +1202,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 32
     },
     {
       "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
@@ -1226,7 +1226,7 @@
         "CVE-2026-129448"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 68
     },
     {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
@@ -1245,7 +1245,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -1264,7 +1264,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 31
     },
     {
       "title": "F5 scrambles to fix more critical BIG-IP security flaws",
@@ -1283,7 +1283,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 19
     },
     {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
@@ -1303,7 +1303,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 55
+      "score": 54
     },
     {
       "title": "In Security, Words Matter as Much as Tools, Maybe More",
@@ -1322,7 +1322,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 17
     },
     {
       "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
@@ -1343,7 +1343,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
@@ -1362,7 +1362,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
@@ -1381,7 +1381,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 27
     },
     {
       "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
@@ -1402,7 +1402,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 26
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1440,7 +1440,7 @@
         "CVE-2026-90817"
       ],
       "articleCount": 2,
-      "score": 63
+      "score": 62
     },
     {
       "title": "The Path to AI Autonomy in the SOC",
@@ -1478,7 +1478,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
@@ -1527,7 +1527,7 @@
         "CVE-2026-123890"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 68
     },
     {
       "title": "Do AI’s mathematical advances put PKI under threat?",
@@ -1546,7 +1546,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
@@ -1566,7 +1566,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 39
+      "score": 38
     },
     {
       "title": "European Commission HR hit by cyber attack",
@@ -1585,7 +1585,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
@@ -1604,7 +1604,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
@@ -1666,7 +1666,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Critical PHP Flaws Allow Code Execution, but Don't Panic 'PHP2Shell'-Style",
@@ -1685,7 +1685,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Navigating Vulnerability Hysteria in the AI Era",
@@ -1704,7 +1704,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Why Holiday Security Can't Wait for Black Friday",
@@ -1789,7 +1789,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
@@ -1808,7 +1808,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
@@ -1827,7 +1827,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Africa Retakes Top Spot as Most Attacked Region, Led by Nigeria Surge",
@@ -1903,7 +1903,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
@@ -1922,7 +1922,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
@@ -2251,7 +2251,7 @@
         "CVE-2026-48710"
       ],
       "articleCount": 1,
-      "score": 59
+      "score": 58
     },
     {
       "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
@@ -2449,70 +2449,46 @@
         "CVE-2026-129448"
       ],
       "articleCount": 1,
-      "score": 69
+      "score": 68
     },
     {
-      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026.\n\nThe vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
-      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "date": "2026-11-20T09:38:15.000Z",
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+      "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week.\n\nThe flaw allows an attacker with no account to write files outside the server's storage folder, and it affects MONAI Label 0.8.5 and earlier in the default setup,",
+      "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "date": "2026-11-21T11:03:17.000Z",
       "severity": "Critical",
       "tags": [
-        "Zero-Day",
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
+        "Zero-Day"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 7,
-      "cveMatches": [
-        "CVE-2026-123890"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123890"
-      ],
+      "impactScore": 3,
+      "cveMatches": [],
+      "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 69
+      "score": 56
     },
     {
-      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2025-42884 SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability\nCVE-2026-76466 Cisco Expressway Series Use of Hard-coded Credentials Vulnerability\nCVE-2026-123890 VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability\nCVE-2026-129448 Apache Roller Deserialization of Untrusted Data Vulnerab",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog",
-      "date": "2026-11-20T12:00:00.000Z",
+      "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
+      "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
+      "date": "2026-11-20T21:03:27.000Z",
       "severity": "Critical",
       "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
+        "Zero-Day",
+        "Widely-Used Software"
       ],
       "sources": [
-        "CISA Advisories"
+        "Dark Reading"
       ],
       "sourceCount": 1,
       "impactScore": 4,
-      "cveMatches": [
-        "CVE-2025-42884",
-        "CVE-2026-76466",
-        "CVE-2026-123890",
-        "CVE-2026-129448",
-        "CVE-2024-10441",
-        "CVE-2026-40217",
-        "CVE-2026-90436",
-        "CVE-2026-90817"
-      ],
-      "knownExploitedCves": [
-        "CVE-2025-42884",
-        "CVE-2026-76466",
-        "CVE-2026-123890",
-        "CVE-2026-129448",
-        "CVE-2024-10441",
-        "CVE-2026-40217",
-        "CVE-2026-90436",
-        "CVE-2026-90817"
-      ],
-      "articleCount": 2,
-      "score": 63
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 54
     }
   ],
   "sourcesUsed": [
@@ -2525,5 +2501,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-21T20:49:05.109Z"
+  "lastUpdated": "2026-11-22T01:01:31.023Z"
 }
