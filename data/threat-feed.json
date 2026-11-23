@@ -1,6 +1,69 @@
 {
   "articles": [
     {
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "source": "The Hacker News",
+      "date": "2026-11-23T09:11:56.000Z",
+      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-131914"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "source": "The Hacker News",
+      "date": "2026-11-23T09:04:08.000Z",
+      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today.\n\nThe company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Clever AI prompt ideas every security leader should steal",
+      "source": "CSO Online",
+      "date": "2026-11-23T08:25:00.000Z",
+      "summary": "For all the talk of AI use by attackers and defenders, little attention is paid to ways CISOs and their security pros can leverage AI uniquely to expediate tasks, cut through the noise, facilitate decision-making, and potentially save big on auditing.\nSeveral specific AI prompts can help security leaders and staff handle multiple critical tasks not typically associated with AI for cyber defense, such as risk management, compliance, policy development, and critical thinking.\nDeveloping truly usef",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4248701/clever-ai-prompt-ideas-every-security-leader-should-steal.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "AI-Assisted Cyberattacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "source": "The Hacker News",
+      "date": "2026-11-23T08:24:15.000Z",
+      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country.\n\nThis unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "ISC Stormcast For Monday, November 23rd, 2026 https://isc.sans.edu/podcastdetail/10190, (Mon, Nov 23rd)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-23T02:00:04.000Z",
@@ -145,6 +208,21 @@
       ]
     },
     {
+      "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
+      "source": "Dark Reading",
+      "date": "2026-11-21T01:31:23.000Z",
+      "summary": "Identity, runtime and development controls are converging as enterprises are tasked with keeping agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
       "source": "CSO Online",
       "date": "2026-11-21T00:39:17.000Z",
@@ -283,38 +361,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-      "source": "The Hacker News",
-      "date": "2026-11-20T12:20:00.000Z",
-      "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean.\n\nOn a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts with AMD processors and nested virtualization enabled.\n\nFixed kernels shipped",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2026-99312"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "The Path to AI Autonomy in the SOC",
-      "source": "The Hacker News",
-      "date": "2026-11-20T12:00:00.000Z",
-      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027.\n\nThe pressure",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-20T12:00:00.000Z",
@@ -344,21 +390,6 @@
         "CVE-2026-123890",
         "CVE-2026-129448"
       ]
-    },
-    {
-      "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
-      "source": "The Hacker News",
-      "date": "2026-11-20T10:38:22.000Z",
-      "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks.\n\n\"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\" SonicWall said. \"We expect internet-facing Gen 6 firewalls to be actively",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "Do AI’s mathematical advances put PKI under threat?",
@@ -678,21 +709,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
-      "source": "Dark Reading",
-      "date": "2026-11-18T20:45:49.000Z",
-      "summary": "New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
       "source": "CSO Online",
       "date": "2026-11-18T20:39:16.000Z",
@@ -767,21 +783,6 @@
         "CVE-2026-90436",
         "CVE-2026-90817"
       ]
-    },
-    {
-      "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
-      "source": "CSO Online",
-      "date": "2026-11-18T11:58:53.000Z",
-      "summary": "Attackers briefly hijacked Microsoft’s official Agent Framework package on PyPI and used it to distribute credential-stealing malware capable of harvesting cloud tokens, developer secrets and CI/CD credentials from developer workstations and automated build systems, according to multiple security researchers.\nTwo malicious versions of the package, 1.26.1 and 1.26.2, appeared on PyPI on November 17 and stayed live for less than an hour.\n“The package is a credential stealer: it harvests environmen",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -1112,6 +1113,85 @@
   ],
   "clusters": [
     {
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "date": "2026-11-23T09:11:56.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-131914"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 67
+    },
+    {
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today.\n\nThe company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+      "date": "2026-11-23T09:04:08.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Clever AI prompt ideas every security leader should steal",
+      "summary": "For all the talk of AI use by attackers and defenders, little attention is paid to ways CISOs and their security pros can leverage AI uniquely to expediate tasks, cut through the noise, facilitate decision-making, and potentially save big on auditing.\nSeveral specific AI prompts can help security leaders and staff handle multiple critical tasks not typically associated with AI for cyber defense, such as risk management, compliance, policy development, and critical thinking.\nDeveloping truly usef",
+      "url": "https://www.csoonline.com/article/4248701/clever-ai-prompt-ideas-every-security-leader-should-steal.html",
+      "date": "2026-11-23T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "AI-Assisted Cyberattacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
+      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country.\n\nThis unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
+      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
+      "date": "2026-11-23T08:24:15.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
       "title": "ISC Stormcast For Monday, November 23rd, 2026 https://isc.sans.edu/podcastdetail/10190, (Mon, Nov 23rd)",
       "summary": "",
       "url": "https://isc.sans.edu/diary/rss/33548",
@@ -1128,7 +1208,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 24
     },
     {
       "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
@@ -1147,7 +1227,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 21
     },
     {
       "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
@@ -1166,7 +1246,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 17
     },
     {
       "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
@@ -1185,7 +1265,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
       "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
@@ -1204,7 +1284,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
@@ -1225,7 +1305,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
@@ -1244,7 +1324,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 49
+      "score": 48
     },
     {
       "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
@@ -1263,7 +1343,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
@@ -1287,7 +1367,26 @@
         "CVE-2026-129448"
       ],
       "articleCount": 1,
-      "score": 61
+      "score": 60
+    },
+    {
+      "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
+      "summary": "Identity, runtime and development controls are converging as enterprises are tasked with keeping agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+      "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
+      "date": "2026-11-21T01:31:23.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 13
     },
     {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
@@ -1306,7 +1405,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -1325,7 +1424,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 25
     },
     {
       "title": "F5 scrambles to fix more critical BIG-IP security flaws",
@@ -1344,7 +1443,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
@@ -1383,7 +1482,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
@@ -1404,7 +1503,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "What We Missed: Nvidia CEO Scandal Rocks AI Industry",
@@ -1423,7 +1522,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
@@ -1442,7 +1541,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
@@ -1461,28 +1560,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
-    },
-    {
-      "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
-      "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean.\n\nOn a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts with AMD processors and nested virtualization enabled.\n\nFixed kernels shipped",
-      "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
-      "date": "2026-11-20T12:20:00.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2026-99312"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
@@ -1523,44 +1601,6 @@
       "score": 58
     },
     {
-      "title": "The Path to AI Autonomy in the SOC",
-      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027.\n\nThe pressure",
-      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
-      "date": "2026-11-20T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
-    },
-    {
-      "title": "SonicWall Warns Gen 6 Firewalls Won't Get Security Patches, Even for Critical Flaws",
-      "summary": "SonicWall has urged all customers still running Generation 6 firewalls to retire and replace them immediately and stop exposing the devices on the internet edge, citing security risks fueled by AI-assisted attacks.\n\n\"Attackers now use automation and AI to find and exploit unsupported edge devices faster than ever,\" SonicWall said. \"We expect internet-facing Gen 6 firewalls to be actively",
-      "url": "https://thehackernews.com/2026/11/sonicwall-warns-gen-6-firewalls-wont.html",
-      "date": "2026-11-20T10:38:22.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 12
-    },
-    {
       "title": "Do AI’s mathematical advances put PKI under threat?",
       "summary": "Warnings by a leading cryptographer that industry-wide public-key cryptography could fail because of advances in AI has sparked a debate in the security community.\nIn a series of post on X, Johns Hopkins cryptographer Matthew Green warned that existing public-key cryptography systems were at risk because machines have begun outperforming humans in their ability to address some mathematical problems.\n“I think there is a 1% chance we live in Minicrypt, and a 15% chance we functionally lose confide",
       "url": "https://www.csoonline.com/article/4248694/do-ais-mathematical-advances-put-pki-under-threat.html",
@@ -1577,7 +1617,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
@@ -1616,7 +1656,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
@@ -1635,7 +1675,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Qwen Incidents Show Self-Hosted AI Models Need Stronger Steering",
@@ -1678,7 +1718,7 @@
         "CVE-2026-123890"
       ],
       "articleCount": 1,
-      "score": 58
+      "score": 57
     },
     {
       "title": "Second Norwegian Energy Company Breached in 2 Days",
@@ -1896,7 +1936,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
@@ -1922,25 +1962,6 @@
       "summary": "The state-sponsored threat group is using data stolen from one victim to target others via convincing impersonations and social engineering attacks.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/cold-relic-turns-one-cloud-breach-into-another",
       "date": "2026-11-18T21:59:46.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 11
-    },
-    {
-      "title": "Strike Graph Launches Integration AI to Automate Continuous Compliance Evidence Using Any Existing Tool",
-      "summary": "New agentic AI solution leverages APIs to collect compliance evidence from systems and applies it to over 30 frameworks with no duplicate work.",
-      "url": "https://www.darkreading.com/cyber-risk/strike-graph-launches-integration-ai-to-automate-continuous-compliance-evidence-using-any-existing-tool",
-      "date": "2026-11-18T20:45:49.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -2011,25 +2032,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 23
-    },
-    {
-      "title": "Attackers hijack Microsoft’s agent-framework package to steal Azure and CI credentials",
-      "summary": "Attackers briefly hijacked Microsoft’s official Agent Framework package on PyPI and used it to distribute credential-stealing malware capable of harvesting cloud tokens, developer secrets and CI/CD credentials from developer workstations and automated build systems, according to multiple security researchers.\nTwo malicious versions of the package, 1.26.1 and 1.26.2, appeared on PyPI on November 17 and stayed live for less than an hour.\n“The package is a credential stealer: it harvests environmen",
-      "url": "https://www.csoonline.com/article/4250156/attackers-hijack-microsofts-agent-framework-package-to-steal-azure-and-ci-credentials.html",
-      "date": "2026-11-18T11:58:53.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
     },
     {
       "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
@@ -2421,6 +2423,28 @@
   ],
   "top3": [
     {
+      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
+      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
+      "date": "2026-11-23T09:11:56.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-131914"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 67
+    },
+    {
       "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
       "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly.\n\nSecurity firm pwn.ai showed this week that ordinary upload,",
       "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
@@ -2437,45 +2461,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
+      "score": 30
     },
     {
-      "title": "ISC Stormcast For Monday, November 23rd, 2026 https://isc.sans.edu/podcastdetail/10190, (Mon, Nov 23rd)",
-      "summary": "",
-      "url": "https://isc.sans.edu/diary/rss/33548",
-      "date": "2026-11-23T02:00:04.000Z",
+      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
+      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today.\n\nThe company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
+      "date": "2026-11-23T09:04:08.000Z",
       "severity": "Low",
       "tags": [
         "General"
       ],
       "sources": [
-        "SANS Internet Storm Center"
+        "The Hacker News"
       ],
       "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
-    },
-    {
-      "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
-      "summary": "BLUF: Debian and Ubuntu dropped a config directive in the rsyslogd package in early 2023.",
-      "url": "https://isc.sans.edu/diary/rss/33530",
-      "date": "2026-11-22T18:40:18.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 25
+      "score": 28
     }
   ],
   "sourcesUsed": [
@@ -2488,5 +2493,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-23T02:32:47.570Z"
+  "lastUpdated": "2026-11-23T11:15:05.085Z"
 }
