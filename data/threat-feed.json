@@ -1,6 +1,195 @@
 {
   "articles": [
     {
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "source": "The Hacker News",
+      "date": "2026-11-24T16:54:07.000Z",
+      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus.\n\nCentral to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "source": "The Hacker News",
+      "date": "2026-11-24T13:28:26.000Z",
+      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.\n\nThe critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\").\n\n\"A malicious actor with",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-123903"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "source": "The Hacker News",
+      "date": "2026-11-24T13:28:21.000Z",
+      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team.\n\nThe cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
+      "severity": "Medium",
+      "tags": [
+        "Data Breach"
+      ],
+      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "source": "The Hacker News",
+      "date": "2026-11-24T12:42:09.000Z",
+      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "source": "The Hacker News",
+      "date": "2026-11-24T12:02:00.000Z",
+      "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday.\n\nThe same loading behavior bypassed Oracle VirtualBox's process hardening on Windows hosts, tracked as CVE-2026-87268, and Windows code integrity, tracked",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-87268"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "source": "The Hacker News",
+      "date": "2026-11-24T12:01:54.000Z",
+      "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose?\n\nAccording to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations, repeated checks, and unnecessary escalations continue to drain resources.\n\nAs",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+      "source": "CISA Advisories",
+      "date": "2026-11-24T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSchneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local att",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Danfoss AK-SM 8xxA Series",
+      "source": "CISA Advisories",
+      "date": "2026-11-24T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges.\nThe following versions of Danfoss AK-SM 8xxA Series are affected:\nAK-SM8xxA <=5.4.0 (CVE-2026-129713)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nDanfoss\nAK-SM8xxA\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nStack-based Buffer Overflow\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Commercial Facilities\nCountries/Areas Deployed: Worldwide\nCompany Headquarters Location: Denmark\nVulnera",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-129713"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "AutomationDirect C-More EA9 Programming Software",
+      "source": "CISA Advisories",
+      "date": "2026-11-24T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file.\nThe following versions of AutomationDirect C-More EA9 Programming Software are affected:\nC-More EA9 Programming Software <=V6.80 (CVE-2026-127280)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nAutomationDirect\nC-More EA9 Programming Software\n\n\n\n\n\n\n1 Vulnerability\n\n",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-127280"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
+      "source": "CSO Online",
+      "date": "2026-11-24T11:48:59.000Z",
+      "summary": "Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromised. \nMicrosoft said in an Azure Service Health security advisory sent to customers that it identified the vulnerability on Nov. 18 and deployed a mitigation the following day. The advisory, tracking ID",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "source": "The Hacker News",
+      "date": "2026-11-24T10:44:49.000Z",
+      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi.\n\n\"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+      "source": "The Hacker News",
+      "date": "2026-11-24T08:34:20.000Z",
+      "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed.\n\nThe company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
       "source": "The Hacker News",
       "date": "2026-11-24T06:02:57.000Z",
@@ -174,63 +363,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-      "source": "The Hacker News",
-      "date": "2026-11-23T13:22:20.000Z",
-      "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code.\n\nThe vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1.\n\n\"Binary-parser before 2.3.1 contains a code injection vulnerability that allows",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-134814"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
-      "source": "The Hacker News",
-      "date": "2026-11-23T12:41:04.000Z",
-      "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers.\n\nThe activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host.\n\n\"On November 12, 2026, we observed one managed service",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-84869"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-84869"
-      ],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
-      "source": "The Hacker News",
-      "date": "2026-11-23T12:28:09.000Z",
-      "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers.\n\nThe bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-134624"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-134624"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-134624"
-      ]
-    },
-    {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-23T12:00:00.000Z",
@@ -270,39 +402,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "source": "The Hacker News",
-      "date": "2026-11-23T09:11:56.000Z",
-      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Remote Code Execution"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-131914"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
-      "source": "The Hacker News",
-      "date": "2026-11-23T09:04:08.000Z",
-      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today.\n\nThe company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Clever AI prompt ideas every security leader should steal",
       "source": "CSO Online",
       "date": "2026-11-23T08:25:00.000Z",
@@ -312,21 +411,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4248701/clever-ai-prompt-ideas-every-security-leader-should-steal.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
-      "source": "The Hacker News",
-      "date": "2026-11-23T08:24:15.000Z",
-      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country.\n\nThis unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -363,40 +447,10 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
-      "source": "The Hacker News",
-      "date": "2026-11-22T05:06:55.000Z",
-      "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-      "source": "The Hacker News",
-      "date": "2026-11-22T05:03:41.000Z",
-      "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly.\n\nSecurity firm pwn.ai showed this week that ordinary upload,",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
       "source": "Dark Reading",
       "date": "2026-11-21T01:31:23.000Z",
-      "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+      "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned jobs. But vendors' approaches vary, so CISOs face a choice.",
       "severity": "Low",
       "tags": [
         "General"
@@ -484,7 +538,7 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "In Security, Words Matter as Much as Tools, Maybe More",
+      "title": "In Security, Words Matter as Much as Tools — Maybe More",
       "source": "Dark Reading",
       "date": "2026-11-20T18:35:40.000Z",
       "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
@@ -517,7 +571,7 @@
       "title": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
       "source": "Dark Reading",
       "date": "2026-11-20T13:51:30.000Z",
-      "summary": "Microsoft uses its Ignite technical conference to announce new AI agent security tools and transparency standards to protect enterprise systems.",
+      "summary": "At its Ignite technical conference, Microsoft announced AI agent security tools and transparency standards to protect enterprise systems.",
       "severity": "Medium",
       "tags": [
         "Widely-Used Software"
@@ -677,6 +731,23 @@
       "recentlyAddedToKev": []
     },
     {
+      "title": "Autonomy Logic OpenPLC Runtime",
+      "source": "CISA Advisories",
+      "date": "2026-11-19T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.\nThe following versions of Autonomy Logic OpenPLC Runtime are affected:\nOpenPLC Runtime <=4.2.4 (CVE-2026-126088)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nAutonomy Logic\nOpenPLC Runtime\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nConcurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Ene",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-126088"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "libumqtt",
       "source": "CISA Advisories",
       "date": "2026-11-19T12:00:00.000Z",
@@ -690,23 +761,6 @@
       "impactScore": 3,
       "cveMatches": [
         "CVE-2026-125132"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Autonomy Logic OpenPLC Runtime",
-      "source": "CISA Advisories",
-      "date": "2026-11-19T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow several unauthenticated admin accounts to be created.\nThe following versions of Autonomy Logic OpenPLC Runtime are affected:\nOpenPLC Runtime <=4.2.4 (CVE-2026-126088)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nAutonomy Logic\nOpenPLC Runtime\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nConcurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Critical Manufacturing, Ene",
-      "severity": "Medium",
-      "tags": [
-        "Critical Infrastructure"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-323-01",
-      "impactScore": 2,
-      "cveMatches": [
-        "CVE-2026-126088"
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -781,21 +835,6 @@
         "Remote Code Execution"
       ],
       "url": "https://www.csoonline.com/article/4250460/ai-unearths-internet-breaker-flaws-in-nginx-web-server.html",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
-      "source": "CSO Online",
-      "date": "2026-11-18T20:39:16.000Z",
-      "summary": "When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE).\nWith Java being all-but-ubiquitous in today’s enterprise, coupled with the inability of CISOs to have visibility into every instance of it in their estate, this means that the bug could be a big problem for I",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "url": "https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html",
       "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -878,18 +917,18 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Siemens ROS#",
+      "title": "Siemens SIMATIC WinCC",
       "source": "CISA Advisories",
       "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version.\nThe following versions of Siemens ROS# are affected:\nROS# vers:intdot/<2.3.1 (CVE-2026-109097)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nSiemens\nROS#\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nImproper",
+      "summary": "View CSAF\nSummary\nGraphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available.\nThe following versions of Siemens SIMATIC WinCC are affected:\nSIMATIC WinCC V7.5 vers:all/* (CVE-2026-59082)\nSIMATIC WinCC V8.0 vers:all/* (CVE-2026-59082)\nSI",
       "severity": "Low",
       "tags": [
         "General"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
       "impactScore": 0,
       "cveMatches": [
-        "CVE-2026-109097"
+        "CVE-2026-59082"
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -929,58 +968,6 @@
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\n.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the latest version.\nThe following versions of Siemens .NET Client Library for SIMATIC S7 Webserver API are affected:\n.NET Client Library for SIMATIC S7 Webs",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Critical Java Vulnerability Requires Immediate Patching",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "Purpose\nCISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938. This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM), which is part of the Java Development Kit (JDK). Specially crafted Base64 input could crash the JVM and allow for unauthenticated remote code execution.\nActions to take\nCISA urges organizations to take the following actions:",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software"
-      ],
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-114938"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Siemens Industrial Software Products",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Softw",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-111497"
-      ],
       "recentlyAddedToKev": []
     },
     {
@@ -1122,6 +1109,243 @@
   ],
   "clusters": [
     {
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus.\n\nCentral to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "date": "2026-11-24T16:54:07.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 41
+    },
+    {
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.\n\nThe critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\").\n\n\"A malicious actor with",
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "date": "2026-11-24T13:28:26.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-123903"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 63
+    },
+    {
+      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
+      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team.\n\nThe cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
+      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
+      "date": "2026-11-24T13:28:21.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Data Breach"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 37
+    },
+    {
+      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+      "date": "2026-11-24T12:42:09.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
+    },
+    {
+      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
+      "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday.\n\nThe same loading behavior bypassed Oracle VirtualBox's process hardening on Windows hosts, tracked as CVE-2026-87268, and Windows code integrity, tracked",
+      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
+      "date": "2026-11-24T12:02:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-87268"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 36
+    },
+    {
+      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
+      "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose?\n\nAccording to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations, repeated checks, and unnecessary escalations continue to drain resources.\n\nAs",
+      "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
+      "date": "2026-11-24T12:01:54.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Danfoss AK-SM 8xxA Series",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges.\nThe following versions of Danfoss AK-SM 8xxA Series are affected:\nAK-SM8xxA <=5.4.0 (CVE-2026-129713)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nDanfoss\nAK-SM8xxA\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nStack-based Buffer Overflow\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Commercial Facilities\nCountries/Areas Deployed: Worldwide\nCompany Headquarters Location: Denmark\nVulnera",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+      "date": "2026-11-24T12:00:00.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [
+        "CVE-2026-129713"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+      "summary": "View CSAF\nSummary\nSchneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local att",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+      "date": "2026-11-24T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "AutomationDirect C-More EA9 Programming Software",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file.\nThe following versions of AutomationDirect C-More EA9 Programming Software are affected:\nC-More EA9 Programming Software <=V6.80 (CVE-2026-127280)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nAutomationDirect\nC-More EA9 Programming Software\n\n\n\n\n\n\n1 Vulnerability\n\n",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+      "date": "2026-11-24T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [
+        "CVE-2026-127280"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
+      "summary": "Microsoft is warning customers that attackers exploited a flaw in Azure API Management Classic tiers to steal stored secrets, an intrusion that Norway’s National Security Authority has linked to breaches at two energy companies and says organizations should assume exposed credentials were compromised. \nMicrosoft said in an Azure Service Health security advisory sent to customers that it identified the vulnerability on Nov. 18 and deployed a mitigation the following day. The advisory, tracking ID",
+      "url": "https://www.csoonline.com/article/4252513/attackers-exploited-an-azure-api-management-flaw-to-steal-secrets-microsoft-warns.html",
+      "date": "2026-11-24T11:48:59.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 36
+    },
+    {
+      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
+      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi.\n\n\"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
+      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
+      "date": "2026-11-24T10:44:49.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 35
+    },
+    {
+      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
+      "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed.\n\nThe company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released",
+      "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
+      "date": "2026-11-24T08:34:20.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 24
+    },
+    {
       "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
       "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime.\n\n\"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X.\n\nThe AI upstart called the initiative a",
       "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
@@ -1138,7 +1362,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 33
     },
     {
       "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
@@ -1162,7 +1386,7 @@
         "CVE-2026-134624"
       ],
       "articleCount": 1,
-      "score": 80
+      "score": 74
     },
     {
       "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
@@ -1181,7 +1405,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 21
     },
     {
       "title": "ISC Stormcast For Tuesday, November 24th, 2026 https://isc.sans.edu/podcastdetail/10192, (Tue, Nov 24th)",
@@ -1200,7 +1424,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 2,
-      "score": 27
+      "score": 21
     },
     {
       "title": "Industrial Serial Gateways Broadcast That They're Insecure",
@@ -1219,7 +1443,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 20
     },
     {
       "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
@@ -1238,7 +1462,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 20
     },
     {
       "title": "US Cyber Director Pick Signals Shift Toward Expertise",
@@ -1257,7 +1481,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 19
     },
     {
       "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
@@ -1276,7 +1500,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 31
     },
     {
       "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
@@ -1295,7 +1519,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 19
     },
     {
       "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
@@ -1314,7 +1538,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 56
+      "score": 52
     },
     {
       "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
@@ -1334,74 +1558,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 58
-    },
-    {
-      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
-      "summary": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code.\n\nThe vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting binary-parser versions prior to 2.3.1.\n\n\"Binary-parser before 2.3.1 contains a code injection vulnerability that allows",
-      "url": "https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html",
-      "date": "2026-11-23T13:22:20.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-134814"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
-      "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers.\n\nThe activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host.\n\n\"On November 12, 2026, we observed one managed service",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
-      "date": "2026-11-23T12:41:04.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-84869"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-84869"
-      ],
-      "articleCount": 1,
-      "score": 65
-    },
-    {
-      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
-      "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers.\n\nThe bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the",
-      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-      "date": "2026-11-23T12:28:09.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-134624"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-134624"
-      ],
-      "articleCount": 1,
-      "score": 65
+      "score": 54
     },
     {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
@@ -1426,7 +1583,7 @@
         "CVE-2026-134624"
       ],
       "articleCount": 1,
-      "score": 64
+      "score": 61
     },
     {
       "title": "CrowdStrike buys missing network security piece in $43.9B Zscaler deal",
@@ -1445,48 +1602,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Hackers Exploit Critical ASP.NET Anti-CSRF Library Flaw Allowing Unauthenticated RCE",
-      "summary": "Cybersecurity researchers have urged users to discontinue using a legacy ASP.NET anti-CSRF library named Idunno.AntiCsrf (\"Idunno.AntiCsrf.dll\") following the discovery of a critical vulnerability that has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-131914, carries a CVSS score of 9.3 out of 10.0. The issue affects versions 0.9.1.0 and 0.9.1 Beta, and relates to an",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html",
-      "date": "2026-11-23T09:11:56.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-131914"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 58
-    },
-    {
-      "title": "Hackers Exploited GL.iNet Cloud Flaw to Install Malware on Routers and KVM Devices",
-      "summary": "Hackers exploited a vulnerability in GL.iNet's GoodCloud remote management service to install malware on some customer routers and KVM devices, the maker of travel routers and remote-access KVM hardware said in a security notice updated today.\n\nThe company identified and fixed the flaw on Friday and blocked the access the attacker used, so devices can no longer be infected through this route.",
-      "url": "https://thehackernews.com/2026/11/hackers-exploited-glinet-cloud-flaw-to.html",
-      "date": "2026-11-23T09:04:08.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Clever AI prompt ideas every security leader should steal",
@@ -1505,26 +1621,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
-    },
-    {
-      "title": "AI-Assisted Cyber Attacks Trigger Unauthorized Payments at Indian Banks and Fintech Firms",
-      "summary": "The Indian Computer Emergency Response Team (CERT-In) has warned that threat actors are carrying out artificial intelligence (AI)-assisted cyber attacks targeting information and communication technology (ICT) assets in the country.\n\nThis unsanctioned activity has resulted in unauthorized financial transactions at banking and financial services entities, as well as technology service providers",
-      "url": "https://thehackernews.com/2026/11/ai-assisted-cyberattacks-trigger.html",
-      "date": "2026-11-23T08:24:15.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
+      "score": 16
     },
     {
       "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
@@ -1543,49 +1640,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
-      "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
-      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
-      "date": "2026-11-22T05:06:55.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
       "score": 14
     },
     {
-      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
-      "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly.\n\nSecurity firm pwn.ai showed this week that ordinary upload,",
-      "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
-      "date": "2026-11-22T05:03:41.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 26
-    },
-    {
       "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
-      "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned tasks. But vendors' approaches vary, so CISOs face a choice.",
+      "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned jobs. But vendors' approaches vary, so CISOs face a choice.",
       "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
       "date": "2026-11-21T01:31:23.000Z",
       "severity": "Low",
@@ -1638,7 +1697,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "F5 scrambles to fix more critical BIG-IP security flaws",
@@ -1699,7 +1758,7 @@
       "score": 11
     },
     {
-      "title": "In Security, Words Matter as Much as Tools, Maybe More",
+      "title": "In Security, Words Matter as Much as Tools — Maybe More",
       "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
       "url": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
       "date": "2026-11-20T18:35:40.000Z",
@@ -1738,7 +1797,7 @@
     },
     {
       "title": "Microsoft Debuts Offensive, Defensive Security Tools for the AI Era",
-      "summary": "Microsoft uses its Ignite technical conference to announce new AI agent security tools and transparency standards to protect enterprise systems.",
+      "summary": "At its Ignite technical conference, Microsoft announced AI agent security tools and transparency standards to protect enterprise systems.",
       "url": "https://www.darkreading.com/endpoint-security/microsoft-offense-defense-ai-security-tools",
       "date": "2026-11-20T13:51:30.000Z",
       "severity": "Medium",
@@ -1810,7 +1869,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
@@ -1911,7 +1970,7 @@
         "CVE-2026-123890"
       ],
       "articleCount": 1,
-      "score": 57
+      "score": 56
     },
     {
       "title": "libumqtt",
@@ -1933,7 +1992,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 34
     },
     {
       "title": "Autonomy Logic OpenPLC Runtime",
@@ -2053,26 +2112,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
-    },
-    {
-      "title": "A new critical Java hole illustrates the enterprise IT visibility problem",
-      "summary": "When cybersecurity research firm Calif published details Tuesday of a potentially major Java security flaw, dubbed Java4Shell, it described an unauthenticated attacker’s ability to read Java heap memory, steal private keys, tokens, and session secrets, and reach remote code execution (RCE).\nWith Java being all-but-ubiquitous in today’s enterprise, coupled with the inability of CISOs to have visibility into every instance of it in their estate, this means that the bug could be a big problem for I",
-      "url": "https://www.csoonline.com/article/4250390/a-new-critical-java-hole-illustrates-the-enterprise-it-visibility-problem.html",
-      "date": "2026-11-18T20:39:16.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -2113,54 +2153,9 @@
       "score": 10
     },
     {
-      "title": "Siemens Industrial Software Products",
-      "summary": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Softw",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-      "date": "2026-11-17T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-111497"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-111497"
-      ],
-      "articleCount": 1,
-      "score": 54
-    },
-    {
-      "title": "Critical Java Vulnerability Requires Immediate Patching",
-      "summary": "Purpose\nCISA strongly urges organizations to immediately patch the recently disclosed Oracle Java vulnerability CVE-2026-114938. This critical memory-corruption vulnerability, known as “Java4Shell,” affects the Base64 decoder of the x86-64 HotSpot Java Virtual Machine (JVM), which is part of the Java Development Kit (JDK). Specially crafted Base64 input could crash the JVM and allow for unauthenticated remote code execution.\nActions to take\nCISA urges organizations to take the following actions:",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/17/critical-java-vulnerability-requires-immediate-patching",
-      "date": "2026-11-17T12:00:00.000Z",
-      "severity": "High",
-      "tags": [
-        "Remote Code Execution",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-114938"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 34
-    },
-    {
-      "title": "Siemens ROS#",
-      "summary": "View CSAF\nSummary\nROS# before version 2.3.1 contains a code injection vulnerability that could allow an attacker that is able to pass a crafted message definition file to the user to inject arbitrary code into the generated program. Siemens has released a new version for ROS# and recommends to update to the latest version.\nThe following versions of Siemens ROS# are affected:\nROS# vers:intdot/<2.3.1 (CVE-2026-109097)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.2\nSiemens\nROS#\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nImproper",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-06",
+      "title": "Siemens SIMATIC WinCC",
+      "summary": "View CSAF\nSummary\nGraphics Designer of SIMATIC WinCC before V8.2 contains an implicit active content execution vulnerability upon opening files, which could allow an attacker to cause arbitrary code execution on the device. Siemens is preparing fixes and recommends specific mitigations for products where fixes are not or not yet available.\nThe following versions of Siemens SIMATIC WinCC are affected:\nSIMATIC WinCC V7.5 vers:all/* (CVE-2026-59082)\nSIMATIC WinCC V8.0 vers:all/* (CVE-2026-59082)\nSI",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-09",
       "date": "2026-11-17T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -2172,7 +2167,7 @@
       "sourceCount": 1,
       "impactScore": 0,
       "cveMatches": [
-        "CVE-2026-109097"
+        "CVE-2026-59082"
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
@@ -2208,25 +2203,6 @@
       "title": "Siemens Mendix Studio Pro",
       "summary": "View CSAF\nSummary\nMendix Studio Pro contains multiple vulnerabilities in the MCP Server, that could allow an attacker with network access to interact with the server remotely or trick a user's browser into sending unauthorized requests, potentially leading to unauthorized data access, tool execution, or system compromise. Siemens has released new versions for the affected products and recommends to update to the latest versions.\nThe following versions of Siemens Mendix Studio Pro are affected:\nM",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-05",
-      "date": "2026-11-17T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Siemens .NET Client Library for SIMATIC S7 Webserver API",
-      "summary": "View CSAF\nSummary\n.NET Client Library for SIMATIC S7 Webserver API contains multiple vulnerabilities that could allow an attacker to obtain sensitive information or write arbitrary files outside the intended download directory. Siemens has released a new version for .NET Client Library for SIMATIC S7 Webserver API and recommends to update to the latest version.\nThe following versions of Siemens .NET Client Library for SIMATIC S7 Webserver API are affected:\n.NET Client Library for SIMATIC S7 Webs",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-02",
       "date": "2026-11-17T12:00:00.000Z",
       "severity": "Low",
       "tags": [
@@ -2438,53 +2414,54 @@
         "CVE-2026-134624"
       ],
       "articleCount": 1,
-      "score": 80
+      "score": 74
     },
     {
-      "title": "Hackers Exploit Critical ScreenConnect Flaw to Hijack MSP Technician PCs Without Warning",
-      "summary": "Threat actors are exploiting a now-patched security flaw in ConnectWise ScreenConnect to target managed service provider (MSP) servers.\n\nThe activity revolves around CVE-2026-84869 (CVSS score: 9.9), a critical ScreenConnect client flaw that allows a guest to transfer and execute a malicious payload on a connecting technician's host.\n\n\"On November 12, 2026, we observed one managed service",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html",
-      "date": "2026-11-23T12:41:04.000Z",
+      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
+      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.\n\nThe critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\").\n\n\"A malicious actor with",
+      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
+      "date": "2026-11-24T13:28:26.000Z",
       "severity": "Critical",
       "tags": [
-        "Confirmed in CISA KEV Catalog"
+        "Zero-Day",
+        "Widely-Used Software"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 3,
+      "impactScore": 4,
       "cveMatches": [
-        "CVE-2026-84869"
+        "CVE-2026-123903"
       ],
-      "knownExploitedCves": [
-        "CVE-2026-84869"
-      ],
+      "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 65
+      "score": 63
     },
     {
-      "title": "N-able Discloses Critical Mail Assure Vulnerability Found During Breach Investigation",
-      "summary": "N-able yesterday disclosed a critical flaw it found while investigating the breach of its Mail Assure and SpamExperts Hosted Cloud, an email filtering service it runs for managed service providers.\n\nThe bug, tracked as CVE-2026-134624, is a server-side request forgery (SSRF) flaw. It allowed a user with high-level API access to open connections to internal systems of the user's choosing on the",
-      "url": "https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html",
-      "date": "2026-11-23T12:28:09.000Z",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-133968 Project MONAI MONAI Label Path Traversal Vulnerability\n CVE-2026-134624 N-able Mail Assure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability\nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.\nBinding Operational Directive (BOD) 26-04: Prioritizin",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/23/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-23T12:00:00.000Z",
       "severity": "Critical",
       "tags": [
         "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
-        "The Hacker News"
+        "CISA Advisories"
       ],
       "sourceCount": 1,
       "impactScore": 3,
       "cveMatches": [
+        "CVE-2026-133968",
         "CVE-2026-134624"
       ],
       "knownExploitedCves": [
+        "CVE-2026-133968",
         "CVE-2026-134624"
       ],
       "articleCount": 1,
-      "score": 65
+      "score": 61
     }
   ],
   "sourcesUsed": [
@@ -2497,5 +2474,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-24T06:50:12.825Z"
+  "lastUpdated": "2026-11-24T18:42:41.040Z"
 }
