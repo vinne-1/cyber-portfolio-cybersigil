@@ -1,6 +1,53 @@
 {
   "articles": [
     {
+      "title": "Broadcom issues fixes for 23 new VMware flaws, three critical",
+      "source": "CSO Online",
+      "date": "2026-11-25T20:07:57.000Z",
+      "summary": "Broadcom on Tuesday reported almost two dozen new security vulnerabilities in VMware, adding to a lengthy list of fixes from this month alone.\nThe most serious of the flaws in the current advisory is a vCenter authentication bypass vulnerability, CVE-2026-123903, assigned a CVSSv3 base score of 9.8 (Critical). “A malicious actor with network access to vCenter may exploit this issue to bypass authentication and gain unauthorized access to the system,” it said. \nIn a supplemental document accompan",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4253329/broadcom-issues-fixes-for-23-new-vmware-flaws-three-critical.html",
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-123903"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
+      "source": "Dark Reading",
+      "date": "2026-11-25T15:48:04.000Z",
+      "summary": "Researchers discovered 13 malicious NuGet packages as part of a fake recruitment campaign that spreads malware and gives attackers access to developers' machines.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "It's a Bot World. We're Just Living in It",
+      "source": "Dark Reading",
+      "date": "2026-11-25T15:20:27.000Z",
+      "summary": "Bot detection has become a losing game. Security teams need to limit privileged access for humans and their machine counterparts equally.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyber-risk/bot-world-just-living",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
       "source": "Dark Reading",
       "date": "2026-11-25T15:00:00.000Z",
@@ -10,6 +57,70 @@
         "General"
       ],
       "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Latin America Sees Cyberattacks on Ports, Pipelines &amp; Manufacturing",
+      "source": "Dark Reading",
+      "date": "2026-11-25T14:00:00.000Z",
+      "summary": "From the Port of Santos in Brazil to a pipeline in Argentina, cyberattacks are increasingly affecting industrial systems throughout the region.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Check Point security management servers hit in global cyberattack campaign",
+      "source": "CSO Online",
+      "date": "2026-11-25T13:09:29.000Z",
+      "summary": "An active intrusion campaign targeting Check Point security management servers has been uncovered, with confirmed attack activity observed between October 17 and November 2, 2026, impacting 22 organizations globally.\nTracked by cybersecurity firm GreyNoise as GreyNoise Threat 13 (GT13), the campaign does not appear to be focused on a single region or industry. Impacted organizations span assets across the US, the UK, Ireland, France, the Netherlands, Greece, Germany, Austria, Bulgaria, Poland, I",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+      "source": "The Hacker News",
+      "date": "2026-11-25T12:48:54.000Z",
+      "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.\n\nThe vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -\n\n\n  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-120705",
+        "CVE-2026-129243"
+      ],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+      "source": "The Hacker News",
+      "date": "2026-11-25T12:30:08.000Z",
+      "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline.\n\nThe bureau collects suspicious activity reports and other Bank Secrecy Act (BSA) filings from banks and other financial",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -29,6 +140,36 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
+    },
+    {
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "source": "CISA Advisories",
+      "date": "2026-11-25T12:00:00.000Z",
+      "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability\nCVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability \nCVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability \nCVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnera",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406"
+      ]
     },
     {
       "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
@@ -248,6 +389,21 @@
       "recentlyAddedToKev": []
     },
     {
+      "title": "How Southeastern University Got a Handle on Its Data",
+      "source": "Dark Reading",
+      "date": "2026-11-24T15:46:46.000Z",
+      "summary": "Data security posture management (DSPM) allowed the university to uncover sensitive information, tighten access controls, and lay the groundwork for safer AI adoption.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
       "source": "The Hacker News",
       "date": "2026-11-24T13:28:26.000Z",
@@ -281,33 +437,18 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-      "source": "The Hacker News",
-      "date": "2026-11-24T12:42:09.000Z",
-      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
-      "severity": "Medium",
+      "title": "AutomationDirect C-More EA9 Programming Software",
+      "source": "CISA Advisories",
+      "date": "2026-11-24T12:00:00.000Z",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file.\nThe following versions of AutomationDirect C-More EA9 Programming Software are affected:\nC-More EA9 Programming Software <=V6.80 (CVE-2026-127280)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nAutomationDirect\nC-More EA9 Programming Software\n\n\n\n\n\n\n1 Vulnerability\n\n",
+      "severity": "Low",
       "tags": [
-        "Supply Chain"
+        "General"
       ],
-      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
-      "source": "The Hacker News",
-      "date": "2026-11-24T12:02:00.000Z",
-      "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday.\n\nThe same loading behavior bypassed Oracle VirtualBox's process hardening on Windows hosts, tracked as CVE-2026-87268, and Windows code integrity, tracked",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
-      "impactScore": 1,
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
+      "impactScore": 0,
       "cveMatches": [
-        "CVE-2026-87268"
+        "CVE-2026-127280"
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -341,23 +482,6 @@
       ]
     },
     {
-      "title": "Danfoss AK-SM 8xxA Series",
-      "source": "CISA Advisories",
-      "date": "2026-11-24T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges.\nThe following versions of Danfoss AK-SM 8xxA Series are affected:\nAK-SM8xxA <=5.4.0 (CVE-2026-129713)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nDanfoss\nAK-SM8xxA\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nStack-based Buffer Overflow\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Commercial Facilities\nCountries/Areas Deployed: Worldwide\nCompany Headquarters Location: Denmark\nVulnera",
-      "severity": "Medium",
-      "tags": [
-        "Critical Infrastructure"
-      ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
-      "impactScore": 2,
-      "cveMatches": [
-        "CVE-2026-129713"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
       "source": "CISA Advisories",
       "date": "2026-11-24T12:00:00.000Z",
@@ -373,18 +497,18 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "AutomationDirect C-More EA9 Programming Software",
+      "title": "Danfoss AK-SM 8xxA Series",
       "source": "CISA Advisories",
       "date": "2026-11-24T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow attackers to corrupt application memory and cause instability or a crash, potentially leading to arbitrary code execution, if a user is convinced to open a malicious file.\nThe following versions of AutomationDirect C-More EA9 Programming Software are affected:\nC-More EA9 Programming Software <=V6.80 (CVE-2026-127280)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 7.8\nAutomationDirect\nC-More EA9 Programming Software\n\n\n\n\n\n\n1 Vulnerability\n\n",
-      "severity": "Low",
+      "summary": "View CSAF\nSummary\nSuccessful exploitation of this vulnerability could allow an attacker to execute arbitrary code with webserver privileges.\nThe following versions of Danfoss AK-SM 8xxA Series are affected:\nAK-SM8xxA <=5.4.0 (CVE-2026-129713)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 9.8\nDanfoss\nAK-SM8xxA\n\n\n\n\n\n\n1 Vulnerability\n\n\n\n\nStack-based Buffer Overflow\n\n\n\n\nBackground\nCritical Infrastructure Sectors: Commercial Facilities\nCountries/Areas Deployed: Worldwide\nCompany Headquarters Location: Denmark\nVulnera",
+      "severity": "Medium",
       "tags": [
-        "General"
+        "Critical Infrastructure"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-01",
-      "impactScore": 0,
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-03",
+      "impactScore": 2,
       "cveMatches": [
-        "CVE-2026-127280"
+        "CVE-2026-129713"
       ],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -495,21 +619,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
-      "source": "Dark Reading",
-      "date": "2026-11-23T16:17:21.000Z",
-      "summary": "A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app.",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-23T12:00:00.000Z",
@@ -594,21 +703,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
-      "source": "Dark Reading",
-      "date": "2026-11-21T01:31:23.000Z",
-      "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned jobs. But vendors' approaches vary, so CISOs face a choice.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
       "source": "CSO Online",
       "date": "2026-11-21T00:39:17.000Z",
@@ -648,37 +742,6 @@
         "General"
       ],
       "url": "https://www.csoonline.com/article/4251711/f5-scrambles-to-fix-more-critical-big-ip-security-flaws-2.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
-      "source": "Dark Reading",
-      "date": "2026-11-20T21:03:27.000Z",
-      "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
-      "impactScore": 4,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
-      "source": "Dark Reading",
-      "date": "2026-11-20T20:43:45.000Z",
-      "summary": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -747,21 +810,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "European Commission HR hit by cyber attack",
-      "source": "CSO Online",
-      "date": "2026-11-20T02:08:48.000Z",
-      "summary": "Barely a week after the US Federal Bureau of Investigation (FBI) warned companies of the cyber attacker interest in an open source penetration testing tool called ARTEX, the European Commission has confirmed that attackers armed with that tool broke into its HR systems.\nThe attack, which Commission officials detected on October 22, forced them to shut off much of the access to the systems for more than 10 days.\n“As a protective and preventive measure, we temporarily took down several application",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4251068/european-commission-hr-hit-by-cyber-attack.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-20T02:00:02.000Z",
@@ -775,28 +823,6 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
-    },
-    {
-      "title": "Critical flaw in VMware vCenter allows authentication bypass",
-      "source": "CSO Online",
-      "date": "2026-11-19T21:07:25.000Z",
-      "summary": "Broadcom has released patches for bugs in multiple products, one of which, fixing a VMware vCenter authentication bypass vulnerability, is rated 9.8 out of 10 in severity.\nThe company’s advisory describes the flaw, tracked as CVE-2026-123890, as “an authentication bypass vulnerability in the VMware Directory Service,” that could let a threat actor with network access gain unauthorized access to the system, and says there are no workarounds. It advises immediate patching.\nBroadcom has provided fi",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-123890"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123890"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-123890"
-      ]
     },
     {
       "title": "Elecbrakes EB2, VM1, ELBC2000",
@@ -959,42 +985,22 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808",
+      "title": "Siemens Industrial Software Products",
       "source": "CISA Advisories",
       "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information\nThe following versions of Siemens RUGGEDCOM APE1808 are affected:\nRUGGEDCOM APE1808 vers:all/* (CVE-2026-106175)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 2.3\nSiemens\nRUGGEDCOM APE18",
-      "severity": "Medium",
+      "summary": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Softw",
+      "severity": "Critical",
       "tags": [
-        "Widely-Used Software"
+        "Confirmed in CISA KEV Catalog"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
-      "impactScore": 1,
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
+      "impactScore": 3,
       "cveMatches": [
-        "CVE-2026-106175"
+        "CVE-2026-111497"
       ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Dorsett Controls InfoScan",
-      "source": "CISA Advisories",
-      "date": "2026-11-17T12:00:00.000Z",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications.\nThe following versions of Dorsett Controls InfoScan are affected:\nInfoScan <=1.45.0 (CVE-2026-117659, CVE-2026-120157, CVE-2026-120255, CVE-2026-120260, CVE-2026-120271, CVE-2026-120298)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nDorsett Controls\nInf",
-      "severity": "Low",
-      "tags": [
-        "General"
+      "knownExploitedCves": [
+        "CVE-2026-111497"
       ],
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-117659",
-        "CVE-2026-120157",
-        "CVE-2026-120255",
-        "CVE-2026-120260",
-        "CVE-2026-120271",
-        "CVE-2026-120298"
-      ],
-      "knownExploitedCves": [],
       "recentlyAddedToKev": []
     },
     {
@@ -1121,6 +1127,65 @@
   ],
   "clusters": [
     {
+      "title": "Broadcom issues fixes for 23 new VMware flaws, three critical",
+      "summary": "Broadcom on Tuesday reported almost two dozen new security vulnerabilities in VMware, adding to a lengthy list of fixes from this month alone.\nThe most serious of the flaws in the current advisory is a vCenter authentication bypass vulnerability, CVE-2026-123903, assigned a CVSSv3 base score of 9.8 (Critical). “A malicious actor with network access to vCenter may exploit this issue to bypass authentication and gain unauthorized access to the system,” it said. \nIn a supplemental document accompan",
+      "url": "https://www.csoonline.com/article/4253329/broadcom-issues-fixes-for-23-new-vmware-flaws-three-critical.html",
+      "date": "2026-11-25T20:07:57.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [
+        "CVE-2026-123903"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
+    },
+    {
+      "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
+      "summary": "Researchers discovered 13 malicious NuGet packages as part of a fake recruitment campaign that spreads malware and gives attackers access to developers' machines.",
+      "url": "https://www.darkreading.com/threat-intelligence/attackers-net-developers-poisoned-job-assessments",
+      "date": "2026-11-25T15:48:04.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "It's a Bot World. We're Just Living in It",
+      "summary": "Bot detection has become a losing game. Security teams need to limit privileged access for humans and their machine counterparts equally.",
+      "url": "https://www.darkreading.com/cyber-risk/bot-world-just-living",
+      "date": "2026-11-25T15:20:27.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
       "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
       "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
       "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
@@ -1137,7 +1202,87 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 30
+      "score": 26
+    },
+    {
+      "title": "Latin America Sees Cyberattacks on Ports, Pipelines &amp; Manufacturing",
+      "summary": "From the Port of Santos in Brazil to a pipeline in Argentina, cyberattacks are increasingly affecting industrial systems throughout the region.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/latin-america-cyberattacks-ports-pipelines-manufacturing",
+      "date": "2026-11-25T14:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "Check Point security management servers hit in global cyberattack campaign",
+      "summary": "An active intrusion campaign targeting Check Point security management servers has been uncovered, with confirmed attack activity observed between October 17 and November 2, 2026, impacting 22 organizations globally.\nTracked by cybersecurity firm GreyNoise as GreyNoise Threat 13 (GT13), the campaign does not appear to be focused on a single region or industry. Impacted organizations span assets across the US, the UK, Ireland, France, the Netherlands, Greece, Germany, Austria, Bulgaria, Poland, I",
+      "url": "https://www.csoonline.com/article/4253068/check-point-security-management-servers-hit-in-global-cyberattack-campaign.html",
+      "date": "2026-11-25T13:09:29.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 25
+    },
+    {
+      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+      "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.\n\nThe vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -\n\n\n  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+      "date": "2026-11-25T12:48:54.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited",
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-120705",
+        "CVE-2026-129243"
+      ],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 63
+    },
+    {
+      "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
+      "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline.\n\nThe bureau collects suspicious activity reports and other Bank Secrecy Act (BSA) filings from banks and other financial",
+      "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
+      "date": "2026-11-25T12:30:08.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 24
     },
     {
       "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
@@ -1156,7 +1301,47 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 24
+    },
+    {
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability\nCVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability \nCVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability \nCVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnera",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-25T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog",
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406",
+        "CVE-2026-131914",
+        "CVE-2026-132165",
+        "CVE-2026-132224",
+        "CVE-2026-133968",
+        "CVE-2026-134624"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406",
+        "CVE-2026-131914",
+        "CVE-2026-132165",
+        "CVE-2026-132224",
+        "CVE-2026-133968",
+        "CVE-2026-134624"
+      ],
+      "articleCount": 3,
+      "score": 73
     },
     {
       "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
@@ -1175,7 +1360,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 24
     },
     {
       "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
@@ -1199,7 +1384,7 @@
         "CVE-2026-132165"
       ],
       "articleCount": 1,
-      "score": 77
+      "score": 72
     },
     {
       "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
@@ -1218,7 +1403,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 24
     },
     {
       "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
@@ -1237,7 +1422,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 40
+      "score": 35
     },
     {
       "title": "Despite doom and gloom headlines, AI attacks are thin on the ground",
@@ -1256,7 +1441,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 23
     },
     {
       "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
@@ -1275,7 +1460,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 22
     },
     {
       "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
@@ -1294,7 +1479,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 22
     },
     {
       "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
@@ -1313,7 +1498,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 22
     },
     {
       "title": "Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive",
@@ -1332,7 +1517,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 31
     },
     {
       "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
@@ -1351,7 +1536,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 24
+      "score": 20
     },
     {
       "title": "Satellites Have a Ground-Level Cybersecurity Problem",
@@ -1370,7 +1555,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
@@ -1389,7 +1574,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
@@ -1408,7 +1593,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
@@ -1427,7 +1612,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 30
+    },
+    {
+      "title": "How Southeastern University Got a Handle on Its Data",
+      "summary": "Data security posture management (DSPM) allowed the university to uncover sensitive information, tighten access controls, and lay the groundwork for safer AI adoption.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data",
+      "date": "2026-11-24T15:46:46.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 17
     },
     {
       "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
@@ -1449,7 +1653,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 55
+      "score": 53
     },
     {
       "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
@@ -1468,79 +1672,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
-    },
-    {
-      "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
-      "summary": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it.\n\nIn March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
-      "url": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
-      "date": "2026-11-24T12:42:09.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Supply Chain"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 31
-    },
-    {
-      "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
-      "summary": "A quirk in how the .NET Framework loads a program file let a local attacker run untrusted code past two separate protections on Windows built to block it, Google Project Zero researcher James Forshaw showed in a write-up published yesterday.\n\nThe same loading behavior bypassed Oracle VirtualBox's process hardening on Windows hosts, tracked as CVE-2026-87268, and Windows code integrity, tracked",
-      "url": "https://thehackernews.com/2026/11/google-researcher-shows-how-single-bit.html",
-      "date": "2026-11-24T12:02:00.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [
-        "CVE-2026-87268"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 29
-    },
-    {
-      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability \nCVE-2026-132165 Drupal Core Remote Code Execution Vulnerability \nCVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks t",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-      "date": "2026-11-24T12:00:00.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Remote Code Execution",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-131914",
-        "CVE-2026-132165",
-        "CVE-2026-132224",
-        "CVE-2026-133968",
-        "CVE-2026-134624"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-131914",
-        "CVE-2026-132165",
-        "CVE-2026-132224",
-        "CVE-2026-133968",
-        "CVE-2026-134624"
-      ],
-      "articleCount": 2,
-      "score": 67
+      "score": 27
     },
     {
       "title": "Danfoss AK-SM 8xxA Series",
@@ -1561,26 +1693,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 31
-    },
-    {
-      "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
-      "summary": "View CSAF\nSummary\nSchneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local att",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
-      "date": "2026-11-24T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
+      "score": 29
     },
     {
       "title": "AutomationDirect C-More EA9 Programming Software",
@@ -1601,7 +1714,26 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 16
+    },
+    {
+      "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
+      "summary": "View CSAF\nSummary\nSchneider Electric is aware of a vulnerability in its EcoStruxure™ Power Build Rapsody product. The EcoStruxure™ Power Build Rapsody is used to enter or import the single line diagram, to get the extensive bill of material of your switchboard, including all devices, connection items, and mounting components. Failure to apply the remediations provided below may risk memory corruption, heap-based buffer overflow, and/or stack-based buffer overflow, which could result in local att",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-328-02",
+      "date": "2026-11-24T12:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 16
     },
     {
       "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
@@ -1620,7 +1752,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
@@ -1639,7 +1771,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Industrial Serial Gateways Broadcast That They're Insecure",
@@ -1658,7 +1790,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
@@ -1677,7 +1809,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "US Cyber Director Pick Signals Shift Toward Expertise",
@@ -1696,7 +1828,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
@@ -1715,26 +1847,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
-    },
-    {
-      "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
-      "summary": "A China-nexus actor used the Cairn penetration testing tool in attacks against East Asian universities, exploiting a zero-day in a medical imaging app.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
-      "date": "2026-11-23T16:17:21.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 48
+      "score": 26
     },
     {
       "title": "CrowdStrike buys missing network security piece in $43.9B Zscaler deal",
@@ -1753,7 +1866,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Clever AI prompt ideas every security leader should steal",
@@ -1772,7 +1885,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
@@ -1791,26 +1904,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
-    },
-    {
-      "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
-      "summary": "Identity, runtime, and development controls are converging as enterprises look for ways to keep agents within their assigned jobs. But vendors' approaches vary, so CISOs face a choice.",
-      "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-bring-enterprises-new-access-control-challenges",
-      "date": "2026-11-21T01:31:23.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
+      "score": 11
     },
     {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
@@ -1861,45 +1955,6 @@
       ],
       "sources": [
         "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
-      "summary": "During the last wave of major VMware vCenter security updates, a China-nexus threat group likely already had its next zero-day up its sleeve.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-armory-castle-vmware-vcenter-zero-day",
-      "date": "2026-11-20T21:03:27.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 46
-    },
-    {
-      "title": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
-      "summary": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk.",
-      "url": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
-      "date": "2026-11-20T20:43:45.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
       ],
       "sourceCount": 1,
       "impactScore": 0,
@@ -1986,25 +2041,6 @@
       "score": 34
     },
     {
-      "title": "European Commission HR hit by cyber attack",
-      "summary": "Barely a week after the US Federal Bureau of Investigation (FBI) warned companies of the cyber attacker interest in an open source penetration testing tool called ARTEX, the European Commission has confirmed that attackers armed with that tool broke into its HR systems.\nThe attack, which Commission officials detected on October 22, forced them to shut off much of the access to the systems for more than 10 days.\n“As a protective and preventive measure, we temporarily took down several application",
-      "url": "https://www.csoonline.com/article/4251068/european-commission-hr-hit-by-cyber-attack.html",
-      "date": "2026-11-20T02:08:48.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
       "summary": "",
       "url": "https://isc.sans.edu/diary/rss/33538",
@@ -2022,30 +2058,6 @@
       "knownExploitedCves": [],
       "articleCount": 3,
       "score": 10
-    },
-    {
-      "title": "Critical flaw in VMware vCenter allows authentication bypass",
-      "summary": "Broadcom has released patches for bugs in multiple products, one of which, fixing a VMware vCenter authentication bypass vulnerability, is rated 9.8 out of 10 in severity.\nThe company’s advisory describes the flaw, tracked as CVE-2026-123890, as “an authentication bypass vulnerability in the VMware Directory Service,” that could let a threat actor with network access gain unauthorized access to the system, and says there are no workarounds. It advises immediate patching.\nBroadcom has provided fi",
-      "url": "https://www.csoonline.com/article/4251012/critical-flaw-in-vmware-vcenter-allows-authentication-bypass-2.html",
-      "date": "2026-11-19T21:07:25.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-123890"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-123890"
-      ],
-      "articleCount": 1,
-      "score": 56
     },
     {
       "title": "libumqtt",
@@ -2171,51 +2183,27 @@
       "score": 10
     },
     {
-      "title": "Siemens RUGGEDCOM APE1808",
-      "summary": "View CSAF\nSummary\nFortinet has published information on a Double Free vulnerability in FortiOS. This advisory lists the related Siemens Industrial products. Siemens recommends to update Fortigate NGFW to V7.6.9 or later following the secure update recommendation procedure. Contact customer support to receive detailed information\nThe following versions of Siemens RUGGEDCOM APE1808 are affected:\nRUGGEDCOM APE1808 vers:all/* (CVE-2026-106175)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 2.3\nSiemens\nRUGGEDCOM APE18",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-07",
+      "title": "Siemens Industrial Software Products",
+      "summary": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Softw",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
       "date": "2026-11-17T12:00:00.000Z",
-      "severity": "Medium",
+      "severity": "Critical",
       "tags": [
-        "Widely-Used Software"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "CISA Advisories"
       ],
       "sourceCount": 1,
-      "impactScore": 1,
+      "impactScore": 3,
       "cveMatches": [
-        "CVE-2026-106175"
+        "CVE-2026-111497"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-111497"
+      ],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Dorsett Controls InfoScan",
-      "summary": "View CSAF\nSummary\nSuccessful exploitation of these vulnerabilities could allow an attacker to retrieve sensitive system information, access application data without authorization, recover stored credentials, or intercept and manipulate network communications.\nThe following versions of Dorsett Controls InfoScan are affected:\nInfoScan <=1.45.0 (CVE-2026-117659, CVE-2026-120157, CVE-2026-120255, CVE-2026-120260, CVE-2026-120271, CVE-2026-120298)\nCVSS\nVendor\nEquipment\n\n\n\n\nv3 8.1\nDorsett Controls\nInf",
-      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-01",
-      "date": "2026-11-17T12:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [
-        "CVE-2026-117659",
-        "CVE-2026-120157",
-        "CVE-2026-120255",
-        "CVE-2026-120260",
-        "CVE-2026-120271",
-        "CVE-2026-120298"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
+      "score": 54
     },
     {
       "title": "Who Runs the Ransomware Group Qilin?",
@@ -2373,6 +2361,46 @@
   ],
   "top3": [
     {
+      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
+      "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability\nCVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability \nCVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability \nCVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnera",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
+      "date": "2026-11-25T12:00:00.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog",
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "CISA Advisories"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406",
+        "CVE-2026-131914",
+        "CVE-2026-132165",
+        "CVE-2026-132224",
+        "CVE-2026-133968",
+        "CVE-2026-134624"
+      ],
+      "knownExploitedCves": [
+        "CVE-2023-25914",
+        "CVE-2023-25915",
+        "CVE-2025-41450",
+        "CVE-2026-103406",
+        "CVE-2026-131914",
+        "CVE-2026-132165",
+        "CVE-2026-132224",
+        "CVE-2026-133968",
+        "CVE-2026-134624"
+      ],
+      "articleCount": 3,
+      "score": 73
+    },
+    {
       "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
       "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
@@ -2394,61 +2422,30 @@
         "CVE-2026-132165"
       ],
       "articleCount": 1,
-      "score": 77
+      "score": 72
     },
     {
-      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability \nCVE-2026-132165 Drupal Core Remote Code Execution Vulnerability \nCVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks t",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
-      "date": "2026-11-24T12:00:00.000Z",
+      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
+      "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.\n\nThe vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -\n\n\n  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
+      "date": "2026-11-25T12:48:54.000Z",
       "severity": "Critical",
       "tags": [
-        "Remote Code Execution",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CISA Advisories"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-131914",
-        "CVE-2026-132165",
-        "CVE-2026-132224",
-        "CVE-2026-133968",
-        "CVE-2026-134624"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-131914",
-        "CVE-2026-132165",
-        "CVE-2026-132224",
-        "CVE-2026-133968",
-        "CVE-2026-134624"
-      ],
-      "articleCount": 2,
-      "score": 67
-    },
-    {
-      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
-      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.\n\nThe critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\").\n\n\"A malicious actor with",
-      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
-      "date": "2026-11-24T13:28:26.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
+        "Actively Exploited",
+        "Remote Code Execution"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 4,
+      "impactScore": 5,
       "cveMatches": [
-        "CVE-2026-123903"
+        "CVE-2026-120705",
+        "CVE-2026-129243"
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 55
+      "score": 63
     }
   ],
   "sourcesUsed": [
@@ -2461,5 +2458,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-25T12:33:38.384Z"
+  "lastUpdated": "2026-11-25T21:58:20.450Z"
 }
