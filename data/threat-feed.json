@@ -1,6 +1,178 @@
 {
   "articles": [
     {
+      "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
+      "source": "Dark Reading",
+      "date": "2026-11-25T15:00:00.000Z",
+      "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
+      "source": "CSO Online",
+      "date": "2026-11-25T12:06:00.000Z",
+      "summary": "Prompt wording meant to make AI agents more resourceful, such as telling them to search thoroughly or invoking authority, sharply raises the odds they will reach outside a poorly secured sandbox, Anthropic has found in its latest evaluation.\nThe evaluation, called Siren, gives Claude models routine dev-ops tasks inside deliberately weakened sandboxes and places a “honeypot,” such as a credential, file, or emulated internet service, outside the boundary, Anthropic researchers Oscar O’Rahilly and ",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4253053/prompting-ai-to-be-thorough-can-drive-sandbox-escapes-anthropic-says.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+      "source": "The Hacker News",
+      "date": "2026-11-25T11:51:48.000Z",
+      "summary": "TL;DR\n\n\n  More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.\n  Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+      "source": "The Hacker News",
+      "date": "2026-11-25T11:23:26.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
+      "severity": "Critical",
+      "tags": [
+        "Remote Code Execution",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-132165"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-132165"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-132165"
+      ]
+    },
+    {
+      "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+      "source": "The Hacker News",
+      "date": "2026-11-25T10:43:07.000Z",
+      "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday.\n\nAbdulrahman Alfozan, a 35-year-old Saudi national, was arrested on October 9, 2026, for allegedly bugging the artificial intelligence (AI) company's offices with the aim",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+      "source": "The Hacker News",
+      "date": "2026-11-25T09:06:59.000Z",
+      "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from.\n\nThe flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had every server on a patched build within about 15 minutes of the first malicious request.\n\nChecks",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Despite doom and gloom headlines, AI attacks are thin on the ground",
+      "source": "CSO Online",
+      "date": "2026-11-25T08:25:00.000Z",
+      "summary": "When Anthropic announced its Mythos AI model, it was touted as being so cyber capable that only a handful of organizations could have early access to harden their defenses before the public — and attackers — got their hands on the technology.\nSoon after, AI companies, one after the other, warned that their AI models were smart enough to discover previously unknown exploits and escape containment.\nAnd a new worldview took hold, that security organizations were soon to see a wave of new kinds of a",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.csoonline.com/article/4250533/despite-doom-and-gloom-headlines-ai-attacks-are-thin-on-the-ground.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+      "source": "The Hacker News",
+      "date": "2026-11-25T06:50:19.000Z",
+      "summary": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world.\n\nThe intrusion activity, tracked by GreyNoise under the moniker GreyNoise Threat 13 (GT13), is assessed to have targeted organizations in the financial services, energy, government,",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+      "source": "The Hacker News",
+      "date": "2026-11-25T06:37:06.000Z",
+      "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts.\n\nThe attacks have targeted financial services, healthcare, and legal services located in the U.S., the U.K., and Australia. Other targets include construction,",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+      "source": "The Hacker News",
+      "date": "2026-11-25T06:21:12.000Z",
+      "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account.\n\nThe WordPress plugins team has proactively detected and blocked the threat before it could be officially released. Visiting each plugin listing now",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive",
+      "source": "CSO Online",
+      "date": "2026-11-25T04:04:12.000Z",
+      "summary": "Autonomous AI agents are rapidly and dramatically transforming the cybersecurity landscape for both defenders and adversaries.\nIn hopes of giving security teams a head start and pitting machine against machine, Cisco and OpenAI have released a new open source project, dubbed Shirudo (Japanese for “shield”). The Shirudo platform launches small, temporary mitigations to help protect systems until patches can be deployed. AI agents can replace flawed code with fixed code, which human teams can test",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://www.csoonline.com/article/4252893/cisco-and-openai-dispatch-ai-agents-to-shield-vulnerable-systems-before-permanent-patches-arrive-2.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-25T02:00:03.000Z",
@@ -141,21 +313,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
-      "source": "The Hacker News",
-      "date": "2026-11-24T12:01:54.000Z",
-      "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose?\n\nAccording to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations, repeated checks, and unnecessary escalations continue to drain resources.\n\nAs",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-24T12:00:00.000Z",
@@ -248,73 +405,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
-      "source": "The Hacker News",
-      "date": "2026-11-24T10:44:49.000Z",
-      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi.\n\n\"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
-      "source": "The Hacker News",
-      "date": "2026-11-24T08:34:20.000Z",
-      "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed.\n\nThe company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
-      "source": "The Hacker News",
-      "date": "2026-11-24T06:02:57.000Z",
-      "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime.\n\n\"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X.\n\nThe AI upstart called the initiative a",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
-      "source": "The Hacker News",
-      "date": "2026-11-24T06:02:45.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe critical vulnerabilities are listed below -\n\n\n  CVE-2026-134624 (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
-      "impactScore": 6,
-      "cveMatches": [
-        "CVE-2026-134624"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-134624"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-134624"
-      ]
-    },
-    {
       "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-24T02:32:00.000Z",
@@ -405,21 +495,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-      "source": "The Hacker News",
-      "date": "2026-11-23T17:45:15.000Z",
-      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks.\n\nThe modified variant \"implements various tricks to hide itself from security tools,\"",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
       "source": "Dark Reading",
       "date": "2026-11-23T16:17:21.000Z",
@@ -430,22 +505,6 @@
       ],
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agents-flaw-discovery-root-access-11-minutes",
       "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-      "source": "The Hacker News",
-      "date": "2026-11-23T15:10:48.000Z",
-      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open.\n\nThis week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-      "impactScore": 4,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -626,21 +685,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "In Security, Words Matter as Much as Tools — Maybe More",
-      "source": "Dark Reading",
-      "date": "2026-11-20T18:35:40.000Z",
-      "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
       "source": "CISA Advisories",
       "date": "2026-11-20T12:00:00.000Z",
@@ -809,36 +853,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
-      "source": "CSO Online",
-      "date": "2026-11-19T11:36:10.000Z",
-      "summary": "Palo Alto Networks has agreed to buy Applied Compute in an all-stock deal valued at $4.5 billion, a move the company said will let it train, deploy and secure open-weight AI models for enterprises in the public cloud or in their own sovereign environments.\n“The acquisition will bring Applied Compute’s platform and world-class AI research team to Palo Alto Networks to help enterprises adopt AI securely, whether they choose open-weight models, closed frontier models, or both,” the company said in ",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4250669/palo-alto-networks-bets-4-5b-on-enterprise-ai-with-applied-compute-acquisition.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
-      "source": "CSO Online",
-      "date": "2026-11-19T09:00:00.000Z",
-      "summary": "We have never been short of vulnerabilities. We have always struggled with remedial work.\nFor decades, the cybersecurity industry has approached vulnerability management from the wrong end. The emphasis has consistently been on finding vulnerabilities, cataloguing them, scoring them and, more recently, prioritising them through increasingly sophisticated risk models.\nAn entire industry has developed around vulnerability scanning, exposure management, threat intelligence and remediation prioritiz",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4250261/vulnerability-management-the-cybersecurity-industry-is-still-solving-the-wrong-problem.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)",
       "source": "SANS Internet Storm Center",
       "date": "2026-11-19T02:00:03.000Z",
@@ -864,21 +878,6 @@
       ],
       "url": "https://isc.sans.edu/diary/rss/33534",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
-      "source": "CSO Online",
-      "date": "2026-11-18T23:36:40.000Z",
-      "summary": "Nginx, the web server estimated to power a third of the internet, has shipped fixes for multiple vulnerabilities, including a critical unauthenticated remote code execution flaw that puts millions of websites at risk and has existed in the code for over a decade. Researchers from several security firms independently found some of the same flaws by using AI agents, adding to a string of recent AI-discovered vulnerabilities in widely used internet technologies such as PHP, Node, OpenSSH, and Java.",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "url": "https://www.csoonline.com/article/4250460/ai-unearths-internet-breaker-flaws-in-nginx-web-server.html",
-      "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1122,6 +1121,220 @@
   ],
   "clusters": [
     {
+      "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
+      "summary": "Dark Reading Confidential Episode 23: Cyber insurers share their view of the AI-driven threat landscape and how mounting challenges are putting pressure on both sides of the policy, leaving the current model unsustainable.",
+      "url": "https://www.darkreading.com/cybersecurity-operations/cyber-insurers-see-new-ai-divide",
+      "date": "2026-11-25T15:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 30
+    },
+    {
+      "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
+      "summary": "Prompt wording meant to make AI agents more resourceful, such as telling them to search thoroughly or invoking authority, sharply raises the odds they will reach outside a poorly secured sandbox, Anthropic has found in its latest evaluation.\nThe evaluation, called Siren, gives Claude models routine dev-ops tasks inside deliberately weakened sandboxes and places a “honeypot,” such as a credential, file, or emulated internet service, outside the boundary, Anthropic researchers Oscar O’Rahilly and ",
+      "url": "https://www.csoonline.com/article/4253053/prompting-ai-to-be-thorough-can-drive-sandbox-escapes-anthropic-says.html",
+      "date": "2026-11-25T12:06:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
+      "summary": "TL;DR\n\n\n  More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.\n  Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the",
+      "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
+      "date": "2026-11-25T11:51:48.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
+      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+      "date": "2026-11-25T11:23:26.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Remote Code Execution",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-132165"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-132165"
+      ],
+      "articleCount": 1,
+      "score": 77
+    },
+    {
+      "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
+      "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday.\n\nAbdulrahman Alfozan, a 35-year-old Saudi national, was arrested on October 9, 2026, for allegedly bugging the artificial intelligence (AI) company's offices with the aim",
+      "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
+      "date": "2026-11-25T10:43:07.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
+      "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from.\n\nThe flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had every server on a patched build within about 15 minutes of the first malicious request.\n\nChecks",
+      "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
+      "date": "2026-11-25T09:06:59.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 40
+    },
+    {
+      "title": "Despite doom and gloom headlines, AI attacks are thin on the ground",
+      "summary": "When Anthropic announced its Mythos AI model, it was touted as being so cyber capable that only a handful of organizations could have early access to harden their defenses before the public — and attackers — got their hands on the technology.\nSoon after, AI companies, one after the other, warned that their AI models were smart enough to discover previously unknown exploits and escape containment.\nAnd a new worldview took hold, that security organizations were soon to see a wave of new kinds of a",
+      "url": "https://www.csoonline.com/article/4250533/despite-doom-and-gloom-headlines-ai-attacks-are-thin-on-the-ground.html",
+      "date": "2026-11-25T08:25:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
+      "summary": "An unknown threat actor has been using artificial intelligence (AI)-driven offensive tooling in a campaign targeting Check Point Security Management servers, impacting 22 distinct organizations across the world.\n\nThe intrusion activity, tracked by GreyNoise under the moniker GreyNoise Threat 13 (GT13), is assessed to have targeted organizations in the financial services, energy, government,",
+      "url": "https://thehackernews.com/2026/11/hackers-compromise-24-check-point.html",
+      "date": "2026-11-25T06:50:19.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
+      "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts.\n\nThe attacks have targeted financial services, healthcare, and legal services located in the U.S., the U.K., and Australia. Other targets include construction,",
+      "url": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
+      "date": "2026-11-25T06:37:06.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
+      "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account.\n\nThe WordPress plugins team has proactively detected and blocked the threat before it could be officially released. Visiting each plugin listing now",
+      "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
+      "date": "2026-11-25T06:21:12.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive",
+      "summary": "Autonomous AI agents are rapidly and dramatically transforming the cybersecurity landscape for both defenders and adversaries.\nIn hopes of giving security teams a head start and pitting machine against machine, Cisco and OpenAI have released a new open source project, dubbed Shirudo (Japanese for “shield”). The Shirudo platform launches small, temporary mitigations to help protect systems until patches can be deployed. AI agents can replace flawed code with fixed code, which human teams can test",
+      "url": "https://www.csoonline.com/article/4252893/cisco-and-openai-dispatch-ai-agents-to-shield-vulnerable-systems-before-permanent-patches-arrive-2.html",
+      "date": "2026-11-25T04:04:12.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 35
+    },
+    {
       "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
       "summary": "",
       "url": "https://isc.sans.edu/diary/rss/33554",
@@ -1138,7 +1351,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 29
+      "score": 24
     },
     {
       "title": "Satellites Have a Ground-Level Cybersecurity Problem",
@@ -1157,7 +1370,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 22
     },
     {
       "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
@@ -1176,7 +1389,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 22
     },
     {
       "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
@@ -1195,7 +1408,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 22
     },
     {
       "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
@@ -1214,7 +1427,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 37
+      "score": 33
     },
     {
       "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
@@ -1236,7 +1449,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 59
+      "score": 55
     },
     {
       "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
@@ -1255,7 +1468,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 29
     },
     {
       "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
@@ -1274,7 +1487,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 31
     },
     {
       "title": "Google Researcher Shows How a Single Bit Change in .NET Files Bypassed Windows Code Integrity",
@@ -1295,26 +1508,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
-    },
-    {
-      "title": "2027 SOC Budget Reset: 5 Priorities to Cut Costs and Reduce Cyber Risk",
-      "summary": "What if your biggest SOC budget problem isn't how much you spend, but how much analyst time you lose?\n\nAccording to ANY.RUN's estimates, SOC teams could recover 450 analyst hours per 1,000 investigated alerts through faster threat analysis and IOC research. That's a significant opportunity as manual investigations, repeated checks, and unnecessary escalations continue to drain resources.\n\nAs",
-      "url": "https://thehackernews.com/2026/11/2027-soc-budget-reset-5-priorities-to.html",
-      "date": "2026-11-24T12:01:54.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
+      "score": 29
     },
     {
       "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
@@ -1346,7 +1540,7 @@
         "CVE-2026-134624"
       ],
       "articleCount": 2,
-      "score": 70
+      "score": 67
     },
     {
       "title": "Danfoss AK-SM 8xxA Series",
@@ -1367,7 +1561,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
@@ -1386,7 +1580,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "AutomationDirect C-More EA9 Programming Software",
@@ -1407,7 +1601,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
@@ -1426,88 +1620,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 32
-    },
-    {
-      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
-      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi.\n\n\"An unknown actor has been actively looking for access tokens, secrets, and named values ​​in APIM,\" NSM said. \"It is still uncertain how",
-      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
-      "date": "2026-11-24T10:44:49.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 32
-    },
-    {
-      "title": "WHMCS SQL Injection Could Expose Customer Data and Admin Password Hashes without Login",
-      "summary": "A flaw in WHMCS's shopping cart, the billing and automation platform many web hosting companies use to run their businesses, could allow anyone on the internet to retrieve customer records and administrator password hashes from an installation's database. No login is needed.\n\nThe company disclosed the SQL injection yesterday along with two other flaws that need a logged-in client, and released",
-      "url": "https://thehackernews.com/2026/11/whmcs-sql-injection-flaw-could-expose.html",
-      "date": "2026-11-24T08:34:20.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 21
-    },
-    {
-      "title": "OpenAI and Cisco Unveil AI-Assisted Linux Security Tool to Block Exploits Before Patching",
-      "summary": "OpenAI and Cisco have teamed up to launch Shirudo (meaning \"shield\" in Japanese), an open-source Linux runtime that allows artificial intelligence (AI) agents to defend systems without downtime.\n\n\"It lets agents write dynamic eBPF controls to shield systems from exploits, giving defenders more time to test and roll out patches,\" OpenAI said in a post on X.\n\nThe AI upstart called the initiative a",
-      "url": "https://thehackernews.com/2026/11/openai-and-cisco-unveil-ai-assisted.html",
-      "date": "2026-11-24T06:02:57.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 30
-    },
-    {
-      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe critical vulnerabilities are listed below -\n\n\n  CVE-2026-134624 (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
-      "date": "2026-11-24T06:02:45.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 6,
-      "cveMatches": [
-        "CVE-2026-134624"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-134624"
-      ],
-      "articleCount": 1,
-      "score": 70
+      "score": 29
     },
     {
       "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
@@ -1526,7 +1639,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 19
+      "score": 16
     },
     {
       "title": "Industrial Serial Gateways Broadcast That They're Insecure",
@@ -1545,7 +1658,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
@@ -1564,7 +1677,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "US Cyber Director Pick Signals Shift Toward Expertise",
@@ -1583,7 +1696,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
@@ -1602,26 +1715,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
-    },
-    {
-      "title": "Webworm Suspected of Modifying SoftEther VPN to Evade Detection and Hide Remote Access",
-      "summary": "The China-aligned threat actor known as Webworm is suspected to be using a custom version of the open-source SoftEther VPN Bridge tool in an attempt to remove recognizable detection fingerprints, while disguising it as network-monitoring software to establish covert remote access to compromised networks.\n\nThe modified variant \"implements various tricks to hide itself from security tools,\"",
-      "url": "https://thehackernews.com/2026/11/webworm-suspected-of-modifying.html",
-      "date": "2026-11-23T17:45:15.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 16
+      "score": 27
     },
     {
       "title": "AI Agents Zip From Flaw Discovery to Root Access in 11 Minutes",
@@ -1640,27 +1734,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 50
-    },
-    {
-      "title": "⚡ Weekly Recap: VMware 0-Day, Java4Shell, NGINX2Root, Ruby2Shell, and a Whole Lot of Shell Trouble",
-      "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open.\n\nThis week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
-      "url": "https://thehackernews.com/2026/11/weekly-recap-vmware-0-day-java4shell.html",
-      "date": "2026-11-23T15:10:48.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 52
+      "score": 48
     },
     {
       "title": "CrowdStrike buys missing network security piece in $43.9B Zscaler deal",
@@ -1679,7 +1753,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Clever AI prompt ideas every security leader should steal",
@@ -1698,7 +1772,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 13
     },
     {
       "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
@@ -1717,7 +1791,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "How Security Vendors Are Tackling Access-Control Challenges for AI Agents",
@@ -1736,7 +1810,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
@@ -1755,7 +1829,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
@@ -1793,7 +1867,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "China's 'Armory Castle' Lays Siege to VMware vCenter Zero-Day",
@@ -1813,32 +1887,13 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 47
+      "score": 46
     },
     {
       "title": "Nok et norsk energiselskap har blitt utsatt for et datainnbrudd på to dager",
       "summary": "Det er ikke påvist noen konkret sammenheng mellom de to hendelsene, selv om de helt klart har mange likhetstrekk.",
       "url": "https://www.darkreading.com/cyberattacks-data-breaches/second-norwegian-energy-company-breached-norwegian",
       "date": "2026-11-20T20:43:45.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "In Security, Words Matter as Much as Tools — Maybe More",
-      "summary": "From talking cloud security to using AI, cyber leaders are finding that clear, disciplined communication is now a front-line defense capability across the enterprise.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/security-words-matter",
-      "date": "2026-11-20T18:35:40.000Z",
       "severity": "Low",
       "tags": [
         "General"
@@ -1928,7 +1983,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 34
     },
     {
       "title": "European Commission HR hit by cyber attack",
@@ -2033,7 +2088,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 22
     },
     {
       "title": "Elecbrakes EB2, VM1, ELBC2000",
@@ -2059,44 +2114,6 @@
       "score": 10
     },
     {
-      "title": "Palo Alto Networks bets $4.5B on enterprise AI with Applied Compute acquisition",
-      "summary": "Palo Alto Networks has agreed to buy Applied Compute in an all-stock deal valued at $4.5 billion, a move the company said will let it train, deploy and secure open-weight AI models for enterprises in the public cloud or in their own sovereign environments.\n“The acquisition will bring Applied Compute’s platform and world-class AI research team to Palo Alto Networks to help enterprises adopt AI securely, whether they choose open-weight models, closed frontier models, or both,” the company said in ",
-      "url": "https://www.csoonline.com/article/4250669/palo-alto-networks-bets-4-5b-on-enterprise-ai-with-applied-compute-acquisition.html",
-      "date": "2026-11-19T11:36:10.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "Vulnerability management: The cybersecurity industry is still solving the wrong problem",
-      "summary": "We have never been short of vulnerabilities. We have always struggled with remedial work.\nFor decades, the cybersecurity industry has approached vulnerability management from the wrong end. The emphasis has consistently been on finding vulnerabilities, cataloguing them, scoring them and, more recently, prioritising them through increasingly sophisticated risk models.\nAn entire industry has developed around vulnerability scanning, exposure management, threat intelligence and remediation prioritiz",
-      "url": "https://www.csoonline.com/article/4250261/vulnerability-management-the-cybersecurity-industry-is-still-solving-the-wrong-problem.html",
-      "date": "2026-11-19T09:00:00.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
       "title": "Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)",
       "summary": "[This is a Guest Diary by Kevin Truong, an ISC intern as part of the SANS.edu BACS program]",
       "url": "https://isc.sans.edu/diary/rss/33534",
@@ -2114,25 +2131,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
-    },
-    {
-      "title": "AI unearths ‘internet breaker’ flaws in Nginx web server",
-      "summary": "Nginx, the web server estimated to power a third of the internet, has shipped fixes for multiple vulnerabilities, including a critical unauthenticated remote code execution flaw that puts millions of websites at risk and has existed in the code for over a decade. Researchers from several security firms independently found some of the same flaws by using AI agents, adding to a string of recent AI-discovered vulnerabilities in widely used internet technologies such as PHP, Node, OpenSSH, and Java.",
-      "url": "https://www.csoonline.com/article/4250460/ai-unearths-internet-breaker-flaws-in-nginx-web-server.html",
-      "date": "2026-11-18T23:36:40.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 22
     },
     {
       "title": "Java4Shell, NGINX2Shell and more: Why we are not at \"Yellow\", (Wed, Nov 18th)",
@@ -2375,6 +2373,30 @@
   ],
   "top3": [
     {
+      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
+      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
+      "date": "2026-11-25T11:23:26.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Remote Code Execution",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [
+        "CVE-2026-132165"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-132165"
+      ],
+      "articleCount": 1,
+      "score": 77
+    },
+    {
       "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
       "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2026-131914 Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability \nCVE-2026-132165 Drupal Core Remote Code Execution Vulnerability \nCVE-2026-132224 Optimizely Web Experimentation External Control of Critical State Data Vulnerability \nThese types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks t",
       "url": "https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog",
@@ -2404,31 +2426,7 @@
         "CVE-2026-134624"
       ],
       "articleCount": 2,
-      "score": 70
-    },
-    {
-      "title": "Hackers Exploit N-able MailAssure Flaw While AI Agents Exploit MONAI Label Zero-Day",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added two flaws impacting N-able MailAssure and MONAI Label to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe critical vulnerabilities are listed below -\n\n\n  CVE-2026-134624 (CVSS score: 9.3) - A server-side request forgery (SSRF) vulnerability in N-able MailAssure's LDAP",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-able-mailassure-flaw.html",
-      "date": "2026-11-24T06:02:45.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 6,
-      "cveMatches": [
-        "CVE-2026-134624"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-134624"
-      ],
-      "articleCount": 1,
-      "score": 70
+      "score": 67
     },
     {
       "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
@@ -2450,7 +2448,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 59
+      "score": 55
     }
   ],
   "sourcesUsed": [
@@ -2463,5 +2461,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-25T02:57:46.042Z"
+  "lastUpdated": "2026-11-25T12:33:38.384Z"
 }
