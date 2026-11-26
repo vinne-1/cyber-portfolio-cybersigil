@@ -1,6 +1,129 @@
 {
   "articles": [
     {
+      "title": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
+      "source": "CSO Online",
+      "date": "2026-11-26T13:05:35.000Z",
+      "summary": "Palo Alto Networks has confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root on PAN-OS firewalls through the PHP2Shell vulnerabilities, and has shipped fixes six months after the bug was patched in Linux.\nThe vulnerability allows a locally authenticated, low-privileged attacker to escalate privileges to root.\n“Exploitation of CVE-2026-46300 has been observed targeting the Palo Alto Networks management interface exposed to the internet,” the company said in its November ",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html",
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-46300"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-46300"
+      ],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+      "source": "The Hacker News",
+      "date": "2026-11-26T10:57:55.000Z",
+      "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about.\n\nAt Push Security, we measure this as breakthrough rate: The share of attacks that get past email security, web gateways, and safe browsing to reach the user.\n\nHow an",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+      "source": "The Hacker News",
+      "date": "2026-11-26T10:57:25.000Z",
+      "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed.\n\n\"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
+      "source": "Dark Reading",
+      "date": "2026-11-26T08:00:00.000Z",
+      "summary": "A previously undocumented Iranian threat group called \"Volant Manticore\" is targeting Cypriot organizations as part of an intelligence-gathering effort for Tehran.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "source": "The Hacker News",
+      "date": "2026-11-26T07:02:34.000Z",
+      "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-136716",
+        "CVE-2026-132165"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-132165"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-132165"
+      ]
+    },
+    {
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "source": "The Hacker News",
+      "date": "2026-11-26T06:44:46.000Z",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week.\n\nThe Mitel MiCollab vulnerabilities are listed below -\n\n\n  CVE-2026-133275 (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-133275"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-133275"
+      ],
+      "recentlyAddedToKev": [
+        "CVE-2026-133275"
+      ]
+    },
+    {
+      "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+      "source": "The Hacker News",
+      "date": "2026-11-26T03:48:52.000Z",
+      "summary": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment.\n\n\"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket security researcher Kush Pandya said in a technical write-up. \"In the versions we analyzed, building or running a",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Broadcom issues fixes for 23 new VMware flaws, three critical",
       "source": "CSO Online",
       "date": "2026-11-25T20:07:57.000Z",
@@ -269,36 +392,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
-      "source": "The Hacker News",
-      "date": "2026-11-25T06:37:06.000Z",
-      "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts.\n\nThe attacks have targeted financial services, healthcare, and legal services located in the U.S., the U.K., and Australia. Other targets include construction,",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
-      "source": "The Hacker News",
-      "date": "2026-11-25T06:21:12.000Z",
-      "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account.\n\nThe WordPress plugins team has proactively detected and blocked the threat before it could be officially released. Visiting each plugin listing now",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive",
       "source": "CSO Online",
       "date": "2026-11-25T04:04:12.000Z",
@@ -374,21 +467,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
-      "source": "The Hacker News",
-      "date": "2026-11-24T16:54:07.000Z",
-      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus.\n\nCentral to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
-      "severity": "Medium",
-      "tags": [
-        "Critical Infrastructure"
-      ],
-      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "How Southeastern University Got a Handle on Its Data",
       "source": "Dark Reading",
       "date": "2026-11-24T15:46:46.000Z",
@@ -399,39 +477,6 @@
       ],
       "url": "https://www.darkreading.com/cybersecurity-operations/how-southeastern-university-handle-data",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
-      "source": "The Hacker News",
-      "date": "2026-11-24T13:28:26.000Z",
-      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.\n\nThe critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\").\n\n\"A malicious actor with",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-123903"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
-      "source": "The Hacker News",
-      "date": "2026-11-24T13:28:21.000Z",
-      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team.\n\nThe cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
-      "severity": "Medium",
-      "tags": [
-        "Data Breach"
-      ],
-      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
-      "impactScore": 1,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -599,21 +644,6 @@
       ],
       "url": "https://www.darkreading.com/cybersecurity-operations/us-cyber-director-pick-signals-shift-toward-expertise",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
-      "source": "Dark Reading",
-      "date": "2026-11-23T17:45:52.000Z",
-      "summary": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
-      "impactScore": 2,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -789,22 +819,6 @@
       ],
       "url": "https://www.csoonline.com/article/4248694/do-ais-mathematical-advances-put-pki-under-threat.html",
       "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
-      "source": "CSO Online",
-      "date": "2026-11-20T03:10:04.000Z",
-      "summary": "The most dangerous actor in a software supply chain may now be an automated script with powerful credentials and no idea where it’s sending them.\nResearchers from pen-testing company Cycode have discovered a now patched critical zero-click supply chain vulnerability in the open-source Windows Package Manager (WinGet), which sits on billions of devices worldwide.\nA single pull request could have tricked Microsoft’s internal tooling into freely handing over a moderator’s GitHub access token, with ",
-      "severity": "High",
-      "tags": [
-        "Supply Chain",
-        "Widely-Used Software"
-      ],
-      "url": "https://www.csoonline.com/article/4251117/a-single-pull-request-could-have-handed-attackers-the-keys-to-microsofts-software-supply-chain.html",
-      "impactScore": 3,
       "cveMatches": [],
       "knownExploitedCves": [],
       "recentlyAddedToKev": []
@@ -1127,6 +1141,153 @@
   ],
   "clusters": [
     {
+      "title": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
+      "summary": "Palo Alto Networks has confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root on PAN-OS firewalls through the PHP2Shell vulnerabilities, and has shipped fixes six months after the bug was patched in Linux.\nThe vulnerability allows a locally authenticated, low-privileged attacker to escalate privileges to root.\n“Exploitation of CVE-2026-46300 has been observed targeting the Palo Alto Networks management interface exposed to the internet,” the company said in its November ",
+      "url": "https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html",
+      "date": "2026-11-26T13:05:35.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 4,
+      "cveMatches": [
+        "CVE-2026-46300"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-46300"
+      ],
+      "articleCount": 1,
+      "score": 75
+    },
+    {
+      "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
+      "summary": "Every phishing attack has to get past email security, web filtering, and safe browsing before it reaches an employee. Some kits manage that far more often than others, and those are the kits that security teams need to know about.\n\nAt Push Security, we measure this as breakthrough rate: The share of attacks that get past email security, web gateways, and safe browsing to reach the user.\n\nHow an",
+      "url": "https://thehackernews.com/2026/11/most-wanted-phishing-kits-and.html",
+      "date": "2026-11-26T10:57:55.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
+      "summary": "Popular password management software 1Password on Wednesday disclosed a security incident involving its backend systems that led to the unauthorized access of some customer information, but emphasized that customer password vaults and other secrets were not accessed.\n\n\"While we took immediate steps to contain the incident, the attacker gained access to some of our backend systems and accessed a",
+      "url": "https://thehackernews.com/2026/11/1password-hacked-customer-data-and.html",
+      "date": "2026-11-26T10:57:25.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 28
+    },
+    {
+      "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
+      "summary": "A previously undocumented Iranian threat group called \"Volant Manticore\" is targeting Cypriot organizations as part of an intelligence-gathering effort for Tehran.",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/cyprus-espionage-target-iranian-hackers",
+      "date": "2026-11-26T08:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 26
+    },
+    {
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "date": "2026-11-26T07:02:34.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-136716",
+        "CVE-2026-132165"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-132165"
+      ],
+      "articleCount": 1,
+      "score": 70
+    },
+    {
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week.\n\nThe Mitel MiCollab vulnerabilities are listed below -\n\n\n  CVE-2026-133275 (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "date": "2026-11-26T06:44:46.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Confirmed in CISA KEV Catalog"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-133275"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-133275"
+      ],
+      "articleCount": 1,
+      "score": 69
+    },
+    {
+      "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
+      "summary": "Cybersecurity researchers have discovered 13 malicious NuGet packages that are designed to target Windows .NET developers under the guise of a fake take-home job assessment.\n\n\"Most of the packages pose as WinUI 3 and WPF [Windows Presentation Foundation] button controls,\" Socket security researcher Kush Pandya said in a technical write-up. \"In the versions we analyzed, building or running a",
+      "url": "https://thehackernews.com/2026/11/13-malicious-nuget-packages-turn-fake.html",
+      "date": "2026-11-26T03:48:52.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 34
+    },
+    {
       "title": "Broadcom issues fixes for 23 new VMware flaws, three critical",
       "summary": "Broadcom on Tuesday reported almost two dozen new security vulnerabilities in VMware, adding to a lengthy list of fixes from this month alone.\nThe most serious of the flaws in the current advisory is a vCenter authentication bypass vulnerability, CVE-2026-123903, assigned a CVSSv3 base score of 9.8 (Critical). “A malicious actor with network access to vCenter may exploit this issue to bypass authentication and gain unauthorized access to the system,” it said. \nIn a supplemental document accompan",
       "url": "https://www.csoonline.com/article/4253329/broadcom-issues-fixes-for-23-new-vmware-flaws-three-critical.html",
@@ -1145,7 +1306,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 31
     },
     {
       "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
@@ -1164,7 +1325,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 19
     },
     {
       "title": "It's a Bot World. We're Just Living in It",
@@ -1183,7 +1344,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 19
     },
     {
       "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
@@ -1202,7 +1363,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 19
     },
     {
       "title": "Latin America Sees Cyberattacks on Ports, Pipelines &amp; Manufacturing",
@@ -1221,7 +1382,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Check Point security management servers hit in global cyberattack campaign",
@@ -1240,7 +1401,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
@@ -1263,7 +1424,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 60
+      "score": 57
     },
     {
       "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
@@ -1282,7 +1443,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 18
     },
     {
       "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
@@ -1301,7 +1462,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 18
     },
     {
       "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
@@ -1341,7 +1502,7 @@
         "CVE-2026-134624"
       ],
       "articleCount": 3,
-      "score": 70
+      "score": 67
     },
     {
       "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
@@ -1360,7 +1521,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
@@ -1384,7 +1545,7 @@
         "CVE-2026-132165"
       ],
       "articleCount": 1,
-      "score": 70
+      "score": 66
     },
     {
       "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
@@ -1403,7 +1564,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
@@ -1422,7 +1583,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 30
     },
     {
       "title": "Despite doom and gloom headlines, AI attacks are thin on the ground",
@@ -1441,7 +1602,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 17
     },
     {
       "title": "Hackers Compromise 24 Check Point Management Servers in Suspected AI-Driven Attack Campaign",
@@ -1460,45 +1621,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "Com-Affiliated Hackers Hijack Cloud Accounts via Vishing for Data Theft and Extortion",
-      "summary": "Palo Alto Networks Unit 42 has disclosed that it's tracking and has responded to \"numerous waves of vishing attacks\" orchestrated by Com-affiliated threat actors since August 2026 that have led to data theft and extortion attempts.\n\nThe attacks have targeted financial services, healthcare, and legal services located in the U.S., the U.K., and Australia. Other targets include construction,",
-      "url": "https://thehackernews.com/2026/11/com-affiliated-hackers-hijack-cloud.html",
-      "date": "2026-11-25T06:37:06.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 20
-    },
-    {
-      "title": "WordPress Blocks Six Backdoored WP Connect Plugins Before Malicious Releases Go Live",
-      "summary": "WordPress has removed six WordPress plugins developed by WP Connect after they were backdoored on November 22, 2026, to enable arbitrary code execution on sites that have them installed, following a suspected compromise of the developer's account.\n\nThe WordPress plugins team has proactively detected and blocked the threat before it could be officially released. Visiting each plugin listing now",
-      "url": "https://thehackernews.com/2026/11/wordpress-blocks-six-backdoored-wp.html",
-      "date": "2026-11-25T06:21:12.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 19
+      "score": 17
     },
     {
       "title": "Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive",
@@ -1517,7 +1640,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 27
     },
     {
       "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
@@ -1536,7 +1659,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 18
+      "score": 16
     },
     {
       "title": "Satellites Have a Ground-Level Cybersecurity Problem",
@@ -1555,7 +1678,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
@@ -1574,7 +1697,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
@@ -1593,26 +1716,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
-    },
-    {
-      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
-      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus.\n\nCentral to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
-      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
-      "date": "2026-11-24T16:54:07.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Critical Infrastructure"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 28
+      "score": 15
     },
     {
       "title": "How Southeastern University Got a Handle on Its Data",
@@ -1631,48 +1735,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
-    },
-    {
-      "title": "VMware vCenter Hit by Another Critical 9.8-Rated Auth Bypass Flaw After Zero-Day Exploitation",
-      "summary": "Broadcom has shipped patches to address 23 vulnerabilities impacting VMware ESX, vCenter, Workstation, Fusion, and Avi Load Balancer, including one critical bug that could be abused to bypass authentication.\n\nThe critical vulnerability, tracked as CVE-2026-123903, is rated 9.8 out of 10.0 on the CVSS scoring system. It resides in the VMware Directory Service (\"vmdir\").\n\n\"A malicious actor with",
-      "url": "https://thehackernews.com/2026/11/vmware-vcenter-hit-by-another-critical.html",
-      "date": "2026-11-24T13:28:26.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Zero-Day",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-123903"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 52
-    },
-    {
-      "title": "Okta Links ShinyHunters-Associated Vishing Group to New INCEPTION Data Leak Site",
-      "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team.\n\nThe cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
-      "url": "https://thehackernews.com/2026/11/okta-links-shinyhunters-associated.html",
-      "date": "2026-11-24T13:28:21.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Data Breach"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 1,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 26
+      "score": 14
     },
     {
       "title": "Danfoss AK-SM 8xxA Series",
@@ -1693,7 +1756,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 28
+      "score": 26
     },
     {
       "title": "AutomationDirect C-More EA9 Programming Software",
@@ -1714,7 +1777,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
@@ -1733,7 +1796,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
@@ -1752,7 +1815,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)",
@@ -1771,7 +1834,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Industrial Serial Gateways Broadcast That They're Insecure",
@@ -1790,7 +1853,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
@@ -1809,7 +1872,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "US Cyber Director Pick Signals Shift Toward Expertise",
@@ -1828,26 +1891,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
-    },
-    {
-      "title": "Behind the Alias: How One Researcher Unmasked a Decade of Ransomware Actors",
-      "summary": "Ransomware isn't slowing down. A new framework gives security teams the edge to trace attackers back to their source.",
-      "url": "https://www.darkreading.com/cybersecurity-operations/alias-researcher-unmasked-ransomware-actors",
-      "date": "2026-11-23T17:45:52.000Z",
-      "severity": "Medium",
-      "tags": [
-        "Ransomware"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 2,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 25
+      "score": 12
     },
     {
       "title": "CrowdStrike buys missing network security piece in $43.9B Zscaler deal",
@@ -1866,7 +1910,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Clever AI prompt ideas every security leader should steal",
@@ -1885,7 +1929,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
@@ -2019,26 +2063,6 @@
       "knownExploitedCves": [],
       "articleCount": 1,
       "score": 10
-    },
-    {
-      "title": "A single pull request could have handed attackers the keys to Microsoft’s software supply chain",
-      "summary": "The most dangerous actor in a software supply chain may now be an automated script with powerful credentials and no idea where it’s sending them.\nResearchers from pen-testing company Cycode have discovered a now patched critical zero-click supply chain vulnerability in the open-source Windows Package Manager (WinGet), which sits on billions of devices worldwide.\nA single pull request could have tricked Microsoft’s internal tooling into freely handing over a moderator’s GitHub access token, with ",
-      "url": "https://www.csoonline.com/article/4251117/a-single-pull-request-could-have-handed-attackers-the-keys-to-microsofts-software-supply-chain.html",
-      "date": "2026-11-20T03:10:04.000Z",
-      "severity": "High",
-      "tags": [
-        "Supply Chain",
-        "Widely-Used Software"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 34
     },
     {
       "title": "ISC Stormcast For Friday, November 20th, 2026 https://isc.sans.edu/podcastdetail/10188, (Fri, Nov 20th)",
@@ -2361,91 +2385,75 @@
   ],
   "top3": [
     {
-      "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
-      "summary": "CISA has added 10 new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation.\nCVE-2023-25914 Danfoss AK-SM 800A Series Path Traversal Vulnerability\nCVE-2023-25915 Danfoss AK-SM 800A Series Improper Input Validation Vulnerability \nCVE-2025-41450 Danfoss AK-SM 800A Series Improper Authentication Vulnerability \nCVE-2026-103406 Hewlett Packard Enterprise (HPE) Juniper Session Smart Conductor and Session Smart Router OS Command Injection Vulnera",
-      "url": "https://www.cisa.gov/news-events/alerts/2026/11/25/cisa-adds-10-known-exploited-vulnerabilities-catalog",
-      "date": "2026-11-25T12:00:00.000Z",
+      "title": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
+      "summary": "Palo Alto Networks has confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root on PAN-OS firewalls through the PHP2Shell vulnerabilities, and has shipped fixes six months after the bug was patched in Linux.\nThe vulnerability allows a locally authenticated, low-privileged attacker to escalate privileges to root.\n“Exploitation of CVE-2026-46300 has been observed targeting the Palo Alto Networks management interface exposed to the internet,” the company said in its November ",
+      "url": "https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html",
+      "date": "2026-11-26T13:05:35.000Z",
       "severity": "Critical",
       "tags": [
-        "Confirmed in CISA KEV Catalog",
-        "Remote Code Execution"
+        "Widely-Used Software",
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
-        "CISA Advisories"
+        "CSO Online"
       ],
       "sourceCount": 1,
-      "impactScore": 5,
+      "impactScore": 4,
       "cveMatches": [
-        "CVE-2023-25914",
-        "CVE-2023-25915",
-        "CVE-2025-41450",
-        "CVE-2026-103406",
-        "CVE-2026-131914",
-        "CVE-2026-132165",
-        "CVE-2026-132224",
-        "CVE-2026-133968",
-        "CVE-2026-134624"
+        "CVE-2026-46300"
       ],
       "knownExploitedCves": [
-        "CVE-2023-25914",
-        "CVE-2023-25915",
-        "CVE-2025-41450",
-        "CVE-2026-103406",
-        "CVE-2026-131914",
-        "CVE-2026-132165",
-        "CVE-2026-132224",
-        "CVE-2026-133968",
-        "CVE-2026-134624"
+        "CVE-2026-46300"
       ],
-      "articleCount": 3,
+      "articleCount": 1,
+      "score": 75
+    },
+    {
+      "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
+      "summary": "Drupal has warned of a new \"highly critical\" security flaw impacting Drupal core that it said has been exploited in the wild.\n\nThe vulnerability, tracked as CVE-2026-136716 (CVSS score: N/A), has been described as a case of improper checking for unusual or exceptional conditions. It also relates to CVE-2026-132165 aka Fail2Install in that it addresses remaining vulnerable installation states",
+      "url": "https://thehackernews.com/2026/11/drupal-warns-of-new-highly-critical.html",
+      "date": "2026-11-26T07:02:34.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Actively Exploited"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 3,
+      "cveMatches": [
+        "CVE-2026-136716",
+        "CVE-2026-132165"
+      ],
+      "knownExploitedCves": [
+        "CVE-2026-132165"
+      ],
+      "articleCount": 1,
       "score": 70
     },
     {
-      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
-      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-      "date": "2026-11-25T11:23:26.000Z",
+      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week.\n\nThe Mitel MiCollab vulnerabilities are listed below -\n\n\n  CVE-2026-133275 (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
+      "date": "2026-11-26T06:44:46.000Z",
       "severity": "Critical",
       "tags": [
-        "Remote Code Execution",
         "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "The Hacker News"
       ],
       "sourceCount": 1,
-      "impactScore": 5,
+      "impactScore": 3,
       "cveMatches": [
-        "CVE-2026-132165"
+        "CVE-2026-133275"
       ],
       "knownExploitedCves": [
-        "CVE-2026-132165"
+        "CVE-2026-133275"
       ],
       "articleCount": 1,
-      "score": 70
-    },
-    {
-      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
-      "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.\n\nThe vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -\n\n\n  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
-      "date": "2026-11-25T12:48:54.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-120705",
-        "CVE-2026-129243"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 60
+      "score": 69
     }
   ],
   "sourcesUsed": [
@@ -2458,5 +2466,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-26T04:04:15.244Z"
+  "lastUpdated": "2026-11-26T14:01:09.728Z"
 }
