@@ -1,6 +1,97 @@
 {
   "articles": [
     {
+      "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+      "source": "Dark Reading",
+      "date": "2026-11-27T14:00:00.000Z",
+      "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+      "source": "The Hacker News",
+      "date": "2026-11-27T11:49:34.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT.\n\nThe intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool (\"snipp.codes-team[.]com\"), from where a Microsoft-signed installer called \"Snipping-Tool.exe\" is",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+      "source": "The Hacker News",
+      "date": "2026-11-27T10:32:18.000Z",
+      "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together the week before, cleans them up, and presents a picture of a program that is,",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "source": "The Hacker News",
+      "date": "2026-11-27T09:29:30.000Z",
+      "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.\n\n\"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "source": "The Hacker News",
+      "date": "2026-11-27T06:04:20.000Z",
+      "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday.\n\nThree of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been named, and it is not known who is",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "source": "The Hacker News",
+      "date": "2026-11-27T05:48:20.000Z",
+      "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution.\n\nThe proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT.\n\n\"I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Remote Code Execution"
+      ],
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "impactScore": 5,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
       "source": "The Hacker News",
       "date": "2026-11-26T19:39:57.000Z",
@@ -34,7 +125,7 @@
       "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
       "source": "The Hacker News",
       "date": "2026-11-26T15:13:41.000Z",
-      "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025.\n\n\"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When Python imports the file, the loader reads the newest transaction that an",
+      "summary": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025.\n\n\"These are real developers, not throwaway accounts,\" Apiiro researcher Shmulik Cohen said. \"6,541 of the 7,609 repos (86%) belong",
       "severity": "Low",
       "tags": [
         "General"
@@ -261,40 +352,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
-      "source": "The Hacker News",
-      "date": "2026-11-25T12:48:54.000Z",
-      "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.\n\nThe vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -\n\n\n  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Remote Code Execution"
-      ],
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-120705",
-        "CVE-2026-129243"
-      ],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
-      "source": "The Hacker News",
-      "date": "2026-11-25T12:30:08.000Z",
-      "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline.\n\nThe bureau collects suspicious activity reports and other Bank Secrecy Act (BSA) filings from banks and other financial",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
       "source": "CSO Online",
       "date": "2026-11-25T12:06:00.000Z",
@@ -338,58 +395,6 @@
         "CVE-2025-41450",
         "CVE-2026-103406"
       ]
-    },
-    {
-      "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
-      "source": "The Hacker News",
-      "date": "2026-11-25T11:51:48.000Z",
-      "summary": "TL;DR\n\n\n  More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.\n  Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-      "source": "The Hacker News",
-      "date": "2026-11-25T11:23:26.000Z",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
-      "severity": "Critical",
-      "tags": [
-        "Remote Code Execution",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-132165"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-132165"
-      ],
-      "recentlyAddedToKev": [
-        "CVE-2026-132165"
-      ]
-    },
-    {
-      "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
-      "source": "The Hacker News",
-      "date": "2026-11-25T10:43:07.000Z",
-      "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday.\n\nAbdulrahman Alfozan, a 35-year-old Saudi national, was arrested on October 9, 2026, for allegedly bugging the artificial intelligence (AI) company's offices with the aim",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
     },
     {
       "title": "Despite doom and gloom headlines, AI attacks are thin on the ground",
@@ -461,21 +466,6 @@
         "General"
       ],
       "url": "https://www.darkreading.com/perimeter/webworm-slithers-customized-softether-vpn",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
-      "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
-      "source": "Dark Reading",
-      "date": "2026-11-24T21:36:11.000Z",
-      "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
       "impactScore": 0,
       "cveMatches": [],
       "knownExploitedCves": [],
@@ -1003,16 +993,18 @@
       "source": "CISA Advisories",
       "date": "2026-11-17T12:00:00.000Z",
       "summary": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Softw",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-111497"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-111497"
+      ],
       "recentlyAddedToKev": []
     },
     {
@@ -1139,6 +1131,121 @@
   ],
   "clusters": [
     {
+      "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
+      "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
+      "date": "2026-11-27T14:00:00.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "Dark Reading"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 29
+    },
+    {
+      "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
+      "summary": "Cybersecurity researchers have disclosed details of a cyber attack in which a threat actor leveraged a Microsoft Store application to deliver a remote access trojan (RAT) called Vinci RAT.\n\nThe intrusion, according to eSentire, begins with a redirection to a bogus site for a sniping tool (\"snipp.codes-team[.]com\"), from where a Microsoft-signed installer called \"Snipping-Tool.exe\" is",
+      "url": "https://thehackernews.com/2026/11/microsoft-store-app-found-delivering.html",
+      "date": "2026-11-27T11:49:34.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Widely-Used Software"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 38
+    },
+    {
+      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+      "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together the week before, cleans them up, and presents a picture of a program that is,",
+      "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+      "date": "2026-11-27T10:32:18.000Z",
+      "severity": "Low",
+      "tags": [
+        "General"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 0,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 27
+    },
+    {
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website.\n\n\"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed",
+      "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "date": "2026-11-27T09:29:30.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Supply Chain"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
+    },
+    {
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday.\n\nThree of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been named, and it is not known who is",
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "date": "2026-11-27T06:04:20.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Critical Infrastructure"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 2,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 37
+    },
+    {
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution.\n\nThe proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT.\n\n\"I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server",
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "date": "2026-11-27T05:48:20.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 63
+    },
+    {
       "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
       "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much.\n\nThen there’s the question of who gets to use what. Stolen logins are opening",
       "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
@@ -1155,7 +1262,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 20
     },
     {
       "title": "New GeoServer RCE exploit chain seen in the wild two days after disclosure",
@@ -1174,11 +1281,11 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 31
     },
     {
       "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
-      "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025.\n\n\"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When Python imports the file, the loader reads the newest transaction that an",
+      "summary": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025.\n\n\"These are real developers, not throwaway accounts,\" Apiiro researcher Shmulik Cohen said. \"6,541 of the 7,609 repos (86%) belong",
       "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
       "date": "2026-11-26T15:13:41.000Z",
       "severity": "Low",
@@ -1193,7 +1300,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 22
+      "score": 19
     },
     {
       "title": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
@@ -1217,7 +1324,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 64
     },
     {
       "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
@@ -1236,7 +1343,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
@@ -1255,7 +1362,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 21
+      "score": 18
     },
     {
       "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
@@ -1274,7 +1381,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 20
+      "score": 17
     },
     {
       "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
@@ -1298,7 +1405,7 @@
         "CVE-2026-132165"
       ],
       "articleCount": 1,
-      "score": 63
+      "score": 61
     },
     {
       "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
@@ -1321,7 +1428,7 @@
         "CVE-2026-133275"
       ],
       "articleCount": 1,
-      "score": 63
+      "score": 61
     },
     {
       "title": "13 Malicious NuGet Packages Turn Fake .NET Job Assessments Into Malware Delivery Traps",
@@ -1340,7 +1447,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 26
     },
     {
       "title": "Broadcom issues fixes for 23 new VMware flaws, three critical",
@@ -1361,7 +1468,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 27
+      "score": 25
     },
     {
       "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
@@ -1380,7 +1487,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 14
     },
     {
       "title": "It's a Bot World. We're Just Living in It",
@@ -1399,7 +1506,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
@@ -1418,7 +1525,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Latin America Sees Cyberattacks on Ports, Pipelines &amp; Manufacturing",
@@ -1437,7 +1544,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Check Point security management servers hit in global cyberattack campaign",
@@ -1456,49 +1563,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "Hackers Exploit Two GeoServer Flaws as Researchers Warn of Unauthenticated RCE Chains",
-      "summary": "Threat actors are actively exploiting two newly patched security flaws in GeoServer, according to watchTowr.\n\nThe vulnerabilities in question are CVE-2026-120705 and CVE-2026-129243, details of which are below -\n\n\n  CVE-2026-120705 (CVSS score: 8.6) - An arbitrary file read vulnerability that could enable an attacker to access local text files readable by the GeoServer process or fetch",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-two-geoserver-flaws-as.html",
-      "date": "2026-11-25T12:48:54.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Actively Exploited",
-        "Remote Code Execution"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-120705",
-        "CVE-2026-129243"
-      ],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 53
-    },
-    {
-      "title": "U.S. Treasury's Financial Crimes Agency Takes Some Systems Offline After Cyber Intrusion",
-      "summary": "The U.S. Treasury Department's Financial Crimes Enforcement Network (FinCEN) has been hit by a cybersecurity incident that resulted in \"unauthorized access to a limited subset of its systems,\" the bureau said on Tuesday. As a precaution, it has taken some systems offline.\n\nThe bureau collects suspicious activity reports and other Bank Secrecy Act (BSA) filings from banks and other financial",
-      "url": "https://thehackernews.com/2026/11/us-treasurys-fincen-takes-some-systems.html",
-      "date": "2026-11-25T12:30:08.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
@@ -1517,7 +1582,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 13
     },
     {
       "title": "CISA Adds 10 Known Exploited Vulnerabilities to Catalog",
@@ -1557,69 +1622,7 @@
         "CVE-2026-134624"
       ],
       "articleCount": 3,
-      "score": 63
-    },
-    {
-      "title": "Credential Remediation Is Slow When You Don’t Know What Will Break",
-      "summary": "TL;DR\n\n\n  More than 64% still valid after four years: GitGuardian’s State of Secrets Sprawl 2026 found that most valid secrets discovered in 2022 still worked in January 2026, because teams stall on what a revoke will break.\n  Validity-only triage misses 46% of critical secrets: Prioritize by impact instead, weighing what a credential can access and whether it leaked publicly, and update the",
-      "url": "https://thehackernews.com/2026/11/credential-remediation-is-slow-when-you.html",
-      "date": "2026-11-25T11:51:48.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
-    },
-    {
-      "title": "Drupal Fail2Install Exploit Details Emerge as Critical RCE Flaw Faces Active Exploitation",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical flaw impacting Drupal to its Known Exploited Vulnerabilities (KEV) catalog, requiring federal agencies to apply the fixes by November 27, 2026.\n\nThe vulnerability, tracked as CVE-2026-132165 aka Fail2Install (CVSS score: 9.8), is a case of remote code execution (RCE) impacting Drupal core.\n\n\"Drupal Core",
-      "url": "https://thehackernews.com/2026/11/drupal-fail2install-exploit-details.html",
-      "date": "2026-11-25T11:23:26.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Remote Code Execution",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 5,
-      "cveMatches": [
-        "CVE-2026-132165"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-132165"
-      ],
-      "articleCount": 1,
-      "score": 63
-    },
-    {
-      "title": "Ex-OpenAI Employee Accused of Bugging Company Offices Granted $1 Million Bail",
-      "summary": "A former OpenAI employee accused of concealing a covert recording device at the company's San Francisco offices will be allowed to be released from jail on a $1 million bond, a San Francisco federal court judge ruled Tuesday.\n\nAbdulrahman Alfozan, a 35-year-old Saudi national, was arrested on October 9, 2026, for allegedly bugging the artificial intelligence (AI) company's offices with the aim",
-      "url": "https://thehackernews.com/2026/11/ex-openai-employee-accused-of-bugging.html",
-      "date": "2026-11-25T10:43:07.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 15
+      "score": 62
     },
     {
       "title": "Despite doom and gloom headlines, AI attacks are thin on the ground",
@@ -1638,7 +1641,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 14
+      "score": 13
     },
     {
       "title": "Cisco and OpenAI dispatch AI agents to shield vulnerable systems before permanent patches arrive",
@@ -1657,7 +1660,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)",
@@ -1676,7 +1679,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Satellites Have a Ground-Level Cybersecurity Problem",
@@ -1695,7 +1698,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
@@ -1714,26 +1717,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
-    },
-    {
-      "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
-      "summary": "Attackers could have disrupted traveler entry into Nigeria, Ethiopia, Zambia, Sri Lanka, Fiji, and Ghana via several vulnerabilities in their online visa and immigration systems.",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/god-mode-flaws-wreak-border-control-havoc",
-      "date": "2026-11-24T21:36:11.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "Dark Reading"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "How Southeastern University Got a Handle on Its Data",
@@ -1773,7 +1757,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 24
     },
     {
       "title": "AutomationDirect C-More EA9 Programming Software",
@@ -1794,7 +1778,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Schneider Electric EcoStruxure Power Build Rapsody software",
@@ -1813,7 +1797,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Attackers exploited an Azure API Management flaw to steal secrets, Microsoft warns",
@@ -1946,7 +1930,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
@@ -2209,21 +2193,23 @@
       "summary": "View CSAF\nSummary\nOn October 21, 2026, the Node.js project released security updates addressing a critical vulnerability in the Brotli decoder bundled with Node.js, commonly referred to as \"Node2Shell\" (tracked as CVE-2026-111497). The vulnerability is an out-of-bounds write that could allow a remote attacker to cause memory corruption and potentially execute arbitrary code. This advisory covers the status of impact of various Siemens software products. Please also have a look on following Softw",
       "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-321-04",
       "date": "2026-11-17T12:00:00.000Z",
-      "severity": "Low",
+      "severity": "Critical",
       "tags": [
-        "General"
+        "Confirmed in CISA KEV Catalog"
       ],
       "sources": [
         "CISA Advisories"
       ],
       "sourceCount": 1,
-      "impactScore": 0,
+      "impactScore": 3,
       "cveMatches": [
         "CVE-2026-111497"
       ],
-      "knownExploitedCves": [],
+      "knownExploitedCves": [
+        "CVE-2026-111497"
+      ],
       "articleCount": 1,
-      "score": 10
+      "score": 54
     },
     {
       "title": "Who Runs the Ransomware Group Qilin?",
@@ -2402,7 +2388,27 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 68
+      "score": 64
+    },
+    {
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution.\n\nThe proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT.\n\n\"I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server",
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "date": "2026-11-27T05:48:20.000Z",
+      "severity": "Critical",
+      "tags": [
+        "Zero-Day",
+        "Remote Code Execution"
+      ],
+      "sources": [
+        "The Hacker News"
+      ],
+      "sourceCount": 1,
+      "impactScore": 5,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 63
     },
     {
       "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
@@ -2426,30 +2432,7 @@
         "CVE-2026-132165"
       ],
       "articleCount": 1,
-      "score": 63
-    },
-    {
-      "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added 10 security flaws to its Known Exploited Vulnerabilities (KEV) catalog, including five vulnerabilities impacting Mitel MiCollab that were disclosed last week.\n\nThe Mitel MiCollab vulnerabilities are listed below -\n\n\n  CVE-2026-133275 (CVSS score: 5.3) - An arbitrary file upload vulnerability in the Audio, Web and",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-10-vulnerabilities.html",
-      "date": "2026-11-26T06:44:46.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "The Hacker News"
-      ],
-      "sourceCount": 1,
-      "impactScore": 3,
-      "cveMatches": [
-        "CVE-2026-133275"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-133275"
-      ],
-      "articleCount": 1,
-      "score": 63
+      "score": 61
     }
   ],
   "sourcesUsed": [
@@ -2462,5 +2445,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-27T05:08:39.918Z"
+  "lastUpdated": "2026-11-27T15:17:01.659Z"
 }
