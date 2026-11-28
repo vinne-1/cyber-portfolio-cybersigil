@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "title": "1Password data breach included some customer info, internal source code",
+      "source": "CSO Online",
+      "date": "2026-11-28T03:44:01.000Z",
+      "summary": "1Password is reassuring customers that their password vaults are safe after the theft of both account records for a subset of its users and source code from its private repositories.\nThe company said it began investigating the incident on November 19, after it detected indications that an employee’s corporate GitHub account had been breached.\nThe attacker used the account to access source code and push malicious code to backend services, which downloaded what 1Password described as “administrati",
+      "severity": "Medium",
+      "tags": [
+        "Data Breach"
+      ],
+      "url": "https://www.csoonline.com/article/4254142/1password-data-breach-included-some-customer-info-internal-source-code.html",
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "recentlyAddedToKev": []
+    },
+    {
       "title": "Flaw in Linux NFS file sharing exposes servers to remote takeover",
       "source": "CSO Online",
       "date": "2026-11-27T20:43:35.000Z",
@@ -782,21 +797,6 @@
       "recentlyAddedToKev": []
     },
     {
-      "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
-      "source": "CSO Online",
-      "date": "2026-11-21T00:39:17.000Z",
-      "summary": "PHP continues to root out flaws in its architecture, this week releasing fixes for a slew of additional security issues in the wake of PHP2Shell.\nThe patches address 18 vulnerabilities, including a critical request smuggling flaw that could allow unauthenticated attackers to remotely execute code on vulnerable servers. Other vulnerabilities affect PHP’s core engine, session handling, process manager, and Common Gateway Interface (CGI) protocol, which bridges web servers with external application",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "url": "https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html",
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "recentlyAddedToKev": []
-    },
-    {
       "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
       "source": "Krebs on Security",
       "date": "2026-11-21T00:36:39.000Z",
@@ -1141,6 +1141,25 @@
   ],
   "clusters": [
     {
+      "title": "1Password data breach included some customer info, internal source code",
+      "summary": "1Password is reassuring customers that their password vaults are safe after the theft of both account records for a subset of its users and source code from its private repositories.\nThe company said it began investigating the incident on November 19, after it detected indications that an employee’s corporate GitHub account had been breached.\nThe attacker used the account to access source code and push malicious code to backend services, which downloaded what 1Password described as “administrati",
+      "url": "https://www.csoonline.com/article/4254142/1password-data-breach-included-some-customer-info-internal-source-code.html",
+      "date": "2026-11-28T03:44:01.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Data Breach"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
+    },
+    {
       "title": "Flaw in Linux NFS file sharing exposes servers to remote takeover",
       "summary": "Researchers have found a critical flaw in the Linux kernel’s NFS file-sharing server that lets unauthenticated attackers obtain a root shell on affected systems. The flaw remained undetected in the kernel for 12 years, until two researchers, one using an AI agent, discovered it independently.\nNFS is typically used inside local networks, including in container networks in Kubernetes clusters and on build servers in development environments. However, it is also enabled on many embedded devices and",
       "url": "https://www.csoonline.com/article/4254114/flaw-in-linux-nfs-file-sharing-exposes-servers-to-remote-takeover.html",
@@ -1157,7 +1176,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 38
+      "score": 35
     },
     {
       "title": "Suspected Vietnam-Linked Hackers Target Southeast Asia in South China Sea Espionage Campaign",
@@ -1176,7 +1195,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 26
+      "score": 23
     },
     {
       "title": "Matters.AI Lands India’s Largest Cybersecurity Pre-Series A Round to Fight AI Data Risks",
@@ -1195,7 +1214,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 25
+      "score": 23
     },
     {
       "title": "'God Mode' Flaws Could Wreak Border-Control Havoc",
@@ -1214,7 +1233,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 22
     },
     {
       "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
@@ -1249,7 +1268,7 @@
         "CVE-2026-103406"
       ],
       "articleCount": 2,
-      "score": 67
+      "score": 65
     },
     {
       "title": "Microsoft Store App Found Delivering Vinci RAT Capable of Remote System Control",
@@ -1268,7 +1287,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 34
+      "score": 31
     },
     {
       "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
@@ -1287,7 +1306,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 23
+      "score": 21
     },
     {
       "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
@@ -1306,7 +1325,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 35
+      "score": 33
     },
     {
       "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
@@ -1325,7 +1344,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 33
+      "score": 32
     },
     {
       "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
@@ -1345,7 +1364,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 59
+      "score": 57
     },
     {
       "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
@@ -1364,7 +1383,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 18
+      "score": 16
     },
     {
       "title": "New GeoServer RCE exploit chain seen in the wild two days after disclosure",
@@ -1383,7 +1402,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 29
+      "score": 28
     },
     {
       "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
@@ -1402,7 +1421,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 17
+      "score": 15
     },
     {
       "title": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
@@ -1426,7 +1445,7 @@
         "CVE-2026-46300"
       ],
       "articleCount": 1,
-      "score": 62
+      "score": 61
     },
     {
       "title": "Most Wanted: The Phishing Kits and Techniques Getting Past Security Controls",
@@ -1445,7 +1464,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "1Password Hacked, Customer Data and Source Code Stolen in GitHub Account Breach",
@@ -1464,7 +1483,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 16
+      "score": 15
     },
     {
       "title": "Cyprus Becomes Espionage Target for Iranian Hackers",
@@ -1483,7 +1502,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 15
+      "score": 14
     },
     {
       "title": "Drupal Warns of New Highly Critical Site Takeover Vulnerability Under Active Exploitation",
@@ -1508,7 +1527,7 @@
         "CVE-2026-132165"
       ],
       "articleCount": 1,
-      "score": 59
+      "score": 58
     },
     {
       "title": "Hackers Exploit 10 Vulnerabilities Across Mitel, Juniper, Vates, and Danfoss Products",
@@ -1531,7 +1550,7 @@
         "CVE-2026-133275"
       ],
       "articleCount": 1,
-      "score": 59
+      "score": 58
     },
     {
       "title": "Broadcom issues fixes for 23 new VMware flaws, three critical",
@@ -1552,7 +1571,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "Attackers Target .NET Developers With Poisoned Job Assessments",
@@ -1571,7 +1590,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "It's a Bot World. We're Just Living in It",
@@ -1590,7 +1609,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Cyber Insurers See New Divide: AI Defense 'Haves' &amp; 'Have Nots'",
@@ -1609,7 +1628,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Latin America Sees Cyberattacks on Ports, Pipelines &amp; Manufacturing",
@@ -1628,7 +1647,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Check Point security management servers hit in global cyberattack campaign",
@@ -1647,7 +1666,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Prompting AI to be ‘thorough’ can drive sandbox escapes, Anthropic says",
@@ -1666,7 +1685,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 13
+      "score": 12
     },
     {
       "title": "Despite doom and gloom headlines, AI attacks are thin on the ground",
@@ -1723,7 +1742,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 3,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Satellites Have a Ground-Level Cybersecurity Problem",
@@ -1742,7 +1761,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "Webworm APT Slithers Into Networks With Customized SoftEther VPN",
@@ -1761,7 +1780,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 12
+      "score": 11
     },
     {
       "title": "How Southeastern University Got a Handle on Its Data",
@@ -1833,7 +1852,7 @@
       ],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 24
+      "score": 23
     },
     {
       "title": "AutomationDirect C-More EA9 Programming Software",
@@ -1930,7 +1949,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "CrowdStrike Makes AI Security Push With Blockbuster Zscaler Deal",
@@ -1949,7 +1968,7 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 11
+      "score": 10
     },
     {
       "title": "CrowdStrike buys missing network security piece in $43.9B Zscaler deal",
@@ -2000,25 +2019,6 @@
       ],
       "sources": [
         "SANS Internet Storm Center"
-      ],
-      "sourceCount": 1,
-      "impactScore": 0,
-      "cveMatches": [],
-      "knownExploitedCves": [],
-      "articleCount": 1,
-      "score": 10
-    },
-    {
-      "title": "PHP2Shell aftershock: 18 more PHP flaws put enterprise web admins on alert",
-      "summary": "PHP continues to root out flaws in its architecture, this week releasing fixes for a slew of additional security issues in the wake of PHP2Shell.\nThe patches address 18 vulnerabilities, including a critical request smuggling flaw that could allow unauthenticated attackers to remotely execute code on vulnerable servers. Other vulnerabilities affect PHP’s core engine, session handling, process manager, and Common Gateway Interface (CGI) protocol, which bridges web servers with external application",
-      "url": "https://www.csoonline.com/article/4251713/php2shell-aftershock-18-more-php-flaws-put-enterprise-web-admins-on-alert.html",
-      "date": "2026-11-21T00:39:17.000Z",
-      "severity": "Low",
-      "tags": [
-        "General"
-      ],
-      "sources": [
-        "CSO Online"
       ],
       "sourceCount": 1,
       "impactScore": 0,
@@ -2414,31 +2414,7 @@
         "CVE-2026-103406"
       ],
       "articleCount": 2,
-      "score": 67
-    },
-    {
-      "title": "Palo Alto confirms Fragnesia exploitation against firewalls in PHP2Shell attacks",
-      "summary": "Palo Alto Networks has confirmed that attackers exploited Fragnesia, a Linux kernel flaw, to gain root on PAN-OS firewalls through the PHP2Shell vulnerabilities, and has shipped fixes six months after the bug was patched in Linux.\nThe vulnerability allows a locally authenticated, low-privileged attacker to escalate privileges to root.\n“Exploitation of CVE-2026-46300 has been observed targeting the Palo Alto Networks management interface exposed to the internet,” the company said in its November ",
-      "url": "https://www.csoonline.com/article/4253600/palo-alto-confirms-fragnesia-exploitation-against-firewalls-in-php2shell-attacks.html",
-      "date": "2026-11-26T13:05:35.000Z",
-      "severity": "Critical",
-      "tags": [
-        "Widely-Used Software",
-        "Confirmed in CISA KEV Catalog"
-      ],
-      "sources": [
-        "CSO Online"
-      ],
-      "sourceCount": 1,
-      "impactScore": 4,
-      "cveMatches": [
-        "CVE-2026-46300"
-      ],
-      "knownExploitedCves": [
-        "CVE-2026-46300"
-      ],
-      "articleCount": 1,
-      "score": 62
+      "score": 65
     },
     {
       "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
@@ -2458,7 +2434,26 @@
       "cveMatches": [],
       "knownExploitedCves": [],
       "articleCount": 1,
-      "score": 59
+      "score": 57
+    },
+    {
+      "title": "1Password data breach included some customer info, internal source code",
+      "summary": "1Password is reassuring customers that their password vaults are safe after the theft of both account records for a subset of its users and source code from its private repositories.\nThe company said it began investigating the incident on November 19, after it detected indications that an employee’s corporate GitHub account had been breached.\nThe attacker used the account to access source code and push malicious code to backend services, which downloaded what 1Password described as “administrati",
+      "url": "https://www.csoonline.com/article/4254142/1password-data-breach-included-some-customer-info-internal-source-code.html",
+      "date": "2026-11-28T03:44:01.000Z",
+      "severity": "Medium",
+      "tags": [
+        "Data Breach"
+      ],
+      "sources": [
+        "CSO Online"
+      ],
+      "sourceCount": 1,
+      "impactScore": 1,
+      "cveMatches": [],
+      "knownExploitedCves": [],
+      "articleCount": 1,
+      "score": 39
     }
   ],
   "sourcesUsed": [
@@ -2471,5 +2466,5 @@
   ],
   "sourceErrors": [],
   "rankingMethodology": "Automated heuristic ranking over public RSS coverage: severity signal (keyword-based, boosted only by a real match against CISA's Known Exploited Vulnerabilities catalog), how many independent outlets covered the same deduplicated story, and recency. Not an official or authoritative threat ranking.",
-  "lastUpdated": "2026-11-27T23:34:39.544Z"
+  "lastUpdated": "2026-11-28T04:56:44.915Z"
 }
